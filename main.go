@@ -9,13 +9,16 @@ import (
 	"path/filepath"
 	"sort"
 	"strings"
+	"time"
 
 	"github.com/gomarkdown/markdown"
 	"github.com/gorilla/mux"
+	git "gopkg.in/src-d/go-git.v4"
 )
 
 const repoURL = "https://github.com/jreisinger/homepage"
-const dataPath = "data"
+const repoPath = "/tmp/homepage"
+const dataPath = "/tmp/homepage/data"
 
 func main() {
 	r := mux.NewRouter()
@@ -62,7 +65,47 @@ func main() {
 		check(err)
 	})
 
+	go gitPuller()
+
 	log.Fatal(http.ListenAndServe(":5001", r))
+}
+
+//
+// Git
+//
+
+func gitClone() {
+	_, err := git.PlainClone(repoPath, false, &git.CloneOptions{
+		URL:      repoURL,
+		Progress: os.Stdout,
+	})
+	check(err)
+}
+
+func gitPull() {
+	// We instantiate a new repository targeting the given path (the .git folder)
+	r, err := git.PlainOpen(repoPath)
+	check(err)
+
+	// Get the working directory for the repository
+	w, err := r.Worktree()
+	check(err)
+
+	// Pull the latest changes from the origin remote and merge into the current branch
+	err = w.Pull(&git.PullOptions{RemoteName: "origin"})
+	//check(err)
+	log.Print(err)
+}
+
+func gitPuller() {
+	for {
+		if _, err := os.Stat(repoPath); os.IsNotExist(err) {
+			gitClone()
+		}
+
+		gitPull()
+		time.Sleep(time.Second * 2)
+	}
 }
 
 // check errors
