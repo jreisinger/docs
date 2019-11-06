@@ -4,7 +4,6 @@ Hello and welcome. This site was mainly built for [me](https://jreisinger.github
 
 *  [quotes](http://quote.reisinge.net/)
 *  [wiki](http://wiki.reisinge.net)
-*  [wtf](http://wtf.reisinge.net)
 
 ## My stuff hosted by someone else
 
