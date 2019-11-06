@@ -1,4 +1,4 @@
-Code, Docker image and data for https://reisinge.net. If you edit stuff in `data` folder it will be reflected almost instantly in https://reisinge.net.
+Code and data for my [home page](https://reisinge.net). If you edit stuff in `data` folder it will be reflected almost instantly in https://reisinge.net.
 
 ## Initialize the project
 
