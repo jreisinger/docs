@@ -142,8 +142,7 @@ const tplHead = `
 
 const tplNavbar = `
 	<a href="/">home</a> |
-	<a href="/notes">notes</a> |
-	<a href="/search">search</a>
+	<a href="/notes">notes</a>
 `
 
 const tplIndex = `
@@ -160,7 +159,7 @@ const tplIndex = `
 			<li><a href="{{ $Dir }}/{{ . }}">{{ . }}</a></li>
 		{{end}}
 		</ul>
-		<a href="{{.RepoURL}}/tree/master/data">source</a>
+		<a href="{{.RepoURL}}/tree/master/data/{{$Dir}}">source</a>
 	</body>
 </html>`
 
@@ -173,6 +172,6 @@ const tplPage = `
 	<body>
 		{{ template "navbar" }}
         {{.Body}}
-		<a href="{{.RepoURL}}/tree/master/data/{{.Title}}.md">source</a>
+		<a href="{{.RepoURL}}/tree/master/data/{{.Dir}}/{{.Title}}.md">source</a>
 	</body>
 </html>`
