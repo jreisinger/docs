@@ -4,7 +4,7 @@
 
 ```python
 #!/usr/bin/env python3
-# dup prints lines from STDIN or file(s) that appear more than once.
+# dup prints lines from file(s) or STDIN that appear more than once.
 import fileinput
 
 counts = dict()
