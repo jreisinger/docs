@@ -1,3 +1,5 @@
+# Documentation secret
+
 The secret is that there isn't one thing called documentation, there are four:
 
 ## Tutorial
