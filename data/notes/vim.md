@@ -1,3 +1,5 @@
+# Vim
+
 Useful configuration options:
 
 ```
