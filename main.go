@@ -13,6 +13,7 @@ import (
 
 	"github.com/gomarkdown/markdown"
 	"github.com/gorilla/mux"
+	"github.com/gorilla/handlers"
 	git "gopkg.in/src-d/go-git.v4"
 )
 
@@ -67,7 +68,8 @@ func main() {
 
 	go gitPuller()
 
-	log.Fatal(http.ListenAndServe(":5001", r))
+	loggedRouter := handlers.LoggingHandler(os.Stdout, r)
+	log.Fatal(http.ListenAndServe(":5001", loggedRouter))
 }
 
 //
