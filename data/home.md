@@ -9,15 +9,15 @@ Hello and welcome. This site was mainly built for [me](https://jreisinger.github
 
 Code
 
-*  [github](https://github.com/jreisinger) and [cpan](https://metacpan.org/author/REISINGE) code
+*  [github](https://github.com/jreisinger) and [cpan](https://metacpan.org/author/REISINGE)
 *  [gists](https://gist.github.com/search?q=user%3Ajreisinger)
 
 Posts
 
 *  [blog](https://github.com/jreisinger/blog) (old blog)
 *  [notes](https://github.com/jreisinger/notes) (new blog)
-*  [PM](https://perlmonks.org/?node_id=6364;user=reisinge) posts
-*  [SO](https://stackoverflow.com/users/1039320/jreisinger) posts
+*  [PM](https://perlmonks.org/?node_id=6364;user=reisinge)
+*  [SO](https://stackoverflow.com/users/1039320/jreisinger)
 
 Files
 
