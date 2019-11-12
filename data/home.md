@@ -14,8 +14,7 @@ Code
 
 Posts
 
-*  [blog](https://github.com/jreisinger/blog) (old blog)
-*  [notes](https://github.com/jreisinger/notes) (new blog)
+*  [notes](https://github.com/jreisinger/notes) (new blog), [blog](https://github.com/jreisinger/blog) (old blog)
 *  [PM](https://perlmonks.org/?node_id=6364;user=reisinge)
 *  [SO](https://stackoverflow.com/users/1039320/jreisinger)
 
