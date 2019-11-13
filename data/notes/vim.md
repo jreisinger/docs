@@ -24,7 +24,7 @@ How to search:
 :cfprev
 ```
 
-Know you alphabet:
+Know your alphabet:
 
 ```
 :help normal-index
