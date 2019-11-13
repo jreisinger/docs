@@ -15,3 +15,18 @@ How to search:
 :grep -iR what .
 :cw
 ```
+
+```
+:vimgrep /PATTERN/ FILE(s)
+:cnext
+:cprex
+:cfnext
+:cfprev
+```
+
+Know you alphabet:
+
+```
+:help normal-index
+:help insert-index
+```
