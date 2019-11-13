@@ -2,8 +2,9 @@ Hello and welcome. This site was mainly built for [me](https://jreisinger.github
 
 ### My stuff hosted by me
 
-*  [quotes](http://quote.reisinge.net/)
-*  [wiki](http://wiki.reisinge.net)
+*  [quotes](https://quote.reisinge.net)
+*  [wiki](https://wiki.reisinge.net)
+*  [dict](https://dict.reisinge.net)
 
 ### My stuff hosted by someone else
 
