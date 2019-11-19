@@ -93,15 +93,15 @@ func countLines(f *os.File, counts map[string]int) {
 package main
 
 import (
-	"fmt"
-	"regexp"
+    "fmt"
+    "regexp"
 )
 
 func main() {
-	s := "The quick brown fox. Or was it a blue fox?"
-	re := regexp.MustCompile(`\s+`)
-	words := re.Split(s, -1)
-	fmt.Printf("%d\n", len(words))
+    s := "The quick brown fox. Or was it a blue fox?"
+    re := regexp.MustCompile(`\s+`)
+    words := re.Split(s, -1)
+    fmt.Printf("%d\n", len(words))
 }
 ```
 
@@ -111,23 +111,23 @@ func main() {
 package main
 
 import (
-	"fmt"
-	"log"
-	"os"
+    "fmt"
+    "log"
+    "os"
 )
 
 func main() {
-	if len(os.Args) != 3 {
-		fmt.Fprintln(os.Stderr, "Usage:", os.Args[0], "PATTERN", "FILE")
-		os.Exit(1)
-	}
+    if len(os.Args) != 3 {
+        fmt.Fprintln(os.Stderr, "Usage:", os.Args[0], "PATTERN", "FILE")
+        os.Exit(1)
+    }
 
-	//pattern := os.Args[1]
-	//file := os.Args[2]
+    //pattern := os.Args[1]
+    //file := os.Args[2]
 
-	// Set up CLI tool style of logging.
-	log.SetPrefix(os.Args[0] + ": ")
-	log.SetFlags(0)
+    // Set up CLI tool style of logging.
+    log.SetPrefix(os.Args[0] + ": ")
+    log.SetFlags(0)
 }
 ```
 
