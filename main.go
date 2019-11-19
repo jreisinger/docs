@@ -25,7 +25,7 @@ func main() {
 	r := mux.NewRouter()
 
 	// Serve static files
-	r.PathPrefix("/css/").Handler(http.StripPrefix("/css/", http.FileServer(http.Dir("./css/"))))
+	r.PathPrefix("/css/").Handler(http.StripPrefix("/css/", http.FileServer(http.Dir(repoPath+"/css/"))))
 
 	r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		t, err := template.New("page").Parse(tplPage)
