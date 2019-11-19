@@ -7,11 +7,7 @@
 *  [notes](https://jreisinger.github.io/notes/tags/go/)
 *  PerlMonks: [Camel vs. Gopher](https://perlmonks.org/?node_id=1226977) [Does Go steal from Perl? :-)](https://perlmonks.org/?node_id=1219775)
 
-## Finding duplicate lines
-
-*A.k.a. templates for working with files and STDIN*
-
-### Reading input in "streaming" mode (`bufio.Scanner`)
+## Reading input in "streaming" mode (`bufio.Scanner`)
 
 Read from STDIN:
 
