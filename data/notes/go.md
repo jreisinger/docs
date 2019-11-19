@@ -84,6 +84,25 @@ func countLines(f *os.File, counts map[string]int) {
 }
 ```
 
+## Regular expressions
+
+```
+// wc counts the number of words in a string
+package main
+
+import (
+	"fmt"
+	"regexp"
+)
+
+func main() {
+	s := "The quick brown fox. Or was it a blue fox?"
+	re := regexp.MustCompile(`\s+`)
+	words := re.Split(s, -1)
+	fmt.Printf("%d\n", len(words))
+}
+```
+
 ## Useful functions
 
 ```
