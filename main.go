@@ -25,7 +25,9 @@ func main() {
 	r := mux.NewRouter()
 
 	// Serve static files
-	r.PathPrefix("/static/css/").Handler(http.StripPrefix("/static/css/", http.FileServer(http.Dir(repoPath+"/static/css/"))))
+	r.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir(repoPath+"/static/"))))
+
+	serveSingle("/favicon.ico", "./favicon.ico")
 
 	r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		t, err := template.New("page").Parse(tplPage)
@@ -73,6 +75,12 @@ func main() {
 
 	loggedRouter := handlers.LoggingHandler(os.Stdout, r)
 	log.Fatal(http.ListenAndServe(":5001", loggedRouter))
+}
+
+func serveSingle(pattern string, filename string) {
+	http.HandleFunc(pattern, func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, filename)
+	})
 }
 
 //
