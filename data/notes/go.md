@@ -86,6 +86,8 @@ func countLines(f *os.File, counts map[string]int) {
 
 ## Regular expressions
 
+* https://yourbasic.org/golang/regexp-cheat-sheet/
+
 ```
 // wc counts the number of words in a string
 package main
