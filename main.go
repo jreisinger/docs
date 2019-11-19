@@ -12,8 +12,8 @@ import (
 	"time"
 
 	"github.com/gomarkdown/markdown"
-	"github.com/gorilla/mux"
 	"github.com/gorilla/handlers"
+	"github.com/gorilla/mux"
 	git "gopkg.in/src-d/go-git.v4"
 )
 
@@ -23,6 +23,9 @@ const dataPath = "/tmp/homepage/data"
 
 func main() {
 	r := mux.NewRouter()
+
+	// Serve static files
+	r.PathPrefix("/css/").Handler(http.StripPrefix("/css/", http.FileServer(http.Dir("./css/"))))
 
 	r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		t, err := template.New("page").Parse(tplPage)
@@ -183,6 +186,7 @@ const tplHead = `
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{.Title}}</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 `
 
 const tplNavbar = `
