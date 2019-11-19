@@ -25,7 +25,7 @@ func main() {
 	r := mux.NewRouter()
 
 	// Serve static files
-	r.PathPrefix("/css/").Handler(http.StripPrefix("/css/", http.FileServer(http.Dir(repoPath+"/css/"))))
+	r.PathPrefix("/static/css/").Handler(http.StripPrefix("/static/css/", http.FileServer(http.Dir(repoPath+"/static/css/"))))
 
 	r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		t, err := template.New("page").Parse(tplPage)
@@ -186,7 +186,7 @@ const tplHead = `
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{.Title}}</title>
-	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
 `
 
 const tplNavbar = `
