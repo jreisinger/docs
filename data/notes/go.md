@@ -117,6 +117,8 @@ func main() {
 }
 ```
 
+Under the covers, `bufio.Scanner`, `ioutil.ReadFile`, and `ioutil.WriteFile` use the `Read` and `Write` methods of `*os.File`, but it's rare that most programmers need to access those lower-level routines directly.
+
 ## Regular expressions
 
 * https://yourbasic.org/golang/regexp-cheat-sheet/
