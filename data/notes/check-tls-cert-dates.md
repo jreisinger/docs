@@ -1,10 +1,11 @@
 # Check TLS certificate validity start and end dates
 
 ```
-export FQDN=reisinge.net
 export PORT=443
 
-echo | \
-openssl s_client -servername $FQDN -connect $FQDN:$PORT 2>/dev/null | \
-openssl x509 -noout -dates
+for FQDN in reisinge.net quote.reisinge.net quotes.reisinge.net wiki.reisinge.net www.reisinge.net; do
+    echo | \
+    openssl s_client -servername $FQDN -connect $FQDN:$PORT 2>/dev/null | \
+    openssl x509 -noout -dates
+done
 ```
