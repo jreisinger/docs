@@ -30,3 +30,5 @@ Know your alphabet:
 :help normal-index
 :help insert-index
 ```
+
+Scroll inside `:term`: `Ctrl-w N`
