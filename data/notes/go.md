@@ -194,3 +194,42 @@ func main() {
     printSlice(s) // 0th_elem_addr=0xc00004a0c0 len=4  cap=6  [the quick brown fox]
 }
 ```
+
+## Interfaces
+
+```
+package main
+
+import (
+    "fmt"
+    "math/rand"
+)
+
+type shuffler interface {
+    Len() int
+    Swap(i, j int)
+}
+
+func shuffle(s shuffler) {
+    for i := 0; i < s.Len(); i++ {
+        j := rand.Intn(s.Len() - 1)
+        s.Swap(i, j)
+    }
+}
+
+type intSlice []int
+
+func (is intSlice) Len() int {
+    return len(is)
+}
+
+func (is intSlice) Swap(i, j int) {
+    is[i], is[j] = is[j], is[i]
+}
+
+func main() {
+    is := intSlice{1, 2, 3, 5, 6}
+    shuffle(is)
+    fmt.Println(is) // [2 6 1 3 5]
+}
+```
