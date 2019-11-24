@@ -212,7 +212,7 @@ type shuffler interface {
 
 func shuffle(s shuffler) {
     for i := 0; i < s.Len(); i++ {
-        j := rand.Intn(s.Len() - 1)
+        j := rand.Intn(s.Len() - 1) // why not only s.Len()?
         s.Swap(i, j)
     }
 }
