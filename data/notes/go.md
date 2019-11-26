@@ -279,6 +279,7 @@ func main() {
 
     go emit(wordCh)
 
+    // range over the channel until closed
     for word := range wordCh {
         fmt.Printf("%s ", word)
     }   
