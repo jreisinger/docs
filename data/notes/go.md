@@ -285,3 +285,17 @@ func main() {
     }   
 }
 ```
+
+## Modules
+
+A module is a collection of related Go packages that are versioned together as a single unit.
+
+Relationship between repositories, modules and packages:
+
+* A *repository* contains one or more Go modules
+* Each *module* contains one or more Go packages
+* Each *package* consists of one or more Go source files in a single directory
+
+More 
+
+* https://github.com/golang/go/wiki/Modules
