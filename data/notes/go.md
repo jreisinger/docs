@@ -1,15 +1,17 @@
 # Go
 
-* [Links to explore](#links-to-explore)
-* [My Go stuff on the Web](#my-go-stuff-on-the-web)
-* [Reading input in "streaming" mode (`bufio.Scanner`)](#reading-input-in-"streaming"-mode-`bufio.scanner`)
-* [Reading input in "slurp" mode (`ioutil.ReadFile`)](#reading-input-in-"slurp"-mode-`ioutil.readfile`)
-* [Regular expressions](#regular-expressions)
-* [CLI tools template](#cli-tools-template)
-* [Slices and `append`](#slices-and-`append`)
-* [Interfaces](#interfaces)
-* [Goroutines, channels and `select`](#goroutines,-channels-and-`select`)
-* [Modules](#modules)
+TOC
+
+* Links to explore
+* My Go stuff on the Web
+* Reading input in "streaming" mode 
+* Reading input in "slurp" mode 
+* Regular expressions
+* CLI tools template
+* Slices and `append`
+* Interfaces
+* Goroutines, channels and `select`
+* Modules
 
 ## Links to explore
 
