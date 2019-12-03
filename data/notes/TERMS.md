@@ -40,6 +40,12 @@ You can list the contents of a directory if it's readable (`r`), but you can onl
 
 A form of database. It supplies the structure to transform a simple block device into the sophisticated hierachy of files and subdirectories that users can understand.
 
+### first-class functions
+
+In a language with first-class functions, functions can be assigned to variables, and then called later using those variables.
+
+Functions can also be passed as arguments when calling other functions.
+
 ### fstab fields
 
 ```
