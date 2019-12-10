@@ -94,22 +94,6 @@ func main() {
 		check(err)
 	})
 
-	//r.HandleFunc("/notes/{what}", func(w http.ResponseWriter, r *http.Request) {
-	//	vars := mux.Vars(r)
-	//	what := vars["what"]
-
-	//	t, err := template.New("page").Parse(tplPage)
-	//	check(err)
-	//	t.New("head").Parse(tplHead)
-	//	t.New("navbar").Parse(tplNavbar)
-
-	//	p := page{Title: what, RepoURL: repoURL, Dir: "notes"}
-	//	p.Generate()
-
-	//	err = t.Execute(w, p)
-	//	check(err)
-	//})
-
 	go gitPuller()
 
 	loggedRouter := handlers.LoggingHandler(os.Stdout, r)
