@@ -1,6 +1,3 @@
-Python
-======
-
 Working with files and STDIN
 ----------------------------
 

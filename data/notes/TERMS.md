@@ -1,5 +1,3 @@
-# TERMS
-
 ### big data
 
 The idea that large databases of seemingly random data about people (ex. purchasing habits, location information) are valueable.
