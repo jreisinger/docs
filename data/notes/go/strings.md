@@ -1,10 +1,3 @@
----
-title: "Go Strings"
-date: 2019-10-09
-categories: [Prog]
-tags: [Go, Strings]
----
-
 ## What is a string
 
 String is a read-only **slice of bytes**. A string can hold arbitrary bytes not just UTF-8 text or any other predefined format. Here is a string literal that uses the `\xNN` notation (hex values of a byte range from `00` to `FF`):

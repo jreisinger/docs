@@ -1,10 +1,3 @@
----
-title: "Go directory structure"
-date: 2018-10-24
-categories: [prog]
-tags: [go]
----
-
 *NOTE*: See [How to Write Go Code](https://golang.org/doc/code.html) for official tutorial.
 
 Go has a strong opinion about directory structure.

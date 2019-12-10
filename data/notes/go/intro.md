@@ -1,11 +1,3 @@
----
-title: "Introduction to Go"
-date: 2019-07-22
-draft: false
-categories: [prog]
-tags: [go]
----
-
 # Types
 
 Go is statically typed - variables always have specific type and type cannot

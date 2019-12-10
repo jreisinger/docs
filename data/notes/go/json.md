@@ -1,11 +1,3 @@
----
-title: "JSON Serialization with Go"
-date: 2019-01-29
-draft: false
-categories: [net,prog]
-tags: [json,go]
----
-
 Networked programs need to exchange information via messages. TCP and UDP
 provide a transport mechanism to do this. However, at transport level the
 messages are just sequences of bytes with no structure.

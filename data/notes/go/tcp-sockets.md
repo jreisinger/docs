@@ -1,11 +1,3 @@
----
-title: "TCP sockets with Go"
-date: 2019-01-25
-draft: false
-categories: [net,prog]
-tags: [tcp,sockets,go]
----
-
 ## Client
 
 This is an HTTP client implemented using socket-level programming:
