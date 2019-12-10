@@ -47,16 +47,29 @@ func main() {
 		vars := mux.Vars(r)
 		what := vars["what"]
 
-		t, err := template.New("index").Parse(tplIndex)
-		check(err)
-		t.New("head").Parse(tplHead)
-		t.New("navbar").Parse(tplNavbar)
+		if isDir(dataPath + "/" + what) {
+			t, err := template.New("index").Parse(tplIndex)
+			check(err)
+			t.New("head").Parse(tplHead)
+			t.New("navbar").Parse(tplNavbar)
 
-		p := index{Title: what, RepoURL: repoURL, Dir: what}
-		p.Generate()
+			p := index{Title: what, RepoURL: repoURL, Dir: what}
+			p.Generate()
 
-		err = t.Execute(w, p)
-		check(err)
+			err = t.Execute(w, p)
+			check(err)
+		} else {
+			t, err := template.New("page").Parse(tplPage)
+			check(err)
+			t.New("head").Parse(tplHead)
+			t.New("navbar").Parse(tplNavbar)
+
+			p := page{Title: what, RepoURL: repoURL}
+			p.Generate()
+
+			err = t.Execute(w, p)
+			check(err)
+		}
 	})
 
 	r.HandleFunc("/{what}/{category}", func(w http.ResponseWriter, r *http.Request) {
@@ -237,7 +250,8 @@ const tplHead = `
 
 const tplNavbar = `
 	<a href="/">home</a> |
-	<a href="/notes">notes</a>
+	<a href="/notes">notes</a> |
+	<a href="/links">links</a>
 `
 
 const tplIndex = `
