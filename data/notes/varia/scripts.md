@@ -1,5 +1,3 @@
-# Scripts
-
 ## Check TLS certificate validity start and end dates
 
 ```
