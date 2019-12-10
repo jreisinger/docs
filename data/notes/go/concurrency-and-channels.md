@@ -1,11 +1,3 @@
----
-title: "Concurrency and Channels"
-date: 2019-05-06
-draft: false
-categories: [prog]
-tags: [go]
----
-
 A *goroutine* is a function capable of running concurrently with other functions. Create a gouroutine with the `go` keyword. 
 
 A *channel* is a way for gouroutines to communicate with each other and *synchronize* their execution.
