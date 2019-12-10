@@ -43,34 +43,72 @@ func main() {
 		check(err)
 	})
 
-	r.HandleFunc("/notes", func(w http.ResponseWriter, r *http.Request) {
+	r.HandleFunc("/{what}", func(w http.ResponseWriter, r *http.Request) {
+		vars := mux.Vars(r)
+		what := vars["what"]
+
 		t, err := template.New("index").Parse(tplIndex)
 		check(err)
 		t.New("head").Parse(tplHead)
 		t.New("navbar").Parse(tplNavbar)
 
-		p := index{Title: "Index", RepoURL: repoURL, Dir: "notes"}
+		p := index{Title: what, RepoURL: repoURL, Dir: what}
 		p.Generate()
 
 		err = t.Execute(w, p)
 		check(err)
 	})
 
-	r.HandleFunc("/notes/{what}", func(w http.ResponseWriter, r *http.Request) {
+	r.HandleFunc("/{what}/{category}", func(w http.ResponseWriter, r *http.Request) {
 		vars := mux.Vars(r)
 		what := vars["what"]
+		category := vars["category"]
+
+		t, err := template.New("index").Parse(tplIndex)
+		check(err)
+		t.New("head").Parse(tplHead)
+		t.New("navbar").Parse(tplNavbar)
+
+		p := index{Title: category, RepoURL: repoURL, Dir: what + "/" + category}
+		p.Generate()
+
+		err = t.Execute(w, p)
+		check(err)
+	})
+
+	r.HandleFunc("/{what}/{category}/{item}", func(w http.ResponseWriter, r *http.Request) {
+		vars := mux.Vars(r)
+		what := vars["what"]
+		category := vars["category"]
+		item := vars["item"]
 
 		t, err := template.New("page").Parse(tplPage)
 		check(err)
 		t.New("head").Parse(tplHead)
 		t.New("navbar").Parse(tplNavbar)
 
-		p := page{Title: what, RepoURL: repoURL, Dir: "notes"}
+		p := page{Title: item, RepoURL: repoURL, Dir: what + "/" + category}
 		p.Generate()
 
 		err = t.Execute(w, p)
 		check(err)
 	})
+
+	//r.HandleFunc("/notes/{what}", func(w http.ResponseWriter, r *http.Request) {
+	//	vars := mux.Vars(r)
+	//	what := vars["what"]
+
+	//	t, err := template.New("page").Parse(tplPage)
+	//	check(err)
+	//	t.New("head").Parse(tplHead)
+	//	t.New("navbar").Parse(tplNavbar)
+
+	//	p := page{Title: what, RepoURL: repoURL, Dir: "notes"}
+	//	p.Generate()
+
+	//	err = t.Execute(w, p)
+	//	check(err)
+	//})
 
 	go gitPuller()
 
@@ -204,11 +242,12 @@ const tplIndex = `
 		{{ template "head" }}
 	</head>
 	<body>
-		{{ template "navbar" }}
-		<ul>
 		{{$Dir:=.Dir}}
+		{{ template "navbar" }}
+		<h1>{{.Title}}</h1>
+		<ul>
 		{{range .Items}}
-			<li><a href="{{ $Dir }}/{{ . }}">{{ . }}</a></li>
+			<li><a href="/{{ $Dir }}/{{ . }}">{{ . }}</a></li>
 		{{end}}
 		</ul>
 		<a href="{{.RepoURL}}/tree/master/data/{{$Dir}}">source</a>
@@ -223,6 +262,7 @@ const tplPage = `
 	</head>
 	<body>
 		{{ template "navbar" }}
+		<h1>{{.Title}}</h1>
         {{.Body}}
 		<a href="{{.RepoURL}}/tree/master/data/{{.Dir}}/{{.Title}}.md">source</a>
 	</body>
