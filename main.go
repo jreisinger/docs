@@ -247,9 +247,9 @@ const tplIndex = `
 		{{ template "head" }}
 	</head>
 	<body>
-		{{$Dir:=.Dir}}
 		{{ template "navbar" }}
-		<h1>{{.Title}}</h1>
+		<h1>{{.Dir}}</h1>
+		{{$Dir:=.Dir}}
 		<ul>
 		{{range .Items}}
 			<li><a href="/{{ $Dir }}/{{ . }}">{{ . }}</a></li>
@@ -267,7 +267,11 @@ const tplPage = `
 	</head>
 	<body>
 		{{ template "navbar" }}
+		{{if .Dir}}
+		<h1>{{.Dir}}/{{.Title}}</h1>
+		{{else}}
 		<h1>{{.Title}}</h1>
+		{{end}}
         {{.Body}}
 		<a href="{{.RepoURL}}/tree/master/data/{{.Dir}}/{{.Title}}.md">source</a>
 	</body>
