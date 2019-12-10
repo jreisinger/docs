@@ -64,16 +64,29 @@ func main() {
 		what := vars["what"]
 		category := vars["category"]
 
-		t, err := template.New("index").Parse(tplIndex)
-		check(err)
-		t.New("head").Parse(tplHead)
-		t.New("navbar").Parse(tplNavbar)
+		if isDir(dataPath + "/" + what + "/" + category) {
+			t, err := template.New("index").Parse(tplIndex)
+			check(err)
+			t.New("head").Parse(tplHead)
+			t.New("navbar").Parse(tplNavbar)
 
-		p := index{Title: category, RepoURL: repoURL, Dir: what + "/" + category}
-		p.Generate()
+			p := index{Title: category, RepoURL: repoURL, Dir: what + "/" + category}
+			p.Generate()
 
-		err = t.Execute(w, p)
-		check(err)
+			err = t.Execute(w, p)
+			check(err)
+		} else {
+			t, err := template.New("page").Parse(tplPage)
+			check(err)
+			t.New("head").Parse(tplHead)
+			t.New("navbar").Parse(tplNavbar)
+
+			p := page{Title: category, RepoURL: repoURL, Dir: what}
+			p.Generate()
+
+			err = t.Execute(w, p)
+			check(err)
+		}
 	})
 
 	r.HandleFunc("/{what}/{category}/{item}", func(w http.ResponseWriter, r *http.Request) {
@@ -98,6 +111,14 @@ func main() {
 
 	loggedRouter := handlers.LoggingHandler(os.Stdout, r)
 	log.Fatal(http.ListenAndServe(":5001", loggedRouter))
+}
+
+func isDir(filename string) bool {
+	fi, err := os.Lstat(filename)
+	if err != nil {
+		return false
+	}
+	return fi.Mode().IsDir()
 }
 
 //
