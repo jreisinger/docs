@@ -1,1 +1,1 @@
-A scratchpad :-).
+A scratchpad :-)
