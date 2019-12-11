@@ -29,4 +29,15 @@ Know your alphabet:
 :help insert-index
 ```
 
-Scroll inside `:term`: `Ctrl-w N`
+Scroll inside `:term`:
+
+```
+Ctrl-w N
+```
+
+Jumping tu previously visited locations ([link](https://vim.fandom.com/wiki/Jumping_to_previously_visited_locations)):
+
+```
+Ctrl-O  # back
+Ctrl-I  # forth
+```
