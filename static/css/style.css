@@ -10,6 +10,7 @@ content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
 counter-increment: h3counter;
 }
 h3 {font-size:1.0em}
+h4 {font-size:0.75em}
 
 body {
 counter-reset: h2counter;
