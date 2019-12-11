@@ -1,10 +1,10 @@
-### My stuff hosted by me
+## My stuff hosted by me
 
 *  [quotes](https://quote.reisinge.net)
 *  [wiki](https://wiki.reisinge.net)
 *  [dict](https://dict.reisinge.net)
 
-### My stuff hosted by someone else
+## My stuff hosted by someone else
 
 Code
 
