@@ -264,7 +264,7 @@ const tplIndex = `
 	</head>
 	<body>
 		{{ template "navbar" }}
-		<u><h1>{{.Dir}}</h1></u>
+		<u><h4>{{.Dir}}</h4></u>
 		{{$Dir:=.Dir}}
 		<ul>
 		{{range .Items}}
@@ -284,7 +284,7 @@ const tplPage = `
 	<body>
 		{{ template "navbar" }}
 		{{if .Dir}}
-		<u><h1>{{.Dir}}/{{.Title}}</h1></u>
+		<u><h4>{{.Dir}}/{{.Title}}</h4></u>
 		{{else}}
 		<u><h1>{{.Title}}</h1></u>
 		{{end}}
