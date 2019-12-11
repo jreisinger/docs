@@ -35,7 +35,7 @@ Scroll inside `:term`:
 Ctrl-w N
 ```
 
-Jumping tu previously visited locations ([link](https://vim.fandom.com/wiki/Jumping_to_previously_visited_locations)):
+Jumping to previously visited locations ([link](https://vim.fandom.com/wiki/Jumping_to_previously_visited_locations)):
 
 ```
 Ctrl-O  # back
