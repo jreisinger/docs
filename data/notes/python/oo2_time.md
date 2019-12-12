@@ -1,3 +1,4 @@
+```
 #!/usr/bin/python
 # Think Python, Ch. 17 Classes and methods
 
@@ -61,3 +62,4 @@ for t in time0, time1, time2:
 
 if time2.is_after(time1):
     print 'time2 is after time1'
+```

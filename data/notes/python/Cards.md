@@ -1,3 +1,6 @@
+Cards.py
+
+```
 #!/usr/bin/python
 # Think Python, Ch. 18 Inheritance
 
@@ -84,3 +87,4 @@ if __name__ == '__main__':
     hand = Hand('new hand')
     print
     print hand.label
+```

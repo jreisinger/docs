@@ -1,3 +1,4 @@
+```
 #!/usr/bin/python
 # Demo of OOP in Python
 
@@ -61,3 +62,4 @@ compare(box3.corner, box.corner)
 box4 = copy.deepcopy(box)
 compare(box4, box)
 compare(box4.corner, box.corner)
+```

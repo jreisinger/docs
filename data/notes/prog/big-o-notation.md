@@ -1,5 +1,3 @@
-(Up-to-date [source](https://github.com/jreisinger/blog/blob/master/posts/big-o-notation.md) of this post.)
-
 * a mathematical way of describing *scaling* - e.g. growth rate of algorithms' run(ning) times
 * it's a gross generalization that focuses on the trend as its input grows, not the specific run-time
 * used to classify (compare) systems based on how they respond to changes in input size
