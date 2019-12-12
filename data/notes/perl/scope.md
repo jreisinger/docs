@@ -1,3 +1,4 @@
+```
 #!/usr/bin/perl
 # Scope of Perl variables. For more see:
 # - Mastering Perl, ch. 7 Symbol Tables and Typeglobs
@@ -45,3 +46,4 @@ sub localized {
     print "The package version, \$main::global --> $main::global\n";
     show_me('from localized()');
 }
+```

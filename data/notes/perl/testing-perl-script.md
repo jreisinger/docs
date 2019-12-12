@@ -1,5 +1,3 @@
-(Up-to-date [source](https://github.com/jreisinger/blog/blob/master/posts/testing-perl-script.md) of this post.)
-
 At `$work`, I was to upgrade several Debians from Squeezy through Wheezy to
 Jessie (6 to 8). I wanted to be sure that after the upgrade (mostly) the same
 processes are running as before. I whipped up a

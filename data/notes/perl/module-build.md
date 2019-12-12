@@ -1,7 +1,3 @@
-(Up-to-date
-[source](https://github.com/jreisinger/blog/blob/master/posts/module-build.md)
-of this post.)
-
 The development and (Github, CPAN) release cycle
 
     # Work on the project and test locally

@@ -1,7 +1,3 @@
-(Up-to-date
-[source](https://github.com/jreisinger/blog/blob/master/posts/benchmarking-perl-code.md)
-of this post.)
-
 Sometimes my code takes a really long time to run and I'd like to know which of
 the alternatives runs faster.
 
