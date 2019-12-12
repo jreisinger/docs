@@ -4,7 +4,7 @@
 
 * ModSecurity - a WAF engine (library, module) for Apache, Nginx, IIS
 * Core Rule Set (CRS) - definitions of the malicious patterns (signatures)
-* False positive - a WAF blocking a valid request
+* False positive (FP) - a WAF blocking a valid request
 
 ## ModSecurity
 
