@@ -24,7 +24,7 @@ https://www.nginx.com/blog/compiling-and-installing-modsecurity-for-open-source-
 https://www.modsecurity.org/CRS/Documentation/making.html
 
 ```
-SecRule VARIABLES "OPERATOR" "TRANSFORMATIONS,ACTIONS"
+SecRule VARIABLES   "OPERATOR"          "TRANSFORMATIONS,ACTIONS"
 # E.g.
 SecRule REQUEST_URI "@streq /index.php" "id:1,phase:1,t:lowercase,deny"
 ```
