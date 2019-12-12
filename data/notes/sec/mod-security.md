@@ -1,13 +1,8 @@
 *2019-10-01*
 
-## Terms
-
-* ModSecurity - a WAF engine (library, module) for Apache, Nginx, IIS
-* Core Rule Set (CRS) - definitions of the malicious patterns (signatures)
-* False positive (FP) - a WAF blocking a valid request
-
 ## ModSecurity
 
+* a WAF engine (library, module) for Apache, Nginx, IIS
 * `/etc/nginx/modsec/modsecurity.conf` - config file
 * audit logs are great for visibility but bad for performance - you can disable them via `SecAuditEngine off` (you still have the Nginx error logs)
 * you should not inspect static content (images, ...) for performance reasons
@@ -36,16 +31,16 @@ SecRule REQUEST_URI "@streq /index.php" "id:1,phase:1,t:lowercase,deny"
 
 https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-(v2.x)
 
-## CRS
+## Core Rule Set (CRS)
 
-* blacklist rule set
+* definitions of the malicious patterns (signatures, blacklist rules)
 * should be used for all ModSecurity deployments
 * `crs/setup.conf` - config file
 * `crs/rules` - directory with rules (you should modify only `*EXCLUSION-RULES*`)
 * to tune, set a high anomaly threshold and progressively lower it
 * https://coreruleset.org, https://github.com/SpiderLabs/owasp-modsecurity-crs, https://www.modsecurity.org/CRS/Documentation/
 
-Paranoia levels:
+Paranoia levels (FP = false positive - a WAF blocking a valid request):
 
 1. (default) basic security, minimal amount of false positives (FPs)
 2. elevated security level, more rules, fair amount of FPs
