@@ -44,6 +44,7 @@ More
 ## Core Rule Set (CRS)
 
 * definitions of the malicious patterns (signatures, blacklist rules)
+* documentation https://github.com/SpiderLabs/OWASP-CRS-Documentation => https://www.modsecurity.org/CRS/Documentation/
 
 Files
 
@@ -68,7 +69,6 @@ More
 * https://coreruleset.org
 * https://coreruleset.org/20171214/practical-ftw-testing-the-core-rule-set-or-any-other-waf/
 * https://github.com/SpiderLabs/owasp-modsecurity-crs
-* https://www.modsecurity.org/CRS/Documentation/
 
 ## Attacks for testing WAF
 
