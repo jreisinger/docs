@@ -11,7 +11,7 @@ ModSecurity 3.0 has a new modular architecture, i.e. it's composed of:
 
 Files
 
-`modsecurity.conf` - [ModSecurity directives](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-(v2.x))
+`modsecurity.conf` - [ModSecurity directives](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v2.x%29)
 
 * Rule engine initialization
 * Request body handling
