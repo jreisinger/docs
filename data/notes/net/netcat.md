@@ -1,5 +1,3 @@
-(Up-to-date <a href="https://github.com/jreisinger/blog/blob/master/posts/netcat.md">source</a> of this post.)
-
 <img src="https://raw.github.com/jreisinger/blog/master/files/knife.jpg" alt="Knife" height="63" width="109" align="right">
 
 TCP/IP swiss army knife. Simple (yet powerful!) Unix utility that reads and writes data across network connections, using TCP or UDP.
