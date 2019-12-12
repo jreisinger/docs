@@ -12,6 +12,19 @@ counter-increment: h3counter;
 h3 {font-size:1.0em}
 h4 {font-size:0.75em}
 
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: underline;
+}
+
 body {
 counter-reset: h2counter;
 }
