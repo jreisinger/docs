@@ -9,9 +9,9 @@ ModSecurity 3.0 has a new modular architecture, i.e. it's composed of:
 1. [libmodsecurity](https://github.com/SpiderLabs/ModSecurity) (https://www.modsecurity.org) - core component containing the functionality and couple of rules ([docs](https://github.com/SpiderLabs/ModSecurity/wiki))
 2. a connector that links libmodsecurity to the web server it is running with - [NGINX](https://github.com/SpiderLabs/ModSecurity-nginx), Apache HTTP Server, and IIS
 
-Config files
+Files
 
-* `/etc/nginx/modsecurity/modsecurity.conf`
+* `modsecurity.conf` - config file
 
 Tips
 
@@ -43,11 +43,11 @@ More
 ## Core Rule Set (CRS)
 
 * definitions of the malicious patterns (signatures, blacklist rules)
-* should be used for all ModSecurity deployments
+
+Files
+
 * `crs/setup.conf` - config file
 * `crs/rules` - directory with rules (you should modify only `*EXCLUSION-RULES*`)
-* to tune, set a high anomaly threshold and progressively lower it
-* https://coreruleset.org, https://github.com/SpiderLabs/owasp-modsecurity-crs, https://www.modsecurity.org/CRS/Documentation/
 
 Paranoia levels (FP = false positive - a WAF blocking a valid request):
 
@@ -55,6 +55,17 @@ Paranoia levels (FP = false positive - a WAF blocking a valid request):
 2. elevated security level, more rules, fair amount of FPs
 3. online banking level security, specialized rules, more FPs
 4. nuclear powerplant level security, insane rules, lots of FPs
+
+Tips
+
+* should be used for all ModSecurity deployments
+* to tune, set a high anomaly threshold and progressively lower it
+
+More
+
+* https://coreruleset.org
+* https://github.com/SpiderLabs/owasp-modsecurity-crs
+* https://www.modsecurity.org/CRS/Documentation/
 
 ## Attacks for testing WAF
 
