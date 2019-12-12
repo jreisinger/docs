@@ -250,9 +250,8 @@ const tplHead = `
 
 const tplNavbar = `
 	<a href="/">home</a> |
-	<a href="/links">links</a> |
 	<a href="/notes">notes</a> |
-	<a href="/terms">terms</a> |
+	<a href="/blog">blog</a> |
 	<a href="/temp">temp</a>
 `
 
