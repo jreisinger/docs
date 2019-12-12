@@ -6,17 +6,14 @@
 * `/etc/nginx/modsec/modsecurity.conf` - config file
 * audit logs are great for visibility but bad for performance - you can disable them via `SecAuditEngine off` (you still have the Nginx error logs)
 * you should not inspect static content (images, ...) for performance reasons
+* https://www.nginx.com/blog/compiling-and-installing-modsecurity-for-open-source-nginx/
 
 ModSecurity 3.0 has a new modular architecture, i.e. it's composed of:
 
 1. [libmodsecurity](https://github.com/SpiderLabs/ModSecurity) (https://www.modsecurity.org) - core component containing the functionality and couple of rules ([docs](https://github.com/SpiderLabs/ModSecurity/wiki))
 2. a connector that links libmodsecurity to the web server it is running with - [NGINX](https://github.com/SpiderLabs/ModSecurity-nginx), Apache HTTP Server, and IIS
 
-https://www.nginx.com/blog/compiling-and-installing-modsecurity-for-open-source-nginx/
-
 ### `SecRule` ModSecurity directive
-
-https://www.modsecurity.org/CRS/Documentation/making.html
 
 ```
 SecRule VARIABLES   "OPERATOR"                "TRANSFORMATIONS,ACTIONS"
@@ -29,7 +26,8 @@ SecRule REQUEST_URI "@streq /index.php" "id:1,phase:1,t:lowercase,deny"
 * TRANSFORMATIONS - how to normalize VARIABLES data
 * ACTIONS - what to do when rule matches
 
-https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-(v2.x)
+* https://www.modsecurity.org/CRS/Documentation/making.html
+* https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-(v2.x)
 
 ## Core Rule Set (CRS)
 
