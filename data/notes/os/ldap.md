@@ -1,5 +1,3 @@
-(Up-to-date [source](https://github.com/jreisinger/blog/blob/master/posts/ldap.md) of this post.)
-
 ## Concepts and terms
 
 * protocol for querying and modifying a X.500-based directory service running over TCP/IP

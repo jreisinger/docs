@@ -1,5 +1,3 @@
-(Up-to-date [source](https://github.com/jreisinger/blog/blob/master/posts/lvm.md) of this post.)
-
 LVM is the implementation of [logical volume management](https://en.wikipedia.org/wiki/Logical_volume_management) in Linux. As I don't use it on a day-to-day basis, I created this blog in case I forgot the basics :-).
 
 ## Terminology

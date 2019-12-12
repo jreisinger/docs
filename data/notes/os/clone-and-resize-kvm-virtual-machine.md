@@ -1,5 +1,3 @@
-(Up-to-date [source](https://github.com/jreisinger/blog/blob/master/posts/clone-and-resize-kvm-virtual-machine.md) of this post.)
-
 I needed to upgrade (from Squeeze to Wheezy) some important virtual servers. As
 I wanted a minimal impact of the upgrade, I chose this procedure:
 
