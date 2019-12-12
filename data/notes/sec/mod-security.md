@@ -49,6 +49,12 @@ Files
 * `crs/setup.conf` - config file
 * `crs/rules` - directory with rules (you should modify only `*EXCLUSION-RULES*`)
 
+Tips
+
+* should be used for all ModSecurity deployments
+* to [tune](https://www.oreilly.com/ideas/how-to-tune-your-waf-installation-to-reduce-false-positives
+) set a high anomaly threshold and progressively lower it
+
 Paranoia levels (FP = false positive - a WAF blocking a valid request):
 
 1. (default) basic security, minimal amount of false positives (FPs)
@@ -56,14 +62,10 @@ Paranoia levels (FP = false positive - a WAF blocking a valid request):
 3. online banking level security, specialized rules, more FPs
 4. nuclear powerplant level security, insane rules, lots of FPs
 
-Tips
-
-* should be used for all ModSecurity deployments
-* to tune, set a high anomaly threshold and progressively lower it
-
 More
 
 * https://coreruleset.org
+* https://coreruleset.org/20171214/practical-ftw-testing-the-core-rule-set-or-any-other-waf/
 * https://github.com/SpiderLabs/owasp-modsecurity-crs
 * https://www.modsecurity.org/CRS/Documentation/
 
@@ -75,8 +77,3 @@ curl "https://$FQDN/?id=1'%20or%20'1'%20=%20'" # SQL Injection (SQLi)
 curl 'https://$FQDN/?page=/etc/passwd'         # Local File Inclusion (LFI)
 curl 'https://$FQDN/?<script>'                 # Cross Site Scripting (XSS)
 ```
-
-## More
-
-* https://www.oreilly.com/ideas/how-to-tune-your-waf-installation-to-reduce-false-positives
-* https://coreruleset.org/20171214/practical-ftw-testing-the-core-rule-set-or-any-other-waf/
