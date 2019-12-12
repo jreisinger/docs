@@ -1,6 +1,4 @@
-(Up-to-date [source](https://github.com/jreisinger/blog/blob/master/posts/unix-times.md) of this post.)
-
-Unix filesystem consists of two parts: 
+Unix filesystem consists of two parts:
 
 * data blocks - contents of files and directories (directories are special files with inode-name pairs)
 * index to those data blocks
