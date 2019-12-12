@@ -3,15 +3,24 @@
 ## ModSecurity
 
 * a WAF engine (library, module) for Apache, Nginx, IIS
-* `/etc/nginx/modsec/modsecurity.conf` - config file
-* audit logs are great for visibility but bad for performance - you can disable them via `SecAuditEngine off` (you still have the Nginx error logs)
-* you should not inspect static content (images, ...) for performance reasons
-* https://www.nginx.com/blog/compiling-and-installing-modsecurity-for-open-source-nginx/
 
 ModSecurity 3.0 has a new modular architecture, i.e. it's composed of:
 
 1. [libmodsecurity](https://github.com/SpiderLabs/ModSecurity) (https://www.modsecurity.org) - core component containing the functionality and couple of rules ([docs](https://github.com/SpiderLabs/ModSecurity/wiki))
 2. a connector that links libmodsecurity to the web server it is running with - [NGINX](https://github.com/SpiderLabs/ModSecurity-nginx), Apache HTTP Server, and IIS
+
+Config files
+
+* `/etc/nginx/modsecurity/modsecurity.conf`
+
+Tips
+
+* audit logs are great for visibility but bad for performance - you can disable them via `SecAuditEngine off` (you still have the Nginx error logs)
+* you should not inspect static content (like images) for performance reasons
+
+More
+
+* https://www.nginx.com/blog/compiling-and-installing-modsecurity-for-open-source-nginx/
 
 ### `SecRule` ModSecurity directive
 
