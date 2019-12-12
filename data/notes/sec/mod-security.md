@@ -11,7 +11,7 @@ ModSecurity 3.0 has a new modular architecture, i.e. it's composed of:
 
 Files
 
-`modsecurity.conf` - config file
+`modsecurity.conf` - ModSecurity config file
 
 * Rule engine initialization
 * Request body handling
@@ -21,6 +21,10 @@ Files
 * Debug log configuration
 * Audit log configuration
 * Miscellaneous
+
+`nginx.conf` - Nginx config file
+
+* ModSecurity-Nginx connector [directives](https://github.com/SpiderLabs/ModSecurity-nginx#usage) (like `modsecurity on;`, `modsecurity_rules_file /etc/nginx/modsecurity/nginx-modsecurity.conf;`)
 
 Tips
 
