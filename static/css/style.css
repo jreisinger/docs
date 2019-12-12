@@ -1,3 +1,4 @@
+/* Headings */
 h1 {font-size:1.5em; counter-reset: h2counter;}
 h2:before {
 content: counter(h2counter) ".\0000a0\0000a0";
@@ -12,30 +13,19 @@ counter-increment: h3counter;
 h3 {font-size:1.0em}
 h4 {font-size:0.75em}
 
-a:link {
-  text-decoration: none;
-}
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-a:active {
-  text-decoration: underline;
-}
+/* Links */
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:active { text-decoration: underline; }
 
-body {
-counter-reset: h2counter;
-}
+body { counter-reset: h2counter; }
 
-code
-{
-font-family: monospace;
-}
+/* Inline code */
+code { font-family: monospace; }
 
-pre
-{
+/* Code blocks */
+pre {
 background: #f7f7f7;
 overflow: auto;
 white-space: pre-wrap;
