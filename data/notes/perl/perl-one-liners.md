@@ -93,7 +93,7 @@ cat /etc/ssh/sshd_config | perl -lne '!/^#/ and print' | perl -00 -pe ''
 Create HTML anchor element:
 
 ```bash
-perl -le 'print "<a href=\"$ARGV[1]\">$ARGV[0]</a>"' 'perldoc' http://perldoc.perl.org/
+perl -le 'print "<a href=\"$ARGV[1]\">$ARGV[0]</a>"' perldoc http://perldoc.perl.org/
 ```
 
 ## Fun
