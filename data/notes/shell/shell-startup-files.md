@@ -1,5 +1,3 @@
-(Up-to-date <a href="https://github.com/jreisinger/blog/blob/master/posts/login-scripts.md">source</a> of this post.)
-
 Bash Startup Files
 ------------------
 
