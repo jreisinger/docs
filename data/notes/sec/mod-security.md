@@ -11,7 +11,7 @@ ModSecurity 3.0 has a new modular architecture, i.e. it's composed of:
 
 Files
 
-`modsecurity.conf` - ModSecurity config file
+`modsecurity.conf` - [ModSecurity directives](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-(v2.x))
 
 * Rule engine initialization
 * Request body handling
@@ -22,9 +22,7 @@ Files
 * Audit log configuration
 * Miscellaneous
 
-`nginx.conf` - Nginx config file
-
-* ModSecurity-Nginx [connector directives](https://github.com/SpiderLabs/ModSecurity-nginx#usage) (like `modsecurity on`, `modsecurity_rules_file /etc/nginx/modsecurity/nginx-modsecurity.conf`)
+`nginx.conf` - ModSecurity-Nginx [connector directives](https://github.com/SpiderLabs/ModSecurity-nginx#usage) (like `modsecurity on`, `modsecurity_rules_file /etc/nginx/modsecurity/nginx-modsecurity.conf`)
 
 Tips
 
@@ -33,6 +31,7 @@ Tips
 
 More
 
+* https://github.com/SpiderLabs/ModSecurity/wiki
 * https://www.nginx.com/blog/compiling-and-installing-modsecurity-for-open-source-nginx/
 
 ### `SecRule` ModSecurity directive
@@ -51,7 +50,6 @@ SecRule REQUEST_URI "@streq /index.php" "id:1,phase:1,t:lowercase,deny"
 More
 
 * https://www.modsecurity.org/CRS/Documentation/making.html
-* https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-(v2.x)
 
 ## Core Rule Set (CRS)
 
