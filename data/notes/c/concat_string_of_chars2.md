@@ -1,3 +1,4 @@
+```
 // Programming in C, 4th ed. - Ch. 9
 
 #include <stdio.h>
@@ -31,3 +32,4 @@ int main(void) {
 
     return 0;
 }
+```
