@@ -11,7 +11,16 @@ ModSecurity 3.0 has a new modular architecture, i.e. it's composed of:
 
 Files
 
-* `modsecurity.conf` - config file
+`modsecurity.conf` - config file
+
+* Rule engine initialization
+* Request body handling
+* Response body handling
+* Filesystem configuration
+* File uploads handling configuration
+* Debug log configuration
+* Audit log configuration
+* Miscellaneous
 
 Tips
 
