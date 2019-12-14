@@ -4,7 +4,7 @@ I think Perl one-liners are still super useful. They are small Perl programs tha
 perl -Mbignum=bpi -wle "print bpi(2000)"
 ```
 
-`perl` is the Perl language interpreter. `-M` and `-wle` are command line switches (or options) that modify the `perl`'s behaviour. See below for explanation of what they mean. The string within doubles quotes is the Perl code that gets executed. In this case it calculates the Pi with accuracy of 2000 digits. The command will take a while to finish.
+`perl` is the Perl language interpreter. `-M` and `-wle` are command line switches (or options) that modify the `perl`'s behaviour. See below for explanation of what they mean. The string within doubles quotes is the Perl code that gets executed. In this case it calculates the PI with accuracy of 2000 digits. The command will take a while to finish.
 
 # Switches
 
