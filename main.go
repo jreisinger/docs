@@ -14,8 +14,15 @@ const repoPath = "/tmp/homepage"
 func main() {
 	// serve static files
 	// (https://www.alexedwards.net/blog/serving-static-sites-with-go)
+	//
+	// styles
 	fileServer := http.FileServer(http.Dir(repoPath + "/static/"))
 	http.Handle("/static/", http.StripPrefix("/static/", fileServer))
+	//
+	// favicon
+	http.HandleFunc("/favicon.ico", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, repoPath+"/static/favicon.ico")
+	})
 
 	// serve the rest
 	http.HandleFunc("/", handler)
