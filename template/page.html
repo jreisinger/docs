@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ .Title }}</title>
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+
+<body>
+<a href="/home">home</a> |
+<a href="/notes">notes</a> |
+<a href="/blog">blog</a> |
+<a href="/temp">temp</a>
+
+{{$UrlPath:=.UrlPath}}
+
+> {{$UrlPath}}
+
+{{if .IsDir}}
+
+<ul>
+{{range .Files}}
+<li><a href="{{ $UrlPath }}/{{ . }}">{{ . }}</a></li>
+{{end}}
+</ul>
+
+<a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}">source</a>
+
+{{else}}
+
+{{.Body}}
+<a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}.md">source</a>
+
+{{end}}
+</body>
+
+</html>
