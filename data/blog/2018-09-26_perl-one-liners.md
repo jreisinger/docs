@@ -1,9 +1,15 @@
-I think Perl one liners are still super useful (even Kubernetes people like them to do their [jobs](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/#running-an-example-job) :-). They are small Perl programs that are run directly from a command line (ex. on Unix/Linux, Cygwin). For a deeper dive see [Famous Perl One-Liners Explained](http://www.catonmat.net/blog/perl-one-liners-explained-part-one/). If you want a book have a look at [Minimal Perl for UNIX and Linux People](http://www.amazon.com/Minimal-Perl-UNIX-Linux-People/dp/1932394508/ref=sr_1_1?ie=UTF8&qid=1358096838&sr=8-1&keywords=minimal+perl+for+unix).
+I think Perl one-liners are still super useful. They are small Perl programs that are run directly from a command line (ex. on Unix/Linux, Cygwin). Like this one from the Kubernetes [job](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/#running-an-example-job) documentation:
 
-## `perl` command line switches
+```
+perl -Mbignum=bpi -wle "print bpi(2000)"
+```
 
-* `-e '<code>'` (execute) -- execute `<code>`
-* `-E '<code>'` (execute) -- execute `<code>` enabling [feature](http://perldoc.perl.org/feature.html) bundle (like `use 5.010`) for your version of Perl
+`perl` is the Perl language interpreter. `-M` and `-wle` are the command line switches or options that modify `perl`'s behaviour. See below for explanation what they mean. The string within doubles quotes is the Perl code that gets executed. In this case it calculates the Pi with accuracy of 2000 digits. The command will take a while to finish.
+
+These are the command line switches I find most useful
+
+* `-e '<code>'` (execute) -- **e**xecute `<code>`
+* `-E '<code>'` (execute) -- *E*xecute `<code>` enabling [feature](http://perldoc.perl.org/feature.html) bundle (like `use 5.010`) for your version of Perl
 * `-p` (printing) -- loop through lines, reading and printing them (in-script equivalent: `while (<>) { [<code>] print }`)
 * `-w` (warnings) -- enable warnings (generally advisable)
 * `-n` (nonautoprinting) -- loop through lines, reading but not printing them
@@ -11,6 +17,7 @@ I think Perl one liners are still super useful (even Kubernetes people like them
 * `-i[<.ext>]` (intrepid) -- create backup file (with `<.ext>` extension if defined)
 * `-a` (autosplit mode) -- split the `$_` into `@F` (space is the default separator, change it with `-F`, ex. `-F:`)
 * `-s` (switch) -- rudimentary parsing of command line switches (see "Git-tracked directory" multi-liner below)
+* `-m<module>[=<subroutine>,...]` -- load subroutine(s) from a module
 
 See [perlrun](http://perldoc.perl.org/perlrun.html) for more.
 
@@ -113,3 +120,5 @@ Greet user (stolen from [Utilitarian](http://perlmonks.org/?node_id=681898)) (-:
 ```bash
 perl -E 'say "Good ".qw(night morning afternoon evening)[(localtime)[2]/6].", $ENV{USER}"'
 ```
+
+For a deeper dive see [Famous Perl One-Liners Explained](http://www.catonmat.net/blog/perl-one-liners-explained-part-one/). If you want a book have a look at [Minimal Perl for UNIX and Linux People](http://www.amazon.com/Minimal-Perl-UNIX-Linux-People/dp/1932394508/ref=sr_1_1?ie=UTF8&qid=1358096838&sr=8-1&keywords=minimal+perl+for+unix).
