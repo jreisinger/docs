@@ -25,8 +25,6 @@ See [perlrun](http://perldoc.perl.org/perlrun.html) for more.
 
 # Examples
 
-## Search and replace
-
 Find lines in logs that contain error or warning:
 
 ```
