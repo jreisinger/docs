@@ -29,7 +29,7 @@ func main() {
 
 // handle requests
 func handler(w http.ResponseWriter, r *http.Request) {
-	urlPath := r.URL.Path
+	urlPath := r.URL.Path[1:] // remove leading /
 
 	if urlPath == "/" {
 		http.Redirect(w, r, "/home", http.StatusFound)

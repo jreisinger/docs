@@ -19,7 +19,7 @@ func RenderPage(repoURL string, repoPath string, urlPath string) (*Page, error) 
 	dataPath := repoPath + "/data"
 
 	// map URL path to filesystem path (without .md)
-	filePath := dataPath + "/" + urlPath[1:] // remove leading /
+	filePath := dataPath + "/" + urlPath
 
 	title := path.Base(filePath)
 
