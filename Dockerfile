@@ -20,9 +20,11 @@ RUN go build -o /bin/homepage
 # Create a single layer image.
 #FROM scratch # -> this doesn't work
 FROM alpine:latest
-COPY --from=build /bin/homepage /bin/homepage
+WORKDIR /app/homepage
+COPY --from=build /bin/homepage /app/homepage/homepage
+COPY --from=build /go/src/homepage/template /app/homepage/template
 RUN apk update
 RUN apk add git
 
 EXPOSE 5001
-ENTRYPOINT ["/bin/homepage"]
+ENTRYPOINT ["/app/homepage/homepage"]
