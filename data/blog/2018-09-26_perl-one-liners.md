@@ -19,7 +19,7 @@ These are some of the most used command line switches:
 * `-i[<.ext>]` (**i**ntrepid) -- create backup file (with `<.ext>` extension if defined)
 * `-a` (**a**utosplit) -- split the `$_` into `@F` (space is the default separator, change it with `-F`, ex. `-F:`)
 * `-s` -- rudimentary parsing of command line **s**witches (see "Git-tracked directory" multi-liner below)
-* `-m<module>[=<subroutine>,...]` -- load subroutine(s) from a **m**odule
+* `-M<module>[=<subroutine>,...]` -- load subroutine(s) from a **m**odule
 
 See [perlrun](http://perldoc.perl.org/perlrun.html) for more.
 
