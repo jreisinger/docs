@@ -25,19 +25,25 @@ See [perlrun](http://perldoc.perl.org/perlrun.html) for more.
 
 # Examples
 
-Seach and replace:
+## Search and replace
+
+Find lines in logs that contain error or warning:
 
 ```
-# Find lines containing `<regex>`:
-perl -lne 'print if /<regex>/' aFile
+perl -wne '/error|warning/i && print' /var/log/*.log
+```
 
-# Find DNS resource records of type A:
-find /etc/bind -type f | xargs perl -ne '/\s+A\s+/ and print "$ARGV: $_"'
+The thing between slashes is a regular expression. It means match string `error` or string `warning` anywhere in the log line. `i` says to Perl to ignore the case. So it will match ERROR, error, Warning etc. If the regex finds a match (i.e. evaluates to true) the `&&` logical operator runs the `print` statement that will print the line containing the match.
 
-# Emit the transformed passwd file to STDOUT:
+Substitute `/bin/sh` with `/bin/bash` and emit the transformed passwd file to STDOUT:
+
+```
 perl -pe 's#/bin/sh$#/bin/bash#' /etc/passwd
+```
 
-# In-place editing with backups:
+Substitute `colour` with `color` in all text files. The original files will be kept with `.bak` suffix:
+
+```
 perl -i.bak -pe 's/colour/color/g' *.txt
 ```
 
@@ -50,14 +56,6 @@ $ cat birthdays.txt
 06/24/44 Jeff Beck
 $ perl -lane 'print "@F[1,0]"' birthdays.txt
 ```
-
-Leave out the first column:
-
-```
-history | perl -anE 'say join " ", @F[1 .. $#F]' | sort | uniq
-```
-
-* see http://www.perlmonks.org/?node_id=739305 for why you can't use -1 as array index here
 
 Convert DOS files to Unix files:
 
