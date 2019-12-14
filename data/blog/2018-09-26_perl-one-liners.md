@@ -25,6 +25,8 @@ See [perlrun](http://perldoc.perl.org/perlrun.html) for more.
 
 # Examples
 
+## Search and replace
+
 Find lines in logs that contain error or warning:
 
 ```
@@ -33,19 +35,25 @@ perl -wne '/error|warning/i && print' /var/log/*.log
 
 The thing between slashes is a regular expression. It means match string `error` or string `warning` anywhere in the log line. `i` says to Perl to ignore the case. So it will match ERROR, error, Warning etc. If the regex finds a match (i.e. evaluates to true) the `&&` logical operator runs the `print` statement that will print the line containing the match.
 
-Substitute `/bin/sh` with `/bin/bash` and emit the transformed passwd file to STDOUT:
+Replace `/bin/sh` with `/bin/bash` and emit the transformed passwd file to STDOUT:
 
 ```
 perl -pe 's#/bin/sh$#/bin/bash#' /etc/passwd
 ```
 
-Substitute `colour` with `color` in all text files. The original files will be kept with `.bak` suffix:
+We used `#` instead of `/` as delimeters for better readibility since to strings themselves contain slashes.
+
+Replace `colour` with `color` in all text files. The original files will be kept with `.bak` suffix:
 
 ```
 perl -i.bak -pe 's/colour/color/g' *.txt
 ```
 
-Switch columns:
+`g` (global) means replace all occurences (in a line) not just the first one.
+
+## Columns
+
+Print 2nd and 1st column:
 
 ```
 $ cat birthdays.txt
@@ -53,35 +61,41 @@ $ cat birthdays.txt
 11/27/42 Jimi Hendrix
 06/24/44 Jeff Beck
 $ perl -lane 'print "@F[1,0]"' birthdays.txt
+Eric 03/30/45
+Jimi 11/27/42
+Jeff 06/24/44
 ```
 
 Convert DOS files to Unix files:
 
 ```
-perl -i -pe 's/\r//' <file1> <file2> ...   # dos-to-unix
-perl -i -pe 's/$/\r/' <file1> <file2> ...  # unix-to-dos
+perl -i -pe 's/\r//'  <file1> <file2> ... # dos-to-unix
+perl -i -pe 's/$/\r/' <file1> <file2> ... # unix-to-dos
 ```
 
-Total size of found files (using the [Eskimo Greeting Operator](http://www.catonmat.net/blog/secret-perl-operators/#eskimo) as suggested by [PerlMonks](http://www.perlmonks.org/?node_id=1172707)):
+Calculate the total size of found log files:
 
-```bash
+```
 find /opt/splunk/syslog/ -iname "*log*" -type f -mtime +30 | \
 perl -lne '$sum += (stat)[7]}{print $sum'
 ```
 
-Remove comments and compress all consecutive blank lines into one ([more](http://www.catonmat.net/blog/perl-one-liners-explained-part-one/)):
+We are using here the so called [Eskimo Greeting Operator](http://www.catonmat.net/blog/secret-perl-operators/#eskimo) as suggested by [PerlMonks](http://www.perlmonks.org/?node_id=1172707).
 
-```bash
-cat /etc/ssh/sshd_config | perl -lne '!/^#/ and print' | perl -00 -pe ''
-```
-
-Fun
+Remove comments and compress all consecutive blank lines into one:
 
 ```
-# Find big palindromes:
+cat /etc/ssh/sshd_config | perl -lne '!/^#/ && print' | perl -00 -pe ''
+```
+
+Find big palindromes:
+
+```
 perl -lne 'print if $_ eq reverse and length >= 5' /usr/share/dict/words
 
-# Greet user (stolen from [Utilitarian](http://perlmonks.org/?node_id=681898)) (-:
+Greet user (stolen from [Utilitarian](http://perlmonks.org/?node_id=681898)) (-:
+
+```
 perl -E 'say "Good ".qw(night morning afternoon evening)[(localtime)[2]/6].", $ENV{USER}"'
 ```
 
