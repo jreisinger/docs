@@ -1,4 +1,4 @@
-I think Perl one-liners are still super useful. They are small Perl programs that are run directly from a command line (ex. on Unix/Linux, Cygwin). Like this one from the Kubernetes [job](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/#running-an-example-job) documentation:
+I think Perl one-liners are still super useful. They are small [Perl](https://www.perl.org/) programs that are run directly from a command line (ex. on Unix/Linux, Cygwin). Like this one from the Kubernetes [job](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/#running-an-example-job) documentation:
 
 ```
 perl -Mbignum=bpi -wle "print bpi(2000)"
@@ -17,7 +17,7 @@ These are some of the most used command line switches:
 * `-n` -- loop through lines, reading but **n**ot printing them
 * `-l` -- print a new**l**ine (`$/` actually) after each line of output and chomp newline if used with `-n` or `-p`
 * `-i[<.ext>]` (**i**ntrepid) -- create backup file (with `<.ext>` extension if defined)
-* `-a` (**a**utosplit) -- split the `$_` into `@F` (space is the default separator, change it with `-F`, ex. `-F:`)
+* `-a` (**a**utosplit) -- split the `$_` default variable into `@F` array (space is the default separator, change it with `-F`, ex. `-F:`)
 * `-s` -- rudimentary parsing of command line **s**witches (see "Git-tracked directory" multi-liner below)
 * `-M<module>[=<subroutine>,...]` -- load subroutine(s) from a **m**odule
 
