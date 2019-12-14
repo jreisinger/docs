@@ -23,6 +23,7 @@ Test locally:
 ```
 make build
 ./main
+
 curl localhost:5001
 ```
 
