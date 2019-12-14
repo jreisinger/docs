@@ -36,10 +36,16 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	p, err := util.RenderPage(repoURL, repoPath, urlPath)
-	util.Check(err)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusNotFound)
+		return
+	}
 
 	t, err := template.ParseFiles("template/page.html")
-	util.Check(err)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
 
 	t.Execute(w, p)
 }

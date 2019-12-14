@@ -1,6 +1,7 @@
 package util
 
 import (
+	"errors"
 	"html/template"
 	"path"
 )
@@ -33,6 +34,6 @@ func RenderPage(repoURL string, repoPath string, urlPath string) (*Page, error) 
 		return &Page{Title: title, Body: body, RepoURL: repoURL, UrlPath: urlPath}, nil
 	}
 
-	// FIXME: if filePath does not map to en existing directory nor file return error
-	return nil, nil
+	err := errors.New("rendering page: URL path does not map to any filesystem path")
+	return nil, err
 }
