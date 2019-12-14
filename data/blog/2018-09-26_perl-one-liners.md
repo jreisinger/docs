@@ -8,16 +8,16 @@ perl -Mbignum=bpi -wle "print bpi(2000)"
 
 These are the command line switches I find most useful
 
-* `-e '<code>'` (execute) -- **e**xecute `<code>`
-* `-E '<code>'` (execute) -- *E*xecute `<code>` enabling [feature](http://perldoc.perl.org/feature.html) bundle (like `use 5.010`) for your version of Perl
-* `-p` (printing) -- loop through lines, reading and printing them (in-script equivalent: `while (<>) { [<code>] print }`)
-* `-w` (warnings) -- enable warnings (generally advisable)
-* `-n` (nonautoprinting) -- loop through lines, reading but not printing them
-* `-l` (line) -- print a newline (`$/` actually) after each line of output and chomp newline if used with `-n` or `-p`
-* `-i[<.ext>]` (intrepid) -- create backup file (with `<.ext>` extension if defined)
-* `-a` (autosplit mode) -- split the `$_` into `@F` (space is the default separator, change it with `-F`, ex. `-F:`)
-* `-s` (switch) -- rudimentary parsing of command line switches (see "Git-tracked directory" multi-liner below)
-* `-m<module>[=<subroutine>,...]` -- load subroutine(s) from a module
+* `-e '<code>'` -- **e**xecute `<code>`
+* `-E '<code>'` -- **E**xecute `<code>` enabling [feature](http://perldoc.perl.org/feature.html) bundle (like `use 5.010`) for your version of Perl
+* `-w` -- enable **w**arnings (generally advisable)
+* `-p` -- loop through lines, reading and **p**rinting them (in-script equivalent: `while (<>) { [<code>] print }`)
+* `-n` -- loop through lines, reading but **n**ot printing them
+* `-l` -- print a new**l**ine (`$/` actually) after each line of output and chomp newline if used with `-n` or `-p`
+* `-i[<.ext>]` (**i**ntrepid) -- create backup file (with `<.ext>` extension if defined)
+* `-a` (**a**utosplit) -- split the `$_` into `@F` (space is the default separator, change it with `-F`, ex. `-F:`)
+* `-s` -- rudimentary parsing of command line **s**witches (see "Git-tracked directory" multi-liner below)
+* `-m<module>[=<subroutine>,...]` -- load subroutine(s) from a **m**odule
 
 See [perlrun](http://perldoc.perl.org/perlrun.html) for more.
 
