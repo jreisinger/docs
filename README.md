@@ -1,6 +1,12 @@
-Code and data for my [home page](https://reisinge.net). If you edit stuff in `data` folder it will be reflected almost instantly in https://reisinge.net.
+Code and data for my [home page](https://reisinge.net).
 
-## Initialize the project
+## Usage
+
+Edit stuff in `data` folder. It will be reflected almost instantly in the [homepage](https://reisinge.net).
+
+## Development
+
+Initialize the project
 
 ```
 # Let's use Go modules for dependency management.
@@ -12,37 +18,16 @@ go mod init github.com/jreisinger/homepage
 vim main.go
 ```
 
-## Build, run and test the app
+Test locally:
 
 ```
-go build main.go  # will add modules to go.mod and go.sum if needed
+make build
 ./main
 curl localhost:5001
 ```
 
-## Docker stuff
+Release to dockerhub:
 
 ```
-# Build multiplatform images
-export GOOS=linux  # darwin
-export GOARCH=arm  # amd64
-docker build --build-arg GOOS=$GOOS --build-arg GOARCH=$GOARCH -t homepage-$GOOS-$GOARCH .
-
-# Push image to public registry - hub.docker.com
-docker login
-docker tag homepage-$GOOS-$GOARCH:latest reisinge/homepage-$GOOS-$GOARCH:latest
-docker push reisinge/homepage-$GOOS-$GOARCH:latest
+make release
 ```
-
-```
-# Run the image.
-docker run -d -p 5001:5001 homepage-$GOOS-$GOARCH
-
-# Test the image.
-curl localhost:5001
-```
-
-Docker image building is based on:
-
-* https://www.callicoder.com/docker-golang-image-container-example/
-* https://github.com/jreisinger/quotes
