@@ -22,7 +22,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	urlPath := r.URL.Path
 
 	if urlPath == "/" {
-		http.Redirect(w, r, "/about", http.StatusFound)
+		http.Redirect(w, r, "/home", http.StatusFound)
 	}
 
 	p, err := util.RenderPage(repoURL, repoPath, urlPath)
