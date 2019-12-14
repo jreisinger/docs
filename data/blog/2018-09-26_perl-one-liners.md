@@ -51,7 +51,14 @@ perl -i.bak -pe 's/colour/color/g' *.txt
 
 `g` (global) means replace all occurences (in a line) not just the first one.
 
-## Columns
+Convert DOS files to Unix files:
+
+```
+perl -i -pe 's/\r//'  <file1> <file2> ... # dos-to-unix
+perl -i -pe 's/$/\r/' <file1> <file2> ... # unix-to-dos
+```
+
+## Various 
 
 Print 2nd and 1st column:
 
@@ -66,13 +73,6 @@ Jimi 11/27/42
 Jeff 06/24/44
 ```
 
-Convert DOS files to Unix files:
-
-```
-perl -i -pe 's/\r//'  <file1> <file2> ... # dos-to-unix
-perl -i -pe 's/$/\r/' <file1> <file2> ... # unix-to-dos
-```
-
 Calculate the total size of found log files:
 
 ```
@@ -81,12 +81,6 @@ perl -lne '$sum += (stat)[7]}{print $sum'
 ```
 
 We are using here the so called [Eskimo Greeting Operator](http://www.catonmat.net/blog/secret-perl-operators/#eskimo) as suggested by [PerlMonks](http://www.perlmonks.org/?node_id=1172707).
-
-Remove comments and compress all consecutive blank lines into one:
-
-```
-cat /etc/ssh/sshd_config | perl -lne '!/^#/ && print' | perl -00 -pe ''
-```
 
 Find big palindromes:
 
