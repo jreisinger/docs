@@ -43,7 +43,7 @@ Replace `/bin/sh` with `/bin/bash` and emit the transformed passwd file to STDOU
 perl -pe 's#/bin/sh$#/bin/bash#' /etc/passwd
 ```
 
-We used `#` instead of `/` as delimeters for better readibility since to strings themselves contain slashes.
+We used `#` instead of `/` as delimeter for better readibility since to strings themselves contain slashes. `$` means end of the string.
 
 Replace `colour` with `color` in all text files. The original files will be kept with `.bak` suffix:
 
@@ -51,9 +51,9 @@ Replace `colour` with `color` in all text files. The original files will be kept
 perl -i.bak -pe 's/colour/color/g' *.txt
 ```
 
-`g` (global) means replace all occurences (in a line) not just the first one.
+`g` (global) means replace all occurences in a string not just the first one.
 
-Convert DOS files to Unix files:
+Convert between DOS and Unix newline:
 
 ```
 perl -i -pe 's/\r//'  <file1> <file2> ... # dos-to-unix
@@ -62,7 +62,7 @@ perl -i -pe 's/$/\r/' <file1> <file2> ... # unix-to-dos
 
 ### Various 
 
-Print 2nd and 1st column:
+Print 2nd and 1st column out of three original columns:
 
 ```
 $ cat birthdays.txt
