@@ -31,7 +31,12 @@ func ListFiles(filePath string) []string {
 	var files []string
 	for _, fi := range fileInfos {
 		basename := fi.Name()
+
 		name := strings.TrimSuffix(basename, filepath.Ext(basename))
+		if fi.IsDir() {
+			name += "/"
+		}
+
 		files = append(files, name)
 	}
 
