@@ -1,3 +1,5 @@
+# Introduction to Perl one-liners
+
 I think Perl one-liners are still super useful. They are small [Perl](https://www.perl.org/) programs that are run directly from command line. Like this one from the Kubernetes [job](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/#running-an-example-job) documentation:
 
 ```
@@ -6,7 +8,7 @@ perl -Mbignum=bpi -wle "print bpi(2000)"
 
 `perl` is the Perl language interpreter. `-M` and `-wle` are command line switches (or options) that modify the `perl`'s behaviour. See below for explanation of what they mean. The string within double quotes is the Perl code that gets executed. In this case it uses the `bpi` subroutine from the [bignum](https://perldoc.perl.org/bignum.html) module to calculate the PI with accuracy of 2000 digits. The command will take a while to finish.
 
-# Switches
+## Switches
 
 These are some of the most used command line switches:
 
@@ -23,9 +25,9 @@ These are some of the most used command line switches:
 
 See [perlrun](http://perldoc.perl.org/perlrun.html) for more.
 
-# Examples
+## Examples
 
-## Search and replace
+### Search and replace
 
 Find lines in logs that contain error or warning:
 
@@ -33,7 +35,7 @@ Find lines in logs that contain error or warning:
 perl -wne '/error|warning/i && print' /var/log/*.log
 ```
 
-The thing between slashes is a regular expression. It means match string `error` or string `warning` anywhere in the log line. `i` says to Perl to ignore the case. So it will match ERROR, error, Warning etc. If the regex finds a match (i.e. evaluates to true) the `&&` logical operator runs the `print` statement that will print the line containing the match.
+The thing between slashes is a [regular expression](https://perldoc.perl.org/perlre.html). It means match string `error` or string `warning` anywhere in the log line. `i` says to Perl to ignore the case. So it will match ERROR, error, Warning etc. If the regex finds a match (i.e. evaluates to true) the `&&` logical operator runs the `print` statement that will print the line containing the match.
 
 Replace `/bin/sh` with `/bin/bash` and emit the transformed passwd file to STDOUT:
 
@@ -58,7 +60,7 @@ perl -i -pe 's/\r//'  <file1> <file2> ... # dos-to-unix
 perl -i -pe 's/$/\r/' <file1> <file2> ... # unix-to-dos
 ```
 
-## Various 
+### Various 
 
 Print 2nd and 1st column:
 
