@@ -86,4 +86,6 @@ perl -lne '$sum += (stat)[7]}{print $sum'
 
 The [stat](https://perldoc.perl.org/functions/stat.html) function returns a 13-element list of status info about a file. We take the 8th element (with index `7`) which is the size of a file. We loop over the found files and add the size of each into the `$sum` variable. The handy [Eskimo Greeting Operator](http://www.catonmat.net/blog/secret-perl-operators/#eskimo) is for priting the `$sum` when the loop is over (suggested by [PerlMonks](http://www.perlmonks.org/?node_id=1172707)).
 
+## More
+
 For a deeper dive see [Famous Perl One-Liners Explained](http://www.catonmat.net/blog/perl-one-liners-explained-part-one/). If you want a book have a look at [Minimal Perl for UNIX and Linux People](http://www.amazon.com/Minimal-Perl-UNIX-Linux-People/dp/1932394508/ref=sr_1_1?ie=UTF8&qid=1358096838&sr=8-1&keywords=minimal+perl+for+unix).
