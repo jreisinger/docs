@@ -62,38 +62,28 @@ perl -i -pe 's/$/\r/' <file1> <file2> ... # unix-to-dos
 
 ### Various 
 
-Print 2nd and 1st column out of three original columns:
+Print 2nd and 1st field (column) out of three original ones:
 
 ```
 $ cat birthdays.txt
 03/30/45 Eric Clapton
 11/27/42 Jimi Hendrix
 06/24/44 Jeff Beck
-$ perl -lane 'print "@F[1,0]"' birthdays.txt
+$ perl -lane 'print @F[1,0]' birthdays.txt
 Eric 03/30/45
 Jimi 11/27/42
 Jeff 06/24/44
 ```
 
-Calculate the total size of found log files:
+The field numbering starts at 0.
+
+Calculate the total size of log files older than 30 days:
 
 ```
 find /opt/splunk/syslog/ -iname "*log*" -type f -mtime +30 | \
 perl -lne '$sum += (stat)[7]}{print $sum'
 ```
 
-We are using here the so called [Eskimo Greeting Operator](http://www.catonmat.net/blog/secret-perl-operators/#eskimo) as suggested by [PerlMonks](http://www.perlmonks.org/?node_id=1172707).
-
-Find big palindromes:
-
-```
-perl -lne 'print if $_ eq reverse and length >= 5' /usr/share/dict/words
-```
-
-Greet user (stolen from [Utilitarian](http://perlmonks.org/?node_id=681898)) (-:
-
-```
-perl -E 'say "Good ".qw(night morning afternoon evening)[(localtime)[2]/6].", $ENV{USER}"'
-```
+The [stat](https://perldoc.perl.org/functions/stat.html) function returns a 13-element list of status info about a file. We take the 8th element (with index `7`) which is the size of a file. We loop over the found files and add the size of each into the `$sum` variable. The handy [Eskimo Greeting Operator](http://www.catonmat.net/blog/secret-perl-operators/#eskimo) is for priting the `$sum` when the loop is over (suggested by [PerlMonks](http://www.perlmonks.org/?node_id=1172707)).
 
 For a deeper dive see [Famous Perl One-Liners Explained](http://www.catonmat.net/blog/perl-one-liners-explained-part-one/). If you want a book have a look at [Minimal Perl for UNIX and Linux People](http://www.amazon.com/Minimal-Perl-UNIX-Linux-People/dp/1932394508/ref=sr_1_1?ie=UTF8&qid=1358096838&sr=8-1&keywords=minimal+perl+for+unix).
