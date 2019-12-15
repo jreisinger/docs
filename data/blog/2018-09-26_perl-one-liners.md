@@ -1,10 +1,10 @@
-I think Perl one-liners are still super useful. They are small [Perl](https://www.perl.org/) programs that are run directly from a command line (ex. on Unix/Linux, Cygwin). Like this one from the Kubernetes [job](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/#running-an-example-job) documentation:
+I think Perl one-liners are still super useful. They are small [Perl](https://www.perl.org/) programs that are run directly from command line. Like this one from the Kubernetes [job](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/#running-an-example-job) documentation:
 
 ```
 perl -Mbignum=bpi -wle "print bpi(2000)"
 ```
 
-`perl` is the Perl language interpreter. `-M` and `-wle` are command line switches (or options) that modify the `perl`'s behaviour. See below for explanation of what they mean. The string within doubles quotes is the Perl code that gets executed. In this case it calculates the PI with accuracy of 2000 digits. The command will take a while to finish.
+`perl` is the Perl language interpreter. `-M` and `-wle` are command line switches (or options) that modify the `perl`'s behaviour. See below for explanation of what they mean. The string within double quotes is the Perl code that gets executed. In this case it uses the `bpi` subroutine from the [bignum](https://perldoc.perl.org/bignum.html) module to calculate the PI with accuracy of 2000 digits. The command will take a while to finish.
 
 # Switches
 
