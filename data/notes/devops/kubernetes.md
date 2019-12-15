@@ -21,7 +21,7 @@ Namespace
 
 ```bash
 # your current namespace
-kubectl config get-contexts # search for asterisk and see column NAMESPACE
+kubectl config get-contexts # search for asterisk
 
 # all namespaces in a cluster
 kubectl get namespaces
@@ -76,7 +76,7 @@ Pod
 
 * atomic unit of work in Kubernetes cluster
 * Pod = one or more containers working together symbiotically
-* all containers in a Pod always land on the same machine
+* all containers in a Pod always land on the same node
 * once scheduled to a node, Pods don't move
 * each container runs its own cgroup but they *share* network, hostname and filesystem
 * like a logical host
