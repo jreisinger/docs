@@ -88,6 +88,7 @@ Find big palindromes:
 
 ```
 perl -lne 'print if $_ eq reverse and length >= 5' /usr/share/dict/words
+```
 
 Greet user (stolen from [Utilitarian](http://perlmonks.org/?node_id=681898)) (-:
 
