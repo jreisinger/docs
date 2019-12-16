@@ -29,3 +29,7 @@ Alerts are composed of:
 Index
 
 * basic unit of storage for data in Elasticsearch
+
+Input
+
+* defines the method by which Graylog collects logs
