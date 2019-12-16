@@ -60,5 +60,5 @@ type:"ssh login"
 Regexes (see [ES regexes syntax](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/query-dsl-regexp-query.html#regexp-syntax) for more):
 
 ```
-/ethernet[0-9/+/
+/ethernet[0-9]+/
 ```
