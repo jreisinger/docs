@@ -5,8 +5,6 @@ Some of the [quotes](https://quotes.reisinge.net/) I like best ATM :-)
 > Money is like gas in the car - you need to pay attention or you'll end up on the side of the road - but a successful business or a well-lived life is not a tour of gas stations. -- Tim O'Reilly, WTF
 
 ---
-Graylog
----
 
 # Components
 
