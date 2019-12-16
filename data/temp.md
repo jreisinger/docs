@@ -15,7 +15,17 @@ Streams
 * many uses: message categorization, access control, messages parsing and enrichment, ...
 * messages can belong to one or more streams
 
+Pipelines
+
+* run rule(s) against specific event
+* tied to Streams
+* allow for: routing, parsing, dropping, blacklisting, modifying and enriching messages as they flow through Graylog
+
 Alerts are composed of:
 
 1. alert condition
 1. alert notification
+
+Index
+
+* basic unit of storage for data in Elasticsearch
