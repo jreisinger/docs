@@ -1,3 +1,5 @@
+*2014-01-06*
+
 Although I'm more of a sysadmin than a developer I often write scripts (in Perl or Bash). I don't work within a big group of developers, so I try to keep things simple. I tend to use [Git](http://git-scm.com/) for tracking my programs. Git is a free & open source, distributed version (revision) control system created by Linus Torvalds. Every Git repository contains complete history of revisions and is not dependent on a central server or network access. Branching and merging are fast and easy to do. Git uses an intelligent compression system to reduce the cost of storing the entire history.
 
 First-Time Git Setup

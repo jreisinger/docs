@@ -1,3 +1,5 @@
+*2017-07-24*
+
 Docker is a container technology. Cointainers standardize software packaging.
 It's a well timed fusion of
 

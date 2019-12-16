@@ -1,115 +1,91 @@
-I think Perl one liners are still super useful (even Kubernetes people like them to do their [jobs](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/#running-an-example-job) :-). They are small Perl programs that are run directly from a command line (ex. on Unix/Linux, Cygwin). For a deeper dive see [Famous Perl One-Liners Explained](http://www.catonmat.net/blog/perl-one-liners-explained-part-one/). If you want a book have a look at [Minimal Perl for UNIX and Linux People](http://www.amazon.com/Minimal-Perl-UNIX-Linux-People/dp/1932394508/ref=sr_1_1?ie=UTF8&qid=1358096838&sr=8-1&keywords=minimal+perl+for+unix).
+# Introduction to Perl one-liners
 
-## `perl` command line switches
+I think Perl one-liners are still super useful. They are small [Perl](https://www.perl.org/) programs that are run directly from command line. Like this one from the Kubernetes [job](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/#running-an-example-job) documentation:
 
-* `-e '<code>'` (execute) -- execute `<code>`
-* `-E '<code>'` (execute) -- execute `<code>` enabling [feature](http://perldoc.perl.org/feature.html) bundle (like `use 5.010`) for your version of Perl
-* `-p` (printing) -- loop through lines, reading and printing them (in-script equivalent: `while (<>) { [<code>] print }`)
-* `-w` (warnings) -- enable warnings (generally advisable)
-* `-n` (nonautoprinting) -- loop through lines, reading but not printing them
-* `-l` (line) -- print a newline (`$/` actually) after each line of output and chomp newline if used with `-n` or `-p`
-* `-i[<.ext>]` (intrepid) -- create backup file (with `<.ext>` extension if defined)
-* `-a` (autosplit mode) -- split the `$_` into `@F` (space is the default separator, change it with `-F`, ex. `-F:`)
-* `-s` (switch) -- rudimentary parsing of command line switches (see "Git-tracked directory" multi-liner below)
+```
+perl -Mbignum=bpi -wle "print bpi(2000)"
+```
+
+`perl` is the Perl language interpreter. `-M` and `-wle` are command line switches (or options) that modify the `perl`'s behaviour. See below for explanation of what they mean. The string within double quotes is the Perl code that gets executed. In this case it uses the `bpi` subroutine from the [bignum](https://perldoc.perl.org/bignum.html) module to calculate the PI with accuracy of 2000 digits. The command will take a while to finish.
+
+## Switches
+
+These are some of the most used command line switches:
+
+* `-e '<code>'` -- **e**xecute `<code>`
+* `-E '<code>'` -- **E**xecute `<code>` enabling [feature](http://perldoc.perl.org/feature.html) bundle (like `use 5.010`) for your version of Perl
+* `-w` -- enable **w**arnings (generally advisable)
+* `-p` -- loop through lines, reading and **p**rinting them (in-script equivalent: `while (<>) { [<code>] print }`)
+* `-n` -- loop through lines, reading but **n**ot printing them
+* `-l` -- print a new**l**ine (`$/` actually) after each line of output and chomp newline if used with `-n` or `-p`
+* `-i[<.ext>]` (**i**ntrepid) -- create backup file (with `<.ext>` extension if defined)
+* `-a` (**a**utosplit) -- split the `$_` default variable into `@F` array (space is the default separator, change it with `-F`, ex. `-F:`)
+* `-s` -- rudimentary parsing of command line **s**witches (see "Git-tracked directory" multi-liner below)
+* `-M<module>[=<subroutine>,...]` -- load subroutine(s) from a **m**odule
 
 See [perlrun](http://perldoc.perl.org/perlrun.html) for more.
 
-## Unix tools replacements
+## Examples
 
-### `grep` replacement
+### Search and replace
 
-Find lines containing `<regex>`:
+Find lines in logs that contain error or warning:
 
-```bash
-perl -lne 'print if /<regex>/' aFile
+```
+perl -wne '/error|warning/i && print' /var/log/*.log
 ```
 
-Find DNS resource records of type A:
+The thing between slashes is a [regular expression](https://perldoc.perl.org/perlre.html). It means match string `error` or string `warning` anywhere in the log line. `i` says to Perl to ignore the case. So it will match ERROR, error, Warning etc. If the regex finds a match (i.e. evaluates to true) the `&&` logical operator runs the `print` statement that will print the line containing the match.
 
-```bash
-find /etc/bind -type f | xargs perl -ne '/\s+A\s+/ and print "$ARGV: $_"'
+Replace `/bin/sh` with `/bin/bash` and emit the transformed passwd file to STDOUT:
+
 ```
-
-### `sed` replacement
-
-Emit the transformed passwd file to STDOUT:
-
-```bash
 perl -pe 's#/bin/sh$#/bin/bash#' /etc/passwd
 ```
 
-In-place editing with backups:
+We used `#` instead of `/` as delimeter for better readibility since to strings themselves contain slashes. `$` means end of the string.
 
-```bash
+Replace `colour` with `color` in all text files. The original files will be kept with `.bak` suffix:
+
+```
 perl -i.bak -pe 's/colour/color/g' *.txt
 ```
 
-### `awk` replacement
+`g` (global) means replace all occurences in a string not just the first one.
 
-Switch columns:
+Convert between DOS and Unix newline:
 
-```bash
+```
+perl -i -pe 's/\r//'  <file1> <file2> ... # dos-to-unix
+perl -i -pe 's/$/\r/' <file1> <file2> ... # unix-to-dos
+```
+
+### Various 
+
+Print 2nd and 1st field (column) out of three original ones:
+
+```
 $ cat birthdays.txt
 03/30/45 Eric Clapton
 11/27/42 Jimi Hendrix
 06/24/44 Jeff Beck
-$ perl -lane 'print "@F[1,0]"' birthdays.txt
+$ perl -lane 'print @F[1,0]' birthdays.txt
+Eric 03/30/45
+Jimi 11/27/42
+Jeff 06/24/44
 ```
 
-Leave out the first column:
+The field numbering starts at 0.
 
-```bash
-history | perl -anE 'say join " ", @F[1 .. $#F]' | sort | uniq
+Calculate the total size of log files older than 30 days:
+
 ```
-
-* see http://www.perlmonks.org/?node_id=739305 for why you can't use -1 as array index here
-
-### `dos2unix` replacement
-
-Convert DOS files to Unix files:
-
-```bash
-perl -i -pe 's/\r//' <file1> <file2> ...   # dos-to-unix
-perl -i -pe 's/$/\r/' <file1> <file2> ...  # unix-to-dos
-```
-
-## Various
-
-Total size of found files (using the [Eskimo Greeting Operator](http://www.catonmat.net/blog/secret-perl-operators/#eskimo) as suggested by [PerlMonks](http://www.perlmonks.org/?node_id=1172707)):
-
-```bash
 find /opt/splunk/syslog/ -iname "*log*" -type f -mtime +30 | \
 perl -lne '$sum += (stat)[7]}{print $sum'
 ```
 
-Remove comments and compress all consecutive blank lines into one ([more](http://www.catonmat.net/blog/perl-one-liners-explained-part-one/)):
+The [stat](https://perldoc.perl.org/functions/stat.html) function returns a 13-element list of status info about a file. We take the 8th element (with index `7`) which is the size of a file. We loop over the found files and add the size of each into the `$sum` variable. The handy [Eskimo Greeting Operator](http://www.catonmat.net/blog/secret-perl-operators/#eskimo) is for priting the `$sum` when the loop is over (suggested by [PerlMonks](http://www.perlmonks.org/?node_id=1172707)).
 
-```bash
-cat /etc/ssh/sshd_config | perl -lne '!/^#/ and print' | perl -00 -pe ''
-```
+## More
 
-Create HTML anchor element:
-
-```bash
-perl -le 'print "<a href=\"$ARGV[1]\">$ARGV[0]</a>"' perldoc http://perldoc.perl.org/
-```
-
-## Fun
-
-Find big palindromes:
-
-```bash
-perl -lne 'print if $_ eq reverse and length >= 5' /usr/share/dict/words
-```
-
-Print a file system tree on UNIX like systems ([source](http://www.perlmonks.org/?node_id=1050343)):
-
-```bash
-ls -R | perl -ne'if(s/:$//){s{[^/]*/}{--}g;s/^-/\t|/;print}'
-```
-
-Greet user (stolen from [Utilitarian](http://perlmonks.org/?node_id=681898)) (-:
-
-```bash
-perl -E 'say "Good ".qw(night morning afternoon evening)[(localtime)[2]/6].", $ENV{USER}"'
-```
+For a deeper dive see [Famous Perl One-Liners Explained](http://www.catonmat.net/blog/perl-one-liners-explained-part-one/). If you want a book have a look at [Minimal Perl for UNIX and Linux People](http://www.amazon.com/Minimal-Perl-UNIX-Linux-People/dp/1932394508/ref=sr_1_1?ie=UTF8&qid=1358096838&sr=8-1&keywords=minimal+perl+for+unix).
