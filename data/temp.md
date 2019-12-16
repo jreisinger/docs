@@ -14,3 +14,8 @@ Streams
 * route messages into categories in real time
 * many uses: message categorization, access control, messages parsing and enrichment, ...
 * messages can belong to one or more streams
+
+Alerts are compose of:
+
+1. alert condition
+1. alert notification
