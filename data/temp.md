@@ -15,7 +15,7 @@ Streams
 * many uses: message categorization, access control, messages parsing and enrichment, ...
 * messages can belong to one or more streams
 
-Alerts are compose of:
+Alerts are composed of:
 
 1. alert condition
 1. alert notification
