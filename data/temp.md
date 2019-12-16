@@ -38,6 +38,8 @@ Input
 
 * syntax very close to Lucene's
 * if you don't specify a field all fields are included in search
+* by default all terms or phrases are OR connected
+* AND, OR, and NOT are case sensitive
 
 All messages that include ssh or login:
 
@@ -61,4 +63,30 @@ Regexes (see [ES regexes syntax](https://www.elastic.co/guide/en/elasticsearch/r
 
 ```
 /ethernet[0-9]+/
+```
+
+Wildcards - use `?` to replace a single character or `*` to replace zero or more characters:
+
+```
+source:exam?ple.*
+```
+
+Leading wildcards are disabled to avoid excessive memory consumption.
+
+Fuzziness - search for similar terms
+
+```
+ssh logni~
+source:example.org~
+```
+
+Numeric fields support range queries:
+
+```
+http_response_code[500 TO 504] # inclusive
+http_response_code{400 TO 404} # exclusive
+bytes:{0 TO 64]
+http_response_code:>=400
+http_response_code:(>=400 AND <500)
+timestamp:["2019-07-23 09:53:08.175" TO "2019-07-23 09:53:08.575"] # must be UTC
 ```
