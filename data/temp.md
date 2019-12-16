@@ -90,3 +90,15 @@ http_response_code:>=400
 http_response_code:(>=400 AND <500)
 timestamp:["2019-07-23 09:53:08.175" TO "2019-07-23 09:53:08.575"] # must be UTC
 ```
+
+The following characters must be escaped with a backslash:
+
+```
+& | : \ / + - ! ( ) { } [ ] ^ " ~ * ?
+```
+
+e.g:
+
+```
+resource:\/posts\/45326
+```
