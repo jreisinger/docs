@@ -36,3 +36,29 @@ Input
 
 # Searching
 
+* syntax very close to Lucene's
+* if you don't specify a field all fields are included in search
+
+All messages that include ssh or login:
+
+```
+ssh login
+```
+
+Messages where the field type includes ssh or login:
+
+```
+type:(ssh OR login)
+```
+
+Messages where the field type includes exact phrase "ssh login":
+
+```
+type:"ssh login"
+```
+
+Regexes (see [ES regexes syntax](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/query-dsl-regexp-query.html#regexp-syntax) for more):
+
+```
+/ethernet[0-9/+/
+```
