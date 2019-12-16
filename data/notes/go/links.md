@@ -6,6 +6,6 @@
 
 ## Useful links
 
-* [wiki](https://github.com/golang/go/wiki)
+* https://github.com/golang/go/wiki
 * https://gobyexample.com/
 * https://yourbasic.org/golang/
