@@ -93,6 +93,26 @@ Cloning into '/home/reisinge/.vim/pack/plugins/start/vim-markdown'...
 Cloning into '/home/reisinge/.vim/pack/plugins/start/vim-go'...
 ```
 
+The commands to execute can be supplied also via stdin. It means that `runp` can be used within pipes like this one:
+
+```
+$ for dir in $HOME /etc /tmp; do echo sudo "du -sh $dir"; done | runp -q | sort -h
+13M	/tmp
+17M	/etc
+370G	/home/reisinge
+```
+
+Here we generate the commands to run in a bash for loop. Then we pipe the commands into `runp`. Finally the `runp`'s output (stdout) is sorted.
+
+We can simplify by using the `-p` flag which adds a prefix string to the final command that will be run:
+
+```
+$ echo -e "$HOME\n/etc\n/tmp" | runp -q -p 'sudo du -sh' | sort -h
+13M	/tmp
+17M	/etc
+370G	/home/reisinge
+```
+
 # A picture like [this](https://kapow.readthedocs.io/en/latest/)?
 
 # Simple example or two
