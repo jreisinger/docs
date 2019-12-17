@@ -68,6 +68,12 @@ sys	0m0.880s
 
 Hmm, aroud 12 seconds. Not bad I think :-).
 
+Additionally you get a simple "progress bar" (the `-->` is moving) and some information about each command. It looks like this:
+
+```
+--> <status> (<elapsed_time>): <command>
+```
+
 # A picture like [this](https://kapow.readthedocs.io/en/latest/)?
 
 # Simple example or two
