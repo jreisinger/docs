@@ -50,6 +50,24 @@ Cloning into '/home/reisinge/.vim/pack/plugins/start/vim-airline'...
 Cloning into '/home/reisinge/.vim/pack/plugins/start/vim-go'...
 ```
 
+Let's see how much time did I save:
+
+```
+$ time bash install-my-stuff.txt
+<...>
+real	0m15.690s
+user	0m3.440s
+sys	0m0.902s
+
+$ time runp install-my-stuff.txt
+<...>
+real	0m3.678s
+user	0m3.904s
+sys	0m0.880s
+```
+
+Hmm, aroud 12 seconds. Not bad I think :-).
+
 # A picture like [this](https://kapow.readthedocs.io/en/latest/)?
 
 # Simple example or two
