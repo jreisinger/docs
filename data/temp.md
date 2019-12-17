@@ -66,12 +66,31 @@ user	0m3.904s
 sys	0m0.880s
 ```
 
-Hmm, aroud 12 seconds. Not bad I think :-).
+Hmm, aroud 12 seconds. Not bad I think :-). Especially if you run it often.
 
 Additionally you get a simple "progress bar" (the `-->` is moving) and some information about each command. It looks like this:
 
 ```
 --> <status> (<elapsed_time>): <command>
+```
+
+and it's send to STDERR (so you can redirect it via `2>` shell construct).
+
+If you don't want `runp` to add any additional output use the `-q` (quiet) flag:
+
+```
+$ runp -q install-my-stuff.txt 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 70071  100 70071    0     0   145k      0 --:--:-- --:--:-- --:--:--  145k
+Cloning into '/home/reisinge/.vim/pack/plugins/start/vim-nerdtree-tabs'...
+Cloning into '/home/reisinge/.vim/pack/plugins/start/bufexplorer'...
+Cloning into '/home/reisinge/.vim/pack/plugins/start/ansible-vim'...
+Cloning into '/home/reisinge/.vim/pack/plugins/start/grep.vim'...
+Cloning into '/home/reisinge/.vim/pack/plugins/start/vim-airline'...
+Cloning into '/home/reisinge/.vim/pack/plugins/start/nerdtree'...
+Cloning into '/home/reisinge/.vim/pack/plugins/start/vim-markdown'...
+Cloning into '/home/reisinge/.vim/pack/plugins/start/vim-go'...
 ```
 
 # A picture like [this](https://kapow.readthedocs.io/en/latest/)?
