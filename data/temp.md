@@ -24,7 +24,7 @@ rm -rf $HOME/.vim/pack/plugins/start/grep.vim && git clone https://github.com/ye
 rm -rf $HOME/.vim/pack/plugins/start/vim-airline && git clone https://github.com/vim-airline/vim-airline $HOME/.vim/pack/plugins/start/vim-airline
 ```
 
-The problem is that these commmands run sequentially and it takes a while until they are done. I was thinking of a way how to speed them up. So to scratch my itch a came up with [runp](https://github.com/jreisinger/runp). Now I can the those commands (I store them in `install-my-stuff.txt`) in parallel:
+The problem is that these commmands run sequentially and it takes a while until they are done. I was thinking of a way how to speed them up. So to scratch my itch a came up with [runp](https://github.com/jreisinger/runp). Now I can run those commands (I stored them in `install-my-stuff.txt`) in parallel:
 
 ```
 $ runp install-my-stuff.txt 
