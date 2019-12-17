@@ -8,6 +8,8 @@ Some of the [quotes](https://quotes.reisinge.net/) I like best ATM :-)
 
 Why is it useful
 
+A picture like [this](https://kapow.readthedocs.io/en/latest/)?
+
 Simple example or two
 
 How to install it
