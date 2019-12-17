@@ -28,6 +28,8 @@ The problem is that these commmands run sequentially and it takes a while until 
 
 [![asciicast](https://asciinema.org/a/JJBdAfDqKnlRFyF1FMeQuW6Ic.svg)](https://asciinema.org/a/JJBdAfDqKnlRFyF1FMeQuW6Ic)
 
+<script id="asciicast-JJBdAfDqKnlRFyF1FMeQuW6Ic" src="https://asciinema.org/a/JJBdAfDqKnlRFyF1FMeQuW6Ic.js" async></script>
+
 Let's see how much time did I save:
 
 ```
