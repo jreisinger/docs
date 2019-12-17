@@ -26,7 +26,7 @@ rm -rf $HOME/.vim/pack/plugins/start/vim-airline && git clone https://github.com
 
 The problem is that these commmands run sequentially and it takes a while until they are done. I was thinking of a way how to speed them up. So to scratch my itch a came up with [runp](https://github.com/jreisinger/runp). Now I can run those commands (I stored them in `install-my-stuff.txt`) in parallel:
 
-[![asciicast](https://asciinema.org/a/jxPlXu46uPr4oKyZ5ZZBcLfwS.svg)](https://asciinema.org/a/jxPlXu46uPr4oKyZ5ZZBcLfwS)
+[![asciicast](https://asciinema.org/a/JJBdAfDqKnlRFyF1FMeQuW6Ic.svg)](https://asciinema.org/a/JJBdAfDqKnlRFyF1FMeQuW6Ic)
 
 Let's see how much time did I save:
 
