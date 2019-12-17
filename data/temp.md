@@ -6,7 +6,7 @@ Some of the [quotes](https://quotes.reisinge.net/) I like best ATM :-)
 
 ---
 
-# Why is it useful
+# Why and how is it useful
 
 I'm using shell (bash specifically) on daily basis. From time to time a need arised to run multiple commands in parallel. For example my [.bashrc](https://github.com/jreisinger/dotfiles/blob/master/.bashrc) runs the following commands to download or clone vim plugins I use:
 
@@ -93,6 +93,22 @@ Cloning into '/home/reisinge/.vim/pack/plugins/start/vim-markdown'...
 Cloning into '/home/reisinge/.vim/pack/plugins/start/vim-go'...
 ```
 
+# How to install it
+
+If you want to try it out you can easily install it. It's a single binary that you download and make it executable.
+
+```
+# choose your system and architecture
+export SYS=linux  # or darwin
+export ARCH=amd64 # or arm
+
+# download it an make it executable
+curl -L https://github.com/jreisinger/runp/releases/latest/download/runp-$SYS-$ARCH -o ~/bin/runp
+chmod u+x ~/bin/runp
+```
+
+# More examples
+
 The commands to execute can be supplied also via stdin. It means that `runp` can be used within pipes like this one:
 
 ```
@@ -113,10 +129,20 @@ $ echo -e "$HOME\n/etc\n/tmp" | runp -q -p 'sudo du -sh' | sort -h
 370G	/home/reisinge
 ```
 
-# A picture like [this](https://kapow.readthedocs.io/en/latest/)?
+The final example shows how to find open ports from a list of hosts and ports:
 
-# Simple example or two
+```
+# file with host-port pairs
+$ cat host-port.txt
+localhost 80
+localhost 81
+127.0.0.1 443
+127.0.0.1 444
+localhost 22
 
-# How to install it
-
-# More complex examples
+# find out which ports are listening
+$ cat host-port.txt | runp -p 'netcat -v -w2 -z' -q 2>&1 | egrep 'open$'
+localhost [127.0.0.1] 443 (https) open
+localhost [127.0.0.1] 80 (http) open
+localhost [127.0.0.1] 22 (ssh) open
+```
