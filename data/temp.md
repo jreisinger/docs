@@ -26,29 +26,7 @@ rm -rf $HOME/.vim/pack/plugins/start/vim-airline && git clone https://github.com
 
 The problem is that these commmands run sequentially and it takes a while until they are done. I was thinking of a way how to speed them up. So to scratch my itch a came up with [runp](https://github.com/jreisinger/runp). Now I can run those commands (I stored them in `install-my-stuff.txt`) in parallel:
 
-```
-$ runp install-my-stuff.txt 
---> OK (0.30s): /bin/sh -c "curl -L -o /home/reisinge/.git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash"
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100 70071  100 70071    0     0   247k      0 --:--:-- --:--:-- --:--:--  247k
---> OK (1.76s): /bin/sh -c "rm -rf /home/reisinge/.vim/pack/plugins/start/ansible-vim && git clone https://github.com/pearofducks/ansible-vim.git /home/reisinge/.vim/pack/plugins/start/ansible-vim"
-Cloning into '/home/reisinge/.vim/pack/plugins/start/ansible-vim'...
---> OK (1.76s): /bin/sh -c "rm -rf /home/reisinge/.vim/pack/plugins/start/grep.vim && git clone https://github.com/yegappan/grep.git /home/reisinge/.vim/pack/plugins/start/grep.vim"
-Cloning into '/home/reisinge/.vim/pack/plugins/start/grep.vim'...
---> OK (1.86s): /bin/sh -c "rm -rf /home/reisinge/.vim/pack/plugins/start/bufexplorer && git clone https://github.com/jlanzarotta/bufexplorer.git /home/reisinge/.vim/pack/plugins/start/bufexplorer"
-Cloning into '/home/reisinge/.vim/pack/plugins/start/bufexplorer'...
---> OK (1.87s): /bin/sh -c "rm -rf /home/reisinge/.vim/pack/plugins/start/vim-nerdtree-tabs && git clone https://github.com/jistr/vim-nerdtree-tabs.git /home/reisinge/.vim/pack/plugins/start/vim-nerdtree-tabs"
-Cloning into '/home/reisinge/.vim/pack/plugins/start/vim-nerdtree-tabs'...
---> OK (2.23s): /bin/sh -c "rm -rf /home/reisinge/.vim/pack/plugins/start/vim-markdown && git clone https://github.com/plasticboy/vim-markdown.git /home/reisinge/.vim/pack/plugins/start/vim-markdown"
-Cloning into '/home/reisinge/.vim/pack/plugins/start/vim-markdown'...
---> OK (2.99s): /bin/sh -c "rm -rf /home/reisinge/.vim/pack/plugins/start/nerdtree && git clone https://github.com/scrooloose/nerdtree.git /home/reisinge/.vim/pack/plugins/start/nerdtree"
-Cloning into '/home/reisinge/.vim/pack/plugins/start/nerdtree'...
---> OK (3.08s): /bin/sh -c "rm -rf /home/reisinge/.vim/pack/plugins/start/vim-airline && git clone https://github.com/vim-airline/vim-airline /home/reisinge/.vim/pack/plugins/start/vim-airline"
-Cloning into '/home/reisinge/.vim/pack/plugins/start/vim-airline'...
---> OK (3.82s): /bin/sh -c "rm -rf /home/reisinge/.vim/pack/plugins/start/vim-go && git clone https://github.com/fatih/vim-go.git /home/reisinge/.vim/pack/plugins/start/vim-go"
-Cloning into '/home/reisinge/.vim/pack/plugins/start/vim-go'...
-```
+[![asciicast](https://asciinema.org/a/jxPlXu46uPr4oKyZ5ZZBcLfwS.svg)](https://asciinema.org/a/jxPlXu46uPr4oKyZ5ZZBcLfwS)
 
 Let's see how much time did I save:
 
