@@ -9,7 +9,11 @@ JavaScript Object Notation is a popular text based format for exchanging data th
 
 # jq
 
-[Basic filters](https://stedolan.github.io/jq/manual/#Basicfilters)
+Command line options:
+
+`-r` (`--raw-output`) -- emit raw (unquoted) strings as output
+
+[Basic filters](https://stedolan.github.io/jq/manual/#Basicfilters):
 
 ```
 '.'         # pretty print everything
