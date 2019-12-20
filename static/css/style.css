@@ -15,7 +15,7 @@ h4 {font-size:0.75em}
 
 /* Links */
 a:link { text-decoration: none; color: hotpink}
-a:visited { text-decoration: none; color: pink}
+a:visited { text-decoration: none; color: hotpink}
 a:hover { text-decoration: underline; }
 a:active { text-decoration: underline; }
 
