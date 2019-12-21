@@ -15,6 +15,7 @@ kubectl config view
 Namespace
 ---------
 
+* virtual cluster
 * group of objects in a cluster
 * similar to a filesystem folder
 * see [Namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/) for more 
