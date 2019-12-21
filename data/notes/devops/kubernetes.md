@@ -239,6 +239,6 @@ Resources
 =========
 
 * [Kubernetes: Up and Running](https://www.safaribooksonline.com/library/view/kubernetes-up-and/9781491935668/) (2017, 2019)
-* Managing Kubernetes (2018)
 * Cloud Native DevOps with Kubernetes (2019)
 * [Getting Started with Kubernetes](https://www.safaribooksonline.com/videos/getting-started-with/9780135237823) (video, 2018)
+* Managing Kubernetes (2018)
