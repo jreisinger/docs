@@ -2,7 +2,7 @@
 
 The idea that large databases of seemingly random data about people (ex. purchasing habits, location information) are valueable.
 
-## Binary data 
+## binary data 
 
 Data represented in binary form rather than interpreted on higher level or converted to some other form. While most binary
 data has symbolic meaning not all binary data is numeric (ex. computer instructions within processor registers).
