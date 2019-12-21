@@ -7,11 +7,13 @@ Terminology
 * provisioning - spinning up new servers (VMs)
 
 Playbook
+
 * a configuration management script
 * unordered list of hosts
 * ordered list of tasks (plays)
 
 Module
+
 * script packaged with Ansible
 * performs some action on a host (`ansible-doc <module>`)
 
