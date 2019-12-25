@@ -1,4 +1,4 @@
-## CLI tools template
+CLI tools template
 
 ```
 package main
