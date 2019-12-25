@@ -1,14 +1,14 @@
 /* Headings */
 h1 {font-size:1.5em; counter-reset: h2counter;}
 h2:before {
-content: counter(h2counter) ".\0000a0\0000a0";
-counter-increment: h2counter;
-counter-reset: h3counter;
+    content: counter(h2counter) ".\0000a0\0000a0";
+    counter-increment: h2counter;
+    counter-reset: h3counter;
 }
 h2 {font-size:1.25em}
 h3:before {
-content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
-counter-increment: h3counter;
+    content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+    counter-increment: h3counter;
 }
 h3 {font-size:1.0em}
 h4 {font-size:0.75em}
@@ -19,10 +19,11 @@ a:visited { text-decoration: none; color: green}
 a:hover { text-decoration: underline; }
 a:active { text-decoration: underline; }
 
+/* Main text */
 body {
-  counter-reset: h2counter;
-  font-family: Roboto, Arial, sans-serif;
-  //color: #3e4042;
+    counter-reset: h2counter;
+    font-family: Roboto, Arial, sans-serif;
+    //color: #3e4042;
 }
 
 /* Inline code */
@@ -30,9 +31,9 @@ code { font-family: monospace; }
 
 /* Code blocks */
 pre {
-background: #f7f7f7;
-overflow: auto;
-white-space: pre-wrap;
-padding: 0.625rem;
-border-radius: 0.3125rem;
+    background: #f7f7f7;
+    overflow: auto;
+    white-space: pre-wrap;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
 }
