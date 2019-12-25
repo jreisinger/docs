@@ -74,7 +74,6 @@ For using Vagrant in a proxy (corporate :-)) environment run [setup_proxy](https
     vagrant up
 
 Resources
----------
 
 * https://docs.vagrantup.com
 * https://sysadmincasts.com/episodes/4-vagrant
