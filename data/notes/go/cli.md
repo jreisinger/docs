@@ -22,3 +22,5 @@ func main() {
 	//file := os.Args[2]
 }
 ```
+
+[run](https://play.golang.org/p/omvP2uhNVQX)
