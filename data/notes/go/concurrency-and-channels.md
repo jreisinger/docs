@@ -6,6 +6,7 @@ When `pinger` or `ponger` attempts to send a message on the channel, it will
 wait until `printer` is ready to receive the message (blocking):
 
 ```go
+// ping-pong.go
 package main
 
 import (
