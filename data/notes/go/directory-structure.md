@@ -1,3 +1,10 @@
+# The new way (Go modules)
+
+* https://vsupalov.com/go-folder-structure/
+* https://github.com/golang-standards/project-layout
+
+# The old way (`GOPATH`, `src`, `bin`, `pkg`)
+
 *NOTE*: See [How to Write Go Code](https://golang.org/doc/code.html) for official tutorial.
 
 Go has a strong opinion about directory structure.
