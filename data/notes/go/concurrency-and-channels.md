@@ -40,6 +40,7 @@ func printer(ch chan string) {
 `select` statement is like a switch but for channels. `select` picks the first channel that is ready a receives from it. If more than one of the channels are ready, then it randomly picks which one to receive from. The default case happens immediately if none of the channels is ready.
 
 ```go
+// select.go
 package main
 
 import (
