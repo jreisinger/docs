@@ -4,22 +4,21 @@ CLI tools template
 package main
 
 import (
-    "fmt"
-    "log"
-    "os"
+	"log"
+	"os"
 )
 
 func main() {
-    if len(os.Args) != 3 {
-        fmt.Fprintln(os.Stderr, "Usage:", os.Args[0], "PATTERN", "FILE")
-        os.Exit(1)
-    }
+	// Set up CLI tool style of logging.
+	log.SetPrefix(os.Args[0] + ": ")
+	log.SetFlags(0) // no timestamp
 
-    //pattern := os.Args[1]
-    //file := os.Args[2]
+	if len(os.Args) != 3 {
+		// write to stderr and call os.Exit(1)
+		log.Fatalf("usage: %s %s %s", os.Args[0], "PATTERN", "FILE")
+	}
 
-    // Set up CLI tool style of logging.
-    log.SetPrefix(os.Args[0] + ": ")
-    log.SetFlags(0)
+	//pattern := os.Args[1]
+	//file := os.Args[2]
 }
 ```
