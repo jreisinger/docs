@@ -23,4 +23,4 @@ func main() {
 }
 ```
 
-[run](https://play.golang.org/p/omvP2uhNVQX)
+[Run](https://play.golang.org/p/omvP2uhNVQX).
