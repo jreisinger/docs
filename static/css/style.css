@@ -26,8 +26,11 @@ body {
     //color: #3e4042;
 }
 
-/* Inline code */
-code { font-family: monospace; }
+/* Inline code and code blocks */
+pre, code {
+    font-family: Menlo, monospace;
+    font-size: 0.875rem;
+}
 
 /* Code blocks */
 pre {
