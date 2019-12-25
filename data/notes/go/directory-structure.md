@@ -1,5 +1,6 @@
 # The new way (Go modules)
 
+* https://blog.golang.org/using-go-modules
 * https://vsupalov.com/go-folder-structure/
 * https://github.com/golang-standards/project-layout
 
