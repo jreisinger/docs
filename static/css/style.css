@@ -29,7 +29,7 @@ body {
 /* Inline code and code blocks */
 pre, code {
     font-family: Menlo, monospace;
-    font-size: 0.875rem;
+    font-size: 0.775rem;
 }
 
 /* Code blocks */
