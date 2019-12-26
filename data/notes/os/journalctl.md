@@ -7,13 +7,13 @@
 * `systemd` journal can either be used with an existing `syslog` implementation, or it can replace the `syslog` functionality
 * journal data are accessed and manipulated using the `journalctl` tool
 
-System time
+## System time
 
 * the `systemd` suites comes with a tool `timedatectl` that controls the system time and date
 
 ```
 timedatectl list-timezones
-sudo timedatectl set-timezone ZONE
+timedatectl set-timezone ZONE
 timedatectl status
 ```
 
