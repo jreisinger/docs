@@ -1,4 +1,4 @@
-Hello and welcome. This site was mainly built for [me](https://jreisinger.github.io/) but feel free to have a look around.
+Hello and welcome to my non-official home page :-). The official one is [here](https://jreisinger.github.io/).
 
 My other online stuff
 
