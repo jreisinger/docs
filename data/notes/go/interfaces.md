@@ -18,6 +18,8 @@ func shuffle(s shuffler) {
     }
 }
 
+//// Type intSlice satisfies shuffler interfaces.
+
 type intSlice []int
 
 func (is intSlice) Len() int {
@@ -27,6 +29,8 @@ func (is intSlice) Len() int {
 func (is intSlice) Swap(i, j int) {
     is[i], is[j] = is[j], is[i]
 }
+
+//// Main
 
 func main() {
     is := intSlice{1, 2, 3, 5, 6}
