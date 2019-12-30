@@ -18,7 +18,7 @@ func shuffle(s shuffler) {
     }
 }
 
-//// Type intSlice satisfies shuffler interfaces.
+//// Type intSlice satisfies shuffler interface.
 
 type intSlice []int
 
