@@ -124,3 +124,8 @@ func main() {
     fmt.Println(is) // [2 4 1 6 3 5]
 }
 ```
+
+# Sources
+
+* Caleb Doxsey: Introducing Go (2016)
+* John Graham-Cumming: Go Programming Basics (2017)
