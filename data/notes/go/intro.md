@@ -19,7 +19,7 @@ See also [Basic types](https://tour.golang.org/basics/11), [Zero values](https:/
 ## Numbers
 
 Computers use base-2 binary system to store and work with the numbers. So
-computers count like this: 0, 1, 10, 11, 100, 110, 111, ...
+computers count like this: 0, 1, 10, 11, 100, 101, 110, 111, ...
 
 Integer types
 
