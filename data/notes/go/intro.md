@@ -149,7 +149,7 @@ Array is a numbered sequence of elements of a single type with a *fixed length*.
 var a1 [3]int // array of three integers
 a1[0] = 10
 a1[1] = 20
-a1[3] = 30
+a1[2] = 30
 
 // shorter syntax for creating arrays
 a2 := [3]int{ 10, 20, 30, }
