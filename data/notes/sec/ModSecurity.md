@@ -1,6 +1,6 @@
 *2019-10-01*
 
-## ModSecurity
+# ModSecurity
 
 * a WAF engine (library, module) for Apache, Nginx, IIS
 
@@ -24,7 +24,7 @@ More
 * https://github.com/SpiderLabs/ModSecurity/wiki
 * https://www.nginx.com/blog/compiling-and-installing-modsecurity-for-open-source-nginx/
 
-### `SecRule` ModSecurity directive
+## `SecRule` ModSecurity directive
 
 ```
 SecRule VARIABLES   "OPERATOR"                "TRANSFORMATIONS,ACTIONS"
@@ -41,7 +41,7 @@ More
 
 * https://www.modsecurity.org/CRS/Documentation/making.html
 
-## OWASP ModSecurity Core Rule Set (CRS)
+# OWASP ModSecurity Core Rule Set (CRS)
 
 * definitions of the malicious patterns (signatures, blacklist rules)
 * documentation: https://github.com/SpiderLabs/OWASP-CRS-Documentation => https://www.modsecurity.org/CRS/Documentation/
@@ -70,7 +70,7 @@ More
 * https://coreruleset.org/20171214/practical-ftw-testing-the-core-rule-set-or-any-other-waf/
 * https://github.com/SpiderLabs/owasp-modsecurity-crs
 
-## Attacks for testing WAF
+# Attacks for testing WAF
 
 ```
 curl 'https://$FQDN/?exec=/bin/bash'           # Remove Code Execution (RCE)
