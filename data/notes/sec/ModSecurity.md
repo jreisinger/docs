@@ -24,7 +24,7 @@ More
 * https://github.com/SpiderLabs/ModSecurity/wiki
 * https://www.nginx.com/blog/compiling-and-installing-modsecurity-for-open-source-nginx/
 
-## `SecRule` ModSecurity directive
+`SecRule` ModSecurity directive
 
 ```
 SecRule VARIABLES   "OPERATOR"                "TRANSFORMATIONS,ACTIONS"
@@ -63,6 +63,14 @@ Paranoia levels (FP = false positive - a WAF blocking a valid request):
 2. elevated security level, more rules, fair amount of FPs
 3. online banking level security, specialized rules, more FPs
 4. nuclear powerplant level security, insane rules, lots of FPs
+
+You can configure rules via:
+
+* excludes in `RESPONSE-999-EXCLUSION-RULES-AFTER-CRS.conf` or `REQUEST-900-EXCLUSION-RULES-BEFORE-CRS.conf`
+* [whitelists](https://www.modsecurity.org/CRS/Documentation/exceptions.html#exceptions-versus-whitelist) (complicated, performance impact)
+* paranoia levels in `crs/setup.conf`
+* other configuration options in `crs/setup.conf` (like DOS protection, IP reputation, protocol enforcement)
+* "includes" in `nginx-modsecurity.conf` (`Include /etc/nginx/modsecurity/crs/rules/*.conf`) - not supported by docs AFAIK
 
 More
 
