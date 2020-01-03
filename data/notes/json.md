@@ -29,3 +29,9 @@ You can join filters using `|`:
 ```
 jq '.data.result | .[] | .values | .[] | .[]'
 ```
+
+Get values of [multiple keys](https://stackoverflow.com/questions/28164849/using-jq-to-parse-and-display-multiple-fields-in-a-json-serially):
+
+```
+jq '.rrsets[] | "\(.name) \(.type)"'
+```
