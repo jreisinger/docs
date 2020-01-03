@@ -24,7 +24,7 @@ More
 * https://github.com/SpiderLabs/ModSecurity/wiki
 * https://www.nginx.com/blog/compiling-and-installing-modsecurity-for-open-source-nginx/
 
-`SecRule` ModSecurity directive
+## `SecRule` ModSecurity directive
 
 ```
 SecRule VARIABLES   "OPERATOR"                "TRANSFORMATIONS,ACTIONS"
