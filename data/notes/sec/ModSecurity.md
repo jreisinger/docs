@@ -40,6 +40,7 @@ SecRule REQUEST_URI "@streq /index.php" "id:1,phase:1,t:lowercase,deny"
 More
 
 * https://www.modsecurity.org/CRS/Documentation/making.html
+* https://support.kemptechnologies.com/hc/en-us/articles/209635223-How-to-write-a-WAF-rule-Modsecurity-Rule-Writing
 
 # OWASP ModSecurity Core Rule Set (CRS)
 
