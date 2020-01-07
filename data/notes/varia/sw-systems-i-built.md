@@ -1,22 +1,15 @@
-## SW systems I built or helped to build
+## Some of the SW systems I (co-)built
 
-WebShield (Bash, Kubernetes; PN)
-
-Managed WAF (Ansible, Docker, Nginx; PN)
-
-[tech-terms](https://github.com/jreisinger/tech-terms) (Go)
-
-Provisioning portal (Python; PN)
-
-[App::Monport](https://github.com/jreisinger/monitor2) (Perl)
-
-Splunk infra [monitoring](https://github.com/jreisinger/monitor2) (Python, Perl, Bash; FD)
-
-VMs monitoring (Perl, MySQL; IST)
-
-Backups monitoring (Perl, MySQL; IST)
-
-Testing framework (Bash; Kedros)
+* [runp](https://github.com/jreisinger/runp) (Go)
+* WebShield (Bash, Kubernetes; PN)
+* Managed WAF (Ansible, Docker, Nginx; PN)
+* [tech-terms](https://github.com/jreisinger/tech-terms) (Go)
+* Provisioning portal (Python; PN)
+* [App::Monport](https://github.com/jreisinger/monitor2) (Perl)
+* Splunk infra [monitoring](https://github.com/jreisinger/monitor2) (Python, Perl, Bash; FD)
+* VMs monitoring (Perl, MySQL; IST)
+* Backups monitoring (Perl, MySQL; IST)
+* Testing framework (Bash; Kedros)
 
 ## Questions
 
