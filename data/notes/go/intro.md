@@ -530,7 +530,7 @@ A normal function:
 
 ```go
 func circleArea(c *Circle) float64 {
-    // no dereferencing needed... ahaa, because that's r not c!
+    // no dereferencing needed... ahaa, that's r not c!
     return math.Pi * c.r*c.r
 }
 
