@@ -21,7 +21,7 @@ Collisions
 Types
 
 * MD5 - 128-bit, considered weak since late 90s
-* SHA1 - 160-bit, developed by the NSA, [broken](https://www.schneier.com/blog/archives/2005/02/sha1_broken.html) in 2005
+* SHA1 - 160-bit, developed by the NSA, [broken](https://www.schneier.com/blog/archives/2005/02/sha1_broken.html) in 2005, [completely broken](https://sha-mbles.github.io/) in 2020
 * SHA2 - group of algorithms (224 to 512-bits), kind of secure
 * SHA3 - Keccak won a [competition](https://csrc.nist.gov/projects/hash-functions/sha-3-project) announced in 2003, **recommended**
 
