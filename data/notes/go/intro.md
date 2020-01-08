@@ -545,8 +545,8 @@ func (c *Circle) area() float64 { // (c *Circle) is called a receiver
     return math.Pi * c.r*c.r
 }
 
-c := Circle{0, 0, 5}
-fmt.Println(c.area()) // Go automatically knows to pass a pointer to the circle
+c := Circle{0, 0, 5}  // no & needed here as Go automatically
+fmt.Println(c.area()) // knows to pass a pointer to the Circle
 ```
 
 ## Embedded types
