@@ -530,11 +530,12 @@ A normal function:
 
 ```go
 func circleArea(c *Circle) float64 {
-    return math.Pi * c.r*c.r // no dereferencing needed... hm
+    // no dereferencing needed... ahaa, because that's r not c!
+    return math.Pi * c.r*c.r
 }
 
-c := Circle{0, 0, 5}
-fmt.Println(circleArea(&c))
+c := &Circle{0, 0, 5}
+fmt.Println(circleArea(c))
 ```
 
 A special function - method:
