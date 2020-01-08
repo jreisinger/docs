@@ -18,6 +18,7 @@ Programming
 * Intermediate Perl, 2012
 * Learning Perl, 2011
 * The Quick Python Book, 2010
+* Python Programming: An Introduction to Computer Science, 2010
 * Classic Shell Scripting, 2005
 * Perl Cookbook, 2003
 * K&R, 1988
