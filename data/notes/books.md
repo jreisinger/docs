@@ -14,6 +14,7 @@ Programming
 * Think Python, 2015
 * Foundations of Python Network Programming, 2014
 * Programming in C, 2014
+* Python Cookbook, 2013
 * Programming Perl, 2012
 * Intermediate Perl, 2012
 * Learning Perl, 2011
