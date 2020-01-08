@@ -1,4 +1,4 @@
-Technical books that I have read, at least partially. Roughly in order of decreasing quality and/or current importance for me.
+Some of the technical books that I have read, at least partially. Roughly in order of decreasing quality and/or current importance for me.
 
 Sysadmin
 --------
