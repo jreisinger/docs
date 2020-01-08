@@ -512,9 +512,9 @@ type Circle struct {
 
 // Several ways to do initialization.
 var c Circle
-c := new(Circle) // returns pointer
 c := Circle{x: 0, y: 0, r: 5}
 c := Circle{0, 0, 5}
+c := new(Circle) // returns pointer
 c := &Circle{0, 0, 5} // most typical
 
 // Accessing fields.
