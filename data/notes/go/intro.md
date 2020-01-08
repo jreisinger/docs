@@ -354,8 +354,8 @@ func main() {
 }
 ```
 
-* a function like this together with nonlocal variables it references is know
-    as closure
+* a function like this together with nonlocal variables it references is known
+  as closure
 
 One way to use closure is to write a function that returns another function:
 
