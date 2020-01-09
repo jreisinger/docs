@@ -631,6 +631,8 @@ func main() {
 }
 ```
 
+Interfaces define behaviour instead of defining types.
+
 Interfaces can also be used as fields:
 
 ```go
