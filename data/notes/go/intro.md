@@ -675,7 +675,7 @@ If you only need to read from a string, you can use the more efficient `strings.
 
 ## os
 
-(working with iles and folders)
+(working with files and folders)
 
 The easiest way to read the entire file into memory:
 
