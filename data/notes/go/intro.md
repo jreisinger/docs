@@ -644,15 +644,13 @@ Code taken from John Graham-Cumming: [Interfaces](https://learning.oreilly.com/l
 
 ## Input/Output
 
-### io and bufio
+### io
 
 [io](https://golang.org/pkg/io/) package consists of a few functions, but mostly interfaces used in other packages. The two main interfaces are `Reader` and `Writer`. `Reader`s support reading via the `Read` method. `Writer`s support writing via the `Write` method. Many functions in Go take Readers or Writers as arguments. E.g. the io.Copy function copies data from a Reader to a Writer:
 
 ```go
 func Copy(dst Writer, src Reader) (written int64, err error)
 ```
-
-`bufio` package helps make input and output efficient and convenient. Its `Scanner` type reads input and breaks it into lines or words. `bufio` is good for "streaming" mode where input is read and broken into lines on the fly.
 
 See also notes/go/io.
 
