@@ -54,6 +54,10 @@ process_resident_memory_bytes{job="kubelet"}
 !~
 ```
 
+## Query examples
+
+https://prometheus.io/docs/prometheus/latest/querying/examples/
+
 # Labels
 
 * key-value pairs associated with time series
