@@ -644,13 +644,17 @@ Code taken from John Graham-Cumming: [Interfaces](https://learning.oreilly.com/l
 
 ## Input/Output
 
-### io
+### io and bufio
 
 [io](https://golang.org/pkg/io/) package consists of a few functions, but mostly interfaces used in other packages. The two main interfaces are `Reader` and `Writer`. `Reader`s support reading via the `Read` method. `Writer`s support writing via the `Write` method. Many functions in Go take Readers or Writers as arguments. E.g. the io.Copy function copies data from a Reader to a Writer:
 
 ```go
 func Copy(dst Writer, src Reader) (written int64, err error)
 ```
+
+`bufio` package helps make input and output efficient and convenient. Its `Scanner` type reads input and breaks it into lines or words. `bufio` is good for "streaming" mode where input is read and broken into lines on the fly.
+
+See also notes/go/io.
 
 ### bytes
 
@@ -667,37 +671,6 @@ b.WriteTo(os.Stdout)
 * it supports both the `Reader` and `Writer` interfaces
 * you can convert it into a `[]byte` by calling `buf.Bytes()`
 * if you only need to read from a string, you can use the more efficient `strings.NewReader` function
-
-### bufio
-
-`bufio` package helps make input and output efficient and convenient. Its `Scanner` type reads input and breaks it into lines or words. `bufio` is good for "streaming" mode where input is read and broken into lines on the fly:
-
-```go
-// Dup1 prints the text of each line that appears more than
-// once in the standard input, preceded by its count.
-package main
-
-import (
-    "bufio"
-    "fmt"
-    "os"
-)
-
-func main() {
-    counts := make(map[string]int)
-    input := bufio.NewScanner(os.Stdin) // input is a ref to bufio.Scanner type
-
-    for input.Scan() {          // read the next line, remove newline and return true
-        counts[input.Text()]++  // input.Text() returns the line read
-    }
-
-    for line, n := range counts {
-        if n > 1 {
-            fmt.Printf("%d\t%s\n", n, line)
-        }
-    }
-}
-```
 
 ## Files and Folders
 
