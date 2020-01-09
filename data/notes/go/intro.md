@@ -637,7 +637,7 @@ func main() {
 
 Code taken from John Graham-Cumming: [Interfaces](https://learning.oreilly.com/learning-paths/learning-path-go/9781491990384/9781491913871-video191862).
 
-# Packages
+# Standard Packages
 
 * Go was designed to encourage good software engineering practices
 * one of them is code reuse (DRY - Don't Repeat Yourself): functions, packages
