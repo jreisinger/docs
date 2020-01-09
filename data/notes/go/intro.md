@@ -646,15 +646,19 @@ Code taken from John Graham-Cumming: [Interfaces](https://learning.oreilly.com/l
 
 ### io
 
-[io](https://golang.org/pkg/io/) package consists of a few functions, but mostly interfaces used in other packages. The two main interfaces are `Reader` and `Writer`. `Reader`s support reading via the `Read` method. `Writer`s support writing via the `Write` method. Many functions in Go take Readers or Writers as arguments. E.g. the io.Copy function copies data from a Reader to a Writer:
+`io` package consists of a few functions, but mostly interfaces used in other packages. The two main interfaces are `Reader` and `Writer`. `Reader`s support reading via the `Read` method. `Writer`s support writing via the `Write` method. Many functions in Go take Readers or Writers as arguments. E.g. the io.Copy function copies data from a Reader to a Writer:
 
 ```go
 func Copy(dst Writer, src Reader) (written int64, err error)
 ```
 
-### bytes
+### bufio and ioutil
 
-To read/write a `[]byte` or a `string`, you can use the `Buffer` type (struct) from [bytes](https://golang.org/pkg/bytes) package:
+See notes/go/io.
+
+### bytes strings
+
+To read/write a `[]byte` or a `string`, you can use the `Buffer` type (struct) from `bytes` package:
 
 ```go
 var b bytes.Buffer
@@ -666,11 +670,8 @@ b.WriteTo(os.Stdout)
 * a `Buffer` doesn't have to be initialized
 * it supports both the `Reader` and `Writer` interfaces
 * you can convert it into a `[]byte` by calling `buf.Bytes()`
-* if you only need to read from a string, you can use the more efficient `strings.NewReader` function
 
-### bufio and ioutil
-
-See notes/go/io.
+If you only need to read from a string, you can use the more efficient `strings.NewReader` function.
 
 ## Files and Folders
 
