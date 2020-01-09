@@ -652,11 +652,11 @@ Code taken from John Graham-Cumming: [Interfaces](https://learning.oreilly.com/l
 func Copy(dst Writer, src Reader) (written int64, err error)
 ```
 
-### bufio and ioutil
+### os, bufio and io/ioutil (a subpackage)
 
 See notes/go/io.
 
-### bytes strings
+### bytes and strings
 
 To read/write a `[]byte` or a `string`, you can use the `Buffer` type (struct) from `bytes` package:
 
@@ -673,7 +673,7 @@ b.WriteTo(os.Stdout)
 
 If you only need to read from a string, you can use the more efficient `strings.NewReader` function.
 
-## Files and Folders
+### os (files and folders)
 
 The easiest way to read the entire file into memory:
 
