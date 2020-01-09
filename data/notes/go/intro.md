@@ -578,88 +578,64 @@ a.Talk() // could be also: a.Person.Talk()
 
 ## Interfaces
 
-Interfaces are similar to structs but instead of fields they have a method set. A method set is a list of methods that a type must have in order to *implement* the interface. We can use interface types as arguments to functions.
+Interfaces are similar to structs but instead of fields they have a method set. A method set is a list of methods that a type must have in order to *implement* the interface. We can use interface types as arguments to functions. Interfaces define behaviour instead of defining types.
 
 ```go
 package main
 
 import (
-    "fmt"
-    "math"
+	"fmt"
+	"math/rand"
 )
 
-type Shape interface {
-    area() float64 // any type that has area method is a Shape
-}
-func totalArea(shapes ...Shape) float64 { // interface (not a concrete type) as argument
-    var area float64
-    for _, s := range shapes {
-        area += s.area()
-    }
-    return area
+type shuffler interface {
+	Len() int      // Any type that has this method set satisfies
+	Swap(i, j int) // the shuffler interface, i.e. is a shuffler.
 }
 
-// Circle type with area method.
-type Circle struct {
-    x, y, r float64
-}
-func (c *Circle) area() float64 {
-    return math.Pi * c.r * c.r
-}
-
-// Rectangle type with area method.
-type Rectangle struct {
-    x1, y1, x2, y2 float64
-}
-func (r *Rectangle) area() float64 {
-    l := distance(r.x1, r.y1, r.x1, r.y2)
-    w := distance(r.x1, r.y1, r.x2, r.y1)
-    return l * w
+func shuffle(s shuffler) { // interface (not a concrete type) used as argument
+	for i := 0; i < s.Len(); i++ {
+		j := rand.Intn(s.Len() - i)
+		s.Swap(i, j)
+	}
 }
 
-func distance(x1, y1, x2, y2 float64) float64 {
-    a := x2 - x1
-    b := y2 - y1
-    return math.Sqrt(a*a + b*b)
+type intSlice []int
+
+func (is intSlice) Len() int {
+	return len(is)
+}
+
+func (is intSlice) Swap(i, j int) {
+	is[i], is[j] = is[j], is[i]
+}
+
+type stringSlice []string
+
+func (s stringSlice) Len() int {
+	return len(s)
+}
+
+func (s stringSlice) Swap(i, j int) {
+	s[i], s[j] = s[j], s[i]
 }
 
 func main() {
-    c := &Circle{0, 0, 5}
-    r := &Rectangle{0, 0, 10, 10}
-    tot := totalArea(c, r)
-    fmt.Println(tot)
+	// Note that we can use shuffle with *any* type that satisfies the shuffler
+	// interfaces. This is pretty close to duck typing and provides for a lot
+	// of flexibility.
+
+	is := intSlice{1, 2, 3, 4, 5}
+	shuffle(is)
+
+	s := stringSlice{"The", "Quick", "Brown", "Fox"}
+	shuffle(s)
+
+	fmt.Println(is, s)
 }
 ```
 
-Interfaces define behaviour instead of defining types.
-
-Interfaces can also be used as fields:
-
-```go
-type MultiShape struct {
-    shapes []Shape
-}
-
-multiShape := MultiShape{
-    shapes: []Shape{
-        Circle{0, 0, 5},
-        Rectangle{0, 0, 10, 10},
-    },
-}
-
-// Turn MultiShape into a Shape by giving it an area method.
-func (m *MultiShape) area() float64 {
-    var area float64
-    for _, s :+ range m.shapes {
-        area += s.area()
-    }
-    return area
-}
-```
-
-Now a MultiShape can contain Circles, Rectangles, or even other MultiShapes.
-
-See also John Graham-Cumming: [Interfaces](https://learning.oreilly.com/learning-paths/learning-path-go/9781491990384/9781491913871-video191862).
+Code taken from John Graham-Cumming: [Interfaces](https://learning.oreilly.com/learning-paths/learning-path-go/9781491990384/9781491913871-video191862).
 
 # Packages
 
