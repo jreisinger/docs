@@ -642,9 +642,7 @@ Code taken from John Graham-Cumming: [Interfaces](https://learning.oreilly.com/l
 * Go was designed to encourage good software engineering practices
 * one of them is code reuse (DRY - Don't Repeat Yourself): functions, packages
 
-## Input/Output
-
-### io
+## io
 
 `io` package consists of a few functions, but mostly interfaces used in other packages. The two main interfaces are `Reader` and `Writer`. `Reader`s support reading via the `Read` method. `Writer`s support writing via the `Write` method. Many functions in Go take Readers or Writers as arguments. E.g. the io.Copy function copies data from a Reader to a Writer:
 
@@ -652,13 +650,13 @@ Code taken from John Graham-Cumming: [Interfaces](https://learning.oreilly.com/l
 func Copy(dst Writer, src Reader) (written int64, err error)
 ```
 
-### bufio and io/ioutil
+## bufio and io/ioutil
 
 (ioutil is a subpackage of io)
 
 See notes/go/io.
 
-### bytes and strings
+## bytes and strings
 
 To read/write a `[]byte` or a `string`, you can use the `Buffer` type (struct) from `bytes` package:
 
@@ -675,7 +673,7 @@ b.WriteTo(os.Stdout)
 
 If you only need to read from a string, you can use the more efficient `strings.NewReader` function.
 
-### os
+## os
 
 (working with iles and folders)
 
