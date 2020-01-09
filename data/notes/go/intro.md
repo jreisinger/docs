@@ -652,8 +652,6 @@ Code taken from John Graham-Cumming: [Interfaces](https://learning.oreilly.com/l
 func Copy(dst Writer, src Reader) (written int64, err error)
 ```
 
-See also notes/go/io.
-
 ### bytes
 
 To read/write a `[]byte` or a `string`, you can use the `Buffer` type (struct) from [bytes](https://golang.org/pkg/bytes) package:
@@ -669,6 +667,10 @@ b.WriteTo(os.Stdout)
 * it supports both the `Reader` and `Writer` interfaces
 * you can convert it into a `[]byte` by calling `buf.Bytes()`
 * if you only need to read from a string, you can use the more efficient `strings.NewReader` function
+
+### bufio and ioutil
+
+See notes/go/io.
 
 ## Files and Folders
 
