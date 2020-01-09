@@ -1,7 +1,10 @@
 # Introduction to PromQL
 
-* not an SQL-like language
+* functional (not an SQL-like) query language for selecting and aggregating time series in real time
+* query expression result can be shown as a graph, tabular data or consumed via API by external systems
 * PromQL is powerful but most of the time your needs will be simple
+
+https://prometheus.io/docs/prometheus/latest/querying/basics/
 
 ## Aggregation Basics
 
