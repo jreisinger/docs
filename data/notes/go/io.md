@@ -1,5 +1,7 @@
 ## Reading input in "streaming" mode (`bufio.Scanner`)
 
+`bufio` package helps make input and output efficient and convenient. Its `Scanner` type reads input and breaks it into lines or words. `bufio` is good for "streaming" mode where input is read and broken into lines on the fly.
+
 Read from STDIN:
 
 ```
