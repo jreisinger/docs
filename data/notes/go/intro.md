@@ -591,7 +591,7 @@ import (
 type Shape interface {
     area() float64 // any type that has area method is a Shape
 }
-func totalArea(shapes ...Shape) float64 { // interface (not a type) as argument
+func totalArea(shapes ...Shape) float64 { // interface (not a concrete type) as argument
     var area float64
     for _, s := range shapes {
         area += s.area()
