@@ -674,7 +674,7 @@ See notes/go/io.
 
 ## Files and Folders
 
-The easiest way to read the entire file file into memory:
+The easiest way to read the entire file into memory:
 
 ```go
 package main
