@@ -9,3 +9,7 @@ Useful ([non](https://golang.org/pkg/) [obvious](https://blog.golang.org/)) link
 * https://github.com/golang/go/wiki
 * https://gobyexample.com/
 * https://yourbasic.org/golang/
+
+Blogs
+
+* https://blog.cloudflare.com/using-go-as-a-scripting-language-in-linux/
