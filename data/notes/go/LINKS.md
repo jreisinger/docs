@@ -4,7 +4,7 @@ My Go stuff on the Web
 * [gists](https://gist.github.com/search?utf8=%E2%9C%93&q=user%3Ajreisinger+language%3Ago)
 * PerlMonks: [Camel vs. Gopher](https://perlmonks.org/?node_id=1226977), [Does Go steal from Perl? :-)](https://perlmonks.org/?node_id=1219775)
 
-Useful links
+Useful ([non](https://golang.org/pkg/) [obvious](https://blog.golang.org/)) links
 
 * https://github.com/golang/go/wiki
 * https://gobyexample.com/
