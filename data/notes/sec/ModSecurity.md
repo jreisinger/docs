@@ -49,8 +49,8 @@ More
 
 Files
 
-* `crs/setup.conf` - config file
-* `crs/rules` - directory with rules (you should modify only `*EXCLUSION-RULES*`)
+* `modsecurity/crs/setup.conf` - config file
+* `modsecurity/crs/rules` - directory with rules (you should modify only `*EXCLUSION-RULES*`)
 
 Tips
 
