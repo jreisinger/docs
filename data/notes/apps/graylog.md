@@ -2,7 +2,7 @@
 
 Streams
 
-* think of it as tagging of incoming meesages
+* think of it as tagging of incoming messages
 * route messages into categories in real time
 * many uses: message categorization, access control, messages parsing and enrichment, ...
 * messages can belong to one or more streams
