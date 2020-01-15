@@ -1,5 +1,9 @@
 # Components
 
+Input
+
+* defines the method by which Graylog collects logs
+
 Streams
 
 * think of it as tagging of incoming messages
@@ -9,8 +13,8 @@ Streams
 
 Pipelines
 
-* run rule(s) against specific event
 * tied to Streams
+* run rule(s) against specific event
 * allow for: routing, parsing, dropping, blacklisting, modifying and enriching messages as they flow through Graylog
 
 Alerts are composed of:
@@ -21,10 +25,6 @@ Alerts are composed of:
 Index
 
 * basic unit of storage for data in Elasticsearch
-
-Input
-
-* defines the method by which Graylog collects logs
 
 # Searching
 
@@ -68,7 +68,7 @@ Leading wildcards are disabled to avoid excessive memory consumption.
 Fuzziness - search for similar terms
 
 ```
-ssh logni~
+ssh login~
 source:example.org~
 ```
 
