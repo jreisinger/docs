@@ -11,8 +11,8 @@ ModSecurity 3.0 has a new modular architecture, i.e. it's composed of:
 
 Files
 
-* `modsecurity.conf` - [ModSecurity directives](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v2.x%29#Configuration_Directives) v2.x (like `SecRuleEngine`, `SecRequestBodyAccess`, `SecAuditEngine`)
 * `nginx.conf` - ModSecurity-Nginx [connector directives](https://github.com/SpiderLabs/ModSecurity-nginx#usage) (like `modsecurity on`, `modsecurity_rules_file /etc/nginx/modsecurity/nginx-modsecurity.conf`)
+* `modsecurity.conf` - [ModSecurity directives](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v2.x%29#Configuration_Directives) v2.x (like `SecRuleEngine`, `SecRequestBodyAccess`, `SecAuditEngine`)
 
 Tips
 
