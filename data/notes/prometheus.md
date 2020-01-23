@@ -1,3 +1,22 @@
+# Monitoring
+
+Prometheus is a metrics-based tool for operational monitoring of computer systems, i.e. it's useful for:
+
+* alerting - let me know when things go wrong
+* debugging - let me investigate why things went wrong
+* trending - let me see how systems are being used and changed over time
+
+At the end of the day all moniroting systems are data processing pipelines.
+
+Monitoring is about events like receviving a HTTP request, entering a function, a user logging in, requesting more memory from the kernel. All events also have context like the IP address the request is coming from or call stacks of functions.
+
+Having all context all the time is impractical - ways to reduce the amount of data to something workable:
+
+* profiling - let's have some of the context for limited periods of time (`tcpdump` for networking, eBPF for Linux kernel)
+* tracing - let's take some proportion of events (sampling)
+* logging - let's have a limited set of events and some of the context for each of these events (Graylog, Splunk)
+* metrics - let's track aggregations over time of different types of events largely ingoring context (Prometheus)
+
 # Introduction to PromQL
 
 * functional (not an SQL-like) query language for selecting and aggregating time series in real time
