@@ -61,6 +61,16 @@ Having all context all the time is impractical - ways to reduce the amount of da
 
 https://prometheus.io/docs/prometheus/latest/querying/basics/
 
+If you enter `up` query into the expression browser and hit "Execute" you get:
+
+```
+up{instance="localhost:9090",job="prometheus"}
+```
+
+* `up` - special metric added by Prometheus during scrape (HTTP request)
+* `instance` - (default) label indicating the target that was scraped
+* `job` - (default) label indicating the type of the application (it comes from `job_name` defined in `prometheus.yaml`)
+
 ## Aggregation Basics
 
 ### Gauge
