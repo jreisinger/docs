@@ -17,6 +17,42 @@ Having all context all the time is impractical - ways to reduce the amount of da
 * logging - let's have a limited set of events and some of the context for each of these events (Graylog, Splunk)
 * metrics - let's track aggregations over time of different types of events largely ingoring context (Prometheus)
 
+# Architecture
+
+```
+                      +-------------+
+                      |             |
+                      | EC2, K8s,   |
+                      | Consul, etc.|
+                      +------^------+
+                             |
+                     +--------------------------------+
+ +-------------+     |       |                        |
+ | Application |     | +-----------+       Prometheus |
+ |             |     | |           |                  |
+ |    +--------+     | | Service   |                  |
+ |    |Client  |     | | Discovery |                  |  +--------------+
+ |    |Librabry<---+ | |           |                  |  | Email, PD,   |
+ +-------------+   | | +-----------+                  |  | Slack, etc.  |
+                   | |       |                        |  +------^-------+
+                   | |       |                        |         |
+                   | | +-----v -----      +---------+ |  +--------------+
+                   | | |           |      |         | |  |              |
+ +-------------+   +---+ Scraping  |      | Rules & +----> Alertmanager |
+ |  Exporter   <---+ | |           |      | alerts  | |  |              |
+ +-------------+     | +-----------+      +--^------+ |  +--------------+
+        |            |       |               |   |    |
+        |            | +-----v-------------------v--+ |
+ +------v------+     | |                            | |  +--------------+
+ |             |     | |          Storage           +----> Dashboards   |
+ | 3rd Party   |     | |                            | |  +--------------+
+ | Application |     | |                            | |
+ |             |     | +----------------------------+ |
+ +-------------+     |                                |
+                     +--------------------------------+
+
+```
+
 # Introduction to PromQL
 
 * functional (not an SQL-like) query language for selecting and aggregating time series in real time
