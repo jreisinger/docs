@@ -158,6 +158,7 @@ in PromQL:
 
 * Prometheus uses base units (such as bytes and seconds) and leaves pretty printing to frontend tools like Grafana
 * all Prometheus components run happily in containers, except for the Node exporter
+* Prometheus is implemented as a single binary `prometheus` (written in Go)
 * `prometheus.yml` is the Prometheus configuration file
 
 Useful metrics
