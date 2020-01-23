@@ -76,7 +76,7 @@ up{instance="localhost:9090",job="prometheus"}          1
 
 ### Gauge
 
-* snapshot of state
+* snapshot of state, current absolute value (e.g. node_filesystem_size_bytes metric)
 * we usually agregate it with sum, avg, min or max
 
 Total FS size on each machine (node_filesystem_size_bytes metric comes from Node exporter):
@@ -147,6 +147,14 @@ in PromQL:
 * come from service discovery (metadata) and relabelling
 * service discovery metadata are converted to target labels
 * default ones: `instance`, `job`
+
+# Tips and tricks
+
+* Prometheus uses base units (such as bytes and seconds) and leaves pretty printing to frontend tools like Grafana
+
+Useful metrics
+
+* process_resident_memory_bytes - how much memory is the application using (in bytes)
 
 # Sources
 
