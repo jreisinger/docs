@@ -154,6 +154,13 @@ in PromQL:
 * service discovery metadata are converted to target labels
 * default ones: `instance`, `job`
 
+# Kubernetes
+
+You can run Prometheus in k8s and monitor k8s objects in two ways:
+
+1. Standard k8s objects (`kind`s) like configMap, deployment and service + access permissions so Prometheus can access (monitor) k8s objects (sample [manifest](https://raw.githubusercontent.com/prometheus-up-and-running/examples/master/9/prometheus-deployment.yml)).
+2. Prometheus [Operator](https://github.com/coreos/prometheus-operator) which uses custom resource definition (CRD) feature of k8s to define custom k8s objects (like Prometheus and PrometheusRule).
+
 # Tips and tricks
 
 * Prometheus uses base units (such as bytes and seconds) and leaves pretty printing to frontend tools like Grafana
