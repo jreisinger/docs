@@ -17,7 +17,7 @@ Having all context all the time is impractical - ways to reduce the amount of da
 * logging - let's have a limited set of events and some of the context for each of these events (Graylog, Splunk)
 * metrics - let's track aggregations over time of different types of events largely ingoring context (Prometheus)
 
-# Architecture
+# Architecture and Components
 
 ```
                       +-------------+
@@ -59,7 +59,7 @@ Having all context all the time is impractical - ways to reduce the amount of da
 * exposes kernel- and machine-level metrics on Unix systems (CPU, memory, disk space, disk I/O, network bandwidth, ...)
 * *no* metrics about individual processes (in the Prometheus architecture you monitor applications and services directly)
 
-# Introduction to PromQL
+# PromQL
 
 * functional (not an SQL-like) query language for selecting and aggregating time series in real time
 * query expression result can be shown as a graph, tabular data or consumed via API by external systems
@@ -78,7 +78,7 @@ up{instance="localhost:9090",job="prometheus"}          1
 * `job` - (default) label indicating the type of the application (it comes from `job_name` defined in `prometheus.yaml`)
 * `1` - the metric's value (target is up)
 
-## Aggregation Basics
+## Metrics Types and Aggregations
 
 ### Gauge
 
@@ -120,7 +120,7 @@ process_resident_memory_bytes{job="kubelet"}
 
 * instant vector (one dimensional list) selector
 
-### Matachers
+### Matchers
 
 ```
 =  --> job="node"
