@@ -157,6 +157,7 @@ in PromQL:
 # Tips and tricks
 
 * Prometheus uses base units (such as bytes and seconds) and leaves pretty printing to frontend tools like Grafana
+* all Prometheus components run happily in containers, except for the Node exporter
 
 Useful metrics
 
