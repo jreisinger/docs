@@ -53,6 +53,12 @@ Having all context all the time is impractical - ways to reduce the amount of da
 
 ```
 
+## Node exporter
+
+* is a kind of exporter
+* exposes kernel- and machine-level metrics on Unix systems (CPU, memory, disk space, disk I/O, network bandwidth, ...)
+* *no* metrics about individual processes (in the Prometheus architecture you monitor applications and services directly)
+
 # Introduction to PromQL
 
 * functional (not an SQL-like) query language for selecting and aggregating time series in real time
