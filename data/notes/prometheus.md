@@ -164,8 +164,8 @@ You can run Prometheus in K8s and monitor K8s objects in two ways:
 There are currently these types of K8s service discovery you can use with P8s:
 
 * node
-* endpoints
 * service
+* endpoints
 * pod
 * ingress
 
