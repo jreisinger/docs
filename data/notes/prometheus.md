@@ -76,8 +76,8 @@ up{instance="localhost:9090",job="prometheus"}          1
 
 ### Gauge
 
-* snapshot of state, current absolute value (e.g. node_filesystem_size_bytes metric)
-* we usually agregate it with sum, avg, min or max
+* snapshot of state, current absolute value
+* we usually agregate it with `sum`, `avg`, `min` or `max`
 
 Total FS size on each machine (node_filesystem_size_bytes metric comes from Node exporter):
 
@@ -85,7 +85,7 @@ Total FS size on each machine (node_filesystem_size_bytes metric comes from Node
 sum(node_filesystem_size_bytes) without(device, fstype, mountpoint)
 ```
 
-* sum up everything with the same labels ingnore those three
+  * sum up everything with the same labels ingnore those three
 
 ### Counter
 
@@ -106,7 +106,7 @@ sum(rate(node_network_receive_bytes_total[5m])) without(device)
 
 ## Selectors
 
-You almost always will want to limit by job label, e.g.:
+You almost always will want to limit by job label (defines application type), e.g.:
 
 ```
 process_resident_memory_bytes{job="kubelet"}
