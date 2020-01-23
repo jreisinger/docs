@@ -156,10 +156,18 @@ in PromQL:
 
 # Kubernetes
 
-You can run Prometheus in k8s and monitor k8s objects in two ways:
+You can run Prometheus in K8s and monitor K8s objects in two ways:
 
-1. Standard k8s objects (`kind`s) like configMap, deployment and service + access permissions so Prometheus can access (monitor) k8s objects (sample [manifest](https://raw.githubusercontent.com/prometheus-up-and-running/examples/master/9/prometheus-deployment.yml)).
-2. Prometheus [Operator](https://github.com/coreos/prometheus-operator) which uses custom resource definition (CRD) feature of k8s to define custom k8s objects (like Prometheus and PrometheusRule).
+1. Standard K8s objects (`kind`s) like configMap, deployment and service + access permissions so Prometheus can access (monitor) K8s objects (sample [manifest](https://raw.githubusercontent.com/prometheus-up-and-running/examples/master/9/prometheus-deployment.yml)).
+2. Prometheus [Operator](https://github.com/coreos/prometheus-operator) which uses custom resource definition (CRD) feature of k8s to define custom K8s objects (like Prometheus and PrometheusRule).
+
+There are currently these types of K8s service discovery you can use with P8s:
+
+* node
+* endpoints
+* service
+* pod
+* ingress
 
 # Tips and tricks
 
