@@ -30,6 +30,7 @@ body {
 pre, code {
     font-family: Menlo, monospace;
     font-size: 0.775rem;
+    white-space: pre;
 }
 
 /* Code blocks */
