@@ -24,6 +24,7 @@ func main() {
 		employees = append(employees, Employee{Name: name})
 	}
 	//fmt.Printf("%+v\n", employees)
+	//spew.Config.DisableCapacities = true
 	spew.Dump(employees)
 }
 ```
