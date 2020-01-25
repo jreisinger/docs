@@ -25,3 +25,30 @@ func main() {
 	spew.Dump(employees)
 }
 ```
+
+```
+$ go run dilbert.go
+([]main.Employee) (len=3 cap=4) {
+ (main.Employee) {
+  ID: (int) 0,
+  Name: (string) (len=7) "Dilbert",
+  Position: (string) "",
+  DoB: (time.Time) 0001-01-01 00:00:00 +0000 UTC,
+  Manager: (string) ""
+ },
+ (main.Employee) {
+  ID: (int) 0,
+  Name: (string) (len=6) "Wallie",
+  Position: (string) "",
+  DoB: (time.Time) 0001-01-01 00:00:00 +0000 UTC,
+  Manager: (string) ""
+ },
+ (main.Employee) {
+  ID: (int) 0,
+  Name: (string) (len=4) "Boss",
+  Position: (string) "",
+  DoB: (time.Time) 0001-01-01 00:00:00 +0000 UTC,
+  Manager: (string) ""
+ }
+}
+```
