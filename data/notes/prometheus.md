@@ -161,7 +161,7 @@ You can run Prometheus in K8s and monitor K8s objects in two ways:
 1. Standard K8s objects (`kind`s) like configMap, deployment and service + access permissions so Prometheus can access (monitor) K8s objects (sample [manifest](https://raw.githubusercontent.com/prometheus-up-and-running/examples/master/9/prometheus-deployment.yml)).
 2. [Prometheus Operator](https://github.com/coreos/prometheus-operator) which uses custom resource definition (CRD) feature of k8s to define custom K8s objects (like Prometheus and PrometheusRule).
 
-There are currently these types of K8s service discovery you can use with P8s:
+P8s can discover targets to monitor by using K8s API. There are currently these types of K8s service discovery you can use with P8s:
 
 * node
 * service
