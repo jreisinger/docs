@@ -165,8 +165,8 @@ P8s can discover targets to monitor by using K8s API. There are currently these 
 
 * node
 * service
-* endpoints
-* pod - it will return a target for each port of every one of your pods
+* endpoints - will return a target for every port of every pod backing each of your services
+* pod - will return a target for each port of every one of your pods
 * ingress
 
 # Tips and tricks
