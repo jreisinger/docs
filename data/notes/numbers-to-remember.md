@@ -40,8 +40,6 @@ Media
     | SSD               | Gigabytes  |             250 MB/s |          250 MB/s |             | $3.00/GB |
     '-------------------+------------+----------------------+-------------------+-------------+----------'
 
- * [Write Throughput Average for Enterprise HDDs](http://www.tomshardware.com/charts/enterprise-hdd-charts/-04-Write-Throughput-Average-h2benchw-3.16,3376.html)
-
 IPv4 Address Classes
 
     .--------------------------------------------------------------------------------------------------------.
