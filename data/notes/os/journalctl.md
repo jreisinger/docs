@@ -9,7 +9,7 @@
 
 ## System time
 
-* the `systemd` suites comes with a tool `timedatectl` that controls the system time and date
+* the `systemd` suite comes with a tool `timedatectl` that controls the system time and date
 
 ```
 timedatectl list-timezones
