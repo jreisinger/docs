@@ -21,7 +21,7 @@ nginx -t # test configuration
 nginx -T # test configurtation and print it
 nginx -s <signal> #   stop (immediately)
                   #   quit (wait to finish processing requests)
-                  #   reload (configuration)
+                  #   reload (configuration gracefully, i.e. without dropping packets!)
                   #   reopen (log files) 
 ```
 
