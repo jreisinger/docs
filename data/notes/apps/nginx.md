@@ -10,9 +10,7 @@ curl localhost -I
 
 Key files and directories:
 
-* `/etc/nginx/`
 * `/etc/nginx/nginx.conf` - sets up global setting for things like worker processes, tuning, logging, loading of dynamic modules + references other config files
-* `/etc/nginx/nginx.d/`
 * `/var/log/nginx/`
 
 Resources
