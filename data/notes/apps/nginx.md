@@ -14,6 +14,18 @@ Key files and directories:
 * `/var/log/nginx/access.log` - entry for each request NGINX serves
 * `/var/log/nginx/error.log` - errors and debug info (if debug module is enabled)
 
+Useful commands:
+
+```
+nginx -t # test configuration
+nginx -T # test configurtation and print it
+nginx -s <signal> # signal: 
+                  #   stop (immediately)
+                  #   quit (wait to finish processing requests)
+                  #   reload (configuration)
+                  #   reopen (log files) 
+```
+
 Resources
 
 * [NGINX Cookbook](https://learning.oreilly.com/library/view/nginx-cookbook/9781492049098/) (2019)
