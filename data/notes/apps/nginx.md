@@ -1,12 +1,6 @@
 Nginx is a multitool: web server, load balancer, reverse proxy, WAF
 
-Verify installation (works also inside a container):
-
-```
-nginx -v
-ps -ef | grep nginx
-curl localhost -I
-```
+## Basics
 
 Key files and directories:
 
@@ -29,6 +23,25 @@ nginx -s <signal> #   stop (immediately)
 
 [Sample config](https://www.nginx.com/resources/wiki/start/topics/examples/full/)
 
-Resources
+## Tips and tricks
+
+Verify installation (works also inside a container):
+
+```
+nginx -v
+ps -ef | grep nginx
+curl localhost -I
+```
+
+Get values of variables (debugging):
+
+```
+# /etc/nginx/nginx.conf
+add_header X-mine "$upstream_addr";
+
+curl localhost -v # look for X-mine header
+```
+
+## Resources
 
 * [NGINX Cookbook](https://learning.oreilly.com/library/view/nginx-cookbook/9781492049098/) (2019)
