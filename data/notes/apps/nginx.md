@@ -13,10 +13,10 @@ Useful commands:
 ```
 nginx -t # test configuration
 nginx -T # test configurtation and print it
-nginx -s <signal> #   stop (immediately)
-                  #   quit (wait to finish processing requests)
-                  #   reload (configuration gracefully, i.e. without dropping packets!)
-                  #   reopen (log files) 
+nginx -s <signal> # stop (immediately)
+                  # quit (wait to finish processing requests)
+                  # reload (configuration gracefully, i.e. without dropping packets!)
+                  # reopen (log files) 
 ```
 
 [Config file structure](https://nginx.org/en/docs/beginners_guide.html#conf_structure) (simple vs block directive, context)
