@@ -1,4 +1,4 @@
-* a multitool: web server, load balancer, reverse proxy, WAF
+Nginx is a multitool: web server, load balancer, reverse proxy, WAF
 
 Verify installation (works also inside a container):
 
@@ -7,6 +7,13 @@ nginx -v
 ps -ef | grep nginx
 curl localhost -I
 ```
+
+Key files and directories:
+
+* `/etc/nginx/`
+* `/etc/nginx/nginx.conf` - sets up global setting for things like worker processes, tuning, logging, loading of dynamic modules + references other config files
+* `/etc/nginx/nginx.d/`
+* `/var/log/nginx/`
 
 Resources
 
