@@ -19,8 +19,7 @@ Useful commands:
 ```
 nginx -t # test configuration
 nginx -T # test configurtation and print it
-nginx -s <signal> # signal: 
-                  #   stop (immediately)
+nginx -s <signal> #   stop (immediately)
                   #   quit (wait to finish processing requests)
                   #   reload (configuration)
                   #   reopen (log files) 
