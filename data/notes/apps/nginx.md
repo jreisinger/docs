@@ -25,6 +25,8 @@ nginx -s <signal> #   stop (immediately)
                   #   reopen (log files) 
 ```
 
+[Config file structure](https://nginx.org/en/docs/beginners_guide.html#conf_structure) (simple vs block directive, context)
+
 Resources
 
 * [NGINX Cookbook](https://learning.oreilly.com/library/view/nginx-cookbook/9781492049098/) (2019)
