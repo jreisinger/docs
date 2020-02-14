@@ -38,6 +38,13 @@ More:
 * [Extending NGINX](https://www.nginx.com/resources/wiki/extending/)
 * [3rd party modules](https://www.nginx.com/resources/wiki/modules/)
 
+## The if directive
+
+More:
+
+* https://nginx.org/en/docs/http/ngx_http_rewrite_module.html#if
+* https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/#using-if
+
 ## Tips and tricks
 
 Verify installation (works also inside a container):
