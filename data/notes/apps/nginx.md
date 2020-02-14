@@ -25,7 +25,7 @@ nginx -s <signal> # stop (immediately)
 
 ## Modules
 
-In version 1.9.11 (2016) Nginx added support for dynamic modules similar to Dynamic Shared Objects (DSO) of Apache HTTP server. Before that you needed to recompile Nginx if you update a module.
+In version 1.9.11 (2016) Nginx added support for dynamic modules similar to Dynamic Shared Objects (DSO) of Apache HTTP server. Before that you needed to recompile Nginx if you updated a module. Now you can load/unload a module into NGINX at runtime.
 
 To load a dynamic module:
 
