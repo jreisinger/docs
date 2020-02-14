@@ -23,6 +23,21 @@ nginx -s <signal> # stop (immediately)
 
 [Sample config](https://www.nginx.com/resources/wiki/start/topics/examples/full/)
 
+## Modules
+
+In version 1.9.11 (2016) Nginx added support for dynamic modules similar to Dynamic Shared Objects (DSO) of Apache HTTP server. Before that you needed to recompile Nginx if you update a module.
+
+To load a dynamic module:
+
+```
+load_module "modules/ngx_mail_module.so";
+```
+
+More:
+
+* [Extending NGINX](https://www.nginx.com/resources/wiki/extending/)
+* [3rd party modules](https://www.nginx.com/resources/wiki/modules/)
+
 ## Tips and tricks
 
 Verify installation (works also inside a container):
