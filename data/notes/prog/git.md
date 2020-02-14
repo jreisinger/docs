@@ -229,8 +229,6 @@ git config core.fileMode false
 More
 ====
 
-* [Pro Git - Online book](http://progit.org/book/)
+* [Pro Git - Online book](https://git-scm.com/book)
 * See my [wiki](http://wiki.reisinge.net/Git) for more
 * [My blog post derived from this text](http://jreisinger.blogspot.sk/2014/01/simple-source-code-management-with-git.html)
-* [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/)
-* [O'Reilly Webcast: Git in One hour](http://www.youtube.com/watch?v=OFkgSjRnay4)
