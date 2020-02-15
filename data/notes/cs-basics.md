@@ -82,6 +82,7 @@ Inputs +--> |              |
 ```
 
 * interpreter - program that simulates a computer that undestands a high-level language
+* more flexible (interactive) development
 
 Sources
 
