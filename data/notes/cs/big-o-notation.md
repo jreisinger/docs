@@ -17,10 +17,10 @@ The expression in the parenthesis defines the number of operations for the *wors
 | 10 000         | 10 000 operations     | 14 operations         |
 | 1 000 000 000  | 10 000 000 operations | 32 operations         |
 
-## Sub-linear scaling
+## Sub-linear scaling (growth is less than linear)
 
 * O(1) - **constant** - no matter the scale of the input, performance of the system does not change; ex. hash-table lookup in RAM; such algorithms are rare
-* O(log n) - logarithmic - ex. binary search, grows slower as the size of the corpus being searched grows; it's growth is less than linear
+* O(log n) - logarithmic - grows slower as the size of the corpus being searched grows; ex. binary search
 
 ## Linear scaling
 
