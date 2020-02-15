@@ -55,7 +55,7 @@ c = a + b
 
 There are two ways to translate a high-level language to machine language:
 
-1) Compiling
+1) Compiling:
 
 ```
 Source +---> Compiler +---> Machine
@@ -69,7 +69,7 @@ Code                        Code
 
 * compiler - a complex program
 
-2) Interpretting
+2) Interpreting:
 
 ```
             +--------------+
