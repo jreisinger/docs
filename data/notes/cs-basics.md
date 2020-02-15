@@ -44,7 +44,7 @@ CPU can only understand a very *low-level* language - machine language. Machine 
 ```
 load the number from memory location 2020 into the CPU
 load the number from memory location 2021 into the CPU
-add the two numbers int the CPU
+add the two numbers in the CPU
 store the result into location 2023
 ```
 
