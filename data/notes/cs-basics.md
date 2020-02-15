@@ -71,6 +71,7 @@ Code                        Code
 ```
 
 * compiler - a complex program
+* compiler is no longer needed after a program is translated
 
 2) Interpreting:
 
