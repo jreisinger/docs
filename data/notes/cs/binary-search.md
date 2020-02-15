@@ -4,7 +4,8 @@ def binary_search(list, item):
         the item in the list or None if not found.
     """
 
-    # Which part of the list to search. At the beginning it's the entire list.
+    # Which part of the list to search. At the 
+    # beginning it's the entire list.
     low = 0
     high = len(list) - 1
 
@@ -18,5 +19,5 @@ def binary_search(list, item):
         else:               # guess was too low
             low = mid + 1
     
-    return None
+    return Non
 ```
