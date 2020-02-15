@@ -1,6 +1,6 @@
-# Big-O Notation
-
 NOTE: Logarithms (log) mentioned here are base 2.
+
+# Big-O Notation
 
 * a mathematical way of describing *scaling* - e.g. growth rate of algorithm's run(ning) time
 * it's a gross generalization that focuses on the trend as its input grows, not the specific run-time
