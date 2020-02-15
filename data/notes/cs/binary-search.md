@@ -1,4 +1,4 @@
-```
+```python3
 def binary_search(list, item):
     """ binary_search returns the position of 
         the item in the list or None if not found.
