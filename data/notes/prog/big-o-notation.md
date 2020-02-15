@@ -15,7 +15,7 @@ The expression in the parenthesis defines the number of operations for the *wors
 | 100            | 100 operations        | 7 operations          |
 | 10 000         | 10 000 operations     | 14 operations         |
 | 1 000 000 000  | 10 000 000 operations | 32 operations         |
-    
+
 Sub-linear scaling
 
 * O(1) - **constant** - no matter the scale of the input, performance of the system
