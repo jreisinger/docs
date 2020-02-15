@@ -21,7 +21,7 @@
 
 <ul>
 {{range .Files}}
-<li><a href="/{{ $UrlPath }}/{{ . }}">{{ . }}</a></li>
+<li><a href="/{{ $UrlPath | removeTrailingSlash }}/{{ . }}">{{ . }}</a></li>
 {{end}}
 </ul>
 

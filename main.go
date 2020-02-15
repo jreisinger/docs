@@ -4,6 +4,7 @@ import (
 	"html/template"
 	"log"
 	"net/http"
+	"strings"
 
 	"github.com/jreisinger/homepage/util"
 )
@@ -34,6 +35,14 @@ func main() {
 	log.Fatal(http.ListenAndServe(":5001", nil))
 }
 
+func removeTralingSlash(s string) string {
+	suffix := "/"
+	if strings.HasSuffix(s, suffix) {
+		s = s[:len(s)-len(suffix)]
+	}
+	return s
+}
+
 // handle requests
 func handler(w http.ResponseWriter, r *http.Request) {
 	urlPath := r.URL.Path[1:] // remove leading /
@@ -48,11 +57,13 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	t, err := template.ParseFiles("template/page.html")
+	t, err := template.New("page.html").Funcs(template.FuncMap{"removeTrailingSlash": removeTralingSlash}).ParseFiles("template/page.html")
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
-	t.Execute(w, p)
+	if err := t.Execute(w, p); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
 }
