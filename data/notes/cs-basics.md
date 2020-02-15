@@ -1,10 +1,13 @@
 ## Computer Science (CS)
 
-Fundamental question for CS is *what can be computed*?
+* fundamental question for CS is *what can be computed*?
+* it uses techniques of design, analysis, and experimentation 
 
 ## Hardware
 
-Computers are to CS what telescopes are to astronomy (Dijkstra).
+* computer is a universal information-processing machine
+* computer can carry out any process that can be described in sufficient details
+* computers are to CS what telescopes are to astronomy (Dijkstra)
 
 Functional view of a computer:
 
@@ -47,7 +50,7 @@ store the result into location 2023
 
 (Instructions and data are really represented in *binary* notation - sequences of 0s and 1s.)
 
-In *high-level* language (like Python) it looks like:
+In *high-level* (human-oriented) language - like Python - it looks like:
 
 ```
 c = a + b
