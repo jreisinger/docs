@@ -87,7 +87,7 @@ Inputs +--> |              |
 * interpreter - program that simulates a computer that undestands a high-level language
 * more flexible (interactive) development
 
-Sources
+# Sources
 
 * [Grokking Algorithms](https://learning.oreilly.com/library/view/grokking-algorithms-an/9781617292231/) (2016)
 * Python Programming: An Introduction to Computer Science (2010)
