@@ -20,7 +20,7 @@ The expression in the parenthesis defines the number of operations for the *wors
 ## Sub-linear scaling
 
 * O(1) - **constant** - no matter the scale of the input, performance of the system does not change; ex. hash-table lookup in RAM; such algorithms are rare
-* O(log n) - logarithmic - ex. [binary search](https://github.com/jreisinger/algorithms-with-perl/blob/master/binary-search) grows slower as the size of the corpus being searched grows; it's growth is less than linear
+* O(log n) - logarithmic - ex. binary search, grows slower as the size of the corpus being searched grows; it's growth is less than linear
 
 ## Linear scaling
 

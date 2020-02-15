@@ -21,3 +21,5 @@ def binary_search(list, item):
     
     return None
 ```
+
+[Perl version](https://github.com/jreisinger/algorithms-with-perl/blob/master/binary-search) of binary search.
