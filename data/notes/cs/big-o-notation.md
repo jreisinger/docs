@@ -1,6 +1,6 @@
-NOTE: Logarithms (log) mentioned here are base 2.
+NOTE: [Logarithms](https://www.rapidtables.com/calc/math/Log_Calculator.html) (log) mentioned here are base 2.
 
-# Big-O Notation
+# Big O notation
 
 * a mathematical way of describing *scaling* - e.g. growth rate of algorithm's run(ning) time
 * it's a gross generalization that focuses on the trend as its input grows, not the specific run-time
