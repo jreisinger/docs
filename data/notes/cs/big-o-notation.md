@@ -11,11 +11,11 @@ NOTE: Logarithms (log) mentioned here are base 2.
 
 Comparison of simple and binary search algorithms:
 
-| n (input size) | Simple search (n)   | Binary search (log n) |
-|:---------------|:--------------------|:----------------------|
-| 100            | 100 steps           | 7 steps               |
-| 10 000         | 10 000 steps        | 14 steps              |
-| 1 000 000 000  | 1 000 000 000 steps | 32 steps              |
+| n     | Simple search (n) | Binary search (log n) |
+|:------|:------------------|:----------------------|
+| 10    | 10 steps          | 4 steps               |
+| 100   | 100 steps         | 7 steps               |
+| 1 000 | 1 000 steps       | 10 steps              |
 
 The expression in the parenthesis in the 2nd and 3rd column defines the number of steps (guesses, operations) for the *worst-case* scenario. For example, if you binary search through 100 elements (n = 100) you will do 7 (log n) steps at most. If you use simple search you will do 100 (n) steps at most. Also notice that the growth rate of the binary algorithm is much smaller.
 
