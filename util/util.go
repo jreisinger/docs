@@ -68,3 +68,13 @@ func Check(err error) {
 		log.Fatal(err)
 	}
 }
+
+// RemoveTrailingSlash removes slash ("/") if it's the last character in a
+// string.
+func RemoveTralingSlash(s string) string {
+	suffix := "/"
+	if strings.HasSuffix(s, suffix) {
+		s = s[:len(s)-len(suffix)]
+	}
+	return s
+}
