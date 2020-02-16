@@ -9,15 +9,17 @@ NOTE: [Logarithms](https://www.rapidtables.com/calc/math/Log_Calculator.html) (l
 * order of magnitude is related but different - how many digits are in a number describing size (1000 is an order of magnitude larger than 100)
 * you can't really tell how fast an algorithm will be without benchmarking (CPU, disk, [RAM complexities](http://queue.acm.org/detail.cfm?id=1814327)) but O() notation can serve as a general guide
 
-Comparison of simple and binary search algorithms:
+## Simple vs. binary search
 
-| n     | Simple search (n) | Binary search (log n) |
-|:------|:------------------|:----------------------|
-| 10    | 10 steps          | 4 steps               |
-| 100   | 100 steps         | 7 steps               |
-| 1 000 | 1 000 steps       | 10 steps              |
+For example simple search is O(n) algorithm and binary search is O(log n) algorithm. It means that if you have for example 100 (sorted) items you need to search through you will make at most (worst-case scenario) 100 steps using simple search and 7 steps (guesses, operations) using binary search.
 
-The expression in the parenthesis in the 2nd and 3rd column defines the number of steps (guesses, operations) for the *worst-case* scenario. For example, if you binary search through 100 elements (n = 100) you will do 7 (log n) steps at most. If you use simple search you will do 100 (n) steps at most. Also notice that the growth rate of the binary algorithm is much smaller.
+| n     | Simple search O(n) | Binary search O(log n) |
+|:------|:-------------------|:-----------------------|
+| 10    | 10 steps           | 4 steps                |
+| 100   | 100 steps          | 7 steps                |
+| 1 000 | 1 000 steps        | 10 steps               |
+
+Also notice that the growth rate of the binary algorithm is much smaller.
 
 ## Sub-linear scaling (growth is less than linear)
 
