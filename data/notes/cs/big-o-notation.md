@@ -3,15 +3,14 @@ NOTE: [Logarithms](https://www.rapidtables.com/calc/math/Log_Calculator.html) (l
 # Big O notation
 
 * a mathematical way of describing *scaling* - e.g. growth rate of algorithm's run(ning) time
-* it's a gross generalization that focuses on the trend as its input grows, not the specific run-time
+* you can't really tell how fast an algorithm will be without benchmarking (CPU, disk, [RAM complexities](http://queue.acm.org/detail.cfm?id=1814327)) but O() notation can serve as a general guide
 * used to classify (compare) systems based on how they respond to changes in input size
 * *O* is used because the growth rate of an algorithm's run time is known as its *order*
-* order of magnitude is related but different - how many digits are in a number describing size (1000 is an order of magnitude larger than 100)
-* you can't really tell how fast an algorithm will be without benchmarking (CPU, disk, [RAM complexities](http://queue.acm.org/detail.cfm?id=1814327)) but O() notation can serve as a general guide
+* *order of magnitude* is related but different - how many digits are in a number describing size (1 000 is an order of magnitude larger than 100)
 
 ## Simple vs. binary search
 
-For example simple search is O(n) algorithm and binary search is O(log n) algorithm. It means that if you have for example 100 (sorted) items you need to search through you will make at most (worst-case scenario) 100 steps using simple search and 7 steps (guesses, operations) using binary search.
+For example, simple search is O(n) algorithm and binary search is O(log n) algorithm. It means that if you have for example 100 (sorted) items you need to search through you need at most (worst-case scenario) 100 steps using simple search and 7 steps (guesses, operations) using binary search. Also notice that the growth rate of the binary search algorithm is much smaller.
 
 | n     | Simple search O(n) | Binary search O(log n) |
 |:------|:-------------------|:-----------------------|
@@ -19,7 +18,7 @@ For example simple search is O(n) algorithm and binary search is O(log n) algori
 | 100   | 100 steps          | 7 steps                |
 | 1 000 | 1 000 steps        | 10 steps               |
 
-Also notice that the growth rate of the binary algorithm is much smaller.
+All this means that binary search is faster than simple search and it gets a lot faster as the input size increases.
 
 ## Sub-linear scaling (growth is less than linear)
 
