@@ -52,14 +52,16 @@ By default, NGINX eliminates the header fields whose values are empty strings an
 * `Host` gets set to `$proxy_host`
 * `Connection`gets set to `Close`
 
-[ngx_http_proxy_module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html) variables:
-
-* `$proxy_host` - name and port of a proxied server as specified in the `proxy_pass` directive
-
 More
 
 * https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/#passing-request-headers
 
+## Variables
+
+All NGINX [variables](http://nginx.org/en/docs/varindex.html).
+
+* `$proxy_host` [ngx_http_proxy_module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html) - name and port of a proxied server as specified in the `proxy_pass` directive
+* `$host` [ngx_http_core_module](http://nginx.org/en/docs/http/ngx_http_core_module.html) - in this order of precedence: hostname from the request line, or hostname from the `Host` request header field, or the server name matching a request
 
 ## Tips and tricks
 
