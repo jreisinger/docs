@@ -45,6 +45,22 @@ More:
 * https://nginx.org/en/docs/http/ngx_http_rewrite_module.html#if
 * https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/#using-if
 
+## Reverse proxy
+
+By default, NGINX eliminates the header fields whose values are empty strings and redefines two header fields in proxied requests:
+
+* `Host` gets set to `$proxy_host`
+* `Connection`gets set to `Close`
+
+[ngx_http_proxy_module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html) variables:
+
+* `$proxy_host` - name and port of a proxied server as specified in the `proxy_pass` directive
+
+More
+
+* https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/#passing-request-headers
+
+
 ## Tips and tricks
 
 Verify installation (works also inside a container):
