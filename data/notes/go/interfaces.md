@@ -1,4 +1,4 @@
-See also `go/basics`.
+See also `notes/go/basics`.
 
 Consider this program that de-duplicates input lines:
 
