@@ -8,6 +8,8 @@
 # Ingress
 
 * k8s's HTTP-based load balancing and "virtual hosting" system
+* at implementation level Ingress is different from pretty much any other k8s resource object
+* there is no "standard" Ingress controller built into k8s - you have to pick and install one
 
 ## Nginx Ingress Controller
 
@@ -16,3 +18,16 @@
 * it has many features and options exposed via annotations
 * it parses HTTP request and based on `Host` header and URL path proxies the request to a service
 
+# Manifests
+
+```
+# simple-ingress.yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: simple-ingress
+spec:
+  backend:
+    serviceName: my-service
+    servicePort: 8080
+```
