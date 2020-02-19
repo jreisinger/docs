@@ -88,6 +88,8 @@ spec:
           servicePort: 8080
 ```
 
+You can use [cert-manager](https://github.com/jetstack/cert-manager) (and https://letsencrypt.org/) to automate certificates management.
+
 # Sources
 
 * Kubernetes Up & Running (2019)
