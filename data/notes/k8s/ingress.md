@@ -48,3 +48,42 @@ spec:
           serviceName: my-service
           servicePort: 8080
 ```
+
+## TLS
+
+First we need a secret with TLS key and certificate:
+
+```
+# tls-secret.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  creationTimestamp: null
+  name: tls-secret-name
+type: kubernetes.io/tls
+data:
+  tls.crt: <base64 encoded certificate>
+  tls.key: <base64 encoded private key>
+```
+
+Then we can reference the secret in Ingress:
+
+```
+# tls-ingress.yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: tls-ingress
+spec:
+  tls:
+  - hosts:
+    - my-service.example.com
+    secretName: tls-secret-name
+  rules:
+  - host: my-service.example.com
+    http:
+      paths:
+      - backend:
+          serviceName: my-service
+          servicePort: 8080
+```
