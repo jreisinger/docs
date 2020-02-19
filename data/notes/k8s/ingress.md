@@ -87,3 +87,7 @@ spec:
           serviceName: my-service
           servicePort: 8080
 ```
+
+# Sources
+
+* Kubernetes Up & Running (2019)
