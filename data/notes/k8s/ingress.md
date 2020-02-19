@@ -22,6 +22,7 @@
 
 ```
 # simple-ingress.yaml
+# any HTTP request is forwarded to my-service
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
@@ -30,4 +31,20 @@ spec:
   backend:
     serviceName: my-service
     servicePort: 8080
+```
+
+```
+# host-ingress.yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: host-ingress
+spec:
+  rules:
+  - host: my-service.example.com
+    http:
+      paths:
+      - backend:
+          serviceName: my-service
+          servicePort: 8080
 ```
