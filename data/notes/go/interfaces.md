@@ -62,5 +62,12 @@ type Reader interface {
 It means that anything that has a `Read` function with the given signature ^ is (or implements) a Reader. `bufio.NewScanner` can take `*os.File` since `*os.File` implements the given Read function:
 
 ```
+package os // import "os"
+
+type File struct {
+	// Has unexported fields.
+}
+    File represents an open file descriptor.
+
 func (f *File) Read(b []byte) (n int, err error)
 ```
