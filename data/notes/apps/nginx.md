@@ -47,10 +47,10 @@ More:
 
 ## Reverse proxy
 
-By default, NGINX eliminates the header fields whose values are empty strings and redefines two header fields in proxied requests:
+In proxied requests (`proxy_pass`) NGINX by default eliminates the header fields whose values are empty strings and redefines two header fields:
 
 * `Host` gets set to `$proxy_host`
-* `Connection`gets set to `Close`
+* `Connection` gets set to `Close`
 
 More
 
