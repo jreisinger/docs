@@ -58,6 +58,9 @@ More
 
 ## Variables
 
+* all NGINX variables creation (declaration) happens while loading the configuration file (at "configuration time")
+* on the other hand variables assignment happens when requests are actually being served (at "request time")
+
 All NGINX [variables](http://nginx.org/en/docs/varindex.html).
 
 * `$proxy_host` [ngx_http_proxy_module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html) - name and port of a proxied server as specified in the `proxy_pass` directive
