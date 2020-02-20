@@ -44,6 +44,8 @@ More:
 
 * https://nginx.org/en/docs/http/ngx_http_rewrite_module.html#if
 * https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/#using-if
+* https://www.nginx.com/resources/wiki/start/topics/depth/ifisevil/
+* https://agentzh.blogspot.com/2011/03/how-nginx-location-if-works.html
 
 ## Reverse proxy
 
