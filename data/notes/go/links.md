@@ -6,7 +6,8 @@ My Go stuff on the Web
 
 Useful ([non](https://golang.org/pkg/) [obvious](https://blog.golang.org/)) links
 
-* https://github.com/golang/go/wiki
+* [Go for Perl hackers](https://github.com/oalders/go-for-perl-hackers)
+* [Go wiki](https://github.com/golang/go/wiki)
 * https://gobyexample.com/
 * https://yourbasic.org/golang/
 
