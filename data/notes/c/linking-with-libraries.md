@@ -17,10 +17,12 @@ When you link a program against a static library, the linker copies machine
 code from the library file into your executable.
 
 Advantages:
+
 * the final executable does not need the original libraries to run
 * the executable's behavior never changes
 
 Disadvantages:
+
 * waste of disk space and memory
 * you need to recompile the executable if a library is found inadequate or
     insecure
@@ -32,11 +34,13 @@ When you run a program linked against a shared library, the system loads the
 library's code into the process memory space only when necessary.
 
 Advantages:
+
 * many processes can share the same library code in memory
 * if you need to (slightly) modify the library code, no executable 
     recompilation is (usually) needed 
 
 Disadvantages:
+
 * library management
 * missing libraries
 
@@ -68,5 +72,6 @@ Most paths that contain header files have "include" somewher in the name. The de
 Double quotes (`#include "myheader.h"`) instead of angle brackets (`#include <stdio.h>`) mean that the header file is not in the system include directory - it's often in the same directory as the source file.
 
 More
+
 * http://wiki.reisinge.net/Linux1/InstalaciaLinuxuSpravaBalikov/ZdielaneKniznice
 * How Linux Works, 2nd: Ch. 15
