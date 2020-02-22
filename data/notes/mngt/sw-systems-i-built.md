@@ -1,4 +1,4 @@
-## Some of the SW systems I (co-)built
+Some of the SW systems I (co-)built
 
 * [runp](https://github.com/jreisinger/runp) (Go)
 * WebShield (Bash, Kubernetes; PN)
@@ -11,7 +11,7 @@
 * Backups monitoring (Perl, MySQL; IST)
 * Testing framework (Bash; Kedros)
 
-## Questions
+Questions
 
 * Who were the stakeholders and what were the primary business goals?
 * What did the high-level solution look like?
