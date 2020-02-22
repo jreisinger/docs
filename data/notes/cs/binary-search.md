@@ -22,4 +22,4 @@ def binary_search(list, item):
     return None
 ```
 
-[Perl version](https://github.com/jreisinger/algorithms-with-perl/blob/master/binary-search) of binary search.
+[Perl](https://github.com/jreisinger/algorithms-with-perl/blob/master/binary-search) ang [Go](https://github.com/jreisinger/go/blob/master/binary-search.go) of binary search.
