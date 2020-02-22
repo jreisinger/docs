@@ -1,5 +1,4 @@
-Working with files and STDIN
-----------------------------
+# Working with files and STDIN
 
 Finding duplicate lines
 
