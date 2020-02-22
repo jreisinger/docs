@@ -15,7 +15,6 @@ Corosync
 
 `crmsh` - CLI tool for managing
 
- * Pacemaker
- * Corosync
- * Resource agents (wrapper scripts)
-
+* Pacemaker
+* Corosync
+* Resource agents (wrapper scripts)
