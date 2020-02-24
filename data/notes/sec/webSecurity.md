@@ -22,6 +22,10 @@ If the signature over the once is valid, and the challenges check out, the agent
 
 Once the agent has an authorized key pair, it can request, renew and revoke the certificates.
 
+# More
+
+* https://wiki.reisinge.net/ZakladyKryptografie
+
 # Sources
 
 * [Web Application Security](https://learning.oreilly.com/library/view/web-application-security/9781492053101/) (2020)
