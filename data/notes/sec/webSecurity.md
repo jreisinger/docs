@@ -25,6 +25,7 @@ Once the agent has an authorized key pair, it can request, renew and revoke the 
 ## More
 
 * https://letsencrypt.org/how-it-works/
+* notes/k8s/ingress
 
 # More
 
