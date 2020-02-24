@@ -22,6 +22,10 @@ If the signature over the once is valid, and the challenges check out, the agent
 
 Once the agent has an authorized key pair, it can request, renew and revoke the certificates.
 
+## More
+
+* https://letsencrypt.org/how-it-works/
+
 # More
 
 * https://wiki.reisinge.net/ZakladyKryptografie
