@@ -80,6 +80,8 @@ signal.signal(signum, onSignal)                 # install signal handler
 while True: signal.pause()                      # wait for signals
 ```
 
+Handling [signals in Go](https://gobyexample.com/signals).
+
 Source:
 
 * How Linux Works, 2nd
