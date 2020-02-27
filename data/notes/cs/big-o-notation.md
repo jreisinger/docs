@@ -4,7 +4,7 @@ NOTE: [Logarithms](https://www.rapidtables.com/calc/math/Log_Calculator.html) (l
 
 * a mathematical way of describing *scaling* - e.g. growth rate of algorithm's run(ning) time
 * used to classify (compare) systems based on how they respond to changes in input size
-* you can't really tell how fast an algorithm will be without benchmarking (CPU, disk, [RAM complexities](http://queue.acm.org/detail.cfm?id=1814327)) but `O()` notation can serve as a general guide
+* you can't really tell how fast an algorithm will be without benchmarking (CPU, disk, [RAM complexities](http://queue.acm.org/detail.cfm?id=1814327)) but *O()* notation can serve as a general guide
 * *O* is used because the growth rate of an algorithm's run time is known as its *order*
 * *order of magnitude* is related but different - how many digits are in a number describing size (1 000 is an order of magnitude larger than 100)
 
