@@ -8,9 +8,7 @@ NOTE: [Logarithms](https://www.rapidtables.com/calc/math/Log_Calculator.html) (l
 * *O* is used because the growth rate of an algorithm's run time is known as its *order*
 * *order of magnitude* is related but different - how many digits are in a number describing size (1 000 is an order of magnitude larger than 100)
 
-## Simple vs. binary search
-
-For example, simple search is O(n) algorithm and binary search is O(log n) algorithm. It means that if you have for example 100 (sorted) items you need to search through you need at most (worst-case scenario) 100 steps using simple search and 7 steps (guesses, operations) using binary search. Also notice that the growth rate of the binary search algorithm is much smaller.
+For example, *simple search* is O(n) algorithm and *binary search* is O(log n) algorithm. It means that if you have for example 100 (sorted) items you need to search through you need at most (worst-case scenario) 100 steps using simple search and 7 steps (guesses, operations) using binary search. Also notice that the growth rate of the binary search algorithm is much smaller.
 
 | n     | Simple search O(n) | Binary search O(log n) |
 |:------|:-------------------|:-----------------------|
