@@ -56,9 +56,9 @@ In *high-level* (human-oriented) language - like Python - it looks like:
 c = a + b
 ```
 
-There are two ways to translate a high-level language to machine language:
+There are two ways to translate a high-level language to machine language: to compile it or to interpret it.
 
-## Compiling
+## Compiled
 
 ```
 Source +---> Compiler +---> Machine
@@ -73,7 +73,7 @@ Code                        Code
 * compiler - a complex program
 * compiler is no longer needed after a program is translated
 
-## Interpreting
+## Interpreted
 
 ```
             +--------------+
