@@ -1,9 +1,9 @@
-## Computer Science (CS)
+# Computer Science (CS)
 
 * fundamental question for CS is *what can be computed*?
 * it uses techniques of design, analysis, and experimentation 
 
-## Hardware
+# Hardware
 
 * computer is a universal information-processing machine
 * computer can carry out any process that can be described in sufficient details
@@ -34,7 +34,7 @@ Running a program:
 1. Instructions that comprise the program are copied (loaded) from secondary to main memory.
 2. CPU starts executing the program, i.e. it does this cycle: fetch, decode, execute
 
-## Programming languages (PL)
+# Programming languages (PL)
 
 * notations for expressing computations in an exact and unambiguous way
 * every structure in a PL has a precise form (its *syntax*) and a precise meaning (its *semantics*)
@@ -58,7 +58,7 @@ c = a + b
 
 There are two ways to translate a high-level language to machine language:
 
-1) Compiling:
+## Compiling
 
 ```
 Source +---> Compiler +---> Machine
@@ -73,7 +73,7 @@ Code                        Code
 * compiler - a complex program
 * compiler is no longer needed after a program is translated
 
-2) Interpreting:
+## Interpreting
 
 ```
             +--------------+
