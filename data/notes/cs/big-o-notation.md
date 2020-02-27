@@ -25,7 +25,7 @@ All this means that binary search is faster than simple search and it gets a lot
 
 ## Linear scaling
 
-* O(n) - **linear** - ex. simple search; twice as much data requires twice as much processing time
+* O(n) - **linear** - twice as much data requires twice as much processing time; ex. simple search
 
 ## Super-linear scaling
 
