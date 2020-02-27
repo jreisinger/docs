@@ -1,7 +1,7 @@
 ```python3
 def binary_search(list, item):
-    """ binary_search returns the position of 
-        the item in the list or None if not found.
+    """ binary_search returns the position of the item 
+        in the sorted list or None if not found.
     """
 
     # Which part of the list to search. At the 
