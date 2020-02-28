@@ -61,3 +61,5 @@ IPv4 Address Classes
     | B     |  172.16.0.0 - 172.31.255.255  | 172.16/12  |
     | C     | 192.168.0.0 - 192.168.255.255 | 192.168/16 |
     '-------+-------------------------------+------------'
+
+There also other private networks - see [Reserved IP addresses](https://en.wikipedia.org/wiki/Reserved_IP_addresses).
