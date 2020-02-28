@@ -62,9 +62,14 @@ IPv4 Address Classes
     | C     | 192.168.0.0 - 192.168.255.255 | 192.168/16 |
     '-------+-------------------------------+------------'
 
-There also other private networks (see [Reserved IP addresses](https://en.wikipedia.org/wiki/Reserved_IP_addresses)):
+IPv4 private networks
 
 ```
+# rfc 1918
+10.0.0.0/8
+172.16.0.0/12
+192.168.0.0/16
+# https://en.wikipedia.org/wiki/Reserved_IP_addresses
 100.64.0.0/10
 192.0.0.0/24
 198.18.0.0/15
