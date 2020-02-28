@@ -5,7 +5,7 @@
 * network policies are additive, i.e. they don't conflict and evaluation order has no effect
 * network policies are effective only within a namespace
 
-*WARNING*: To use network policies, you must be using a networking solution which supports NetworkPolicy. Creating a NetworkPolicy resource without a controller that implements it will have no effect.
+*WARNING*: To use network policies, you must be using a [network plugin](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/) which supports NetworkPolicy. Creating a NetworkPolicy resource without a controller that implements it will have no effect.
 
 More
 
