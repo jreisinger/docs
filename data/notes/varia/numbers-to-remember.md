@@ -23,7 +23,7 @@
     | Read 1 MB sequentially from disk   |     20,000,000   ns | 20 ms               |
     '------------------------------------+---------------------+---------------------'
 
-`*` Assuming ~1GB/sec SSD
+`* Assuming ~1GB/sec SSD`
 
 # Sysadmin
 
