@@ -1,4 +1,4 @@
-## Programmer
+# Programmer
 
     .--------------------------------------------------------------------------------.
     |               Source: https://gist.github.com/hellerbarde/2843375              |
@@ -25,7 +25,7 @@
 
 `*` Assuming ~1GB/sec SSD
 
-## Sysadmin
+# Sysadmin
 
 Media
 
