@@ -88,7 +88,7 @@ spec:
           servicePort: 8080
 ```
 
-You can use [cert-manager](https://github.com/jetstack/cert-manager) (and https://letsencrypt.org/) to automate certificates management.
+You can use [cert-manager](https://cert-manager.io/) (and e.g. [Let's Encrypt](https://letsencrypt.org/)) to automate certificates management.
 
 # Sources
 
