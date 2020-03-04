@@ -75,6 +75,10 @@ def gameOver(a, b):
 if __name__ == '__main__': main()
 ```
 
+## Bottom-Up Implementation
+
+A good way to approach the implementation of a modest size program is to start at the lowest levels of the structure chart and work your way up, testing each component (*unit testing*) as (or before) you complete it. 
+
 ## Prototyping and Spiral development
 
 * not an alternative to top-down design but a complementary approach
