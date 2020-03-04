@@ -4,13 +4,18 @@ Logs flow
 
 ```
 Logs producer -> [Kafka streamer (logs pre-processing) -> Kafka topic] -> 
-Input -> Stream -> Pipeline (e.g. add new field to a log) -> 
+Input -> Extractor -> Stream -> Pipeline (e.g. add new field to a log) -> 
 Alert
 ```
 
 Input
 
 * defines the method by which Graylog collects logs
+
+[Extractors](https://docs.graylog.org/en/latest/pages/extractors.html)
+
+* allow to instruct Graylog how to extract data from any text in a received message
+* work only on text fields (not numeric fields or anythin else)
 
 Streams
 
