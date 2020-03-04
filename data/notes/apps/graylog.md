@@ -1,5 +1,13 @@
 # Components
 
+Logs flow
+
+```
+Logs producer -> [Kafka streamer (logs pre-processing) -> Kafka topic] -> 
+Input -> Stream -> Pipeline (e.g. add new field to a log) -> 
+Alert
+```
+
 Input
 
 * defines the method by which Graylog collects logs
