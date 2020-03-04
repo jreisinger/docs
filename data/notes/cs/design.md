@@ -1,11 +1,8 @@
 ## Top-Down Design
 
-(Sometimes called step-wise refinement.)
-
-1. Express the algorithm as a series of smaller problems.
-2. Develop an interface (function name, parameters and return values) for each of the smaller problems.
-3. Detail the algorithm by expressing it in terms if its interfaces with the smaller problems.
-4. Repeat the process for each smaller problem.
+* start with the general problem and try to express a solution in terms of smaller problems
+* attack each of the smaller problems using the same technique
+* eventually the problems get so small that they are trivial to solve
 
 ```
 #!/usr/bin/env python3
@@ -76,3 +73,11 @@ def gameOver(a, b):
 
 if __name__ == '__main__': main()
 ```
+
+## Prototyping and Spiral development
+
+* not an alternative to top-down design but a complementary approach
+* start with a simple version of a program or a program component
+* try to gradually add features until it meets full specification
+* useful when dealing with new or unfamiliar features or technologies (everything may seem new to a novice programmer!)
+* useful when you get stuck at a step
