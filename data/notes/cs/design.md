@@ -1,6 +1,6 @@
 ## Top-Down Design
 
-* start with the general problem and try to express a solution in terms of smaller problems
+* start with the general problem and try to express a solution (create and algorithm) in terms of smaller problems
 * connect the general problem and the smaller problems via interface (function name, parameters and return values)
 * attack each of the smaller problems using the same technique
 * eventually the problems get so small that they are trivial to solve
