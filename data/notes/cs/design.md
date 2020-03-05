@@ -1,7 +1,8 @@
 ## Top-Down Design
 
-* start with the general problem and try to express a solution (create and algorithm) in terms of smaller problems
-* connect the general problem and the smaller problems via interface (function name, parameters and return values)
+* invaluable tool for developing complex algorithms
+* start with the general problem and try to express a solution (create an algorithm) in terms of smaller problems
+* connect the top level problem and the lower level problems via an interface (function name, parameters and return values)
 * attack each of the smaller problems using the same technique
 * eventually the problems get so small that they are trivial to solve
 
@@ -14,7 +15,10 @@ from random import random
 ## Top-Level Design
 
 def main():
-    """ ALGORITHM:
+    """ PROBLEM:
+        Simulate a game of racquetball to find out whether a slightly
+        better player can win significant number of games.
+        ALGORITHM:
         Get the inputs: probA, probB, n
         Simulate n games of racquetball using probA and probB
         Print a report on the wins for playerA and playerB
