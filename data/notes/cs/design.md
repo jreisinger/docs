@@ -1,3 +1,5 @@
+Design is a combination of art and science. As usual, the key to success is practice.
+
 ## Top-Down Design
 
 * invaluable tool for developing complex algorithms
@@ -118,3 +120,7 @@ def simOneGame():
 
 if __name__ == '__main__': simOneGame()
 ```
+
+Resources:
+
+* Python Programming: An Introduction to Computer Science, 2010
