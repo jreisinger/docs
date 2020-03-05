@@ -25,6 +25,8 @@ def main():
         Simulate n games of racquetball using probA and probB
         Print a report on the wins for playerA and playerB
     """
+    
+    # Algorithm written in terms of functions that don't yet exist.
     probA, probB, n = getInputs()
     winsA, winsB = simNGames(n, probA, probB)
     printSummary(winsA, winsB)
