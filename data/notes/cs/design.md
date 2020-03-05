@@ -121,6 +121,6 @@ def simOneGame():
 if __name__ == '__main__': simOneGame()
 ```
 
-Resources:
+# Resources
 
 * Python Programming: An Introduction to Computer Science, 2010
