@@ -86,3 +86,30 @@ A good way to approach the implementation of a modest size program is to start a
 * try to gradually add features until it meets full specification
 * useful when dealing with new or unfamiliar features or technologies (everything may seem new to a novice programmer!)
 * useful when you get stuck at a step
+
+```
+#!/usr/bin/env python3
+# prototype.py
+
+from random import random
+
+def simOneGame():
+    # Play just 30 rallies. Each player has
+    # a 50-50 chance of winning a given point.
+    scoreA = scoreB = 0
+    serving = "A"
+    for i in range(30):
+        if serving == "A":
+            if random() < .5:
+                scoreA = scoreA + 1
+            else:
+                serving = "B"
+        else:
+            if random() < .5:
+                scoreB = scoreB + 1
+            else:
+                serving = "A"
+    print(scoreA, scoreB)
+
+if __name__ == '__main__': simOneGame()
+```
