@@ -10,7 +10,7 @@ Useful ([non](https://golang.org/pkg/) [obvious](https://blog.golang.org/)) link
 * [Go wiki](https://github.com/golang/go/wiki)
 * https://gobyexample.com/
 * [Go for Perl hackers](https://github.com/oalders/go-for-perl-hackers)
-* [Pete's  go examples](https://github.com/pete911/go-examples)
+* [Pete's Go examples](https://github.com/pete911/go-examples)
 
 Blogs
 
