@@ -32,14 +32,14 @@ Functional view of a computer:
 Running a program:
 
 1. Instructions that comprise the program are copied (loaded) from secondary to main memory.
-2. CPU starts executing the program, i.e. it does this cycle: fetch, decode, execute
+2. CPU starts executing the program, i.e. it does this cycle (really, really fast): fetch, decode, execute
 
 # Programming languages (PL)
 
 * notations for expressing computations in an exact and unambiguous way
 * every structure in a PL has a precise form (its *syntax*) and a precise meaning (its *semantics*)
 
-CPU can only understand a very *low-level* language - machine language. Machine language is created by the designers of the particular CPU. Adding two numbers looks like:
+CPU can only understand a very **low-level** language - machine language. Machine language is created by the designers of the particular CPU. Adding two numbers looks like:
 
 ```
 load the number from memory location 2020 into the CPU
@@ -50,7 +50,7 @@ store the result into location 2023
 
 (Instructions and data are really represented in *binary* notation - sequences of 0s and 1s.)
 
-In *high-level* (human-oriented) language - like Python - it looks like:
+In **high-level** (human-oriented) language - like Python - it looks like:
 
 ```
 c = a + b
