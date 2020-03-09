@@ -168,6 +168,12 @@ git log ..master
 git log master..
 ```
 
+Push a new local branch to remote
+
+```
+git push -u origin experimental_idea
+```
+
 Merge two branches
 
 ```sh
