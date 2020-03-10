@@ -1,7 +1,5 @@
-All commands: `Ctrl+Shift+P`
-
-Find files: `Ctrl + P`
-
-Grep files: `Ctrl + Shift + F`
-
-Toggle terminal: `Ctrl + <backtick>`
+* settings: `Ctrl + ,`
+* all commands: `Ctrl+Shift+P`
+* toggle terminal: `Ctrl + <backtick>`
+* find files: `Ctrl + P`
+* grep files: `Ctrl + Shift + F`
