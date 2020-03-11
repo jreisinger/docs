@@ -19,11 +19,6 @@ Tips
 * audit logs are great for visibility but bad for performance - you can disable them via `SecAuditEngine off` (you still have the Nginx error logs)
 * you should not inspect static content (like images) for performance reasons
 
-More
-
-* https://github.com/SpiderLabs/ModSecurity/wiki
-* https://www.nginx.com/blog/compiling-and-installing-modsecurity-for-open-source-nginx/
-
 ## `SecRule` ModSecurity directive
 
 ```
