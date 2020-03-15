@@ -1,3 +1,5 @@
+*IST*
+
 http://zentara.net/ => Deep Thoughts => Want to know the meaning of life?
 
     This is the essence of the meaning of life
