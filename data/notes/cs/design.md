@@ -20,7 +20,7 @@ def main():
     """ PROBLEM:
         Simulate a game of racquetball to find out whether a slightly
         better player can win significant number of games.
-        ALGORITHM:
+        SOLUTION algorithm:
         Get the inputs: probA, probB, n
         Simulate n games of racquetball using probA and probB
         Print a report on the wins for playerA and playerB
