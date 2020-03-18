@@ -1,4 +1,4 @@
-See also https://github.com/jonatasbaldin/grokking-algorithms-golang/blob/master/ch2/selection_sort_test.go
+This is an implementation in Go of the selection sort from ch2 of Grokking Algorithms ([here](https://github.com/jonatasbaldin/grokking-algorithms-golang/blob/master/ch2/selection_sort_test.go) is a similar piece):
 
 ```
 // selection_sort_test.go
