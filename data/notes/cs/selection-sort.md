@@ -16,7 +16,7 @@ func findIndexOfSmallest(s []int) int {
 			continue
 		}
 		if s[i] < smallest {
-			smallest = s[i]
+			smallest = v
 			smallestIdx = i
 		}
 	}
