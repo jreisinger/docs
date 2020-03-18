@@ -39,6 +39,7 @@ More
 
 # OWASP ModSecurity Core Rule Set (CRS)
 
+* https://coreruleset.org/
 * definitions of the malicious patterns (signatures, blacklist rules)
 * documentation: https://github.com/SpiderLabs/OWASP-CRS-Documentation => https://www.modsecurity.org/CRS/Documentation/
 
