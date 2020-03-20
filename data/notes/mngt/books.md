@@ -11,7 +11,7 @@ Sysadmin
 
 Programming
 
-* [The Go Programming Language](https://www.gopl.io/), 2016
+* The Go Programming Language (https://www.gopl.io/), 2016
 * Foundations of Python Network Programming, 2014
 * Think Python, 2015
 * Programming in C, 2014
@@ -19,9 +19,9 @@ Programming
 * The Quick Python Book, 2010
 * Programming Perl, 2012
 * Perl Cookbook, 2003
-* **Intermediate Perl** [Alpaca Book](https://wiki.reisinge.net/AlpacaBook), 2012
-* **Learning Perl** [Llama Book](https://wiki.reisinge.net/LlamaBook), 2011
-* **Classic Shell Scripting** [ShellScripting](https://wiki.reisinge.net/ShellScripting), 2005
+* **Intermediate Perl** [[Alpaca Book](https://wiki.reisinge.net/AlpacaBook)], 2012
+* **Learning Perl** [[Llama Book](https://wiki.reisinge.net/LlamaBook)], 2011
+* **Classic Shell Scripting** ([ShellScripting](https://wiki.reisinge.net/ShellScripting)), 2005
 * The C Programming Language (K&R), 1988
 * **Skúsiš programovať?** (The Beginner's Programming Handbook - In Basic & Machine Code, 1984)
 * **Skúsiš to s mikropočítačom?** (The Beginner's Computer Handbook, 1983)
