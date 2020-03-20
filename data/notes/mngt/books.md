@@ -13,8 +13,6 @@ Programming
 
 * [The Go Programming Language](https://www.gopl.io/), 2016
 * Foundations of Python Network Programming, 2014
-* Grokking Algorithms, 2016
-* Think Python, 2015
 * Programming in C, 2014
 * Python Cookbook, 2013
 * The Quick Python Book, 2010
@@ -28,8 +26,16 @@ Programming
 * The Beginner's Programming Handbook - In Basic & Machine Code, 1984
 * The Beginner's Computer Handbook, 1983
 
-Management
+DevOps
 
 * The Phoenix Project, 2013
+
+CS
+
+* Grokking Algorithms, 2016
+* Think Python, 2015
+
+Management
+
 * Land the Tech Job You Love, 2009
 * The Success of Open Source, 2004
