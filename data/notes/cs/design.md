@@ -231,9 +231,9 @@ def main():
     probA, probB, n = getInputs()
     stats = SimStats()
     for i in range(n):
-        g = RBallGame(probA, probB)
-        g.play()
-        stats.update(g)
+        game = RBallGame(probA, probB)
+        game.play()
+        stats.update(game)
     stats.printReport()
 
 main()
