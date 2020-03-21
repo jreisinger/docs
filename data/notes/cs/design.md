@@ -1,4 +1,4 @@
-Design is a combination of art and science. As usual, the key to success is practice.
+Design is a combination of art and science. The essence of design is describing a system in terms of magical black boxes (functions or objects) and their interfaces. As usual, the key to success is practice.
 
 ## Top-Down Design
 
@@ -122,6 +122,20 @@ def simOneGame():
 
 if __name__ == '__main__': simOneGame()
 ```
+
+## Object-oriented design
+
+* data-centered complement to top-down design
+
+Design tips
+
+1. Look for object candidates. Nouns are usually objects, verbs are methods. Primitive data types (numbers or strings) are probably not candidates for objects, grouping of related data items are.
+
+2. Design iteratively. No one designs a program top to bottom in a linear, systematic fashion.
+
+3. Try out alternatives. Good design involves a lot of trial and error. "Plan to throw one away." -- Fred Brooks
+
+4. Keep it simple. Don't design in extra complexity until it is *really* needed.
 
 # Resources
 
