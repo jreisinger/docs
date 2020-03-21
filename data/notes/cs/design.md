@@ -137,6 +137,108 @@ Design tips
 
 4. Keep it simple. Don't design in extra complexity until it is *really* needed.
 
+```
+#!/usr/bin/env python3
+# oo-rball.py -- simulation of a racquet ball game.
+#                Illustrates design with objects.
+
+from random import random
+
+class Player:
+    """ Player keeps track of service probability and score.
+    """
+    def __init__(self, prob):
+        self.prob = prob
+        self.score = 1
+    def winsServe(self):
+        return random() <= self.prob
+    def incScore(self):
+        self.score = self.score + 1
+    def getScore(self):
+        return self.score
+
+class RBallGame:
+    """ RBallGame represents a game in progress.  A game has two players and
+        keeps track of which one is currently serving.
+    """
+    def __init__(self, probA, probB):
+        # Create a new game having players with the given probs.
+        self.playerA = Player(probA)
+        self.playerB = Player(probB)
+        self.server = self.playerA # playerA always serves first
+    def play(self):
+        # Play the game to completion.
+        while not self.isOver():
+            if self.server.winsServe():
+                self.server.incScore()
+            else:
+                self.changeServer()
+    def isOver(self):
+        a, b = self.getScores()
+        return a == 15 or b == 15 or \
+            (a == 7 and b == 0) or (b == 7 and a == 0)
+    def changeServer(self):
+        if self.server == self.playerA:
+            self.server = self.playerB
+        else:
+            self.server = self.playerA
+    def getScores(self):
+        return self.playerA.getScore(), self.playerB.getScore()
+
+class SimStats:
+    """ SimStats handles accumulation of statistics across multiple (completed)
+        games. It tracks the wins and shutouts for each player.
+    """
+    def __init__(self):
+        self.winsA = 0
+        self.winsB = 0
+        self.shutsA = 0
+        self.shutsB = 0
+    def update(self, aGame):
+        # Determine the outcome of aGame and update statistics.
+        a, b = aGame.getScores()
+        if a > b:
+            self.winsA = self.winsA + 1
+            if b == 0:
+                self.shutsA = self.shutsA + 1
+        else:
+            self.winsB = self.winsB + 1
+            if a == 0:
+                self.shutsB = self.shutsB + 1
+    def printReport(self):
+        # Print a nicely formatted report
+        n = self.winsA + self.winsB
+        print("Summary of", n , "games:\n")
+        print("          wins (% total)   shutouts (% wins)  ")
+        print("--------------------------------------------")
+        self.printLine("A", self.winsA, self.shutsA, n)
+        self.printLine("B", self.winsB, self.shutsB, n)
+    def printLine(self, label, wins, shuts, n):
+        template = "Player {0}:{1:5}  ({2:5.1%}) {3:11}   ({4})"
+        if wins == 0:        # Avoid division by zero!
+            shutStr = "-----"
+        else:
+            shutStr = "{0:4.1%}".format(float(shuts)/wins)
+        print(template.format(label, wins, float(wins)/n, shuts, shutStr)) 
+
+def getInputs():
+    a = float(input("What is the prob. player A wins a serve? "))
+    b = float(input("What is the prob. player B wins a serve? "))
+    n = int(input("How many games to simulate? "))
+    return a, b, n
+
+def main():
+    probA, probB, n = getInputs()
+    stats = SimStats()
+    for i in range(n):
+        g = RBallGame(probA, probB)
+        g.play()
+        stats.update(g)
+    stats.printReport()
+
+main()
+```
+
 # Resources
 
 * Python Programming: An Introduction to Computer Science, 2010
