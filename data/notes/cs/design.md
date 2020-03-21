@@ -10,7 +10,7 @@ Design is a combination of art and science. The essence of design is describing 
 
 ```
 #!/usr/bin/env python3
-# racquetball.py
+# rball.py
 
 from random import random
 
