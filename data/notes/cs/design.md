@@ -133,7 +133,7 @@ Design tips
 
 2. Design iteratively. No one designs a program top to bottom in a linear, systematic fashion.
 
-3. Try out alternatives. Good design involves a lot of trial and error. "Plan to throw one away." -- Fred Brooks
+3. Try out alternatives. Good design involves a lot of trial and error. When you look at someone's code, it's finished work, not the process they went through to get there. "Plan to throw one away." -- Fred Brooks
 
 4. Keep it simple. Don't design in extra complexity until it is *really* needed.
 
