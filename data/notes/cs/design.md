@@ -149,7 +149,7 @@ class Player:
     """
     def __init__(self, prob):
         self.prob = prob
-        self.score = 1
+        self.score = 0
     def winsServe(self):
         return random() <= self.prob
     def incScore(self):
