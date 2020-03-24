@@ -174,6 +174,12 @@ Useful output flags:
 --no-headers
 ```
 
+Sort objects by AGE:
+
+```
+kubectl get pod --sort-by=.metadata.creationTimestamp
+```
+
 Clean up objecs:
 
 ```sh
