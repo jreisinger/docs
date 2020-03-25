@@ -35,3 +35,11 @@ Get values of [multiple keys](https://stackoverflow.com/questions/28164849/using
 ```
 jq '.rrsets[] | "\(.name) \(.type)"'
 ```
+
+Get pods per node:
+
+```
+kubectl get pods -o json --all-namespaces | jq '.items |
+  group_by(.spec.nodeName) | map({"nodeName": .[0].spec.nodeName,
+  "count": length}) | sort_by(.count) | reverse'
+```
