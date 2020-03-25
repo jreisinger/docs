@@ -1,4 +1,4 @@
-Useful output flags:
+Useful output flags for `kubectl`:
 
 ```sh
 -o wide       # more details
@@ -6,12 +6,7 @@ Useful output flags:
 -o yaml       # complete object in YAML format
 --v=6         # verbosity
 --no-headers
-```
-
-Sort objects by AGE:
-
-```
-kubectl get pod --sort-by=.metadata.creationTimestamp
+--sort-by=.metadata.creationTimestamp
 ```
 
 Clean up objecs:
