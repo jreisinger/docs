@@ -159,6 +159,8 @@ $ docker inspect -f '{{ json .Mounts }}' web
 [{"Type":"bind","Source":"/mnt/data","Destination":"/data","Mode":"","RW":true,"Propagation":"rprivate"}]
 ```
 
+* `Source` on the host won't get removed when you remove the container
+
 Have a data volume container:
 
 ```bash
