@@ -5,7 +5,7 @@ build: test
 	GO111MODULE=on go build main.go
 
 # can be more of course (see runp)
-PLATFORMS := linux/arm
+PLATFORMS := linux/arm linux/amd64
 
 temp = $(subst /, ,$@)
 os = $(word 1, $(temp))
