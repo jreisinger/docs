@@ -61,3 +61,9 @@ kubectl run wget --image=busybox --rm -it --restart=Never --command -- wget -qO-
 ```
 
 * `--command` -- command to run instead of container's default entrypoint
+
+Remove pod stuck in terminating state:
+
+```
+kubectl delete pod postgres-86d59f8fb-pjtgx --force --grace-period=0
+```
