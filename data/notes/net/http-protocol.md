@@ -211,6 +211,7 @@ Host: tools.ietf.org
 
 4xx - Client errors; client request is unintelligible or illegal
 
+* [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400) Bad Request - the server cannot or will not process the request due to a client error (e.g. malformed request syntax)
 * 404 Not Found - the resource is not at the given URL
 
 5xx - Server errors
