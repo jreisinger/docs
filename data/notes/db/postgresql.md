@@ -7,8 +7,8 @@ psql -U <username>     # connect to DB
 \d <table>             -- table details
 \x                     -- expanded display
 
-select * from <table>;
-
+SELECT * FROM <table>;
+SELECT * FROM customer WHERE last_name LIKE '%gen%';
 SELECT
    last_name,
    first_name
