@@ -1,3 +1,5 @@
+Go is a minimalist language; it only has 25 keywords and 1 loop type.
+
 # Types
 
 Go is statically typed - variables always have specific type and type cannot
