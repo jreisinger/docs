@@ -106,19 +106,25 @@ Other programming languages have various types of loops (while, until, foreach,
 ...). Go only has for loop that can be used in various ways, e.g.:
 
 ```go
-// traditional c-style loop
+// Traditional c-style loop
+// init statement; continuation condition; increment statement
 for i := 1; i <= 10; i++ {
     fmt.Println(i)
 }
 
-// while loop
+// While loop
 i := 1              // declaration + initialization
 for i <= 10 {       // condition
     fmt.Println(i)
     i++             // increment
 }
 
-// loop over array/slice
+// Infinite loop
+for {
+    fmt.Println("forever")
+}
+
+// Loop over array/slice
 for i, value := range x {
     ...
 }
