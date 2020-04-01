@@ -106,11 +106,12 @@ Other programming languages have various types of loops (while, until, foreach,
 ...). Go only has for loop that can be used in various ways, e.g.:
 
 ```go
-// traditional c-style
+// traditional c-style loop
 for i := 1; i <= 10; i++ {
     fmt.Println(i)
 }
 
+// while loop
 i := 1              // declaration + initialization
 for i <= 10 {       // condition
     fmt.Println(i)
