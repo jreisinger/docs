@@ -22,7 +22,7 @@ ISO8601 UTC timestamp         | date --utc +%FT%TZ
 ISO8601 Local TZ timestamp    | date +%FT%T%Z              
 ```
 
-Vim config options I often use
+Vim config options
 
 ```
 set tabstop=4 shiftwidth=4 expandtab
