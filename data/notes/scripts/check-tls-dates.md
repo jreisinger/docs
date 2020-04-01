@@ -1,4 +1,4 @@
-## Check TLS certificate validity start and end dates
+Check TLS certificate validity start and end dates
 
 ```
 export PORT=443
