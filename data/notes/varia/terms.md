@@ -81,6 +81,10 @@ list dynamic dependencies
 
 a Linux kernel feature that connects two network segments (poor man's router)
 
+## loose coupling
+
+a system property and design strategy in which a system’s components have minimal knowledge of any other components. Two systems can be said to be loosely coupled when changes to one component generally don’t require changes to the other
+
 ## marshalling
 
 (or serializing, or just encoding) converting non-bytes data into bytes
