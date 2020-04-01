@@ -159,7 +159,7 @@ Now, you rarely see arrays used directly in Go code :-).
 
 ## Slices
 
-Slice is a segment of an array. Like arrays, they are indexable and have a length. Unlike arrays, the *length is allowed to change*.
+[Slice](https://tour.golang.org/moretypes/9) is a segment of an array. Like arrays, they are indexable and have a length. Unlike arrays, the *length is allowed to change*.
 
 ```go
     var s1 []float64            // []
@@ -176,8 +176,6 @@ Slice is a segment of an array. Like arrays, they are indexable and have a lengt
 
 Slices are always associated with some array. The are like
 [references](https://tour.golang.org/moretypes/8) to arrays.
-
-See also [Slice literals](https://tour.golang.org/moretypes/9).
 
 ### `append` operator
 
