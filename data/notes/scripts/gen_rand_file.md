@@ -23,4 +23,4 @@ text file:
 empty file:
 -----------
 
-    dd if=/dev/zero of=file.dat bs=1M count=100
+    dd if=/dev/zero of=file0.dat bs=1M count=100
