@@ -107,16 +107,15 @@ Other programming languages have various types of loops (while, until, foreach,
 
 ```go
 // Traditional c-style loop
-// init statement; continuation condition; increment statement
 for i := 1; i <= 10; i++ {
     fmt.Println(i)
 }
 
 // While loop
-i := 1              // declaration + initialization
-for i <= 10 {       // condition
+i := 1        // declaration + initialization
+for i <= 10 { // condition
     fmt.Println(i)
-    i++             // increment
+    i++       // increment
 }
 
 // Infinite loop
@@ -124,7 +123,7 @@ for {
     fmt.Println("forever")
 }
 
-// Loop over array/slice
+// Loop over array/slice or map
 for i, value := range x {
     ...
 }
