@@ -21,6 +21,12 @@ means that data likely to be used in the future is kept "nearby"
 * an optional Linux kernel feature that allows for finer tracking of a process hierarchy
 * used by `systemd`
 
+## cloud native
+
+Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds…. These techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil.
+
+-- Cloud Native Computing Foundation, CNCF Cloud Native Definition v1.0
+
 ## concurrency
 
 * managing a lot of things at once
