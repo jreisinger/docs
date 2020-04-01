@@ -1,5 +1,7 @@
 Go is a minimalist language; it only has 25 keywords and 1 loop type.
 
+By default, Go programs are compiled directly into native, statically-linked executable binaries into which all necessary Go libraries and the Go runtime are copied.
+
 # Types
 
 Go is statically typed - variables always have specific type and type cannot
@@ -791,3 +793,4 @@ func main() {
 * Caleb Doxsey: Introducing Go (O'Reilly, 2016)
 * John Graham-Cumming: [Go Programming Basics](https://learning.oreilly.com/learning-paths/learning-path-go/9781491990384/)
 * [A Tour of Go](https://tour.golang.org)
+* Cloud Native Go (O'Reilly 2021)
