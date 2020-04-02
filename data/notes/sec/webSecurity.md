@@ -30,6 +30,7 @@ Once the agent has an authorized key pair, it can request, renew and revoke the 
 # More
 
 * https://wiki.reisinge.net/ZakladyKryptografie
+* [Standord Web Security course](https://web.stanford.edu/class/cs253/) (2019)
 
 # Sources
 
