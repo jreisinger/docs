@@ -202,16 +202,18 @@ Returned by a server with each response.
 
 3xx - Redirects (Go the other way)
 
-* not expected to carry a body; new location is in the `Location` header
+* not expected to carry a body
+* new location is in the `Location` header
 * 301 Moved Permanently - resource has a new permanent URL
 
-```python
+    ```python
 >>> r = requests.get('http://httpbin.org/status/301', allow_redirects=False)
 >>> (r.status_code, r.url, r.headers['Location'])
 (301, 'http://httpbin.org/status/301', '/redirect/1')
 ```
 
 * 302 Found - resource temporarily resides at different URL
+* 304 Not Modified - the resource has not been modified so the client can use the cached version
 
 4xx - Client errors; client request is unintelligible or illegal (You messed up)
 
