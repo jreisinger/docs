@@ -84,6 +84,9 @@ DNS query process
 
 ![DNS query](https://www.cs.nmsu.edu/~istrnad/cs480/lecture_notes/dns_query.png)
 
+* `lair` is a client (lair.cs.colorado.edu)
+* `ns.cs.colorado.edu` is the local nameserver (aka recursive DNS resolver) for lair
+
 Name server taxonomy
 ====================
 
