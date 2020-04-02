@@ -28,7 +28,7 @@ computers count like this: 0, 1, 10, 11, 100, 101, 110, 111, ...
 Integer types
 
 * [u]int{8, 16, 32, 64}
-* machine dependent: uint, **int**, uintptr
+* machine dependent: uint, **int**, uintptr (usually 32 bits wide on 32-bit systems and 64 bits wide on 64-bit systems)
 * byte - alias for uint8
 * rune - alias for int32 (represents a Unicode code point)
 
