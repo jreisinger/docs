@@ -20,3 +20,5 @@ TMPDIR=$(mktemp -d)
 trap "exit 1"         HUP INT PIPE QUIT TERM
 trap "rm -rf $TMPDIR" EXIT
 ```
+
+My [SO answer](https://stackoverflow.com/a/53063602).
