@@ -215,9 +215,12 @@ Returned by a server with each response.
 * 302 Found - resource temporarily resides at different URL
 * 304 Not Modified - the resource has not been modified so the client can use the cached version
 
-4xx - Client errors; client request is unintelligible or illegal (You messed up)
+4xx - Client errors (You messed up)
 
-* [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400) Bad Request - the server cannot or will not process the request due to a client error (e.g. malformed request syntax)
+* client request is unintelligible or illegal
+* 400 Bad Request - the server cannot or will not process the request due to a client error (e.g. malformed request syntax)
+* 401 Unauthorized - it really means "unauthenticated"
+* 403 Forbidden - the client has no access rights to the content; that is it's unauthorized
 * 404 Not Found - the resource is not at the given URL
 
 5xx - Server errors (I messed up)
