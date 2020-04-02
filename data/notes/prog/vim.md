@@ -1,10 +1,14 @@
 Useful configuration options:
 
 ```
-:set tabstop=4 shiftwidth=4 expandtab
-:set nofoldenable
-:set textwidth=0
-:syntax off
+# prefix with :
+set tabstop=4 shiftwidth=4 expandtab
+set nofoldenable
+set textwidth=0
+syntax off
+
+# apply tabs -> spaces
+:retab
 ```
 
 How to search:
