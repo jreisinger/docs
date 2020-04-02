@@ -36,7 +36,7 @@ Get values of [multiple keys](https://stackoverflow.com/questions/28164849/using
 jq '.rrsets[] | "\(.name) \(.type)"'
 ```
 
-Get pods per node:
+Get number of pods per node:
 
 ```
 kubectl get pods -o json --all-namespaces | jq '.items |
