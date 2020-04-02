@@ -190,9 +190,9 @@ Cookie: session-id=d41d8cd98f00b204e9800998ecf8427e
 * web browsers often create four or more simultaneous TCP connections per site
     to get the resources in parallel
 
-## Status codes
+## [Status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 
-[Status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) - returned by a server with each response:
+Returned by a server with each response.
 
 1xx - Informational (Hold on)
 
@@ -202,11 +202,15 @@ Cookie: session-id=d41d8cd98f00b204e9800998ecf8427e
 
 3xx - Redirects; not expected to carry a body; new location is in the `Location` header (Go the other way)
 
+* 301 Moved Permanently - resource has a new permanent URL
+
 ```python
 >>> r = requests.get('http://httpbin.org/status/301', allow_redirects=False)
 >>> (r.status_code, r.url, r.headers['Location'])
 (301, 'http://httpbin.org/status/301', '/redirect/1')
 ```
+
+* 302 Found - resource temporarily resides at different URL
 
 4xx - Client errors; client request is unintelligible or illegal (You messed up)
 
