@@ -201,13 +201,13 @@ Host: tools.ietf.org
 
 [Status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) - returned by a server with each response:
 
-1xx - Informational
+1xx - Informational (Hold on)
 
-2xx - Success
+2xx - Success (Here you go)
 
 * 200 OK
 
-3xx - Redirects; not expected to carry a body; new location is in the `Location` header
+3xx - Redirects; not expected to carry a body; new location is in the `Location` header (Go the other way)
 
 ```python
 >>> r = requests.get('http://httpbin.org/status/301', allow_redirects=False)
@@ -215,12 +215,12 @@ Host: tools.ietf.org
 (301, 'http://httpbin.org/status/301', '/redirect/1')
 ```
 
-4xx - Client errors; client request is unintelligible or illegal
+4xx - Client errors; client request is unintelligible or illegal (You messed up)
 
 * [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400) Bad Request - the server cannot or will not process the request due to a client error (e.g. malformed request syntax)
 * 404 Not Found - the resource is not at the given URL
 
-5xx - Server errors
+5xx - Server errors (I messed up)
 
 * 500 Internal server error - a generic "catch-all" response
 * 502 Bad Gateway - the server is a proxy and it cannot contact the upstream server (the server behind the proxy)
@@ -237,3 +237,4 @@ Caching headers
 * Foundations of Python Network Programming (2014) - [ch. 9](https://www.safaribooksonline.com/library/view/foundations-of-python/9781430258551/9781430258544_Ch09.xhtml)
 * Network Programming with Go - ch. 8
 * ULSAH 5th - ch. 19
+* https://web.stanford.edu/class/cs253/
