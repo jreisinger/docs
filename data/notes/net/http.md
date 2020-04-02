@@ -190,14 +190,7 @@ Cookie: session-id=d41d8cd98f00b204e9800998ecf8427e
 * web browsers often create four or more simultaneous TCP connections per site
     to get the resources in parallel
 
-## Various
-
-Minimally correct request nowadays (otherwise 404):
-
-```plain
-GET /html/rfc7230 HTTP/1.1
-Host: tools.ietf.org
-```
+## Status codes
 
 [Status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) - returned by a server with each response:
 
@@ -226,6 +219,15 @@ Host: tools.ietf.org
 * 502 Bad Gateway - the server is a proxy and it cannot contact the upstream server (the server behind the proxy)
 * 503 Service unavailable - server down for maintenance or overloaded
 * 504 Gateway timeout - the server is a proxy and it did not get a response from the upstream server in order to complete the request
+
+## Various
+
+Minimally correct request nowadays (otherwise 404):
+
+```plain
+GET /html/rfc7230 HTTP/1.1
+Host: tools.ietf.org
+```
 
 Caching headers
 
