@@ -200,8 +200,9 @@ Returned by a server with each response.
 
 * 200 OK
 
-3xx - Redirects; not expected to carry a body; new location is in the `Location` header (Go the other way)
+3xx - Redirects (Go the other way)
 
+* not expected to carry a body; new location is in the `Location` header
 * 301 Moved Permanently - resource has a new permanent URL
 
 ```python
