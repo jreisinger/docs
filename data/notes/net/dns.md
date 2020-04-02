@@ -78,6 +78,11 @@ Special characters in resource records
     @   the current zone name
     ()  allows data to span lines
     *   wild card (`name` field only)
+    
+DNS query process
+=================
+
+![DNS query](https://www.cs.nmsu.edu/~istrnad/cs480/lecture_notes/dns_query.png)
 
 Name server taxonomy
 ====================
