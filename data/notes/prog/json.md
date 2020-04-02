@@ -39,7 +39,5 @@ jq '.rrsets[] | "\(.name) \(.type)"'
 Get number of pods per node:
 
 ```
-kubectl get pods -o json --all-namespaces | jq '.items | \
-  group_by(.spec.nodeName) | map({"nodeName": .[0].spec.nodeName, \
-  "count": length}) | sort_by(.count) | reverse'
+kubectl get pods -o json --all-namespaces | jq '.items | group_by(.spec.nodeName) | map({"nodeName": .[0].spec.nodeName, "count": length}) | sort_by(.count) | reverse'
 ```
