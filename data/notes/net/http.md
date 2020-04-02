@@ -206,7 +206,7 @@ Returned by a server with each response.
 * new location is in the `Location` header
 * 301 Moved Permanently - resource has a new permanent URL
 
-    ```python
+```python
 >>> r = requests.get('http://httpbin.org/status/301', allow_redirects=False)
 >>> (r.status_code, r.url, r.headers['Location'])
 (301, 'http://httpbin.org/status/301', '/redirect/1')
