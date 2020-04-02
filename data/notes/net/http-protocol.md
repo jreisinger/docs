@@ -83,7 +83,13 @@ For requests, the body can include parameters (for POST or PUT requests) or the 
 scheme://[username:password@]hostname[:port][/path][?query][#anchor]
 ```
 
+* `path` used to represent a file system path, now it can be anything
 * `query` section can contain multiple `key=value` pairs separated by `&`
+* `anchor` is also called `fragment`
+
+```
+http://example.com:81/a/b.html?user=Alice&year=2020#p2
+```
 
 ## Methods (verbs)
 
