@@ -34,6 +34,8 @@ func selectionSort(s []int) []int {
 	return sorted
 }
 
+// --- tests ---
+
 func TestFindIndexOfSmallest(t *testing.T) {
 	type testpair struct {
 		s []int
