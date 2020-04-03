@@ -1,3 +1,16 @@
+* your computer's memory is like a giant set of drawers
+* when you want to store multiple elements, use an array or a linked list
+
+arrays
+
+* all elements are stored right next to each other
+* allow for fast reads
+
+linked lists
+
+* elements are distrubuted all over the memory, and one element stores the address of the next one
+* allow for fast inserts and deletes
+
 This is an implementation in Go of the selection sort from ch2 of Grokking Algorithms ([here](https://github.com/jonatasbaldin/grokking-algorithms-golang/blob/master/ch2/selection_sort_test.go) is a similar piece):
 
 ```
