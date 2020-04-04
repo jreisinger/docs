@@ -6,7 +6,7 @@ Every recursive function should have two parts:
 * base case - the function doesn't call itself
 * recursive case - the function calls itself
 
-Wrong: no base case -> infinite loop
+Wrong (no base case -> infinite loop):
 
 ```
 def countdown(i):
