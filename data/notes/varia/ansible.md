@@ -87,7 +87,7 @@ $ cat group_vars/production
 db_primary_host: buda.example.org
 # accessed as {{ db_primary_host }}
 
-$ cat_group_vars/production_dict
+$ cat group_vars/production_dict
 db:
   primary:
     host: buda.example.org
@@ -123,6 +123,7 @@ Roles
 -----
 
 Primary mechanism for breaking a playbook into multiple files
+
 * tasks
 * files
 * templates
