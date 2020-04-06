@@ -152,7 +152,7 @@ TLS/SSL
 * server authentication and transfer encryption layer around HTTP
 * the only stuff that's NOT encrypted: IP addresses, ports (and probably DNS traffic)
 
-Cookies
+[Cookies](https://tools.ietf.org/html/rfc6265)
 
 * every request is independent of all other requests (from the point of the
     view of the protocol)
