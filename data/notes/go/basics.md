@@ -258,37 +258,6 @@ Inputs -> [ func f(i, j int) int {} ] -> Outputs
 
 * collectively, the parameters (i, j) and the return type (int) are called function's signature
 
-Functions form call stacks:
-
-```go
-func main() {
-    fmt.Println(f1())
-}
-
-func f1() int {
-    return f2()
-}
-
-func f2() int {
-    return 1
-}
-```
-
-```
-                    +----+
-                    | f2 | return
-                    +----+
-          +----+    +----+        +----+
-          | f1 | f2 | f1 |        | f1 | return
-          +----+    +----+        +----+
-+----+    +----+    +----+        +----+        +----+
-|main| f1 |main|    |main|        |main|        |main|
-+----+    +----+    +----+        +----+        +----+
-```
-
-* each time we call a function, we push it onto the call stack
-* each time we return from a function, we pop it off of the stack
-
 Return types can have names:
 
 ```go
