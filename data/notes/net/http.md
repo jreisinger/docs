@@ -161,13 +161,16 @@ Cookies
     further requests:
 
 ```plain
+(initial request)
 GET /login HTTP/1.1
 ...
 
+(initial response)
 HTTP/1.1 200 OK
 Set-Cookie: session-id=d41d8cd98f00b204e9800998ecf8427e; Path=/
 ...
 
+(all subsequent requests to the same host)
 GET /login HTTP/1.1
 Cookie: session-id=d41d8cd98f00b204e9800998ecf8427e
 ...
