@@ -34,7 +34,6 @@ func f2() int {
 * (`Println` is also a function but we ignore it for simplicity)
 * each time we call a function, we push it onto the call stack
 * each time we return from a function, we pop it off of the stack
-* all function calls go onto the call stack
 * when you call a fuction from another function, the calling function is paused in a partially completed state
 * each function gets some memory allocated on the stack
 * if too much memory is consumed (e.g. when making too many recursive calls) you get *stack overflow* error
