@@ -162,7 +162,7 @@ Cookies
 
 ```plain
 (initial request)
-GET /login HTTP/1.1
+POST /login HTTP/1.1
 ...
 
 (initial response)
