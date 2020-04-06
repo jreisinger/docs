@@ -31,6 +31,7 @@ func f2() int {
 +----+    +----+    +----+        +----+        +----+
 ```
 
+* (`Println` is also a function but we ignore it for simplicity)
 * each time we call a function, we push it onto the call stack
 * each time we return from a function, we pop it off of the stack
 * all function calls go onto the call stack
