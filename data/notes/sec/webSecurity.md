@@ -1,3 +1,14 @@
+# Same-origin policy (SOP)
+
+* very important concept in web application security model
+* web browser permits scripts from web page A to access data in web page B only if both web pages have same origin
+* origin = protocol/scheme + hostname + port number
+
+More
+
+* https://web.stanford.edu/class/cs253/
+* https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy
+
 # Let's Encrypt
 
 The objective of [Let's Encrypt](https://letsencrypt.org) and ACME protocol is to make it possible to set up an HTTPS server without human interaction.
