@@ -1,4 +1,4 @@
-https://github.com/davecgh/go-spew
+[spew](https://github.com/davecgh/go-spew) is something like Perl's [Data::Dumper](https://perldoc.perl.org/Data/Dumper.html)
 
 ```
 // dilbert.go
