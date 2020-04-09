@@ -18,7 +18,7 @@ Docker revision-controls:
 
 # Architecture
 
-![docker architecture](https://raw.github.com/jreisinger/blog/master/files/docker_architecture.png "Docker architecture")
+<img src="https://raw.github.com/jreisinger/blog/master/files/docker_architecture.png" style="max-width:100%;height:auto;"> 
 
 # Terminology
 
@@ -31,7 +31,7 @@ $ sudo docker -d -H unix:///var/run/docker.sock -H tcp://0.0.0.0:2375
 Docker *image* - one or more filesystem layers and metadata that represent all
 the files required to run a Dockerized application:
 
-![docker images](https://raw.github.com/jreisinger/blog/master/files/docker_images.png "Docker images")
+<img src="https://raw.github.com/jreisinger/blog/master/files/docker_images.png" style="max-width:100%;height:auto;"> 
 
 Docker *container* - a Linux container that has been instantiated from a Docker
 image
@@ -184,7 +184,7 @@ e3f087868688        none                null                local
 2. with host networking no separate network namespace is used (`docker run --net host ...`)
 3. none is for advanced use cases
 
-![docker bridge network](https://raw.github.com/jreisinger/blog/master/files/docker_bridge.png "Docker bridge network")
+<img src="https://raw.github.com/jreisinger/blog/master/files/docker_bridge.png" style="max-width:100%;height:auto;"> 
 
 When you use `-p` Docker creates `iptables` rules that route traffic from the host's public interface on the container's interface on the bridge network.
 
