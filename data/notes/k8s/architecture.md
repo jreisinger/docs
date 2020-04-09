@@ -7,7 +7,7 @@
 * nodes - worker machines (VMs or physicals) that run containerized applications - Pods
 * control plane - manages nodes and Pods
 
-Control plane components
+## Control plane components
 
 * kube-apiserver - exposes the API; scales horizontally
 * etcd - consistent and highly-available key value store for all cluster data
@@ -15,8 +15,20 @@ Control plane components
 * kube-contoller-manager - runs controller processes; logically each controller is a separate process but they are all compiled into a single binary and run in a single process (node controller, replication controller, endpoints controller, service account & token controllers)
 * cloud-controller-manager - runs controllers that interact with the underlying cloud providers (noder controller, route controller, service controller, volume controller)
 
-Node components
+## Node components
 
 * kubelet - takes a set od PodSpecs and ensures that the containers described in those PodSpecs are running (in a Pod) and healthy
 * kube-proxy - implements part of the Service concept by maintaining network rules on nodes (using OS packet filtering layer or forwarding traffic by itself)
 * container runtime - software responsible for running containers (Docker, containerd, CRI-O)
+
+## Addons
+
+* use K8s resources (DaemonSet, Deployment, etc) to implement cluster features
+* namespaced addon resources belong within `kube-system` namespace
+
+Selected addons:
+
+* DNS - should be in all K8s clusters; containers automatically include this DNS server in their DNS searches (via `/etc/resolv.conf`)
+* WebUI (Dashboard) - web based UI
+* Container Resource Monitoring - generic time-series metrics
+* Cluster-level Logging
