@@ -82,7 +82,7 @@ Special characters in resource records
 DNS query process
 =================
 
-<img src="https://www.cs.nmsu.edu/~istrnad/cs480/lecture_notes/dns_query.png" style="width:100%;"> 
+<img src="https://www.cs.nmsu.edu/~istrnad/cs480/lecture_notes/dns_query.png" style="max-width:100%;height:auto;"> 
 
 * `lair` is a client (lair.cs.colorado.edu)
 * `ns.cs.colorado.edu` is the local nameserver (aka recursive DNS resolver) for lair
