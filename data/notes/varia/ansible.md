@@ -21,12 +21,14 @@ Module
 diagram](https://github.com/jreisinger/blog/tree/master/files/ansible_entities.png)
 
 Ansible workflow for each task
+
 1. generate a Python script
 2. copy the script to the servers (hosts)
 3. execute the script
 4. wait for the script to complete on all hosts
 
 `True` vs `yes`
+
 * `yes`/`no` when passing args to modules
 * `True`/`False` elsewhere in playbooks
 
