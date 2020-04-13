@@ -6,6 +6,10 @@ Terminology
 * orchestration - ex. making an update involving multiple servers
 * provisioning - spinning up new servers (VMs)
 
+Entity relationship:
+
+<img src="https://raw.githubusercontent.com/jreisinger/blog/master/files/ansible_entities.png" style="max-width:100%;height:auto;">
+
 Playbook
 
 * a configuration management script
@@ -16,10 +20,6 @@ Module
 
 * script packaged with Ansible
 * performs some action on a host (`ansible-doc <module>`)
-
-Entity relationship:
-
-<img src="https://raw.githubusercontent.com/jreisinger/blog/master/files/ansible_entities.png" style="max-width:100%;height:auto;">
 
 Ansible workflow for each task
 
