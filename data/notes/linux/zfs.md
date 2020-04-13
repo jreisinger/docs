@@ -6,7 +6,7 @@
 * ZFS secretly writes a GPT-style partition table and allocates all disks' space to its first partition
 * organized around *copy-on-write* principle
 
-![ZFS architecture](https://www.safaribooksonline.com/library/view/unix-and-linux/9780134278308/image/ZFSArchitecture.png)
+<img src="https://www.safaribooksonline.com/library/view/unix-and-linux/9780134278308/image/ZFSArchitecture.png" style="max-width:100%;height:auto;">
 
 ## Pools
 
