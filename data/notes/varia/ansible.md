@@ -17,8 +17,9 @@ Module
 * script packaged with Ansible
 * performs some action on a host (`ansible-doc <module>`)
 
-![Entity-relationship
-diagram](https://github.com/jreisinger/blog/tree/master/files/ansible_entities.png)
+Entity relationship:
+
+<img src="https://github.com/jreisinger/blog/tree/master/files/ansible_entities.png" style="max-width:100%;height:auto;">
 
 Ansible workflow for each task
 
