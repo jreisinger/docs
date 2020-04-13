@@ -19,7 +19,7 @@ Module
 
 Entity relationship:
 
-<img src="https://github.com/jreisinger/blog/tree/master/files/ansible_entities.png" style="max-width:100%;height:auto;">
+<img src="https://raw.githubusercontent.com/jreisinger/blog/master/files/ansible_entities.png" style="max-width:100%;height:auto;">
 
 Ansible workflow for each task
 
