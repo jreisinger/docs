@@ -1,7 +1,6 @@
 Divide & Conquer (D&C)
 
-* a well-known recursive *technique* for solving problems
-* not an algorithm
+* not an algorithm but a *technique* for solving problems that relies on recursion
 * quicksort is a sorting algorithm that uses D&C
 
 To solve a problem using D&C:
