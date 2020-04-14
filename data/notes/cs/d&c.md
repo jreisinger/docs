@@ -1,4 +1,4 @@
-Divice & Conquer (D&C)
+Divide & Conquer (D&C)
 
 * a well-known recursive *technique* for solving problems
 * not an algorithm
