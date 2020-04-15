@@ -1,3 +1,5 @@
+[source](https://web.stanford.edu/class/cs253/)
+
 Three algorithms/functions
 
 * `G() -> (pk, sk)` - generator returns public key (`pk`) and secret (private) key (`sk`)
