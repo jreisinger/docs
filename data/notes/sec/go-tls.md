@@ -24,7 +24,7 @@ Keys
 * public key - used to **encrypt** a message or verify a signature
 * private (secret) key - used to decrypt or sign a message
 
-Certificate
+X.509 Certificates
 
 * basically a public key signed with private key of a trusted third party called certificate authority (CA)
 * can be verified using the public key of the CA
@@ -34,8 +34,9 @@ Certificate
   * subject's public key
   * issuer (CA) name
   * validity
-* binary format (ASN.1, DER)
-* we use base64 encoding to represent it as text (PEM):
+* certs should use Subject Alternative Names (SANs), Common name (CN) was deprecated in 2000
+* binary format (ASN.1) - .cer, .crt, .der
+* Base64 encoding to represent it as text - .pem:
 
 ```
 -----BEGIN CERTIFICATE-----
@@ -56,4 +57,13 @@ gQAZUIHAL4D09oE6Lv2k56Gp38OBDuILvwLg1v1KL8mQR+KFjghCrtpqaztZqcDt
 2q2QoyulCgSzHbEGmi0EsdkPfg6mp0penssIFePYNI+/8u9HT4LuKMJX15hxBam7
 dUHzICxBVC1lnHyYGjDuAMhe396lYAn8bCld1/L4NMGBCQ==
 -----END CERTIFICATE-----
-  ```
+```
+  
+* unfortunately some of these file extensions ^ are also used for other data such as private keys
+  
+CLI tools
+
+* openssl - does not easily support SANs
+* cfssl
+* mkcert
+* minica
