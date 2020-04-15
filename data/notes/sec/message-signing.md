@@ -1,4 +1,4 @@
-[source](https://web.stanford.edu/class/cs253/)
+[Source](https://web.stanford.edu/class/cs253/).
 
 Three algorithms/functions
 
