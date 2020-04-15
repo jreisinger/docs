@@ -21,7 +21,7 @@ Error messages
 
 Keys and certificates
 
-* public key - can be freely distributed, used to encrypt a message or verify a signature
-* private key - must be kept secret, used to decrypt or sign a message
+* public key - used to encrypt a message or verify a signature
+* private (secret) key - used to decrypt or sign a message
 
 to share public keys you might need a trusted 3rd pary -> certificate authority (CA)
