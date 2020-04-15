@@ -1,5 +1,3 @@
-[Source](https://github.com/lizrice/secure-connections).
-
 TLS
 
 * new name for SSL
@@ -72,3 +70,5 @@ Error messages
 * `connection refused` - wrong port (or lack of server resources)
 * `certificate signed by uknown authority` - reveived a cert but it's not trusted
 * `remote error` - it's the other end that's complaining
+
+[CODE](https://github.com/jreisinger/go-tls)
