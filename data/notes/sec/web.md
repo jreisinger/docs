@@ -2,7 +2,7 @@
 
 * very important concept in web application security model
 * web browser permits scripts from web page A to access data in web page B only if both web pages have same origin
-* origin = protocol/scheme + hostname + port number
+* origin = (network protocol) scheme + hostname + port number
 
 More
 
