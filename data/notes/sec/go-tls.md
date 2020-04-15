@@ -15,10 +15,6 @@ HTTP(S) runs over TCP
 
 (see [details](https://speakerdeck.com/lizrice/a-go-programmers-guide-to-secure-connections?slide=10))
 
-Error messages
- 
-* `connection refused` = wrong port (or lack of server resources)
-
 Keys
 
 * public key - used to **encrypt** a message or verify a signature
@@ -70,3 +66,9 @@ CLI tools
 * cfssl
 * mkcert
 * minica
+
+Error messages
+ 
+* `connection refused` - wrong port (or lack of server resources)
+* `certificate signed by uknown authority` - reveived a cert but it's not trusted
+* `remote error` - it's the other end that's complaining
