@@ -30,10 +30,10 @@ Pipelines
 * run rule(s) against specific event
 * allow for: routing, parsing, dropping, blacklisting, modifying and enriching messages as they flow through Graylog
 
-Alerts are composed of:
+Alerts 
 
-1. alert condition
-1. alert notification
+* periodic searches that can trigger some notification when a defined condition is met
+* are composed of: 1. alert condition 2. alert notification
 
 Index
 
