@@ -35,8 +35,8 @@ X.509 Certificates
   * issuer (CA) name
   * validity
 * certs should use Subject Alternative Names (SANs), Common name (CN) was deprecated in 2000
-* binary format (ASN.1) - .cer, .crt, .der
-* Base64 encoding to represent it as text - .pem:
+* binary format (ASN.1) - `.der`
+* Base64 encoding to represent it as text - `.pem`:
 
 ```
 -----BEGIN CERTIFICATE-----
@@ -58,9 +58,12 @@ gQAZUIHAL4D09oE6Lv2k56Gp38OBDuILvwLg1v1KL8mQR+KFjghCrtpqaztZqcDt
 dUHzICxBVC1lnHyYGjDuAMhe396lYAn8bCld1/L4NMGBCQ==
 -----END CERTIFICATE-----
 ```
-  
+
 * unfortunately some of these file extensions ^ are also used for other data such as private keys
-  
+* there is not consitency in file naming, you can see:
+  * .key, .crt - information type (private key, certificate)
+  * .pem - file format (PEM)
+
 CLI tools
 
 * openssl - does not easily support SANs
