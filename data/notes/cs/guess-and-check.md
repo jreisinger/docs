@@ -2,6 +2,8 @@
 * general problem solving technique and algorithm
 * systematically enumerate all possible candidates for a solution and check whether each satisfies the problem's statement
 
+Implementation of guess and check algorithm with approximation:
+
 ```
 # Find cube root of a given number.
 
