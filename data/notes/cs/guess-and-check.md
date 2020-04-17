@@ -8,8 +8,10 @@ Implementation of guess and check algorithm with approximation:
 # Find cube root of a given number.
 
 cube = 27
-step = 0.01
-diff = 0.1
+
+step = 0.01 # decreasing step -> slower program
+diff = 0.1  # increasing diff -> less accurate answer
+
 count = 0
 guess = 0
 
