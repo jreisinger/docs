@@ -28,3 +28,7 @@ if abs(guess**3-cube) < diff:
 else:
     print("failed to find cube root of {}".format(cube))
 ```
+
+More
+
+* https://www.youtube.com/watch?v=SE4P7IVCunE&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=11
