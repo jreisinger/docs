@@ -1,3 +1,5 @@
+* aka bisection search
+
 ```python3
 def binary_search(list, item):
     """ binary_search returns the position of the item 
@@ -23,3 +25,7 @@ def binary_search(list, item):
 ```
 
 My [Perl](https://github.com/jreisinger/algorithms-with-perl/blob/master/binary-search) ang [Go](https://github.com/jreisinger/go/blob/master/binary-search.go) implementation of binary search.
+
+More
+
+* https://www.youtube.com/watch?v=SE4P7IVCunE&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=11
