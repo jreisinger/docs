@@ -1,4 +1,27 @@
-Simple router
+## Simple server
+
+```
+package main
+
+import (
+	"fmt"
+	"net/http"
+)
+
+func hello(w http.ResponseWriter, r *http.Request) {
+	q := r.URL.Query()
+	name := q.Get("name")
+	age := q.Get("age")
+	fmt.Fprintf(w, "Hello %s (%s)\n", name, age)
+}
+
+func main() {
+	http.HandleFunc("/hello", hello)
+	http.ListenAndServe(":8000", nil)
+}
+```
+
+## Simple router
 
 ```
 package main
