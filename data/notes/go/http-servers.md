@@ -50,6 +50,40 @@ func main() {
 }
 ```
 
-More
+## Simple middleware
+
+```
+package main
+
+import (
+	"fmt"
+	"log"
+	"net/http"
+)
+
+type logger struct {
+	Inner http.Handler
+}
+
+func (l *logger) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	uri := r.URL.RequestURI()
+	remAddr := r.RemoteAddr
+	log.Printf("start handling request for %s from %s\n", uri, remAddr)
+	l.Inner.ServeHTTP(w, r)
+	log.Printf("done handling request for %s from %s\n", uri, remAddr)
+}
+
+func hello(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hello %s\n", r.URL.Query().Get("name"))
+}
+
+func main() {
+	f := http.HandlerFunc(hello)
+	l := logger{Inner: f} // wrapper around f
+	http.ListenAndServe(":8000", &l)
+}
+```
+
+## More
 
 * https://learning.oreilly.com/library/view/black-hat-go
