@@ -9,10 +9,7 @@ import (
 )
 
 func hello(w http.ResponseWriter, r *http.Request) {
-	q := r.URL.Query()
-	name := q.Get("name")
-	age := q.Get("age")
-	fmt.Fprintf(w, "Hello %s (%s)\n", name, age)
+	fmt.Fprintf(w, "Hello %s\n", r.URL.Query().Get("name"))
 }
 
 func main() {
