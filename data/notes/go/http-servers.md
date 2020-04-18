@@ -30,3 +30,7 @@ func main() {
 	http.ListenAndServe(":8000", &r)
 }
 ```
+
+More
+
+* ttps://learning.oreilly.com/library/view/black-hat-go
