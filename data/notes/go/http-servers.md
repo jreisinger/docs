@@ -25,7 +25,6 @@ func (r *router) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 }
 
 func main() {
-	//http.HandleFunc("/hello", hello)
 	var r router
 	http.ListenAndServe(":8000", &r)
 }
