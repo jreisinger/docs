@@ -33,4 +33,4 @@ func main() {
 
 More
 
-* ttps://learning.oreilly.com/library/view/black-hat-go
+* https://learning.oreilly.com/library/view/black-hat-go
