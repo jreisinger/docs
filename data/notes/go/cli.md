@@ -10,7 +10,7 @@ import (
 
 func main() {
 	// Set up CLI tool style of logging.
-	log.SetPrefix(os.Args[0] + ": ")
+	//log.SetPrefix(os.Args[0] + ": ")
 	log.SetFlags(0) // no timestamp
 
 	if len(os.Args) != 3 {
@@ -22,5 +22,3 @@ func main() {
 	//file := os.Args[2]
 }
 ```
-
-[Run](https://play.golang.org/p/omvP2uhNVQX).
