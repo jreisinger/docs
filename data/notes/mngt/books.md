@@ -1,4 +1,4 @@
-<img src="https://flic.kr/p/2izsvbX" style="max-width:100%;height:auto;float:right">
+<img src="https://live.staticflickr.com/65535/49605373071_382ecd5cbc_c.jpg" style="max-width:100%;height:auto;float:right">
 
 Some of the technical books that are fundamental for me. Ordered from most recently read in each category.
 
