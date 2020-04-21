@@ -1,3 +1,5 @@
+*IST*
+
 I needed to upgrade (from Squeeze to Wheezy) some important virtual servers. As
 I wanted a minimal impact of the upgrade, I chose this procedure:
 
