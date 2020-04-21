@@ -1,3 +1,5 @@
+<img src="https://flic.kr/p/2izsvbX" style="max-width:100%;height:auto;float:right">
+
 Some of the technical books that are fundamental for me. Ordered from most recently read in each category.
 
 Sysadmin
