@@ -1,5 +1,7 @@
 *2016-11-20*
 
+<img src="https://itrevolution.com/wp-content/uploads/2017/01/TPP_3rd_3D_layered_010318-e1553022345260-488x700.jpg" style="max-width:100%;height:auto;float:right">
+
 > The opposite of DevOps is despair. -- Gene Kim
 
 > If HW and SW are sufficiently fault tolerant, the remaining problems are human. -- TPoCSA
