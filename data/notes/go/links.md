@@ -1,4 +1,4 @@
-<img src="https://pkg.go.dev/static/img/pilot-bust.svg" style="max-width:100%;height:auto;float:left">
+<img src="https://pkg.go.dev/static/img/pilot-bust.svg" style="max-width:100%;height:auto;float:right">
 
 My Go stuff on the Web
 
