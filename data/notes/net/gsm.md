@@ -42,7 +42,7 @@ The network is structured into a number of discrete sections:
  * the **GPRS core network** - optional part for packet based Internet connections (NON-VOICE, packet switched)
  * operations support system (**OSS**) for maintenance
 
-![GSM network](https://raw.github.com/jreisinger/blog/master/files/gsm_structure.png)
+<img src="https://raw.github.com/jreisinger/blog/master/files/gsm_structure.png" style="max-width:100%;height:auto">
 
 See [this picture](https://raw.github.com/jreisinger/blog/master/files/gsm_communication.jpg) for **GSM communication**.
 
