@@ -1,4 +1,4 @@
-*cca. 2012*
+*2012/02*
 
 ## Cellular network
 
