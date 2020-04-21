@@ -24,6 +24,9 @@ body {
     counter-reset: h2counter;
     font-family: Roboto, Arial, sans-serif;
     //color: #3e4042;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em
 }
 
 /* Inline code and code blocks */
