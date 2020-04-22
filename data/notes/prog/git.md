@@ -149,8 +149,6 @@ git checkout SHA1_HASH      # newer commits are preserved
 
 # Branching and merging
 
-<img src="https://git-scm.com/book/en/v2/images/basic-merging-1.png" title="Three snapshots used in a typical merge" style="max-width:100%;height:auto;float:right">
-
 Branch is a separate line of development.
 
 To stop Git complaining, always commit or reset your changes before running checkout.
@@ -192,8 +190,6 @@ git branch -d experimental_idea # you might need -D if not merged
 # delete a remote branch
 git push origin --delete experimental_idea
 ```
-
-<img src="https://git-scm.com/book/en/v2/images/basic-merging-2.png" title="A merge commit" style="max-width:100%;height:auto;float:right">
 
 ## My workflow
 
