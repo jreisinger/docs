@@ -59,9 +59,11 @@ In **high-level** (human-oriented) language - like Python - it looks like:
 c = a + b
 ```
 
+## Classification by translation mechanism
+
 There are two ways to translate a high-level language to machine language: to compile it or to interpret it.
 
-## Compiled
+### Compiled
 
 ```
 Source +---> Compiler +---> Machine
@@ -76,7 +78,7 @@ Code                        Code
 * compiler - a complex program
 * compiler is no longer needed after a program is translated
 
-## Interpreted
+### Interpreted
 
 ```
             +--------------+
@@ -91,7 +93,7 @@ Inputs +--> |              |
 * interpreter - program that simulates a computer that undestands a high-level language
 * more flexible (interactive) development
 
-## Classification by scale
+## Classification by program scale
 
 1. traditional systems languages (C++, Ada, Java): large-scale programming, emphasis on structure and discipline
 2. scripting ("agile") languages (Perl, Python, Bash): designed for writing small/medium-scaled programs easy
