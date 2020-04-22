@@ -6,7 +6,7 @@ Although I'm more of a sysadmin than a developer I often write scripts (in Perl 
 
 # Configuration
 
-## First-Time Git Setup
+## First-time setup
 
 Introduce yourself to git with your name and public email address before doing any operation:
 
@@ -26,7 +26,7 @@ git config --global merge.tool vimdiff
 
 You only need to do this *once*.
 
-## Everyday
+## Everyday configuration
 
 You can see your configuration like this:
 
