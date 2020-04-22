@@ -149,13 +149,9 @@ git checkout SHA1_HASH      # newer commits are preserved
 
 # Branching and merging
 
-<p>
-<img src="https://git-scm.com/book/en/v2/images/basic-merging-1.png" title="Three snapshots used in a typical merge" style="max-width:100%;height:auto;float:left">
-</p>
+<img src="https://git-scm.com/book/en/v2/images/basic-merging-1.png" title="Three snapshots used in a typical merge" style="max-width:100%;height:auto">
 
-<p>
-<img src="https://git-scm.com/book/en/v2/images/basic-merging-2.png" title="A merge commit" style="max-width:100%;height:auto;float:left">
-</p>
+<img src="https://git-scm.com/book/en/v2/images/basic-merging-2.png" title="A merge commit" style="max-width:100%;height:auto">
 
 Branch is a separate line of development.
 
