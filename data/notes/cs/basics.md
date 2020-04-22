@@ -26,17 +26,20 @@ Functional view of a computer:
                 
 ```
 
-* Memory - stores programs and data (Main is fast but volatile, Secondary - HD, CD, DVD, ...)
+* Memory - stores programs and data that CPU acts on
+ * main is fast but volatile
+ * secondary is permanent: HD, CD, DVD, ...
 * CPU - simple arithmetic operations (e.g. adding 2 numbers) and logical operations (e.g. testing 2 numbers are equal)
+* Input/Output devices – for entering/displaying data
 
-Running a program:
+Running a program (HD –> RAM –> CPU):
 
 1. Instructions that comprise the program are copied (loaded) from secondary to main memory.
 2. CPU starts executing the program, i.e. it does this cycle (really, really fast): fetch, decode, execute
 
 # Programming languages (PL)
 
-* notations for expressing computations in an exact and unambiguous way
+* formal notations for expressing computations in an exact and unambiguous way
 * every structure in a PL has a precise form (its *syntax*) and a precise meaning (its *semantics*)
 
 CPU can only understand a very **low-level** language - machine language. Machine language is created by the designers of the particular CPU. Adding two numbers looks like:
@@ -87,6 +90,16 @@ Inputs +--> |              |
 
 * interpreter - program that simulates a computer that undestands a high-level language
 * more flexible (interactive) development
+
+## Classification by scale
+
+1. traditional systems languages (C++, Ada, Java): large-scale programming, emphasis on structure and discipline
+2. scripting ("agile") languages (Perl, Python, Bash): designed for writing small/medium-scaled programs easy
+
+## Classification by programming paradigm
+
+1. object oriented - objects are the main focus; we tell objects to do things (by calling their methods)
+2. imperative - functions are the primary focus; we pass them objects to work with
 
 # Sources
 
