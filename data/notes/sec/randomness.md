@@ -12,6 +12,7 @@ than others:
 can predict the next number.
 
 Congruential generators
+
 * lame but fast; so they are used often :-)
 * algorithm:
     1. take the last random number (Nj)
@@ -20,6 +21,7 @@ Congruential generators
     4. take the remainder when you divide by something else (C)
 
         Nj+1 = ANj + B(mod C)
+
 * Every random number is derived by the previous random number except for the
     first, which comes from you. This first number is called the *seed* of the
     random number generator, and you provide it to Perl (and C) with `srand()`.
