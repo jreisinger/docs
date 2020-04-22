@@ -149,6 +149,10 @@ git checkout SHA1_HASH      # newer commits are preserved
 
 # Branching and merging
 
+<img src="https://git-scm.com/book/en/v2/images/basic-merging-1.png" style="max-width:100%;height:auto;float:right">
+
+<img src="https://git-scm.com/book/en/v2/images/basic-merging-2.png" style="max-width:100%;height:auto;float:right">
+
 Branch is a separate line of development.
 
 To stop Git complaining, always commit or reset your changes before running checkout.
