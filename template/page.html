@@ -9,12 +9,12 @@
 </head>
 
 <body>
+
+<div class="content">
 <a href="/home">home</a> |
 <a href="/notes">notes</a> |
 <a href="{{ .RepoURL }}/find/master">find</a>
-
 {{$UrlPath:=.UrlPath}}
-
 > {{$UrlPath}}
 
 {{if .IsDir}}
@@ -33,6 +33,8 @@
 <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}.md">source</a>
 
 {{end}}
+</div>
+
 </body>
 
 </html>

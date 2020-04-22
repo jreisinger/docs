@@ -1,3 +1,11 @@
+/* to center the whole page */
+.content {
+    max-width: 960px;
+    margin: auto;
+    background: white;
+    padding: 0 0.5rem;
+}
+
 /* Headings */
 h1 {font-size:1.5em; counter-reset: h2counter;}
 h2:before {
@@ -24,9 +32,6 @@ body {
     counter-reset: h2counter;
     font-family: Roboto, Arial, sans-serif;
     //color: #3e4042;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 0.5rem;
 }
 
 /* Inline code and code blocks */
