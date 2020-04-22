@@ -75,8 +75,7 @@ $ git commit    # add files in index to a permanent storage - repository (.git d
 
 This will prompt you for a commit message. You've now stored the first version of your project in git.
 
-Making changes
-==============
+# Making changes
 
 When dealing with git, it's best to work in small bits. Rule of thumb: *if you can't summarise it in a sentence, you've gone too long without committing*.
 
@@ -113,8 +112,7 @@ which will automatically notice any modified (but not new) files, add them to th
 
 A note on commit messages: Though not required, it's a good idea to begin the commit message with a single short (less than 50 character) line summarizing the change, followed by a blank line and then a more thorough description. Tools that turn commits into email, for example, use the first line on the `Subject:` line and the rest of the commit in the body.
 
-Excluding some files
-====================
+# Excluding some files
 
 To set certain files or patterns to be ignored by Git, you must either modify the `$GIT_DIR/info/exclude` file or create a file called `.gitignore` in your project’s root directory. The former is not shared between repositories (so you can set ignores for your specific environment), while the `.gitignore` is usually checked into Git and distributed along with everything else.
 
@@ -133,8 +131,7 @@ If some of your files is already beeing tracked by git, you can untrack it like 
 git rm --cached <filename>
 ```
 
-Undo/Redo
-=========
+# Undo/Redo
 
 Go back and forget about every change past a certain point
 
@@ -150,8 +147,7 @@ git checkout SHA1_HASH      # newer commits are preserved
 
 ... if you now edit and commit, you will be in an alternate reality (called a branch)
 
-Branching and merging
-=====================
+# Branching and merging
 
 Branch is a separate line of development.
 
@@ -195,8 +191,7 @@ git branch -d experimental_idea # you might need -D if not merged
 git push origin --delete experimental_idea
 ```
 
-My workflow
------------
+## My workflow
 
 ```
 if [[ $CURRENT_BRANCH == "master" ]]; then
@@ -212,10 +207,9 @@ else
 fi
 ```
 
-See [git-sync](https://github.com/jreisinger/dotfiles/blob/master/bin/git-sync) for current setup.
+See [git-sync](https://github.com/jreisinger/dotfiles/blob/master/bin/git-sync) for my current setup.
 
-Tips and Tricks
-===============
+# Tips and Tricks
 
 To to list tracked files:
 
@@ -256,8 +250,7 @@ Ignore changes of the files' mode (for current repo):
 git config core.fileMode false
 ```
 
-More
-====
+# More
 
 * [Pro Git - Online book](https://git-scm.com/book)
 * See my [wiki](http://wiki.reisinge.net/Git) for more
