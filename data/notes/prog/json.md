@@ -1,6 +1,6 @@
 JavaScript Object Notation is a popular text based format for exchanging data through APIs. It consists of these data types:
 
-* objects (aka dictionary or hash) `{}`
+* objects (aka dictionaries) `{}`
 * arrays `[]`
 * numbers
 * strings
