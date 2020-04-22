@@ -192,6 +192,25 @@ git branch -d experimental_idea # you might need -D if not merged
 git push origin --delete experimental_idea
 ```
 
+My workflow
+-----------
+
+```
+if [[ $CURRENT_BRANCH == "master" ]]; then
+    run_cmd 'git pull'
+    run_cmd 'git push'
+else
+    #run_cmd 'git pull'
+    run_cmd 'git checkout master'
+    run_cmd 'git pull'
+    run_cmd "git checkout $CURRENT_BRANCH"
+    run_cmd 'git merge master'
+    run_cmd 'git push'
+fi
+```
+
+See [git-sync](https://github.com/jreisinger/dotfiles/blob/master/bin/git-sync) for current setup.
+
 Tips and Tricks
 ===============
 
