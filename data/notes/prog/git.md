@@ -25,6 +25,9 @@ git config --global merge.tool vimdiff
 
 You only need to do this *once*.
 
+Configuration
+=============
+
 You can see your configuration like this:
 
 ```bash
@@ -35,10 +38,10 @@ You can also manage you configuration via [~/.gitconfig](https://github.com/jrei
 
 If you want to manage the current repository configuration just leave out the `--global` option or use the local config file `.git/config`.
 
-To start using git, you can either create a new project or get one from the Internet and start working on it.
-
 Starting a git repository
 =========================
+
+To start using git, you can either create a new project or get one from the Internet and start working on it.
 
 ```bash
 $ mkdir project
