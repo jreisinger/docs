@@ -41,7 +41,7 @@ If you want to manage the current repository configuration just leave out the `-
 Starting a git repository
 =========================
 
-To start using git, you can either create a new project or get one from the Internet and start working on it.
+To start using git, you can either get a project from the Internet or create a new one:
 
 ```bash
 $ mkdir project
