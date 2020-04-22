@@ -4,8 +4,9 @@
 
 Although I'm more of a sysadmin than a developer I often write scripts (in Perl or Bash). I don't work within a big group of developers, so I try to keep things simple. I tend to use [Git](http://git-scm.com/) for tracking my programs. Git is a free & open source, distributed version (revision) control system created by Linus Torvalds. Every Git repository contains complete history of revisions and is not dependent on a central server or network access. Branching and merging are fast and easy to do. Git uses an intelligent compression system to reduce the cost of storing the entire history.
 
-First-Time Git Setup
-====================
+# Configuration
+
+## First-Time Git Setup
 
 Introduce yourself to git with your name and public email address before doing any operation:
 
@@ -25,8 +26,7 @@ git config --global merge.tool vimdiff
 
 You only need to do this *once*.
 
-Configuration
-=============
+## Everyday
 
 You can see your configuration like this:
 
@@ -38,10 +38,20 @@ You can also manage you configuration via [~/.gitconfig](https://github.com/jrei
 
 If you want to manage the current repository configuration just leave out the `--global` option or use the local config file `.git/config`.
 
-Starting a git repository
-=========================
+# Gir repository
 
-To start using git, you can either get a project from the Internet or create a new one:
+To start using git, you can either get a project from the Internet or create a new one.
+
+## Getting a git repository
+
+```bash
+## the Linux kernel (approx. 150MB download):
+$ git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux-2.6.git
+## any server with ssh and git
+$ git clone ssh://[user@]server.xy/path/to/repo.git/
+```
+
+## Starting a git repository
 
 ```bash
 $ mkdir project
@@ -64,16 +74,6 @@ $ git commit    # add files in index to a permanent storage - repository (.git d
 ```
 
 This will prompt you for a commit message. You've now stored the first version of your project in git.
-
-Getting a git repository
-========================
-
-```bash
-## the Linux kernel (approx. 150MB download):
-$ git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux-2.6.git
-## any server with ssh and git
-$ git clone ssh://[user@]server.xy/path/to/repo.git/
-```
 
 Making changes
 ==============
