@@ -34,6 +34,6 @@ func RenderPage(repoURL string, repoPath string, urlPath string) (*Page, error) 
 		return &Page{Title: title, Body: body, RepoURL: repoURL, UrlPath: urlPath}, nil
 	}
 
-	err := errors.New("rendering page: URL path does not map to any filesystem path")
+	err := errors.New("rendering page: resource not found (not all those who wander are lost)")
 	return nil, err
 }
