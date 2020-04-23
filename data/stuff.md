@@ -1,6 +1,6 @@
 Hosted by me
 
-* [homepage](https://reisinge.net)
+* [homepage](https://reisinge.net) - this one
 * [quotes](https://quotes.reisinge.net)
 * [wiki](https://wiki.reisinge.net)
 * [mail](https://mail.reisinge.net) ;-)
