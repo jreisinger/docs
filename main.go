@@ -43,8 +43,19 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		http.Redirect(w, r, "/home", http.StatusFound)
 	}
 
-	if urlPath == "myaddr" {
-		fmt.Fprintf(w, "%v\n", r.RemoteAddr)
+	if urlPath == "addr" {
+		addr := r.RemoteAddr
+		if addr == "" {
+			addr = r.Header.Get("X-Forwarded-For")
+		}
+		fmt.Fprintf(w, "%v\n", addr)
+		return
+	}
+
+	if urlPath == "headers" {
+		for name, values := range r.Header {
+			fmt.Fprintf(w, "%v: %v\n", name, values)
+		}
 		return
 	}
 
