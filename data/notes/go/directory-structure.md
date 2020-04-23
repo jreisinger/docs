@@ -1,5 +1,15 @@
 # The new way (Go modules)
 
+```
+# Let's use Go modules for dependency management.
+cd ~/github
+mkdir my-project
+go mod init github.com/jreisinger/my-project
+
+# Code away!
+vim main.go
+```
+
 * https://blog.golang.org/using-go-modules
 * https://vsupalov.com/go-folder-structure/
 * https://github.com/golang-standards/project-layout
