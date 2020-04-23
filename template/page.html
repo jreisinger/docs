@@ -15,11 +15,11 @@
 <a href="/notes">notes</a> |
 <a href="{{ .RepoURL }}/find/master">find</a>
 {{$UrlPath:=.UrlPath}}
-> {{$UrlPath}}
+▸ {{$UrlPath}}
 
 {{if .IsDir}}
 
-<ul>
+<ul style="list-style-type:disclosure-closed">
 {{range .Files}}
 <li><a href="/{{ $UrlPath | removeTrailingSlash }}/{{ . }}">{{ . }}</a></li>
 {{end}}
