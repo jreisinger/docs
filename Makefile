@@ -4,6 +4,11 @@ test:
 build: test
 	GO111MODULE=on go build main.go
 
+run: build
+	rm -rf /tmp/homepage
+	cp -r ../homepage /tmp/
+	./main
+
 # can be more of course (see runp)
 PLATFORMS := linux/arm linux/amd64
 
