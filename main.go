@@ -5,6 +5,7 @@ import (
 	"html/template"
 	"log"
 	"net/http"
+	"strings"
 
 	"github.com/jreisinger/homepage/util"
 )
@@ -44,9 +45,9 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if urlPath == "addr" {
-		addr := r.RemoteAddr
+		addr := r.Header.Get("X-Forwarded-For") // behind proxy
 		if addr == "" {
-			addr = r.Header.Get("X-Forwarded-For")
+			addr = strings.Split(r.RemoteAddr, ":")[0]
 		}
 		fmt.Fprintf(w, "%v\n", addr)
 		return
