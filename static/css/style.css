@@ -31,7 +31,6 @@ a:active { text-decoration: underline; }
 body {
     counter-reset: h2counter;
     font-family: Roboto, Arial, sans-serif;
-    //color: #3e4042;
 }
 
 /* Inline code and code blocks */
