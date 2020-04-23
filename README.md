@@ -6,7 +6,7 @@ Edit stuff in `data` folder. It will be reflected almost instantly in the [homep
 
 ## Development
 
-Initialize the project
+Initialize the project:
 
 ```
 # Let's use Go modules for dependency management.
@@ -21,8 +21,7 @@ vim main.go
 Test locally:
 
 ```
-make build
-./main
+rm -rf /tmp/homepage && cp -r ../homepage /tmp/ && make build && ./main 
 
 curl localhost:5001
 ```
