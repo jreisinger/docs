@@ -1,4 +1,4 @@
-Code and data for my [home page](https://reisinge.net).
+Code and data for my [homepage](https://reisinge.net).
 
 ## Usage
 
