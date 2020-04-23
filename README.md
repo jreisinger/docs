@@ -6,22 +6,10 @@ Edit stuff in `data` folder. It will be reflected almost instantly in the [homep
 
 ## Development
 
-Initialize the project:
-
-```
-# Let's use Go modules for dependency management.
-cd ~/github
-mkdir homepage
-go mod init github.com/jreisinger/homepage
-
-# Create the simple app.
-vim main.go
-```
-
 Test locally:
 
 ```
-rm -rf /tmp/homepage && cp -r ../homepage /tmp/ && make build && ./main 
+make run
 
 curl localhost:5001
 ```
