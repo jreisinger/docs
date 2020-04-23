@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"html/template"
 	"log"
 	"net/http"
@@ -40,6 +41,11 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 	if urlPath == "" {
 		http.Redirect(w, r, "/home", http.StatusFound)
+	}
+
+	if urlPath == "myaddr" {
+		fmt.Fprintf(w, "%v\n", r.RemoteAddr)
+		return
 	}
 
 	p, err := util.RenderPage(repoURL, repoPath, urlPath)
