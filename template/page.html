@@ -12,8 +12,8 @@
 <div class="content">
 
 ⌂ <a href="/home">home</a>
+🕸 <a href="/stuff">stuff</a>
 ♬ <a href="/notes">notes</a> <a href="{{ .RepoURL }}/find/master">[ find ]</a>
-🛠 <a href="/addr">addr</a> | <a href="/headers">headers</a>
 {{$UrlPath:=.UrlPath}}
 ▸ {{$UrlPath}}
 
@@ -30,7 +30,7 @@
 {{else}}
 
 {{.Body}}
-<a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}.md">source</a>
+✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}.md">source</a>
 
 {{end}}
 

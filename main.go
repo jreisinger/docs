@@ -1,11 +1,9 @@
 package main
 
 import (
-	"fmt"
 	"html/template"
 	"log"
 	"net/http"
-	"strings"
 
 	"github.com/jreisinger/homepage/util"
 )
@@ -42,22 +40,6 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 	if urlPath == "" {
 		http.Redirect(w, r, "/home", http.StatusFound)
-	}
-
-	if urlPath == "addr" {
-		addr := r.Header.Get("X-Forwarded-For") // behind proxy
-		if addr == "" {
-			addr = strings.Split(r.RemoteAddr, ":")[0]
-		}
-		fmt.Fprintf(w, "%v\n", addr)
-		return
-	}
-
-	if urlPath == "headers" {
-		for name, values := range r.Header {
-			fmt.Fprintf(w, "%v: %v\n", name, values)
-		}
-		return
 	}
 
 	p, err := util.RenderPage(repoURL, repoPath, urlPath)
