@@ -1,6 +1,6 @@
 *2017-07-24*
 
-Docker is a container technology. Cointainers standardize software packaging.
+Docker is a container technology a.k.a container runtime. Cointainers standardize software packaging.
 It's a well timed fusion of
 
 * kernel features (cgroups, [namespaces](https://gist.github.com/jreisinger/65488e6d7648f3a07a1a346ae3ef549d))
