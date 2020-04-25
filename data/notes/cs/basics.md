@@ -1,5 +1,7 @@
 # Computer Science (CS)
 
+<img src="https://en.wikipedia.org/wiki/File%3AAda_Lovelace_portrait.jpg" style="max-width:100%;height:auto;float:right">
+
 * fundamental question for CS is *what can be computed*?
 * it uses techniques of design, analysis, and experimentation 
 
