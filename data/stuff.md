@@ -8,10 +8,11 @@ Hosted by me
 
 Hosted by someone else
 
+* [homepage](https://jreisinger.github.io/)
 * [github](https://github.com/jreisinger)
 * [gists](https://gist.github.com/search?q=user%3Ajreisinger)
 * [cpan](https://metacpan.org/author/REISINGE)
-* [new blog](https://jreisinger.github.io/blog2/)
+* [blog](https://jreisinger.github.io/blog2/)
 * [old blog](https://jreisinger.blogspot.com)
 * [old notes](https://jreisinger.github.io/notes/)
 * [SO](https://stackoverflow.com/users/1039320/jreisinger)
