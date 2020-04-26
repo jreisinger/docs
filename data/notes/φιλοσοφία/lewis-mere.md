@@ -1,6 +1,6 @@
 # Christian behaviour
 
-# The three parts of morality
+## The three parts of morality
 
 A schoolboy replied that, as far as he could make out, God was "The sort of person who is always snooping round to see if anyone is enjoying himself and then trying to stop it." :-)
 
