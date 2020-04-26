@@ -42,7 +42,7 @@ FORTITUDE (statocnost)
 * courage facing dangers
 * courage facing pain
 
-In the same way a man who perseveres in doing just actions gets in the end a certain quality of character. Now it is that quality rather than the particular actions which we mean when we talk of "virtue."
+A man who perseveres in doing just actions gets in the end a certain quality of character (like a good tennis player). Now it is that quality rather than the particular actions which we mean when we talk of "virtue."
 
 Sources:
 
