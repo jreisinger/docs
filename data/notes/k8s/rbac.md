@@ -62,6 +62,12 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ```
 
+* see existing RoleBindings:
+
+```
+> kubectl get rolebindings.rbac.authorization.k8s.io --all-namespaces
+```
+
 Source:
 
 * https://learning.oreilly.com/library/view/cloud-native-devops/9781492040750/ch11.html
