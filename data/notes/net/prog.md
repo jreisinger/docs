@@ -1,4 +1,4 @@
-## Sockets
+# Sockets
 
 - a method for IPC
 - endpoints for communication
@@ -77,7 +77,7 @@ UDP client `bind()` vs `connect()`
 * bind() - grab a particular port
 * connect() - limit received replies so they come only from a particular server
 
-## Sources
+# Sources
 
 - [Foundation of Python Network Programming](https://github.com/brandon-rhodes/fopnp) (2014)
 - Black Hat Python (2014)
