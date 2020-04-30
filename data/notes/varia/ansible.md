@@ -196,6 +196,16 @@ Change the way Ansible identifies that a task has changed state (`changed_when`)
     - nxapi
 ```
 
+```
+- name: Get hostname of the control host
+  command: hostname
+  register: hostname
+  delegate_to: 127.0.0.1
+  become: no
+  # no yellow output :-)
+  changed_when: false
+```
+
 View the output of a task:
 ```
 - name: initialize the database
