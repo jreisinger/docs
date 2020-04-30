@@ -18,6 +18,7 @@ User
 
 * every time you connect to a cluster you do so as a specific user
 * there is `default` service account for each namespace
+* service account - user account associated with automated system
 * authentication depends on the cluster provider (e.g. `gcloud` uses a token per cluster)
 * users can have different sets of permissions - governed by `roles`
 
