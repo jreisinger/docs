@@ -69,6 +69,8 @@ Typical SERVER
 Typical CLIENT
 
 1. socket() and connect()
+2. send()
+3. close()
 
 .. datagram clients don't need to connect(); they specify the destination as argument to send()
 
