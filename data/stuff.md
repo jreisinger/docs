@@ -1,14 +1,14 @@
 Hosted by me
 
-* [homepage](https://reisinge.net) - this one
+* [homepage](https://reisinge.net) (this one)
+* [util](http://util.reisinge.net)
 * [quotes](https://quotes.reisinge.net)
 * [wiki](https://wiki.reisinge.net)
 * [mail](https://mail.reisinge.net) ;-)
-* [util](http://util.reisinge.net)
 
 Hosted by someone else
 
-* [homepage](https://jreisinger.github.io/)
+* [homepage](https://jreisinger.github.io/) (formal one)
 * [github](https://github.com/jreisinger)
 * [gists](https://gist.github.com/search?q=user%3Ajreisinger)
 * [cpan](https://metacpan.org/author/REISINGE)
