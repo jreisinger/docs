@@ -1,4 +1,4 @@
-## With default handler
+with default handler
 
 ```
 package main
@@ -27,7 +27,7 @@ func main() {
 Hello dude
 ```
 
-## With custom handler (router)
+with custom handler (router)
 
 ```
 package main
@@ -60,7 +60,7 @@ func main() {
 }
 ```
 
-## With simple middleware
+with simple middleware
 
 ```
 package main
@@ -94,6 +94,6 @@ func main() {
 }
 ```
 
-## More
+More
 
 * https://learning.oreilly.com/library/view/black-hat-go
