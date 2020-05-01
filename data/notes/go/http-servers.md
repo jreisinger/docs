@@ -4,18 +4,27 @@
 package main
 
 import (
-	"fmt"
-	"net/http"
+        "fmt"
+        "log"
+        "net/http"
 )
 
 func hello(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello %s\n", r.URL.Query().Get("name"))
+        fmt.Fprintf(w, "Hello %s\n", r.URL.Query().Get("name"))
 }
 
 func main() {
-	http.HandleFunc("/hello", hello)
-	http.ListenAndServe(":8000", nil)
+        // register the handler function (hello)
+        // for the given pattern ("/hello")
+        http.HandleFunc("/hello", hello)
+        // nil handler means DefaultServeMux is used
+        log.Fatal(http.ListenAndServe(":8080", nil))
 }
+```
+
+```
+> curl localhost:8080/hello?name=dude
+Hello dude
 ```
 
 ## Simple router
