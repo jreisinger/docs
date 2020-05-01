@@ -2,7 +2,7 @@ Hello and welcome to my non-official homepage :-). The official one is [here](ht
 
 Other links related to me
 
-* [G]itHub(https://github.com/jreisinger)
+* [GitHub](https://github.com/jreisinger)
 * [gists](https://gist.github.com/search?q=user%3Ajreisinger)
 * [meta::cpan](https://metacpan.org/author/REISINGE)
 * [Blog](https://jreisinger.github.io/blog2/)
