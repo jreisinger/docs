@@ -60,6 +60,8 @@ func main() {
 }
 ```
 
+* see https://github.com/jreisinger/util for a bit more sophisticated router
+
 with custom handler - simple middleware
 
 ```
