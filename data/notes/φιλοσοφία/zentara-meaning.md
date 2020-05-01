@@ -2,7 +2,7 @@
 
 *IST*
 
-http://zentara.net/ => Deep Thoughts => Want to know the meaning of life?
+[zentara.net](https://web.archive.org/web/20180718070300/http://zentara.net/) => Deep Thoughts => Want to know the meaning of life?
 
     This is the essence of the meaning of life
     Once you read it, you will never be able to get it out of
