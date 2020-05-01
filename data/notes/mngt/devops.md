@@ -1,6 +1,6 @@
-*2016-11-20*
+<img src="https://itrevolution.com/wp-content/uploads/2017/01/TPP_3rd_3D_layered_010318-e1553022345260-488x700.jpg" style="max-width:80px;height:auto;float:right">
 
-<img src="https://itrevolution.com/wp-content/uploads/2017/01/TPP_3rd_3D_layered_010318-e1553022345260-488x700.jpg" style="max-width:100%;height:auto;float:right">
+*2016-11-20*
 
 > The opposite of DevOps is despair. -- Gene Kim
 
