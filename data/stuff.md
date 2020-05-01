@@ -1,3 +1,5 @@
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Linux_Logo_in_Linux_Libertine_Font.svg/204px-Linux_Logo_in_Linux_Libertine_Font.svg.png" style="max-width:100%;height:auto;float:right">
+
 Hosted by me
 
 * [homepage](https://reisinge.net) - this one
