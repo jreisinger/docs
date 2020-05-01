@@ -9,13 +9,13 @@ import (
         "net/http"
 )
 
+// handler function
 func hello(w http.ResponseWriter, r *http.Request) {
         fmt.Fprintf(w, "Hello %s\n", r.URL.Query().Get("name"))
 }
 
 func main() {
-        // register the handler function (hello)
-        // for the given pattern ("/hello")
+        // register the handler function for the given pattern "/hello"
         http.HandleFunc("/hello", hello)
         // nil handler means DefaultServeMux is used
         log.Fatal(http.ListenAndServe(":8080", nil))
@@ -27,7 +27,7 @@ func main() {
 Hello dude
 ```
 
-## Simple router
+## Simple handler (router)
 
 ```
 package main
@@ -40,6 +40,7 @@ import (
 type router struct {
 }
 
+// ServeHTTP method satisfies the Handler interface
 func (r *router) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 	switch req.URL.Path {
 	case "/a":
