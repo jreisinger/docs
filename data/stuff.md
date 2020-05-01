@@ -20,4 +20,4 @@ Hosted by someone else
 * [Twitter](https://twitter.com/JozefReisinger)
 * [LinkedIn](https://www.linkedin.com/in/jozefreisinger/)
 * `~/Dropbox/jreisinger/notes`
-* `~/Dropbox/jreisinger/temp` (scratchpad)
+* `~/Dropbox/jreisinger/temp` - scratchpad
