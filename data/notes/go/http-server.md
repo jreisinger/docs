@@ -96,6 +96,6 @@ func main() {
 }
 ```
 
-More
+source
 
 * https://learning.oreilly.com/library/view/black-hat-go
