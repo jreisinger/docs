@@ -4,21 +4,21 @@
 package main
 
 import (
-    "fmt"
-    "log"
-    "net/http"
+  "fmt"
+  "log"
+  "net/http"
 )
 
 func hello(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, "Hello %s\n", r.URL.Query().Get("name"))
+  fmt.Fprintf(w, "Hello %s\n", r.URL.Query().Get("name"))
 }
 
 func main() {
-    // register the handler function (hello)
-    // for the given pattern ("/hello")
-    http.HandleFunc("/hello", hello)
-    // nil handler means DefaultServeMux is used
-    log.Fatal(http.ListenAndServe(":8080", nil))
+  // register the handler function (hello)
+  // for the given pattern ("/hello")
+  http.HandleFunc("/hello", hello)
+  // nil handler means DefaultServeMux is used
+  log.Fatal(http.ListenAndServe(":8080", nil))
 }
 ```
 
