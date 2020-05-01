@@ -27,7 +27,7 @@ func main() {
 Hello dude
 ```
 
-with custom handler (router)
+with custom handler - simple router
 
 ```
 package main
@@ -60,7 +60,7 @@ func main() {
 }
 ```
 
-with simple middleware
+with custom handler - simple middleware
 
 ```
 package main
