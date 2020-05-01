@@ -1,4 +1,4 @@
-## Simple server
+## Default handler
 
 ```
 package main
@@ -27,7 +27,7 @@ func main() {
 Hello dude
 ```
 
-## Simple handler (router)
+## Custom handler (router)
 
 ```
 package main
