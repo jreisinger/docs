@@ -11,5 +11,3 @@ Other links related to me
 * [PM](https://perlmonks.org/?node_id=6364;user=reisinge)
 * [Twitter](https://twitter.com/JozefReisinger)
 * [LinkedIn](https://www.linkedin.com/in/jozefreisinger/)
-* `~/Dropbox/jreisinger/notes`
-* `~/Dropbox/jreisinger/temp` - scratchpad
