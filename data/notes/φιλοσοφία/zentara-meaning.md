@@ -1,3 +1,5 @@
+<img src="https://web.archive.org/web/20150203043213im_/http://zentara.net/s_zenani.gif" style="max-width:80px;height:auto;float:right">
+
 *IST*
 
 http://zentara.net/ => Deep Thoughts => Want to know the meaning of life?
