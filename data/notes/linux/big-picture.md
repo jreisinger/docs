@@ -150,12 +150,14 @@ Not all devices are represented as device files, e.g. network interfaces.
 ---------------------
 
 /dev
+
 * traditional Unix way of representing devices as files
 * convenient for user processes to reference and interface with devices supported by the kernel
 * little information about devices
 * the kernel assigns devices in the order in which they are found => may have different names between reboots
 
 /sys/devices
+
 * part of sysfs (a virtual FS provided by the kernel that exports information about kernel subsystems)
 * system of files and directories (with symlinks)
 * uniform view for attached devices based on their HW attributes
