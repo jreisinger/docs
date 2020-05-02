@@ -9,23 +9,27 @@ We need to organize the components somehow, however. In this case we create
 groupings going from user to hardware:
 
 User processes
+
 * GUI
 * servers
 * shell
 
 Kernel
+
 * memory mngt.
 * process mngt.
 * syscalls
 * device drivers
 
 Hardware
+
 * CPU
 * RAM
 * disks
 * network ports
 
 Difference between running kernel and user processes:
+
 * code running in *user mode* has access only to a subset of memory and safe
     CPU operations
 * code running in *kernel mode* has unrestricted access
