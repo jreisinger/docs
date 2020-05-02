@@ -56,11 +56,13 @@ Kernel
 ------
 
 Nearly all kernel's tasks revolve around main memory:
+
 * split memory into subdivisions
 * keep state info about subdivisions
 * make sure processes use only their subdivisions
 
 Memory mngt.
+
 * it is a complex task for the kernel - modern CPUs come with a help => memory
     management unit (MMU) using the virtual memory
 * MMU interfaces processes' access to physical memory via memory address map
@@ -68,6 +70,7 @@ Memory mngt.
 * *page table* - name for the implementation of a memory address map
 
 Process mngt.
+
 * which processes are allowed to use CPU
 * *multitasking* - (the appearance of) multiple processes running at the same time
 * *context switch* - the act of one process giving up control of CPU to another process
@@ -77,6 +80,7 @@ Process mngt.
     CPU in order to allow a different process to run on a different CPU
 
 System calls a.k.a. *syscalls* - `man 2`
+
 * the kernel's API
 * feature of kernel allowing user processes to request specific actions, ex.
     opening, reading and writing files, creating new processes
@@ -85,6 +89,7 @@ System calls a.k.a. *syscalls* - `man 2`
     memory
 
 (C library functions a.k.a. library calls - `man 3`)
+
 * functions provided by standard C library (`glibc` on Linux)
 * some library functions employ system calls, other perform tasks entirely within user space (ex. the string manipulation libraries)
 * often designed to provide a more user-friendly interface than the underlying
