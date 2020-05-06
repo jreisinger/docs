@@ -7,6 +7,8 @@ K8s volume abstraction fixes two problems: (1) ephemeral nature of on-disk files
 * `.spec.volumes` - what volumes to provide for a Pod
 * `.spec.containers[*].volumeMounts` - where to mount volumes into Containers
 
+There are many types of volumes.
+
 # Types
 
 ## configMap
