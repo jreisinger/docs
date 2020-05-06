@@ -1,3 +1,5 @@
+# Volumes
+
 A process in a Container sees a filesystem view composed from their Docker image (mounted at the root of the FS) and volumes (mounted at specified paths within the image).
 
 K8s volume abstraction fixes two problems: (1) ephemeral nature of on-disk files in Containers - when it restarts the files get lost (2) need to share files between Containers within a Pod.
@@ -9,7 +11,7 @@ K8s volume abstraction fixes two problems: (1) ephemeral nature of on-disk files
 
 There are many types of volumes.
 
-# Types
+# Types of Volumes
 
 ## configMap
 
