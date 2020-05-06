@@ -37,3 +37,7 @@ spec:
 ```
 
 * all contents stored in `log_level` entry of the CM are mounted into `/etc/config/log_level`
+
+# Resources
+
+* https://kubernetes.io/docs/concepts/storage/volumes
