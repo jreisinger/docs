@@ -2,9 +2,11 @@ Basic commands:
 
 ```
 psql -U <username>     # connect to DB
+
 \l                     -- list DBs
 \dt                    -- list tables
 \d <table>             -- table details
+\du[+]                 -- list users and roles
 \x                     -- expanded display
 
 SELECT * FROM <table>;
