@@ -117,7 +117,7 @@ Deployment
 * object of type controller
 * manages replicasets/pods
 
-One way to create a deployment:
+One way to manage a deployment:
 
 ```bash
 kubectl create deployment quotes-prod --image=reisinge/quotes
