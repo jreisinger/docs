@@ -76,7 +76,7 @@ Pod
 ---
 
 * atomic unit of work in Kubernetes cluster
-* Pod = one or more containers working together symbiotically
+* one or more containers working together symbiotically
 * all containers in a Pod always land on the same node
 * once scheduled to a node, Pods don't move
 * each container runs its own cgroup but they *share* network, hostname and filesystem
