@@ -1,6 +1,7 @@
 Kubernetes is the operating system for cloud-native applications.
 
 `kubectl` configuration
+=======================
 
 ```bash
 cat ~/.kube/config
