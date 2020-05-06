@@ -1,10 +1,6 @@
-Basics
-======
-
 Kubernetes is the operating system for cloud-native applications.
 
-kubectl configuration
----------------------
+`kubectl` configuration
 
 ```bash
 cat ~/.kube/config
@@ -13,7 +9,6 @@ kubectl config view
 ```
 
 Namespace
----------
 
 * virtual cluster
 * group of objects in a cluster
@@ -29,7 +24,6 @@ kubectl get namespaces
 ```
 
 Context
--------
 
 * to change the default `namespace` more permanently
 * to manage different `cluster`s
