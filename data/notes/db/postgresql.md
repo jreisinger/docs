@@ -9,6 +9,9 @@ psql -U <username>     # connect to DB
 \du[+]                 -- list users and roles
 \x                     -- expanded display
 
+show data_directory    -- where DB files are stored
+show all               -- run-time configuration of DB
+
 SELECT * FROM <table>;
 SELECT * FROM customer WHERE last_name LIKE '%gen%';
 SELECT
