@@ -108,7 +108,7 @@ kubectl apply -f kuard-pod.yaml
 What should I put into a single pod?
 
 * "Will these containers work correctly if they land on different machines?"
-* should go into a Pod: web server + git scynhronizer - they communicate via filesystem
+* should go into a Pod: web server + git synchronizer - they communicate via filesystem
 * should go into separate Pods: Wordpress + DB - they can communicate over net
 
 Deployment
