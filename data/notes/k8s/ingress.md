@@ -96,6 +96,7 @@ Get ingress logs
 
 ```
 kubectl get po -A | grep ingress
+kubectl logs -n <namespace> nginx-ingress-controller-67956bf89d-fv58j
 ```
 
 # Sources
