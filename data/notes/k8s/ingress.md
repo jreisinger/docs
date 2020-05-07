@@ -95,7 +95,7 @@ You can use [cert-manager](https://cert-manager.io/docs/) (and e.g. [Let's Encry
 Get ingress logs
 
 ```
-kubectl -n kube-system get po -A | grep ingress
+kubectl get po -A | grep ingress
 ```
 
 # Sources
