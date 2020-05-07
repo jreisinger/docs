@@ -92,7 +92,7 @@ You can use [cert-manager](https://cert-manager.io/docs/) (and e.g. [Let's Encry
 
 # Troubleshooting
 
-Get ingress logs
+Get [nginx ingress](https://kubernetes.github.io/ingress-nginx/troubleshooting/) logs
 
 ```
 kubectl get po -A | grep ingress
