@@ -90,6 +90,14 @@ spec:
 
 You can use [cert-manager](https://cert-manager.io/docs/) (and e.g. [Let's Encrypt](https://letsencrypt.org/)) to automate certificates management.
 
+# Troubleshooting
+
+Get ingress logs
+
+```
+kubectl -n kube-system get po -A | grep ingress
+```
+
 # Sources
 
 * Kubernetes Up & Running (2019)
