@@ -4,6 +4,8 @@
 
 All pople (educated as well as uneducated, children as well as grown-ups) quarrell. When they do so they simply don't state that the other man's behaviour does not happen to please them. They appeal to some kind of standard of behaviour which all people are expected to know.
 
+This law or rule about Right and Wrong used to be called the Law of Nature. Nowadays by that we mean things like law of gravity. But the older thinkers by that meant the Law of Human Nature. The idea was that everything has to obey laws like gravity but man alone has an additional law to follow. The difference is that man can choose to obey the law of human nature or to disobey it.
+
 # III. Christian Behaviour
 
 ## The three parts of morality
