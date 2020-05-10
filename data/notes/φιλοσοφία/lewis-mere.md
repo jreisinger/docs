@@ -12,6 +12,8 @@ Some more proves that something called the law of human nature exists:
 2. All civilizations of all ages had very similar rules of fair play (another name for the law of human nature). E.g. selfishness was never admired.
 3. (Almost) every person feels that he should bahave in the Right way. If he does't, which happens all the time, he tries to find an excuse.
 
+> These, then, are the two points I wanted to make. First, that human beings, all over the earth, have this curious idea that they ought to behave in a certain way, and cannot really get rid of it. Secondly, that they do not in fact behave in that way. They know the Law of Nature; they break it. These two facts are the foundation of all clear thinking about ourselves and the universe we live in.
+
 # III. Christian Behaviour
 
 ## The three parts of morality
