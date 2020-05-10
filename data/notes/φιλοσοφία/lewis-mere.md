@@ -9,7 +9,7 @@ This law or rule about Right and Wrong used to be called the Law of Nature. Nowa
 Some more proves that something called the law of human nature exists:
 
 1. Just wars. How come we can say that the Nazis were wrong and the Allies were right?
-2. All civilizations of all ages had very similar rules of fair play (another name for the law of human nature). Selfishness was never admired.
+2. All civilizations of all ages had very similar rules of fair play (another name for the law of human nature). E.g. selfishness was never admired.
 3. (Almost) every person feels that he should bahave fair play. If he does't, which happens all the time, he tries to find an excuse.
 
 # III. Christian Behaviour
