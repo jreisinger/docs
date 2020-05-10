@@ -1,4 +1,10 @@
-# Christian behaviour
+# I. Right and wrong as a clue to the meaning of the Universe
+
+## The law of human nature
+
+All pople (educated as well as uneducated, children as well as grown-ups) quarrell. When they do so they simply don't state that the other man's behaviour does not happen to please them. They appeal to some kind of standard of behaviour which all people are expected to know.
+
+# III. Christian Behaviour
 
 ## The three parts of morality
 
