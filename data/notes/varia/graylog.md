@@ -39,6 +39,10 @@ Index
 
 * basic unit of storage for data in Elasticsearch
 
+# Configuration
+
+https://docs.graylog.org/en/latest/pages/configuration/server.conf.html
+
 # Searching
 
 * syntax very close to Lucene's
