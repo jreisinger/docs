@@ -78,10 +78,10 @@ More
 # Attacks for testing WAF
 
 ```
-curl 'https://$FQDN/?exec=/bin/bash'           # Remote Code Execution (RCE)
-curl "https://$FQDN/?id=1'%20or%20'1'%20=%20'" # SQL Injection (SQLi)
-curl 'https://$FQDN/?page=/etc/passwd'         # Local File Inclusion (LFI)
-curl 'https://$FQDN/?<script>'                 # Cross Site Scripting (XSS)
+curl -I "https://$FQDN/?exec=/bin/bash"           # Remote Code Execution (RCE)
+curl -I "https://$FQDN/?id=1'%20or%20'1'%20=%20'" # SQL Injection (SQLi)
+curl -I "https://$FQDN/?page=/etc/passwd"         # Local File Inclusion (LFI)
+curl -I "https://$FQDN/?<script>"                 # Cross Site Scripting (XSS)
 ```
 
 See also [waf-tester](https://github.com/jreisinger/waf-tester).
