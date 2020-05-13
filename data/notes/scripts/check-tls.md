@@ -10,3 +10,9 @@ for FQDN in reisinge.net quote.reisinge.net quotes.reisinge.net wiki.reisinge.ne
     openssl x509 -noout -dates
 done
 ```
+
+Check SSL/TLS version (you should be using TLS)
+
+```
+openssl s_client -connect reisinge.net:443 2> /dev/null | egrep -i '(tls|ssl)'
+```
