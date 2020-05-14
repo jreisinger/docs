@@ -1,8 +1,8 @@
 Nginx is a multitool: web server, load balancer, reverse proxy, WAF
 
-## Basics
+# General
 
-Key files and directories:
+## Key files and directories
 
 * `/etc/nginx/nginx.conf` - sets up global setting for things like worker processes, tuning, logging, loading of dynamic modules + it references config files in `/etc/nginx/conf.d`
 * `/var/log/nginx/access.log` - entry for each request NGINX serves
@@ -47,17 +47,6 @@ More:
 * https://www.nginx.com/resources/wiki/start/topics/depth/ifisevil/
 * https://agentzh.blogspot.com/2011/03/how-nginx-location-if-works.html
 
-## Reverse proxy
-
-In proxied requests (`proxy_pass`) NGINX by default eliminates the header fields whose values are empty strings and redefines two header fields:
-
-* `Host` gets set to `$proxy_host`
-* `Connection` gets set to `Close`
-
-More
-
-* https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/#passing-request-headers
-
 ## Variables
 
 * all NGINX variables creation (declaration) happens while loading the configuration file (at "configuration time")
@@ -87,7 +76,29 @@ add_header X-mine "$upstream_addr";
 curl localhost -v # look for X-mine header
 ```
 
-## Resources
+# Reverse proxy
+
+## Request headers
+
+In proxied requests (`proxy_pass`) NGINX by default eliminates the header fields whose values are empty strings and redefines two header fields:
+
+* `Host` gets set to `$proxy_host`
+* `Connection` gets set to `Close`
+
+More
+
+* https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/#passing-request-headers
+
+## Response headers
+
+You might want to use the [proxy_redirect](http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_redirect) directive to change response "Location" header (used in 3xx redirects). E.g.:
+
+```
+# change host (fqdn) in response "Location" header
+proxy_redirect ~*https?://[^/]+/(.+)$ https://$host/$1;
+```
+
+# Resources
 
 * [NGINX Cookbook](https://learning.oreilly.com/library/view/nginx-cookbook/9781492049098/) (2019)
 * [agentzh's Nginx Tutorials](https://openresty.org/download/agentzh-nginx-tutorials-en.html) (2019)
