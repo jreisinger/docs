@@ -49,14 +49,17 @@ More:
 
 ## Variables
 
-* all NGINX variables creation (declaration) happens while loading the configuration file (at "configuration time")
+* [all NGINX variables](http://nginx.org/en/docs/varindex.html) creation (declaration) happens while loading the configuration file (at "configuration time")
 * on the other hand variables assignment happens when requests are actually being served (at "request time")
 
-Selected [variables](http://nginx.org/en/docs/varindex.html):
+[ngx_http_core_module](http://nginx.org/en/docs/http/ngx_http_core_module.html)
 
-* `$proxy_host` [ngx_http_proxy_module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html) - name and port of a proxied server as specified in the `proxy_pass` directive
-* `$host` [ngx_http_core_module](http://nginx.org/en/docs/http/ngx_http_core_module.html) - in this order of precedence: hostname from the request line, or hostname from the `Host` request header field, or the server name matching a request
-* `$scheme` [ngx_http_core_module](http://nginx.org/en/docs/http/ngx_http_core_module.html) - request scheme, "http" or "https"
+* `$host` - in this order of precedence: hostname from the request line, or hostname from the `Host` request header field, or the server name matching a request
+* `$scheme` - request scheme, "http" or "https"
+
+[ngx_http_proxy_module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html)
+
+* `$proxy_host` - name and port of a proxied server as specified in the `proxy_pass` directive
 
 ## Tips and tricks
 
