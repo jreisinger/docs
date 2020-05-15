@@ -1,6 +1,6 @@
 Hello and welcome to my non-official homepage :-). The official one is [here](https://jreisinger.github.io/).
 
-Other links related to me
+Other web stuff related to me
 
 * code: [github](https://github.com/jreisinger), [gists](https://gist.github.com/search?q=user%3Ajreisinger), ([meta::cpan](https://metacpan.org/author/REISINGE))
 * writings: [blog](https://jreisinger.github.io/blog2/) ([old blog](https://jreisinger.blogspot.com))
