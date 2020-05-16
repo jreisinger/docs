@@ -130,7 +130,7 @@ func err1(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
-generates
+generates only line of information (Go docs calls it response header):
 
 ```
 < HTTP/1.1 500 Internal Server Error
@@ -145,7 +145,7 @@ func err2(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
-generates
+generates also response body:
 
 ```
 < HTTP/1.1 500 Internal Server Error
