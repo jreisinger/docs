@@ -1,4 +1,6 @@
-with default handler
+# Basic servers
+
+## with default handler
 
 ```
 package main
@@ -27,7 +29,7 @@ func main() {
 Hello dude
 ```
 
-with custom handler - simple router
+## with custom handler - simple router
 
 ```
 package main
@@ -62,7 +64,7 @@ func main() {
 
 * see https://github.com/jreisinger/util for a bit more sophisticated router
 
-with custom handler - simple middleware
+## with custom handler - simple middleware
 
 ```
 package main
@@ -96,6 +98,65 @@ func main() {
 }
 ```
 
-source
+# Reponse handling
+
+## 200 OK
+
+These two handler functions are equivalent:
+
+```
+func ok1(w http.ResponseWriter, r *http.Request) {
+}
+
+func ok2(w http.ResponseWriter, r *http.Request) {
+	w.WriteHeader(http.StatusOK) // 200
+}
+```
+
+both generate line of information with protocol and status code plus two headers:
+
+```
+< HTTP/1.1 200 OK
+< Date: Sat, 16 May 2020 15:17:55 GMT
+< Content-Length: 0
+< 
+```
+
+## 500 Internal Server Error
+
+```
+func err1(w http.ResponseWriter, r *http.Request) {
+	w.WriteHeader(http.StatusInternalServerError) // 500
+}
+```
+
+generates
+
+```
+< HTTP/1.1 500 Internal Server Error
+< Date: Sat, 16 May 2020 15:25:28 GMT
+< Content-Length: 0
+< 
+```
+
+```
+func err2(w http.ResponseWriter, r *http.Request) {
+	http.Error(w, "500 something's wrong with the server", http.StatusInternalServerError)
+}
+```
+
+generates
+
+```
+< HTTP/1.1 500 Internal Server Error
+< Content-Type: text/plain; charset=utf-8
+< X-Content-Type-Options: nosniff
+< Date: Sat, 16 May 2020 15:29:09 GMT
+< Content-Length: 38
+< 
+500 something's wrong with the server
+```
+
+# Sources
 
 * https://learning.oreilly.com/library/view/black-hat-go
