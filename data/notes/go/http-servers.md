@@ -229,7 +229,7 @@ func (db database) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 }
 ```
 
-* `WriteHear` must be called before anything is written to `w`
+* `WriteHeader` must be called before anything is written to `w`
 * equivalently you could use the `http.Error` utility function:
 
 ```
