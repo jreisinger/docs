@@ -157,7 +157,7 @@ generates also response body:
 500 something's wrong with the server
 ```
 
-# `net/http`
+# A deeper look into `net/http`
 
 * standard library package for implementing HTTP servers (and clients)
 
