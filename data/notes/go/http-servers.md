@@ -236,5 +236,5 @@ http.Error(w, msg, http.StatusNotFound) // 404
 
 # Sources
 
-* https://learning.oreilly.com/library/view/black-hat-go
-* The Go Programming Language (ch. 7.7)
+* Black Hat Go (2020)
+* The Go Programming Language (2015)
