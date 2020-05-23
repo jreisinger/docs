@@ -197,6 +197,8 @@ func (db database) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 }
 ```
 
+* the server will list all the inventory for every request, regardless of URL
+
 # Sources
 
 * https://learning.oreilly.com/library/view/black-hat-go
