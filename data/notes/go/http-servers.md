@@ -1,5 +1,12 @@
 # Basic servers
 
+Key concepts:
+
+* `net/http` - standard library package for implemeting HTTP servers (and clients)
+* route - URL path like "/hello"
+* handler - function that is mapped to a route
+* server
+
 ## with default handler
 
 ```
