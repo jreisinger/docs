@@ -1,12 +1,5 @@
 # Basic servers
 
-Key concepts:
-
-* `net/http` - standard library package for implemeting HTTP servers (and clients)
-* route - URL path like "/hello"
-* handler - function that is mapped to a route
-* server
-
 ## with default handler
 
 ```
@@ -164,6 +157,47 @@ generates also response body:
 500 something's wrong with the server
 ```
 
+# The `http.Handler` Inteface
+
+* foundational element of `net/http`
+
+```
+package http
+
+type Handler interface {
+	ServeHTTP(w ResponseWriter, r *Request)
+}
+
+func ListenAndServe(address string, h Handler) error
+```
+
+`ListenAndServe`
+
+* function that runs forever until it fails (always with a non-nil error)
+* requires an instance of the `Handler` interface to which all requests should be dispatched
+
+Super simple e-commerce site:
+
+```
+func main() {
+	db := database{"shoes": 50, "socks": 5}
+	log.Fatal(http.ListenAndServe("localhost:8000", db))
+}
+
+type dollars float32
+
+func (d dollars) String() string { return fmt.Sprintf("$%.2f", d) }
+
+type database map[string]dollars
+
+func (db database) ServeHTTP(w http.ResponseWriter, req *http.Request) {
+	for item, price := range db {
+		fmt.Fprintf(w, "%s: %s\n", item, price)
+	}
+}
+```
+
 # Sources
 
 * https://learning.oreilly.com/library/view/black-hat-go
+* The Go Programming Language (ch. 7.7)
