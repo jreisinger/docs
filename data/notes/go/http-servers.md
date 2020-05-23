@@ -157,10 +157,13 @@ generates also response body:
 500 something's wrong with the server
 ```
 
-# The `http.Handler` Inteface
+# `net/http`
+
+* standard library package for implementing HTTP servers (and clients)
+
+## `http.Handler` interface
 
 * foundational element of `net/http`
-* `net/http` is standard library package for implementing HTTP servers (and clients)
 
 ```
 package http
@@ -232,6 +235,40 @@ func (db database) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 ```
 msg := fmt.Sprintf("no such page: %s\n", req.URL)
 http.Error(w, msg, http.StatusNotFound) // 404
+```
+
+## `http.ServerMux` struct
+
+* it's convenient to define logic for each URL in a separate function or method
+* related URLs (e.g. `/images/*.png`) might need similar logic
+* enters `ServeMux`, a request multiplexer, to simplify the association between URLs and handlers
+* a `ServeMux` aggregates a collection of `http.Handler`s into a single `http.Handler`
+
+```
+func main() {
+	db := database{"shoes": 50, "socks": 5}
+	mux := http.NewServeMux()
+	mux.Handle("/list", http.HandlerFunc(db.list))
+	mux.Handle("/price", http.HandlerFunc(db.price))
+	log.Fatal(http.ListenAndServe("localhost:8000", mux))
+}
+
+func (db database) list(w http.ResponseWriter, req *http.Request) {
+	for item, price := range db {
+		fmt.Fprintf(w, "%s: %s\n", item, price)
+	}
+}
+
+func (db database) price(w http.ResponseWriter, req *http.Request) {
+	item := req.URL.Query().Get("item")
+	price, ok := db[item]
+	if !ok {
+		w.WriteHeader(http.StatusNotFound) // 404
+		fmt.Fprintf(w, "no such item: %q\n", item)
+		return
+	}
+	fmt.Fprintf(w, "%s\n", price)
+}
 ```
 
 # Sources
