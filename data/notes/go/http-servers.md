@@ -200,6 +200,40 @@ func (db database) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 
 * the server will list all the inventory for every request, regardless of URL
 
+A more realistic server triggers different behaviours based on the path component of the URL:
+
+```
+func (db database) ServeHTTP(w http.ResponseWriter, req *http.Request) {
+	switch req.URL.Path {
+	case "/list":
+		for item, price := range db {
+			fmt.Fprintf(w, "%s: %s\n", item, price)
+		}
+	// called like: /price?item=socks
+	case "/price":
+		item := req.URL.Query().Get("item")
+		price, ok := db[item]
+		if !ok {
+			w.WriteHeader(http.StatusNotFound) // 404
+			fmt.Fprintf(w, "no such item: %q\n", item)
+			return
+		}
+		fmt.Fprintf(w, "%s\n", price)
+	default:
+		w.WriteHeader(http.StatusNotFound) // 404
+		fmt.Fprintf(w, "no such page: %s\n", req.URL)
+	}
+}
+```
+
+* `WriteHear` must be called before anything is written to `w`
+* equivalently you could use the `http.Error` utility function:
+
+```
+msg := fmt.Sprintf("no such page: %s\n", req.URL)
+http.Error(w, msg, http.StatusNotFound) // 404
+```
+
 # Sources
 
 * https://learning.oreilly.com/library/view/black-hat-go
