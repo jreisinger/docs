@@ -160,6 +160,7 @@ generates also response body:
 # The `http.Handler` Inteface
 
 * foundational element of `net/http`
+* `net/http` is standard library package for implementing HTTP servers (and clients)
 
 ```
 package http
