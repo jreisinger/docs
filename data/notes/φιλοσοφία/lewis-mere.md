@@ -64,3 +64,4 @@ Sources:
 
 * [The book in PDF](https://www.dacc.edu/assets/pdfs/PCM/merechristianitylewis.pdf)
 * [YouTube doodles](https://youtu.be/QmHXYhpEDfM)
+* [CS Lewis Institute book study](https://youtu.be/KeBU5yck2ss)
