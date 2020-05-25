@@ -6,10 +6,6 @@ Zero *always* means success, non zero exit status usually means error.
 
 Exit code can be used in conditionals like this:
 
-    ## 'x' is used to get around empty $1
-    $ if [ x"$1" == x"hi" ]; then echo 1st arg was hi; else echo where\'s hi?; fi
-    where's hi?
-
     $ ls / > /dev/null && echo ok || echo error
     ok
     
