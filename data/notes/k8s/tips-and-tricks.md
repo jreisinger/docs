@@ -55,10 +55,11 @@ curl localhost:8001/api/v1/pods  # get list of pods
 Run containers for troubleshooting:
 
 ```
-kubectl run alpine    --image=alpine  --rm -it --restart=Never -- sh
+kubectl run alpine    --image=alpine          --rm -it --restart=Never           -- sh
 
-kubectl run nslookup  --image=busybox --rm -it --restart=Never --command -- nslookup demo
-kubectl run wget      --image=busybox --rm -it --restart=Never --command -- wget -qO- http://demo:8888
+kubectl run nslookup  --image=busybox         --rm -it --restart=Never --command -- nslookup <service>
+kubectl run wget      --image=busybox         --rm -it --restart=Never --command -- wget -qO- <service>:<port>
+kubectl run curl      --image=curlimages/curl --rm -it --restart=Never --coomand -- curl -LI <service>:<port>
 ```
 
 * `--command` -- command to run instead of container's default entrypoint
