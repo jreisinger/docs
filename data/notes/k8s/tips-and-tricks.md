@@ -54,8 +54,9 @@ curl localhost:8001/api/v1/pods  # get list of pods
 
 Run containers for troubleshooting:
 
-```sh
-kubectl run demo --image=cloudnatived/demo:hello --expose --port 8888 # pod to troubleshoot
+```
+kubectl run -it --rm --restart=Never alpine --image=alpine sh
+
 kubectl run nslookup --image=busybox --rm -it --restart=Never --command -- nslookup demo
 kubectl run wget --image=busybox --rm -it --restart=Never --command -- wget -qO- http://demo:8888
 ```
