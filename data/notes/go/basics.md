@@ -102,7 +102,7 @@ See also [Type inference](https://tour.golang.org/basics/14).
 
 # Control Structures
 
-The break and continue statements modify the flow of control. A break causes control to resume at the next statement after the innermost for, switch, or select statement (which we’ll see later), and as we saw in Section 1.3, a continue causes the innermost for loop to start its next iteration. Statements may be labeled so that break and continue can refer to them, for instance to break out of several nested loops at once or to start the next iteration of the outermost loop. There is even a goto statement, though it’s intended for machine-generated code, not regular use by programmers.
+The `break` and `continue` statements modify the flow of control. A `break` causes control to resume at the next statement after the innermost for, switch, or select statement, a `continue` causes the innermost for loop to start its next iteration. Statements may be labeled so that break and continue can refer to them, for instance to break out of several nested loops at once or to start the next iteration of the outermost loop. There is even a `goto` statement, though it’s intended for machine-generated code, not regular use by programmers.
 
 ## The for Statement
 
