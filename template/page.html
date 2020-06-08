@@ -9,19 +9,21 @@
 <!-- Stolen from https://github.com/artyom/mdserver -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-	htmlTableOfContents();
+    htmlTableOfContents();
 } );
 function htmlTableOfContents (documentRef) {
     var documentRef = documentRef || document;
-	var toc = documentRef.querySelector("nav#toc details");
+    var toc = documentRef.querySelector("nav#toc details");
     var headings = [].slice.call(documentRef.body.querySelectorAll('h1, h2, h3, h4, h5, h6'));
+    if (headings.length < 2) { return };
     headings.forEach(function (heading, index) {
         var anchor = documentRef.createElement('a');
         anchor.setAttribute('name', 'toc' + index);
         anchor.setAttribute('id', 'toc' + index);
 
         var link = documentRef.createElement('a');
-        link.setAttribute('href', '#toc' + index);
+        var ref = heading.getAttribute( "id" );
+        link.setAttribute('href', '#' + ref);
         link.textContent = heading.textContent;
 
         var div = documentRef.createElement('div');
