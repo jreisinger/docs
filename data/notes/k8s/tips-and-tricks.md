@@ -75,3 +75,11 @@ Suspend a cronjob:
 ```
 kubectl patch cronjobs <cronjob> -p '{"spec" : {"suspend" : true }}'
 ```
+
+* if the cronjob is suspended for too long you get:
+
+```Events:
+  Type     Reason            Age                 From                Message
+  ----     ------            ----                ----                -------
+  Warning  FailedNeedsStart  11s (x6 over 111s)  cronjob-controller  Cannot determine if job needs to be started: too many missed start time (> 100). Set or decrease .spec.startingDeadlineSeconds or check clock skew
+```
