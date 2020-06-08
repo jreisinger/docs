@@ -1,6 +1,9 @@
 <img src="https://golang.org/lib/godoc/images/go-logo-blue.svg" style="max-width:100%;height:auto;float:right">
 
 [Types](#types)
+* [Numbers](#numbers)
+* [Strings](#strings)
+* [Booleans](#booleans)
 
 Go is a minimalist language; it only has 25 keywords and 1 loop type.
 
