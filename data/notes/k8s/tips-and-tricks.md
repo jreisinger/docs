@@ -69,3 +69,9 @@ Remove pod stuck in terminating state:
 ```
 kubectl delete pod postgres-86d59f8fb-pjtgx --force --grace-period=0
 ```
+
+Suspend a cronjob:
+
+```
+kubectl patch cronjobs <cronjob> -p '{"spec" : {"suspend" : true }}'
+```
