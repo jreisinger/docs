@@ -66,9 +66,9 @@ function htmlTableOfContents (documentRef) {
 
 {{else}}
 
-<p>
-<nav id="toc"><details open><summary>Table of Contents</summary></details></nav>
-</p>
+{{if and (ne .Title "home") (ne .Title "sites") (ne .Title "notes")}}
+<p><nav id="toc"><details open><summary>Table of Contents</summary></details></nav></p>
+{{end}}
 
 {{.Body}}
 ✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}.md">source</a>
