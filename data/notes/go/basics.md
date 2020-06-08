@@ -1,34 +1,5 @@
 <img src="https://golang.org/lib/godoc/images/go-logo-blue.svg" style="max-width:100%;height:auto;float:right">
 
-<!-- vim-markdown-toc GFM -->
-
-* [Types](#types)
-    * [Numbers](#numbers)
-    * [Strings](#strings)
-    * [Booleans](#booleans)
-* [Variables](#variables)
-* [Control Structures](#control-structures)
-    * [The for Statement](#the-for-statement)
-    * [The if and switch Statements](#the-if-and-switch-statements)
-* [More built-in types](#more-built-in-types)
-    * [Arrays](#arrays)
-    * [Slices](#slices)
-    * [Maps](#maps)
-* [Functions](#functions)
-    * [Variadic functions](#variadic-functions)
-    * [Closures](#closures)
-    * [Recursion](#recursion)
-    * [Pointers](#pointers)
-* [Structs and interfaces](#structs-and-interfaces)
-    * [Structs](#structs)
-    * [Methods](#methods)
-    * [Embedded types](#embedded-types)
-    * [Interfaces](#interfaces)
-* [Standard Packages](#standard-packages)
-* [Sources](#sources)
-
-<!-- vim-markdown-toc -->
-
 Go is a minimalist language; it only has 25 keywords and 1 loop type.
 
 By default, Go programs are compiled directly into native, statically-linked executable binaries into which all necessary Go libraries and the Go runtime are copied.
