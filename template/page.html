@@ -5,10 +5,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ .Title }}</title>
+
+<!-- Stolen from https://github.com/artyom/mdserver -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+	htmlTableOfContents();
+} );
+function htmlTableOfContents (documentRef) {
+    var documentRef = documentRef || document;
+	var toc = documentRef.querySelector("nav#toc details");
+    var headings = [].slice.call(documentRef.body.querySelectorAll('h1, h2, h3, h4, h5, h6'));
+    headings.forEach(function (heading, index) {
+        var anchor = documentRef.createElement('a');
+        anchor.setAttribute('name', 'toc' + index);
+        anchor.setAttribute('id', 'toc' + index);
+
+        var link = documentRef.createElement('a');
+        link.setAttribute('href', '#toc' + index);
+        link.textContent = heading.textContent;
+
+        var div = documentRef.createElement('div');
+        div.setAttribute('class', heading.tagName.toLowerCase());
+
+        div.appendChild(link);
+        toc.appendChild(div);
+        heading.parentNode.insertBefore(anchor, heading);
+    });
+}
+</script>
+
 <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+
 </head>
 
 <body>
+
 <div class="content">
 
 ⌂ <a href="/home">home</a>
@@ -32,6 +63,10 @@
 ✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}">source</a>
 
 {{else}}
+
+<p>
+<nav id="toc"><details open><summary>Table of Contents</summary></details></nav>
+</p>
 
 {{.Body}}
 ✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}.md">source</a>
