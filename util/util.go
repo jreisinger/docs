@@ -10,13 +10,18 @@ import (
 	"strings"
 
 	"github.com/gomarkdown/markdown"
+	"github.com/gomarkdown/markdown/parser"
 )
 
 // MdToHtml converts markdown to HTML.
 func MdToHtml(filePath string) template.HTML {
 	md, err := ioutil.ReadFile(filePath)
 	Check(err)
-	html := markdown.ToHTML(md, nil, nil)
+
+	extensions := parser.CommonExtensions | parser.AutoHeadingIDs ^ parser.MathJax
+
+	p := parser.NewWithExtensions(extensions)
+	html := markdown.ToHTML(md, p, nil)
 	return template.HTML(html)
 }
 
