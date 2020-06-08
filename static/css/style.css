@@ -57,3 +57,23 @@ blockquote {
   padding: 0.5em 10px;
   //quotes: "\201C""\201D""\2018""\2019";
 }
+
+/* Table Of Contents */
+#toc .h1 {
+    text-indent: .25in;
+}
+#toc .h2 {
+    text-indent: .5in;
+}
+#toc .h3 {
+    text-indent: .75in;
+}
+#toc .h4 {
+    text-indent: 1in;
+}
+#toc .h5 {
+    text-indent: 1.25in;
+}
+#toc .h6 {
+    text-indent: 1.5in;
+}
