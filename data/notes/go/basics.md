@@ -2,10 +2,30 @@
 
 <!-- vim-markdown-toc GFM -->
 
-[Types](#types)
-* [Numbers](#numbers)
-* [Strings](#strings)
-* [Booleans](#booleans)
+* [Types](#types)
+    * [Numbers](#numbers)
+    * [Strings](#strings)
+    * [Booleans](#booleans)
+* [Variables](#variables)
+* [Control Structures](#control-structures)
+    * [The for Statement](#the-for-statement)
+    * [The if and switch Statements](#the-if-and-switch-statements)
+* [More built-in types](#more-built-in-types)
+    * [Arrays](#arrays)
+    * [Slices](#slices)
+    * [Maps](#maps)
+* [Functions](#functions)
+    * [Variadic functions](#variadic-functions)
+    * [Closures](#closures)
+    * [Recursion](#recursion)
+    * [Pointers](#pointers)
+* [Structs and interfaces](#structs-and-interfaces)
+    * [Structs](#structs)
+    * [Methods](#methods)
+    * [Embedded types](#embedded-types)
+    * [Interfaces](#interfaces)
+* [Standard Packages](#standard-packages)
+* [Sources](#sources)
 
 <!-- vim-markdown-toc -->
 
