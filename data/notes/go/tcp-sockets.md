@@ -1,4 +1,4 @@
-## Client
+# Client
 
 This is an HTTP client implemented using socket-level programming:
 
@@ -63,7 +63,7 @@ It's normal to have a lot of error checking in network programming because lot
 of things can go wrong (e.g. syntax error in the address, service not running,
 hardware failing).
 
-## Server
+# Server
 
 Concurrent TCP server that prints (echoes) what it receives:
 
@@ -116,7 +116,7 @@ func handleServerConnection(c net.Conn) {
 }
 ```
 
-## Sources
+# Sources
 
 * [Network programming with
 Go](https://www.apress.com/gp/book/9781484226919): Ch 3. Socket-level programming
