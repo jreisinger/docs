@@ -1,6 +1,6 @@
 # Components
 
-Logs flow
+Logs flow:
 
 ```
 Logs producer -> [Kafka (you can do some logs pre-processing)] -> 
@@ -8,36 +8,34 @@ Input -> Extractor -> Stream -> Pipeline (e.g. add new field to a log) ->
 Alert
 ```
 
-Input
+Index - basic unit of storage for data in Elasticsearch
+
+## Input
 
 * defines the method by which Graylog collects logs
 
-[Extractors](https://docs.graylog.org/en/latest/pages/extractors.html)
+## [Extractor](https://docs.graylog.org/en/latest/pages/extractors.html)
 
 * allow to instruct Graylog how to extract data from any text in a received message
 * work only on text fields (not numeric fields or anythin else)
 
-Streams
+## Stream
 
 * think of it as tagging of incoming messages
 * route messages into categories in real time
 * many uses: message categorization, access control, messages parsing and enrichment, ...
 * messages can belong to one or more streams
 
-Pipelines
+## Pipeline
 
 * tied to Streams
 * run rule(s) against specific event
 * allow for: routing, parsing, dropping, blacklisting, modifying and enriching messages as they flow through Graylog
 
-Alerts 
+## Alert 
 
 * periodic searches that can trigger some notification when a defined condition is met
 * are composed of: 1. alert condition 2. alert notification
-
-Index
-
-* basic unit of storage for data in Elasticsearch
 
 # Configuration
 
