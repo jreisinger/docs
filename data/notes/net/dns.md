@@ -165,6 +165,8 @@ Find DNS server used by your system:
 # Ubuntu 16.04
 nmcli device show | grep IP4.DNS
 ```
+
+CNAME is not possible at apex level with the same name as the zone (DNS RFC). For this scenario, you can use `ALIAS` record type.
  
 Sources
 =======
