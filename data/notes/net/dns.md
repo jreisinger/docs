@@ -114,7 +114,7 @@ Tools
 
 dig
 
-    dig [@server] [-x addr] [name] [type] [+trace]
+    dig [@server] [-x addr] [name] [type] [+trace] [+short]
 
 host
 
