@@ -1,5 +1,3 @@
-<img src="https://live.staticflickr.com/65535/49605373071_382ecd5cbc_c.jpg" style="max-width:100%;height:auto;float:right">
-
 > Reading furnishes the mind only with materials of knowledge; it is thinking that makes what we read ours. -- John Locke
 
 Some of the technical books that are fundamental for me. Ordered from most recently read in each category.
