@@ -16,3 +16,5 @@ Check TLS/SSL version (you should be using TLS)
 ```
 openssl s_client -connect reisinge.net:443 2> /dev/null | egrep -i '(tls|ssl)'
 ```
+
+See also https://github.com/pete911/certinfo.
