@@ -106,11 +106,11 @@ non-recursive - refers you to another server if it can't answer a query
 
 *Note*: resolver libraries do not understand referrals. Any local nameserver listed in a client's `resolv.conf` file must be recursive.
 
-Testing and debugging
-=====================
+Tips and tricks
+===============
 
-Tools
------
+CLI tools
+---------
 
 dig
 
@@ -124,8 +124,8 @@ nslookup (Cricket Liu doesn't like it :-))
 
     nslookup [name|addr] [server]
 
-Howtos
-------
+dig examples
+------------
 
 Find out the names of authoritative nameservers for a domain
 
@@ -145,13 +145,19 @@ Find out the version of a bind nameserver (can be concealed in some cases)
 dig @ns1.ist.ac.at version.bind txt chaos
 ```
 
-Checking for open resolvers: http://dns.measurement-factory.com/tools/ => open resolver test
+Open resolver
+-------------
 
 * recursive, caching name server that accepts and answers queries from anyone
  on the Internet
 * resources consumption
 * resolver's cache poisoning
 * amplification of DDoS attacks
+
+Checking for open resolvers: http://dns.measurement-factory.com/tools/ => open resolver test
+
+Client side
+-----------
 
 Find DNS server used by your system:
 
