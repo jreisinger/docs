@@ -50,11 +50,28 @@ https://docs.graylog.org/en/latest/pages/configuration/server.conf.html
 * by default all terms or phrases are OR connected
 * AND, OR, and NOT are case sensitive
 
+The following characters must be escaped with a backslash:
+
+```
+& | : \ / + - ! ( ) { } [ ] ^ " ~ * ?
+```
+
+e.g:
+
+```
+resource:\/posts\/45326
+```
+
+
+## Full text
+
 All messages that include ssh or login:
 
 ```
 ssh login
 ```
+
+## By field
 
 Messages where the field type includes ssh or login:
 
@@ -67,6 +84,19 @@ Messages where the field type includes exact phrase "ssh login":
 ```
 type:"ssh login"
 ```
+
+Numeric fields support range queries:
+
+```
+http_response_code[500 TO 504] # inclusive
+http_response_code{400 TO 404} # exclusive
+bytes:{0 TO 64]
+http_response_code:>=400
+http_response_code:(>=400 AND <500)
+timestamp:["2019-07-23 09:53:08.175" TO "2019-07-23 09:53:08.575"] # must be UTC
+```
+
+## Patterns
 
 Regexes (see [ES regexes syntax](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/query-dsl-regexp-query.html#regexp-syntax) for more):
 
@@ -87,27 +117,4 @@ Fuzziness - search for similar terms
 ```
 ssh login~
 source:example.org~
-```
-
-Numeric fields support range queries:
-
-```
-http_response_code[500 TO 504] # inclusive
-http_response_code{400 TO 404} # exclusive
-bytes:{0 TO 64]
-http_response_code:>=400
-http_response_code:(>=400 AND <500)
-timestamp:["2019-07-23 09:53:08.175" TO "2019-07-23 09:53:08.575"] # must be UTC
-```
-
-The following characters must be escaped with a backslash:
-
-```
-& | : \ / + - ! ( ) { } [ ] ^ " ~ * ?
-```
-
-e.g:
-
-```
-resource:\/posts\/45326
 ```
