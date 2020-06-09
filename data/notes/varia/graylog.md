@@ -110,9 +110,9 @@ Wildcards - use `?` to replace a single character or `*` to replace zero or more
 source:exam?ple.*
 ```
 
-Leading wildcards are disabled to avoid excessive memory consumption.
+* leading wildcards are disabled to avoid excessive memory consumption
 
-Fuzziness - search for similar terms
+Fuzziness - search for similar terms:
 
 ```
 ssh login~
