@@ -37,10 +37,12 @@ DevOps has been formed by:
 * Innovation Culture
 * Toyota Kata
 
+# The Three Ways
+
 "The Three ways" are the underpinning principles that all the DevOps patterns
 can be derived from.
 
-# The First Way - systems thinking
+## The First Way - systems thinking
 
 To maximaze left-to-right flow of work (from Dev to Ops to the customer) we need
 
@@ -56,7 +58,7 @@ Necessary practices:
 * limiting WIP
 * building safe to change systems and organizations
 
-# The Second Way - feedback
+## The Second Way - feedback
 
 To prevent problems from happening again or enable faster detection and recovery we need:
 
@@ -70,7 +72,7 @@ Practices:
 * shared goals and shared pain between Devs and Ops
 * pervasive telemetry
 
-# The Third Way - experimentation & repetition
+## The Third Way - experimentation & repetition
 
 To have a healthy work environment we need a culture that fosters:
 
