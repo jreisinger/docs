@@ -75,6 +75,6 @@ for index, runeValue := range nihongo {
 // U+8A9E '語' starts at byte position 6
 ```
 
-## More
+# Source
 
 * https://blog.golang.org/strings
