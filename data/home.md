@@ -6,7 +6,7 @@ After reading a chapter from Mythical Man-Month I think I (should) like working 
 
 2. Pleasure of making thinks tha are useful to other *people*.
 
-3 "The fascination of fashioning [utvárať] complex puzzle-like objects of interlocking moving parts and watching them work in subtle cycles, playing out the consequences of principles built in from the beginning."
+3. "The fascination of fashioning [utvárať] complex puzzle-like objects of interlocking moving parts and watching them work in subtle cycles, playing out the consequences of principles built in from the beginning."
 
 4. The joy of always learning. The problems to solve are usually new in some way and thus I always learn something new (practical, theoretical or both).
 
