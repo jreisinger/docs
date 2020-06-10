@@ -1,4 +1,4 @@
-## What is a string
+# What is a string
 
 String is a read-only **slice of bytes**. A string can hold arbitrary bytes not just UTF-8 text or any other predefined format. Here is a string literal that uses the `\xNN` notation (hex values of a byte range from `00` to `FF`):
 
@@ -6,7 +6,7 @@ String is a read-only **slice of bytes**. A string can hold arbitrary bytes not 
 const sample = "\xbd\xb2\x3d\xbc\x20\xe2\x8c\x98"
 ```
 
-## Printing strings
+# Printing strings
 
 ```go
 // Print the string directly.
@@ -27,7 +27,7 @@ fmt.Printf("% q\n", sample)         // "\xbd\xb2=\xbc ⌘"
 fmt.Printf("%+q\n", sample)         // "\xbd\xb2=\xbc \u2318"
 ```
 
-## UTF-8 and string literals
+# UTF-8 and string literals
 
 We can also create a "raw string" that can contain only literal text (regular string - created with double quotes - can contain escape sequences as shown above):
 
@@ -60,7 +60,7 @@ $ hexdump a.go
 0000004
 ```
 
-## Range loops
+# Range loops
 
 `for range` loop on a string treats it specially. It decodes one UTF-8-encoded rune (code point) on each iteration:
 
