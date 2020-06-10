@@ -27,6 +27,21 @@ fmt.Printf("% q\n", sample)         // "\xbd\xb2=\xbc ⌘"
 fmt.Printf("%+q\n", sample)         // "\xbd\xb2=\xbc \u2318"
 ```
 
+## Range loops
+
+`for range` loop on a string treats it specially. It decodes one UTF-8-encoded rune (code point) on each iteration:
+
+```go
+const nihongo = "日本語" // Japanese
+for index, runeValue := range nihongo {
+    // %#U shows the code point's Unicode value and its printed representation.
+    fmt.Printf("%#U starts at byte position %d\n", runeValue, index)
+}
+// U+65E5 '日' starts at byte position 0
+// U+672C '本' starts at byte position 3
+// U+8A9E '語' starts at byte position 6
+```
+
 # UTF-8 and string literals
 
 We can also create a "raw string" that can contain only literal text (regular string - created with double quotes - can contain escape sequences as shown above):
@@ -58,21 +73,6 @@ $ cat a.go
 $ hexdump a.go
 0000000 e2 8c 98 0a
 0000004
-```
-
-# Range loops
-
-`for range` loop on a string treats it specially. It decodes one UTF-8-encoded rune (code point) on each iteration:
-
-```go
-const nihongo = "日本語" // Japanese
-for index, runeValue := range nihongo {
-    // %#U shows the code point's Unicode value and its printed representation.
-    fmt.Printf("%#U starts at byte position %d\n", runeValue, index)
-}
-// U+65E5 '日' starts at byte position 0
-// U+672C '本' starts at byte position 3
-// U+8A9E '語' starts at byte position 6
 ```
 
 # Source
