@@ -1,8 +1,8 @@
 Hello and welcome to my non-official homepage :-). The official one is [here](https://jreisinger.github.io/).
 
-After reading a chapter from Mythical Man-Month I think I (should) like working in IT for the following reasons:
+After reading a chapter or so from Frederick P. Brooks' Mythical Man-Month I think I (should) like working in IT for the following reasons:
 
-1. The sheer joy of building things (especially of my own design). It's the same delight as a kid is having in his mud pie. Frederick P. Brooks thinks "this delight must be an image of God's delight in making things, a delight shown in the distinctness and newness of each leaf and each snowflake."
+1. The sheer joy of building things (especially of my own design). It's the same delight as a kid is having in his mud pie. "This delight must be an image of God's delight in making things, a delight shown in the distinctness and newness of each leaf and each snowflake."
 
 2. Pleasure of making thinks tha are useful to other *people*.
 
