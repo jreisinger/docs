@@ -40,8 +40,7 @@ DevOps has been formed by:
 "The Three ways" are the underpinning principles that all the DevOps patterns
 can be derived from.
 
-The First Way - systems thinking
---------------------------------
+# The First Way - systems thinking
 
 To maximaze left-to-right flow of work (from Dev to Ops to the customer) we need
 
@@ -57,8 +56,7 @@ Necessary practices:
 * limiting WIP
 * building safe to change systems and organizations
 
-The Second Way - feedback
--------------------------
+# The Second Way - feedback
 
 To prevent problems from happening again or enable faster detection and recovery we need:
 
@@ -72,8 +70,7 @@ Practices:
 * shared goals and shared pain between Devs and Ops
 * pervasive telemetry
 
-The Third Way - experimentation & repetition
---------------------------------------------
+# The Third Way - experimentation & repetition
 
 To have a healthy work environment we need a culture that fosters:
 
@@ -86,8 +83,7 @@ Practices:
 * rewarding improvements
 * at least 20% of Dev and Ops cycles allocated towards nonfunctional requirements
 
-DevOps without Devs
--------------------
+# DevOps without Devs
 
 It's possible to apply these DevOps principles to any complex process:
 
@@ -132,8 +128,7 @@ It's possible to apply these DevOps principles to any complex process:
 
 * you, your team, your company and world's IT community are interdependent
 
-Sources
--------
+# Sources
 
 * [The Phoenix Project](https://itrevolution.com/book/the-phoenix-project/)
 * [TPoSaNA](http://the-sysadmin-book.com/)
