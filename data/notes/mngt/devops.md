@@ -134,7 +134,7 @@ It's possible to apply these DevOps principles to any complex process:
 * [TPoSaNA](http://the-sysadmin-book.com/)
 * [TPoCSA](http://the-cloud-book.com/)
 
-More info
+## More info
 
 * https://www.oreilly.com/ideas/what-is-devops-yet-again
 * http://sysadvent.blogspot.sk/2016/12/day-13-injecting-modern-concepts-into.html
