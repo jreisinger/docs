@@ -23,7 +23,7 @@ The techniques are:
 * technical practices
 * cultural norms
 
-DevOps is an emerging field in operations. The practice of DevOps typically appears in web application and cloud environments, but its influence is spreading to all parts of all industries.
+DevOps is an emerging field in operations. The practice of DevOps typically appears in web applications and cloud environments, but its influence is spreading to all parts of all industries.
 
 The principles behind DevOps work patterns are the same principles that
 transformed manufacturing.
@@ -48,7 +48,7 @@ To maximaze left-to-right flow of work (from Dev to Ops to the customer) we need
 
 * emphasize the performance of the entire system, as opposed to the performance of a specific silo of work or department
 * each step is done in a repeatable way
-* small batch sizes and intervals of works
+* small batch sizes and intervals of work
 * never passing defects to downstream work centers
 
 Necessary practices:
