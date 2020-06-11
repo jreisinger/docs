@@ -1,3 +1,5 @@
+# Info
+
 ## Useful output flags for `kubectl`
 
 ```sh
@@ -19,6 +21,8 @@ kubectl explain svc
 ```
 kubectl run demo --image=cloudnatived/demo:hello --dry-run -o yaml
 ```
+
+# Troubleshooting
 
 ## Show logs
 
