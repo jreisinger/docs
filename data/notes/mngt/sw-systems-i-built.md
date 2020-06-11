@@ -1,5 +1,8 @@
 Some of the SW systems I (co-)built
 
+* Grafana with custom authn (docker-sec-auth-ws) and provisioning (docker-sec-grafana-ws-provision) (Bash -> Go; PN)
+* [checkip](https://github.com/jreisinger/checkip) (Go)
+* [homepage](https://github.com/jreisinger/homepage) (Go, HTML, Javascript)
 * [runp](https://github.com/jreisinger/runp) (Go)
 * WebShield (Bash, Kubernetes; PN)
 * Managed WAF (Ansible, Docker, Nginx; PN)
