@@ -12,3 +12,5 @@ I mostly keep (mostly technical) notes here. These are some of them:
 * [Shell temp files](https://reisinge.net/notes/shell/temp-files)
 * [Numbers to remember](https://reisinge.net/notes/varia/numbers-to-remember)
 * [Terms](https://reisinge.net/notes/varia/terms)
+
+> Be prepared to not understand things immediately, and take the time to go over things again and again until you've learned them. When you are teaching someone, expect to repeat yourself a lot. -- Joshua Zimmerman
