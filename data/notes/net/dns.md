@@ -166,7 +166,7 @@ Find DNS server used by your system:
 nmcli device show | grep IP4.DNS
 ```
 
-CNAME is not possible at apex level with the same name as the zone (DNS RFC). For this scenario, you can use `ALIAS` record type.
+CNAME is not possible at zone apex level (i.e. for FQDN that is the same name as the zone name). For this scenario, you can use `ALIAS` record type.
  
 Sources
 =======
