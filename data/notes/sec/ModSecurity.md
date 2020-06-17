@@ -5,7 +5,7 @@
 ModSecurity is a WAF engine (library, module) for Apache, Nginx, IIS. ModSecurity 3.0 has a new modular architecture - it's composed of:
 
 1. a connector that links libmodsecurity to the web server it is running with - e.g. for fo NGINX there's [ModSecurity-nginx](https://github.com/SpiderLabs/ModSecurity-nginx)
-2. [libmodsecurity](https://github.com/SpiderLabs/ModSecurity) (a.k.a. [ModSecurity](https://www.modsecurity.org) :-) - core component containing the functionality and couple of rules ([docs](https://github.com/SpiderLabs/ModSecurity/wiki))
+2. [libmodsecurity](https://github.com/SpiderLabs/ModSecurity) (a.k.a. [ModSecurity](https://www.modsecurity.org) :-) - core component containing the functionality and couple of rules
 
 Files
 
