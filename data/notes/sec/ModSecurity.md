@@ -6,8 +6,8 @@
 
 ModSecurity 3.0 has a new modular architecture, i.e. it's composed of:
 
-1. [libmodsecurity](https://github.com/SpiderLabs/ModSecurity) (a.k.a. [ModSecurity](https://www.modsecurity.org) :-) - core component containing the functionality and couple of rules ([docs](https://github.com/SpiderLabs/ModSecurity/wiki))
-2. a connector that links libmodsecurity to the web server it is running with - [NGINX](https://github.com/SpiderLabs/ModSecurity-nginx), Apache HTTP Server, and IIS
+1. a connector that links libmodsecurity to the web server it is running with - [NGINX](https://github.com/SpiderLabs/ModSecurity-nginx), Apache HTTP Server, and IIS
+2. [libmodsecurity](https://github.com/SpiderLabs/ModSecurity) (a.k.a. [ModSecurity](https://www.modsecurity.org) :-) - core component containing the functionality and couple of rules ([docs](https://github.com/SpiderLabs/ModSecurity/wiki))
 
 Files
 
