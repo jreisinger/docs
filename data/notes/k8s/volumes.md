@@ -23,12 +23,6 @@ kind: Pod
 metadata:
   name: configmap-pod
 spec:
-  containers:
-    - name: test
-      image: busybox
-      volumeMounts:
-        - name: config-vol
-          mountPath: /etc/config
   volumes:
     - name: config-vol
       configMap:
@@ -36,6 +30,12 @@ spec:
         items:
           - key: log_level
             path: log_level
+  containers:
+    - name: test
+      image: busybox
+      volumeMounts:
+        - name: config-vol
+          mountPath: /etc/config
 ```
 
 * all contents stored in `log_level` entry of the CM are mounted into `/etc/config/log_level`
