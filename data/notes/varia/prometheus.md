@@ -166,7 +166,7 @@ P8s can discover targets to monitor by using K8s API. There are currently these 
 * node - discover the nodes the K8s cluster (to monitor the infra around K8s)
 * service - useful for monitoring the infrastructure of and under K8s and for blackbox monitoring, to check if the service is responding at all
 * endpoints - will return a target for every port of every pod backing each of your services
-* pod - will return a target for each port of every one of your pods
+* pod - will return a target for each port of every one of your pods (even of those not backing any service)
 * ingress - you should only use this role for blackbox monitoring
 
 # Tips and tricks
