@@ -40,6 +40,10 @@ spec:
 
 * all contents stored in `log_level` entry of the CM are mounted into `/etc/config/log_level`
 
+## emtpyDir
+
+https://kubernetes.io/docs/concepts/storage/volumes/#emptydir
+
 # Resources
 
 * https://kubernetes.io/docs/concepts/storage/volumes
