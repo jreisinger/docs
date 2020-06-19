@@ -2,11 +2,4 @@ Hello and welcome to my non-official homepage :-). The official one is [here](ht
 
 I mostly keep (mostly technical) notes here. These days (the Fourth Age) my main focus is [Kubernetes](https://kubernetes.io/) and [Go](https://golang.org/). In the Third Age I concentrated on [Linux](https://en.wikipedia.org/wiki/Linux) and [Perl](https://www.perl.org/).
 
-Some of my public software projects:
-
-* [checkip](https://github.com/jreisinger/checkip) - find out information about an IP address
-* [waf-runner](https://github.com/jreisinger/waf-runner) - run Web Application Firewalls (WAFs) in containers
-* [waf-tester](https://github.com/jreisinger/waf-tester) - test Web Application Firewalls (WAFs)
-* [runp](https://github.com/jreisinger/runp) - run shell commands in parrallel
-
 > Be prepared to not understand things immediately, and take the time to go over things again and again until you've learned them. When you are teaching someone, expect to repeat yourself a lot. -- Joshua Zimmerman
