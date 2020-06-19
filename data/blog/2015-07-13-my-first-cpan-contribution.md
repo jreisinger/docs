@@ -1,9 +1,4 @@
----
-title: "My First CPAN Contribution"
-date: 2015-07-13
-categories: [prog]
-tags: [perl, cpan]
----
+# My First CPAN Contribution
 
 Last week I uploaded [App::Monport](http://metacpan.org/pod/App::Monport) to CPAN. I did it to try out the CPAN toolchain and to get a feeling of accomplishment :-). But I also think the application might be useful to some folks.
 

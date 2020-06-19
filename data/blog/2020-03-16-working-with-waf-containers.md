@@ -1,9 +1,4 @@
----
-title: "Working with WAF containers"
-date: 2020-03-16
-categories: [prog,sec,sysadmin]
-tags: [go,shell,docker,waf]
----
+# Working with WAF containers
 
 I've been working with Web Application Firewalls (WAFs) in the form of application containers for some time. To make my work easier I created couple of tools: [waf-runner](https://github.com/jreisinger/waf-runner) and [waf-tester](https://github.com/jreisinger/waf-tester). In this post I'll try to show you how they can be used.
 
