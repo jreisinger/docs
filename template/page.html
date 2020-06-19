@@ -52,7 +52,7 @@ function htmlTableOfContents (documentRef) {
 {{$UrlPath:=.UrlPath}}
 ▸ {{$UrlPath}}
 
-{{if or (eq .Title "about") (eq .Title "sites") (eq .Title "notes")}}
+{{if or (eq .Title "about") (eq .Title "sites") (eq .Title "notes") (eq .Title "cv")}}
 <img src="/static/gopher.png" style="max-width:100%;height:auto;float:right">
 {{end}}
 
@@ -68,7 +68,7 @@ function htmlTableOfContents (documentRef) {
 
 {{else}}
 
-{{if and (ne .Title "about") (ne .Title "sites") (ne .Title "notes")}}
+{{if and (ne .Title "about") (ne .Title "sites") (ne .Title "notes") (ne .Title "cv")}}
 <p><nav id="toc"><details open><summary>Table of Contents</summary></details></nav></p>
 {{end}}
 
