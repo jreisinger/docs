@@ -42,15 +42,18 @@ function htmlTableOfContents (documentRef) {
 
 <body>
 
-<div class="content">
-
-<a href="/about">about</a>
-| <a href="/sites">sites</a>
-| <a href="/cv">cv</a>
-| <a href="/blog">blog</a>
-| <a href="/notes">notes</a> [ <a href="{{ .RepoURL }}/find/master">find</a> ]
+<!-- Top navigation bar: https://www.w3schools.com/howto/howto_js_topnav.asp -->
+<div class="topnav">
+    <a href="/about">about</a>
+|   <a href="/sites">sites</a>
+|   <a href="/cv">cv</a>
+|   <a href="/blog">blog</a>
+|   <a href="/notes">notes</a> [ <a href="{{ .RepoURL }}/find/master">find</a> ]
 {{$UrlPath:=.UrlPath}}
 ▸ {{$UrlPath}}
+</div>
+
+<div class="content">
 
 {{if or (eq .Title "about") (eq .Title "sites") (eq .Title "cv") (eq .Title "blog") (eq .Title "notes")}}
 <img src="/static/gopher.png" style="max-width:100%;height:auto;float:right">
