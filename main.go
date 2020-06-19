@@ -39,7 +39,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	urlPath := r.URL.Path[1:] // remove leading "/"
 
 	if urlPath == "" {
-		http.Redirect(w, r, "/home", http.StatusFound)
+		http.Redirect(w, r, "/about", http.StatusFound)
 	}
 
 	p, err := util.RenderPage(repoURL, repoPath, urlPath)
