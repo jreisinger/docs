@@ -66,7 +66,9 @@ function htmlTableOfContents (documentRef) {
 {{end}}
 </ul>
 
-✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}">source</a>
+<div class="topnav">
+    ✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}">source</a>
+</div>
 
 {{else}}
 
@@ -75,7 +77,10 @@ function htmlTableOfContents (documentRef) {
 {{end}}
 
 {{.Body}}
-✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}.md">source</a>
+
+<div class="topnav">
+    ✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}.md">source</a>
+</div>
 
 {{end}}
 
