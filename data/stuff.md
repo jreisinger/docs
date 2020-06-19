@@ -11,3 +11,10 @@ Other web sites hosted by me
 * [quotes](https://quotes.reisinge.net) - quotes I've collected
 * [wiki](https://wiki.reisinge.net) - old wiki
 * [mail](https://mail.reisinge.net) ;-)
+
+Some of my public software projects
+
+* [checkip](https://github.com/jreisinger/checkip) - find out information about an IP address
+* [waf-runner](https://github.com/jreisinger/waf-runner) - run Web Application Firewalls (WAFs) in containers
+* [waf-tester](https://github.com/jreisinger/waf-tester) - test Web Application Firewalls (WAFs)
+* [runp](https://github.com/jreisinger/runp) - run shell commands in parrallel
