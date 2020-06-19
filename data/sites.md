@@ -1,4 +1,4 @@
-Other web sites hosted by me
+Other web sites built and/or hosted by me
 
 * [util](http://util.reisinge.net) - various web/HTTP utilities
 * [quotes](https://quotes.reisinge.net) - quotes I've collected
