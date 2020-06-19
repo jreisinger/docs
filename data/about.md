@@ -1,6 +1,6 @@
 Hello and welcome to my homepage :-).
 
-I am interested, among other things, in universal machines that manipulate information under the control of a changeable program. I usually work somewhere at the infrastructure level. These days my main focus is Kubernetes, Go and DevOps/SRE. Before I concentrated on Linux, Perl, networking and security.
+I am interested, among other things, in universal machines that manipulate information under the control of a changeable program. Yes, it's computers and how to make them useful. I usually work somewhere at the infrastructure level. These days my main focus is Kubernetes, Go and DevOps/SRE stuff. Before I concentrated on Linux, Perl, networking and security. See my [CV](notes/mngt/cv) for more.
 
 Other web stuff related to me
 
