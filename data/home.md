@@ -1,17 +1,6 @@
 Hello and welcome to my non-official homepage :-). The official one is [here](https://jreisinger.github.io/).
 
-I mostly keep (mostly technical) notes here. These are some of them:
-
-* [Go basics](https://reisinge.net/notes/go/basics)
-* [K8s tips and tricks](https://reisinge.net/notes/k8s/tips-and-tricks)
-* [DevOps](https://reisinge.net/notes/mngt/devops)
-* [CS basics](https://reisinge.net/notes/cs/basics)
-* [Big O notation](https://reisinge.net/notes/cs/big-o-notation)
-* [Linux the big picture](https://reisinge.net/notes/linux/big-picture)
-* [tcpdump](https://reisinge.net/notes/net/tcpdump)
-* [Shell temp files](https://reisinge.net/notes/shell/temp-files)
-* [Numbers to remember](https://reisinge.net/notes/varia/numbers-to-remember)
-* [Terms](https://reisinge.net/notes/varia/terms)
+I mostly keep (mostly technical) notes here. These days (the Fourth Age) my main focus is [Kubernetes](https://kubernetes.io/) and [Go](https://golang.org/). In the Third Age I concentrated on [Linux](https://en.wikipedia.org/wiki/Linux) and [Perl](https://www.perl.org/).
 
 Some of my public software projects:
 
