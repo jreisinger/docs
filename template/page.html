@@ -55,7 +55,7 @@ function htmlTableOfContents (documentRef) {
 
 <div class="content">
 
-{{if or (eq .Title "about") (eq .Title "sites") (eq .Title "cv") (eq .Title "blog") (eq .Title "notes")}}
+{{if (eq .Title "about")}}
 <img src="/static/gopher.png" style="max-width:100%;height:auto;float:right">
 {{end}}
 
