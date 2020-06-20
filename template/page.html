@@ -15,7 +15,7 @@ function htmlTableOfContents (documentRef) {
     var documentRef = documentRef || document;
     var toc = documentRef.querySelector("nav#toc details");
     var headings = [].slice.call(documentRef.body.querySelectorAll('h1, h2, h3, h4, h5, h6'));
-    if (headings.length < 2) { return };
+    //if (headings.length < 2) { return };
     headings.forEach(function (heading, index) {
         var anchor = documentRef.createElement('a');
         anchor.setAttribute('name', 'toc' + index);
@@ -73,7 +73,7 @@ function htmlTableOfContents (documentRef) {
 {{else}}
 
 {{if and (ne .Title "about") (ne .Title "sites") (ne .Title "blog") (ne .Title "notes")}}
-<p><nav id="toc"><details open><summary>Table of Contents</summary></details></nav></p>
+<p><nav id="toc"><details close><summary>Contents</summary></details></nav></p>
 {{end}}
 
 {{.Body}}
