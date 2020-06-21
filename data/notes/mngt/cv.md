@@ -21,7 +21,7 @@ Sr. Linux Systems Specialist
 at [Eset](https://www.eset.com/) [Bratislava, 2015 - 2016]
 
 * Administered Linux (Debian/Ubuntu) servers and services running on top of them (e.g.  MySQL, Postfix).
-* Implemented a configuration management tool (Ansible) and some other DevOps patterns like infrastructure as code, automated testing.
+* Introduced a configuration management tool (Ansible) and some other DevOps patterns like infrastructure as code, automated testing.
 
 System and Network Administrator
 at [Institute of Science and Technology](https://ist.ac.at/) [Vienna, 2013 - 2015]
@@ -50,33 +50,33 @@ at Slovak Telekom [Bratislava, 2004 - 2006, 2011 - 2013]
 
 Operating systems
 
-* Linux/UNIX: Debian, Ubuntu, RHEL, CentOS, Solaris, OpenBSD
-* virtualization/cointainers: KVM, Vagrant, VMware, VirtualBox, OpenStack, Docker, Kubernetes
+* Linux/UNIX: Ubuntu, Debian, RHEL, CentOS, Solaris, OpenBSD
+* virtualization/cointainers: Kubernetes, Docker, OpenStack, Vagrant, VirtualBox, VMware, KVM, Xen
 
 Languages
 
-* artificial: [Perl](https://www.perl.org/), Bash, Python, Go (Golang)
-* natural: English, Italian, Czech, Slovak
+* artificial: Go (Golang), Python, [Perl](https://www.perl.org/), Bash
+* natural: English, Slovak, Italian, Czech
 
 Networking
 
 * general: Linux networking, iptables, Cisco switches, GSM
-* daemons: Apache, Bind, vsftp, OpenLDAP, OpenVPN, sshd, nginx
+* daemons: NGINX, sshd, Apache, Bind, vsftp, OpenLDAP, OpenVPN
 
 Various
 
 * configuration, orchestration: Ansible, OpenStack Heat
-* monitoring: Nagios, Icinga, Zabbix, Prometheus
-* big data and logs: Splunk, syslog-ng, Graylog, Grafana
-* databases: MySQL, PostgreSQL, Oracle
-* HA: Pacemaker, DRBD, HAProxy, keepalived
-* hardware: Supermicro, HP, Ironport, Cisco, EMC, Netapp
-* backups: Bacula, ZFS, rsnapshot, rsync
-* editors: Vi(m), Visual Studio Code, Atom, Notepad++
-* documentation: MediaWiki, Confluence, MoinMoin, Hugo
-* tickets, bugs and projects: RT, Jira, Redmine, Remedy, GitLab
+* monitoring: Prometheus, Zabbix, Icinga, Nagios
+* big data and logs: Grafana, Graylog, Splunk, syslog-ng
+* databases: PostgreSQL, MySQL, Oracle
+* HA: HAProxy, keepalived, Pacemaker, DRBD
+* hardware: HP, Supermicro, Ironport, EMC, Netapp, Cisco
+* backups: rsync, ZFS, Bacula, rsnapshot
+* editors: Visual Studio Code, Atom, Vi(m), Notepad++
+* documentation: Hugo, Confluence, MediaWiki, MoinMoin
+* tickets, bugs and projects: GitLab, GitHub, Jira, RT, Redmine, Remedy
 * security: nmap, tcpdump, Wireshark, OSSEC, Metasploit
-* VCS, CI/CD: git, GitHub, GitLab, TravisCI
+* VCS, CI/CD: git, TravisCI
 * chatops: Slack
 
 # Certificates and Formal Education
