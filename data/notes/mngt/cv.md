@@ -50,12 +50,12 @@ at Slovak Telekom [Bratislava, 2004 - 2006, 2011 - 2013]
 
 Operating systems
 
-* Linux/UNIX: Ubuntu, Debian, RHEL, CentOS, Solaris, OpenBSD
-* virtualization/cointainers: Kubernetes, Docker, OpenStack, Vagrant, VirtualBox, VMware, KVM, Xen
+* Linux/UNIX: **Ubuntu**, Debian, RHEL, CentOS, Solaris, OpenBSD
+* virtualization/cointainers: **Kubernetes**, Docker, OpenStack, Vagrant, VirtualBox, VMware, KVM, Xen
 
 Languages
 
-* artificial: Go (Golang), Python, [Perl](https://www.perl.org/), Bash
+* artificial: **Go** (Golang), Python, [Perl](https://www.perl.org/), Bash
 * natural: English, Slovak, Italian, Czech
 
 Networking
