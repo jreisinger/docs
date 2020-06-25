@@ -38,7 +38,7 @@ spec:
           mountPath: /etc/config
 ```
 
-* all contents stored in `log_level` entry of the CM are mounted into `/etc/config/log_level`
+* all contents stored in `log_level` entry of the CM are mounted into `/etc/config/log_level` file
 
 ## emtpyDir
 
