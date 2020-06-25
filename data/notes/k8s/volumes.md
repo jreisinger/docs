@@ -13,7 +13,7 @@ There are many types of volumes.
 
 # Types of Volumes
 
-## configMap
+## [configMap](https://kubernetes.io/docs/concepts/storage/volumes/#configmap)
 
 * a way to inject configuration data into a Pod
 
@@ -38,7 +38,7 @@ spec:
           mountPath: /etc/config
 ```
 
-* all contents stored in `log_level` entry of the CM are mounted into `/etc/config/log_level` file
+* All contents stored in `log_level` entry of the CM are mounted into `/etc/config/log_level` file. This file path is derived from `mountPath` + `path`.
 
 ## emtpyDir
 
