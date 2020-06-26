@@ -45,9 +45,9 @@ function htmlTableOfContents (documentRef) {
 <!-- Top navigation bar: https://www.w3schools.com/howto/howto_js_topnav.asp -->
 <div class="topnav">
     <a href="/about">about</a>
-|   <a href="/sites">sites</a>
-|   <a href="/blog">blog</a>
-|   <a href="/notes">notes</a> [ <a href="{{ .RepoURL }}/find/master">find</a> ]
+    <a href="/sites">sites</a>
+    <a href="/blog">blog</a>
+    <a href="/notes">notes</a> | <a href="{{ .RepoURL }}/find/master">find</a>
 {{$UrlPath:=.UrlPath}}
 ▸ {{$UrlPath}}
 </div>
@@ -66,9 +66,7 @@ function htmlTableOfContents (documentRef) {
 {{end}}
 </ul>
 
-<div class="topnav">
-    ✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}">source</a>
-</div>
+✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}">source</a>
 
 {{else}}
 
@@ -78,9 +76,7 @@ function htmlTableOfContents (documentRef) {
 
 {{.Body}}
 
-<div class="topnav">
-    ✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}.md">source</a>
-</div>
+✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}.md">source</a>
 
 {{end}}
 
