@@ -1,3 +1,5 @@
+*NOTE*: See [How to Write Go Code](https://golang.org/doc/code.html) for official tutorial.
+
 # The new way (Go modules)
 
 ```
@@ -14,8 +16,6 @@ vim main.go
 * https://blog.golang.org/using-go-modules
 
 # The old way (`GOPATH`, `src`, ...)
-
-*NOTE*: See [How to Write Go Code](https://golang.org/doc/code.html) for official tutorial.
 
 Go has a strong opinion about directory structure.
 
