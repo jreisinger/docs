@@ -10,9 +10,8 @@ go mod init github.com/jreisinger/my-project
 vim main.go
 ```
 
+* https://golang.org/doc/code.html
 * https://blog.golang.org/using-go-modules
-* https://vsupalov.com/go-folder-structure/
-* https://github.com/golang-standards/project-layout
 
 # The old way (`GOPATH`, `src`, ...)
 
