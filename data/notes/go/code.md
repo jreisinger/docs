@@ -12,7 +12,8 @@ go mod init github.com/jreisinger/my-project
 vim main.go
 ```
 
-* https://golang.org/doc/code.html
+## See also
+
 * https://blog.golang.org/using-go-modules
 
 # The old way (`GOPATH`, `src`, ...)
