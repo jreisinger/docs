@@ -141,7 +141,7 @@ func main() {
 * Caleb Doxsey: Introducing Go (2016)
 * John Graham-Cumming: Go Programming Basics (2017)
 
-More:
+# See also
 
 * [fetchall.go](https://github.com/jreisinger/go/blob/master/http/fetchall.go)
 * [fetchall2.go](https://github.com/jreisinger/go/blob/master/http/fetchall2.go)
