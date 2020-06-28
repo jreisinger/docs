@@ -63,5 +63,5 @@ A man who perseveres in doing just actions gets in the end a certain quality of 
 Sources:
 
 * [The book in PDF](https://www.dacc.edu/assets/pdfs/PCM/merechristianitylewis.pdf)
-* [YouTube doodles](https://youtu.be/QmHXYhpEDfM)
-* [CS Lewis Institute book study](https://youtu.be/KeBU5yck2ss)
+* [CS Lewis doodle videos](https://youtu.be/QmHXYhpEDfM)
+* [CS Lewis Institute book study videos](https://youtu.be/KeBU5yck2ss)
