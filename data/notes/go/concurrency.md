@@ -6,6 +6,13 @@ Concurrent programming structures the program as a composition of several indepe
 
 The number of processors in a computer grows every year. The speed of processors not so much.
 
+Go enables two styles of concurrent programming:
+
+1. CSP (communicating sequential processes) - values are passed between autonomous activities (goroutines) but variables are for the most part confined to a single activity.
+2. Shared memory multithreading - more traditional model.
+
+Reasoning about concurrent programs is inherently more difficult than about sequential ones.
+
 # Goroutines
 
 A *goroutine* is a function capable of running concurrently with other functions. Create a gouroutine with the `go` keyword. 
