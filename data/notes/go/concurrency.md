@@ -15,7 +15,12 @@ Reasoning about concurrent programs is inherently more difficult than about sequ
 
 # Goroutines
 
-A *goroutine* is a function capable of running concurrently with other functions. Create a gouroutine with the `go` keyword. 
+A *goroutine* is a concurrently executing activity. When a program starts, its only goroutine is the one that calls the `main` function - the *main goroutine*. You can create new goroutines with the `go` keyword.
+
+```
+f()     // call f(); wait for it to return
+go f()  // create a new goroutine that calls f(); don't wait
+```
 
 # Goroutines and channels
 
