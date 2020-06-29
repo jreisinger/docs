@@ -55,6 +55,8 @@ func fib(n int) int {
 }
 ```
 
+The goroutine is stopped by returning from `main` or by exiting the program.
+
 # Goroutines and channels
 
 A *channel* is a way for gouroutines to communicate with each other and *synchronize* their execution.
