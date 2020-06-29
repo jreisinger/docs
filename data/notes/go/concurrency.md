@@ -22,6 +22,39 @@ f()     // call f(); wait for it to return
 go f()  // create a new goroutine that calls f(); don't wait
 ```
 
+```
+// fib-spinner.go
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+	go spinner(100 * time.Millisecond)
+	n := 40
+	fibN := fib(n)
+	fmt.Printf("\rfib(%d) = %d\n", n, fibN)
+}
+
+func spinner(delay time.Duration) {
+	for {
+		for _, r := range `-\|/` {
+			fmt.Printf("\r%c", r)
+			time.Sleep(delay)
+		}
+	}
+}
+
+func fib(n int) int {
+	if n < 2 {
+		return n
+	}
+	return fib(n-1) + fib(n-2)
+}
+```
+
 # Goroutines and channels
 
 A *channel* is a way for gouroutines to communicate with each other and *synchronize* their execution.
@@ -160,6 +193,7 @@ func main() {
 
 # Sources
 
+* Donovan, Kernighan: The Go Programming Language (2015), ch.8
 * Caleb Doxsey: Introducing Go (2016)
 * John Graham-Cumming: Go Programming Basics (2017)
 
