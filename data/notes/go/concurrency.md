@@ -1,8 +1,18 @@
+Concurrent programming structures the program as a composition of several independent activities. It's important because:
+
+* web servers handle thousands of clients at once
+* GUIs render animations while simultaneously performing computations and network requests
+* even traditional batch programs (read input data, compute, write output) hide I/O latency and exploit multiple processors
+
+The number of processors in a computer grows every year. The speed of processors not so much.
+
+# Goroutines
+
 A *goroutine* is a function capable of running concurrently with other functions. Create a gouroutine with the `go` keyword. 
 
-A *channel* is a way for gouroutines to communicate with each other and *synchronize* their execution.
-
 # Goroutines and channels
+
+A *channel* is a way for gouroutines to communicate with each other and *synchronize* their execution.
 
 When `pinger` or `ponger` attempts to send a message on the channel, it will
 wait until `printer` is ready to receive the message (blocking):
