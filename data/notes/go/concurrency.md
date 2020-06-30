@@ -33,8 +33,8 @@ import (
 
 func main() {
 	go spinner(100 * time.Millisecond)
-	n := 40
-	fibN := fib(n)
+	n := 45
+	fibN := fib(n) // slow algorithm
 	fmt.Printf("\rfib(%d) = %d\n", n, fibN)
 }
 
