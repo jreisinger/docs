@@ -1,5 +1,7 @@
 [hydra](https://github.com/vanhauser-thc/thc-hydra) is a CLI (and GUI) tool for cracking the authentication of a service.
 
+You can get the username and password lists from [SecLists](https://github.com/danielmiessler/SecLists).
+
 HTTP basic authentication:
 
 ```
