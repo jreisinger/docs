@@ -10,3 +10,8 @@ hydra -t 16 -s 443 -S \
 -L github/SecLists/Usernames/top-usernames-shortlist.txt \
 -P github/SecLists/Passwords/Common-Credentials/500-worst-passwords.txt
 ```
+
+To supply a single username or password: 
+
+* `-l <someusername>`
+* `-p <somepassword>`
