@@ -5,7 +5,7 @@ You can get the username and password lists from [SecLists](https://github.com/d
 HTTP basic authentication:
 
 ```
-hydra -t 16 -s 443 -S \
+hydra -t 16 -s 443 -S -V \
 -m https://{$FQDN}/ ${FQDN} https-get \
 -L github/SecLists/Usernames/top-usernames-shortlist.txt \
 -P github/SecLists/Passwords/Common-Credentials/500-worst-passwords.txt
