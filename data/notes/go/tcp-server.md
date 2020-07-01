@@ -1,5 +1,5 @@
 ```
-// TCP clock server that sends time each second.
+// TCP clock server that sends current time each second.
 package main
 
 import (
@@ -28,7 +28,7 @@ func main() {
 
 func handleConn(c net.Conn) {
 	for {
-		_, err := io.WriteString(c, time.Now().Format("Mon Jan 2 15:04:05\n"))
+		_, err := io.WriteString(c, time.Now().Format("15:04:05\n"))
 		if err != nil {
 			log.Println(err) // e.g., client disconnect
 			return
