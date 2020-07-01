@@ -1,5 +1,5 @@
 ```
-// TCP clock server that sends current time each second.
+// tcp-clock.go -- TCP clock server that sends current time each second
 package main
 
 import (
