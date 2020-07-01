@@ -1,4 +1,4 @@
-[hydra](https://github.com/vanhauser-thc/thc-hydra) is a CLI and GUI tool for cracking the authentication of a service.
+[hydra](https://github.com/vanhauser-thc/thc-hydra) is a CLI (and GUI) tool for cracking the authentication of a service.
 
 HTTP basic authentication:
 
