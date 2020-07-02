@@ -14,6 +14,14 @@ Some more proves that something called the law of human nature exists:
 
 > These, then, are the two points I wanted to make. First, that human beings, all over the earth, have this curious idea that they ought to behave in a certain way, and cannot really get rid of it. Secondly, that they do not in fact behave in that way. They know the Law of Nature; they break it. These two facts are the foundation of all clear thinking about ourselves and the universe we live in.
 
+## Some objections
+
+## The reality of the law
+
+## What lies behing the law
+
+## We have cause to be uneasy
+
 # Book II. What Christians Believe
 
 # Book III. Christian Behaviour
