@@ -3,6 +3,8 @@ You can do k8s access control via:
 * RBAC (Role Based Access Control)
 * managing access by cluster (w/o RBAC anyone with access to cluster can do anything)
 
+# RBAC
+
 Find out whether RBAC is enabled on a cluster (one line for each control node):
 
 ```
@@ -12,9 +14,9 @@ Find out whether RBAC is enabled on a cluster (one line for each control node):
       --authorization-mode=Node,RBAC
 ```
 
-In Kubernetes, permissions are additive; users start with no permissions, and you can add them using Roles and RoleBindings. You can’t subtract permissions from someone who already has them.
+In Kubernetes, permissions are additive; users start with no permissions, and you can add permissions using Roles and RoleBindings. You can’t subtract permissions from someone who already has them.
 
-User
+## User
 
 * every time you connect to a cluster you do so as a specific user
 * there is `default` service account for each namespace
@@ -22,7 +24,7 @@ User
 * authentication depends on the cluster provider (e.g. `gcloud` uses a token per cluster)
 * users can have different sets of permissions - governed by `roles`
 
-Role
+## Role
 
 * a specific set of permissions
 * `Role` - defines roles on a namespace level
@@ -40,7 +42,7 @@ rules:
   verbs: ["get", "watch", "list"]
 ```
 
-RoleBinding
+## RoleBinding
 
 * associate a user with a role
 * also here you can have RoleBinding or ClusterRoleBinding
@@ -68,6 +70,6 @@ roleRef:
 > kubectl get rolebindings.rbac.authorization.k8s.io --all-namespaces
 ```
 
-Source:
+# Sources
 
 * https://learning.oreilly.com/library/view/cloud-native-devops/9781492040750/ch11.html
