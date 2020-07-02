@@ -2,15 +2,19 @@
 
 ## The law of human nature
 
-All pople (educated as well as uneducated, children as well as grown-ups) quarrell. When they do so they simply don't state that the other man's behaviour does not happen to please them. They appeal to some kind of standard of behaviour which all people are expected to know.
+All pople (educated as well as uneducated, children as well as grown-ups) quarrell [hadat sa, priet sa]. When they do so they simply don't state that the other man's behaviour does not happen to please them. They appeal to some kind of standard of behaviour which all people are expected to know. And the other man very very seldom denies that there is some standard. Rather he tries to explain that he is not really breaking the standard or that he is doing so for a very special reason.
+
+Quarrelling thus means trying to show that the other man is wrong. And there would be no sense in trying to do so if you and they didn't have som common notion of what is Right and what is Wrong.
 
 This law or rule about Right and Wrong used to be called the Law of Nature. Nowadays by that we mean things like law of gravity. But the older thinkers by that meant the Law of Human Nature. The idea was that everything has to obey laws like gravity but man alone has an additional law to follow. The difference is that man *can choose* to obey the law of human nature or to disobey it.
 
-Some more proves that something called the law of human nature exists:
+Some more arguments supporting that something called the law of human nature exists:
 
-1. Just wars. How come we can say that the Nazis were wrong and the Allies were right?
-2. All civilizations of all ages had very similar rules of fair play (another name for the law of human nature). E.g. selfishness was never admired.
-3. (Almost) every person feels that he should bahave in the Right way. If he does't, which happens all the time, he tries to find an excuse.
+1. How come we can say that the Nazis were wrong and the Allies were right?
+2. All civilizations of all ages had similar rules of fair play (another name for the law of human nature). E.g. running away in battle or having as many woman as you want was never considered right.
+3. Whenever a person (or a nation) states that they don't believe in Right and  Wrong they still complain about something not being fair. But if there is not Right and Wrong what's the difference between fair and unfair?
+
+People are sometimes mistaken about interpreting real Right and Wrong, just as people sometimes get their sums wrong; but they are not merely a matter of personal taste or opinion any more than the multiplication table.
 
 > These, then, are the two points I wanted to make. First, that human beings, all over the earth, have this curious idea that they ought to behave in a certain way, and cannot really get rid of it. Secondly, that they do not in fact behave in that way. They know the Law of Nature; they break it. These two facts are the foundation of all clear thinking about ourselves and the universe we live in.
 
