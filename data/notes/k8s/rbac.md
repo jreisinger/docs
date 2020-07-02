@@ -31,7 +31,7 @@ In Kubernetes, permissions are additive; users start with no permissions, and yo
 * `ClusterRole` - defines roles accross the whole cluster
 
 ```
-# role that grants read access to secreats in any namespace
+# role that grants read access to secrets in any namespace
 kind: ClusterRole
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
