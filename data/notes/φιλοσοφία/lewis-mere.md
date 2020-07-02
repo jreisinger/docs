@@ -1,4 +1,4 @@
-# I. Right and wrong as a clue to the meaning of the Universe
+# Book I. Right and wrong as a clue to the meaning of the Universe
 
 ## The law of human nature
 
@@ -14,7 +14,9 @@ Some more proves that something called the law of human nature exists:
 
 > These, then, are the two points I wanted to make. First, that human beings, all over the earth, have this curious idea that they ought to behave in a certain way, and cannot really get rid of it. Secondly, that they do not in fact behave in that way. They know the Law of Nature; they break it. These two facts are the foundation of all clear thinking about ourselves and the universe we live in.
 
-# III. Christian Behaviour
+# Book II. What Christians Believe
+
+# Book III. Christian Behaviour
 
 ## The three parts of morality
 
@@ -60,7 +62,9 @@ FORTITUDE (statocnost)
 
 A man who perseveres in doing just actions gets in the end a certain quality of character (like a good tennis player). Now it is that quality rather than the particular actions which we mean when we talk of "virtue."
 
-Sources:
+# Book IV. Beyond Personality
+
+# Sources
 
 * [The book in PDF](https://www.dacc.edu/assets/pdfs/PCM/merechristianitylewis.pdf)
 * [CS Lewis doodle videos](https://youtu.be/QmHXYhpEDfM)
