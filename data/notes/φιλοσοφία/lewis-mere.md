@@ -11,7 +11,7 @@ This law or rule about Right and Wrong used to be called the Law of Nature. Nowa
 Some more arguments supporting that something called the law of human nature exists:
 
 1. How come we can say that the Nazis were wrong and the Allies were right?
-2. All civilizations of all ages had similar rules of fair play (another name for the law of human nature). E.g. running away in battle or having as many woman as you want was never considered right.
+2. All civilizations of all ages had similar rules of fair play (another name for the law of human nature). E.g. running away in battle or having as many women as you want was never considered right.
 3. Whenever a person (or a nation) states that they don't believe in Right and  Wrong they still complain about something not being fair. But if there is not Right and Wrong what's the difference between fair and unfair?
 
 People are sometimes mistaken about interpreting real Right and Wrong, just as people sometimes get their sums wrong; but they are not merely a matter of personal taste or opinion any more than the multiplication table.
