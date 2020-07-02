@@ -22,9 +22,9 @@ Some more proves that something called the law of human nature exists:
 
 ## We have cause to be uneasy
 
-# Book II. What Christians Believe
+# Book II. What Christians believe
 
-# Book III. Christian Behaviour
+# Book III. Christian behaviour
 
 ## The three parts of morality
 
@@ -70,7 +70,7 @@ FORTITUDE (statocnost)
 
 A man who perseveres in doing just actions gets in the end a certain quality of character (like a good tennis player). Now it is that quality rather than the particular actions which we mean when we talk of "virtue."
 
-# Book IV. Beyond Personality
+# Book IV. Beyond personality
 
 # Sources
 
