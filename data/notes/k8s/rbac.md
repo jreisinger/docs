@@ -16,7 +16,7 @@ Find out whether RBAC is enabled on a cluster (one line for each control node):
 
 In Kubernetes, permissions are additive; users start with no permissions, and you can add permissions using Roles and RoleBindings. You can’t subtract permissions from someone who already has them.
 
-## User
+## User (`serviceaccounts`)
 
 * every time you connect to a cluster you do so as a specific user
 * there is `default` service account for each namespace
@@ -24,7 +24,7 @@ In Kubernetes, permissions are additive; users start with no permissions, and yo
 * authentication depends on the cluster provider (e.g. `gcloud` uses a token per cluster)
 * users can have different sets of permissions - governed by `roles`
 
-## Role
+## Role (`roles`)
 
 * a specific set of permissions
 * `Role` - defines roles on a namespace level
@@ -42,7 +42,7 @@ rules:
   verbs: ["get", "watch", "list"]
 ```
 
-## RoleBinding
+## RoleBinding (`rolebindings`)
 
 * associate a user with a role
 * also here you can have RoleBinding or ClusterRoleBinding
@@ -67,7 +67,7 @@ roleRef:
 * see existing RoleBindings:
 
 ```
-> kubectl get rolebindings.rbac.authorization.k8s.io --all-namespaces
+kubectl get rolebindings.rbac.authorization.k8s.io --all-namespaces
 ```
 
 # Sources
