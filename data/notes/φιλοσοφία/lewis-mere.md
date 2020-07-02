@@ -4,7 +4,7 @@
 
 All pople (educated as well as uneducated, children as well as grown-ups) quarrell [hadat sa, priet sa]. When they do so they simply don't state that the other man's behaviour does not happen to please them. They appeal to some kind of standard of behaviour which all people are expected to know. And the other man very very seldom denies that there is some standard. Rather he tries to explain that he is not really breaking the standard or that he is doing so for a very special reason.
 
-Quarrelling thus means trying to show that the other man is wrong. And there would be no sense in trying to do so if you and they didn't have som common notion of what is Right and what is Wrong.
+Quarrelling thus means trying to show that the other man is wrong. And there would be no sense in trying to do so if you and they didn't have some common notion of what is Right and what is Wrong.
 
 This law or rule about Right and Wrong used to be called the Law of Nature. Nowadays by that we mean things like law of gravity. But the older thinkers by that meant the Law of Human Nature. The idea was that everything has to obey laws like gravity but man alone has an additional law to follow. The difference is that man *can choose* to obey the law of human nature or to disobey it.
 
