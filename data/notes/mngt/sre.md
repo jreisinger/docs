@@ -22,7 +22,7 @@ Disadvantages
 ## SRE approach
 
 * invented by Google (planet-scale products)
-* hire software engineers to run products
+* hire software engineers to run products i.e. to do operations
 * they create systems that do the work otherwise done by sysadmins
 
 Advantages
