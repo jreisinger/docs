@@ -30,6 +30,8 @@ Now this is so peculiar [zvlastny] that one might try to explain it away:
 
 1. We might try to make out that when you say a man outght not to do something we say that because what he's doing doesn't happen to please us. But that is simply untrue. I am not angry with a man who trips me by accident but I'm angry with one who tries to trip me even if he does not succeed. In war, each side might find a traitor on the other side very useful. But though the use him and they pay hime they consider him a h It meanuman vermin [haved] not a decent man. And as for decent behaviour in ourselves it's pretty obvious that it's often not the behaviour that is convenient to us. It means doing a homework when it would be easier to cheat, it' leaving a girl alone when you would like to make love to her.
 
+2. Though decent behaviour doesn't pay each particular person at each moment it sill pays the human race as a whole. Now, of course, it's perfectly true that safety and hapiness come from individuals and nations being honest and fair and kind to each other. But it's [circular reasoning](https://en.wikipedia.org/wiki/Circular_reasoning) - Q: Why ought I to be unselfish? A: Because it's good for society. Q: Why should I care what's good for society except when it happens to pay me personnaly? A: Because you ought to be unselfish. What you are saying is true but you you are not getting any further.
+
 ## What lies behing the law
 
 ## We have cause to be uneasy
