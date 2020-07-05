@@ -22,6 +22,10 @@ People are sometimes mistaken about interpreting real Right and Wrong, just as p
 
 ## The reality of the law
 
+The laws of nature that apply to e.g. stones or trees might really just be descriptions of observed behaviours. On the other hand the law of human nature is not a description of human behaviour because many people don't obey the Law of humnan nature (or the Law of decent behaviour) at all and none of them obey it completely.
+
+In other words when you have humans there is something more than the facts. You have the facts (how men do behave) and you have something else (how men ought to behave).
+
 ## What lies behing the law
 
 ## We have cause to be uneasy
