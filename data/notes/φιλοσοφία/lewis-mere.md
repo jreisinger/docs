@@ -26,6 +26,10 @@ The laws of nature that apply to e.g. stones or trees might really just be descr
 
 In other words when you have humans there is something more than the facts. You have the facts (how men do behave) and you have something else (how men ought to behave).
 
+Now this is so peculiar [zvlastny] that one might try to explain it away:
+
+1. We might try to make out that when you say a man outght not to do something we say that because what he's doing doesn't happen to please us. But that is simply untrue. I am not angry with a man who trips me by accident but I'm angry with one who tries to trip me even if he does not succeed. In war, each side might find a traitor on the other side very useful. But though the use him and they pay hime they consider him a h It meanuman vermin [haved] not a decent man. And as for decent behaviour in ourselves it's pretty obvious that it's often not the behaviour that is convenient to us. It means doing a homework when it would be easier to cheat, it' leaving a girl alone when you would like to make love to her.
+
 ## What lies behing the law
 
 ## We have cause to be uneasy
