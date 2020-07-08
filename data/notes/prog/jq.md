@@ -9,7 +9,7 @@ JavaScript Object Notation is a popular text based format for exchanging data th
 * booleans
 * "null"
 
-# `jq`
+# jq
 
 Command line options:
 
