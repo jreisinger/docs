@@ -36,10 +36,20 @@ Get values of [multiple keys](https://stackoverflow.com/questions/28164849/using
 jq '.rrsets[] | "\(.name) \(.type)"'
 ```
 
+## Examples
+
+Get ModSecurity rule [IDs](https://www.netnea.com/cms/core-rule-set-inventory/) and description:
+
+```
+cat /var/log/modsec_audit.log | jq '.transaction.messages[].details | "\(.ruleId) \(.match)"'
+```
+
 Get number of pods per node:
 
 ```
 kubectl get pods -o json --all-namespaces | jq '.items | group_by(.spec.nodeName) | map({"nodeName": .[0].spec.nodeName, "count": length}) | sort_by(.count) | reverse'
 ```
 
-[jq playground](https://jqplay.org/)
+# More
+
+* [jq playground](https://jqplay.org/)
