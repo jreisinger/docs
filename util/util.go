@@ -98,3 +98,9 @@ func GrepFile(filePath string, pattern *regexp.Regexp) (string, error) {
 	}
 	return "", nil
 }
+
+// GrepFilePath searches for pattern in filePath. If match is found it returns
+// the matched string. Otherwise empty string is returned.
+func GrepFilePath(filePath string, pattern *regexp.Regexp) string {
+	return pattern.FindString(filePath)
+}

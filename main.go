@@ -31,6 +31,9 @@ func main() {
 	// grep i.e. search inside MD files in data/
 	http.HandleFunc("/grep", handleGrep)
 
+	// find i.e. search MD file names in data/
+	http.HandleFunc("/find", handleFind)
+
 	// serve the rest
 	http.HandleFunc("/", handleRest)
 
@@ -39,6 +42,52 @@ func main() {
 
 	// start a webserver
 	log.Fatal(http.ListenAndServe(":5001", nil))
+}
+
+func handleFind(w http.ResponseWriter, r *http.Request) {
+	pattern := r.URL.Query().Get("regexp")
+	rx, err := regexp.Compile(pattern)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+	var foundFiles []string
+	err = filepath.Walk(repoPath+"/data", func(path string, info os.FileInfo, err error) error {
+		match := util.GrepFilePath(path, rx)
+		if match != "" {
+			// Trim .md suffix and .*data/ prefix from file path.
+			path := strings.TrimSuffix(path, ".md")
+			rx, err := regexp.Compile(`.*data/`)
+			if err != nil {
+				return err
+			}
+			path = rx.ReplaceAllString(path, "")
+
+			foundFiles = append(foundFiles, path)
+		}
+		return nil
+	})
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	p := &util.Page{
+		Title: "grep",
+		IsDir: true,
+		Files: foundFiles,
+	}
+
+	t, err := template.New("page.html").
+		Funcs(template.FuncMap{"removeTrailingSlash": util.RemoveTralingSlash}).
+		ParseFiles("template/page.html")
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+
+	if err := t.Execute(w, p); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
 }
 
 func handleGrep(w http.ResponseWriter, r *http.Request) {
