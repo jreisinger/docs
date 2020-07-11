@@ -53,7 +53,10 @@ func handleGrep(w http.ResponseWriter, r *http.Request) {
 			if content != "" {
 				// Trim .md suffix and .*data/ prefix from file path.
 				path := strings.TrimSuffix(path, ".md")
-				rx := regexp.MustCompile(`.*data/`)
+				rx, err := regexp.Compile(`.*data/`)
+				if err != nil {
+					return err
+				}
 				path = rx.ReplaceAllString(path, "")
 
 				foundFiles = append(foundFiles, path)
@@ -63,6 +66,7 @@ func handleGrep(w http.ResponseWriter, r *http.Request) {
 	})
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
 	}
 
 	p := &util.Page{
