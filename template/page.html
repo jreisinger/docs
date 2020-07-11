@@ -41,14 +41,27 @@ function htmlTableOfContents (documentRef) {
 </head>
 
 <body>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav" || x.className == "grep") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} 
+</script>
 
 <!-- Top navigation bar: https://www.w3schools.com/howto/howto_js_topnav.asp -->
-<div class="topnav">
+<div class="topnav" id="myTopnav">
     <a href="/about">about</a>
     <a href="/sites">sites</a>
     <a href="/blog">blog</a>
     <a href="/notes">notes</a>
-    <div class="current_item"> {{$UrlPath:=.UrlPath}} ▸ {{$UrlPath}}</div>
     <div class="grep">
         <form action="/grep">
         <input type="search" placeholder="regexp" id="pattern" name="regexp">
@@ -57,7 +70,12 @@ function htmlTableOfContents (documentRef) {
         <input type="submit" value="find" formaction="/find">
         </form>
     </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
 </div>
+
+{{$UrlPath:=.UrlPath}}
 
 <div class="content">
 
