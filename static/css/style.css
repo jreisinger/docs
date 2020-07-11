@@ -19,10 +19,32 @@
     font-size: 17px;
 }
 
+/* Style inputs, select elements and textareas */
+input[type=search] {
+    width: 50%;
+    /* padding: 12px; */
+    padding: inherit;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Style the submit button */
+input[type=submit] {
+    padding: inherit;
+    border-radius: 4px;
+    border: none;
+    color: green;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
 /* grep/find field */
 .grep 
 {
     float: right;
+    color: #f2f2f2;
     text-align: center;
     padding: inherit; 
     text-decoration: none;
@@ -36,7 +58,7 @@
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .topnav a:not(:nth-child(4)) {display: none;}
+  .topnav a:not(:nth-child(1)) {display: none;}
   .topnav form {display: none;}
   .topnav a.icon {
     float: right;
