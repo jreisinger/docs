@@ -50,6 +50,11 @@ function htmlTableOfContents (documentRef) {
     <a href="/notes">notes</a> | <a href="{{ .RepoURL }}/find/master">find</a>
 {{$UrlPath:=.UrlPath}}
 ▸ {{$UrlPath}}
+<form action="/grep">
+  <label for="pattern">grep:</label>
+  <input type="search" id="pattern" name="pattern">
+  <input type="submit" value="Submit">
+</form>
 </div>
 
 <div class="content">
@@ -62,7 +67,11 @@ function htmlTableOfContents (documentRef) {
 
 <ul style="list-style-type:disclosure-closed">
 {{range .Files}}
-<li><a href="/{{ $UrlPath | removeTrailingSlash }}/{{ . }}">{{ . }}</a></li>
+    {{ if $UrlPath }}
+        <li><a href="/{{ $UrlPath | removeTrailingSlash }}/{{ . }}">{{ . }}</a></li>
+    {{ else }}
+        <li><a href="{{ $UrlPath | removeTrailingSlash }}/{{ . }}">{{ . }}</a></li>
+    {{ end }}
 {{end}}
 </ul>
 

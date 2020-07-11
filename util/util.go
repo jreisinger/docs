@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"regexp"
 	"sort"
 	"strings"
 
@@ -82,4 +83,22 @@ func RemoveTralingSlash(s string) string {
 		s = s[:len(s)-len(suffix)]
 	}
 	return s
+}
+
+// GrepFile searche for pattern inside inside a file identified by filePath. If
+// match is found it returns the file's content.
+func GrepFile(filePath string, pattern string) (string, error) {
+	rx, err := regexp.Compile(pattern)
+	if err != nil {
+		return "", err
+	}
+	bs, err := ioutil.ReadFile(filePath)
+	if err != nil {
+		return "", err
+	}
+	if rx.Match(bs) {
+		str := string(bs)
+		return str, nil
+	}
+	return "", nil
 }
