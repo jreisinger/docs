@@ -50,11 +50,12 @@ function htmlTableOfContents (documentRef) {
     <a href="/notes">notes</a> | <a href="{{ .RepoURL }}/find/master">find</a>
 {{$UrlPath:=.UrlPath}}
 ▸ {{$UrlPath}}
-<form action="/grep">
-  <label for="pattern">grep:</label>
-  <input type="search" id="pattern" name="pattern">
-  <input type="submit" value="Submit">
-</form>
+    <div class="grep">
+        <form action="/grep">
+        <input type="search" id="pattern" name="pattern">
+        <input type="submit" value="grep">
+        </form>
+    </div>
 </div>
 
 <div class="content">

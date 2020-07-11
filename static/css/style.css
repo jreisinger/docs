@@ -3,9 +3,14 @@
     max-width: 960px;
     margin: auto;
     /* background-color: rgb(243, 243, 243); */
-    border-bottom: 1px solid;
+    /* border-bottom: 1px solid; */
     padding: 0.5rem;
     overflow: hidden;
+}
+
+.grep 
+{
+    float: right;
 }
 
 /* Page content */
