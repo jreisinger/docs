@@ -43,10 +43,15 @@ func main() {
 
 func handleGrep(w http.ResponseWriter, r *http.Request) {
 	pattern := r.URL.Query().Get("pattern")
+	rx, err := regexp.Compile(pattern)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
 	var foundFiles []string
-	err := filepath.Walk(repoPath+"/data", func(path string, info os.FileInfo, err error) error {
+	err = filepath.Walk(repoPath+"/data", func(path string, info os.FileInfo, err error) error {
 		if !info.IsDir() {
-			content, err := util.GrepFile(path, pattern)
+			content, err := util.GrepFile(path, rx)
 			if err != nil {
 				return err
 			}
