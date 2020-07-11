@@ -42,7 +42,7 @@ func main() {
 }
 
 func handleGrep(w http.ResponseWriter, r *http.Request) {
-	pattern := r.URL.Query().Get("pattern")
+	pattern := r.URL.Query().Get("regexp")
 	rx, err := regexp.Compile(pattern)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
