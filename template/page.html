@@ -48,8 +48,7 @@ function htmlTableOfContents (documentRef) {
     <a href="/sites">sites</a>
     <a href="/blog">blog</a>
     <a href="/notes">notes</a>
-{{$UrlPath:=.UrlPath}}
-▸ {{$UrlPath}}
+    <div class="current_item"> {{$UrlPath:=.UrlPath}} ▸ {{$UrlPath}}</div>
     <div class="grep">
         <form action="/grep">
         <input type="search" placeholder="regexp" id="pattern" name="regexp">

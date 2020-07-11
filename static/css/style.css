@@ -4,14 +4,38 @@
     margin: auto;
     /* background-color: rgb(243, 243, 243); */
     /* border-bottom: 1px solid; */
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
+    padding: 5px;
     overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: inherit; 
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Showing currently selected page */
+.current_item {
+    float: left;
+    text-align: center;
+    padding: inherit; 
+    text-decoration: none;
+    font-size: 17px;
 }
 
 /* grep field */
 .grep 
 {
     float: right;
+    text-align: center;
+    padding: inherit; 
+    text-decoration: none;
+    font-size: 17px;
 }
 
 /* Page content */
