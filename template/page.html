@@ -60,7 +60,6 @@ function myFunction() {
 <div class="topnav" id="myTopnav">
     <a href="/notes">notes</a>
     <a href="/blog">blog</a>
-    <a href="/sites">sites</a>
     <a href="/about">about</a>
     <form action="/search">
     <input type="search" placeholder="[path:]regexp" id="pattern" name="regexp">
@@ -94,7 +93,7 @@ function myFunction() {
 
 {{else}}
 
-{{if and (ne .Title "about") (ne .Title "sites") (ne .Title "blog") (ne .Title "notes")}}
+{{if and (ne .Title "about") (ne .Title "blog") (ne .Title "notes")}}
 <p><nav id="toc"><details close><summary>{{$UrlPath}}</summary></details></nav></p>
 {{end}}
 
