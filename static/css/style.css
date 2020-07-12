@@ -21,32 +21,14 @@
 
 /* Style inputs, select elements and textareas */
 input[type=search] {
-    width: 50%;
+    /* width: 50%; */
     /* padding: 12px; */
     padding: inherit;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-}
-
-/* Style the submit button */
-input[type=submit] {
-    padding: inherit;
-    border-radius: 4px;
-    border: none;
-    color: green;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-/* grep/find field */
-.grep 
-{
+    /* box-sizing: border-box; */
+    /* resize: vertical; */
     float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: inherit; 
     text-decoration: none;
     font-size: 17px;
 }
