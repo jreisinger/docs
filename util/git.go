@@ -31,14 +31,19 @@ func gitClone(repoURL string, repoPath string) {
 func gitPull(repoURL string, repoPath string) {
 	// We instantiate a new repository targeting the given path (the .git folder)
 	r, err := git.PlainOpen(repoPath)
-	Check(err)
+	if err != nil {
+		log.Fatalf("gitPull: %v\n", err)
+	}
 
 	// Get the working directory for the repository
 	w, err := r.Worktree()
-	Check(err)
+	if err != nil {
+		log.Fatalf("gitPull: %v\n", err)
+	}
 
 	// Pull the latest changes from the origin remote and merge into the current branch
 	err = w.Pull(&git.PullOptions{RemoteName: "origin"})
-	//check(err)
-	log.Print(err)
+	if err != nil {
+		log.Printf("gitPull: %v\n", err)
+	}
 }
