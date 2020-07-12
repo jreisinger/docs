@@ -2,45 +2,39 @@ I have been doing IT stuff for companies of varied sizes and types for **10+ yea
 
 # Selected employment history
 
-Sr. Security Engineer
-at Deutsche Telekom [Pan-Net](https://pan-net.cloud/) [Bratislava, 2017 - present]
+## Sr. Security Engineer at [Pan-Net](https://pan-net.cloud/) (Bratislava 2017 - present)
 
 * Building and operating security products (WAF, SIEM, log mngt.) for both internal and external use.
 * Developing scripts, tools and playbooks using Bash, Python, Go and Ansible.
 * Maintaining Dockerfiles, Kubernetes manifests and CI/CD pipelines.
 * Managing projects/products.
 
-Security Engineer
-at First Data [Bratislava, 2016 - 2017]
+## Security Engineer at First Data (Bratislava, 2016 - 2017)
 
 * Did full-stack administration of a large log management solution based on Splunk, syslog-ng, Linux.
 * Implemented a monitoring system using Python, Perl and Bash.
 * Implemented a testing environment using VirtualBox, Vagrant, Ansible.
 
-Sr. Linux Systems Specialist
-at [Eset](https://www.eset.com/) [Bratislava, 2015 - 2016]
+## Sr. Linux Systems Specialist at [Eset](https://www.eset.com/) (Bratislava, 2015 - 2016)
 
 * Administered Linux (Debian/Ubuntu) servers and services running on top of them (e.g.  MySQL, Postfix).
 * Introduced a configuration management tool (Ansible) and some other DevOps patterns like infrastructure as code, automated testing.
 
-System and Network Administrator
-at [Institute of Science and Technology](https://ist.ac.at/) [Vienna, 2013 - 2015]
+## System and Network Administrator at [Institute of Science and Technology](https://ist.ac.at/) (Vienna, 2013 - 2015)
 
 * Took care of Linux based infrastructure (email system, web servers, file servers, DNS) and networking.
 * Built tools and automated tasks via Perl, Bash and Ansible.
 * Wrote software for monitoring backups and virtual machines using MySQL and Perl Dancer.
 * Started to migrate monitoring system from Nagios to clustered Icinga2 setup.
 
-System Administrator
-at Kedros [Bratislava, 2009 - 2011]
+## System Administrator at Kedros (Bratislava, 2009 - 2011)
 
 * Administered internal Linux (Debian) based infrastructure.
 * Setup and maintained testing environments (Solaris, RHEL, Tomcat, Oracle) in collaboration with developers and testers.
 * Wrote automation scripts in Unix shell and Perl.
 * Managed projects' deliverables.
 
-IT Auditor
-at Slovak Telekom [Bratislava, 2004 - 2006, 2011 - 2013]
+## IT Auditor at Slovak Telekom (Bratislava, 2004 - 2006, 2011 - 2013)
 
 * Performed audits in IT, networking and IT security areas (e.g. Internet facing applications security, PKI review, Security of remote access, Patch management and vulnerability assessment).
 * Administered internal lab consisting of Linux servers and Cisco networking devices.
