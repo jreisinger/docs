@@ -7,7 +7,9 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
+	"strings"
 
+	"github.com/jreisinger/homepage/search"
 	"github.com/jreisinger/homepage/util"
 )
 
@@ -42,6 +44,14 @@ func main() {
 
 func handleSearch(w http.ResponseWriter, r *http.Request) {
 	pattern := r.URL.Query().Get("regexp")
+
+	var searchOnlyPath bool
+
+	if strings.HasPrefix(pattern, "path:") {
+		searchOnlyPath = true
+		pattern = strings.TrimPrefix(pattern, "path:")
+	}
+
 	rx, err := regexp.Compile(pattern)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -51,16 +61,16 @@ func handleSearch(w http.ResponseWriter, r *http.Request) {
 	var foundFiles []string
 
 	err = filepath.Walk(repoPath+"/data", func(path string, info os.FileInfo, err error) error {
-		matchedFilePath := util.GrepFilePath(path, rx)
+		matchedFilePath := search.GrepFilePath(path, rx)
 		matchedFileContent := false
 
-		if !info.IsDir() { // i.e. it's a file
+		if !searchOnlyPath && !info.IsDir() {
 			html := util.MdToHtml(path)
-			matchedFileContent = util.GrepFileContent(string(html), rx)
+			matchedFileContent = search.GrepFileContent(string(html), rx)
 		}
 
 		if matchedFilePath || matchedFileContent {
-			urlPath, err := util.FilesystemToURL(path)
+			urlPath, err := search.FilesystemToURL(path)
 			if err != nil {
 				return err
 			}
