@@ -104,3 +104,17 @@ func GrepFile(filePath string, pattern *regexp.Regexp) (string, error) {
 func GrepFilePath(filePath string, pattern *regexp.Regexp) string {
 	return pattern.FindString(filePath)
 }
+
+// FilesystemToURL changes filesystem path into URL path.
+func FilesystemToURL(path string) (string, error) {
+	// Trim .md suffix
+	path = strings.TrimSuffix(path, ".md")
+
+	// Trim .*data/ prefix
+	rx, err := regexp.Compile(`.*data/`)
+	if err != nil {
+		return path, err
+	}
+	path = rx.ReplaceAllString(path, "")
+	return path, nil
+}
