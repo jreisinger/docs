@@ -85,24 +85,18 @@ func RemoveTralingSlash(s string) string {
 	return s
 }
 
-// GrepFile searches for pattern inside inside a file identified by filePath. If
-// match is found it returns the file's content.
-func GrepFile(filePath string, pattern *regexp.Regexp) (string, error) {
-	bs, err := ioutil.ReadFile(filePath)
-	if err != nil {
-		return "", err
-	}
-	if pattern.Match(bs) {
-		str := string(bs)
-		return str, nil
-	}
-	return "", nil
+// GrepFileContent searches for pattern inside inside a file.
+func GrepFileContent(content string, pattern *regexp.Regexp) bool {
+	return pattern.Match([]byte(content))
 }
 
-// GrepFilePath searches for pattern in filePath. If match is found it returns
-// the matched string. Otherwise empty string is returned.
-func GrepFilePath(filePath string, pattern *regexp.Regexp) string {
-	return pattern.FindString(filePath)
+// GrepFilePath searches for pattern inside a file pathh.
+func GrepFilePath(path string, pattern *regexp.Regexp) bool {
+	match := pattern.FindString(path)
+	if match == "" {
+		return false
+	}
+	return true
 }
 
 // FilesystemToURL changes filesystem path into URL path.

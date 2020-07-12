@@ -51,17 +51,15 @@ func handleSearch(w http.ResponseWriter, r *http.Request) {
 	var foundFiles []string
 
 	err = filepath.Walk(repoPath+"/data", func(path string, info os.FileInfo, err error) error {
-		matchFilePath := util.GrepFilePath(path, rx)
-		matchFileContent := ""
+		matchedFilePath := util.GrepFilePath(path, rx)
+		matchedFileContent := false
 
 		if !info.IsDir() { // i.e. it's a file
-			matchFileContent, err = util.GrepFile(path, rx)
-			if err != nil {
-				return err
-			}
+			html := util.MdToHtml(path)
+			matchedFileContent = util.GrepFileContent(string(html), rx)
 		}
 
-		if matchFilePath != "" || matchFileContent != "" {
+		if matchedFilePath || matchedFileContent {
 			urlPath, err := util.FilesystemToURL(path)
 			if err != nil {
 				return err
