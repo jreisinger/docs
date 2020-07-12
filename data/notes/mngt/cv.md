@@ -2,7 +2,7 @@ I have been doing IT stuff for companies of varied sizes and types for **10+ yea
 
 # Selected employment history
 
-## Sr. Security Engineer at [Pan-Net](https://pan-net.cloud/) (Bratislava 2017 - present)
+## Sr. Security Engineer at Deutsche Telekom [Pan-Net](https://pan-net.cloud/) (Bratislava 2017 - present)
 
 * Building and operating security products (WAF, SIEM, log mngt.) for both internal and external use.
 * Developing scripts, tools and playbooks using Bash, Python, Go and Ansible.
