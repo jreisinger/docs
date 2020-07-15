@@ -44,7 +44,6 @@ func g() {
 }
 
 func main() {
-
     start := time.Now()
     for {
         // Run once per second
