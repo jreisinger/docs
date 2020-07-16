@@ -4,12 +4,11 @@ Some of the technical books that are fundamental for me. Ordered from most recen
 
 # Sysadmin
 
-* Unix and Linux System Administration Handbook (ULSAH), 2017
+* *Unix and Linux System Administration Handbook* (ULSAH), 2017
 * The Practice of Cloud System Administration (PoCSA), 2014
 * How Linux Works, 2014
 * The Practice of System and Network Administration (PoSaNA), 2007
 * *Automating System Administration with Perl*, 2009
-* *Unix and Linux System Administration Handbook* (ULSAH), 2010
 
 # Programming
 
