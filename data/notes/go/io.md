@@ -80,7 +80,7 @@ func countLines(f *os.File, counts map[string]int) {
 ## Reading input in "slurp" mode (`ioutil.ReadFile`)
 
 ```
-// dup3 reads only named files, not the standard input, since ReadFile requires
+// Dup3 reads only named files, not the standard input, since ReadFile requires
 // a file name argument.
 package main
 
