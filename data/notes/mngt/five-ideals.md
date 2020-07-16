@@ -1,3 +1,5 @@
+The five ideals:
+
 1. Locality and simplicity
 2. Focus, flow and joy
 3. Improvement of daily work
