@@ -72,7 +72,7 @@ func countLines(f *os.File, counts map[string]int) {
         counts[input.Text()]++
     }
     if err := input.Err(); err != nil {
-        fmt.Fprintln(os.Stderr, "reading standard input:", err)
+        fmt.Fprintln(os.Stderr, "reading input:", err)
     }
 }
 ```
