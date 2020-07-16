@@ -28,8 +28,8 @@ Some of the technical books that are fundamental for me. Ordered from most recen
 * *Learning Perl* [[Llama Book](https://wiki.reisinge.net/LlamaBook)], 2011
 * *Classic Shell Scripting* ([ShellScripting](https://wiki.reisinge.net/ShellScripting)), 2005
 * The C Programming Language (K&R), 1988
-* Skúsiš programovať? (The Beginner's Programming Handbook - In Basic & Machine Code, 1984)
-* Skúsiš to s mikropočítačom? (The Beginner's Computer Handbook, 1983)
+* Skúsiš programovať? (The Beginner's Programming Handbook - In Basic & Machine Code), 1984
+* Skúsiš to s mikropočítačom? (The Beginner's Computer Handbook), 1983
 
 # Management
 
