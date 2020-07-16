@@ -1,4 +1,4 @@
-## Reading input in "streaming" mode (`bufio.Scanner`)
+# Reading input in "streaming" mode (`bufio.Scanner`)
 
 `bufio` package helps make input and output efficient and convenient. Its `Scanner` type reads input and breaks it into lines or words. `bufio` is good for "streaming" mode where input is read and broken into lines on the fly.
 
@@ -77,7 +77,7 @@ func countLines(f *os.File, counts map[string]int) {
 }
 ```
 
-## Reading input in "slurp" mode (`ioutil.ReadFile`)
+# Reading input in "slurp" mode (`ioutil.ReadFile`)
 
 ```
 // Dup3 reads only named files, not the standard input, since ReadFile requires
