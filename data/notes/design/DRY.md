@@ -7,7 +7,7 @@ The alternative
 
 * the same thing is expressed in two or more places
 * if you change one, you have to remember to change the others
-* it isn't a questione of whether you'll remember: it's a question of when you'll forget
+* it isn't a question of whether you'll remember: it's a question of when you'll forget
 
 DRY concers
 
