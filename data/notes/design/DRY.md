@@ -14,7 +14,7 @@ DRY concerns
 * code
 * documentation - don't describe what the code does in comments
 * data
-* developers - encourage active and frequent communitcation (stand ups, Slack channels, code review)
+* developers - encourage active and frequent communitcation (stand ups, Slack channels, code reviews)
 
 # Source
 
