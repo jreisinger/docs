@@ -2,7 +2,7 @@
 
 `bufio` package helps make input and output efficient and convenient. Its `Scanner` type reads input and breaks it into lines or words. `bufio` is good for "streaming" mode where input is read and broken into lines on the fly.
 
-Read from STDIN:
+Read from STDIN (dup1.go):
 
 ```
 // Dup1 prints the text of each line that appears more than
@@ -30,7 +30,7 @@ func main() {
 }
 ```
 
-Read from STDIN or files:
+Read from STDIN or files (dup2.go):
 
 ```
 // Dup2 prints the count and text of lines that appear more than once
@@ -78,6 +78,8 @@ func countLines(f *os.File, counts map[string]int) {
 ```
 
 # Reading input in "slurp" mode (`ioutil.ReadFile`)
+
+dup3.go:
 
 ```
 // Dup3 reads only named files, not the standard input, since ReadFile requires
