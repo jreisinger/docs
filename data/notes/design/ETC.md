@@ -11,6 +11,6 @@ ETC is a *value*, not a rule
 * just like other values, it should be floating just behing your conscious though, subtly nudging you in the right direction
 * How to make that happen? Spend a week deliberately asking yourself "did the thing I just did make the overall system easier or harder to change?".
 
-# Source
+Source
 
 * The Pragmatic Programmer (2019), Topic 8
