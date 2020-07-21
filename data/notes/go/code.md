@@ -2,6 +2,16 @@
 
 # The new way (Go modules)
 
+A module is a collection of related Go packages that are versioned together as a single unit. Modules record precise dependency requirements and create reproducible builds.
+
+Modules must be semantically versioned according to [semver](https://semver.org), usually in the form `v(major).(minor).(patch)`.
+
+Relationship between repositories, modules and packages:
+
+* A *repository* contains one (most often) or more Go modules
+* Each *module* contains one or more Go packages
+* Each *package* consists of one or more Go source files in a single directory
+
 ```
 # Let's use Go modules for dependency management.
 cd ~/github
@@ -15,6 +25,7 @@ vim main.go
 ## See also
 
 * https://blog.golang.org/using-go-modules
+* https://github.com/golang/go/wiki/Modules
 
 # The old way (`GOPATH`, `src`, ...)
 
