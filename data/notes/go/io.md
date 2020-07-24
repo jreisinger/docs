@@ -84,31 +84,31 @@ Test `countLines` using [testfile](https://github.com/jreisinger/testfile):
 package main
 
 import (
-	"os"
-	"testing"
+    "os"
+    "testing"
 
-	"github.com/jreisinger/testfile"
+    "github.com/jreisinger/testfile"
 )
 
 func TestCountLines(t *testing.T) {
-	counts := make(map[string]int)
+    counts := make(map[string]int)
 
-	tf := testfile.New("line1\nline2\nline2")
-	defer tf.Remove()
+    tf := testfile.New("line1\nline2\nline2")
+    defer tf.Remove()
 
-	file, err := os.Open(tf.Name)
-	if err != nil {
-		t.Errorf("cant' open test file %s: %v", tf.Name, err)
-	}
-	defer file.Close()
+    file, err := os.Open(tf.Name)
+    if err != nil {
+        t.Errorf("cant' open test file %s: %v", tf.Name, err)
+    }   
+    defer file.Close()
 
-	countLines(file, counts)
-	if counts["line1"] != 1 {
-		t.Errorf("count for 'line1' should be 1 is %d", counts["line1"])
-	}
-	if counts["line2"] != 2 {
-		t.Errorf("count for 'line2' should be 2 is %d", counts["line2"])
-	}
+    countLines(file, counts)
+    if counts["line1"] != 1 { 
+        t.Errorf("count for 'line1' should be 1 is %d", counts["line1"])
+    }   
+    if counts["line2"] != 2 { 
+        t.Errorf("count for 'line2' should be 2 is %d", counts["line2"])
+    }   
 }
 ```
 
