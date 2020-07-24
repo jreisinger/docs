@@ -77,7 +77,7 @@ func countLines(f *os.File, counts map[string]int) {
 }
 ```
 
-Test for `countLines` using [testfile](https://github.com/jreisinger/testfile):
+Test `countLines` using [testfile](https://github.com/jreisinger/testfile):
 
 ```
 // dup2_test.go
