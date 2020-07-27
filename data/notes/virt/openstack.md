@@ -45,7 +45,7 @@ resources:
       name:
         list_join: ['-', [ {get_param: "OS::stack_name"}, port2-docker0]]
       admin_state_up: true
-      network_id: { get_param: network_dth }
+      network_id: { get_param: my_network }
       security_groups:
         - { get_resource: sg_22 }
 ```
