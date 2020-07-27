@@ -1,4 +1,4 @@
-## Networking (Neutron)
+# Networking (Neutron)
 
 [Allowed Address Pairs](https://docs.openstack.org/dragonflow/latest/specs/allowed_address_pairs.html) - feature that allows adding additional IP/MAC address pairs on a port to allow traffic that matches those specified values
 
@@ -14,7 +14,43 @@ openstack network show <id>         # details
 openstack ip availability show <id> # IP addresses
 ```
 
-## Orchestration (Heat)
+## Security Groups (SGs)
+
+SG
+
+* set of IP filter rules to limit network access
+* mapped to a port
+
+Heat template example:
+
+```
+resources:
+  sg_22:
+    type: OS::Neutron::SecurityGroup
+    properties:
+      name:
+        list_join: ['-', [ {get_param: "OS::stack_name"}, ssh]]
+      description: 22 from all
+      rules:
+        - direction: ingress
+          ethertype: IPv4
+          protocol: tcp
+          port_range_min: 22
+          port_range_max: 22
+          #remote_ip_prefix: 10.235.0.0/16
+          remote_ip_prefix: 0.0.0.0/0
+  port2_docker0:
+    type: OS::Neutron::Port
+    properties:
+      name:
+        list_join: ['-', [ {get_param: "OS::stack_name"}, port2-docker0]]
+      admin_state_up: true
+      network_id: { get_param: network_dth }
+      security_groups:
+        - { get_resource: sg_22 }
+```
+
+# Orchestration (Heat)
 
 ```
 heat stack-list
@@ -23,7 +59,7 @@ heat resource-list <id>                         # list stack resources
 heat resource-show <stack-id> <resource-name>   # resource details
 ```
 
-## Tips and tricks
+# Tips and tricks
 
 [Releases](https://en.wikipedia.org/wiki/OpenStack#Release_history) (Ocata, Pike, ...)
 
