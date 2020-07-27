@@ -1,3 +1,4 @@
+* 2020-07-27:
 * 2020-07-25: fetch.go, fetchall.go
 * 2020-07-24: dup2.go, dup2_test.go
 * 2020-07-23: dup1.go
