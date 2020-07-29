@@ -188,6 +188,26 @@ e3f087868688        none                null                local
 
 When you use `-p` Docker creates `iptables` rules that route traffic from the host's public interface on the container's interface on the bridge network.
 
+# DNS
+
+If you want to change DNS servers used when building and running images:
+
+```
+$ cat /etc/docker/daemon.json
+{
+    "dns": ["10.10.10.1", "10.10.10.2"]
+}
+```
+
+To verify:
+
+```
+docker build --no-cache -<<EOF
+FROM busybox
+RUN cat /etc/resolv.conf | grep nameserver
+EOF
+```
+
 # Monitoring and cleanup
 
 Containers' statistics:
