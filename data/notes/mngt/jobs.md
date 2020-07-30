@@ -1,11 +1,48 @@
-* https://stackoverflow.blog/2020/02/18/trying-to-find-your-first-dev-job-heres-what-employers-are-actually-looking-for/
+# My stuff
+
 * https://wiki.reisinge.net/Jobs
 * https://wiki.reisinge.net/CategoryJob
-* https://github.com/Lyoness/awesome-remote-job
+
+# Related
+
+* https://stackoverflow.blog/2020/02/18/trying-to-find-your-first-dev-job-heres-what-employers-are-actually-looking-for/
+
+# By country
+
+## Switzerlang
+
 * https://swissdevjobs.ch
 
----
+# By type
 
+## DESIGNERS
+
+* https://99designs.co.uk/
+* https://www.crowdspring.com/
+* https://dribbble.com/jobs
+
+## DEVOPS
+
+* https://www.toptal.com/ - Top companies such as Airbnb, Thumbtack, Hewlett Packard, hire from Toptal for their most important projects.
+* https://www.truelancer.com/ - Truelancer offers a simple platform for developers and designers to post their rates and skills and get hired onto projects.
+* https://www.gun.io/ - Gun.io connects developers with quality-focused software companies. If you consider yourself a member of the technology community, then Gun.io has a client for you
+
+## WRITERS
+
+* https://www.writeraccess.com/
+* https://www.skyword.com/create-for-skyword/
+* https://www.clearvoice.com/
+
+## FACEBOOK GROUPS
+
+* https://www.facebook.com/groups/RemoteTravelJobs/
+* https://www.facebook.com/groups/virtualassistantinternship/
+* https://www.facebook.com/groups/remotestartupjobs/
+* https://www.facebook.com/groups/guavabean/
+
+# Various
+
+* https://github.com/Lyoness/awesome-remote-job
 * http://upwork.com/
 * http://fiverr.com/
 * https://entra.io/ (free, online community that provides a place for entrepreneurs to get answers to their business questions).
@@ -38,28 +75,3 @@
 * https://golang.cafe/
 * https://www.welovegolang.com/
 * http://acx.com/ - audiobook narator
-
-DESIGNERS
-
-* https://99designs.co.uk/
-* https://www.crowdspring.com/
-* https://dribbble.com/jobs
-
-DEVOPS
-
-* https://www.toptal.com/ - Top companies such as Airbnb, Thumbtack, Hewlett Packard, hire from Toptal for their most important projects.
-* https://www.truelancer.com/ - Truelancer offers a simple platform for developers and designers to post their rates and skills and get hired onto projects.
-* https://www.gun.io/ - Gun.io connects developers with quality-focused software companies. If you consider yourself a member of the technology community, then Gun.io has a client for you
-
-WRITERS
-
-* https://www.writeraccess.com/
-* https://www.skyword.com/create-for-skyword/
-* https://www.clearvoice.com/
-
-FACEBOOK GROUPS
-
-* https://www.facebook.com/groups/RemoteTravelJobs/
-* https://www.facebook.com/groups/virtualassistantinternship/
-* https://www.facebook.com/groups/remotestartupjobs/
-* https://www.facebook.com/groups/guavabean/
