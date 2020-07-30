@@ -202,5 +202,6 @@ func main() {
 
 # See also
 
+* https://golang.org/doc/effective_go.html#concurrency
 * fetchall.go
 * [fetchall2.go](https://github.com/jreisinger/go/blob/master/http/fetchall2.go)
