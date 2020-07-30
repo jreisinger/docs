@@ -2,6 +2,7 @@
 * https://wiki.reisinge.net/Jobs
 * https://wiki.reisinge.net/CategoryJob
 * https://github.com/Lyoness/awesome-remote-job
+* https://swissdevjobs.ch
 
 ---
 
