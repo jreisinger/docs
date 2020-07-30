@@ -1,4 +1,4 @@
-* 2020-07-29: server1.go, ping-ping.go
+* 2020-07-29: server1.go, ping-pong.go
 * 2020-07-28: fetchall.go
 * 2020-07-27: fetchall.go
 * ~~2020-07-26~~
