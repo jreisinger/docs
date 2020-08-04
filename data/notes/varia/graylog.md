@@ -3,7 +3,7 @@
 Logs flow:
 
 ```
-Logs producer -> [Kafka (you can do some logs pre-processing)] -> 
+Logs producer -> [Kafka - you can do some logs pre-processing here] -> 
 Input -> Extractor -> Stream -> Pipeline (e.g. add new field to a log) -> 
 Alert
 ```
