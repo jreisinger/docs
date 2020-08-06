@@ -1,3 +1,4 @@
+* 2020-08-06: work.go
 * 2020-08-05: fetchall.go, stringer.go
 * 2020-08-04: ping-pong.go
 * 2020-08-03: fetchall.go
