@@ -126,7 +126,7 @@ git rm --cached <filename>
 
 # Undo/Redo
 
-Use `reset` only when you haven't pushed the changes to the remote. If you have pushed use `revert`.
+Use `git-reset` only when you haven't pushed the changes to the remote. If you have pushed use `git-revert`.
 
 See [How to reset, revert, and return to previous states in Git](https://opensource.com/article/18/6/git-reset-revert-rebase-commands) and [What's the difference between Git Revert, Checkout and Reset?](https://stackoverflow.com/questions/8358035/whats-the-difference-between-git-revert-checkout-and-reset) for more.
 
@@ -138,6 +138,8 @@ Go back and forget about every change past a certain point:
 git reset --hard SHA1_HASH  # all newer commits get erased forever!!!
 ```
 
+This invocation of `git-reset` makes changes to the existing repo history. Shouldn't be used if you have pushed to remote.
+
 ## Revert
 
 Create a new commit that undoes one or more commits:
@@ -147,7 +149,7 @@ git revert HEAD                 # undo the last commit
 git revert SHA1_HASH SHA1_HASH  # undo the last two commits
 ```
 
-`git-revert` adds new history to the project (it doesn't modify existing history).
+`git-revert` adds new history to the project it doesn't modify existing history.
 
 ## Checkout
 
@@ -165,7 +167,7 @@ git checkout SHA1_HASH
 
 ... if you now edit and commit, you will be in an alternate reality (called a branch).
 
-`git-checkout` doesn't make any changes to the history.
+`git-checkout` doesn't modify existing history.
 
 # Branching and merging
 
