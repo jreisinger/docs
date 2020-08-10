@@ -17,7 +17,7 @@ git config --global github.login=jlebowski
 git config --global github.email=jlebowski@gmail.com
 ```
 
-You only need to do this *once*. You might also like to add some aliases and [configuration](https://github.com/jreisinger/dotfiles/blob/master/.gitconfig).
+You only need to do this *once*. You might also like to add some aliases and other [configuration](https://github.com/jreisinger/dotfiles/blob/master/.gitconfig) settings.
 
 ## Everyday configuration
 
