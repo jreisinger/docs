@@ -126,6 +126,12 @@ git rm --cached <filename>
 
 # Undo/Redo
 
+See [How to reset, revert, and return to previous states in Git](https://opensource.com/article/18/6/git-reset-revert-rebase-commands) for more.
+
+## Reset
+
+Use `reset` only when you haven't pushed the changes to the remote.
+
 Go back and forget about every change past a certain point
 
 ```sh
@@ -139,6 +145,14 @@ git checkout SHA1_HASH      # newer commits are preserved
 ```
 
 ... if you now edit and commit, you will be in an alternate reality (called a branch)
+
+## Revert
+
+`revert` creates a new commit that cancels tha *last* commit:
+
+```
+git revert HEAD
+```
 
 # Branching and merging
 
