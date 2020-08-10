@@ -13,6 +13,8 @@ Introduce yourself to git with your name and public email address before doing a
 ```bash
 git config --global user.name "Jeffrey Lebowski"
 git config --global user.email "jlebowski@dude.org"
+git config --global github.login=jlebowski
+git config --global github.email=jlebowski@gmail.com
 ```
 
 You might also like to add some colors, alias(es), your editor and diff tool:
