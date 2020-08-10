@@ -25,9 +25,9 @@ You can see your configuration like this:
 
 ```bash
 $ git config --list    # output depends on whether you're in a git repo directory or not
+## OR
+$ cat ~/.gitconfig
 ```
-
-You can also manage you configuration via [~/.gitconfig](https://github.com/jreisinger/dotfiles/blob/master/.gitconfig) file.
 
 If you want to manage the current repository configuration just leave out the `--global` option or use the local config file `.git/config`.
 
