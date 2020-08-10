@@ -147,10 +147,16 @@ git revert SHA1_HASH SHA1_HASH  # cancel the last two commits
 
 ## Checkout
 
+Similar to `git-revert`:
+
+```
+git checkout SHA1_HASH .    # note the dot
+```
+
 Travel back in time:
 
 ```sh
-git checkout SHA1_HASH      # newer commits are preserved
+git checkout SHA1_HASH
 ```
 
 ... if you now edit and commit, you will be in an alternate reality (called a branch)
