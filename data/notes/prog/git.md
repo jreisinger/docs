@@ -17,16 +17,7 @@ git config --global github.login=jlebowski
 git config --global github.email=jlebowski@gmail.com
 ```
 
-You might also like to add some colors, alias(es), your editor and diff tool:
-
-```bash
-git config --global color.ui true
-git config alias.lol 'log --pretty=oneline --abbrev-commit --graph --decorate'
-git config --global core.editor vim
-git config --global merge.tool vimdiff
-```
-
-You only need to do this *once*.
+You only need to do this *once*. You might also like to add some aliases and [configuration](https://github.com/jreisinger/dotfiles/blob/master/.gitconfig).
 
 ## Everyday configuration
 
