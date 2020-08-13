@@ -194,14 +194,13 @@ func main() {
 }
 ```
 
-# Scalable work system
+# Scalable work system using goroutines, channels and interfaces
 
 ```
 // work.go
 // A common use case for Go is to take a stream of jobs of work and perform them
-// automatically scaling up and down as work becomes available. See Intermediate
-// Go programming - Building a scalable work system (https://learning.oreilly.com/videos/intermediate-go-programming/9781491944073/9781491944073-video234754)
-//
+// automatically scaling up and down as work becomes available. See the video 
+// Intermediate Go programming - Building a scalable work system.
 // ./work < urls.txt
 package main
 
