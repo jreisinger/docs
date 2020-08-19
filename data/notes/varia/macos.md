@@ -9,7 +9,7 @@ sudo bash -c "cat your-ca.crt >> $ALL_CA_CERTIFICATES"
 
 # Put this into ~/.bashrc
 export REQUESTS_CA_BUNDLE=$ALL_CA_CERTIFICATES
-````
+```
 
 Screenshot (print screen)
 
