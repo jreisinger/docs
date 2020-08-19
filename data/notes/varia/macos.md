@@ -2,6 +2,7 @@ CA certificates
 
 * `/usr/local/etc/openssl\@1.1/cert.pem`
 * Keychain Access => System => Certificates
+* Python: `export REQUESTS_CA_BUNDLE=/usr/local/share/ca-certificates/pan-net.crt`
 
 Screenshot (print screen)
 
