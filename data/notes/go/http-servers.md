@@ -231,6 +231,7 @@ func (db database) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 A more realistic server triggers different behaviours based on the path component of the URL:
 
 ```
+// shop2.go
 func (db database) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 	switch req.URL.Path {
 	case "/list":
