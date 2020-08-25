@@ -207,6 +207,7 @@ func ListenAndServe(address string, h Handler) error
 Super simple e-commerce site:
 
 ```
+// shop.go
 func main() {
 	db := database{"shoes": 50, "socks": 5}
 	log.Fatal(http.ListenAndServe("localhost:8000", db))
