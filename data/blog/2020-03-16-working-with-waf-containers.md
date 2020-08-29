@@ -115,7 +115,21 @@ $ waf-runner waf/nginx/naxsi
 
 `waf/nginx/naxsi` folder contains the `Dockerfile` and all needed files like `nginx.conf`, `naxsi.conf` and `naxsi_core.rules` that get copied into the container.
 
-Then I open another terminal and run a [FTW](https://github.com/coreruleset/ftw) test against the WAF:
+Let's adapt one of the [FTW](https://github.com/coreruleset/ftw) tests
+
+```
+$ cat 913120-2.yaml 
+tests:
+- test_title: 913120-2
+  desc: IBM fingerprint from (http://www-01.ibm.com/support/docview.wss?uid=swg21293132)
+  stages:
+  - stage:
+      input:
+        uri: /AppScan_fingerprint/MAC_ADDRESS_01234567890.html?9ABCDG1
+      output:
+        status: [403]
+```
+and run the test against the WAF:
 
 ```
 $ waf-tester -host localhost -scheme http -tests 913120-2.yaml -verbose
@@ -141,11 +155,10 @@ Let's try to add (a rather naïve) custom WAF rule to fix the failing test:
 
 ```
 # nginx/naxsi/naxsi_custom.rules
-BasicRule "str:/bin/bash" "msg:RCE" "mz:ARGS" "s:$UWA:4" id:10001;
 BasicRule "str:9ABCDG1" "msg:FTW 913120-2" "mz:ARGS" "s:$UWA:4" id:10002;
 ```
 
-Now I rebuild the WAF container: I hit `Ctrl-C` in the first terminal and run `waf-runner waf/nginx/naxsi` again. When I re-run the test you can see it's `OK` now:
+Now rebuild the WAF container: hit `Ctrl-C` in the first terminal and run `waf-runner waf/nginx/naxsi` again. When we re-run the test we can see it's `OK` now:
 
 ```
 $ waf-tester -host localhost -scheme http -tests 913120-2.yaml
