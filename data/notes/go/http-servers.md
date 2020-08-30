@@ -207,6 +207,7 @@ func ListenAndServe(address string, h Handler) error
 Super simple e-commerce site:
 
 ```
+// shop.go
 func main() {
 	db := database{"shoes": 50, "socks": 5}
 	log.Fatal(http.ListenAndServe("localhost:8000", db))
@@ -230,6 +231,7 @@ func (db database) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 A more realistic server triggers different behaviours based on the path component of the URL:
 
 ```
+// shop2.go
 func (db database) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 	switch req.URL.Path {
 	case "/list":

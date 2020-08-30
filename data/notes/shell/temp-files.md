@@ -6,8 +6,6 @@ Working with temporary files in a shell script:
     # Make sure they get removed even if the script exits abnormally.
     trap "exit 1"                     HUP INT PIPE QUIT TERM
     trap "rm -rf $TMPFILE1 $TMPFILE2" EXIT
-    # ... or alternatively
-    #trap "rm -rf $TMPFILE1 $TMPFILE2; exit 1" HUP INT PIPE QUIT TERM
 
 Working with a temporary directory in a shell script:
 
