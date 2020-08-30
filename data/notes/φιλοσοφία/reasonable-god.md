@@ -31,3 +31,4 @@ Logical arguments:
 # More
 
 * https://www.youtube.com/watch?v=bhfkhq-CM84
+* https://www.reasonablefaith.org/media/debates/is-faith-in-god-reasonable/
