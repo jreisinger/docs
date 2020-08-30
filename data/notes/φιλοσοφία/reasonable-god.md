@@ -20,6 +20,8 @@ Logical arguments:
 
 ## Arguments against
 
+Argument from the evil - an omnipotent and benevolent God should have eliminated all suffering. We observe plenty of man made and natural suffering in the world.
+
 # More
 
 * https://www.youtube.com/watch?v=bhfkhq-CM84
