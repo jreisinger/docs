@@ -23,10 +23,11 @@ Logical arguments:
 
 There were and are reasonable people who believe that God exists:
 
-Logical arguments:
+## Arguments
 
 * [Euthypro dilemma](https://en.wikipedia.org/wiki/Euthyphro_dilemma) <-> objective universal morality.
 * Argument from the evil - an omnipotent and benevolent God should have eliminated all suffering. We observe plenty of man made and natural suffering in the world.
+* Is bible historical, i.e. can it be believed?
 
 # More
 
