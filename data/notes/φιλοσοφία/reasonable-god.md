@@ -33,3 +33,5 @@ There were and are reasonable people who believe that God exists:
 
 * https://www.youtube.com/watch?v=bhfkhq-CM84
 * https://www.reasonablefaith.org/media/debates/is-faith-in-god-reasonable/
+
+NOTE: The existence of God does not, of course, depend on any particular person's ability to effectively argue for (or against) him. -- [Aron Wall](http://www.wall.org/~aron/blog/thoughts-on-the-carroll-craig-debate/)
