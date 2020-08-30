@@ -15,12 +15,18 @@ There were and are reasonable people who believe that God exists:
 
 Logical arguments:
 
+* Objective universal morality or decent behaviour or fair play (Lewis).
 * [Kalam cosmological argument](https://en.wikipedia.org/wiki/Kalam_cosmological_argument)
 * [Leibniz's argument for the existence of God](https://www.reasonablefaith.org/videos/interviews-panels/leibnizs-argument-for-the-existence-of-god-bobby-conway/)
 
 ## Arguments against
 
-Argument from the evil - an omnipotent and benevolent God should have eliminated all suffering. We observe plenty of man made and natural suffering in the world.
+There were and are reasonable people who believe that God exists:
+
+Logical arguments:
+
+* [Euthypro dilemma](https://en.wikipedia.org/wiki/Euthyphro_dilemma) <-> objective universal morality.
+* Argument from the evil - an omnipotent and benevolent God should have eliminated all suffering. We observe plenty of man made and natural suffering in the world.
 
 # More
 
