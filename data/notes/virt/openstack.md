@@ -18,8 +18,10 @@ openstack ip availability show <id> # IP addresses
 
 SG
 
-* set of IP filter rules to limit network access
+* set of IP filter rules to manage network access
 * mapped to a port
+* all projects (tenants) have a default security group applied all VMs (ports actually)
+* the default SG denies all incoming traffic and allows only outgoing traffic
 
 Heat template example - SG + the port it gets applied to:
 
