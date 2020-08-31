@@ -21,7 +21,7 @@ SG
 * set of IP filter rules to limit network access
 * mapped to a port
 
-Heat template example:
+Heat template example - SG + the port it gets applied to:
 
 ```
 resources:
