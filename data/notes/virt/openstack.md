@@ -30,14 +30,13 @@ resources:
     properties:
       name:
         list_join: ['-', [ {get_param: "OS::stack_name"}, ssh]]
-      description: 22 from all
+      description: Allow 22 from all
       rules:
         - direction: ingress
           ethertype: IPv4
           protocol: tcp
           port_range_min: 22
           port_range_max: 22
-          #remote_ip_prefix: 10.235.0.0/16
           remote_ip_prefix: 0.0.0.0/0
   port2_docker0:
     type: OS::Neutron::Port
