@@ -1,4 +1,4 @@
-* 2020-09-01: shop.go, dc_test.go
+* 2020-09-01: shop.go, dc_test.go, dup2.go, dup2_test.go
 * 2020-08-31: dup1.go
 * 2020-08-29: )-:
 * 2020-08-28: dup1.go
