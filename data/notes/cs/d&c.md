@@ -36,19 +36,21 @@ package main
 
 import "testing"
 
-func sumDC(s []int) int {
-	if len(s) == 0 {
+// sumDC sums a list of integers using divide and conquer technique.
+func sumDC(ints []int) int {
+	if len(ints) == 0 { // base case
 		return 0
 	}
-	return s[0] + sumDC(s[1:])
+	return ints[0] + sumDC(ints[1:])
 }
 
 // --- tests ---
 
-func TestSumDC(t *testing.T) {
+// testSumDC tests that sumDC works correctly.
+func testSumDC(t *testing.T) {
 	type testpair struct {
-		s []int
-		i int
+		ints []int
+		sum  int
 	}
 	testpairs := []testpair{
 		{[]int{}, 0},
@@ -56,9 +58,9 @@ func TestSumDC(t *testing.T) {
 		{[]int{1, 3, 2}, 6},
 	}
 	for _, tp := range testpairs {
-		got := sumDC(tp.s)
-		if got != tp.i {
-			t.Errorf("got %v want %v", got, tp.i)
+		got := sumDC(tp.ints)
+		if got != tp.sum {
+			t.Errorf("got %v want %v", got, tp.sum)
 		}
 	}
 }
