@@ -32,6 +32,7 @@ Go:
 
 ```
 // dc_test.go
+// Usage: go test -v
 package main
 
 import "testing"
@@ -46,8 +47,8 @@ func sumDC(ints []int) int {
 
 // --- tests ---
 
-// testSumDC tests that sumDC works correctly.
-func testSumDC(t *testing.T) {
+// TestSumDC tests sumDC is working correctly.
+func TestSumDC(t *testing.T) {
 	type testpair struct {
 		ints []int
 		sum  int
