@@ -19,7 +19,7 @@ export REQUESTS_CA_BUNDLE=$ALL_CA_CERTIFICATES
 
 ## Enable key repeats (like in VSCodium)
 
-Run this in terminal:
+Run this in terminal and then restart the given application:
 
 ```
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
