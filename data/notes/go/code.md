@@ -20,6 +20,8 @@ go mod init github.com/jreisinger/my-project
 vim main.go
 ```
 
+You can use [gomod](https://github.com/jreisinger/dotfiles/blob/master/bin/gomod) to create a Go module skeleton.
+
 ## See also
 
 * https://blog.golang.org/using-go-modules
