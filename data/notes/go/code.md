@@ -1,5 +1,3 @@
-*NOTE*: See [How to Write Go Code](https://golang.org/doc/code.html) for official tutorial.
-
 # The new way (Go modules)
 
 A module is a collection of related Go packages that are versioned together as a single unit. Modules record precise dependency requirements and create reproducible builds.
@@ -24,6 +22,7 @@ You can use [gomod](https://github.com/jreisinger/dotfiles/blob/master/bin/gomod
 
 ## See also
 
+* [How to Write Go Code](https://golang.org/doc/code.html) - official tutorial
 * https://blog.golang.org/using-go-modules
 * https://github.com/golang/go/wiki/Modules
 
