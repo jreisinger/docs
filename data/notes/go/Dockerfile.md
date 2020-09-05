@@ -18,3 +18,5 @@ COPY --from=build /src/foo /bin/foo
 
 ENTRYPOINT ["/bin/foo"]
 ```
+
+See also kvstore's [Dockerfile](https://github.com/jreisinger/kvstore/blob/master/Dockerfile).
