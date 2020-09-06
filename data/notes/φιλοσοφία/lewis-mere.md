@@ -56,9 +56,9 @@ Morality is concerned with:
 
 Does it not make a great difference whether I am, so to speak, the landlord of my own mind and body, or only a tenant, responsible to the real landlord?
 
-Now there are a good many things which would not be worth bothering about if I were going to live only seventy years, but which I had better bother about very seriously if I am going to live for ever:
+Thre are a good many things which would not be worth bothering about if I were going to live only seventy years, but which I had better bother about very seriously if I am going to live for ever:
 
-* my character
+* evolution of my character
 * importance of an individual (democracy) vs society/nation/state (totalitarianism)
 
 ## The "cardinal virtues"
