@@ -3,7 +3,7 @@
 * 2020-09-04: )-:
 * 2020-09-03: )-:
 * 2020-09-02: dc_test.go
-* 2020-09-01: shop.go, dc_test.go, dup2.go, dup2_test.go
+* 2020-09-01: shop.go, dc_test.go, dup2.go
 * 2020-08-31: dup1.go
 * 2020-08-29: )-:
 * 2020-08-28: dup1.go
@@ -36,7 +36,7 @@
 * 2020-07-28: fetchall.go
 * 2020-07-27: fetchall.go
 * 2020-07-25: fetch.go, fetchall.go
-* 2020-07-24: dup2.go, dup2_test.go
+* 2020-07-24: dup2.go
 * 2020-07-23: dup1.go
 * 2020-07-22: )-:
 * 2020-07-21: dup1.go
