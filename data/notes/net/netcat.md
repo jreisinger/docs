@@ -25,9 +25,9 @@ Check UDP port is open (`telnet` does not work for UDP ports) but keep in mind t
     $ netcat -vu vpn.ist.ac.at 1194
     Connection to vpn.ist.ac.at 1194 port [udp/openvpn] succeeded!
 
-Make sure no data (zero) is sent to the port you connect to:
+Be verbose, make sure no data (zero) is sent to the port you connect to and time out after 3 seconds:
 
-    nc -v -z host.tld 21-25
+    nc -vzw3 host.tld 21-25
 
 Change source port / address (ex. to evade a FW):
 
