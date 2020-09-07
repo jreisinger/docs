@@ -28,26 +28,15 @@ def sumDC(l):
     return l[0] + sumDC(l[1:])
 ```
 
-Go:
+Go (with tests):
 
 ```
-// dc_test.go
+// dc_test.go - sum a list of integers using D&C technique and test it
 // Usage: go test -v
 package main
 
 import "testing"
 
-// sumDC sums a list of integers using divide and conquer technique.
-func sumDC(ints []int) int {
-	if len(ints) == 0 { // base case
-		return 0
-	}
-	return ints[0] + sumDC(ints[1:])
-}
-
-// --- tests ---
-
-// TestSumDC tests sumDC is working correctly.
 func TestSumDC(t *testing.T) {
 	type testpair struct {
 		ints []int
@@ -59,10 +48,17 @@ func TestSumDC(t *testing.T) {
 		{[]int{1, 3, 2}, 6},
 	}
 	for _, tp := range testpairs {
-		got := sumDC(tp.ints)
+		got := SumDC(tp.ints)
 		if got != tp.sum {
 			t.Errorf("got %v want %v", got, tp.sum)
 		}
 	}
+}
+
+func SumDC(ints []int) int {
+	if len(ints) == 0 { // base case
+		return 0
+	}
+	return ints[0] + SumDC(ints[1:])
 }
 ```
