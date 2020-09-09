@@ -15,10 +15,8 @@ errors.
 Types are similar to sets in mathematics. They classify data into groups and
 determine:
 
-* characteristics of data (e.g. all strings have length)
-* operations that can be performed on data (e.g. `len("a string")`)
-* data size (e.g. `int8`)
-* how data is stored in memory
+* exact representations of their values
+* intrinsic operations of that represenations (e.g. arithmetic for numbers, or indexing `append` and `range` for slices)
 
 See also [Basic types](https://tour.golang.org/basics/11), [Zero values](https://tour.golang.org/basics/12) and [Type conversions](https://tour.golang.org/basics/13).
 
