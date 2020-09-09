@@ -1,3 +1,4 @@
+* 2020-09-09: [bytecounter](https://github.com/adonovan/gopl.io/tree/master/ch7/bytecounter)
 * 2020-09-08: shop.go, shop2.go
 * 2020-09-07: dc_test.go
 * 2020-09-05: )-:
