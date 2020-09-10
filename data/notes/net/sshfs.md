@@ -12,6 +12,7 @@ Installation
 
 ```
 sudo apt install sshfs
+
 mkdir sshfs
 ```
 
@@ -38,11 +39,12 @@ Installation
 ```
 brew cask install osxfuse
 brew install sshfs
+
+mkdir sshfs
 ```
 
 Manual mount
 
 ```
-mkdir sshfs
 sshfs <user>@<server.net>:/data/sshfs sshfs
 ```
