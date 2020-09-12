@@ -1,6 +1,6 @@
 ## Common settings
 
-*NOTE*: Prefix all these with `:`.
+NOTE - Prefix all these with `:`
 
 ```
 set tabstop=4 shiftwidth=4 expandtab
