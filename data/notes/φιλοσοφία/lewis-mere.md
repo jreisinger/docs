@@ -1,3 +1,5 @@
+**NOTE**: The chapters of this book build on the previous chapters so they should be read and understood in sequence.
+
 # Book I. Right and wrong as a clue to the meaning of the Universe
 
 ## The law of human nature
@@ -16,7 +18,7 @@ Some more arguments supporting that something called the law of human nature exi
 
 People are sometimes mistaken about interpreting real Right and Wrong, just as people sometimes get their sums wrong; but they are not merely a matter of personal taste or opinion any more than the multiplication table.
 
-> These, then, are the two points I wanted to make. First, that human beings, all over the earth, have this curious idea that they ought to behave in a certain way, and cannot really get rid of it. Secondly, that they do not in fact behave in that way. They know the Law of Nature; they break it. These two facts are the foundation of all clear thinking about ourselves and the universe we live in.
+These, then, are the two points I wanted to make. First, that human beings, all over the earth, have this curious idea that they ought to behave in a certain way, and cannot really get rid of it. Secondly, that they do not in fact behave in that way. They know the Law of Nature; they break it. These two facts are the foundation of all clear thinking about ourselves and the universe we live in.
 
 ## Some objections
 
@@ -32,7 +34,7 @@ Now this is so peculiar [zvlastny] that one might try to explain it away:
 
 2. Though decent behaviour doesn't pay each particular person at each moment it sill *pays the human race as a whole*. Now, of course, it's perfectly true that safety and happiness come from individuals and nations being honest and fair and kind to each other. But it's [circular reasoning](https://en.wikipedia.org/wiki/Circular_reasoning) - Q: Why ought I to be unselfish? A: Because it's good for society. Q: Why should I care what's good for society except when it happens to pay me personally? A: Because you ought to be unselfish. What you are saying is true but you you are not getting any further.
 
-> Consequently, this Rule of Right and Wrong, or Law of Human Nature, or whatever you call it, must somehow or other be a real thing - a thing that is really there, not made up by ourselves. And yet it is not a fact in the ordinary sense, in the same way that our actual behaviour is a fact. It begins to look as if we shall have to admit that there is more than one kind of reality; that, in this particular case, there is something above and beyond the ordinary facts of men's behaviour, and yet quite definitely real - a real law, which none of us made, but which we find pressing on us.
+Consequently, this Rule of Right and Wrong, or Law of Human Nature, or whatever you call it, must somehow or other be a real thing - a thing that is really there, not made up by ourselves. And yet it is not a fact in the ordinary sense, in the same way that our actual behaviour is a fact. It begins to look as if we shall have to admit that there is more than one kind of reality; that, in this particular case, there is something above and beyond the ordinary facts of men's behaviour, and yet quite definitely real - a real law, which none of us made, but which we find pressing on us.
 
 ## What lies behind the law
 
@@ -44,6 +46,10 @@ Ever since men were able to think, they were wondering what this universe really
 Please don not think that one of these views was held long time ago and that the other has gradually taken its place. Wherever there have been thinking men both views turned up. Also note that you cannot find out which of these views is true by [science](http://www.wall.org/~aron/blog/the-pillars-of-science/) in the ordinary way.
 
 > I agree that science cannot disprove the existence of God. I absolutely agree. I also agree that a belief in science and religion is consistent. -- [Richard P. Feynman](https://www.amazon.com/dp/0465023940) (scientist, atheist, brilliant person)
+
+The position of the question, then, is like this. We want to know whether the universe simply happens to be what it is for no reason or whether there is a power behind it that makes it what it is. Since that power, if it exists, would not be one of the observed facts but a reality which makes them, no mere observation of the facts can find it. There is only one case in which we can know whether there is anything more, namely our own case. And in that case we find there is - the Law of Human Nature.
+
+Surely this ought to arouse our suspicion?
 
 ## We have cause to be uneasy
 
