@@ -1,4 +1,4 @@
-# Common settings
+## Common settings
 
 *NOTE*: Prefix all these with `:`.
 
