@@ -1,6 +1,6 @@
 ## Commands
 
-NOTE - Prefix all these with `:`
+NOTE - prefix all these with `:`
 
 Common settings:
 
