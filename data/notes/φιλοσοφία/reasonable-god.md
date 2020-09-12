@@ -1,10 +1,8 @@
-# Huh?
-
 Is it reasonable to think that God exists?
 
-## Arguments for
+# Arguments for
 
-There were and are reasonable people who believe that God exists:
+## There were and are reasonable people who believe that God exists
 
 * [C.S. Lewis](https://en.wikipedia.org/wiki/C._S._Lewis) (1898 - 1963)
 * [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) (1938)
@@ -13,26 +11,28 @@ There were and are reasonable people who believe that God exists:
 * [Róbert Bezák](https://en.wikipedia.org/wiki/R%C3%B3bert_Bez%C3%A1k) (1960)
 * [Luke Barnes](https://www.closertotruth.com/contributor/luke-barnes/profile)
 
-Logical arguments:
+## Logical (philosofical) arguments
 
-* Objective universal morality or decent behaviour or fair play (Lewis).
+* Existence of objective universal morality or decent behaviour or fair play (Lewis).
 * [Kalam cosmological argument](https://en.wikipedia.org/wiki/Kalam_cosmological_argument)
 * [Leibniz's argument for the existence of God](https://www.reasonablefaith.org/videos/interviews-panels/leibnizs-argument-for-the-existence-of-god-bobby-conway/)
 
-## Arguments against
+# Arguments against
 
-There were and are reasonable people who believe that God exists:
+## There were and are reasonable people who believe that God does not exist (atheists):
 
-## Arguments
+* [Richard P. Feynman](http://www.wall.org/~aron/blog/what-about-science/)
+
+## Logical Arguments
 
 * [Euthypro dilemma](https://en.wikipedia.org/wiki/Euthyphro_dilemma) <-> objective universal morality.
-* Argument from the evil - an omnipotent and benevolent God should have eliminated all suffering. We observe plenty of man made and natural suffering in the world.
-* Is bible historical, i.e. can it be believed?
-* Can religion be based on [evidence](http://www.wall.org/~aron/evidence.htm)?
+* Argument from the evil - an omnipotent and benevolent God should have eliminated all suffering. We observe plenty of man made and natural suffering in the world. <=> Free will can not be achieved without allowing the possibility of doing wrong things. What about suffering not cause by people (like tsunami)?
+* Is bible historical, i.e. can it be believed? 
 
 # More
 
 * https://www.youtube.com/watch?v=bhfkhq-CM84
 * https://www.reasonablefaith.org/media/debates/is-faith-in-god-reasonable/
+* Can religion be based on [evidence](http://www.wall.org/~aron/evidence.htm)?
 
 NOTE: The existence of God does not, of course, depend on any particular person's ability to effectively argue for (or against) him. -- [Aron Wall](http://www.wall.org/~aron/blog/thoughts-on-the-carroll-craig-debate/)
