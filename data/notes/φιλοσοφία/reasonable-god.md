@@ -19,7 +19,7 @@ Is it reasonable to think that God exists?
 
 # Arguments against
 
-## There were and are reasonable people who believe that God does not exist (atheists):
+## There were and are reasonable people who believe that God does not exist (atheists)
 
 * [Richard P. Feynman](http://www.wall.org/~aron/blog/what-about-science/)
 
