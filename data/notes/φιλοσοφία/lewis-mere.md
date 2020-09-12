@@ -43,6 +43,8 @@ Ever since men were able to think, they were wondering what this universe really
 
 Please don not think that one of these views was held long time ago and that the other has gradually taken its place. Wherever there have been thinking men both views turned up. Also note that you cannot find out which of these views is true by [science](http://www.wall.org/~aron/blog/the-pillars-of-science/) in the ordinary way.
 
+> I agree that science cannot disprove the existence of God. I absolutely agree. I also agree that a belief in science and religion is consistent. -- [Richard P. Feynman](https://www.amazon.com/dp/0465023940) (scientist, atheist, brilliant person)
+
 ## We have cause to be uneasy
 
 # Book II. What Christians believe
