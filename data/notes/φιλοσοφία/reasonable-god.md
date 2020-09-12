@@ -25,9 +25,9 @@ Is it reasonable to think that God exists?
 
 ## Logical Arguments
 
-* [Euthypro dilemma](https://en.wikipedia.org/wiki/Euthyphro_dilemma) <-> objective universal morality.
+* [Euthypro dilemma](https://en.wikipedia.org/wiki/Euthyphro_dilemma) <=> Objective universal morality.
 * Argument from the evil - an omnipotent and benevolent God should have eliminated all suffering. We observe plenty of man made and natural suffering in the world. <=> Free will can not be achieved without allowing the possibility of doing wrong things. What about suffering not cause by people (like tsunami)?
-* Is bible historical, i.e. can it be believed? 
+* Bible is not historical, i.e. it can't be believed.
 
 # More
 
