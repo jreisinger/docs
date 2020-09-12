@@ -5,6 +5,7 @@ Useful configuration options:
 set tabstop=4 shiftwidth=4 expandtab
 set nofoldenable
 set textwidth=0
+set colorcolumn=0
 syntax off
 
 # apply tabs -> spaces
