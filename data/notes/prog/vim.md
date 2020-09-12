@@ -1,6 +1,8 @@
-## Common settings
+## Commands
 
 NOTE - Prefix all these with `:`
+
+Common settings:
 
 ```
 set tabstop=4 shiftwidth=4 expandtab
