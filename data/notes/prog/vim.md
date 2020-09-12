@@ -1,38 +1,45 @@
-Useful configuration options:
+## Commands
+
+NOTE - prefix all these with `:`
+
+Common settings:
 
 ```
-# prefix with :
 set tabstop=4 shiftwidth=4 expandtab
+retab # apply tabs -> spaces
+
 set nofoldenable
+
 set textwidth=0
 set colorcolumn=0
-syntax off
 
-# apply tabs -> spaces
-:retab
+syntax off
+setlocal spell spelllang=en_us # enable spell checking in local buffer only
 ```
 
 How to search:
 
 ```
-:grep -iR what .
-:cw
+grep -iR what .
+cw
 ```
 
 ```
-:vimgrep /PATTERN/ FILE(s)
-:cnext
-:cprex
-:cfnext
-:cfprev
+vimgrep /PATTERN/ FILE(s)
+cnext
+cprex
+cfnext
+cfprev
 ```
 
 Know your alphabet:
 
 ```
-:help normal-index
-:help insert-index
+help normal-index
+help insert-index
 ```
+
+## Keyboard shortcuts
 
 Scroll inside `:term`:
 
