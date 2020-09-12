@@ -36,6 +36,13 @@ Now this is so peculiar [zvlastny] that one might try to explain it away:
 
 ## What lies behing the law
 
+Ever since men were able to think, they were wondering what this universe really is and how it came to be there. Very roughly, two views have been held:
+
+1. Materialist view - matter and space just happen to exist, and always have existed, nobody knows why
+2. Religious view - what is behind the universe is more like a mind than it is like anything else we know
+
+Please don not think that one of these views was held long time ago and that the other has gradually taken its place. Wherever there have been thinking men both views turned up. Also note that you cannot find out which of these views is true by [science](http://www.wall.org/~aron/blog/the-pillars-of-science/) in the ordinary way.
+
 ## We have cause to be uneasy
 
 # Book II. What Christians believe

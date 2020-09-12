@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"os/exec"
 	"path/filepath"
 	"sort"
 	"strings"
@@ -82,4 +83,12 @@ func RemoveTralingSlash(s string) string {
 		s = s[:len(s)-len(suffix)]
 	}
 	return s
+}
+
+func LastModified(filename string) (string, error) {
+	output, err := exec.Command("git", "log -1 --pretty=\"format:%ci\"", filename).CombinedOutput()
+	if err != nil {
+		return "", err
+	}
+	return string(output), nil
 }
