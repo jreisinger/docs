@@ -1,5 +1,6 @@
 # Sockets
 
+- a SW structure
 - a method for IPC
 - endpoints for communication
 - allow processes to communicate on a host or over a network
