@@ -1,4 +1,4 @@
-* 2020-09-09: Bytecounter
+* 2020-09-09: bytecounter
 * 2020-09-08: shop.go, shop2.go
 * 2020-09-07: dc_test.go
 * 2020-09-05: )-:
