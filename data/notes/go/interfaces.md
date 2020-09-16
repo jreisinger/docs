@@ -22,7 +22,7 @@ func main() {
 ```
 
 ```
-// Bytecounter demonstrates an implementation of io.Writer that counts bytes.
+// Bytecounter.go demonstrates an implementation of io.Writer that counts bytes.
 // https://github.com/adonovan/gopl.io/blob/master/ch7/bytecounter/main.go
 package main
 
