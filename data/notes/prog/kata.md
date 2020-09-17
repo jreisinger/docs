@@ -1,4 +1,4 @@
-* 2020-09-17: bytecounter.go
+* 2020-09-17: bytecounter.go, dc_test.go
 * 2020-09-16: bytecounter.go
 * 2020-09-14: bytecounter.go
 * 2020-09-12: )-:
