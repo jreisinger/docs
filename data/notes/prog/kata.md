@@ -1,3 +1,4 @@
+* 2020-09-19: server1.go
 * 2020-09-18: fetch.go, shop.go
 * 2020-09-17: bytecounter.go, dc_test.go
 * 2020-09-16: bytecounter.go
