@@ -1,12 +1,12 @@
 > Hope is not a strategy. -- SRE saying
 
-Two approaches to run a computing system: sysadmin, SRE.
+Two approaches to run (operate) a complex computing system: sysadmin, SRE.
 
 ## Sysadmin approach
 
 * traditional way
-* assemble existing SW components to produce a service
-* run the service
+* assemble and deploy SW components and then run them
+* running means sysadmins are responding to events and updates as they occur
 
 Advantages
 
@@ -41,9 +41,9 @@ Disadvantages
 
 ## DevOps or SRE?
 
-* DevOps term - late 2008
-* DevOps is a generalization of several SRE core principles
-* [class SRE implements DevOps](https://cloud.google.com/blog/products/gcp/sre-vs-devops-competing-standards-or-close-friends)
+* DevOps term is older - coined in 2008
+* DevOps is a generalization of several SRE core principles to a wider range of ogranizations, management structures and personnel
+* SRE is a specific [implementations of DevOps](https://cloud.google.com/blog/products/gcp/sre-vs-devops-competing-standards-or-close-friends) with some idyosyncratic extensions 
 
 ## Source
 
