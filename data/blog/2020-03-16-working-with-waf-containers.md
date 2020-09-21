@@ -132,7 +132,7 @@ tests:
 and run the test against the WAF:
 
 ```
-$ waf-tester -host localhost -scheme http -tests 913120-2.yaml -verbose
+$ waf-tester -url http://localhost -tests 913120-2.yaml -verbose
 FAIL	913120-2                       http://localhost/AppScan_fingerprint/MAC_ADDRESS_01234567890.html?9ABCDG1
   DESC       IBM fingerprint from (http://www-01.ibm.com/support/docview.wss?uid=swg21293132)
   FILE       913120-2.yaml
@@ -161,6 +161,6 @@ BasicRule "str:9ABCDG1" "msg:FTW 913120-2" "mz:ARGS" "s:$UWA:4" id:10002;
 Now rebuild the WAF container: hit `Ctrl-C` in the first terminal and run `waf-runner waf/nginx/naxsi` again. When we re-run the test we can see it's `OK` now:
 
 ```
-$ waf-tester -host localhost -scheme http -tests 913120-2.yaml
+$ waf-tester -url http://localhost -tests 913120-2.yaml
 OK	913120-2                       http://localhost/AppScan_fingerprint/MAC_ADDRESS_01234567890.html?9ABCDG1
 ```
