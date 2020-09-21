@@ -200,6 +200,7 @@ Processes using file or directory on `/usr` filesystem (mount point):
                          root          2 .rc.. kthreadd
 
 .. ACCESS:
+
 * `f`,`o`  - the process has a file open for reading or writing
 * `c`      - the process's current directory is on the filesystem
 * `e`, `t` - the process is currently executing a file
