@@ -2,7 +2,7 @@
 
 Two approaches to run (operate) a complex computing system: sysadmin, SRE.
 
-## Sysadmin approach
+# Sysadmin approach
 
 * traditional way
 * assemble and deploy SW components and then run them
@@ -19,7 +19,7 @@ Disadvantages
 * you end up with two different teams (product developers and product
   operators) that often live in conflict
 
-## SRE approach
+# SRE approach
 
 * invented by Google (planet-scale products)
 * hire software engineers to run products i.e. to do operations
@@ -39,12 +39,12 @@ Disadvantages
 * SRE team's unorthodox approach to service management requires strong
   management support
 
-## DevOps or SRE?
+# DevOps or SRE?
 
 * DevOps term is older - coined in 2008
 * DevOps is a generalization of several SRE core principles to a wider range of ogranizations, management structures and personnel
 * SRE is a specific [implementations of DevOps](https://cloud.google.com/blog/products/gcp/sre-vs-devops-competing-standards-or-close-friends) with some idyosyncratic extensions 
 
-## Source
+# Source
 
 * Site Reliability Engineering (2016)
