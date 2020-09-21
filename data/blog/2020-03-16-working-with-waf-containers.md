@@ -69,7 +69,7 @@ To make permanent changes you modify the WAF's `Dockerfile` and/or related confi
 `waf-tester` will run tests against a WAF (that is running on localhost in this case):
 
 ```
-$ waf-tester -host localhost -tests waf_tests/generic/basic-tests.yaml -scheme http
+$ waf-tester -url http://localhost -tests waf_tests/generic/basic-tests.yaml
 OK	RCE                  GET       http://localhost/?exec=/bin/bash
 OK	SQLi                 GET       http://localhost/?id=1'%20or%20'1'%20=%20'
 OK	OS file access       GET       http://localhost/?page=/etc/passwd
