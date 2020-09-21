@@ -279,6 +279,7 @@ http.Error(w, msg, http.StatusNotFound) // 404
 * a `ServeMux` aggregates a collection of `http.Handler`s into a single `http.Handler`
 
 ```
+// shop3.go
 func main() {
 	db := database{"shoes": 50, "socks": 5}
 	mux := http.NewServeMux()
