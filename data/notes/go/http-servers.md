@@ -21,11 +21,11 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
-# `net/http`
+# net/http
 
 * standard library package for implementing HTTP servers (and clients)
 
-## `http.Handler` interface
+## http.Handler interface
 
 * foundational element of `net/http`
 
@@ -111,7 +111,7 @@ msg := fmt.Sprintf("no such page: %s\n", req.URL)
 http.Error(w, msg, http.StatusNotFound) // 404
 ```
 
-## `http.ServeMux` struct
+## http.ServeMux struct
 
 * it's convenient to define logic for each URL in a separate function or method
 * related URLs (e.g. `/images/*.png`) might need similar logic
