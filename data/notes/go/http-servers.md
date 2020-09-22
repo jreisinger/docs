@@ -271,7 +271,7 @@ msg := fmt.Sprintf("no such page: %s\n", req.URL)
 http.Error(w, msg, http.StatusNotFound) // 404
 ```
 
-## `http.ServerMux` struct
+## `http.ServeMux` struct
 
 * it's convenient to define logic for each URL in a separate function or method
 * related URLs (e.g. `/images/*.png`) might need similar logic
