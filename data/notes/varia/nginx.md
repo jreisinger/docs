@@ -106,6 +106,11 @@ You might want to use the [proxy_redirect](http://nginx.org/en/docs/http/ngx_htt
 proxy_redirect ~*https?://[^/]+/(.+)$ https://$host/$1;
 ```
 
+# Rate limiting
+
+* https://www.nginx.com/blog/rate-limiting-nginx/
+* https://www.freecodecamp.org/news/nginx-rate-limiting-in-a-nutshell-128fe9e0126c/
+
 # Resources
 
 * [NGINX Cookbook](https://learning.oreilly.com/library/view/nginx-cookbook/9781492049098/) (2019)
