@@ -1,3 +1,4 @@
+* 2020-09-22: shop3.go
 * 2020-09-21: shop2.go, shop3.go
 * 2020-09-19: server1.go
 * 2020-09-18: fetch.go, shop.go
