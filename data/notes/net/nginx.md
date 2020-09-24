@@ -164,6 +164,7 @@ location /download/ {
 ```
 
 * [proxy_limit_rate](https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_limit_rate) - limits the speed of response reading from the proxied server, response buffering must be enabled
+* https://docs.nginx.com/nginx/admin-guide/security-controls/controlling-access-proxied-http/#limiting-the-bandwidth
 
 # Resources
 
