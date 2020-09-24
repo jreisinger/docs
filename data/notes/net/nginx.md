@@ -151,8 +151,10 @@ http {
 
 ## Limiting bandwidth
 
-[limit_rate](http://nginx.org/en/docs/http/ngx_http_core_module.html#limit_rate) directive (from the core module) limits the rate of response transmission to a client. The rate is specified in bytes per second. The limit is set per a request, and so if a client simultaneously opens two connections, the overall rate will be twice as much as the specified limit. So you may want to institute a connection limit as well as a bandwidth limit where applicable.
-
+* [limit_rate](http://nginx.org/en/docs/http/ngx_http_core_module.html#limit_rate) directive (from the core module) limits the rate of response transmission to a client
+* enables NGINX to share its upload bandwidth across all of the clients in a manner you specify
+* specified in bytes per second
+* the limit is set per a request, so you may want to institute a connection limit as well
 
 ```
 location /download/ {
