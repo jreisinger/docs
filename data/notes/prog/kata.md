@@ -1,4 +1,4 @@
-* 2020-09-24: shop3.go, timer.go
+* 2020-09-24: shop3.go, timer.go, timer.go
 * 2020-09-23: shop3.go
 * 2020-09-22: shop3.go
 * 2020-09-21: shop2.go, shop3.go
