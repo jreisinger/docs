@@ -148,6 +148,7 @@ func main() {
 # Timing out a goroutine
 
 ```
+// timer.go
 package main
 
 import (
