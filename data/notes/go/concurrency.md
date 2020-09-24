@@ -54,7 +54,7 @@ func fib(n int) int {
 }
 ```
 
-The goroutine is stopped by returning from `main` or by exiting the program.
+A goroutine is stopped by returning from `main` or by exiting the program.
 
 # Goroutines and channels
 
