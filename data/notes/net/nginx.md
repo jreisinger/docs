@@ -106,10 +106,60 @@ You might want to use the [proxy_redirect](http://nginx.org/en/docs/http/ngx_htt
 proxy_redirect ~*https?://[^/]+/(.+)$ https://$host/$1;
 ```
 
-# Rate limiting
+# Traffic limiting
+
+## Limiting connections
+
+[limit_conn](http://nginx.org/en/docs/http/ngx_http_limit_conn_module.html) module limits the number of connections per the defined key, in particular, the number of connections from a single IP address
+
+```
+http {
+    limit_conn_zone $binary_remote_addr zone=addr:10m;
+
+    ...
+
+    server {
+
+        ...
+
+        location /download/ {
+            limit_conn addr 1;
+        }
+```
+
+## Limiting rate
+
+[limit_req](http://nginx.org/en/docs/http/ngx_http_limit_req_module.html) module is used to limit the request processing rate per a defined key, in particular, the processing rate of requests coming from a single IP address. The limitation is done using the “leaky bucket” method.
+
+```
+http {
+    limit_req_zone $binary_remote_addr zone=one:10m rate=1r/s;
+
+    ...
+
+    server {
+
+        ...
+
+        location /search/ {
+            limit_req zone=one burst=5;
+        }
+```
 
 * https://www.nginx.com/blog/rate-limiting-nginx/
 * https://www.freecodecamp.org/news/nginx-rate-limiting-in-a-nutshell-128fe9e0126c/
+
+## Limiting bandwidth
+
+[limit_rate](http://nginx.org/en/docs/http/ngx_http_core_module.html#limit_rate) directive (from the core module) limits the rate of response transmission to a client. The rate is specified in bytes per second. The limit is set per a request, and so if a client simultaneously opens two connections, the overall rate will be twice as much as the specified limit. So you may want to institute a connection limit as well as a bandwidth limit where applicable.
+
+
+```
+location /download/ {
+    limit_rate_after 10m; # After 10 megabytes are dowloaded
+    limit_rate 1m;        # limit rate to 1 megabyte per second.
+}
+```
 
 # Resources
 
