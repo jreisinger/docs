@@ -21,8 +21,8 @@ go f()  // create a new goroutine that calls f(); don't wait
 ```
 
 ```
-// fib-spinner.go -- calculate fibonacci number using a slow algorithm and show
-// a spinner while calculating
+// fib-spinner.go -- calculate fibonacci number using 
+// a slow algorithm and show a spinner while calculating
 package main
 
 import (
