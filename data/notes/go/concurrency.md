@@ -1,10 +1,8 @@
-Concurrent programming structures the program as a composition of several independent activities. It's important because:
+Concurrent programming structures the program as a composition of several independent activities. It's important because the number of processors in a computer grows every year. The speed of processors not. Use cases:
 
 * web servers handle thousands of clients at once
 * GUIs render animations while simultaneously performing computations and network requests
 * even traditional batch programs (read input data, compute, write output) hide I/O latency and exploit multiple processors
-
-The number of processors in a computer grows every year. The speed of processors not.
 
 Go enables two styles of concurrent programming:
 
