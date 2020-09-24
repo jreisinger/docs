@@ -6,7 +6,7 @@ Concurrent programming structures the program as a composition of several indepe
 
 Go enables two styles of concurrent programming:
 
-1. CSP (communicating sequential processes) - values are passed between autonomous activities (goroutines) but variables are for the most part confined to a single activity.
+1. Communicating sequential processes (CSP) - values are passed between autonomous activities (goroutines) but variables are for the most part confined to a single activity.
 2. Shared memory multithreading - more traditional model.
 
 Reasoning about concurrent programs is inherently more difficult than about sequential ones.
