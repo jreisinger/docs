@@ -64,7 +64,7 @@ function myFunction() {
   } else {
     x.className = "topnav";
   }
-} 
+}
 </script>
 
 <!-- Top navigation bar: https://www.w3schools.com/howto/howto_js_topnav.asp -->
@@ -110,9 +110,11 @@ function myFunction() {
 
 {{.Body}}
 
-✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}.md">source</a>
 
-Last modified: {{ .LastModified }}
+<p class="footer">
+✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}.md">source</a>
+<span>Last modified: {{ .LastModified }}</span>
+</p>
 
 {{end}}
 
