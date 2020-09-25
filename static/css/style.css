@@ -85,7 +85,7 @@
 }
 
 .footer { display:block; }
-.footer span { display:block;float:right;}
+.footer span { display:block;float:right; }
 
 /* Headings */
 h1 {font-size:1.15em; counter-reset: h2counter;}
@@ -112,6 +112,7 @@ a:active { text-decoration: underline; }
 body {
     counter-reset: h2counter;
     font-family: "Courier New", Courier, monospace;
+    font-size: small;
 }
 
 /* Inline code and code blocks */
