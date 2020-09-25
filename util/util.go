@@ -86,8 +86,10 @@ func RemoveTralingSlash(s string) string {
 	return s
 }
 
-func LastModified(filename string) (string, error) {
-	output, err := exec.Command("git", "log", "-1", "--pretty=\"format:%ci\"", filename).CombinedOutput()
+func LastModified(repoPath, filename string) (string, error) {
+	cmd := exec.Command("git", "log", "-1", "--pretty=\"%ci\"", filename)
+	cmd.Dir = repoPath
+	output, err := cmd.CombinedOutput()
 	if err != nil {
 		return "", fmt.Errorf("%v: %s", err, output)
 	}

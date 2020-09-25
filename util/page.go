@@ -34,7 +34,7 @@ func RenderPage(repoURL string, repoPath string, urlPath string) (*Page, error) 
 		files := ListFiles(filePath)
 		return &Page{Title: title, Files: files, RepoURL: repoURL, UrlPath: urlPath, IsDir: true}, nil
 	} else if IsFile(filePath + ".md") {
-		lastModified, err := LastModified(filePath + ".md")
+		lastModified, err := LastModified(repoPath, filePath+".md")
 		if err != nil {
 			return nil, err
 		}
