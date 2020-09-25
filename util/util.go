@@ -1,6 +1,7 @@
 package util
 
 import (
+	"fmt"
 	"html/template"
 	"io/ioutil"
 	"log"
@@ -86,9 +87,9 @@ func RemoveTralingSlash(s string) string {
 }
 
 func LastModified(filename string) (string, error) {
-	output, err := exec.Command("git", "log -1 --pretty=\"format:%ci\"", filename).CombinedOutput()
+	output, err := exec.Command("git", "log", "-1", "--pretty=\"format:%ci\"", filename).CombinedOutput()
 	if err != nil {
-		return "", err
+		return "", fmt.Errorf("%v: %s", err, output)
 	}
 	return string(output), nil
 }

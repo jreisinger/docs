@@ -3,7 +3,6 @@ package util
 import (
 	"errors"
 	"html/template"
-	"log"
 	"path"
 )
 
@@ -16,6 +15,10 @@ type Page struct {
 	UrlPath      string
 	LastModified string
 }
+
+var (
+	ErrorNotFound = errors.New("resource not found (not all those who wander are lost)")
+)
 
 // RenderPage renders a file or a directory as an HTML page.
 func RenderPage(repoURL string, repoPath string, urlPath string) (*Page, error) {
@@ -33,13 +36,13 @@ func RenderPage(repoURL string, repoPath string, urlPath string) (*Page, error) 
 	} else if IsFile(filePath + ".md") {
 		lastModified, err := LastModified(filePath + ".md")
 		if err != nil {
-			log.Fatal(err)
+			return nil, err
 		}
 		// if file is a file return file contents
 		body := MdToHtml(filePath + ".md")
 		return &Page{Title: title, Body: body, RepoURL: repoURL, UrlPath: urlPath, LastModified: lastModified}, nil
 	}
 
-	err := errors.New("rendering page: resource not found (not all those who wander are lost)")
+	err := ErrorNotFound
 	return nil, err
 }

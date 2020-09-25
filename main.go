@@ -112,7 +112,11 @@ func handleRest(w http.ResponseWriter, r *http.Request) {
 
 	p, err := util.RenderPage(repoURL, repoPath, urlPath)
 	if err != nil {
-		http.Error(w, err.Error(), http.StatusNotFound)
+		if err == util.ErrorNotFound {
+			http.Error(w, err.Error(), http.StatusNotFound)
+		} else {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+		}
 		return
 	}
 
