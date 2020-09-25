@@ -16,7 +16,7 @@
     text-align: center;
     padding: inherit;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 /* Style inputs, select elements and textareas */
@@ -30,7 +30,8 @@
     /* resize: vertical; */
     float: right;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
