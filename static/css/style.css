@@ -48,8 +48,8 @@
   .topnav a:not(:nth-child(1)) {display: none;}
   .topnav form {display: none;}
   .topnav a.icon {
-    float: right;
     display: block;
+    float: right;
   }
 }
 
@@ -59,11 +59,15 @@
  * (display the links vertically instead of horizontally).
  */
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive a.icon {
+    display: block;
     position: absolute;
-    right: 0;
-    top: 0;
+    /* This doesn't feel right :-) */
+    right: 1.5%;
+    top: 4.5%;
   }
   .topnav.responsive a {
     float: none;
