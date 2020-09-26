@@ -10,3 +10,5 @@ Other web sites built and/or hosted by me
 * [quotes](https://quotes.reisinge.net) - quotes I've collected
 * [wiki](https://wiki.reisinge.net) - old wiki
 * [mail](https://mail.reisinge.net) ;-)
+
+> The best way to avoid burnout is to do something you truly enjoy in an environment that supports you. -- [Rob Pike](https://evrone.com/rob-pike-interview)
