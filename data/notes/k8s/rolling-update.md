@@ -14,9 +14,9 @@ spec:
     matchLabels:
       app: nginx-deploy
   strategy:
-    rollingUpdate:       # default, other type is Recreate 
-      maxSurge: 2        # maximum above desired number of pods
-      maxUnavailable: 1  # maximum unavailable pods
+    rollingUpdate:      # default, other type is Recreate 
+      maxSurge: 2       # maximum above desired number of pods
+      maxUnavailable: 1 # maximum unavailable pods
   template:
     metadata:
       labels:
