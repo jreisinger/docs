@@ -4,7 +4,7 @@
 
 ```sh
 -o wide       # more details
--o json       # complete object in JSON format
+-o yaml       # complete object in JSON format
 --v=6         # verbosity
 --no-headers
 --sort-by=.metadata.creationTimestamp
@@ -13,7 +13,7 @@
 ## Explain resource types
 
 ```sh
-kubectl explain svc
+kubectl explain pod.spec.containers.ports.protocol
 ```
 
 ## Generate resource manifest
