@@ -38,10 +38,8 @@ kubectl config get-contexts
 kubectl config use-context <context-name>
 ```
 
-Objects
-=======
-
-Basic objects
+Basi objects
+============
 
 <img src="https://github.com/jreisinger/notes/raw/master/static/kubernetes.png" style="max-width:100%;height:auto;"> 
 
