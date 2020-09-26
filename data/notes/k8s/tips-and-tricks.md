@@ -1,4 +1,4 @@
-# Info
+# Get info
 
 `kubectl` output flags
 
@@ -22,7 +22,7 @@ Generate resource manifest
 kubectl run demo --image=cloudnatived/demo:hello --dry-run -o yaml
 ```
 
-# Troubleshooting
+# Troubleshoot
 
 Show logs
 
@@ -43,7 +43,7 @@ kubectl run curl      --image=curlimages/curl --rm -it --restart=Never --coomand
 
 * `--command` -- command to run instead of container's default entrypoint
 
-# Interact with the objects
+# Interact
 
 Copy files
 
