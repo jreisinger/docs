@@ -43,10 +43,10 @@ Objects
 
 Basic objects
 
-<img src="https://github.com/jreisinger/notes/raw/master/static/kubernetes.png" style="max-width:100%;height:auto;">
+<img src="https://github.com/jreisinger/notes/raw/master/static/kubernetes.png" style="max-width:100%;height:auto;"> 
 
 * everything in Kubernetes is represented by a RESTful resource aka. a Kubernetes object ([resources vs objects](https://stackoverflow.com/questions/52309496/difference-between-kubernetes-objects-and-resources))
-* each object exists at a unique HTTP path, e.g. `https://your-k8s.com/api/v1/namespaces/default/pods/my-pod`
+* each object exists at a unique HTTP path
 * the `kubectl` makes requests to these URLs to access the objects
 * `get` is conceptually similar to `ps`
 
