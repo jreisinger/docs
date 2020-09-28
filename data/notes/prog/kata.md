@@ -1,4 +1,4 @@
-* 2020-09-29: bytecounter.go
+* 2020-09-28: bytecounter.go, dc_test.go
 * 2020-09-26: timer.go
 * 2020-09-25: work.go
 * 2020-09-24: shop3.go, timer.go, timer.go, timer.go
