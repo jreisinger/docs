@@ -12,9 +12,9 @@ A process in a Container sees a filesystem view composed from their Docker image
 * `pod.spec.volumes` - what volumes to provide for a Pod
 * `pod.spec.containers.volumeMounts` - where to mount volumes into Containers
 
-There are many types of volumes.
-
 # Types of Volumes
+
+There are many types of volumes. Some of them are listed here.
 
 ## [configMap](https://kubernetes.io/docs/concepts/storage/volumes/#configmap)
 
