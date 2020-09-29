@@ -1,13 +1,16 @@
 # Volumes
 
-A process in a Container sees a filesystem view composed from their Docker image (mounted at the root of the FS) and volumes (mounted at specified paths within the image).
+K8s volume abstraction fixes two problems:
 
-K8s volume abstraction fixes two problems: (1) ephemeral nature of on-disk files in Containers - when it restarts the files get lost (2) need to share files between Containers within a Pod.
+1. ephemeral nature of files in Containers - when a container restarts the files get lost
+2. need to share files between Containers within a Pod
+
+A process in a Container sees a filesystem view composed from their Docker image (mounted at the root of the FS) and volumes (mounted at specified paths within the image).
 
 * volume lifetime == Pod lifetime
 * volume is a directory (with some data) that is accessible to the Containers in a Pod
-* `.spec.volumes` - what volumes to provide for a Pod
-* `.spec.containers[*].volumeMounts` - where to mount volumes into Containers
+* `pod.spec.volumes` - what volumes to provide for a Pod
+* `pod.spec.containers.volumeMounts` - where to mount volumes into Containers
 
 There are many types of volumes.
 
