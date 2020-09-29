@@ -1,4 +1,4 @@
-* 2020-09-29: dup2.go
+* 2020-09-29: dup2.go, fetch.go
 * 2020-09-28: bytecounter.go, dc_test.go
 * 2020-09-26: timer.go
 * 2020-09-25: work.go
