@@ -117,8 +117,8 @@ func TestCountLines(t *testing.T) {
 dup3.go:
 
 ```
-// Dup3 reads only named files, not the standard input, since ReadFile requires
-// a file name argument.
+// Dup3 reads only named files, not the standard input, 
+// since ReadFile requires a file name argument.
 package main
 
 import (
