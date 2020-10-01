@@ -16,8 +16,8 @@ Index - basic unit of storage for data in Elasticsearch
 
 ## [Extractor](https://docs.graylog.org/en/latest/pages/extractors.html)
 
-* allow to instruct Graylog how to extract data from any text in a received message
-* work only on text fields (not numeric fields or anythin else)
+* allows to instruct Graylog how to extract data from any text in a received message
+* work only on text fields (not numeric fields or anything else)
 
 ## Stream
 
