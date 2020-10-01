@@ -34,8 +34,8 @@ Index - basic unit of storage for data in Elasticsearch
 
 ## Alert 
 
-* periodic searches that can trigger some notification when a defined condition is met
-* are composed of: 1. alert condition 2. alert notification
+* periodic search that can trigger some notification when a defined condition is met
+* composed of: 1. alert condition 2. alert notification
 
 # Configuration
 
