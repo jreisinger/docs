@@ -22,7 +22,7 @@ Index - basic unit of storage for data in Elasticsearch
 ## Stream
 
 * think of it as tagging of incoming messages
-* route messages into categories in real time
+* routes messages into categories in real time
 * many uses: message categorization, access control, messages parsing and enrichment, ...
 * messages can belong to one or more streams
 
