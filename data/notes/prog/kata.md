@@ -1,3 +1,4 @@
+* 2020-10-01: server1.go
 * 2020-09-30: ping-pong.go
 * 2020-09-29: dup2.go, fetch.go
 * 2020-09-28: bytecounter.go, dc_test.go
