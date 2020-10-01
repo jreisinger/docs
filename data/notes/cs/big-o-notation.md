@@ -11,7 +11,7 @@ NOTE: [Logarithms](https://www.rapidtables.com/calc/math/Log_Calculator.html) (l
 For example, *simple search* is O(n) algorithm and *binary search* is O(log n) algorithm. It means that if you have for example 100 (sorted) items you need to search through you need at most (worst-case scenario) 100 steps using simple search and 7 steps (guesses, operations) using binary search. Also notice that the growth rate of the binary search algorithm is much smaller.
 
 | n     | Simple search O(n) | Binary search O(log n) |
-|:------|:-------------------|:-----------------------|
+|------:|-------------------:|-----------------------:|
 | 10    | 10 steps           | 4 steps                |
 | 100   | 100 steps          | 7 steps                |
 | 1 000 | 1 000 steps        | 10 steps               |
