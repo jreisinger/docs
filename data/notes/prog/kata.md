@@ -1,4 +1,4 @@
-* 2020-10-01: server1.go
+* 2020-10-01: server2.go
 * 2020-09-30: ping-pong.go
 * 2020-09-29: dup2.go, fetch.go
 * 2020-09-28: bytecounter.go, dc_test.go
@@ -8,7 +8,7 @@
 * 2020-09-23: shop3.go
 * 2020-09-22: shop3.go
 * 2020-09-21: shop2.go, shop3.go
-* 2020-09-19: server1.go
+* 2020-09-19: server2.go
 * 2020-09-18: fetch.go, shop.go
 * 2020-09-17: bytecounter.go, dc_test.go
 * 2020-09-16: bytecounter.go
@@ -30,7 +30,7 @@
 * 2020-08-27: dup1.go
 * 2020-08-26: shop2.go
 * 2020-08-25: shop.go, shop2.go
-* 2020-08-24: server1.go
+* 2020-08-24: server2.go
 * 2020-08-22: )-:
 * 2020-08-21: )-:
 * 2020-08-20: )-:
@@ -50,9 +50,9 @@
 * 2020-08-04: ping-pong.go
 * 2020-08-03: fetchall.go
 * 2020-08-01: )-:
-* 2020-07-31: ping-pong.go, server1.go
+* 2020-07-31: ping-pong.go, server2.go
 * 2020-07-30: )-:
-* 2020-07-29: server1.go, ping-pong.go
+* 2020-07-29: server2.go, ping-pong.go
 * 2020-07-28: fetchall.go
 * 2020-07-27: fetchall.go
 * 2020-07-25: fetch.go, fetchall.go
