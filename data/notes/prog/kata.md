@@ -1,6 +1,6 @@
 Use [katas](https://github.com/jreisinger/katas) to get statistics.
 
-* 2020-10-02: shop.go, shop2.go
+* 2020-10-02: shop.go, shop2.go, shop3.go
 * 2020-10-01: server2.go
 * 2020-09-30: ping-pong.go
 * 2020-09-29: dup2.go, fetch.go
