@@ -1,3 +1,5 @@
+> He used the word "kata", because he understood that repetition creates habits, and habits are what enable mastery. -- The Phoenix Project
+
 * 2020-10-02: shop.go
 * 2020-10-01: server2.go
 * 2020-09-30: ping-pong.go
