@@ -1,3 +1,4 @@
+* 2020-10-02: shop.go
 * 2020-10-01: server2.go
 * 2020-09-30: ping-pong.go
 * 2020-09-29: dup2.go, fetch.go
