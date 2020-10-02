@@ -1,3 +1,5 @@
+> We are what we repeatedly do. Excellence, then, is not an act but a habit. -- Will Durant (Aristotle)
+
 > He used the word "kata", because he understood that repetition creates habits, and habits are what enable mastery. -- The Phoenix Project
 
 * 2020-10-02: shop.go
