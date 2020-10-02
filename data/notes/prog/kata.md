@@ -1,6 +1,4 @@
-> We are what we repeatedly do. Excellence, then, is not an act but a habit. -- Will Durant (Aristotle)
-
-> He used the word "kata", because he understood that repetition creates habits, and habits are what enable mastery. -- The Phoenix Project
+Use [katas](https://github.com/jreisinger/katas) to get statistics.
 
 * 2020-10-02: shop.go
 * 2020-10-01: server2.go
@@ -70,4 +68,6 @@
 * 2020-07-17: dup2.go, fetch.go
 * 2020-07-16: dup2.go
 
-Use [katas](https://github.com/jreisinger/katas) to get statistics.
+> We are what we repeatedly do. Excellence, then, is not an act but a habit. -- Will Durant (Aristotle)
+
+> He used the word "kata", because he understood that repetition creates habits, and habits are what enable mastery. -- The Phoenix Project
