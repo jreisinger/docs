@@ -12,9 +12,9 @@ import (
 )
 
 func main() {
-    s := "The quick brown fox. Or was it a blue fox?"
+    s := "The quick brown fox."
     ws := regexp.MustCompile(`\s+`)
     words := ws.Split(s, -1) 
-    fmt.Printf("%d\n", len(words)) // 10
+    fmt.Printf("%d\n", len(words)) // 4
 }
 ```
