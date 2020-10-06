@@ -1,6 +1,4 @@
-<img src="https://covers.oreillystatic.com/images/9780596003432/lrg.jpg" style="max-width:100%;height:auto;float:right">
-
-System administration philosophy of Æ. Frish
+System administration philosophy of Æ. Frish (2002)
 
 * Know how things work.
 * Plan it before you do it.
