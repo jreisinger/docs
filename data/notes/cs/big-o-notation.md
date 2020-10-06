@@ -36,4 +36,3 @@ All this means that binary search is faster than simple search and it gets a lot
 
 * TPoCSA, Appendix C
 * Grokking Algorithms
-* http://bigocheatsheet.com/
