@@ -1,3 +1,5 @@
+NOTE: most of the sites here need to be reviewed (I just copy-pasted them from somewhere)
+
 # My stuff
 
 * https://wiki.reisinge.net/Jobs
