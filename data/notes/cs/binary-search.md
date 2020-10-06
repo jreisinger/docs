@@ -28,4 +28,4 @@ My [Perl](https://github.com/jreisinger/algorithms-with-perl/blob/master/binary-
 
 More
 
-* https://www.youtube.com/watch?v=SE4P7IVCunE&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=11
+* [MIT OpenCourseWare](https://www.youtube.com/watch?v=SE4P7IVCunE&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=11) (video)
