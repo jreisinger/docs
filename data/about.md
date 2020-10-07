@@ -2,7 +2,7 @@ Hello and welcome to my non-official homepage :-). The official one is [here](ht
 
 I mostly keep technology related notes here.
 
-I am interested, among other things, in how to build and manage computing systems and software tools. I usually work somewhere at the infrastructure level. These days my main areas of interest are Go, Kubernetes and DevOps/SRE stuff. Before I concentrated on Perl, Linux, networking and security.
+I am interested, among other things, in how to build and manage software systems and tools. I usually work somewhere at the infrastructure level. These days my main areas of interest are Go, Kubernetes and DevOps/SRE stuff. Before I concentrated on Perl, Linux, networking and security.
 
 Other web sites built and/or hosted by me
 
