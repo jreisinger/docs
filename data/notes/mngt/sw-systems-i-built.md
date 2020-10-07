@@ -1,18 +1,18 @@
 Some of the SW systems I (co-)built
 
-* Grafana with custom authn (docker-sec-auth-ws) and provisioning (docker-sec-grafana-ws-provision) (Bash -> Go; PN)
-* [checkip](https://github.com/jreisinger/checkip) (Go)
-* [homepage](https://github.com/jreisinger/homepage) (Go, HTML, Javascript)
-* [runp](https://github.com/jreisinger/runp) (Go)
-* WebShield (Bash, Kubernetes; PN)
-* Managed WAF (Ansible, Docker, Nginx; PN)
-* [tech-terms](https://github.com/jreisinger/tech-terms) (Go)
+* docker-sec-auth-ws, docker-sec-grafana-ws-provision - Grafana with custom authn and provisioning (Bash -> Go; PN)
+* [checkip](https://github.com/jreisinger/checkip) - find out information about an IP address  (Go)
+* [homepage](https://github.com/jreisinger/homepage) - responsive wiki-style web page (Go, HTML, Javascript)
+* [runp](https://github.com/jreisinger/runp) - run shell commands in parallel (Go)
+* [WebShield](https://portal.webshield.pan-net.cloud/) - cloud WAF (Bash, Python, Go, Kubernetes; PN)
+* managed-waf - Nginx and Naxsi based WAF (Ansible, Docker, Nginx, OpenStack; PN)
+* [tech-terms](https://github.com/jreisinger/tech-terms) - search technical terms in job sites (Go)
 * Provisioning portal (Python; PN)
-* [App::Monport](https://github.com/jreisinger/monitor2) (Perl)
-* Splunk infra [monitoring](https://github.com/jreisinger/monitor2) (Python, Perl, Bash; FD)
-* VMs monitoring (Perl, MySQL; IST)
-* Backups monitoring (Perl, MySQL; IST)
-* Testing framework (Bash; Kedros)
+* [App::Monport](https://metacpan.org/pod/App::Monport) - monitor network ports for changes (Perl)
+* [monitor2](https://github.com/jreisinger/monitor2) - Splunk infra monitoring (Python, Perl, Bash; FD)
+* vmstat - VMs monitoring (Perl, MySQL; IST)
+* bakstat - backups monitoring (Perl, MySQL; IST)
+* Web automation scripts (WAS) - an attempt for automation and testing framework (Bash, Perl; Kedros)
 
 Questions
 
