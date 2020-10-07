@@ -251,6 +251,35 @@ source ./$VER/hacking/env-setup
 ansible --version
 ```
 
+## Deal with unreliable networks or services
+
+The last four lines do the trick:
+
+```
+    - name: Safe-upgrade all system packages
+      apt:
+        upgrade: safe
+        state: latest
+        update_cache: yes
+      tags:
+        - sys-upgrade
+      register: upgrade
+      retries: 3
+      delay: 3
+      until: upgrade is not failed
+```
+
+```
+    - name: Generate or renew cert
+      command: certbot certonly --noninteractive --standalone -d {{ fqdn }}
+      notify:
+        - restart container
+      retries: 3
+      delay: 3
+      register: result
+      until: result.rc == 0
+```
+
 # Sources
 
 * [Ansible: Up and Running](https://github.com/ansiblebook/ansiblebook) (2017)
