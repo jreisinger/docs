@@ -7,7 +7,6 @@ Some of the SW systems I (co-)built
 * [WebShield](https://portal.webshield.pan-net.cloud/) - cloud WAF (Bash, Python, Go, Kubernetes; PN)
 * managed-waf - Nginx and Naxsi based WAF (Ansible, Docker, Nginx, OpenStack; PN)
 * [tech-terms](https://github.com/jreisinger/tech-terms) - search technical terms in job sites (Go)
-* Provisioning portal (Python; PN)
 * [App::Monport](https://metacpan.org/pod/App::Monport) - monitor network ports for changes (Perl)
 * [monitor2](https://github.com/jreisinger/monitor2) - Splunk infra monitoring (Python, Perl, Bash; FD)
 * vmstat - VMs monitoring (Perl, MySQL; IST)
