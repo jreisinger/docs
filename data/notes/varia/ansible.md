@@ -1,5 +1,4 @@
-Terminology
------------
+# Terminology
 
 * configuration management - managing the state of the servers
 * deployment - taking SW written in-house and setting it up on a server
@@ -36,8 +35,7 @@ Ansible workflow for each task
 You're best off writing playbooks for your org rather than trying to reuse
 generic playbooks.
 
-One liners
-----------
+# One liners
 
 ```
 $ ansible all -m ping
@@ -58,8 +56,7 @@ user=ubuntu stage=present" all -i inventories/dev
 ansible server1 -m setup
 ```
 
-Quoting
--------
+# Quoting
 
 If you reference a variable *right after* the module name:
 ```
@@ -73,8 +70,7 @@ If your argument contains a collon:
   debug: "msg='The debug module will print a message: neat, eh?'"
 ```
 
-Variables
----------
+# Variables
 
 1) In inventory file
 
@@ -122,8 +118,7 @@ vars_files:
 
 See [variables](http://docs.ansible.com/ansible/latest/playbooks_variables.html) for more.
 
-Roles
------
+# Roles
 
 Primary mechanism for breaking a playbook into multiple files
 
@@ -163,16 +158,17 @@ Roles with variables:
 
 See [roles](https://github.com/ansiblebook/ansiblebook/tree/master/roles/playbooks/roles) for more.
 
-Tips and tricks
----------------
+# Tips and tricks
 
 Achieve idempotence with a `command` module:
+
 ```
 - name: create a Vagrantfile
   command: vagrant init {{ box }} creates=Vagrantfile
 ```
 
 Change the way Ansible identifies that a task has changed state (`changed_when`):
+
 ```
 - name: initialize the database
     django_manage:
@@ -207,6 +203,7 @@ Change the way Ansible identifies that a task has changed state (`changed_when`)
 ```
 
 View the output of a task:
+
 ```
 - name: initialize the database
   django_manage:
@@ -224,6 +221,7 @@ View the output of a task:
 ```
 
 Run a task and print its output, even if it fails:
+
 ```
 - name: Run myprog
   command: /opt/myprog
@@ -242,7 +240,7 @@ Run a task and print its output, even if it fails:
 # more tasks here
 ```
 
-Have multiple ansible versions on a Laptop:
+Have multiple ansible versions on a laptop:
 
 ```
 mkdir ansibles
@@ -253,7 +251,6 @@ source ./$VER/hacking/env-setup
 ansible --version
 ```
 
-Source
-------
+# Sources
 
 * [Ansible: Up and Running](https://github.com/ansiblebook/ansiblebook) (2017)
