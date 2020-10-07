@@ -274,9 +274,9 @@ The last four lines do the trick:
       command: certbot certonly --noninteractive --standalone -d {{ fqdn }}
       notify:
         - restart container
+      register: result
       retries: 3
       delay: 3
-      register: result
       until: result.rc == 0
 ```
 
