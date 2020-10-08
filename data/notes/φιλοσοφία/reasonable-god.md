@@ -1,23 +1,20 @@
-It looks like it's not possible to prove the God's existence using the [scientific method](http://www.wall.org/~aron/blog/the-pillars-of-science/). Is it still reasonable to think that God exists?
-
 Fields of study by the strength of evidence they can provide on average:
 
 ```
 Math & Logic > Science > History > Most Philosophy
 ```
 
-# Reasonable people who believe that God exists
+It looks like it's not possible to prove the God's existence using the [scientific method](http://www.wall.org/~aron/blog/the-pillars-of-science/). Is it still reasonable to think that God exists?
 
-* [C.S. Lewis](https://en.wikipedia.org/wiki/C._S._Lewis) (1898 - 1963) - English literature (Oxford)
-* [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) (1938) - computer scientist (Stanford)
-* [Larry Wall](https://en.wikipedia.org/wiki/Larry_Wall) (1954) - language designer
-* [Edward Feser](http://edwardfeser.blogspot.com/) (1968) - philosopher
-* [Aron Wall](http://www.wall.org/~aron/blog/bio/) - theoretical physicist (Cambridge)
-* [Luke Barnes](https://www.closertotruth.com/contributor/luke-barnes/profile) - theoretical physicist (Australia)
+# Historical arguments
 
-# Reasonable atheists
+For
 
-* [Richard P. Feynman](http://www.wall.org/~aron/blog/what-about-science/) - physicist
+* search [Aron's blog](http://www.wall.org/~aron/blog/)
+
+Against
+
+* Bible is not historical, i.e. it can't be believed.
 
 # Philosofical arguments
 
@@ -32,15 +29,18 @@ Against
 * [Euthypro dilemma](https://en.wikipedia.org/wiki/Euthyphro_dilemma) <=> Objective universal morality.
 * Argument from the evil - an omnipotent and benevolent God should have eliminated all suffering. We observe plenty of man made and natural suffering in the world. <=> Free will can not be achieved without allowing the possibility of doing wrong things. What about suffering not cause by people (like tsunami)?
 
-# Historical arguments
+# Reasonable people who believe that God exists
 
-For
+* [C.S. Lewis](https://en.wikipedia.org/wiki/C._S._Lewis) (1898 - 1963) - English literature (Oxford)
+* [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) (1938) - computer scientist (Stanford)
+* [Larry Wall](https://en.wikipedia.org/wiki/Larry_Wall) (1954) - language designer
+* [Edward Feser](http://edwardfeser.blogspot.com/) (1968) - philosopher
+* [Aron Wall](http://www.wall.org/~aron/blog/bio/) - theoretical physicist (Cambridge)
+* [Luke Barnes](https://www.closertotruth.com/contributor/luke-barnes/profile) - theoretical physicist (Australia)
 
-* search [Aron's blog](http://www.wall.org/~aron/blog/)
+# Reasonable atheists
 
-Against
-
-* Bible is not historical, i.e. it can't be believed.
+* [Richard P. Feynman](http://www.wall.org/~aron/blog/what-about-science/) - physicist
 
 # More
 
