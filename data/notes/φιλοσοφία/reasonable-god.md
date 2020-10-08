@@ -6,8 +6,6 @@ Fields of study by the strength of evidence they can provide on average:
 Math & Logic > Science > History > Most Philosophy
 ```
 
-NOTE: The existence of God does not, of course, depend on any particular person's ability to effectively argue for (or against) him. -- [Aron Wall](http://www.wall.org/~aron/blog/thoughts-on-the-carroll-craig-debate/)
-
 # Reasonable people who believe that God exists
 
 * [C.S. Lewis](https://en.wikipedia.org/wiki/C._S._Lewis) (1898 - 1963) - English literature (Oxford)
@@ -48,5 +46,6 @@ Against
 
 * Can religion be based on [evidence](http://www.wall.org/~aron/evidence.htm)?
 * https://www.reasonablefaith.org/media/debates/is-faith-in-god-reasonable/
-* https://www.youtube.com/watch?v=bhfkhq-CM84
+* [Is Faith in God Reasonable? Lane Craig vs Alex Rosenberg](https://www.youtube.com/watch?v=bhfkhq-CM84)
 
+NOTE about debates: The existence of God does not, of course, depend on any particular person's ability to effectively argue for (or against) him. -- [Aron Wall](http://www.wall.org/~aron/blog/thoughts-on-the-carroll-craig-debate/)
