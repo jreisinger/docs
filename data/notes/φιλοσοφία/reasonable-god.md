@@ -1,38 +1,52 @@
-Is it reasonable to think that God exists?
+It looks like it's not possible to prove the God's existence using the [scientific method](http://www.wall.org/~aron/blog/the-pillars-of-science/). Is it still reasonable to think that God exists?
 
-# Arguments for
+Fields of study by the strength of evidence they can provide on average:
 
-## There were and are reasonable people who believe that God exists
+```
+Math & Logic > Science > History > Most Philosophy
+```
 
-* [C.S. Lewis](https://en.wikipedia.org/wiki/C._S._Lewis) (1898 - 1963)
-* [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) (1938)
-* [Larry Wall](https://en.wikipedia.org/wiki/Larry_Wall) (1954)
-* [Aron Wall](http://www.wall.org/~aron/blog/bio/)
-* [Róbert Bezák](https://en.wikipedia.org/wiki/R%C3%B3bert_Bez%C3%A1k) (1960)
-* [Luke Barnes](https://www.closertotruth.com/contributor/luke-barnes/profile)
+NOTE: The existence of God does not, of course, depend on any particular person's ability to effectively argue for (or against) him. -- [Aron Wall](http://www.wall.org/~aron/blog/thoughts-on-the-carroll-craig-debate/)
 
-## Logical (philosofical) arguments
+# Reasonable people who believe that God exists
+
+* [C.S. Lewis](https://en.wikipedia.org/wiki/C._S._Lewis) (1898 - 1963) - English literature (Oxford)
+* [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) (1938) - computer scientist
+* [Larry Wall](https://en.wikipedia.org/wiki/Larry_Wall) (1954) - language designer
+* [Edward Feser](http://edwardfeser.blogspot.com/) (1968) - philosopher
+* [Aron Wall](http://www.wall.org/~aron/blog/bio/) - theoretical physicist (Cambridge)
+* [Luke Barnes](https://www.closertotruth.com/contributor/luke-barnes/profile) - theoretical physicist (Australia)
+
+# Reasonable atheists
+
+* [Richard P. Feynman](http://www.wall.org/~aron/blog/what-about-science/) - physicist
+
+# Philosofical arguments
+
+For
 
 * Existence of objective universal morality or decent behaviour or fair play (Lewis).
 * [Kalam cosmological argument](https://en.wikipedia.org/wiki/Kalam_cosmological_argument)
 * [Leibniz's argument for the existence of God](https://www.reasonablefaith.org/videos/interviews-panels/leibnizs-argument-for-the-existence-of-god-bobby-conway/)
 
-# Arguments against
-
-## There were and are reasonable people who believe that God does not exist (atheists)
-
-* [Richard P. Feynman](http://www.wall.org/~aron/blog/what-about-science/)
-
-## Logical Arguments
+Against
 
 * [Euthypro dilemma](https://en.wikipedia.org/wiki/Euthyphro_dilemma) <=> Objective universal morality.
 * Argument from the evil - an omnipotent and benevolent God should have eliminated all suffering. We observe plenty of man made and natural suffering in the world. <=> Free will can not be achieved without allowing the possibility of doing wrong things. What about suffering not cause by people (like tsunami)?
+
+# Historical arguments
+
+For
+
+* search [Aron's blog](http://www.wall.org/~aron/blog/)
+
+Against
+
 * Bible is not historical, i.e. it can't be believed.
 
 # More
 
-* https://www.youtube.com/watch?v=bhfkhq-CM84
-* https://www.reasonablefaith.org/media/debates/is-faith-in-god-reasonable/
 * Can religion be based on [evidence](http://www.wall.org/~aron/evidence.htm)?
+* https://www.reasonablefaith.org/media/debates/is-faith-in-god-reasonable/
+* https://www.youtube.com/watch?v=bhfkhq-CM84
 
-NOTE: The existence of God does not, of course, depend on any particular person's ability to effectively argue for (or against) him. -- [Aron Wall](http://www.wall.org/~aron/blog/thoughts-on-the-carroll-craig-debate/)
