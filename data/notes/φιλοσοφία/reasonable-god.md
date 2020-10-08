@@ -11,7 +11,7 @@ NOTE: The existence of God does not, of course, depend on any particular person'
 # Reasonable people who believe that God exists
 
 * [C.S. Lewis](https://en.wikipedia.org/wiki/C._S._Lewis) (1898 - 1963) - English literature (Oxford)
-* [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) (1938) - computer scientist
+* [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) (1938) - computer scientist (Stanford)
 * [Larry Wall](https://en.wikipedia.org/wiki/Larry_Wall) (1954) - language designer
 * [Edward Feser](http://edwardfeser.blogspot.com/) (1968) - philosopher
 * [Aron Wall](http://www.wall.org/~aron/blog/bio/) - theoretical physicist (Cambridge)
