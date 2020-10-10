@@ -6,7 +6,12 @@ Fields of study by the strength of evidence they can provide on average:
 Math & Logic > Science > History > Most Philosophy
 ```
 
-# Historical arguments
+# Historical 
+
+Sources of evidence
+
+* Written documents
+* Archeological findings
 
 For
 
