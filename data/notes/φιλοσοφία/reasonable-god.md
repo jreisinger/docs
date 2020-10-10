@@ -16,7 +16,7 @@ Against
 
 * Bible is not historical, i.e. it can't be believed.
 
-# Philosofical arguments
+# Philosophical arguments
 
 For
 
