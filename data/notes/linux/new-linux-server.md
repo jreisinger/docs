@@ -6,7 +6,7 @@ Things I do after installing a fresh Linux machine.
 
  1. Upgrade all packages. Ex. `pacman -Syu`.
 
- 1. Disable root logging in with password. I.e. [allow only login with ssh key](http://serverfault.com/a/132583) (scripts using ssh keys can still login). Ex. set `PermitRootLogin without-password` in `/etc/ssh/sshd_config` and restart `sshd`.
+ 1. Disable root logging in with password, allow only login with ssh key (so scripts using ssh keys can still login). Set `PermitRootLogin prohibit-password` (or `PermitRootLogin without-password`) in `/etc/ssh/sshd_config` and restart `sshd`. `PermitRootLogin prohibit-password` is default in newest versions of OpenSSH.
 
  1. Make sure [no unnecessary services](https://metacpan.org/pod/App::Monport) are running, ex.:
 
