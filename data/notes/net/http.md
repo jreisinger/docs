@@ -1,6 +1,6 @@
 *2018-01, Pan-Net*
 
-## Intro
+# Intro
 
 What
 
@@ -33,7 +33,7 @@ r = requests.get('http://httpbin.org/headers')
 print(r.text)
 ```
 
-## HTTP message
+# HTTP message
 
 HTTP message format (both request `>` and response `<`)
 
@@ -109,7 +109,7 @@ POST
 * the result of POST can't be cached
 * can't be retried automatically if the response does not arrive
 
-## Encoding
+# Encoding
 
 HTTP transfer encoding <-> content encoding
 
@@ -141,7 +141,7 @@ Content encoding - if the content type ^ is text, what encoding will be used to 
 Content-Type: text/html; charset=utf-8
 ```
 
-## Authentication and cookies
+# Authentication and cookies
 
 Basic Auth (HTTP-mediated authentication)
 
@@ -185,7 +185,7 @@ Cookie: session-id=d41d8cd98f00b204e9800998ecf8427e
 * later when you log in, your browsing history can be copied into your 
     permanent account history :-/
 
-## Keep-Alive
+# Keep-Alive
 
 * the three-way TCP handshake can be avoided if a connection is already open
 * HTTP/1.1 - default to keep HTTP connection open after a request to re-use a
@@ -195,7 +195,7 @@ Cookie: session-id=d41d8cd98f00b204e9800998ecf8427e
 * web browsers often create four or more simultaneous TCP connections per site
     to get the resources in parallel
 
-## [Status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+# [Status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 
 Returned by a server with each response.
 
@@ -235,7 +235,7 @@ Returned by a server with each response.
 * 503 Service unavailable - server down for maintenance or overloaded
 * 504 Gateway timeout - the server is a proxy and it did not get a response from the upstream server in order to complete the request
 
-## Various
+# Various
 
 Minimally correct request nowadays (otherwise 404):
 
@@ -249,7 +249,7 @@ Caching headers
 * allow client to cache and reuse resources locally
 * let server skip redelivering an unchanged resource
 
-## Sources
+# Sources
 
 * Foundations of Python Network Programming (2014) - [ch. 9](https://www.safaribooksonline.com/library/view/foundations-of-python/9781430258551/9781430258544_Ch09.xhtml)
 * Network Programming with Go - ch. 8
