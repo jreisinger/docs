@@ -11,4 +11,4 @@ Other web sites built and/or hosted by me
 * [wiki](https://wiki.reisinge.net) - old wiki
 * [mail](https://mail.reisinge.net) ;-)
 
-> The best way to avoid burnout is to do something you truly enjoy in an environment that supports you. -- [Rob Pike](https://evrone.com/rob-pike-interview)
+> The process of preparing programs for a digital computer is especially attractive, not only because it can be economically and scientifically rewarding, but also because it can be an aestethic experience much like composing poetry or music. -- Donald Knuth (1968)
