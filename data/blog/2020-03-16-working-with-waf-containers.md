@@ -69,7 +69,7 @@ To make permanent changes you modify the WAF's `Dockerfile` and/or related confi
 `waf-tester` will run tests against a WAF (that is running on localhost in this case):
 
 ```
-$ waf-tester -url http://localhost -tests waf_tests/generic/basic-tests.yaml
+$ waf-tester -tests waf_tests/generic/basic-tests.yaml -print OK
 OK	RCE                  GET       http://localhost/?exec=/bin/bash
 OK	SQLi                 GET       http://localhost/?id=1'%20or%20'1'%20=%20'
 OK	OS file access       GET       http://localhost/?page=/etc/passwd
@@ -132,7 +132,7 @@ tests:
 and run the test against the WAF:
 
 ```
-$ waf-tester -url http://localhost -tests 913120-2.yaml -verbose
+$ waf-tester -tests 913120-2.yaml -verbose
 FAIL	913120-2                       http://localhost/AppScan_fingerprint/MAC_ADDRESS_01234567890.html?9ABCDG1
   DESC       IBM fingerprint from (http://www-01.ibm.com/support/docview.wss?uid=swg21293132)
   FILE       913120-2.yaml
@@ -158,9 +158,4 @@ Let's try to add (a rather naïve) custom WAF rule to fix the failing test:
 BasicRule "str:9ABCDG1" "msg:FTW 913120-2" "mz:ARGS" "s:$UWA:4" id:10002;
 ```
 
-Now rebuild the WAF container: hit `Ctrl-C` in the first terminal and run `waf-runner waf/nginx/naxsi` again. When we re-run the test we can see it's `OK` now:
-
-```
-$ waf-tester -url http://localhost -tests 913120-2.yaml
-OK	913120-2                       http://localhost/AppScan_fingerprint/MAC_ADDRESS_01234567890.html?9ABCDG1
-```
+Now rebuild the WAF container: hit `Ctrl-C` in the first terminal and run `waf-runner waf/nginx/naxsi` again. When we re-run the test we can see it's `OK` now.
