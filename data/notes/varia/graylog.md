@@ -4,7 +4,7 @@
 * alert - type of event where the system decides it’s worth notifying someone
 * metrics - usually time based set of numbers that give info about something (e.g. how many authentication requests have happened, or the number of web requests made, or the CPU usage)
 
-Logs provide more context but are harder to store.
+Logs provide more context but are more difficult to store and process because it's more data and it's often unstructured.
 
 # Components
 
