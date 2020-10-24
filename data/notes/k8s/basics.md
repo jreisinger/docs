@@ -1,4 +1,4 @@
-Kubernetes is the operating system for cloud-native applications.
+Kubernetes is a distributed operating system. Applications running on it are called cloud-native.
 
 `kubectl` configuration
 =======================
