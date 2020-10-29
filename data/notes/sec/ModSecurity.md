@@ -34,7 +34,7 @@ SecRule REQUEST_URI "@streq /index.php" "id:1,phase:1,t:lowercase,deny"
 
 ### SecDefaultAction
 
-* If no ACTIONS are provided is `SecRule`, default actions apply as per `SecDefaultAction`
+If no ACTIONS are provided is `SecRule`, default actions apply as per `SecDefaultAction`.
 
 ```
 SecDefaultAction "phase:1,log,auditlog,pass"
