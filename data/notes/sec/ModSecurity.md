@@ -17,7 +17,9 @@ Tips
 * audit logs are great for visibility but bad for performance - you can disable them via `SecAuditEngine off` (you still have the Nginx error logs)
 * you should not inspect static content (like images) for performance reasons
 
-## `SecRule` ModSecurity directive
+## Directives
+
+### SecRule
 
 ```
 SecRule VARIABLES   "OPERATOR"                "TRANSFORMATIONS,ACTIONS"
@@ -30,7 +32,16 @@ SecRule REQUEST_URI "@streq /index.php" "id:1,phase:1,t:lowercase,deny"
 * TRANSFORMATIONS - how to normalize VARIABLES data
 * ACTIONS - what to do when rule matches
 
-More
+### SecDefaultAction
+
+* If no ACTIONS are provided is `SecRule`, default actions apply as per `SecDefaultAction`
+
+```
+SecDefaultAction "phase:1,log,auditlog,pass"
+SecDefaultAction "phase:2,log,auditlog,pass"
+```
+
+## More
 
 * https://www.modsecurity.org/CRS/Documentation/making.html
 * https://support.kemptechnologies.com/hc/en-us/articles/209635223-How-to-write-a-WAF-rule-Modsecurity-Rule-Writing
