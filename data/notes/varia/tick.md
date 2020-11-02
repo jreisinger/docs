@@ -1,6 +1,6 @@
-TICK stack is a collection of open source components for easy storing, visualization and monitoring of time series data such as metrics and events
+TICK stack is a collection of open source components for easy storing, visualization and monitoring of time series data such as metrics and events.
 
-* Telegraf - serve agent for collecting and reporting metrics
+* Telegraf - server agent for collecting and reporting metrics
 * InfluxDB - high-performance time series database
 * Chronograf - GUI
 * Kapacitor - data-processing engine that can (stream, batch) process data from InfluxDB
