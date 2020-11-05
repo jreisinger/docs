@@ -12,6 +12,10 @@ Useful ([non](https://golang.org/pkg/) [obvious](https://blog.golang.org/)) link
 * [Go for Perl hackers](https://github.com/oalders/go-for-perl-hackers)
 * [Pete's Go examples](https://github.com/pete911/go-examples)
 
-Blogs
+Community
+
+* [Go Proverbs](https://go-proverbs.github.io/)
+
+Blog posts
 
 * https://blog.cloudflare.com/using-go-as-a-scripting-language-in-linux/
