@@ -10,8 +10,8 @@ Relationship between repositories, modules and packages:
 
 ```
 # Let's use Go modules for dependency management.
-cd ~/github
 mkdir my-project
+cd my-project
 go mod init github.com/jreisinger/my-project
 
 # Code away!
