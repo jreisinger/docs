@@ -15,7 +15,9 @@ Sources of evidence
 
 For
 
-* search [Aron's blog](http://www.wall.org/~aron/blog/)
+* A. Wall: [Comparing Religions V: Historical Accounts](http://www.wall.org/~aron/blog/comparing-religions-v-historical-accounts/)
+* A. Wall: [Comparing Religions VI: Early Sources](http://www.wall.org/~aron/blog/comparing-religions-vi-early-sources/)
+* A. Wall: [Some comments on Biblical History](http://www.wall.org/~aron/blog/some-comments-on-biblical-history/)
 
 Against
 
