@@ -103,7 +103,7 @@ A man who perseveres in doing just actions gets in the end a certain quality of 
 
 # Book IV. Beyond personality
 
-# Sources
+# More
 
 * [The book in PDF](https://www.dacc.edu/assets/pdfs/PCM/merechristianitylewis.pdf)
 * [CS Lewis doodle videos](https://www.youtube.com/c/CSLewisDoodle/playlists)
