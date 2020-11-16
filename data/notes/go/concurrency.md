@@ -305,6 +305,7 @@ func main() {
 * Donovan, Kernighan: The Go Programming Language (2015), ch.8
 * Caleb Doxsey: Introducing Go (2016)
 * John Graham-Cumming: Go Programming Basics (2017)
+* John Graham-Cumming: Intermediate Go Programming (2015) - Building a scalable work system
 
 # See also
 
