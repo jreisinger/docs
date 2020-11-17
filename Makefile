@@ -21,7 +21,7 @@ release: test $(PLATFORMS)
 
 $(PLATFORMS):
 	# Build multiplatform images
-	docker build --build-arg GOOS=$(os) --build-arg GOARCH=$(arch) -t homepage-$(os)-$(arch) .
+	docker build --no-cache --build-arg GOOS=$(os) --build-arg GOARCH=$(arch) -t homepage-$(os)-$(arch) .
 
 	# Push image to public registry - hub.docker.com
 	docker login

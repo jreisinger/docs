@@ -23,6 +23,7 @@ FROM alpine:latest
 WORKDIR /app/homepage
 COPY --from=build /bin/homepage /app/homepage/homepage
 COPY --from=build /go/src/homepage/template /app/homepage/template
+COPY --from=build /go/src/homepage/static /app/homepage/static
 RUN apk update
 RUN apk add git
 
