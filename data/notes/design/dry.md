@@ -18,4 +18,4 @@ DRY concerns
 
 Source
 
-* The Progmatic Programmer (2019), Topic 9
+* The Pragmatic Programmer (2019), Topic 9
