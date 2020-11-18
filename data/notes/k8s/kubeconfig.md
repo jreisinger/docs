@@ -3,6 +3,6 @@
 * `kubectl` uses by default `$HOME/.kube/config`
 * you can specify other kubeconfig files by setting `KUBECONFIG` or `--kubeconfig`
 
----
+----
 
 https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/
