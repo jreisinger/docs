@@ -7,4 +7,4 @@ Leibniz' Contingency Argument
 3. The universe exists.
 4. The explanation of the universe's existence is God.
 
-[1] God = the extremely powerful, uncaused, necessarily existing, non contingent, non-physical, immaterial, eternal being who created the entire universe and everything in it.
+[1]God = the extremely powerful, uncaused, necessarily existing, non contingent, non-physical, immaterial, eternal being who created the entire universe and everything in it.
