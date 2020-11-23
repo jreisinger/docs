@@ -24,7 +24,7 @@ func ListenAndServe(address string, h Handler) error
 Super simple e-commerce site:
 
 ```
-// shop.go - super simple e-shop showing price of shoes and socks
+// Shop - a super simple e-shop showing price of shoes and socks
 package main
 
 import (
@@ -56,7 +56,7 @@ func (d dollars) String() string { return fmt.Sprintf("$%.2f", d) }
 A more realistic server triggers different behaviours based on the path component of the URL:
 
 ```
-// shop2.go
+// Shop v2
 func (db database) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 	switch req.URL.Path {
 	case "/list":
@@ -96,7 +96,7 @@ http.Error(w, msg, http.StatusNotFound) // 404
 * a `ServeMux` aggregates a collection of `http.Handler`s into a single `http.Handler`
 
 ```
-// shop3.go
+// Shop v3
 func main() {
 	db := database{"shoes": 50, "socks": 5}
 	mux := http.NewServeMux()
