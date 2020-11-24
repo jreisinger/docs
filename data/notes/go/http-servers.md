@@ -126,21 +126,30 @@ func (db database) price(w http.ResponseWriter, req *http.Request) {
 * `db.list` is a function (or a method) that implements handler-like behavior but since it does not satisfy `http.Handler` interface and can't be passed directly to `mux.Handle`
 * the expression `http.HandlerFunc(db.list)` is a *conversion*, not a function call, since `http.HandlerFunc` is a type
 * because registering a handler this way is so common, `ServeMux` has a convenience method `HandleFunc`
-* also for convenience `net/http` provides a global `ServeMux` instance called `DefaultServeMux` and package level functions `http.Handle` and `http.HandleFunc`
-* to use `DefaultServeMux` pass `nil` to `ListenAndServe`
 
 ```
 func main() {
 	db := database{"shoes": 50, "socks": 5}
 	mux := http.NewServeMux()
 	mux.HandleFunc("/list", db.list)
-	mux.HandleFunx("/price", db.price)
+	mux.HandleFunc("/price", db.price)
+	log.Fatal(http.ListenAndServe("localhost:8000", mux))
+}
+```
+
+* also for convenience `net/http` provides a global `ServeMux` instance called `DefaultServeMux` and package level functions `http.Handle` and `http.HandleFunc`
+* to use `DefaultServeMux` pass `nil` to `ListenAndServe`
+
+```
+func main() {
+	db := database{"shoes": 50, "socks": 5}
+	HandleFunc("/list", db.list)
+	HandleFunc("/price", db.price)
 	log.Fatal(http.ListenAndServe("localhost:8000", nil))
 }
 ```
 
 NOTE: the web server invokes each handler in a new goroutine, so handlers must take precautions such as locking when accessing variables that other goroutines, including other requests to the same handler, may be accessing.
-
 
 # Reponse handling
 
