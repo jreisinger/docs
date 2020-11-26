@@ -15,7 +15,7 @@ Having all context all the time is impractical - ways to reduce the amount of da
 * profiling - let's have some of the context for limited periods of time (`tcpdump` for networking, eBPF for Linux kernel)
 * tracing - let's take some proportion of events (sampling)
 * logging - let's have a limited set of events and some of the context for each of these events (Graylog, Splunk)
-* metrics - let's track aggregations over time of different types of events largely ingoring context (Prometheus)
+* metrics (time series) - let's track aggregations over time of different types of events largely ingoring context (Prometheus)
 
 # Architecture and Components
 
