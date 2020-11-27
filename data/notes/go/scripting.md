@@ -56,13 +56,11 @@ func matchLines(f *os.File, pattern string) {
 If you want to run this program as a Linux script:
 
 ```
-echo ':golang:E::go::/usr/local/bin/gorun:OC' | sudo tee /proc/sys/fs/binfmt_misc/register
+$ echo ':golang:E::go::/usr/local/bin/gorun:OC' | sudo tee /proc/sys/fs/binfmt_misc/register
 :golang:E::go::/usr/local/bin/gorun:OC
-```
 
-```
-chmod u+x grep.go
-./grep.go
+$ chmod u+x grep.go
+$ ./grep.go
 ```
 
 For more see
