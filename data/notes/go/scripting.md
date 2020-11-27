@@ -1,7 +1,7 @@
-A simple CLI tool:
+A simple script/CLI tool:
 
 ```
-// Mygrep reads from STDIN or file(s) and prints lines containing pattern.
+// Grep reads from STDIN or file(s) and prints lines containing pattern.
 package main
 
 import (
@@ -53,6 +53,19 @@ func matchLines(f *os.File, pattern string) {
 }
 ```
 
-See also
+If you want to run this program as a Linux script:
 
+```
+echo ':golang:E::go::/usr/local/bin/gorun:OC' | sudo tee /proc/sys/fs/binfmt_misc/register
+:golang:E::go::/usr/local/bin/gorun:OC
+```
+
+```
+chmod u+x grep.go
+./grep.go
+```
+
+For more see
+
+* https://yourbasic.org/golang/write-command-line-application/
 * https://blog.cloudflare.com/using-go-as-a-scripting-language-in-linux/
