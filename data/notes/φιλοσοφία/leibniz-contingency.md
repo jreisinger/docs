@@ -1,4 +1,4 @@
-Leibniz's Contingency Argument
+[Leibniz](https://plato.stanford.edu/entries/leibniz/)'s Contingency Argument
 
 [contingent - závislý, podmienený]
 
