@@ -1,5 +1,3 @@
-Insteresting debates and reviews:
-
 * [Review of Carrol (physicist) vs Craig (philosopher)](http://www.wall.org/~aron/blog/thoughts-on-the-carroll-craig-debate/)
 * [Rosenberg (philosopher) vs Craig (philosopher)](https://www.youtube.com/watch?v=bhfkhq-CM84&t=5667s)
 * [Krauss (physicist) vs Craig (philosopher)](https://www.youtube.com/watch?v=V82uGzgoajI)
