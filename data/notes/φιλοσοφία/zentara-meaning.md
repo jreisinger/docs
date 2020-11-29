@@ -9,7 +9,7 @@ Once you read it, you will never be able to get it out of
 your subconcious mind. It will crack open the door to the next
 level of conciousness.
 
-....................................................................
+...
 
 Your most previous incarnation, was a 9-month life inside
 your mother. During this life, you were developing the organs
