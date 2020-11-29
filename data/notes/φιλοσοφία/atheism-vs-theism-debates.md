@@ -2,3 +2,5 @@
 * [Rosenberg (philosopher) vs Craig (philosopher)](https://www.youtube.com/watch?v=bhfkhq-CM84&t=5667s)
 * [Krauss (physicist) vs Craig (philosopher)](https://www.youtube.com/watch?v=V82uGzgoajI)
 * [Atkins (chemist) vs Lennox (mathematician)](https://youtu.be/fSYwCaFkYno)
+
+> The existence of God does not, of course, depend on any particular person's ability to effectively argue for (or against) him. -- [Aron Wall](http://www.wall.org/~aron/blog/thoughts-on-the-carroll-craig-debate/)
