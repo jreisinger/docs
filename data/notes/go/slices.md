@@ -22,7 +22,7 @@ import (
     "fmt"
 )
 
-// printSlice prints a slice of bytes with some useful info.
+// printSlice prints a slice of strings with some useful info.
 func printSlice(s []string) {
     fmt.Printf("0th_elem_addr=%p len=%d  cap=%d  %v\n",
         s, len(s), cap(s), s)
