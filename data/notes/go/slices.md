@@ -46,7 +46,7 @@ func main() {
 
 	// Extend its length.
 	s = s[:3]
-	printSlice(s) // 0th_elem_addr=0xc00004a0c0 len=2 cap=6 [the quick brown]
+	printSlice(s) // 0th_elem_addr=0xc00004a0c0 len=3 cap=6 [the quick brown]
 
 	// Drop its first two values.
 	s = s[2:]
