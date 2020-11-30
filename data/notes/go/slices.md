@@ -4,14 +4,14 @@ This won't give you a slice
 
 ```
 names := [4]string{"John", "Paul", "George", "Ringo"}
-a := names[0] // a = John (string)
+a := names[0] // a = John -> a string
 ```
 
 this will
 
 ```
 names := [4]string{"John", "Paul", "George", "Ringo"}
-a := names[0:1] // a = [John] ([]string)
+a := names[0:1] // a = [John] -> a slice of strings
 ```
 
 ## Slices and `append`
