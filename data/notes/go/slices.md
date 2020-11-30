@@ -24,12 +24,6 @@ import (
     "fmt"
 )
 
-// printSlice prints a slice of strings with some useful info.
-func printSlice(s []string) {
-    fmt.Printf("0th_elem_addr=%p len=%d  cap=%d  %v\n",
-        s, len(s), cap(s), s)
-}
-
 func main() {
     s := make([]string, 2, 3)
     printSlice(s) // 0th_elem_addr=0xc000064180 len=2  cap=3  [ ]
@@ -40,6 +34,11 @@ func main() {
     printSlice(s) // 0th_elem_addr=0xc000064180 len=3  cap=3  [the quick brown]
     s = append(s, "fox")
     printSlice(s) // 0th_elem_addr=0xc00004a0c0 len=4  cap=6  [the quick brown fox]
+}
+
+// printSlice prints a slice of strings with some useful info.
+func printSlice(s []string) {
+    fmt.Printf("0th_elem_addr=%p len=%d  cap=%d  %v\n", s, len(s), cap(s), s)
 }
 ```
 
