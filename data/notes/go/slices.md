@@ -1,3 +1,17 @@
+This won't give you a slice
+
+```
+names := [4]string{"John", "Paul", "George", "Ringo"}
+a := names[0] // a = John (string)
+```
+
+this will
+
+```
+names := [4]string{"John", "Paul", "George", "Ringo"}
+a := names[0:1] // a = [John] ([]string)
+```
+
 ## Slices and `append`
 
 ```
@@ -26,3 +40,7 @@ func main() {
     printSlice(s) // 0th_elem_addr=0xc00004a0c0 len=4  cap=6  [the quick brown fox]
 }
 ```
+
+More
+
+* https://tour.golang.org/moretypes/7
