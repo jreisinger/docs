@@ -17,3 +17,5 @@ ng new my-app
 cd my-app
 ng serve --open
 ```
+
+[source](https://angular.io/guide/setup-local)
