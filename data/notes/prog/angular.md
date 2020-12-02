@@ -14,4 +14,6 @@ sudo npm install -g @angular/cli
 
 # Start new Angular app
 ng new my-app
+cd my-app
+ng serve --open
 ```
