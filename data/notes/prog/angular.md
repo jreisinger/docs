@@ -1,4 +1,4 @@
-## Install on Linux
+## Install on Ubuntu
 
 ```
 # Remove system/package npm
