@@ -52,7 +52,7 @@ func handleSearch(w http.ResponseWriter, r *http.Request) {
 		pattern = strings.TrimPrefix(pattern, "path:")
 	}
 
-	rx, err := regexp.Compile(pattern)
+	rx, err := regexp.Compile("(?i)" + pattern) // make pattern case insensitive
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
