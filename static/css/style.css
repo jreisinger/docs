@@ -120,17 +120,16 @@ body {
 
 /* Inline code and code blocks */
 pre, code {
-    font-size: 0.775rem;
-    white-space: pre;
+    background: #f7f7f7;
+    font-size: 0.700rem;
+    white-space: pre-wrap;
+    overflow: auto;
+    border-radius: 0.3125rem;
 }
 
-/* Code blocks */
+/* Code blocks only */
 pre {
-    background: #f7f7f7;
-    overflow: auto;
-    white-space: pre-wrap;
-    padding: 0.625rem;
-    border-radius: 0.3125rem;
+   padding: 0.625rem;
 }
 
 /* > quote */
