@@ -1,8 +1,6 @@
 Nginx is a multitool: web server, load balancer, reverse proxy, WAF
 
-# General
-
-## Key files and directories
+# Key files and directories
 
 * `/etc/nginx/nginx.conf` - sets up global setting for things like worker processes, tuning, logging, loading of dynamic modules + it references config files in `/etc/nginx/conf.d`
 * `/var/log/nginx/access.log` - entry for each request NGINX serves
@@ -23,7 +21,7 @@ nginx -s <signal> # stop (immediately)
 
 [Sample config](https://www.nginx.com/resources/wiki/start/topics/examples/full/)
 
-## Modules
+# Modules
 
 In version 1.9.11 (2016) Nginx added support for dynamic modules similar to Dynamic Shared Objects (DSO) of Apache HTTP server. Before that you needed to recompile Nginx if you updated a module. Now you can load/unload a module into NGINX at runtime.
 
@@ -38,7 +36,7 @@ More:
 * [Extending NGINX](https://www.nginx.com/resources/wiki/extending/)
 * [3rd party modules](https://www.nginx.com/resources/wiki/modules/)
 
-## Directives
+# Directives
 
 The `if` directive
 
@@ -51,7 +49,7 @@ The `if` directive
 
 * `proxy_redirect` - changes text in "Location" and "Refresh" headers of a proxied response
 
-## Variables
+# Variables
 
 * [all NGINX variables](http://nginx.org/en/docs/varindex.html) creation (declaration) happens while loading the configuration file (at "configuration time")
 * on the other hand variables assignment happens when requests are actually being served (at "request time")
@@ -65,7 +63,7 @@ The `if` directive
 
 * `$proxy_host` - name and port (yes, also port if it's defined in `proxy_pass`) of a proxied server as specified in the `proxy_pass` directive
 
-## Tips and tricks
+# Tips and tricks
 
 Verify installation (works also inside a container):
 
