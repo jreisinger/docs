@@ -2,8 +2,9 @@
 
 Some of the technical books that I liked. Rougly ordered by most recently read (at least partially) in each category.
 
-# Sysadmin
+# Sysadmin/SRE/DevOps
 
+* Cloud Native DevOps with Kubernetes, 2019
 * *Unix and Linux System Administration Handbook* (ULSAH), 2017
 * The Practice of Cloud System Administration (PoCSA), 2014
 * How Linux Works, 2014
