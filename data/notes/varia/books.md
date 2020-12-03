@@ -1,6 +1,6 @@
 > Reading furnishes the mind only with materials of knowledge; it is thinking that makes what we read ours. -- John Locke
 
-Some of the technical books that are fundamental for me. Ordered from most recently read in each category.
+Some of the technical books that I liked. Rougly ordered by most recently read (at least partially) in each category.
 
 # Sysadmin
 
