@@ -106,7 +106,7 @@ http {
 
 ```
 http {
-    limit_req_zone $binary_remote_addr zone=one:10m rate=1r/s;
+    limit_req_zone $binary_remote_addr zone=one:10m rate=10r/s;
 
     ...
 
@@ -118,6 +118,11 @@ http {
             limit_req zone=one burst=5;
         }
 ```
+
+* `10m` - in 10MB Nginx can hold cca 160,000 IP addresses
+* `10r/s` really means in 1 request in 100ms (Nginx tracks requests at millisecond granularity)
+
+More
 
 * https://www.nginx.com/blog/rate-limiting-nginx/
 * https://www.freecodecamp.org/news/nginx-rate-limiting-in-a-nutshell-128fe9e0126c/
