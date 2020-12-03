@@ -108,6 +108,8 @@ proxy_redirect ~*https?://[^/]+/(.+)$ https://$host/$1;
 
 # Traffic limiting
 
+See also https://www.nginx.com/blog/mitigating-ddos-attacks-with-nginx-and-nginx-plus.
+
 ## Limiting connections
 
 [limit_conn](http://nginx.org/en/docs/http/ngx_http_limit_conn_module.html) module limits the number of connections per the defined key, in particular, the number of connections from a single IP address
