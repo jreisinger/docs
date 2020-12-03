@@ -6,7 +6,10 @@ Nginx is a multitool: web server, load balancer, reverse proxy, WAF
 * `/var/log/nginx/access.log` - entry for each request NGINX serves
 * `/var/log/nginx/error.log` - errors and debug info (if debug module is enabled)
 
-[Config file structure](https://nginx.org/en/docs/beginners_guide.html#conf_structure) (simple directive vs block directive, context)
+[Config file structure](https://nginx.org/en/docs/beginners_guide.html#conf_structure)
+
+* simple directive vs block directive
+* context
 
 [Sample config](https://www.nginx.com/resources/wiki/start/topics/examples/full/)
 
