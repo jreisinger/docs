@@ -6,17 +6,6 @@ Nginx is a multitool: web server, load balancer, reverse proxy, WAF
 * `/var/log/nginx/access.log` - entry for each request NGINX serves
 * `/var/log/nginx/error.log` - errors and debug info (if debug module is enabled)
 
-Useful commands:
-
-```
-nginx -t # test configuration
-nginx -T # test configurtation and print it
-nginx -s <signal> # stop (immediately)
-                  # quit (wait to finish processing requests)
-                  # reload (configuration gracefully, i.e. without dropping packets!)
-                  # reopen (log files) 
-```
-
 [Config file structure](https://nginx.org/en/docs/beginners_guide.html#conf_structure) (simple directive vs block directive, context)
 
 [Sample config](https://www.nginx.com/resources/wiki/start/topics/examples/full/)
@@ -62,25 +51,6 @@ The `if` directive
 [ngx_http_proxy_module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html)
 
 * `$proxy_host` - name and port (yes, also port if it's defined in `proxy_pass`) of a proxied server as specified in the `proxy_pass` directive
-
-# Tips and tricks
-
-Verify installation (works also inside a container):
-
-```
-nginx -v
-ps -ef | grep nginx
-curl localhost -I
-```
-
-Get values of variables (debugging):
-
-```
-# /etc/nginx/nginx.conf
-add_header X-mine "$upstream_addr";
-
-curl localhost -v # look for X-mine header
-```
 
 # Reverse proxy
 
@@ -165,6 +135,36 @@ location /download/ {
 
 * [proxy_limit_rate](https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_limit_rate) - limits the speed of response reading from the proxied server, response buffering must be enabled
 * https://docs.nginx.com/nginx/admin-guide/security-controls/controlling-access-proxied-http/#limiting-the-bandwidth
+
+# Tips and tricks
+
+Useful commands:
+
+```
+nginx -t # test configuration
+nginx -T # test configurtation and print it
+nginx -s <signal> # stop (immediately)
+                  # quit (wait to finish processing requests)
+                  # reload (configuration gracefully, i.e. without dropping packets!)
+                  # reopen (log files) 
+```
+
+Verify installation (works also inside a container):
+
+```
+nginx -v
+ps -ef | grep nginx
+curl localhost -I
+```
+
+Get values of variables (debugging):
+
+```
+# /etc/nginx/nginx.conf
+add_header X-mine "$upstream_addr";
+
+curl localhost -v # look for X-mine header
+```
 
 # Resources
 
