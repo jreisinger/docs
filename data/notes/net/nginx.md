@@ -122,7 +122,7 @@ http {
 * `10m` - in 10MB Nginx can hold cca 160,000 IP addresses
 * `10r/s` really means 1 request in 100ms (Nginx tracks requests at millisecond granularity)
 * `burst=20` allows a client to make 20 requests in excess of the specified rate
-* `nodelay` forwards queued requests immediately not spacing them (1 request every 100ms in our case)
+* `nodelay` forwards queued requests immediately instead of spacing them (1 request every 100ms in our case)
 
 More
 
