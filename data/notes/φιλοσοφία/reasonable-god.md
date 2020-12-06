@@ -1,3 +1,5 @@
+> Why should they be impartial, what is being impartial, when the whole world is at war about whether one thing is a devouring superstition or a divine hope? I do not pretend to be impartial in the sense that the final act of faith fixes a man's mind because it satisfies his mind. But I do profess to be a great deal more impartial than they are; in the sense that I can tell the story fairly, with some sort of imaginative justice to all sides; and they cannot.  (The Everlasting Man)
+
 It looks like it's not possible to prove the God's existence using the [scientific method](http://www.wall.org/~aron/blog/the-pillars-of-science/). Is it then reasonable to think that God exists? Or is it just blind faith without any evidence?
 
 [Fields of study](http://www.wall.org/~aron/blog/theology-less-speculative-than-quantum-gravity/) by the strength of evidence they can provide *on average*:
@@ -41,10 +43,7 @@ Against
 * [Euthypro dilemma](https://en.wikipedia.org/wiki/Euthyphro_dilemma) <=> Objective universal morality.
 * Argument from the evil - an omnipotent and benevolent God should have eliminated all suffering. We observe plenty of man made and natural suffering in the world. <=> Free will can not be achieved without allowing the possibility of doing wrong things. What about suffering not cause by people (like tsunami)?
 
-# Bias
-
-> Why should they be impartial, what is being impartial, when the whole world is at war about whether one thing is a devouring superstition or a divine hope? I do not pretend to be impartial in the sense that the final act of faith fixes a man's mind because it satisfies his mind. But I do profess to be a great deal more impartial than they are; in the sense that I can tell the story fairly, with some sort of imaginative justice to all sides; and they cannot.  (The Everlasting Man)
-
+# Personal experience
 
 # Reasonable theists
 
