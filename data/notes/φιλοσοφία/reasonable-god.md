@@ -15,6 +15,7 @@ However:
 
 Sources of evidence
 
+* Testimonies (close history)
 * Written documents
 * Archeological findings
 
