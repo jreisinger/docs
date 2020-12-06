@@ -1,10 +1,15 @@
-It looks like it's not possible to prove the God's existence using the [scientific method](http://www.wall.org/~aron/blog/the-pillars-of-science/). Is it then reasonable to think that God exists?
+It looks like it's not possible to prove the God's existence using the [scientific method](http://www.wall.org/~aron/blog/the-pillars-of-science/). Is it then reasonable to think that God exists? Or is it just blind faith without any evidence?
 
-Fields of study by the strength of evidence they can provide on average:
+[Fields of study](http://www.wall.org/~aron/blog/theology-less-speculative-than-quantum-gravity/) by the strength of evidence they can provide *on average*:
 
 ```
 Math & Logic > Science > History > Most Philosophy
 ```
+
+However:
+
+* some philosophical arguments are very strong (e.g. if you don't believe the philosophical arguments that we can learn things about the external world based on observation, you can't have any grounds for believing in Science either)
+* math proofs are supposed to be completely certain, but if they are thounsands of lines long it is easy for errors to sneak in
 
 # Historical arguments
 
