@@ -22,4 +22,6 @@ FROM
 WHERE
    first_name = 'Jamie'
 AND last_name = 'Rice';
+
+UPDATE films SET kind = 'Dramatic' WHERE kind = 'Drama';
 ```
