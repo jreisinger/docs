@@ -10,15 +10,13 @@ My most common use cases boil down to:
 For both use cases the workflow looks like this:
 
 1. Build and run a WAF container
-2. Make changes to a WAF container
-3. Test the changes
+2. Make changes to the WAF container
+3. Test the WAF container
 4. Commit and push the changes
-
-[waf-runner](https://github.com/jreisinger/waf-runner) can help with 1. and [waf-tester](https://github.com/jreisinger/waf-tester) with 3.
 
 ## Build and run a WAF container
 
-`waf-runner` will build and run a WAF container based on supplied `Dockerfile` and related configuration files. For example:
+[waf-runner](https://github.com/jreisinger/waf-runner) will build and run a WAF container based on supplied `Dockerfile` and related configuration files. For example:
 
 ```
 $ waf-runner waf/nginx/modsecurity
@@ -48,7 +46,7 @@ bcb445f3a683        nginx                     "/docker-entrypoint.…"   4 secon
 
 `waf-runner` will keep on `tail`ing the logs until you hit Ctrl-C.
 
-## Make changes to a WAF container
+## Make changes to the WAF container
 
 If you want to make temporary changes to the WAF you can get into the container:
 
@@ -61,9 +59,9 @@ $ docker exec -it testing-waf /bin/sh
 
 To make permanent changes you modify the WAF's `Dockerfile` and/or related configuration files.
 
-## Test the changes
+## Test the WAF container
 
-`waf-tester` will run tests against a WAF (that is running on localhost in this case):
+[waf-tester](https://github.com/jreisinger/waf-tester) will run tests against a WAF (that is running on localhost in this case):
 
 ```
 $ waf-tester -tests waf_tests/generic/basic-tests.yaml -print OK
