@@ -48,7 +48,7 @@ bcb445f3a683        nginx                     "/docker-entrypoint.…"   4 secon
 
 `waf-runner` will keep on `tail`ing the logs until you hit Ctrl-C.
 
-## Make temporary changes to a WAF container
+## Make changes to a WAF container
 
 If you want to make temporary changes to the WAF you can get into the container:
 
@@ -58,8 +58,6 @@ $ docker exec -it testing-waf /bin/sh
 / # nginx -s reload
 / # exit
 ```
-
-### Make permanent changes to a WAF container
 
 To make permanent changes you modify the WAF's `Dockerfile` and/or related configuration files.
 
