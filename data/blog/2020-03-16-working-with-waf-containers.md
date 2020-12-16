@@ -4,18 +4,17 @@ I've been working with Web Application Firewalls (WAFs) in the form of applicati
 
 My most common use cases boil down to:
 
-1. Changing configuration of WAF components (upgrades, configuration changes).
-2. Adding or modifying WAF rules. (Strictly speaking this is a subset of 1.)
+1. Changing or upgrading WAF components (e.g. Nginx, ModSecurity, CRS)
+2. Adding or modifying WAF rules (strictly speaking this is a subset of 1.)
 
 For both use cases the workflow looks like this:
 
 1. Build and run a WAF container
 2. Make changes to a WAF container
-3. Test the changes (sort of unit testing)
+3. Test the changes
 4. Commit and push the changes
-5. Run integration tests (CI/CD tests)
 
-`waf-runner` can help with 1. and `waf-tester` with 3. (possibly with 5.).
+[waf-runner](https://github.com/jreisinger/waf-runner) can help with 1. and [waf-tester](https://github.com/jreisinger/waf-tester) with 3.
 
 ## Build and run a WAF container
 
@@ -49,7 +48,7 @@ bcb445f3a683        nginx                     "/docker-entrypoint.…"   4 secon
 
 `waf-runner` will keep on `tail`ing the logs until you hit Ctrl-C.
 
-### Make temporary changes
+## Make temporary changes to a WAF container
 
 If you want to make temporary changes to the WAF you can get into the container:
 
@@ -60,11 +59,11 @@ $ docker exec -it testing-waf /bin/sh
 / # exit
 ```
 
-### Make permanent changes
+### Make permanent changes to a WAF container
 
 To make permanent changes you modify the WAF's `Dockerfile` and/or related configuration files.
 
-## Testing a WAF
+## Test the changes
 
 `waf-tester` will run tests against a WAF (that is running on localhost in this case):
 
