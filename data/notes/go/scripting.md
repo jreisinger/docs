@@ -1,4 +1,4 @@
-grep.go -- a simple script/CLI tool:
+`grep.go` -- a simple script/CLI tool:
 
 ```
 // Grep reads from STDIN or file(s) and prints lines containing pattern.
