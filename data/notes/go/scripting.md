@@ -50,6 +50,9 @@ func matchLines(f *os.File, pattern string) {
 			fmt.Println(s.Text())
 		}
 	}
+	if err := s.Err(); err != nil {
+		log.Fatal(err)
+	}
 }
 ```
 
