@@ -9,10 +9,10 @@ done
 ```
 
 ```
-$ ./cli-args.sh hi -v --help -n=1
+$ ./cli-args.sh hi -v -n=1 --help
 Running program [./cli-args.sh] with [4] arguments:
 [hi]
 [-v]
-[--help]
 [-n=1]
+[--help]
 ```
