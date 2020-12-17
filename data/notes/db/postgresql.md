@@ -13,7 +13,7 @@ show data_directory    -- where DB files are stored
 show all               -- run-time configuration of DB
 
 SELECT * FROM <table>;
-SELECT * FROM customer WHERE last_name LIKE '%gen%';
+
 SELECT
    last_name,
    first_name
@@ -23,6 +23,9 @@ WHERE
    first_name = 'Jamie'
 AND last_name = 'Rice';
 
--- NOTE: do corresponding SELECT before doing UPDATE
+-- % -> .*, _ -> .
+SELECT * FROM customer WHERE last_name LIKE '%gen%';
+
+-- NOTE: you should do corresponding SELECT before doing UPDATE
 UPDATE films SET kind = 'Dramatic' WHERE kind = 'Drama';
 ```
