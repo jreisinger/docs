@@ -114,14 +114,15 @@ a:active { text-decoration: underline; }
 /* Main text */
 body {
     counter-reset: h2counter;
-    font-family: "Courier New", Courier, monospace;
-    font-size: small;
+    /* font-family: "Courier New", Courier, monospace; */
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: smaller;
 }
 
 /* Inline code and code blocks */
 pre, code {
     background: #f7f7f7;
-    font-size: 0.700rem;
+    font-size: 0.800rem;
     white-space: pre;
     overflow: auto;
     border-radius: 0.3125rem;
@@ -146,11 +147,14 @@ pre {
 
 /* > quote */
 blockquote {
-  background: #f9f9f9;
-  /* border-left: 10px solid #ccc; */
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  border-left: 2px solid green;
+  color: #666;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
+  border-radius: 0.3125rem;
 }
 
 /* Table Of Contents */
