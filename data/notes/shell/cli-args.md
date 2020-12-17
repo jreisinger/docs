@@ -1,5 +1,6 @@
 ```
 #!/bin/bash
+# cli-args.sh -- demo of how to handle CLI arguments in bash
 
 echo "Running program [$0] with [$#] arguments:"
 for arg in "$@"; do
@@ -8,8 +9,8 @@ done
 ```
 
 ```
-$ ./x.sh hi -v --help -n=1
-Running program [./x.sh] with [4] arguments:
+$ ./cli-args.sh hi -v --help -n=1
+Running program [./cli-args.sh] with [4] arguments:
 [hi]
 [-v]
 [--help]
