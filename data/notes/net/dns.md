@@ -78,7 +78,9 @@ Special characters in resource records
     @   the current zone name
     ()  allows data to span lines
     *   wild card (`name` field only)
-    
+
+See [Cloudflare article](https://www.cloudflare.com/learning/dns/dns-records/) for more types.
+
 DNS query process
 =================
 
