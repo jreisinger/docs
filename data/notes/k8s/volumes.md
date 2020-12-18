@@ -1,8 +1,10 @@
 # Volumes
 
+NOTE: If you need to your data to live longer than your pod see [persistent volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
+
 K8s volume abstraction fixes two problems:
 
-1. ephemeral nature of files in Containers - when a Container restarts the files get lost
+1. ephemeral nature of files in Containers (when a Container restarts the files get lost)
 2. need to share files between Containers within a Pod
 
 A process in a Container sees a filesystem view composed from their Docker image (mounted at the root of the FS) and volumes (mounted at specified paths within the image).
