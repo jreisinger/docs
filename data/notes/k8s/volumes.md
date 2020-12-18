@@ -1,6 +1,6 @@
 # Volumes
 
-NOTE: If you need to your data to live longer than your pod see [persistent volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
+NOTE: If you need your data to live longer than your pod see [persistent volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
 
 K8s volume abstraction fixes two problems:
 
