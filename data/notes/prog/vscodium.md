@@ -3,3 +3,8 @@
 * toggle terminal: `Ctrl + <backtick>`
 * find files: `Ctrl + P`
 * grep files (search): `Ctrl + Shift + F`
+
+Settings file location (it's not possible to change it):
+
+* macOS: `$HOME/Library/Application Support/Code/User/settings.json`
+* Linux: `$HOME/.config/Code/User/settings.json`
