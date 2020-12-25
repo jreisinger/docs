@@ -95,7 +95,7 @@ http://example.com:81/a/b.html?user=Alice&year=2020#p2
 
 ## Methods (verbs)
 
-* actions - what the server should do
+* indicate what action should the server do on a resource
 
 GET
 
