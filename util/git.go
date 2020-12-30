@@ -22,8 +22,7 @@ func GitPuller(repoURL string, repoPath string) {
 
 func gitClone(repoURL string, repoPath string) {
 	_, err := git.PlainClone(repoPath, false, &git.CloneOptions{
-		URL:      repoURL,
-		Progress: os.Stdout,
+		URL: repoURL,
 	})
 	Check(err)
 }
@@ -42,7 +41,9 @@ func gitPull(repoPath string) {
 	}
 
 	// Pull the latest changes from the origin remote and merge into the current branch
-	err = w.Pull(&git.PullOptions{RemoteName: "origin"})
+	err = w.Pull(&git.PullOptions{
+		RemoteName: "origin",
+	})
 	if err != nil && err != git.NoErrAlreadyUpToDate {
 		log.Printf("gitPull: %v\n", err)
 	}
