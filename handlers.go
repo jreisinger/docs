@@ -12,7 +12,9 @@ import (
 	"github.com/jreisinger/homepage/util"
 )
 
-func handleSearch(w http.ResponseWriter, r *http.Request) {
+// HandleSearch handles requests for /search. It searches paths and contents of
+// files in data folder.
+func HandleSearch(w http.ResponseWriter, r *http.Request) {
 	pattern := r.URL.Query().Get("regexp")
 
 	var searchOnlyPath bool
@@ -72,8 +74,8 @@ func handleSearch(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-// handle requests
-func handleRest(w http.ResponseWriter, r *http.Request) {
+// HandleRest handles all requests except for /search.
+func HandleRest(w http.ResponseWriter, r *http.Request) {
 	urlPath := r.URL.Path[1:] // remove leading "/"
 
 	if urlPath == "" {

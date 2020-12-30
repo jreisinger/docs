@@ -23,11 +23,9 @@ func main() {
 		http.ServeFile(w, r, repoPath+"/static/favicon.ico")
 	})
 
-	// search paths and contents of files in data/
-	http.HandleFunc("/search", handleSearch)
+	http.HandleFunc("/search", HandleSearch)
 
-	// serve the rest
-	http.HandleFunc("/", handleRest)
+	http.HandleFunc("/", HandleRest)
 
 	// regularly update the local repo from the upstream repo
 	go util.GitPuller(repoURL, repoPath)
