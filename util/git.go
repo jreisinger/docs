@@ -43,7 +43,7 @@ func gitPull(repoPath string) {
 
 	// Pull the latest changes from the origin remote and merge into the current branch
 	err = w.Pull(&git.PullOptions{RemoteName: "origin"})
-	if err != nil {
+	if err != nil && err != git.NoErrAlreadyUpToDate {
 		log.Printf("gitPull: %v\n", err)
 	}
 }
