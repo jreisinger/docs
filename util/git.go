@@ -15,7 +15,7 @@ func GitPuller(repoURL string, repoPath string) {
 			gitClone(repoURL, repoPath)
 		}
 
-		gitPull(repoURL, repoPath)
+		gitPull(repoPath)
 		time.Sleep(time.Second * 2)
 	}
 }
@@ -28,7 +28,7 @@ func gitClone(repoURL string, repoPath string) {
 	Check(err)
 }
 
-func gitPull(repoURL string, repoPath string) {
+func gitPull(repoPath string) {
 	// We instantiate a new repository targeting the given path (the .git folder)
 	r, err := git.PlainOpen(repoPath)
 	if err != nil {
