@@ -6,7 +6,7 @@ build: test
 
 run: build
 	rm -rf /tmp/homepage
-	./main
+	./homepage
 
 # can be more of course (see runp)
 PLATFORMS := linux/amd64
