@@ -2,7 +2,7 @@ test:
 	GO111MODULE=on go test ./...
 
 build: test
-	GO111MODULE=on go build main.go
+	GO111MODULE=on go build
 
 run: build
 	rm -rf /tmp/homepage
