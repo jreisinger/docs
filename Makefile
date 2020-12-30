@@ -6,11 +6,9 @@ build: test
 
 run: build
 	rm -rf /tmp/homepage
-	cp -r ../homepage /tmp/
 	./main
 
 # can be more of course (see runp)
-#PLATFORMS := linux/arm linux/amd64
 PLATFORMS := linux/amd64
 
 temp = $(subst /, ,$@)
