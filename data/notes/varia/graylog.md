@@ -17,7 +17,9 @@ Logs flow:
 6. Pipeline - you can add new field to a log here
 7. Alert - type of event where the system decides it’s worth notifying someone
 
-Index - basic unit of storage for data in Elasticsearch
+## Index
+
+* basic unit of storage for data in Elasticsearch
 
 ## Input
 
