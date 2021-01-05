@@ -28,7 +28,7 @@ Logs flow:
 ## [Extractor](https://docs.graylog.org/en/latest/pages/extractors.html)
 
 * allows to instruct Graylog how to extract data from any text in a received message
-* work only on text fields (not numeric fields or anything else)
+* works only on text fields (not numeric fields or anything else)
 
 ## Stream
 
