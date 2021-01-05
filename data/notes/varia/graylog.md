@@ -1,8 +1,8 @@
 # General terminology
 
-* log = event - record of a specific thing that happened (e.g. someone authenticates, or makes a web request, or CPU usage goes high for five minutes)
+* log or event - record of a specific thing that happened (e.g. someone authenticated, made a web request, or CPU usage was high for five minutes)
+* metrics - usually time based set of numbers that give info about something (e.g. how many authentication requests happened, the number of web requests made, or the CPU usage)
 * alert - type of event where the system decides it’s worth notifying someone
-* metrics - usually time based set of numbers that give info about something (e.g. how many authentication requests have happened, or the number of web requests made, or the CPU usage)
 
 Logs provide more context but are more difficult to store and process because it's more data and it's often unstructured.
 
