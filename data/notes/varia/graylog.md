@@ -1,8 +1,7 @@
-# General terminology
+# Logs, events and metrics
 
 * log or event - record of a specific thing that happened (e.g. someone authenticated, made a web request, or CPU usage was high for five minutes)
 * metrics - usually time based set of numbers that give info about something (e.g. how many authentication requests happened, the number of web requests made, or the CPU usage)
-* alert - type of event where the system decides it’s worth notifying someone
 
 Logs provide more context but are more difficult to store and process because it's more data and it's often unstructured.
 
@@ -10,11 +9,13 @@ Logs provide more context but are more difficult to store and process because it
 
 Logs flow:
 
-```
-Logs producer -> [Kafka - you can do some logs pre-processing here] -> 
-Input -> Extractor -> Stream -> Pipeline (e.g. add new field to a log) -> 
-Alert
-```
+1. Logs producer (VM, container, application)
+2. OPTIONAL message broker like Kafka - you can do some logs pre-processing here
+3. Input
+4. Extractor
+5. Stream
+6. Pipeline - you can add new field to a log here
+7. Alert - type of event where the system decides it’s worth notifying someone
 
 Index - basic unit of storage for data in Elasticsearch
 
