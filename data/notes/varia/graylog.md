@@ -40,7 +40,7 @@ Logs flow:
 ## Pipeline
 
 * tied to Streams
-* run rule(s) against specific event
+* lets you transform and process messages coming from Streams
 * allow for: routing, parsing, dropping, blacklisting, modifying and enriching messages as they flow through Graylog
 
 ## Alert 
