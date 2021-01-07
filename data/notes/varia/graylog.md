@@ -23,12 +23,12 @@ Logs flow:
 
 ## Input
 
-* defines the method by which Graylog collects logs
+* defines the method by which Graylog collects logs (e.g. Raw/Plaintext Kafka Plugin, Beats, Syslog UDP)
 
 ## [Extractor](https://docs.graylog.org/en/latest/pages/extractors.html)
 
-* allows to instruct Graylog how to extract data from any text in a received message
-* works only on text fields (not numeric fields or anything else)
+* tied to Input
+* instructs Graylog how to extract data from any text in a received message (e.g. `Grok pattern: app_fqdn: %{FQDN:app_fqdn}`)
 
 ## Stream
 
