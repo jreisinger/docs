@@ -28,7 +28,9 @@ Logs flow:
 ## [Extractor](https://docs.graylog.org/en/latest/pages/extractors.html)
 
 * tied to Input
-* instructs Graylog how to extract message data into fields (e.g. `Grok pattern: app_fqdn: %{FQDN:app_fqdn}`)
+* applied on every message that is received by an input
+* instructs Graylog how to extract and transform text data into fields that allow you easy filtering and analysis later on
+* e.g. extract the HTTP response code, transform it to a numeric field and attach it as http_response_code field to the message
 
 ## Stream
 
