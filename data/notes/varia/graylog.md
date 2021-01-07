@@ -28,7 +28,7 @@ Logs flow:
 ## [Extractor](https://docs.graylog.org/en/latest/pages/extractors.html)
 
 * tied to Input
-* instructs Graylog how to extract data from any text in a received message (e.g. `Grok pattern: app_fqdn: %{FQDN:app_fqdn}`)
+* instructs Graylog how to extract message data into fields (e.g. `Grok pattern: app_fqdn: %{FQDN:app_fqdn}`)
 
 ## Stream
 
