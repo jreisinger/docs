@@ -25,8 +25,6 @@ Types
 * SHA2 - group of algorithms (224 to 512-bits), kind of secure
 * SHA3 - Keccak won a [competition](https://csrc.nist.gov/projects/hash-functions/sha-3-project) announced in 2003, **recommended**
 
-Implementations
-
 Perl
 
 ``` sh
