@@ -25,10 +25,30 @@ Types
 * SHA2 - group of algorithms (224 to 512-bits), kind of secure
 * SHA3 - Keccak won a [competition](https://csrc.nist.gov/projects/hash-functions/sha-3-project) announced in 2003, **recommended**
 
-Usage
+Implementations
+
+Perl
 
 ``` sh
 $ perl -MDigest::SHA3=sha3_512_hex -E 'say sha3_512_hex( "plaintext" )'
+```
+
+Go
+
+``` go
+package main
+
+import (
+	"fmt"
+
+	"golang.org/x/crypto/sha3"
+)
+
+func main() {
+	hash := sha3.New512()
+	hash.Write([]byte("plaintext"))
+	fmt.Printf("%x\n", hash.Sum(nil))
+}
 ```
 
 Sources:
