@@ -68,7 +68,7 @@ $ jq -r '.[] | select(.title|test("[Pp]erl")) | .animal' < animals.json
 Camel, aka Dromedary
 ```
 
-# More
+More
 
 * [jq docs](https://stedolan.github.io/jq/manual/)
 * [jq playground](https://jqplay.org/)
