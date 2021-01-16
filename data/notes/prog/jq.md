@@ -45,7 +45,7 @@ $ jq '.[] | .animal' < animals.json
 "Botta's Pocket Gopher"
 ```
 
-Emit raw (**unquoted**) strings:
+Emit raw (**unquoted**) strings with `-r`:
 
 ```
 $ jq -r '.[] | .animal' < animals.json
