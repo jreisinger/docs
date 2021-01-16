@@ -9,14 +9,6 @@ JSON consists of these data types:
 * arrays `[]`
 * numbers, strings, booleans, "null"
 
-Basic filters:
-
-```
-'.'      # pretty print everything
-'.[]'    # all elems of an array
-'.foo'   # value at key foo
-```
-
 Sample JSON file:
 
 ```
@@ -35,6 +27,14 @@ $ cat animals.json
     "title": "Introducing Go"
   }
 ]
+```
+
+Basic filters:
+
+```
+'.'      # pretty print everything
+'.[]'    # all elems of an array
+'.foo'   # value at key foo
 ```
 
 You can **join filters** using `|`:
