@@ -25,7 +25,8 @@ for ip in \
         uniq \
     )
     do
-        echo --- $ip ---
+        # get only geolocation
+        echo -ne "$ip\t"
         checkip $ip | grep Geolocation
     done
 ```
