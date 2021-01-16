@@ -6,4 +6,4 @@ In such scenario I want to have a quick and easy way to check the IP address.I c
 
 For example the following IP address definitely looks suspicious:
 
-<img src="/static/checkip.png" style="max-width:100%" height="65%" width="65%">
+<img src="/static/checkip.png" style="max-width:65%;height:auto">
