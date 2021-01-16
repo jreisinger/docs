@@ -13,16 +13,16 @@ Of course, you can also check multiple IP addresses. To do that, you need to emp
 ```
 for ip in \
     $( \
-      # get logs since midnight
-      journalctl --since "00:00" | \
-      # filter out WAF logs
-      grep waf | \
-      # filter out IP addresses
-      perl -wlne '/((?:\d{1,3}\.){3}\d{1,3})/ and print $1' | \
-      # sort
-      sort | \
-      # deduplicate
-      uniq \
+        # get logs since midnight
+        journalctl --since "00:00" | \
+        # filter out WAF logs
+        grep waf | \
+        # filter out IP addresses
+        perl -wlne '/((?:\d{1,3}\.){3}\d{1,3})/ and print $1' | \
+        # sort
+        sort | \
+        # deduplicate
+        uniq \
     )
     do
       echo --- $ip ---
