@@ -1,12 +1,33 @@
-`jq` - command line JSON processor 
+**jq** - command line JSON processor 
 
-JSON (JavaScript Object Notation) - text based format for exchanging data through APIs
+* JSON - JavaScript Object Notation
+* JSON - text based format for exchanging data through APIs
 
 JSON consists of these data types:
 
 * objects (dictionaries) `{}`
 * arrays `[]`
 * numbers, strings, booleans, "null"
+
+Sample JSON file:
+
+```
+$ cat animals.json
+[
+  {
+    "animal": "Camel, aka Dromedary",
+    "cover_src": "https://covers.oreilly.com/images/9780596004927/cat.gif",
+    "link": "https://shop.oreilly.com/product/9780596004927.do",
+    "title": "Programming Perl"
+  },
+  {
+    "animal": "Botta's Pocket Gopher",
+    "cover_src": "https://covers.oreilly.com/images/0636920046516/cat.gif",
+    "link": "https://shop.oreilly.com/product/0636920046516.do",
+    "title": "Introducing Go"
+  }
+]
+```
 
 Command line options:
 
