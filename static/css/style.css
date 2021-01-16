@@ -121,7 +121,6 @@ body {
 
 /* Inline code and code blocks */
 pre, code {
-    font-size: smaller;
     background: #f7f7f7;
     white-space: pre;
     overflow: auto;
