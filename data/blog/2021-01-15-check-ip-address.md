@@ -1,4 +1,4 @@
-# Checking an IP address
+# Check an IP address
 
 Sometimes I come across an unknown IP address. This happens, for example, when I'm reviewing logs and I see that someone or (most probably) something was trying to SSH into the system. Or it was enumerating the URLs of a web application.
 
