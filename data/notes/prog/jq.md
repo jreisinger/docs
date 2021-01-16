@@ -29,12 +29,6 @@ $ cat animals.json
 ]
 ```
 
-Command line options:
-
-```
--r (--raw-output) -- emit raw (unquoted) strings as output
-```
-
 Basic filters:
 
 ```
@@ -49,19 +43,32 @@ Basic filters:
 You can **join filters** using `|`:
 
 ```
-jq '.data.result | .[] | .values | .[] | .[]'
+$ jq '.[] | .animal' < animals.json
+"Camel, aka Dromedary"
+"Botta's Pocket Gopher"
+```
+
+Emit raw (**unquoted**) strings:
+
+```
+$ jq -r '.[] | .animal' < animals.json
+Camel, aka Dromedary
+Botta's Pocket Gopher
 ```
 
 Get values of **multiple keys**:
 
 ```
-jq '.rrsets[] | "\(.name) \(.type)"'
+$ jq -r '.[] | "\(.title) => \(.animal)"' < animals.json
+Programming Perl => Camel, aka Dromedary
+Introducing Go => Botta's Pocket Gopher
 ```
 
 Find an animal with a **regex match** against the title:
 
 ```
-jq '.[] | select(.title|test("Perl")) | .animal' < animals.json
+$ jq -r '.[] | select(.title|test("[Pp]erl")) | .animal' < animals.json
+Camel, aka Dromedary
 ```
 
 # More
