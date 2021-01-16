@@ -3,14 +3,19 @@ package main
 import (
 	"log"
 	"net/http"
+	"os"
 
 	"github.com/jreisinger/homepage/util"
 )
 
-const repoURL = "https://github.com/jreisinger/homepage"
-const repoPath = "/tmp/homepage"
+var repoURL = "https://github.com/jreisinger/homepage"
+var repoPath = "/tmp/homepage"
 
 func main() {
+	rp := os.Getenv("REPOPATH")
+	if rp != "" {
+		repoPath = rp
+	}
 	// serve static files
 	// (https://www.alexedwards.net/blog/serving-static-sites-with-go)
 	//

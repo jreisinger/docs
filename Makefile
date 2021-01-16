@@ -5,8 +5,8 @@ build: test
 	GO111MODULE=on go build
 
 run: build
-	rm -rf /tmp/homepage
-	./homepage
+	# Use the working directory for a repo
+	REPOPATH="." ./homepage
 
 # can be more of course (see runp)
 PLATFORMS := linux/amd64
