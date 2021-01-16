@@ -8,7 +8,7 @@ For example the following IP address definitely looks suspicious:
 
 <img src="/static/checkip.png" style="max-width:100%;width:640px">
 
-Of course, you can mix and match `checkip` with the standard shell tools. For example, to find out from where are people trying to use my web services:
+Of course, I can mix and match `checkip` with the standard shell tools. To find out from where people are trying to use my web applications I run:
 
 ```
 for ip in \
