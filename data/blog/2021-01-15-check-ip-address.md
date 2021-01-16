@@ -25,7 +25,7 @@ for ip in \
         uniq \
     )
     do
-      echo --- $ip ---
-      checkip $ip
+        echo --- $ip ---
+        checkip $ip
     done
 ```
