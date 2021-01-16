@@ -8,7 +8,7 @@ For example the following IP address definitely looks suspicious:
 
 <img src="/static/checkip.png" style="max-width:100%;width:640px">
 
-Of course, you can also check multiple IP addresses. To do that, you need to employ couple of the standard shell tools, for example:
+Of course, you can mix and match `checkip` with the standard shell tools. For example, to find out from where are people trying to use my web services:
 
 ```
 for ip in \
