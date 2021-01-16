@@ -26,6 +26,6 @@ for ip in \
     )
     do
         echo --- $ip ---
-        checkip $ip
+        checkip $ip | grep Geolocation
     done
 ```
