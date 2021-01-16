@@ -6,10 +6,7 @@ JSON consists of these data types:
 
 * objects (dictionaries) `{}`
 * arrays `[]`
-* numbers
-* strings
-* booleans
-* "null"
+* numbers, strings, booleans, "null"
 
 Command line options:
 
