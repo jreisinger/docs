@@ -1,15 +1,15 @@
-# JSON data types
+`jq` - command line JSON processor 
 
-JavaScript Object Notation is a popular text based format for exchanging data through APIs. It consists of these data types:
+JSON (JavaScript Object Notation) - text based format for exchanging data through APIs
 
-* objects (aka dictionaries) `{}`
+JSON consists of these data types:
+
+* objects (dictionaries) `{}`
 * arrays `[]`
 * numbers
 * strings
 * booleans
 * "null"
-
-# jq
 
 Command line options:
 
@@ -28,7 +28,7 @@ Basic filters:
 '.[]'       # all elems of an array
 ```
 
-You can join filters using **|**:
+You can **join filters** using `|`:
 
 ```
 jq '.data.result | .[] | .values | .[] | .[]'
