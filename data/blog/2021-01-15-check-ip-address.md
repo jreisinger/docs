@@ -6,4 +6,6 @@ In such scenario I want to have a quick and easy way to check the IP address. I 
 
 For example the following IP address definitely looks suspicious:
 
+![checkip](/static/checkip.png)
+
 <img src="/static/checkip.png" style="max-width:100%;height:auto">
