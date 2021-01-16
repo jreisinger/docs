@@ -15,9 +15,9 @@ for ip in \
     $( \
         # get logs since midnight
         journalctl --since "00:00" | \
-        # filter out WAF logs
+        # filter WAF logs
         grep waf | \
-        # filter out IP addresses
+        # filter IP addresses
         perl -wlne '/((?:\d{1,3}\.){3}\d{1,3})/ and print $1' | \
         # sort
         sort | \
