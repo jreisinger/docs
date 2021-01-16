@@ -27,8 +27,8 @@ func MdToHtml(filePath string) template.HTML {
 	return template.HTML(html)
 }
 
-// ListFiles returns a list of files in a directory.
-func ListFiles(filePath string) []string {
+// ListFiles returns a sorted list of files in a directory.
+func ListFiles(filePath string, reverseSort bool) []string {
 	dir, err := os.Open(filePath)
 	Check(err)
 	defer dir.Close()
@@ -47,7 +47,13 @@ func ListFiles(filePath string) []string {
 		files = append(files, name)
 	}
 
-	sort.Strings(files)
+	// Sort list of files.
+	if reverseSort {
+		sort.Sort(sort.Reverse(sort.StringSlice(files)))
+	} else {
+		sort.Sort(sort.StringSlice(files))
+	}
+
 	return files
 }
 

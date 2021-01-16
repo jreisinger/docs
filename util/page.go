@@ -4,6 +4,7 @@ import (
 	"errors"
 	"html/template"
 	"path"
+	"strings"
 )
 
 type Page struct {
@@ -31,7 +32,10 @@ func RenderPage(repoURL string, repoPath string, urlPath string) (*Page, error) 
 
 	if IsDir(filePath) {
 		// if file is a dir return list of files within dir
-		files := ListFiles(filePath)
+		files := ListFiles(filePath, false)
+		if strings.HasSuffix(filePath, "blog") {
+			files = ListFiles(filePath, true)
+		}
 		return &Page{Title: title, Files: files, RepoURL: repoURL, UrlPath: urlPath, IsDir: true}, nil
 	} else if IsFile(filePath + ".md") {
 		lastModified, err := LastModified(repoPath, filePath+".md")
