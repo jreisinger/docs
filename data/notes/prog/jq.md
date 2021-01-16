@@ -13,45 +13,40 @@ JavaScript Object Notation is a popular text based format for exchanging data th
 
 Command line options:
 
-`-r` (`--raw-output`) -- emit raw (unquoted) strings as output
+```
+-r (--raw-output) -- emit raw (unquoted) strings as output
+```
 
-[Basic filters](https://stedolan.github.io/jq/manual/#Basicfilters):
+Basic filters:
 
 ```
 '.'         # pretty print everything
 
 '.foo'      # value at key foo
-'.foo.bar'
+'.foo.bar'  # value at key foo.bar
 
 '.[]'       # all elems of an array
 ```
 
-You can join filters using `|`:
+You can join filters using **|**:
 
 ```
 jq '.data.result | .[] | .values | .[] | .[]'
 ```
 
-Get values of [multiple keys](https://stackoverflow.com/questions/28164849/using-jq-to-parse-and-display-multiple-fields-in-a-json-serially):
+Get values of **multiple keys**:
 
 ```
 jq '.rrsets[] | "\(.name) \(.type)"'
 ```
 
-## Examples
-
-Get ModSecurity rule [IDs](https://www.netnea.com/cms/core-rule-set-inventory/) and description:
+Find an animal with a **regex match** against the title:
 
 ```
-cat /var/log/modsec_audit.log | jq '.transaction.messages[].details | "\(.ruleId) \(.match)"'
-```
-
-Get number of pods per node:
-
-```
-kubectl get pods -o json --all-namespaces | jq '.items | group_by(.spec.nodeName) | map({"nodeName": .[0].spec.nodeName, "count": length}) | sort_by(.count) | reverse'
+jq '.[] | select(.title|test("Perl")) | .animal' < animals.json
 ```
 
 # More
 
+* [jq docs](https://stedolan.github.io/jq/manual/)
 * [jq playground](https://jqplay.org/)
