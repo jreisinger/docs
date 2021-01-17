@@ -1,6 +1,6 @@
 the most effective learning requires
 
-* a well-defined task with an appropriate difficulty level for the particular individual
+* well-defined task with appropriate difficulty level
 * informative feedback
 * opportunities for repetition and corrections of errors
 
