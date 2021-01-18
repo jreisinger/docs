@@ -45,9 +45,13 @@ Running a program (HD -> RAM -> CPU):
 # Programming languages (PL)
 
 * formal notations for expressing computations in an exact and unambiguous way
-* every structure in a PL has a precise form (its *syntax*) and a precise meaning (its *semantics*)
+* every structure in a PL has a precise form (its syntax) and a precise meaning 
+  (its semantics)
 
-CPU can only understand a very **low-level** language - machine language. Machine language is created by the designers of the particular CPU. Adding two numbers looks like:
+CPU can only understand a very **low-level** (machine) language. Machine
+language is created by the designers of the particular CPU. Adding two numbers
+looks like (instructions and data are really represented in binary notation -
+sequences of 0s and 1s):
 
 ```
 load the number from memory location 2020 into the CPU
@@ -55,8 +59,6 @@ load the number from memory location 2021 into the CPU
 add the two numbers in the CPU
 store the result into location 2023
 ```
-
-(Instructions and data are really represented in *binary* notation - sequences of 0s and 1s.)
 
 In **high-level** (human-oriented) language - like Python - it looks like:
 
