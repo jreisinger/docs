@@ -3,13 +3,13 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ada_Lovelace_portrait.jpg/167px-Ada_Lovelace_portrait.jpg" style="max-width:100%;height:auto;float:right" alt="Ada Lovelace">
 
 * fundamental question for CS is *what can be computed*?
-* it uses techniques of design, analysis, and experimentation 
+* it uses techniques of design, analysis, and experimentation
+* computers are to CS what telescopes are to astronomy (Dijkstra[?](https://en.wikiquote.org/wiki/Computer_science))
 
 # Hardware
 
 * computer is a universal information-processing machine
 * computer can carry out any process that can be described in sufficient details
-* computers are to CS what telescopes are to astronomy (Dijkstra[?](https://en.wikiquote.org/wiki/Computer_science))
 
 Functional view of a computer:
 
