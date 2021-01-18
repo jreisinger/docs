@@ -6,7 +6,7 @@
 * it uses techniques of design, analysis, and experimentation
 * computers are to CS what telescopes are to astronomy (Dijkstra[?](https://en.wikiquote.org/wiki/Computer_science))
 
-# Hardware
+# Computer
 
 * computer is a universal information-processing machine
 * computer can carry out any process that can be described in sufficient details
