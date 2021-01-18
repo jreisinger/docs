@@ -68,9 +68,10 @@ c = a + b
 
 ## Classification by translation mechanism
 
-There are two ways to translate a high-level language to machine language: to compile it or to interpret it.
+There are two ways to translate a high-level language to machine language: to
+compile it or to interpret it.
 
-### Compiled
+Compiled
 
 ```
 Source +---> Compiler +---> Machine
@@ -82,10 +83,9 @@ Code                        Code
                             Program
 ```
 
-* compiler - a complex program
-* compiler is no longer needed after a program is translated
+* compiler - a complex program; no longer needed after a program is translated
 
-### Interpreted
+Interpreted
 
 ```
             +--------------+
@@ -97,18 +97,23 @@ Inputs +--> |              |
             +--------------+
 ```
 
-* interpreter - program that simulates a computer that undestands a high-level language
+* interpreter - program that simulates a computer that understands a high-level
+  language
 * more flexible (interactive) development
 
 ## Classification by program scale
 
-1. traditional systems languages (C++, Ada, Java): large-scale programming, emphasis on structure and discipline
-2. scripting ("agile") languages (Perl, Python, Bash): designed for writing small/medium-scaled programs easy
+1. traditional systems languages (C++, Ada, Java): large-scale programming,
+   emphasis on structure and discipline
+2. scripting ("agile") languages (Perl, Python, Bash): designed for writing
+   small/medium-scaled programs easy
 
 ## Classification by programming paradigm
 
-1. object oriented - objects are the main focus; we tell objects to do things (by calling their methods)
-2. imperative - functions are the primary focus; we pass them objects to work with
+1. object oriented - objects are the main focus; we tell objects to do things
+   (by calling their methods)
+2. imperative - functions are the primary focus; we pass them objects to work
+   with
 
 # Sources
 
