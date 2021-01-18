@@ -29,15 +29,18 @@ Functional view of a computer:
 ```
 
 * Memory - stores programs and data that CPU acts on
- * main is fast but volatile
- * secondary is permanent: HD, CD, DVD, ...
-* CPU - simple arithmetic operations (e.g. adding 2 numbers) and logical operations (e.g. testing 2 numbers are equal)
-* Input/Output devices – for entering/displaying data
+  * main is fast but volatile
+  * secondary is permanent: HD, CD, DVD, ...
+* CPU - simple arithmetic (e.g. adding 2 numbers) and logical (e.g. testing 2 
+  numbers are equal) operations
+* I/O devices - for entering/displaying data
 
-Running a program (HD –> RAM –> CPU):
+Running a program (HD -> RAM -> CPU):
 
-1. Instructions that comprise the program are copied (loaded) from secondary to main memory.
-2. CPU starts executing the program, i.e. it does this cycle (really, really fast): fetch, decode, execute
+1. Instructions that comprise the program are copied (loaded) from secondary to
+   main memory.
+2. CPU starts executing the program, i.e. it does this cycle (really, really
+   fast): fetch, decode, execute
 
 # Programming languages (PL)
 
