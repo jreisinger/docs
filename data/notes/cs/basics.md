@@ -9,7 +9,7 @@
 
 * computer is a universal information-processing machine
 * computer can carry out any process that can be described in sufficient details
-* computers are to CS what telescopes are to astronomy (Dijkstra)
+* computers are to CS what telescopes are to astronomy (Dijkstra[?](https://en.wikiquote.org/wiki/Computer_science))
 
 Functional view of a computer:
 
