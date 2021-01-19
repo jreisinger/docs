@@ -18,19 +18,37 @@ For example, *simple search* is O(n) algorithm and *binary search* is O(log n) a
 
 All this means that binary search is faster than simple search and it gets a lot faster as the input size increases.
 
-## Sub-linear scaling (growth is less than linear)
+## Sub-linear scaling
 
-* O(1) - **constant** - no matter the scale of the input, performance of the system does not change; ex. hash-table lookup in RAM; such algorithms are rare
-* O(log n) - logarithmic - grows slower as the size of the corpus being searched grows; ex. binary search
+* growth is less than linear
+
+O(1) - constant
+
+* no matter the scale of the input, performance of the system does not change
+* ex. hash-table lookup in RAM
+* such algorithms are rare
+
+O(log n) - logarithmic
+
+* grows slower as the size of the corpus being searched grows
+* ex. binary search
 
 ## Linear scaling
 
-* O(n) - **linear** - twice as much data requires twice as much processing time; ex. simple search
+O(n) - linear
+
+* twice as much data requires twice as much processing time
+* ex. simple search
 
 ## Super-linear scaling
 
-* O(n^m) - exponential - as input size grows the system slows down disproportionately
-* O(n^2) - quadratic - but everybody says **exponential** when they mean quadratic :-)
+O(n^m) - exponential
+
+* as input size grows the system slows down disproportionately
+
+O(n^2) - quadratic
+
+* everybody says exponential when they really mean quadratic :-)
 
 # Resources
 
