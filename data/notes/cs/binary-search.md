@@ -1,4 +1,4 @@
-* aka bisection search
+A.k.a. bisection search.
 
 ```python3
 def binary_search(list, item):
