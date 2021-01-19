@@ -1,4 +1,4 @@
-# Computer Science (CS)
+# Computer Science
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ada_Lovelace_portrait.jpg/167px-Ada_Lovelace_portrait.jpg" style="max-width:100%;height:auto;float:right" alt="Ada Lovelace">
 
@@ -42,7 +42,7 @@ Running a program (HD -> RAM -> CPU):
 2. CPU starts executing the program, i.e. it does this cycle (really, really
    fast): fetch, decode, execute
 
-# Programming languages (PL)
+# Programming languages
 
 * formal notations for expressing computations in an exact and unambiguous way
 * every structure in a PL has a precise form (its syntax) and a precise meaning 
