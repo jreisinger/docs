@@ -66,7 +66,7 @@ In **high-level** (human-oriented) language - like Python - it looks like:
 c = a + b
 ```
 
-## Classification by translation mechanism
+## by translation mechanism
 
 There are two ways to translate a high-level language to machine language: to
 compile it or to interpret it.
@@ -101,14 +101,14 @@ Inputs +--> |              |
   language
 * more flexible (interactive) development
 
-## Classification by program scale
+## by program scale
 
 1. traditional systems languages (C++, Ada, Java): large-scale programming,
    emphasis on structure and discipline
 2. scripting ("agile") languages (Perl, Python, Bash): designed for writing
    small/medium-scaled programs easy
 
-## Classification by programming paradigm
+## by programming paradigm
 
 1. object oriented - objects are the main focus; we tell objects to do things
    (by calling their methods)
