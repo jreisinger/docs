@@ -71,7 +71,7 @@ c = a + b
 There are two ways to translate a high-level language to machine language: to
 compile it or to interpret it.
 
-Compiled
+**Compiled**
 
 ```
 Source +---> Compiler +---> Machine
@@ -85,7 +85,7 @@ Code                        Code
 
 * compiler - a complex program; no longer needed after a program is translated
 
-Interpreted
+**Interpreted**
 
 ```
             +--------------+
@@ -103,17 +103,27 @@ Inputs +--> |              |
 
 ## by program scale
 
-1. traditional systems languages (C++, Ada, Java): large-scale programming,
-   emphasis on structure and discipline
-2. scripting ("agile") languages (Perl, Python, Bash): designed for writing
-   small/medium-scaled programs easy
+Traditional systems languages (C++, Ada, Java)
+
+* for large-scale programming
+* emphasis on structure and discipline
+
+Scripting languages (Perl, Python, Bash)
+
+* for writing small/medium-scaled programs easy
+* "agile" languages 
 
 ## by programming paradigm
 
-1. object oriented - objects are the main focus; we tell objects to do things
-   (by calling their methods)
-2. imperative - functions are the primary focus; we pass them objects to work
-   with
+Object oriented
+
+* objects are the main focus
+* we tell objects to do things by calling their methods
+
+Imperative
+
+* functions are the primary focus
+* we pass them objects to work with
 
 # Sources
 
