@@ -23,6 +23,6 @@ for ip in \
     do
         # get only geolocation
         echo -ne "$ip\t"
-        checkip $ip | grep Geolocation
+        checkip -checks geo $ip
     done
 ```
