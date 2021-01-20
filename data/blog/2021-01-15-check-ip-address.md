@@ -17,10 +17,8 @@ for ip in \
         grep waf | \
         # filter IP addresses
         perl -wlne '/((?:\d{1,3}\.){3}\d{1,3})/ and print $1' | \
-        # sort
-        sort | \
         # deduplicate
-        uniq \
+        sort | uniq \
     )
     do
         # get only geolocation
