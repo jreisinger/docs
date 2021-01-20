@@ -15,12 +15,21 @@ int main(void) {
     struct time testTimes[5] = { {11,59,59},{12,0,0},{1,29,59} };
 
     int i;
-
-    for ( i = 0; i < 5; ++i) {
+    for ( i = 0; i < 5; ++i ) {
         printf("%.2i:%.2i:%.2i\n",
-         testTimes[i].hour, testTimes[i].minutes, testTimes[i].seconds);
+            testTimes[i].hour, testTimes[i].minutes, testTimes[i].seconds);
     }
 
     return 0;
 }
+```
+
+```
+$ gcc as.c -o as
+$ ./as
+11:59:59
+12:00:00
+01:29:59
+00:00:00
+00:00:00
 ```
