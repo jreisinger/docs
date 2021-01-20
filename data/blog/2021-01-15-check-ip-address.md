@@ -20,5 +20,4 @@ $ journalctl --since "00:00" |  perl -wlne '/((?:\d{1,3}\.){3}\d{1,3})/ and prin
      17 Geolocation city unknown | France | FR
      40 Geolocation city unknown | United States | US
      41 Geolocation city unknown | China | CN
-
 ```
