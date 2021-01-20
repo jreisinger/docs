@@ -11,17 +11,17 @@ def binary_search(list, item):
     low = 0
     high = len(list) - 1
 
-    while low <= high:           # While window is open
-        mid = int((low+high)/2). # try middle element.
+    while low <= high:          # While window is open
+        mid = int((low+high)/2) # try middle element.
         guess = list[mid]
-        if guess == item:        # we've found the item
+        if guess == item:       # we've found the item
             return mid
-        if guess > item:         # guess was too high
+        if guess > item:        # guess was too high
             high = mid - 1
-        else:                    # guess was too low
+        else:                   # guess was too low
             low = mid + 1
     
-    return None                  # the item not found
+    return None                 # the item not found
 ```
 
 More
