@@ -21,8 +21,8 @@ for ip in \
         sort | uniq \
     )
     do
-        # get only geolocation
         echo -ne "$ip\t"
+        # get only geolocation
         checkip -check geo $ip
     done
 ```
