@@ -6,23 +6,19 @@ In such scenario I want to have a quick and easy way to check the IP address. I 
 
 <img src="/static/checkip.png" style="max-width:100%;width:640px">
 
-Of course, I can mix and match `checkip` with the standard shell tools. To find out from where people are trying to use my web applications I run:
+Of course, I can mix and match `checkip` with the standard shell tools. To find out from where are people (or programs) engaging with my services I run:
 
 ```
-for ip in \
-    $( \
-        # get logs since midnight
-        journalctl --since "00:00" | \
-        # filter WAF logs
-        grep waf | \
-        # filter IP addresses
-        perl -wlne '/((?:\d{1,3}\.){3}\d{1,3})/ and print $1' | \
-        # deduplicate
-        sort | uniq \
-    )
-    do
-        echo -ne "$ip\t"
-        # get only geolocation
-        checkip -check geo $ip
-    done
+$ journalctl --since "00:00" |  perl -wlne '/((?:\d{1,3}\.){3}\d{1,3})/ and print $1' | sort | uniq | xargs -I {} checkip -check geo {} | sort | uniq -c | sort -n | tail
+      8 Geolocation London | United Kingdom | GB
+      8 Geolocation city unknown | India | IN
+      8 Geolocation city unknown | Russia | RU
+      9 Geolocation Amsterdam | Netherlands | NL
+     11 Geolocation Toronto | Canada | CA
+     13 Geolocation Frankfurt am Main | Germany | DE
+     13 Geolocation city unknown | Singapore | SG
+     17 Geolocation city unknown | France | FR
+     40 Geolocation city unknown | United States | US
+     41 Geolocation city unknown | China | CN
+
 ```
