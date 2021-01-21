@@ -49,6 +49,7 @@ O(n^m) - exponential
 O(n^2) - quadratic
 
 * everybody says exponential when they really mean quadratic :-)
+* ex. selection sort
 
 # Resources
 
