@@ -4,13 +4,13 @@
 
 ModSecurity is a WAF engine (library, module) for Apache, Nginx, IIS. ModSecurity 3.0 has a new modular architecture - it's composed of:
 
-1. a connector that links libmodsecurity to the web server it is running with - e.g. for fo NGINX there's [ModSecurity-nginx](https://github.com/SpiderLabs/ModSecurity-nginx) (it takes the form of an nginx module)
-2. [libmodsecurity](https://github.com/SpiderLabs/ModSecurity) (a.k.a. [ModSecurity](https://www.modsecurity.org) :-) - core component containing the functionality and couple of rules
+1. [ModSecurity-nginx](https://github.com/SpiderLabs/ModSecurity-nginx) - a connector that links libmodsecurity to the web server it is running with - NGINX in this case (it takes the form of an nginx module)
+2. [ModSecurity](https://github.com/SpiderLabs/ModSecurity) (a.k.a. libmodsecurity :-) - core component containing the functionality and couple of rules
 
 Files
 
-* `nginx.conf` - ModSecurity-Nginx [connector directives](https://github.com/SpiderLabs/ModSecurity-nginx#usage) (like `modsecurity on`, `modsecurity_rules_file /etc/nginx/modsecurity/nginx-modsecurity.conf`)
-* `modsecurity/modsecurity.conf` - [ModSecurity directives](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v2.x%29#Configuration_Directives) v2.x (like `SecRuleEngine`, `SecRequestBodyAccess`, `SecAuditEngine`)
+* `nginx.conf` - ModSecurity-Nginx [directives](https://github.com/SpiderLabs/ModSecurity-nginx#usage) (like `modsecurity on`, `modsecurity_rules_file /etc/nginx/modsecurity/nginx-modsecurity.conf`)
+* `modsecurity/modsecurity.conf` - ModSecurity [directives](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v2.x%29#Configuration_Directives) v2.x (like `SecRuleEngine`, `SecRequestBodyAccess`, `SecAuditEngine`)
 
 Tips
 
