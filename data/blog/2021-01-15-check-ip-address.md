@@ -6,9 +6,7 @@ In such scenario I want to have a quick and easy way to check the IP address. I 
 
 <img src="/static/checkip.png" style="max-width:100%;width:640px">
 
-Of course, I can mix and match `checkip` with the standard shell tools.
-
-To get get only malicious IP addresses from a list of IP addresses (checkip exits non-zero if at least one checker thinks the IP address is not OK):
+Of course, I can mix and match [checkip](https://github.com/jreisinger/checkip) with the standard shell tools. To get get only malicious IP addresses from a list of IP addresses (checkip exits non-zero if at least one checker thinks the IP address is not OK):
 
 ```
 $ cat suspicious-ips.txt | xargs -I {} bash -c 'checkip {} > /dev/null || echo {} is not OK'
