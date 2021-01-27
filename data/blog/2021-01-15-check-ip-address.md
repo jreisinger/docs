@@ -6,7 +6,16 @@ In such scenario I want to have a quick and easy way to check the IP address. I 
 
 <img src="/static/checkip.png" style="max-width:100%;width:640px">
 
-Of course, I can mix and match `checkip` with the standard shell tools. To find out from where are people (or programs) engaging with my services I run:
+Of course, I can mix and match `checkip` with the standard shell tools.
+
+To get get only malicious IP addresses from a list of IP addresses (checkip exits non-zero if at least one checker thinks the IP address is not OK):
+
+```
+$ cat suspicious-ips.txt | xargs -I {} bash -c 'checkip {} > /dev/null || echo {} is not OK'
+212.114.52.42 is not OK
+```
+
+Or to find out from where are people (or programs) engaging with my services I run:
 
 ```
 $ journalctl --since "00:00" |  perl -wlne '/((?:\d{1,3}\.){3}\d{1,3})/ and print $1' | sort | uniq | xargs -I {} checkip -check geo {} | sort | uniq -c | sort -n | tail
@@ -21,3 +30,4 @@ $ journalctl --since "00:00" |  perl -wlne '/((?:\d{1,3}\.){3}\d{1,3})/ and prin
      40 Geolocation city unknown | United States | US
      41 Geolocation city unknown | China | CN
 ```
+
