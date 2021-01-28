@@ -6,16 +6,22 @@ In such scenario I want to have a quick and easy way to check the IP address. I 
 
 <img src="/static/checkip.png" style="max-width:100%;width:640px">
 
-Of course, I can mix and match [checkip](https://github.com/jreisinger/checkip) with the standard shell tools. To get get only suspicious IP addresses from a list of IP addresses (checkip exits non-zero if at least one checker thinks the IP address is not OK):
+Of course, I can mix and match [checkip](https://github.com/jreisinger/checkip) with the standard shell tools. First let me get some IP addresses to check from a Linux box:
 
 ```
-$ journalctl --since "00:00" |  perl -wlne '/((?:\d{1,3}\.){3}\d{1,3})/ and print $1' | sort | uniq | xargs -I {} bash -c 'checkip -check ipsum {} > /dev/null || echo {}'
+$ journalctl --since "00:00" |  perl -lne '/((?:\d{1,3}\.){3}\d{1,3})/ && print $1' | sort | uniq > /tmp/ips-all.txt
+```
+
+Now I check all of them and print only suspicious IP ones (`checkip` exits non-zero if at least one checker thinks the IP address is not OK):
+
+```
+$ cat /tmp/ips-all.txt | xargs -I {} bash -c 'checkip -check ipsum {} > /dev/null || echo {}'
 101.32.178.208
 104.248.45.204
 106.13.19.92
 ```
 
-Or to find out from where are people (or programs) engaging with services I run on a Linux box:
+Or I can find out from where are people (or programs) engaging with my services:
 
 ```
 $ journalctl --since "00:00" |  perl -wlne '/((?:\d{1,3}\.){3}\d{1,3})/ and print $1' | sort | uniq | xargs -I {} checkip -check geo {} | sort | uniq -c | sort -n | tail -3
