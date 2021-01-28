@@ -22,11 +22,13 @@ Data organization (layout)
   important for admins as it determines performance, scalability, and availability
 
 Types
+
 - logical containers for documents (similar to tables which are containers for
   rows)
 - the definition of fields in each type is called *mapping*, ex. `name` would
   be mapped as a `string`, but the `geolocation` field under location as a
   special `geo_point` type:
+
 ```
 {
   "name": "Elasticsearch Denver",
