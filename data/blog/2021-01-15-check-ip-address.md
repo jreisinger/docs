@@ -9,7 +9,7 @@ In such scenario I want to have a quick and easy way to check the IP address. I 
 Of course, I can mix and match [checkip](https://github.com/jreisinger/checkip) with the standard shell tools. To get get only suspicious IP addresses from a list of IP addresses (checkip exits non-zero if at least one checker thinks the IP address is not OK):
 
 ```
-$ journalctl --since "00:00" |  perl -wlne '/((?:\d{1,3}\.){3}\d{1,3})/ and print $1' | sort | uniq | xargs -I {} bash -c 'checkip -check ipsum {} > /dev/null || echo {} | head -3'
+$ journalctl --since "00:00" |  perl -wlne '/((?:\d{1,3}\.){3}\d{1,3})/ and print $1' | sort | uniq | xargs -I {} bash -c 'checkip -check ipsum {} > /dev/null || echo {}'
 101.32.178.208
 104.248.45.204
 106.13.19.92
