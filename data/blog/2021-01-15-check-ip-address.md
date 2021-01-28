@@ -13,7 +13,7 @@ $ cat suspicious-ips.txt | xargs -I {} bash -c 'checkip {} > /dev/null || echo {
 212.114.52.42 is not OK
 ```
 
-Or to find out from where are people (or programs) engaging with my services I run:
+Or to find out from where are people (or programs) engaging with services I run on a Linux box:
 
 ```
 $ journalctl --since "00:00" |  perl -wlne '/((?:\d{1,3}\.){3}\d{1,3})/ and print $1' | sort | uniq | xargs -I {} checkip -check geo {} | sort | uniq -c | sort -n | tail
