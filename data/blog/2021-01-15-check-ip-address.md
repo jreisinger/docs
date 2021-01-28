@@ -16,13 +16,15 @@ Now I check all of them and get only those suspicious (`checkip` exits non-zero 
 
 ```
 $ cat /tmp/ips-all.txt | xargs -I {} bash -c 'checkip -check ipsum {} > /dev/null || echo {}' > /tmp/ips-suspicious.txt
+```
 
+Almost one third of the IP addresses is suspicious (well, the Internet is a weird and terrible thing):
+
+```
 $ wc -l /tmp/ips-*
      318 /tmp/ips-all.txt
       98 /tmp/ips-suspicious.txt
 ```
-
-Almost one third of the IP addresses is suspicious. Well, the Internet is a weird and terrible thing.
 
 Or I can find out from where are people (or programs) engaging with my services:
 
