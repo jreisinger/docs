@@ -3,7 +3,7 @@ Intro
 
 - distributed search engine built on top of Apache Lucene (a search engine
   library)
-- uses JSON over HTTP API (and get back a JSON reply) for indexing, searching
+- uses JSON over HTTP API (and gets back a JSON reply) for indexing, searching
   and managing settings
 - clustered by default, you can easily add/remove servers
 - data is automatically divided into shards, which get balanced and replicated
