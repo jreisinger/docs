@@ -70,5 +70,4 @@ More
 
 * https://youtu.be/sTFJtxJXkaY
 * [Garbage collection and garbage reduction](https://www.safaribooksonline.com/videos/intermediate-go-programming/9781491944073/9781491944073-video234746)
-* https://www.gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html
 * https://www.gopl.io/, ch. 2.3
