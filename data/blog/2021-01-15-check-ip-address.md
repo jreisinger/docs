@@ -24,7 +24,7 @@ $ cat /tmp/ips-all.txt | xargs -I {} bash -c 'checkip -check ipsum {} > /dev/nul
 Or I can find out from where are people (or programs) engaging with my services:
 
 ```
-$ journalctl --since "00:00" |  perl -wlne '/((?:\d{1,3}\.){3}\d{1,3})/ and print $1' | sort | uniq | xargs -I {} checkip -check geo {} | sort | uniq -c | sort -n | tail -3
+$ cat /tmp/ips-all.txt | xargs -I {} checkip -check geo {} | sort | uniq -c | sort -n | tail -3
      17 Geolocation city unknown | France | FR
      40 Geolocation city unknown | United States | US
      41 Geolocation city unknown | China | CN
