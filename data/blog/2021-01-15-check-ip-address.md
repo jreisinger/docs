@@ -12,14 +12,17 @@ Of course, I can mix and match [checkip](https://github.com/jreisinger/checkip) 
 $ journalctl --since "00:00" |  perl -lne '/((?:\d{1,3}\.){3}\d{1,3})/ && print $1' | sort | uniq > /tmp/ips-all.txt
 ```
 
-Now I check all of them and print only suspicious IP ones (`checkip` exits non-zero if at least one checker thinks the IP address is not OK):
+Now I check all of them and get only those suspicious (`checkip` exits non-zero if at least one checker thinks the IP address is not OK):
 
 ```
-$ cat /tmp/ips-all.txt | xargs -I {} bash -c 'checkip -check ipsum {} > /dev/null || echo {}'
-101.32.178.208
-104.248.45.204
-106.13.19.92
+$ cat /tmp/ips-all.txt | xargs -I {} bash -c 'checkip -check ipsum {} > /dev/null || echo {}' > /tmp/ips-suspicious.txt
+
+$ wc -l /tmp/ips-*
+     318 /tmp/ips-all.txt
+      98 /tmp/ips-suspicious.txt
 ```
+
+Almost one third of the IP addresses is suspicious. Well, the Internet is a weird and terrible thing.
 
 Or I can find out from where are people (or programs) engaging with my services:
 
