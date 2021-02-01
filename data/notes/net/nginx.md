@@ -2,7 +2,7 @@ Nginx is a multitool: web server, load balancer, reverse proxy, WAF
 
 # Key files and directories
 
-* `/etc/nginx/nginx.conf` - sets up global setting for things like worker processes, tuning, logging, loading of dynamic modules + it references config files in `/etc/nginx/conf.d`
+* `/etc/nginx/nginx.conf` - sets up global setting for things like worker processes, performance tuning, logging, loading of dynamic modules + it references config files in `/etc/nginx/conf.d`
 * `/var/log/nginx/access.log` - entry for each request NGINX serves
 * `/var/log/nginx/error.log` - errors and debug info (if debug module is enabled)
 
