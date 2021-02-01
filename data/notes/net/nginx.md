@@ -11,7 +11,7 @@ Nginx is a multitool: web server, load balancer, reverse proxy, WAF
 * simple directive vs block directive
 * context
 
-[Sample config](https://www.nginx.com/resources/wiki/start/topics/examples/full/)
+[Full example config](https://www.nginx.com/resources/wiki/start/topics/examples/full/)
 
 # Modules
 
