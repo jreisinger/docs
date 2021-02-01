@@ -15,6 +15,8 @@ Nginx is a multitool: web server, load balancer, reverse proxy, WAF
 
 # Modules
 
+NGINX consists of modules which are controlled by directives in the config file.
+
 In version 1.9.11 (2016) Nginx added support for dynamic modules similar to Dynamic Shared Objects (DSO) of Apache HTTP server. Before that you needed to recompile Nginx if you updated a module. Now you can load/unload a module into NGINX at runtime.
 
 To load a dynamic module:
