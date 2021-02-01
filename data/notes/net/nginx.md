@@ -34,7 +34,7 @@ More:
 * [Extending NGINX](https://www.nginx.com/resources/wiki/extending/)
 * [3rd party modules](https://www.nginx.com/resources/wiki/modules/)
 
-# Directives
+## Directives
 
 The `if` directive
 
@@ -47,7 +47,7 @@ The `if` directive
 
 * `proxy_redirect` - changes text in "Location" and "Refresh" headers of a proxied response
 
-# Variables
+## Variables
 
 * [all NGINX variables](http://nginx.org/en/docs/varindex.html) creation (declaration) happens while loading the configuration file (at "configuration time")
 * on the other hand variables assignment happens when requests are actually being served (at "request time")
