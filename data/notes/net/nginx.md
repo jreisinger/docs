@@ -13,6 +13,10 @@ Nginx is a multitool: web server, load balancer, reverse proxy, WAF
 
 [Full example config](https://www.nginx.com/resources/wiki/start/topics/examples/full/)
 
+* php/fastcgi
+* reverse proxy
+* load balancer
+
 # Modules
 
 NGINX consists of modules which are controlled by directives in the config file.
