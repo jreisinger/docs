@@ -54,13 +54,14 @@ type
     PTR    Pointer (Address-to-name translation)
     MX     Mail Exchanger (Controls email routing)
     DNSKEY Public Key (Public key for a DNS name - used for DNSSEC)
+    CAA    Certification Authority Authorization
     SPF    Sender Policy (Identifies mail servers, inhibits forging)
     DKIM   DomainKeys Identified Mail (Signature system for email - verify sender and message integrity)
     CNAME  Canonical Name (Nicknames or aliases for a host)
     SRV    Services (Gives locations of well-known services)
     TXT    Text (Comments or untyped information; used for trying out new ideas)
 
-*CAA* - Certification Authority Authorization new type to indicate to CAs whetherthey are authorized to issue digital certificates for a particular domain name (CAA can't coexist with CNAME)
+*CAA* - is a new type to indicate to CAs whether they are authorized to issue digital certificates for a particular domain name (CAA can't coexist with CNAME)
 
 *SPF* - allows administrators to specify which hosts are allowed to send mail on
 behalf of a given domain by creating a specific SPF record (or TXT record) in
