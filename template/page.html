@@ -114,7 +114,9 @@ function myFunction() {
 
 <p class="footer">
 ✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}.md">source</a>
+{{if and (ne .Title "about") (ne .Title "links") (ne .Title "blog") (ne .Title "notes")}}
 <span>{{ .LastModified }}</span>
+{{end}}
 </p>
 
 {{end}}
