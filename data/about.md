@@ -1,8 +1,20 @@
-Hello and welcome to my homepage :-). I dabble in the fields of systems
-administration, security and programming. Among other things. These days my
-main areas of interest in technology are Go and Kubernetes. Before I
-concentrated on Perl, Linux, networking and security. See my
-[CV](notes/mngt/cv) for more details.
+# About this website
+
+Hello and welcome to my homepage :-). I mostly keep IT related notes and
+posts here.
+
+# About me
+
+I dabble in the fields of systems administration, security and programming.
+Among other things. These days my main areas of interest in technology are Go
+and Kubernetes. Before I concentrated on Perl, Linux, networking and
+security. See my [CV](notes/mngt/cv) for more details.
+
+Some of my activities available online
+
+* [Code](https://github.com/jreisinger)
+* [Q&A](https://stackoverflow.com/users/1039320/jreisinger)
+* [Photos](https://www.flickr.com/photos/jozrei)
 
 > The process of preparing programs for a digital computer is especially
 attractive, not only because it can be economically and scientifically
