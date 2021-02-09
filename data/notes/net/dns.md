@@ -60,6 +60,8 @@ type
     SRV    Services (Gives locations of well-known services)
     TXT    Text (Comments or untyped information; used for trying out new ideas)
 
+*CAA* - Certification Authority Authorization new type to indicate to CAs whetherthey are authorized to issue digital certificates for a particular domain name (CAA can't coexist with CNAME)
+
 *SPF* - allows administrators to specify which hosts are allowed to send mail on
 behalf of a given domain by creating a specific SPF record (or TXT record) in
 the Domain Name System (DNS).
