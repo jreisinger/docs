@@ -40,7 +40,13 @@ $ dig @ns1.isc.org. any isc.org. +norec +dnssec | grep -i size
 5. Unsuspecting client queries for the name www.example.com A record.
 6. The recursive server provides the answer from the now-poisoned cache with the forged answer from the attacker.
 
-# Data exfiltration
+# Data exfiltration via DNS tunneling
+
+DNS tunneling allows for
+
+* getting free airport WiFi
+* use SSH over DNS to get through corporate FW
+* stealing sensitive information and malware finding command and control points
 
 # More
 
