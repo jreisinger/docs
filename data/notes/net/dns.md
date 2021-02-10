@@ -90,7 +90,7 @@ DNS query process
 <img src="https://www.cs.nmsu.edu/~istrnad/cs480/lecture_notes/dns_query.png" style="max-width:100%;height:auto;"> 
 
 * `lair` is a client (lair.cs.colorado.edu)
-* `ns.cs.colorado.edu` is the local nameserver (aka recursive DNS resolver) for lair
+* `ns.cs.colorado.edu` is the local nameserver for lair
 
 Name server taxonomy
 ====================
@@ -109,7 +109,13 @@ recursive - queries on your behalf until it returns either an answer or an error
 
 non-recursive - refers you to another server if it can't answer a query
 
-*Note*: resolver libraries do not understand referrals. Any local nameserver listed in a client's `resolv.conf` file must be recursive.
+resolver (meaning 1) - client side software (library) doing lookups 
+
+* Resolver libraries do not understand referrals. Any local nameserver listed in a client's `resolv.conf` file must be recursive.
+ 
+resolver (meaning 2) - local nameserver (like that one you put in `/etc/resolv.conf`) for doing lookups
+
+* some people call it recursor or recursive resolver
 
 Tips and tricks
 ===============
