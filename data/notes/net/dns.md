@@ -123,23 +123,26 @@ resolver (meaning 2) - local nameserver (like that one you put in `/etc/resolv.c
 Tips and tricks
 ===============
 
-CLI tools
----------
-
-dig
-
-    dig [@server] [-x addr] [name] [type] [+trace] [+short]
-
 host
+----
 
     host name|addr [server]
  
-nslookup (Cricket Liu doesn't like it :-))
+nslookup
+--------
+
+(Cricket Liu doesn't like it :-))
 
     nslookup [name|addr] [server]
 
-dig examples
-------------
+dig
+---
+
+    dig [@server] [-x addr] [name] [type] [+trace] [+short]
+
+* queries the name servers configured in `/etc/resolv.conf` by default (use `@<nameserver>` to override)
+
+The pseudo-type `any` is a bit sneaky: instead of returning all data associated with a name, it returns all cached data associated with the name. So, to get all records, you might have to do `dig domain NS` followed by `dig @ns1.domain domain any`. (Authoritative data counts as cached in this context.)
 
 Find out the names of authoritative nameservers for a domain
 
