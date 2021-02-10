@@ -84,7 +84,7 @@ See [Cloudflare article](https://www.cloudflare.com/learning/dns/dns-records/) f
 
 *CNAME*
 
-* is not allowed at zone apex level, i.e. for FQDN that is the same name as the zone name (aka bare, naked or root zone)
+* RFC1033 denies CNAME at zone apex, i.e. for FQDN that is the same name as the zone name (aka bare, naked or root domain)
  * for this scenario, you can use `ALIAS` record type
 * if a domain name has a CNAME record, it is not allowed to have any other records according to the DNS standards
 
