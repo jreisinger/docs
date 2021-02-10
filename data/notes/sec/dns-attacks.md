@@ -25,6 +25,12 @@ $ dig @ns1.isc.org. any isc.org. +norec +dnssec | grep -i size
 
 # Cache poisoning
 
+* corrupting the cached answers on the recursive name servers
+* either through software bugs (vendor dependent) or protocol weaknesses
+* protocol weakness 1: UDP is lightweight but it's easier to spoof than TCP
+* protocol weakness 2: the only answer field that's not easy to spoof is Query ID (aka TXID) but it has not enough randomness
+* TXID is 16 bits large and thus can be guessed
+
 <img src="/static/cache-poisoning.jpeg" style="max-width:100%;width:320px">
 
 1. The attacker has prior knowledge of the target domain and sends a query to the recursive DNS server for a name that does not exist, such as q0001xxx.example.com
