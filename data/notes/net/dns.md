@@ -62,6 +62,7 @@ type
     TXT    Text (Comments or untyped information; used for trying out new ideas)
     
 *CNAME* - is not allowed at zone apex level, i.e. for FQDN that is the same name as the zone name (aka bare, naked or root zone). For this scenario, you can use `ALIAS` record type.
+* if a domain name has a CNAME record, it is not allowed to have any other records according to the DNS standards
 
 *CAA* - is a new type to indicate to CAs whether they are authorized to issue digital certificates for a particular domain name (CAA can't coexist with CNAME)
 
