@@ -40,6 +40,8 @@ $ dig @ns1.isc.org. any isc.org. +norec +dnssec | grep -i size
 5. Unsuspecting client queries for the name www.example.com A record.
 6. The recursive server provides the answer from the now-poisoned cache with the forged answer from the attacker.
 
+See Cloudflare's [article](https://www.cloudflare.com/learning/dns/dns-cache-poisoning/) for more.
+
 # Data exfiltration via DNS tunneling
 
 DNS tunneling allows for
