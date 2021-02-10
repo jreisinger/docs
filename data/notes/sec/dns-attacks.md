@@ -1,6 +1,6 @@
 # DDoS attacks
 
-## Aplification attacks
+## Amplification attacks
 
 * a small query can trigger a large response
 * this query is 48 bytes and the response is 3390 bytes (as seen in Wireshark)
@@ -11,8 +11,17 @@ $ dig @ns1.isc.org. any isc.org. +norec +dnssec | grep -i size
 ```
 
 * so a bot with 1Mbps connection can make a DNS server to generate cca 70Mb each second (3390/48)
+* a botnet with 15 such bots can make the DNS server saturate a 1Gbps network
 
 ## Reflection attacks
+
+* queries with spoofed (victim's) source IP address
+* the victim will get unsollicited (often amplified) responses
+
+## Combination attacks
+
+* spoofed source IP addres + query that will result in a large payload
+* authoritative server provides the amplification, recursive server provides the reflection
 
 # Cache poisoning
 
