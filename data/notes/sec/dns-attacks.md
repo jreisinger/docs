@@ -25,6 +25,8 @@ $ dig @ns1.isc.org. any isc.org. +norec +dnssec | grep -i size
 
 # Cache poisoning
 
+
+
 # Data exfiltration
 
 # More
