@@ -28,6 +28,15 @@ Parser commands (directives)
 Resource records
 ----------------
 
+Special characters in resource records
+
+    ;   comment
+    @   the current zone name
+    ()  allows data to span lines
+    *   wild card (`name` field only)
+
+Syntax
+
     [name] [ttl] [class] type data
     
 name
@@ -60,15 +69,28 @@ type
     CNAME  Canonical Name (Nicknames or aliases for a host)
     SRV    Services (Gives locations of well-known services)
     TXT    Text (Comments or untyped information; used for trying out new ideas)
-    
-*CNAME* - is not allowed at zone apex level, i.e. for FQDN that is the same name as the zone name (aka bare, naked or root zone). For this scenario, you can use `ALIAS` record type.
+
+See [Cloudflare article](https://www.cloudflare.com/learning/dns/dns-records/) for more types.
+
+*SOA*
+
+* each zone has exactly one SOA record. 
+* the SOA record includes the name of the zone, the primary name server for the zone, a technical contact, and various timeout values
+
+*CNAME*
+
+* is not allowed at zone apex level, i.e. for FQDN that is the same name as the zone name (aka bare, naked or root zone)
+ * for this scenario, you can use `ALIAS` record type
 * if a domain name has a CNAME record, it is not allowed to have any other records according to the DNS standards
 
-*CAA* - is a new type to indicate to CAs whether they are authorized to issue digital certificates for a particular domain name (CAA can't coexist with CNAME)
+*CAA*
 
-*SPF* - allows administrators to specify which hosts are allowed to send mail on
-behalf of a given domain by creating a specific SPF record (or TXT record) in
-the Domain Name System (DNS).
+* a new type to indicate to CAs whether they are authorized to issue digital certificates for a particular domain name
+* CAA can't coexist with CNAME
+
+*SPF*
+
+* allows administrators to specify which hosts are allowed to send email on behalf of a given domain
 
 *DKIM* - powered by asymmetric cryptography
 
@@ -77,15 +99,6 @@ private key.
 2. The recipient retrieves the public key from the sender's DNS records and
 verifies if the message body and some of the header fields were not altered
 since the message signing took place.
-
-Special characters in resource records
-
-    ;   comment
-    @   the current zone name
-    ()  allows data to span lines
-    *   wild card (`name` field only)
-
-See [Cloudflare article](https://www.cloudflare.com/learning/dns/dns-records/) for more types.
 
 DNS query process
 =================
