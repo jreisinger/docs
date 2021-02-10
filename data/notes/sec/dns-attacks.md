@@ -48,6 +48,11 @@ DNS tunneling allows for
 * use SSH over DNS to get through corporate FW
 * stealing sensitive information and malware finding command and control points
 
+In the last case, clients evade detection by breaking data down into
+query-sized chunks, disguising sensitive data as DNS queries, and sending
+them to malicious DNS servers on the far end who can unpack these queries and
+reconstruct the data.
+
 <img src="/static/dns-data-exfiltration.jpeg" style="max-width:100%;width:640px">
 
 # More
