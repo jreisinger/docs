@@ -60,6 +60,8 @@ type
     CNAME  Canonical Name (Nicknames or aliases for a host)
     SRV    Services (Gives locations of well-known services)
     TXT    Text (Comments or untyped information; used for trying out new ideas)
+    
+*CNAME* - is not allowed at zone apex level, i.e. for FQDN that is the same name as the zone name (aka bare, naked or root zone). For this scenario, you can use `ALIAS` record type.
 
 *CAA* - is a new type to indicate to CAs whether they are authorized to issue digital certificates for a particular domain name (CAA can't coexist with CNAME)
 
@@ -176,8 +178,6 @@ Find DNS server used by your system:
 # Ubuntu 16.04
 nmcli device show | grep IP4.DNS
 ```
-
-CNAME is not possible at zone apex level, i.e. for FQDN that is the same name as the zone name (aka bare, naked or root zone). For this scenario, you can use `ALIAS` record type.
  
 Sources
 =======
