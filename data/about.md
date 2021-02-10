@@ -1,4 +1,4 @@
-# About this website
+# About website
 
 Hello and welcome to my homepage :-). I mostly keep IT related notes here.
 
