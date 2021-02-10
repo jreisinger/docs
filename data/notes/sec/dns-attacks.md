@@ -31,7 +31,7 @@ $ dig @ns1.isc.org. any isc.org. +norec +dnssec | grep -i size
 * protocol weakness 2: the only answer field that's not easy to spoof is Query ID (aka TXID) but it has not enough randomness
 * TXID is 16 bits large and thus can be guessed
 
-<img src="/static/cache-poisoning.jpeg" style="max-width:100%;width:320px">
+<img src="/static/dns-cache-poisoning.jpeg" style="max-width:100%;width:320px">
 
 1. The attacker has prior knowledge of the target domain and sends a query to the recursive DNS server for a name that does not exist, such as q0001xxx.example.com
 2. Because this is a name that does not exist, the recursive DNS server must traverse the DNS namespace to find it.
@@ -47,6 +47,8 @@ DNS tunneling allows for
 * getting free airport WiFi
 * use SSH over DNS to get through corporate FW
 * stealing sensitive information and malware finding command and control points
+
+<img src="/static/dns-data-exfiltration.jpeg" style="max-width:100%;width:320px">
 
 # More
 
