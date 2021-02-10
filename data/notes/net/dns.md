@@ -77,6 +77,11 @@ See [Cloudflare article](https://www.cloudflare.com/learning/dns/dns-records/) f
 * each zone has exactly one SOA record. 
 * the SOA record includes the name of the zone, the primary name server for the zone, a technical contact, and various timeout values
 
+*NS* records
+
+* identify the servers that are authoritative fot a zone (all master and slave servers)
+* delegate subdomains to other organizations
+
 *CNAME*
 
 * is not allowed at zone apex level, i.e. for FQDN that is the same name as the zone name (aka bare, naked or root zone)
