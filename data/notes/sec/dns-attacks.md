@@ -16,7 +16,7 @@ $ dig @ns1.isc.org. any isc.org. +norec +dnssec | grep -i size
 ## Reflection attacks
 
 * queries with spoofed (victim's) source IP address
-* the victim will get unsollicited (often amplified) responses
+* the victim will get unsolicited (often amplified) responses
 
 ## Combination attacks
 
