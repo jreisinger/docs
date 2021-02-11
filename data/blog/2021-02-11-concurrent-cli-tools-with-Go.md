@@ -68,7 +68,7 @@ func (t *task) Print() {
 }
 ```
 
-Now you just need to run the factory with some number of workers:
+Now you run the factory with some number of workers:
 
 ```
 func main() {
