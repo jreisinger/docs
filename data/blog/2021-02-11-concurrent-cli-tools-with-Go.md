@@ -20,7 +20,7 @@ sys     0m1.243s
 Wait a second! Almost 40 seconds? What if I needed to check 10,000 URLs!
 
 Let's try another approach. Go is famous for its easy concurrency by the
-virtue of goroutines and channels. It's true that it is much easier to write
+virtue of goroutines and channels. It's true that it is much easier (and cheaper) to write
 concurrent programs in Go than in many other languages. But writing a
 concurrent program is still more difficult than a sequential one. So you
 might find useful the [work](https://github.com/jreisinger/work) package that
