@@ -149,7 +149,7 @@ blockquote {
   border: 1px solid #ddd;
   border-left: 2px solid green;
   color: #666;
-  margin: 1.5em 10px;
+  margin: 1.5em 0px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
   border-radius: 0.3125rem;
