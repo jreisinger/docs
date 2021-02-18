@@ -61,6 +61,18 @@ Programming Perl => Camel, aka Dromedary
 Introducing Go => Botta's Pocket Gopher
 ```
 
+Find objects with a **string match** against the title:
+
+```
+$ jq -r '.[] | select(.title=="Introducing Go")' < animals.json
+{
+  "animal": "Botta's Pocket Gopher",
+  "cover_src": "https://covers.oreilly.com/images/0636920046516/cat.gif",
+  "link": "https://shop.oreilly.com/product/0636920046516.do",
+  "title": "Introducing Go"
+}
+```
+
 Find an animal with a **regex match** against the title:
 
 ```
