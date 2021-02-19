@@ -60,3 +60,4 @@ reconstruct the data.
 # More
 
 * https://www.infoblox.com/dns-security-resource-center/
+* https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610 - exfiltrating data via DNS (2021)
