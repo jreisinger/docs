@@ -48,8 +48,8 @@
   .topnav a:not(:nth-child(1)) {display: none;}
   .topnav form {display: none;}
   .topnav a.icon {
-    display: block;
-    float: right;
+    display: inline;
+    float: inline-end;
   }
 }
 
@@ -63,11 +63,8 @@
     position: relative;
   }
   .topnav.responsive a.icon {
-    display: block;
-    position: absolute;
-    /* This doesn't feel right :-) */
-    right: 1.5%;
-    top: 4.5%;
+    display: inline;
+    float: inline-end;
   }
   .topnav.responsive a {
     float: none;
