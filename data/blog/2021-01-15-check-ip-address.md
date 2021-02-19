@@ -12,7 +12,7 @@ Of course, I can mix and match [checkip](https://github.com/jreisinger/checkip) 
 $ journalctl --since "00:00" |  perl -lne '/((?:\d{1,3}\.){3}\d{1,3})/ && print $1' | sort | uniq > /tmp/ips-all.txt
 ```
 
-Now I check all of them and get only those considered suspicious by more than 3 checks (`checkip` exit code is the number of checks that say the IP address is not OK):
+Now I check all of them and get only those considered suspicious by more than 3 checks (exit code is the number of checks that say the IP address is not OK):
 
 ```
 $ cat /tmp/ips-all.txt | xargs -I {} bash -c 'checkip {} > /dev/null; [[ $? -gt 3 ]] && echo {}'
