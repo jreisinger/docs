@@ -59,7 +59,7 @@ reconstruct the data.
 
 ## Detection
 
-[Using Splunkg to detect DNS tunelling](https://www.sans.org/reading-room/whitepapers/dns/splunk-detect-dns-tunneling-37022)
+[Using Splunk to detect DNS tunelling](https://www.sans.org/reading-room/whitepapers/dns/splunk-detect-dns-tunneling-37022)
 
 * preventing all DNS tunneling is not possible
 * if a malicious actor chooses to exfiltrate data using a few DNS packets every so often over time, it is very hard to detect 
