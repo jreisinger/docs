@@ -59,8 +59,8 @@ reconstruct the data.
 
 Tools
 
-* Iodine - encodes traffic
-* Dnscat2 - encrypts traffic
+* [Iodine](https://github.com/yarrick/iodine) - encodes traffic
+* [Dnscat2](https://github.com/iagox86/dnscat2) - encrypts traffic, C&C channel
 
 ## Detection
 
