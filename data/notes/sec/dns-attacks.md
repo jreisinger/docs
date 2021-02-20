@@ -71,6 +71,20 @@ Source: [Using Splunk to detect DNS tunelling](https://www.sans.org/reading-room
 
 ### Payload analysis
 
+Hostname entropy
+
+* Domain Generating Algorithms (DGAs) create random hostnames such as asdlfkjasdflwerjka.t1.security.local
+* use [shannon](https://github.com/jreisinger/shannon) algorithm to calculate the hostname entropy (randomnes)
+* the higher the entropy the higher the probability of a malicious hostname
+
+```
+$ shannon < /tmp/hostnames.txt
+2.646439	google.com
+2.646439	golang.org
+2.721928	amazon.com
+4.016876	asdlfkjasdflwerjka.t1.security.local
+```
+
 Unusual records types
 
 * AXFR - a zone transfer - unless the organization explicitly allows zone transfers for specific hosts, this is a red flag someone may be performing active footprinting of the organization’s network
@@ -78,6 +92,14 @@ Unusual records types
 * DNSSEC - signing of domain names and records to validate their authenticity against any modification by a third part
 
 ### Traffic analysis
+
+Volumes of DNS requests
+
+* a tunnel will create a tremendous amount of DNS requests when transferring a file
+
+Geographic location
+
+* if the organization does not conduct business in X country, does it make sense for DNS requests to be going there?
 
 # More
 
