@@ -71,11 +71,11 @@ Source: [Using Splunk to detect DNS tunelling](https://www.sans.org/reading-room
 
 ### Payload analysis
 
-Hostname entropy
+FQDN entropy
 
-* Domain Generating Algorithms (DGAs) create random hostnames such as asdlfkjasdflwerjka.t1.security.local
-* use [shannon](https://github.com/jreisinger/shannon) algorithm to calculate the hostname entropy (randomnes)
-* the higher the entropy the higher the probability of a malicious hostname
+* Domain Generating Algorithms (DGAs) create random FQDNs such as asdlfkjasdflwerjka.t1.security.local
+* use [shannon](https://github.com/jreisinger/shannon) algorithm to calculate the FQDN entropy (randomnes)
+* the higher the entropy the higher the probability of a malicious FQDN
 
 ```
 $ shannon < /tmp/hostnames.txt
@@ -84,6 +84,12 @@ $ shannon < /tmp/hostnames.txt
 2.721928	amazon.com
 4.016876	asdlfkjasdflwerjka.t1.security.local
 ```
+
+FQDN length
+
+* an outlier is the request length being more than three times the average length of all the DNS requests
+* the value three times the standard deviation is not always correct
+* depending on the organization and data set the value can be anywhere from two to five times the standard deviation
 
 Unusual records types
 
