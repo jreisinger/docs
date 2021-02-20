@@ -62,18 +62,22 @@ Tools
 * [Iodine](https://github.com/yarrick/iodine) - encodes traffic
 * [Dnscat2](https://github.com/iagox86/dnscat2) - encrypts traffic, C&C channel
 
-## Detection
+## Detection using DNS server logs
 
-[Using Splunk to detect DNS tunelling](https://www.sans.org/reading-room/whitepapers/dns/splunk-detect-dns-tunneling-37022)
+Source: [Using Splunk to detect DNS tunelling](https://www.sans.org/reading-room/whitepapers/dns/splunk-detect-dns-tunneling-37022)
 
 * preventing all DNS tunneling is not possible
 * if a malicious actor chooses to exfiltrate data using a few DNS packets every so often over time, it is very hard to detect
+
+### Payload analysis
 
 Unusual records types
 
 * AXFR - a zone transfer - unless the organization explicitly allows zone transfers for specific hosts, this is a red flag someone may be performing active footprinting of the organization’s network
 * AAAA - resolves domain names for the 128-bit IPv6 IP address
 * DNSSEC - signing of domain names and records to validate their authenticity against any modification by a third part
+
+### Traffic analysis
 
 # More
 
