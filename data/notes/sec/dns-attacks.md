@@ -88,7 +88,7 @@ $ shannon < /tmp/hostnames.txt
 FQDN length
 
 * an outlier is the request length being more than three times the average length of all the DNS requests
-* the value three times the standard deviation is not always correct
+* the value three times the [standard deviation](https://github.com/jreisinger/stddev) is not always correct
 * depending on the organization and data set the value can be anywhere from two to five times the standard deviation
 
 Unusual records types
