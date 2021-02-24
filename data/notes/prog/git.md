@@ -169,6 +169,17 @@ git checkout SHA1_HASH
 
 `git-checkout` doesn't modify existing history.
 
+## Revert last merge containing multiple commits
+
+```
+$ git show :/^Merge
+Merge: 805cf9c 11e94f9
+<...snip...>
+
+$ git checkout 805cf9c .
+$ git commit -m "revert last merge of test into master"
+```
+
 # Branching and merging
 
 Branch is a separate line of development.
