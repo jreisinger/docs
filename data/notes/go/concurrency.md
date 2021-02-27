@@ -3,24 +3,23 @@ Concurrent programming
 * a way to structure software
 * a composition of several independent computations
 * concurrency != parallelism
+* inherently more difficult than sequential
 
 Why?
 
-* the world is a complex system of interacting, independently behaving activities
+* the world is a complex system of interacting, independently activities
 * we want to model and interact with this world
-* the number of processors in a computer grows every year the speed of processors not
+* the number of processors in a computer grows faster than their speed
 
 Go enables two styles of concurrent programming:
 
 1. Communicating sequential processes (CSP) - see below
 2. Shared memory multithreading - more traditional model
 
-Reasoning about concurrent programs is inherently more difficult than about sequential ones.
-
 Goroutines
 
-* a *goroutine* is a concurrently executing activity
-* When a program starts, its only goroutine is the one that calls the `main` function
+* concurrently executing activities
+* when a program starts, its only goroutine is the one that calls the `main` function
 * you can create new goroutines with the `go` keyword
 
 ```
@@ -33,7 +32,7 @@ go f()  // create a new goroutine that calls f(); don't wait
 Channels - a way for gouroutines to
 
 * communicate with each other
-* synchronize their execution.
+* synchronize their execution
 
 Select
 
@@ -46,7 +45,6 @@ Select
 Example
 
 ```go
-// select.go
 package main
 
 import (
