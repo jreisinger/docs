@@ -61,7 +61,7 @@ func fib(n int) int {
 
 A goroutine is stopped by returning from `main` or by exiting the program.
 
-# Goroutines and channels
+# Channels
 
 A *channel* is a way for gouroutines to communicate with each other and *synchronize* their execution.
 
@@ -154,169 +154,11 @@ func main() {
 }
 ```
 
-# Timing out a goroutine
+# Sources and more
 
-```
-// timer.go
-package main
-
-import (
-    "fmt"
-    "time"
-)
-
-// emit emits words on wordCh for 3 seconds.
-func emit(wordCh chan string) {
-    defer close(wordCh) // close channel when return-ing
-
-    words := []string{"The", "quick", "brown", "fox"}
-
-    i := 0                              // index
-    t := time.NewTimer(3 * time.Second) // function's timer
-
-    for {
-        select { // select not switch :-)
-
-        case wordCh <- words[i]: // someone reads from channel
-            i += 1
-            if i == len(words) {
-                i = 0
-            }
-
-        case <-t.C: // timer goes off
-            return
-        }
-
-    }
-}
-
-func main() {
-    wordCh := make(chan string)
-
-    go emit(wordCh)
-
-    // range over the channel until closed
-    for word := range wordCh {
-        fmt.Printf("%s ", word)
-    }
-}
-```
-
-# Scalable work system using goroutines, channels and interfaces
-
-```
-// work.go
-// A common use case for Go is to take a stream of jobs of work and perform them
-// automatically scaling up and down as work becomes available. See the video 
-// Intermediate Go programming - Building a scalable work system.
-// ./work < urls.txt
-package main
-
-import (
-	"bufio"
-	"fmt"
-	"log"
-	"net/http"
-	"os"
-	"sync"
-)
-
-type task interface {
-	process()
-	output()
-}
-
-type factory interface {
-	create(line string) task
-}
-
-func run(f factory) {
-	var wg sync.WaitGroup
-
-	in := make(chan task)
-
-	wg.Add(1)
-	go func() {
-		s := bufio.NewScanner(os.Stdin)
-		for s.Scan() {
-			in <- f.create(s.Text())
-		}
-		if s.Err() != nil {
-			log.Fatalf("Error reading STDIN: %s", s.Err())
-		}
-		close(in)
-		wg.Done()
-	}()
-
-	out := make(chan task)
-
-	// Create 1000 goroutines to process the tasks.
-	for i := 0; i < 1000; i++ {
-		wg.Add(1)
-		go func() {
-			for t := range in {
-				t.process()
-				out <- t
-			}
-			wg.Done()
-		}()
-	}
-
-	go func() {
-		wg.Wait()
-		close(out)
-	}()
-
-	for t := range out {
-		t.output()
-	}
-}
-
-type HTTPTask struct {
-	url string
-	ok  bool
-}
-
-func (h *HTTPTask) process() {
-	resp, err := http.Get(h.url)
-	if err != nil {
-		h.ok = false
-		return
-	}
-	if resp.StatusCode == http.StatusOK {
-		h.ok = true
-		return
-	}
-	h.ok = false
-}
-
-func (h *HTTPTask) output() {
-	fmt.Printf("%s %t\n", h.url, h.ok)
-}
-
-type Factory struct {
-}
-
-func (f *Factory) create(line string) task {
-	h := &HTTPTask{}
-	h.url = line
-	return h
-}
-
-func main() {
-	f := &Factory{}
-	run(f)
-}
-```
-
-# Sources
-
+* https://github.com/jreisinger/go-concurrency-patterns
+* https://github.com/jreisinger/katas
 * Donovan, Kernighan: The Go Programming Language (2015), ch.8
 * Caleb Doxsey: Introducing Go (2016)
 * John Graham-Cumming: Go Programming Basics (2017)
 * John Graham-Cumming: Intermediate Go Programming (2015) - Building a scalable work system
-
-# See also
-
-* https://github.com/jreisinger/go-concurrency-patterns
-* https://golang.org/doc/effective_go.html#concurrency
