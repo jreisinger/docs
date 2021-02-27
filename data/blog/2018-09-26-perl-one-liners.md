@@ -39,15 +39,15 @@ The thing between slashes is a [regular expression](https://perldoc.perl.org/per
 Replace `/bin/sh` with `/bin/bash` and emit the transformed passwd file to STDOUT:
 
 ```
-perl -pe 's#/bin/sh$#/bin/bash#' /etc/passwd
+perl -wpe 's#/bin/sh$#/bin/bash#' /etc/passwd
 ```
 
-We used `#` instead of `/` as delimeter for better readibility since to strings themselves contain slashes. `$` means end of the string.
+We used `#` instead of `/` as delimeter for better readibility since the strings themselves contain slashes. `$` means end of the string.
 
 Replace `colour` with `color` in all text files. The original files will be kept with `.bak` suffix:
 
 ```
-perl -i.bak -pe 's/colour/color/g' *.txt
+perl -i.bak -wpe 's/colour/color/g' *.txt
 ```
 
 `g` (global) means replace all occurences in a string not just the first one.
@@ -55,8 +55,8 @@ perl -i.bak -pe 's/colour/color/g' *.txt
 Convert between DOS and Unix newline:
 
 ```
-perl -i -pe 's/\r//'  <file1> <file2> ... # dos-to-unix
-perl -i -pe 's/$/\r/' <file1> <file2> ... # unix-to-dos
+perl -i -wpe 's/\r//'  <file1> <file2> ... # dos-to-unix
+perl -i -wpe 's/$/\r/' <file1> <file2> ... # unix-to-dos
 ```
 
 ### Various 
@@ -80,7 +80,7 @@ Calculate the total size of log files older than 30 days:
 
 ```
 find /opt/splunk/syslog/ -iname "*log*" -type f -mtime +30 | \
-perl -lne '$sum += (stat)[7]}{print $sum'
+perl -wlne '$sum += (stat)[7]}{print $sum'
 ```
 
 The [stat](https://perldoc.perl.org/functions/stat.html) function returns a 13-element list of status info about a file. We take the 8th element (with index `7`) which is the size of a file. We loop over the found files and add the size of each into the `$sum` variable. The handy [Eskimo Greeting Operator](http://www.catonmat.net/blog/secret-perl-operators/#eskimo) is for priting the `$sum` when the loop is over (suggested by [PerlMonks](http://www.perlmonks.org/?node_id=1172707)).
