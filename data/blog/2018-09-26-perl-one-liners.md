@@ -37,7 +37,7 @@ The thing between slashes is a [regular expression](https://perldoc.perl.org/per
 Get IP addresses from logs:
 
 ```
-journalctl --since "00:00" |  perl -lne '/((?:\d{1,3}\.){3}\d{1,3})/ && print $1' | sort | uniq > /tmp/ips-all.txt
+journalctl --since "00:00" |  perl -wlne '/((?:\d{1,3}\.){3}\d{1,3})/ && print $1' | sort | uniq > /tmp/ips.txt
 ```
 
 The IP address regex explained:
