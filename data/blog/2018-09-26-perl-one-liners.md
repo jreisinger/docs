@@ -17,7 +17,7 @@ These are some of the most used command line switches:
 * `-w` -- enable **w**arnings (generally advisable)
 * `-p` -- loop through lines, reading and **p**rinting them (in-script equivalent: `while (<>) { [<code>] print }`)
 * `-n` -- loop through lines, reading but **n**ot printing them
-* `-l` -- print a new**l**ine (`$/` actually) after each line of output and chomp newline if used with `-n` or `-p`
+* `-l` -- print a new**l**ine (`$/` actually) after each line of output and chomp input newlines if used with `-n` or `-p`
 * `-i[<.ext>]` (**i**ntrepid) -- create backup file (with `<.ext>` extension if defined)
 * `-a` (**a**utosplit) -- split the `$_` default variable into `@F` array (space is the default separator, change it with `-F`, ex. `-F:`)
 * `-s` -- rudimentary parsing of command line **s**witches (see "Git-tracked directory" multi-liner below)
