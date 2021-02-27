@@ -11,14 +11,16 @@ Why?
 
 Go enables two styles of concurrent programming:
 
-1. Communicating sequential processes (CSP) - values are passed between autonomous activities (goroutines) but variables are for the most part confined to a single activity.
-2. Shared memory multithreading - more traditional model.
+1. Communicating sequential processes (CSP) - see below
+2. Shared memory multithreading - more traditional model
 
 Reasoning about concurrent programs is inherently more difficult than about sequential ones.
 
 # Goroutines
 
-A *goroutine* is a concurrently executing activity. When a program starts, its only goroutine is the one that calls the `main` function - the *main goroutine*. You can create new goroutines with the `go` keyword.
+* a *goroutine* is a concurrently executing activity
+* When a program starts, its only goroutine is the one that calls the `main` function
+* you can create new goroutines with the `go` keyword
 
 ```
 f()     // call f(); wait for it to return
