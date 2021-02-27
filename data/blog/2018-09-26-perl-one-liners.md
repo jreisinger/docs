@@ -61,20 +61,21 @@ perl -i -wpe 's/$/\r/' <file1> <file2> ... # unix-to-dos
 
 ## Cut 
 
-Print 2nd and 1st field (column) out of three original ones:
+Cut out 2nd and 1st space seprated field (column):
 
 ```
 $ cat birthdays.txt
 03/30/45 Eric Clapton
 11/27/42 Jimi Hendrix
 06/24/44 Jeff Beck
+
 $ perl -wlane 'print join " ", @F[1,0]' birthdays.txt
 Eric 03/30/45
 Jimi 11/27/42
 Jeff 06/24/44
 ```
 
-The field numbering starts at 0.
+The field numbering starts at 0. We use [join](https://perldoc.perl.org/functions/join) to put a space between cut out fields.
 
 ## Calculate
 
