@@ -52,7 +52,7 @@ The IP address regex explained:
 )               
 ```
 
-For a more serious program where you want to cover possible edge cases you should use a well tested module [Regexp::Common](https://metacpan.org/pod/Regexp::Common) as suggested by [PerlMonks](https://perlmonks.org/?node_id=11127622)).
+For a more serious program where you want to cover possible edge cases you should use a well tested module [Regexp::Common](https://metacpan.org/pod/Regexp::Common) as suggested by [PerlMonks](https://perlmonks.org/?node_id=11127622).
 
 ## Replace
 
