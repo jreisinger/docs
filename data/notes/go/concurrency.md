@@ -102,7 +102,11 @@ func printer(ch chan string) {
 
 # Select
 
-`select` statement is like a switch but for channels. `select` picks the first channel that is ready a receives from it. If more than one of the channels are ready, then it randomly picks which one to receive from. The default case happens immediately if none of the channels is ready.
+* `select` statement is like a switch but for channels (i.e. it's not for expressions but for communications)
+* first all channels are evaluated
+* blocks until one communication can proceed, which then does
+* if multiple can proceed, select chooses pseudo-randomly
+* the default case, if present, executes immediately if no channel is ready
 
 ```go
 // select.go
