@@ -24,9 +24,7 @@ These are some of the most used command line switches:
 
 See [perlrun](http://perldoc.perl.org/perlrun.html) for more.
 
-## Examples
-
-### Search and replace
+## Search
 
 Find lines in logs that contain error or warning:
 
@@ -35,6 +33,8 @@ perl -wne '/error|warning/i && print' /var/log/*.log
 ```
 
 The thing between slashes is a [regular expression](https://perldoc.perl.org/perlre.html). It means match string `error` or string `warning` anywhere in the log line. `i` says to Perl to ignore the case. So it will match ERROR, error, Warning etc. If the regex finds a match (i.e. evaluates to true) the `&&` logical operator runs the `print` statement that will print the line containing the match.
+
+## Replace
 
 Replace `/bin/sh` with `/bin/bash` and emit the transformed passwd file to STDOUT:
 
@@ -59,7 +59,7 @@ perl -i -wpe 's/\r//'  <file1> <file2> ... # dos-to-unix
 perl -i -wpe 's/$/\r/' <file1> <file2> ... # unix-to-dos
 ```
 
-### Various 
+## Cut 
 
 Print 2nd and 1st field (column) out of three original ones:
 
@@ -75,6 +75,8 @@ Jeff 06/24/44
 ```
 
 The field numbering starts at 0.
+
+## Calculate
 
 Calculate the total size of log files older than 30 days:
 
