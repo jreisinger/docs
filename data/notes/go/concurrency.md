@@ -2,6 +2,7 @@ Concurrent programming
 
 * a way to structure software
 * a composition of several independent computations
+* concurrency != parallelism
 
 Why?
 
