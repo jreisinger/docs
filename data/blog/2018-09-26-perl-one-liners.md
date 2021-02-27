@@ -20,7 +20,6 @@ These are some of the most used command line switches:
 * `-l` -- print a new**l**ine (`$/` actually) after each line of output and chomp input newlines if used with `-n` or `-p`
 * `-i[<.ext>]` (**i**ntrepid) -- create backup file (with `<.ext>` extension if defined)
 * `-a` (**a**utosplit) -- split the `$_` default variable into `@F` array (space is the default separator, change it with `-F`, ex. `-F:`)
-* `-s` -- rudimentary parsing of command line **s**witches (see "Git-tracked directory" multi-liner below)
 * `-M<module>[=<subroutine>,...]` -- load subroutine(s) from a **m**odule
 
 See [perlrun](http://perldoc.perl.org/perlrun.html) for more.
