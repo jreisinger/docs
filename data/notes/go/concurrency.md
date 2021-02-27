@@ -16,7 +16,7 @@ Go enables two styles of concurrent programming:
 
 Reasoning about concurrent programs is inherently more difficult than about sequential ones.
 
-# Goroutines
+Goroutines
 
 * a *goroutine* is a concurrently executing activity
 * When a program starts, its only goroutine is the one that calls the `main` function
@@ -27,19 +27,22 @@ f()     // call f(); wait for it to return
 go f()  // create a new goroutine that calls f(); don't wait
 ```
 
-A goroutine is stopped by returning from `main` or by exiting the program.
+* a goroutine is stopped by returning from `main` or by exiting the program.
 
-# Channels
+Channels - a way for gouroutines to
 
-A *channel* is a way for gouroutines to communicate with each other and *synchronize* their execution.
+* communicate with each other
+* synchronize their execution.
 
-# Select
+Select
 
 * `select` statement is like a switch but for channels (i.e. it's not for expressions but for communications)
 * first all channels are evaluated
 * blocks until one communication can proceed, which then does
 * if multiple can proceed, select chooses pseudo-randomly
 * the default case, if present, executes immediately if no channel is ready
+
+Example
 
 ```go
 // select.go
@@ -87,7 +90,7 @@ func main() {
 }
 ```
 
-# Sources and more
+Sources and more
 
 * https://github.com/jreisinger/go-concurrency-patterns
 * https://github.com/jreisinger/katas
