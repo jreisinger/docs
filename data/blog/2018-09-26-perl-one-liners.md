@@ -68,7 +68,7 @@ $ cat birthdays.txt
 03/30/45 Eric Clapton
 11/27/42 Jimi Hendrix
 06/24/44 Jeff Beck
-$ perl -lane 'print @F[1,0]' birthdays.txt
+$ perl -wlane 'print join " ", @F[1,0]' birthdays.txt
 Eric 03/30/45
 Jimi 11/27/42
 Jeff 06/24/44
