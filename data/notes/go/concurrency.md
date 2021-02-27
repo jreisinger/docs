@@ -27,80 +27,11 @@ f()     // call f(); wait for it to return
 go f()  // create a new goroutine that calls f(); don't wait
 ```
 
-```
-// fib-spinner.go -- calculate fibonacci number using 
-// a slow algorithm and show a spinner while calculating
-package main
-
-import (
-	"fmt"
-	"time"
-)
-
-func main() {
-	go spinner(100 * time.Millisecond)
-	n := 45
-	fibN := fib(n) // slow algorithm
-	fmt.Printf("\rfib(%d) = %d\n", n, fibN)
-}
-
-func spinner(delay time.Duration) {
-	for {
-		for _, r := range `-\|/` {
-			fmt.Printf("\r%c", r)
-			time.Sleep(delay)
-		}
-	}
-}
-
-func fib(n int) int {
-	if n < 2 {
-		return n
-	}
-	return fib(n-1) + fib(n-2)
-}
-```
-
 A goroutine is stopped by returning from `main` or by exiting the program.
 
 # Channels
 
 A *channel* is a way for gouroutines to communicate with each other and *synchronize* their execution.
-
-When `pinger` or `ponger` attempts to send a message on the channel, it will
-wait until `printer` is ready to receive the message (blocking):
-
-```go
-// ping-pong.go
-package main
-
-import (
-    "fmt"
-    "time"
-)
-
-func main() {
-    ch := make(chan string)
-
-    go pinger(ch)
-    go ponger(ch)
-    go printer(ch)
-
-    // Wait for Enter to exit.
-    var input string
-    fmt.Scanln(&input)
-}
-
-func pinger(ch chan string) { for { ch <- "ping" } }
-func ponger(ch chan string) { for { ch <- "pong" } }
-
-func printer(ch chan string) {
-    for {
-        fmt.Println(<-ch)
-        time.Sleep(time.Second * 1)
-    }
-}
-```
 
 # Select
 
