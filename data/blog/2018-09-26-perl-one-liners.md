@@ -13,7 +13,7 @@ perl -Mbignum=bpi -wle 'print bpi(2000)' # calculate PI to 2000 digits
 These are some of the most used command line switches:
 
 * `-e '<code>'` -- **e**xecute `<code>`
-* `-E '<code>'` -- **E**xecute `<code>` enabling [feature](http://perldoc.perl.org/feature.html) bundle (like `use 5.010`) for your version of Perl
+* `-E '<code>'` -- **E**xecute `<code>` enabling new [feature](http://perldoc.perl.org/feature.html)s for your version of Perl
 * `-w` -- enable **w**arnings (generally advisable)
 * `-p` -- loop through lines, reading and **p**rinting them (in-script equivalent: `while (<>) { [<code>] print }`)
 * `-n` -- loop through lines, reading but **n**ot printing them
