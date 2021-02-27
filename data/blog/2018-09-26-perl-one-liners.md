@@ -34,6 +34,26 @@ perl -wne '/error|warning/i && print' /var/log/*.log
 
 The thing between slashes is a [regular expression](https://perldoc.perl.org/perlre.html). It means match string `error` or string `warning` anywhere in the log line. `i` says to Perl to ignore the case. So it will match ERROR, error, Warning etc. If the regex finds a match (i.e. evaluates to true) the `&&` logical operator runs the `print` statement that will print the line containing the match.
 
+Get IP addresses from logs:
+
+```
+journalctl --since "00:00" |  perl -lne '/((?:\d{1,3}\.){3}\d{1,3})/ && print $1' | sort | uniq > /tmp/ips-all.txt
+```
+
+The IP address regex explained:
+
+```
+(               # capturing parenthesis to be retrieved via $1
+    (?:         # non capturing parenthesis, only for grouping
+        \d{1,3} # one to three decimal numbers
+        \.      # literal dot
+    ){3}        # three times all within innermost parenthesis
+        \d{1,3} # one to three decimal numbers
+)               
+```
+
+For a more serious program you should use a well tested module [Regexp::Common](https://metacpan.org/pod/Regexp::Common) to match an IP address.
+
 ## Replace
 
 Replace `/bin/sh` with `/bin/bash` and emit the transformed passwd file to STDOUT:
