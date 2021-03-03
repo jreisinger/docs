@@ -51,10 +51,6 @@ Logs flow:
 * periodic search that can trigger some notification when a defined condition is met
 * composed of: 1. alert condition 2. alert notification
 
-# Configuration
-
-https://docs.graylog.org/en/latest/pages/configuration/server.conf.html
-
 # Searching
 
 * syntax very close to Lucene's
@@ -130,3 +126,7 @@ Fuzziness - search for similar terms:
 ssh login~
 source:example.org~
 ```
+
+# More
+
+* https://docs.graylog.org
