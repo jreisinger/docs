@@ -9,7 +9,7 @@ Logs provide more context but are more difficult to store and process because it
 
 Logs flow:
 
-1. Logs producer (VM, container, application)
+1. Logs producer (VMs, containers, applications, devices)
 2. (OPTIONAL message broker like Kafka - you can do some logs pre-processing here)
 3. Input
 4. Extractor
