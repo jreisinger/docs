@@ -10,12 +10,12 @@ Logs provide more context but are more difficult to store and process because it
 Logs flow:
 
 1. Logs producer (VM, container, application)
-2. OPTIONAL message broker like Kafka - you can do some logs pre-processing here
+2. (OPTIONAL message broker like Kafka - you can do some logs pre-processing here)
 3. Input
 4. Extractor
 5. Stream
-6. Pipeline - you can add new field to a log here
-7. Alert - type of event where the system decides it’s worth notifying someone
+6. Pipeline
+7. Alert
 
 ## Index
 
@@ -42,6 +42,7 @@ Logs flow:
 ## Pipeline
 
 * tied to Streams
+* you can add new field to a log here
 * lets you transform and process messages coming from Streams
 * allow for: routing, parsing, dropping, blacklisting, modifying and enriching messages as they flow through Graylog
 
