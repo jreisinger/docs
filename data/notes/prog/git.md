@@ -244,7 +244,7 @@ See [git-sync](https://github.com/jreisinger/dotfiles/blob/master/bin/git-sync) 
 
 # Tips and Tricks
 
-To to list tracked files:
+## List tracked files
 
 ```bash
 # currently tracked files under master branch
@@ -254,20 +254,20 @@ git ls-tree -r master --name-only
 git log --pretty=format: --name-only --diff-filter=A | sort - | sed '/^$/d'
 ```
 
-To remove files not tracked by Git (like log files, zipped files, compiled files)
+## Remove files not tracked by Git (like log files, zipped files, compiled files)
 
 ```bash
 git clean -n  # dry-run ...
 git clean -f  # files removed!
 ```
 
-Apply changes generated via `git diff [--binary]`:
+## Apply changes generated via `git diff [--binary]`
 
 ```bash
 git apply --ignore-space-change --ignore-whitespace
 ```
 
-While in Git-tracked directory, print the filename followed by the author of the last commit:
+## Print the filename followed by the author of the last commit
 
 ```bash
 for f in `find -type f`; do
@@ -277,7 +277,7 @@ for f in `find -type f`; do
 done
 ```
 
-Ignore changes of the files' mode (for current repo):
+## Ignore changes of the files' mode (for current repo)
 
 ```bash
 git config core.fileMode false
