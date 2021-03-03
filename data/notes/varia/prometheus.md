@@ -6,7 +6,7 @@ Prometheus is a metrics-based tool for operational monitoring of computer system
 * debugging - let me investigate why things went wrong
 * trending - let me see how systems are being used and changed over time
 
-At the end of the day all moniroting systems are data processing pipelines.
+At the end of the day all monitoring systems are data processing pipelines.
 
 Monitoring is about events like receviving a HTTP request, entering a function, a user logging in, requesting more memory from the kernel. All events also have context like the IP address the request is coming from or call stacks of functions.
 
