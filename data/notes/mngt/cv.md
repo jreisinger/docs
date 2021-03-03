@@ -46,6 +46,16 @@ at Slovak Telekom [Bratislava, 2004 - 2006, 2011 - 2013]
 * Administered internal lab consisting of Linux servers and Cisco networking devices.
 * Managed small (up to 4 people) audit teams.
 
+Project Implementation Manager for Italian region
+at AT&T [Bratislava, 2004-2004]
+
+* Studied WAN and LAN networks
+
+Unix 1st line support specialist
+at Hewlett-Packard Slovakia [Bratislava, 2004-2004]
+
+* Troubleshooted and fixed issues on Unix servers
+
 # Technologies used professionally
 
 Operating systems
@@ -86,5 +96,6 @@ Various
 * CISSP: Certified Information Systems Security Professional [2011 - 2014]
 * CCNA: Cisco Certified Network Associate [2006 - 2009]
 * Cisco Networking Academy - Four semester study in computer systems networking and telecommunications [2005 - 2006]
+* Università degli Studi di Firenze [2003 - 2003]
 * University of Economics [1998 - 2004]
 * Bilingual high-school, Slovak - Italian [1993 - 1998]
