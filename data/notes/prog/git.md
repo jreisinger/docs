@@ -283,6 +283,19 @@ done
 git config core.fileMode false
 ```
 
+## Sync a GitHub fork
+
+```
+cd ~/git/hub/grokking-algorithms-golang
+git remote add upstream https://github.com/jonatasbaldin/grokking-algorithms-golang
+git remote -v
+git fetch upstream
+git merge upstream/master
+git push
+```
+
+[source](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
+
 # More
 
 * [Pro Git - Online book](https://git-scm.com/book)
