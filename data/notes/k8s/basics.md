@@ -137,10 +137,16 @@ Looking beyond the cluster
 ==========================
 
 * exposing services outside of the cluster
-* for HTTP or HTTPS use [ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
-* for other ports use service of type NodePort or LoadBalancer
 
-NodePort
+Ingress
+
+* for HTTP or HTTPS
+
+Service of type LoadBalancer
+
+* for other ports than HTTP/S
+
+Service of type NodePort
 
 * it enhances a service
 * in addition to a cluster IP, a service gets a port (user defined or picked by
