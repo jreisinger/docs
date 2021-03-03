@@ -133,18 +133,8 @@ One way to create a service:
 kubectl expose deployment quotes-prod --port=80 --target-port=5000
 ```
 
-Looking beyond the cluster
-==========================
-
-* exposing services outside of the cluster
-
-Ingress
-
-* for HTTP or HTTPS
-
-Service of type LoadBalancer
-
-* for other ports than HTTP/S
+Exposing services outside of the cluster
+========================================
 
 Service of type NodePort
 
@@ -154,6 +144,14 @@ Service of type NodePort
 * every node in the cluster forwards traffic to that port to the service
 * if you can reach any node in the cluster you can get to the service
 * this can be intergrated with HW/SW load balancers to expose the service even furher
+
+Ingress
+
+* for HTTP or HTTPS
+
+Service of type LoadBalancer
+
+* for other ports than HTTP/S
 
 Resources
 =========
