@@ -1,26 +1,14 @@
-Working with temporary files in a shell script:
+Working with temporary files and directories in a shell script:
 
 ```
 #!/bin/bash
 
-# Create temporary files and store their names in variables ...
-TMPFILE1=$(mktemp /tmp/"$0".XXXXX)
-TMPFILE2=$(mktemp /tmp/"$0".XXXXX)
-# Make sure they get removed even if the script exits abnormally.
-trap 'exit 1'                     HUP INT PIPE QUIT TERM
-trap 'rm -rf $TMPFILE1 $TMPFILE2' EXIT
-```
-
-Working with a temporary directory in a shell script:
-
-```
-#!/bin/bash
-
-# Create a temporary directory and store its name in a variable ...
+# Create temporary file and directory and store their names in variables ...
+TMPFILE=$(mktemp /tmp/"$0".XXXXX)
 TMPDIR=$(mktemp -d)
-# Make sure it gets removed even if the script exits abnormally.
-trap 'exit 1'         HUP INT PIPE QUIT TERM
-trap 'rm -rf $TMPDIR' EXIT
+# Make sure we clean up even if the script exits abnormally.
+trap 'exit 1'                       HUP INT PIPE QUIT TERM
+trap 'rm -rf "$TMPFILE" "$TMPDIR"'  EXIT
 ```
 
 My [SO answer](https://stackoverflow.com/a/53063602).
