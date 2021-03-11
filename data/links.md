@@ -18,6 +18,6 @@ My CLI tools
 * [waf-tester](https://github.com/jreisinger/waf-tester) - test Web Application Firewalls (WAFs) 
 * [runp](https://github.com/jreisinger/runp) - run shell commands in parrallel 
 * [work](https://github.com/jreisinger/work) - work on many tasks concurrently from CLI 
-* [shannon](https://github.com/jreisinger/shannon) - calculates the entropy of a string
+* [shannon](https://github.com/jreisinger/shannon) - calculate the entropy of a string
 * [domainguesser](https://github.com/jreisinger/domainguesser) - guess subdomains for a given domain
 * [tech-terms](https://github.com/jreisinger/tech-terms) - search (technical) terms in job sites
