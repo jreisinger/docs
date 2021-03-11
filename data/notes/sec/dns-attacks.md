@@ -85,6 +85,8 @@ $ shannon < /tmp/hostnames.txt
 4.016876	asdlfkjasdflwerjka.t1.security.local
 ```
 
+* some legitimate domains (especially of CDNs, news sites, streaming video sites, Facebook) will be long with high entropy
+
 FQDN length
 
 * an outlier is the request length being more than three times the average length of all the DNS requests
