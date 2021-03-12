@@ -112,6 +112,7 @@ DNS query process
 
 * `lair` is a client (lair.cs.colorado.edu)
 * `ns.cs.colorado.edu` is the local nameserver for lair
+* the answer is not cached at `ns.cs.colorado.edu` when `lair` is doing the query
 
 Common return statuses
 
