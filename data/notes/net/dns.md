@@ -116,7 +116,7 @@ DNS query process
 Common return statuses
 
 * `NOERROR` - the query returned a response without notable errors
-* `NXDOMAIN` - the name requested does not exist (or isn't registered)
+* `NXDOMAIN` - the requested name does not exist (or isn't registered)
 * `SERVFAIL` - usually a configuration error on the name server
 
 Name server taxonomy
