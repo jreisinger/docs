@@ -1,6 +1,6 @@
 ## About website
 
-Hello and welcome to my homepage :-). I mostly keep IT related notes here.
+Hello and welcome to my homepage :-). I mostly keep technical notes here.
 
 ## About me
 
