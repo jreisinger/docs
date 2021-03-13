@@ -1,8 +1,8 @@
-# About website
+## About website
 
 Hello and welcome to my homepage :-). I mostly keep IT related notes here.
 
-# About me
+## About me
 
 I dabble in the fields of systems administration, security and programming.
 Among other things. I like to (co)create and maintain systems and tools that
