@@ -1,10 +1,10 @@
-My web stuff
+My Web stuff
 
 * [Code](https://github.com/jreisinger)
 * [Q&A](https://stackoverflow.com/users/1039320/jreisinger)
 * [Photos](https://www.flickr.com/photos/jozrei)
 
-My web tools
+My Web tools
 
 * http://util.reisinge.net - couple of HTTP utilities
 * https://quotes.reisinge.net - quotes I've collected
