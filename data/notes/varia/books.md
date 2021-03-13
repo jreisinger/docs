@@ -37,9 +37,4 @@ Some of the technical books that I liked. Rougly ordered by most recently read (
 * *The Phoenix Project*, 2013
 * Land the Tech Job You Love, 2009
 * *The Success of Open Source*, 2004
-
-# Non-tech
-
-* The Great Divorce, 1945
-* The Children of Húrin, 2007
 * The Lord of The Rings, 1954
