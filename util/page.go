@@ -18,7 +18,7 @@ type Page struct {
 }
 
 var (
-	ErrorNotFound = errors.New("resource not found (not all those who wander are lost)")
+	ErrorNotFound = errors.New("search and you will find")
 )
 
 // RenderPage renders a file or a directory as an HTML page.
