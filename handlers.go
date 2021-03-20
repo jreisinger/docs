@@ -3,6 +3,7 @@ package main
 import (
 	"html/template"
 	"io/ioutil"
+	"math/rand"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -115,17 +116,16 @@ func HandleRest(w http.ResponseWriter, r *http.Request) {
 func HandleRandom(w http.ResponseWriter, r *http.Request) {
 	var data []byte
 
-	quote, err := util.RandQuote()
-	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
+	funcs := []func() ([]byte, error){
+		util.RandQuote,
+		util.RandTerm,
 	}
-	data = append(data, quote...)
 
-	term, err := util.RandTerm()
+	what, err := funcs[rand.Intn(len(funcs))]()
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 	}
-	data = append(data, term...)
+	data = append(data, what...)
 
 	body := util.MdToHtml(data)
 
