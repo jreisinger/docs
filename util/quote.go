@@ -1,6 +1,7 @@
 package util
 
 import (
+	"fmt"
 	"io/ioutil"
 	"math/rand"
 	"net/http"
@@ -36,11 +37,14 @@ func fetchQuotes(url string) ([]quote, error) {
 
 // RandQuote returns a random quote in MarkDown format.
 func RandQuote() ([]byte, error) {
-	quotes, err := fetchQuotes("https://raw.githubusercontent.com/jreisinger/quotes/master/quotes.txt")
+	url := "https://raw.githubusercontent.com/jreisinger/quotes/master/quotes.txt"
+	quotes, err := fetchQuotes(url)
 	if err != nil {
 		return nil, err
 	}
-	q := quotes[rand.Intn(len(quotes))]
-	md := "> " + q.what + " --- " + q.author + "\n"
+	i := rand.Intn(len(quotes))
+	q := quotes[i]
+	stats := fmt.Sprintf("(quote %d/[%d](%s))", i+1, len(quotes), url)
+	md := "\n\n" + "> " + q.what + " --- " + q.author + "\n\n" + stats + "\n"
 	return []byte(md), nil
 }
