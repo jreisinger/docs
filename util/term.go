@@ -33,6 +33,7 @@ func fetchTerms(url string) ([]term, error) {
 			t.explanation += "\n" + s.Text()
 		}
 	}
+	terms = append(terms, t)
 	if s.Err() != nil {
 		return nil, s.Err()
 	}
