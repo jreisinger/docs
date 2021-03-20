@@ -28,6 +28,12 @@ var quotes = []quote{
 		`The best way to avoid burnout is to do something you truly
 		enjoy in an environment that supports you.`, `Rob Pike`,
 	},
+	{
+		`Know your place in the world and evaluate yourself fairly,
+		not in terms of your naive ideals of your own youth, nor in
+		terms of what you erroneously imagine your teacher's ideals
+		are.`, `Richard Feynman`,
+	},
 }
 
 func randQuote() []byte {
