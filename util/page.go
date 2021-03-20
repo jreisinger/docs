@@ -56,6 +56,12 @@ func RenderPage(repoURL string, repoPath string, urlPath string) (*Page, error) 
 				return nil, err
 			}
 			data = append(data, q...)
+
+			t, err := randTerm()
+			if err != nil {
+				return nil, err
+			}
+			data = append(data, t...)
 		}
 
 		body := MdToHtml(data)
