@@ -1,6 +1,7 @@
 package util
 
 import (
+	"fmt"
 	"io/ioutil"
 	"math/rand"
 	"net/http"
@@ -25,7 +26,8 @@ func fetchQuotes(url string) ([]quote, error) {
 	var quotes []quote
 	for _, q := range strings.Split(string(data), "\n\n") {
 		parts := strings.Split(q, " -- ")
-		if len(parts) != 2 {
+		if len(parts) != 2 { // some quotes are without author
+			quotes = append(quotes, quote{q, ""})
 			continue
 		}
 		quotes = append(quotes, quote{parts[0], parts[1]})
@@ -38,7 +40,9 @@ func randQuote() ([]byte, error) {
 	if err != nil {
 		return nil, err
 	}
-	q := quotes[rand.Intn(len(quotes))]
-	md := "> " + q.what + " --- " + q.author
+	count := len(quotes)
+	i := rand.Intn(count)
+	q := quotes[i]
+	md := fmt.Sprintf("Quote %d/%d\n\n> ", i+1, count) + q.what + " --- " + q.author
 	return []byte(md), nil
 }
