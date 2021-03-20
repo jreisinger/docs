@@ -110,3 +110,38 @@ func HandleRest(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 }
+
+// HandleRandom generates random quote and term.
+func HandleRandom(w http.ResponseWriter, r *http.Request) {
+	var data []byte
+
+	quote, err := util.RandQuote()
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+	data = append(data, quote...)
+
+	term, err := util.RandTerm()
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+	data = append(data, term...)
+
+	body := util.MdToHtml(data)
+
+	p := &util.Page{
+		Title: "random",
+		Body:  body,
+	}
+
+	t, err := template.New("page.html").
+		Funcs(template.FuncMap{"removeTrailingSlash": util.RemoveTralingSlash}).
+		ParseFiles("template/page.html")
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+
+	if err := t.Execute(w, p); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}

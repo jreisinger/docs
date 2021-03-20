@@ -2,7 +2,6 @@ package util
 
 import (
 	"bufio"
-	"fmt"
 	"math/rand"
 	"net/http"
 	"strings"
@@ -40,14 +39,13 @@ func fetchTerms(url string) ([]term, error) {
 	return terms, nil
 }
 
-func randTerm() ([]byte, error) {
+// RandTerm returns a random term in MarkDown format.
+func RandTerm() ([]byte, error) {
 	terms, err := fetchTerms("https://raw.githubusercontent.com/jreisinger/homepage/master/data/notes/terms.md")
 	if err != nil {
 		return nil, err
 	}
-	count := len(terms)
-	i := rand.Intn(count)
-	t := terms[i]
-	md := fmt.Sprintf("\n\nTerm %d/%d\n\n", i+1, count) + t.name + "\n" + t.explanation
+	t := terms[rand.Intn(len(terms))]
+	md := "\n" + t.name + "\n" + t.explanation
 	return []byte(md), nil
 }

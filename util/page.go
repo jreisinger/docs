@@ -5,7 +5,6 @@ import (
 	"html/template"
 	"io/ioutil"
 	"path"
-	"path/filepath"
 	"strings"
 )
 
@@ -47,21 +46,6 @@ func RenderPage(repoURL string, repoPath string, urlPath string) (*Page, error) 
 		data, err := ioutil.ReadFile(filePath + ".md")
 		if err != nil {
 			return nil, err
-		}
-
-		_, file := filepath.Split(filePath)
-		if file == "about" {
-			q, err := randQuote()
-			if err != nil {
-				return nil, err
-			}
-			data = append(data, q...)
-
-			t, err := randTerm()
-			if err != nil {
-				return nil, err
-			}
-			data = append(data, t...)
 		}
 
 		body := MdToHtml(data)

@@ -30,6 +30,8 @@ func main() {
 
 	http.HandleFunc("/search", HandleSearch)
 
+	http.HandleFunc("/random", HandleRandom)
+
 	http.HandleFunc("/", HandleRest)
 
 	// regularly update the local repo from the upstream repo
