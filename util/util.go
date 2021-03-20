@@ -3,7 +3,6 @@ package util
 import (
 	"fmt"
 	"html/template"
-	"io/ioutil"
 	"log"
 	"os"
 	"os/exec"
@@ -16,10 +15,7 @@ import (
 )
 
 // MdToHtml converts markdown to HTML.
-func MdToHtml(filePath string) template.HTML {
-	md, err := ioutil.ReadFile(filePath)
-	Check(err)
-
+func MdToHtml(md []byte) template.HTML {
 	extensions := parser.CommonExtensions | parser.AutoHeadingIDs ^ parser.MathJax
 
 	p := parser.NewWithExtensions(extensions)

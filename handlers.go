@@ -2,6 +2,7 @@ package main
 
 import (
 	"html/template"
+	"io/ioutil"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -37,7 +38,11 @@ func HandleSearch(w http.ResponseWriter, r *http.Request) {
 		matchedFileContent := false
 
 		if !searchOnlyPath && !info.IsDir() {
-			html := util.MdToHtml(path)
+			data, err := ioutil.ReadFile(path)
+			if err != nil {
+				return err
+			}
+			html := util.MdToHtml(data)
 			matchedFileContent = search.GrepFileContent(string(html), rx)
 		}
 
