@@ -51,7 +51,11 @@ func RenderPage(repoURL string, repoPath string, urlPath string) (*Page, error) 
 
 		_, file := filepath.Split(filePath)
 		if file == "about" {
-			data = append(data, randQuote()...)
+			q, err := randQuote()
+			if err != nil {
+				return nil, err
+			}
+			data = append(data, q...)
 		}
 
 		body := MdToHtml(data)

@@ -1,43 +1,44 @@
 package util
 
-import "math/rand"
+import (
+	"io/ioutil"
+	"math/rand"
+	"net/http"
+	"strings"
+)
 
 type quote struct {
 	what   string
 	author string
 }
 
-var quotes = []quote{
-	{
-		`I'm here because computer science is wonderful, but it isn't
-		everything.`, `Donald Knuth`,
-	},
-	{
-		`Raising different kids requires different approaches, just
-		like computer problems do.`, `Larry Wall`,
-	},
-	{
-		`The only way to become smart is to be stupid first.`, `Larry
-		Wall`,
-	},
-	{
-		`It can get confusing. Hey, I'm confused most of the time.`,
-		`Larry Wall`,
-	},
-	{
-		`The best way to avoid burnout is to do something you truly
-		enjoy in an environment that supports you.`, `Rob Pike`,
-	},
-	{
-		`Know your place in the world and evaluate yourself fairly,
-		not in terms of your naive ideals of your own youth, nor in
-		terms of what you erroneously imagine your teacher's ideals
-		are.`, `Richard Feynman`,
-	},
+func fetchQuotes(url string) ([]quote, error) {
+	resp, err := http.Get(url)
+	if err != nil {
+		return nil, err
+	}
+	defer resp.Body.Close()
+	data, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return nil, err
+	}
+	var quotes []quote
+	for _, q := range strings.Split(string(data), "\n\n") {
+		parts := strings.Split(q, " -- ")
+		if len(parts) != 2 {
+			continue
+		}
+		quotes = append(quotes, quote{parts[0], parts[1]})
+	}
+	return quotes, nil
 }
 
-func randQuote() []byte {
+func randQuote() ([]byte, error) {
+	quotes, err := fetchQuotes("https://raw.githubusercontent.com/jreisinger/quotes/master/quotes.txt")
+	if err != nil {
+		return nil, err
+	}
 	q := quotes[rand.Intn(len(quotes))]
 	md := "> " + q.what + " --- " + q.author
-	return []byte(md)
+	return []byte(md), nil
 }
