@@ -80,39 +80,7 @@ func HandleSearch(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-// HandleRest handles all requests except for /search.
-func HandleRest(w http.ResponseWriter, r *http.Request) {
-	urlPath := r.URL.Path[1:] // remove leading "/"
-
-	if urlPath == "" {
-		http.Redirect(w, r, "/about", http.StatusFound)
-	}
-
-	p, err := util.RenderPage(repoURL, repoPath, urlPath)
-	if err != nil {
-		if err == util.ErrorNotFound {
-			http.Error(w, err.Error(), http.StatusNotFound)
-		} else {
-			http.Error(w, err.Error(), http.StatusInternalServerError)
-		}
-		return
-	}
-
-	t, err := template.New("page.html").
-		Funcs(template.FuncMap{"removeTrailingSlash": util.RemoveTralingSlash}).
-		ParseFiles("template/page.html")
-	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
-		return
-	}
-
-	if err := t.Execute(w, p); err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
-		return
-	}
-}
-
-// HandleRandom generates random quote and term.
+// HandleRandom generates random quote or term.
 func HandleRandom(w http.ResponseWriter, r *http.Request) {
 	var data []byte
 
@@ -143,5 +111,37 @@ func HandleRandom(w http.ResponseWriter, r *http.Request) {
 
 	if err := t.Execute(w, p); err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}
+
+// HandleRest handles all requests except for /search.
+func HandleRest(w http.ResponseWriter, r *http.Request) {
+	urlPath := r.URL.Path[1:] // remove leading "/"
+
+	if urlPath == "" {
+		http.Redirect(w, r, "/about", http.StatusFound)
+	}
+
+	p, err := util.RenderPage(repoURL, repoPath, urlPath)
+	if err != nil {
+		if err == util.ErrorNotFound {
+			http.Error(w, err.Error(), http.StatusNotFound)
+		} else {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+		}
+		return
+	}
+
+	t, err := template.New("page.html").
+		Funcs(template.FuncMap{"removeTrailingSlash": util.RemoveTralingSlash}).
+		ParseFiles("template/page.html")
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	if err := t.Execute(w, p); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
 	}
 }
