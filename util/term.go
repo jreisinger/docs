@@ -36,7 +36,8 @@ func fetchTerms(url string) ([]term, error) {
 		return nil, s.Err()
 	}
 
-	return terms, nil
+	// First item is empty. Not nice, I know ...
+	return terms[1:], nil
 }
 
 // RandTerm returns a random term in MarkDown format.
