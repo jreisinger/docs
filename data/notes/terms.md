@@ -163,7 +163,7 @@ b'\xe6\x96\x80'
 
 ## xor
 
-Exclusive or - the opposite of inlusive (the normal) or, which allows both
+Exclusive or - the opposite of inclusive (the normal) or, which allows both
 possibilities as well as either:
 
     >>> True or True
