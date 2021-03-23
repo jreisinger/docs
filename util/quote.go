@@ -37,14 +37,15 @@ func fetchQuotes(url string) ([]quote, error) {
 
 // RandQuote returns a random quote in MarkDown format.
 func RandQuote() ([]byte, error) {
-	url := "https://raw.githubusercontent.com/jreisinger/quotes/master/quotes.txt"
-	quotes, err := fetchQuotes(url)
+	rawurl := "https://raw.githubusercontent.com/jreisinger/quotes/master/quotes.txt"
+	url := "https://github.com/jreisinger/quotes/blob/master/quotes.txt"
+	quotes, err := fetchQuotes(rawurl)
 	if err != nil {
 		return nil, err
 	}
 	i := rand.Intn(len(quotes))
 	q := quotes[i]
-	stats := fmt.Sprintf("(quote %d/[%d](%s))", i+1, len(quotes), url)
+	stats := fmt.Sprintf("[quote](%s) %d/%d", url, i+1, len(quotes))
 	md := "\n\n" + "> " + q.what + " --- " + q.author + "\n\n" + stats + "\n"
 	return []byte(md), nil
 }
