@@ -26,23 +26,13 @@ See also [Basic types](https://tour.golang.org/basics/11), [Zero values](https:/
 Computers use base-2 binary system to store and work with the numbers. So
 computers count like this: 0, 1, 10, 11, 100, 101, 110, 111, ...
 
-Integer types
-
-* [u]int{8, 16, 32, 64}
-* machine dependent: uint, **int**, uintptr (usually 32 bits wide on 32-bit systems and 64 bits wide on 64-bit systems)
-* byte - alias for uint8
-* rune - alias for int32 (represents a Unicode code point)
-
 Floating-point types
 
-* float32 (single precision), **float64** (double precision)
-* complex64, complex128
 * contain decimal component (i.e. real numbers)
 * their actual representation on computer is quite complicated but not needed to
     know to use them
 * inexact (1.01 – 0.99 using floating-point arithmetic results in
     0.020000000000000018)
-* have certain size (32 or 64 bit)
 * NaN - not a number (for things like 0/0), +∞, -∞
 
 ```go
