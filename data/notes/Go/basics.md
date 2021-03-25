@@ -55,7 +55,7 @@ Common operations on strings:
 
 * find length: `len("Hello world")`
 * access a character: `"Hello world"[1]` -> 101 instead of e because the
-    character is represented by a byte (i.e. and integer)
+    character is represented by a byte (i.e. an integer)
 * concatenate strings: `"Hello " + "world"` -> Go figures out what to do based
     on the type of the arguments
 
