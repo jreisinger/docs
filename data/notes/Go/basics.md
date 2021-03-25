@@ -6,6 +6,8 @@ By default, Go programs are compiled directly into statically-linked executable 
 
 # Types
 
+See also [Basic types](https://tour.golang.org/basics/11), [Zero values](https://tour.golang.org/basics/12), [Type conversions](https://tour.golang.org/basics/13) and [Type inference](https://tour.golang.org/basics/14).
+
 Go is statically typed - variables always have specific type and type cannot
 change during the program run time.
 
@@ -18,8 +20,6 @@ determine:
 * what the data represent (e. g. `00001010` represents number 10 if the type is `int`)
 * intrinsic operations of that represention (e.g. arithmetic for numbers, or indexing, `append` and `range` for slices)
 * size in memory 
-
-See also [Basic types](https://tour.golang.org/basics/11), [Zero values](https://tour.golang.org/basics/12) and [Type conversions](https://tour.golang.org/basics/13).
 
 ## Numbers
 
