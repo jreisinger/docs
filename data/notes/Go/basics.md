@@ -15,8 +15,9 @@ errors.
 Types are similar to sets in mathematics. They classify data into groups and
 determine:
 
-* exact representations of their values
-* intrinsic operations of that represenation (e.g. arithmetic for numbers, or indexing, `append` and `range` for slices)
+* what the data represens (e. g. `00001010` represents number 10 if the type is `int`)
+* intrinsic operations of that represention (e.g. arithmetic for numbers, or indexing, `append` and `range` for slices)
+* size in memory 
 
 See also [Basic types](https://tour.golang.org/basics/11), [Zero values](https://tour.golang.org/basics/12) and [Type conversions](https://tour.golang.org/basics/13).
 
