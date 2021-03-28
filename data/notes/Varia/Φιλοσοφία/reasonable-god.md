@@ -49,6 +49,7 @@ Against
 # Reasonable theists
 
 * [C.S. Lewis](https://en.wikipedia.org/wiki/C._S._Lewis) (1898 - 1963) - English literature (Oxford)
+* John Polkinghorne (1930 - 2021) - English theoretical physicist, theologian, and Anglican priest (Cambridge)
 * [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) (1938) - computer scientist (Stanford)
 * [Larry Wall](https://en.wikipedia.org/wiki/Larry_Wall) (1954) - language designer
 * [Edward Feser](http://edwardfeser.blogspot.com/) (1968) - philosopher
