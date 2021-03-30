@@ -1,11 +1,24 @@
-**jq** - command line JSON processor 
+## JSON
 
-* JSON - JavaScript Object Notation
-* JSON - text based format for exchanging data through APIs
+JavaScript Object Notation (JSON) is a text based format for exchanging data 
+(through APIs) between programs written in various languages.
+
+Networked programs need to exchange information via messages. TCP and UDP
+provide a transport mechanism to do this. However, at transport level the
+messages are just sequences of bytes with no structure.
+
+A program will typically build a complex data structure to hold the current
+program state. To transfer this data outside of the program's own address space
+(e.g. to another application over the network) it needs to be serialized. This
+process is also called marshalling or encoding.
+
+## jq
+
+JSON command line JSON processor 
 
 JSON consists of these data types:
 
-* objects (dictionaries) `{}`
+* objects `{}`
 * arrays `[]`
 * numbers, strings, booleans, "null"
 
