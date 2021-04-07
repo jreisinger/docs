@@ -32,7 +32,7 @@ Floating-point types
 * their actual representation on computer is quite complicated but not needed to
     know to use them
 * inexact (1.01 – 0.99 using floating-point arithmetic results in
-    0.020000000000000018)
+    [https://play.golang.org/p/MyUt4hxlD2y](https://play.golang.org/p/MyUt4hxlD2y))
 * NaN - not a number (for things like 0/0), +∞, -∞
 
 ```go
