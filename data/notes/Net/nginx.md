@@ -85,6 +85,13 @@ You might want to use the [proxy_redirect](http://nginx.org/en/docs/http/ngx_htt
 proxy_redirect ~*https?://[^/]+/(.+)$ https://$host/$1;
 ```
 
+## Resolving
+
+domain names statically configured in config file are only looked up once on startup (or configuration reload)
+
+* https://forum.nginx.org/read.php?2,215830,215832#msg-215832
+* https://www.nginx.com/blog/dns-service-discovery-nginx-plus/
+
 # Traffic limiting
 
 See also https://www.nginx.com/blog/mitigating-ddos-attacks-with-nginx-and-nginx-plus.
