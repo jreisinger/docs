@@ -13,9 +13,9 @@ In that order.
 
 > Simple, straightforward code is just plain easier to work with and less likely to have problems. As programs get bigger and more complicated, it's even more important to have clean, simple code. -- Brian Kernighan
 
-Go prefers convention over configuration because configuration is limiting. Let's group by what one can do not by what one is.
+## Design
 
-Little copying is better than little dependency. Cost of DRY is bigger than in other languages.
+Go prefers convention over configuration because configuration is limiting. Let's [group](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/grouping_types_2.go) by what one can do not by what one is. Little copying is better than little dependency. Cost of DRY is bigger than in other languages.
 
 ---
 
