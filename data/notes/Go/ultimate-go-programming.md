@@ -13,7 +13,7 @@ In that order.
 
 > Simple, straightforward code is just plain easier to work with and less likely to have problems. As programs get bigger and more complicated, it's even more important to have clean, simple code. -- Brian Kernighan
 
-Go prefers convention over configuration because configuration is limiting.
+Go prefers convention over configuration because configuration is limiting. Let's group by what one can do not by what one is.
 
 ---
 
