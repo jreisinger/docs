@@ -468,18 +468,6 @@ Pointers are rarely used with Go's built-in types but are extremely useful when 
 
 At some point it would become tedious and error prone to write programs using only Go's built-in types.
 
-Literal (unnamed) struct:
-
-```go
-e := struct {
-	flag    bool
-	counter int
-}{
-	flag: true,
-	counter: 10,
-}
-```
-
 ## Structs (user-defined types)
 
 A [struct](https://play.golang.org/p/Q90vDc_T77X) is a type that contains named fields:
@@ -491,15 +479,24 @@ type Circle struct {
 }
 
 // Several ways to do initialization.
-var c Circle
+var c Circle          // fields are initialized to their zero values
 c := Circle{x: 0, y: 0, r: 5}
 c := Circle{0, 0, 5}
-c := new(Circle) // returns pointer
+c := new(Circle)      // returns pointer
 c := &Circle{0, 0, 5} // most typical
 
 // Accessing fields.
 fmt.Println(c.x)
 c.r = 10
+
+// Literal (unnamed) struct; declaration + initialization.
+e := struct {
+	flag    bool
+	counter int
+}{
+	flag: true,
+	counter: 10,
+}
 ```
 
 ## Methods
