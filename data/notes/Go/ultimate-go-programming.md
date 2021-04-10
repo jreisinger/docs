@@ -1,10 +1,10 @@
 * mechanics - how things work
 * semantics - how things behave
 
-Philosophy
+Philosophy:
 
 1. Make it correct.
-2. Make it clear and readible.
+2. Make it clear.
 3. Make it fast.
 
 In that order.
