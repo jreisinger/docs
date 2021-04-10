@@ -4,7 +4,7 @@ Go is a minimalist language; it only has 25 keywords and 1 loop type. By default
 
 Go's strong points are simplicity, efficiency, concurrency, portability.
 
-# Basic types
+# Basic (built-in) types
 
 See also [Basic types](https://tour.golang.org/basics/11), [Zero values](https://tour.golang.org/basics/12), [Type conversions](https://tour.golang.org/basics/13) and [Type inference](https://tour.golang.org/basics/14).
 
@@ -468,7 +468,7 @@ Pointers are rarely used with Go's built-in types but are extremely useful when 
 
 At some point it would become tedious and error prone to write programs using only Go's built-in types.
 
-## Structs
+## Structs (user-defined types)
 
 A struct is a type that contains named fields:
 
