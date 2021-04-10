@@ -35,7 +35,13 @@ e := struct {
 
 ## Design
 
+Don't do object oriented design but data oriented design.
+
+> Data dominates. If you've chosen the right data structures and organized things well, the algorithms will almost always be self-evident. Data structures, not algorithms, are central to programming. -- Rob Pike
+
 Go prefers convention over configuration because configuration is limiting. Let's [group](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/grouping_types_2.go) by what one can do not by what one is. Little copying is better than little dependency. Cost of DRY in Go is bigger than in other languages.
+
+We are writing code for today, designing and architecting for tomorrow.
 
 ---
 
