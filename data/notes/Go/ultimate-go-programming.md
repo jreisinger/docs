@@ -15,6 +15,8 @@ In that order.
 
 Go prefers convention over configuration because configuration is limiting. Let's group by what one can do not by what one is.
 
+Little copying is better than little dependency. Cost of DRY is bigger than in other languages.
+
 ---
 
 * https://learning.oreilly.com/videos/ultimate-go-programming/9780135261651/
