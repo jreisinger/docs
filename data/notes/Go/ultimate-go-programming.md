@@ -13,9 +13,9 @@ In that order.
 
 > Simple, straightforward code is just plain easier to work with and less likely to have problems. As programs get bigger and more complicated, it's even more important to have clean, simple code. -- Brian Kernighan
 
-## Types are life
+## Types
 
-Types tell you
+Types are life. Types tell you
 
 * what is the [memory size](https://play.golang.org/p/s1M9pNjIIKp) allocated for the value
 * what does the value represent (e. g. this byte `00001010` represents number 10 if the type is `int`)
