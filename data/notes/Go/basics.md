@@ -489,7 +489,7 @@ c := &Circle{0, 0, 5} // most typical
 fmt.Println(c.x)
 c.r = 10
 
-// Literal (unnamed) struct; declaration + initialization.
+// Declaration of anonymous struct type + initialization.
 e := struct {
 	flag    bool
 	counter int
