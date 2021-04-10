@@ -468,6 +468,18 @@ Pointers are rarely used with Go's built-in types but are extremely useful when 
 
 At some point it would become tedious and error prone to write programs using only Go's built-in types.
 
+Literal (unnamed) struct:
+
+```go
+e := struct {
+	flag    bool
+	counter int
+}{
+	flag: true,
+	counter: 10,
+}
+```
+
 ## Structs (user-defined types)
 
 A [struct](https://play.golang.org/p/Q90vDc_T77X) is a type that contains named fields:
