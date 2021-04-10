@@ -18,8 +18,8 @@ Types are similar to sets in mathematics. They classify data into groups and
 determine:
 
 * what the data represent (e. g. `00001010` represents number 10 if the type is `int`)
+* what is the data [size](https://play.golang.org/p/TTbzdtffGtx) in memory
 * intrinsic operations of that represention (e.g. arithmetic for numbers, or indexing, `append` and `range` for slices)
-* size in memory
 
 ## Booleans
 
