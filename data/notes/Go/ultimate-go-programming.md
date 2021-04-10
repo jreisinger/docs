@@ -43,6 +43,29 @@ Go prefers convention over configuration because configuration is limiting. Let'
 
 We are writing code for today, designing and architecting for tomorrow.
 
+Layers of APIs:
+
+* High level - ease of use, exported, unit/integration tested (might replace tests below)
+* Low level - maybe exported, unit tested (might replace tests below)
+* Primitive level - do one thing well, not exported, unit tested
+
+When am I done:
+
+* 70 - 80% test coverage
+* ask what can change, from technical and business perspective, and refactor the code to be able to handle that change
+
+Hints:
+
+* solve one problem at a time, don't be overwhelmed by everything
+
+Steps:
+
+1. Identify problems to solve
+2. Write a little code
+3. Write tests
+4. Refactor for change
+5. Refactor for simplicity, consistency, readibility
+
 ---
 
 * https://learning.oreilly.com/videos/ultimate-go-programming/9780135261651/
