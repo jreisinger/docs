@@ -17,7 +17,7 @@ errors.
 Types are similar to sets in mathematics. They classify values (data) into groups and
 determine:
 
-* what is the [memory size](https://play.golang.org/p/StCCFrdlDy6) allocated for the value
+* what is the [memory size](https://play.golang.org/p/s1M9pNjIIKp) allocated for the value
 * what the value represents (e. g. this byte `00001010` represents number 10 if the type is `int`)
 * what are intrinsic operations of that represention (e.g. arithmetic operations for numbers, indexing, `append` and `range` for slices)
 
