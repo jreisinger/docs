@@ -19,7 +19,7 @@ determine:
 
 * what the value represents (e. g. this byte `00001010` represents number 10 if the type is `int`)
 * intrinsic operations of that represention (e.g. arithmetic operations for numbers, indexing, `append` and `range` for slices)
-* what is the data [size](https://play.golang.org/p/TTbzdtffGtx) in memory
+* what is the value [size](https://play.golang.org/p/NoYS5eR7qTm) in memory
 
 ## Booleans
 
