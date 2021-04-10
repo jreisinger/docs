@@ -470,7 +470,7 @@ At some point it would become tedious and error prone to write programs using on
 
 ## Structs (user-defined types)
 
-A [struct](https://play.golang.org/p/wVE98G4JxeX) is a type that contains named fields:
+A [struct](https://play.golang.org/p/Q90vDc_T77X) is a type that contains named fields:
 
 ```go
 // Circle represents, well, a circle.
