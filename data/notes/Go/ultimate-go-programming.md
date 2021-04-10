@@ -15,7 +15,7 @@ In that order.
 
 ## Design
 
-Go prefers convention over configuration because configuration is limiting. Let's [group](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/grouping_types_2.go) by what one can do not by what one is. Little copying is better than little dependency. Cost of DRY is bigger than in other languages.
+Go prefers convention over configuration because configuration is limiting. Let's [group](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/grouping_types_2.go) by what one can do not by what one is. Little copying is better than little dependency. Cost of DRY in Go is bigger than in other languages.
 
 ---
 
