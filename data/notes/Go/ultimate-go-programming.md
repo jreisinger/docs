@@ -47,7 +47,7 @@ We are writing code for today, designing and architecting for tomorrow.
 
 Solve one problem at a time, don't be overwhelmed by everything.
 
-[Layers](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/decoupling_1.go) of APIs:
+Layers of APIs:
 
 * [High](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/decoupling_1.go#L149-#L166) level - ease of use, exported, unit/integration tested (might replace tests below)
 * [Low](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/decoupling_1.go#L104-#L147) level - builds on primitive layer, maybe exported, unit tested (might replace tests below)
