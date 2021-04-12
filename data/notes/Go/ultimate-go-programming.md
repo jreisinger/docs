@@ -39,14 +39,18 @@ Don't do object oriented design but data oriented design.
 
 > Data dominates. If you've chosen the right data structures and organized things well, the algorithms will almost always be self-evident. Data structures, not algorithms, are central to programming. -- Rob Pike
 
-Go prefers convention over configuration because configuration is limiting. Let's [group](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/grouping_types_2.go) by what one can do not by what one is. Little copying is better than little dependency. Cost of DRY in Go is bigger than in other languages.
+Go prefers convention over configuration because configuration is limiting. Let's [group](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/grouping_types_2.go) by what one can do not by what one is (no classes and subclasses).
+
+Little copying is better than little dependency. Cost of DRY in Go is bigger than in other languages.
 
 We are writing code for today, designing and architecting for tomorrow.
+
+Solve one problem at a time, don't be overwhelmed by everything.
 
 Layers of APIs:
 
 * High level - ease of use, exported, unit/integration tested (might replace tests below)
-* Low level - maybe exported, unit tested (might replace tests below)
+* Low level - builds on primitive layer, maybe exported, unit tested (might replace tests below)
 * Primitive level - do one thing well, not exported, unit tested
 
 When am I done:
@@ -54,15 +58,11 @@ When am I done:
 * 70 - 80% test coverage
 * ask what can change, from technical and business perspective, and refactor the code to be able to handle that change
 
-Hints:
-
-* solve one problem at a time, don't be overwhelmed by everything
-
 Steps:
 
 1. Identify problems to solve
-2. Write a little code
-3. Write tests
+2. Write a little code at primitive/low/high level
+3. Write tests at primitive/low/high level
 4. Refactor for change
 5. Refactor for simplicity, consistency, readibility
 
