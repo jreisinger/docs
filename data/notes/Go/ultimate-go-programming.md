@@ -15,10 +15,10 @@ In that order.
 
 ## Types
 
-Types are life. Types tell you
+Types are life. [Types](https://play.golang.org/p/s1M9pNjIIKp) tell you
 
-* what is the [memory size](https://play.golang.org/p/s1M9pNjIIKp) allocated for the value
-* what does the value represent (e. g. this byte `00001010` represents number 10 if the type is `int`)
+* what is the memory size allocated for the value
+* what does the value represent (e. g. byte `11111111` represents number 255 if the type is `int`)
 
 A [struct](https://play.golang.org/p/Q90vDc_T77X) is a user-defined type that contains named fields:
 
