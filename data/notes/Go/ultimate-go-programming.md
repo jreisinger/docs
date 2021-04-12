@@ -64,7 +64,7 @@ Steps:
 2. Write a little [code](https://github.com/ardanlabs/gotraining/blob/master/topics/go/design/composition/decoupling/example1/example1.go) at primitive/low/high level (start at primitive level and deploy ASAP)
 3. Write tests at primitive/low/high level
 4. [Refactor](https://github.com/ardanlabs/gotraining/tree/master/topics/go/design/composition/decoupling) for change by decoupling
-5. Refactor for simplicity, consistency, readibility
+5. Refactor for readibility (mental model, names, semantics, cleverness)
 
 ---
 
