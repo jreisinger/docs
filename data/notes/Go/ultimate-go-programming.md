@@ -61,9 +61,9 @@ When am I done:
 Steps:
 
 1. Identify problems to solve
-2. Write a little code at primitive/low/high level
+2. Write a little code at primitive/low/high level (start at primitive level and deploy ASAP)
 3. Write tests at primitive/low/high level
-4. Refactor for change
+4. Refactor for change by decoupling
 5. Refactor for simplicity, consistency, readibility
 
 ---
