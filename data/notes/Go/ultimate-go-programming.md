@@ -15,7 +15,7 @@ In that order.
 
 ## Types
 
-Types are life. [Types](https://play.golang.org/p/s1M9pNjIIKp) tell you
+Types are life. [Types](https://play.golang.org/p/kEvGf4tni6n) tell you
 
 * what is the memory size allocated for the value
 * what does the value represent (e. g. byte `11111111` represents number 255 if the type is `int`)
