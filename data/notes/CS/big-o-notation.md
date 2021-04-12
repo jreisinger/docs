@@ -33,6 +33,8 @@ O(log n) - logarithmic scaling
 * grows slower as the size of the corpus being searched grows
 * ex. binary search
 
+![image](https://user-images.githubusercontent.com/1047259/114350687-d1e13200-9b69-11eb-97e0-b0844da2bca7.png)
+
 O(n) - linear scaling
 
 * twice as much data requires twice as much processing time
