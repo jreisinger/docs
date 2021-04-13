@@ -13,6 +13,8 @@ In that order.
 
 > Simple, straightforward code is just plain easier to work with and less likely to have problems. As programs get bigger and more complicated, it's even more important to have clean, simple code. -- Brian Kernighan
 
+Engineering is not about just hacking the code. It's about evaluating the costs and benefits.
+
 ## Types
 
 Types are life. [Types](https://play.golang.org/p/kEvGf4tni6n) tell you
