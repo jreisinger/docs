@@ -37,7 +37,7 @@ e := struct {
 
 ## Functions
 
-Arguments are passed by [value](https://play.golang.org/p/-Aq1-oKErAu). A goroutine can access only data within its active frame (a slice of the stack) so the argument needs to be copied upon a function call.
+Arguments are passed by [value](https://play.golang.org/p/-Aq1-oKErAu). A goroutine can access only data within its active frame (a slice of the stack) so the argument needs to be copied upon a function call. This is a mechanism for isolatin memory mutations.
 
 ## Design
 
