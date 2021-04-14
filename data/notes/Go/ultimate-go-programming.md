@@ -17,7 +17,7 @@ Engineering is not about just hacking the code. It's about evaluating the costs 
 
 ## Types
 
-Types are life. [Types](https://play.golang.org/p/Rdoskvi8e_c) tell you
+Types are life. [Types](https://play.golang.org/p/RZb6-KWO9C-) tell you
 
 * what is the memory size allocated for the value
 * what does the value represent (e. g. byte `11111111` represents number 255 if the type is `int`)
