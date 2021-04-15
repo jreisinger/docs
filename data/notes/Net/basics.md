@@ -10,20 +10,20 @@ OSI and TCP/IP models:
 
            OSI              TCP/IP             TCP/IP             Sample
                             original           updated            protocol
-      +------------+     +------------+     +------------+     +----------------+ Contains the "language" that
-    7 |Application |     |            |     |            |     |Telnet HTTP     | apps and servers use to
-      |------------+     |            |     |            |     |FTP SMTP        | communicate
+      +------------+     +------------+     +------------+     +----------------+ The "language" that
+    7 |Application |     |            |     |            |     |Telnet HTTP     | apps and servers use
+      |------------+     |            |     |            |     |FTP SMTP        | to communicate.
     6 |Presentation|     |Application | 5-7 |Application |     |POP3 VoIP       |
       |------------+     |            |     |            |     |SNMP DNS Halo 3 |
     5 |Session     |     |            |     |            |     |arp traceroute  |
-      |------------+- - -+------------+- - -+------------+- - -+----------------+ data transmission
-    4 |Transport   |     |Transport   |  4  |Transport   |     |TCP UDP         | characteristics
-      |------------+- - -+------------+- - -+------------+- - -+----------------+ how to move packets
-    3 |Network     |     |Internetwork|  3  |Internetwork|     |IP ICMP         | from src to dst
+      |------------+- - -+------------+- - -+------------+- - -+----------------+ Data transmission
+    4 |Transport   |     |Transport   |  4  |Transport   |     |TCP UDP         | characteristics.
+      |------------+- - -+------------+- - -+------------+- - -+----------------+ How to move packets
+    3 |Network     |     |Internetwork|  3  |Internetwork|     |IP ICMP         | from src to dst.
       |------------+- - -+------------+- - -+------------+- - -+----------------+
     2 |Data link   |     |Network     |  2  |Data link   |     |Eth HDLC PPP ARP|  
-      |------------+     |            |- - -|------------|- - -|----------------| how to send raw data
-    1 |Physical    |     |access      |  1  |Physical    |     |Eth RJ-45 V.35  | across a physical medium
+      |------------+     |            |- - -|------------|- - -|----------------| How to send raw data
+    1 |Physical    |     |access      |  1  |Physical    |     |Eth RJ-45 V.35  | across a physical medium.
       +------------+     +------------+     +------------+     +----------------+
 
  * Please Do Not Throw Sausage Pizza Away
