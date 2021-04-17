@@ -125,7 +125,7 @@ process_resident_memory_bytes{job="kubelet"}
 ```
 =  --> job="node"
 !=
-=~ --> jon=~"n.*"  # fully anchored, RE2
+=~ --> job=~"n.*"  # fully anchored, RE2
 !~
 ```
 
