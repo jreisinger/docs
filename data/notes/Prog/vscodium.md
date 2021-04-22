@@ -8,7 +8,7 @@ Keyboard shortcuts
 * find files: `Ctrl + P`
 * grep files (search): `Ctrl + Shift + F`
 
-Settings file [location](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations) (it's not possible to change it but you can use `--user-data-dir` option):
+My setup of settings file [location](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations):
 
 * MacOS: `ln -sf $HOME/data/vscodium/settings.json $HOME/Library/Application\ Support/VSCodium/User/settings.json`
 * Linux: `$HOME/.config/VSCodium/User/settings.json`
