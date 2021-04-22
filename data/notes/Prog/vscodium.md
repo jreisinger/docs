@@ -1,5 +1,7 @@
 VSCodium is an Open Source fork of VSCode.
 
+Keyboard shortcuts
+
 * settings: `Ctrl + ,`
 * all commands: `Ctrl + Shift + P`
 * toggle terminal: `Ctrl + <backtick>`
@@ -9,12 +11,6 @@ VSCodium is an Open Source fork of VSCode.
 Settings file [location](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations) (it's not possible to change it but you can use `--user-data-dir` option):
 
 * macOS: `$HOME/Library/Application Support/VSCodium/User/settings.json`
+* my setup: `ln -sf $HOME/data/vscodium/settings.json $HOME/Library/Application\ Support/VSCodium/User/settings.json`
+
 * Linux: `$HOME/.config/VSCodium/User/settings.json`
-
-My setup
-
-* macOS
-
-```
-ln -sf $HOME/data/vscodium/settings.json $HOME/Library/Application\ Support/VSCodium/User/settings.json
-```
