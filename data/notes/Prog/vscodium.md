@@ -16,5 +16,5 @@ My setup
 * macOS
 
 ```
-ln -sf $HOME/data/vscode/settings.json $HOME/Library/Application\ Support/VSCodium/User/settings.json
+ln -sf $HOME/data/vscodium/settings.json $HOME/Library/Application\ Support/VSCodium/User/settings.json
 ```
