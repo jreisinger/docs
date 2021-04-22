@@ -10,3 +10,11 @@ Settings file [location](https://code.visualstudio.com/docs/getstarted/settings#
 
 * macOS: `$HOME/Library/Application Support/VSCodium/User/settings.json`
 * Linux: `$HOME/.config/VSCodium/User/settings.json`
+
+My setup
+
+* macOS
+
+```
+ln -sf $HOME/data/vscode/settings.json $HOME/Library/Application\ Support/VSCodium/User/settings.json
+```
