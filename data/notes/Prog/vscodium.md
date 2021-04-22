@@ -1,4 +1,4 @@
-VSCodium is the OpenSource for of VSCode.
+VSCodium is an Open Source fork of VSCode.
 
 * settings: `Ctrl + ,`
 * all commands: `Ctrl + Shift + P`
