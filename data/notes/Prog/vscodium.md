@@ -8,5 +8,5 @@ VSCodium is an Open Source fork of VSCode.
 
 Settings file location (it's not possible to change it but you can use `--user-data-dir` option):
 
-* macOS: `$HOME/Library/Application Support/Code/User/settings.json`
-* Linux: `$HOME/.config/Code/User/settings.json`
+* macOS: `$HOME/Library/Application Support/VSCodium/User/settings.json`
+* Linux: `$HOME/.config/VSCodium/User/settings.json`
