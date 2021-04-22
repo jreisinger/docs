@@ -10,7 +10,5 @@ Keyboard shortcuts
 
 Settings file [location](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations) (it's not possible to change it but you can use `--user-data-dir` option):
 
-* macOS: `$HOME/Library/Application Support/VSCodium/User/settings.json`
-* my setup: `ln -sf $HOME/data/vscodium/settings.json $HOME/Library/Application\ Support/VSCodium/User/settings.json`
-
+* MacOS: `ln -sf $HOME/data/vscodium/settings.json $HOME/Library/Application\ Support/VSCodium/User/settings.json`
 * Linux: `$HOME/.config/VSCodium/User/settings.json`
