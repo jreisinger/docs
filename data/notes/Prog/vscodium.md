@@ -1,3 +1,5 @@
+VSCodium is the OpenSource for of VSCode.
+
 * settings: `Ctrl + ,`
 * all commands: `Ctrl + Shift + P`
 * toggle terminal: `Ctrl + <backtick>`
