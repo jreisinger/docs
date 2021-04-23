@@ -30,3 +30,9 @@ Run this in terminal and then restart the given application:
 ```
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 ```
+
+# Mount NFS
+
+```
+sudo mount -o nolocks -t nfs 192.168.100.100:/srv/nfs/public ~/nfs
+```
