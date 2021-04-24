@@ -11,3 +11,11 @@ Address  |  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 | 19 | 10 | 11 | 12 | 13 | 14 |
 ---------|----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
 Variable | x                 | y  | pointerX          | pointerY          | pointerZ          |
 ```
+
+Types implemented with pointers:
+
+* slices
+* maps
+* functions
+* channels
+* interfaces
