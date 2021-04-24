@@ -95,6 +95,32 @@ Non-pointer types:
 * Go developers use pointers to indicate that a function parameter is mutable
 * you should use pointers as last resort
 
+## How to use them
+
+Rather than populating a struct by passing a pointer to it into a function, have the function instantiate and return the struct.
+
+Don't do this:
+
+```go
+func MakePerson(p *Person) error {
+    p.Name = "John"
+    p.Age = 41
+    return nil
+}
+```
+
+Do this:
+
+```go
+func MakePerson() (Person, error) {
+    p := Person{
+        Name: "John",
+        Age: 41,
+    }
+    return p, nil
+}
+```
+
 ## Sources
 
 * Learning Go, 2021
