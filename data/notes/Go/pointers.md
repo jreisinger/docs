@@ -124,12 +124,12 @@ func MakePerson() (Person, error) {
 One exception is when a function expects an interface:
 
 ```go
-f := struct{
-    Name string
-    Age  int
-}
+f := struct {
+	Name string
+	Age  int
+}{}
 
-err := json.Unmarshall([]byte(`{Name: "John", Age: 41}`), &f)
+err := json.Unmarshal([]byte(`{"Name": "John", "Age": 41}`), &f)
 ```
 
 ## Sources
