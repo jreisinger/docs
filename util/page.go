@@ -4,7 +4,6 @@ import (
 	"errors"
 	"html/template"
 	"io/ioutil"
-	"log"
 	"path"
 	"strings"
 )
@@ -32,37 +31,34 @@ func RenderPage(repoURL string, repoPath string, urlPath string) (*Page, error) 
 
 	title := path.Base(filePath)
 
-	if IsDir(filePath) { // if file is a dir return list of files within dir
-		files := ListFiles(filePath, false)
-		if strings.HasSuffix(filePath, "blog") {
-			files = ListFiles(filePath, true)
-		}
-		return &Page{Title: title, Files: files, RepoURL: repoURL, UrlPath: urlPath, IsDir: true}, nil
-	} else if IsFile(filePath + ".md") { // if file is a file return file contents
-		lastModified, err := LastModified(repoPath, filePath+".md")
-		if err != nil {
-			return nil, err
-		}
+	var allFilePathVariants []string
+	allFilePathVariants = append(allFilePathVariants, filePath)
+	allFilePathVariants = append(allFilePathVariants, titleCasePathComponents(filePath)...)
 
-		var data []byte
+	for _, filePath := range allFilePathVariants {
 
-		// Try to find paths with Title cased components.
-		for _, fp := range titleCasePathComponents(filePath) {
-			mdFilePath := fp + ".md"
-			log.Print(mdFilePath)
-			data, err = ioutil.ReadFile(mdFilePath)
-			if err == nil {
-				break
+		if IsDir(filePath) { // if file is a dir return list of files within dir
+			files := ListFiles(filePath, false)
+			if strings.HasSuffix(filePath, "blog") {
+				files = ListFiles(filePath, true)
 			}
+			return &Page{Title: title, Files: files, RepoURL: repoURL, UrlPath: urlPath, IsDir: true}, nil
+		} else if IsFile(filePath + ".md") { // if file is a file return file contents
+			lastModified, err := LastModified(repoPath, filePath+".md")
+			if err != nil {
+				return nil, err
+			}
+
+			data, err := ioutil.ReadFile(filePath + ".md")
+			if err != nil {
+				return nil, err
+			}
+
+			body := MdToHtml(data)
+
+			return &Page{Title: title, Body: body, RepoURL: repoURL, UrlPath: urlPath, LastModified: lastModified}, nil
 		}
 
-		if data == nil {
-			return nil, err
-		}
-
-		body := MdToHtml(data)
-
-		return &Page{Title: title, Body: body, RepoURL: repoURL, UrlPath: urlPath, LastModified: lastModified}, nil
 	}
 
 	err := ErrorNotFound
