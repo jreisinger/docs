@@ -43,8 +43,17 @@ func RenderPage(repoURL string, repoPath string, urlPath string) (*Page, error) 
 			return nil, err
 		}
 
-		data, err := ioutil.ReadFile(filePath + ".md")
-		if err != nil {
+		var data []byte
+
+		// Try to find paths with Title cased components.
+		for _, fp := range titleCasePathComponents(filePath) {
+			data, err = ioutil.ReadFile(fp + ".md")
+			if err == nil {
+				break
+			}
+		}
+
+		if data == nil {
 			return nil, err
 		}
 
@@ -55,4 +64,25 @@ func RenderPage(repoURL string, repoPath string, urlPath string) (*Page, error) 
 
 	err := ErrorNotFound
 	return nil, err
+}
+
+// titleCasePathComponents returns title paths with Title cased components.
+func titleCasePathComponents(filePath string) []string {
+	components := strings.Split(filePath, "/")
+	var titleCaseFilePath []string
+	for i := range components {
+		before := strings.Join(components[:i], "/")
+		titleCased := strings.Title(components[i])
+		after := strings.Join(components[i+1:], "/")
+		// fmt.Printf("%d: %v, %v, %v\n", i, before, titleCased, after)
+		var newComponents []string
+		for _, c := range []string{before, titleCased, after} {
+			if c != "" {
+				newComponents = append(newComponents, c)
+			}
+		}
+		p := strings.Join(newComponents, "/")
+		titleCaseFilePath = append(titleCaseFilePath, p)
+	}
+	return titleCaseFilePath[1:]
 }
