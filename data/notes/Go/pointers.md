@@ -3,7 +3,7 @@ var x int32 = 10
 var y bool = true
 pointerX := &x
 pointerY := &y
-var pointerZ *string
+var pointerZ *string // pointerZ == nil
 
 Value    |  0 |  0 |  0 | 10 |  1 |  0 |  0 |  0 |  1 |  0 |  0 |  0 |  5 |  0 |  0 |  0 |  0 |
 ---------|----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
