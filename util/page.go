@@ -4,6 +4,7 @@ import (
 	"errors"
 	"html/template"
 	"io/ioutil"
+	"log"
 	"path"
 	"strings"
 )
@@ -47,7 +48,9 @@ func RenderPage(repoURL string, repoPath string, urlPath string) (*Page, error) 
 
 		// Try to find paths with Title cased components.
 		for _, fp := range titleCasePathComponents(filePath) {
-			data, err = ioutil.ReadFile(fp + ".md")
+			mdFilePath := fp + ".md"
+			log.Print(mdFilePath)
+			data, err = ioutil.ReadFile(mdFilePath)
 			if err == nil {
 				break
 			}
