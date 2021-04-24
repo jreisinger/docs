@@ -12,7 +12,9 @@ Address  |  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 | 19 | 10 | 11 | 12 | 13 | 14 |
 Variable | x                 | y  | pointerX          | pointerY          | pointerZ          |
 ```
 
-Pointers are [really](https://play.golang.org/p/kgslsZufai2) 8 bytes. The point is they are always the same size no matter what type they point to.
+* pointers are [really](https://play.golang.org/p/kgslsZufai2) 8 bytes
+* the point is they are always the same size no matter what type they point to
+* `nil` is an untyped identifier that represents a lack of value
 
 Types implemented with pointers:
 
