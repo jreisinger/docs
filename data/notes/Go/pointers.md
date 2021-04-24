@@ -24,9 +24,7 @@ Types implemented with pointers:
 * channels
 * interfaces
 
-`&` - the address operator
-
-`*` - the indirection operator
+`&` - the address operator, `*` - the indirection operator or denoting a pointer type
 
 Before dereferencing a pointer you must make sure it's not nil:
 
