@@ -49,9 +49,10 @@ Against
 # Reasonable theists
 
 * [C.S. Lewis](https://en.wikipedia.org/wiki/C._S._Lewis) (1898 - 1963) - English literature (Oxford)
-* John Polkinghorne (1930 - 2021) - English theoretical physicist, theologian, and Anglican priest (Cambridge)
+* [John Polkinghorne](https://en.wikipedia.org/wiki/John_Polkinghorne) (1930 - 2021) - theoretical physicist, theologian, and Anglican priest (Cambridge)
 * [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) (1938) - computer scientist (Stanford)
 * [Larry Wall](https://en.wikipedia.org/wiki/Larry_Wall) (1954) - language designer
+* [Rosalind Picard](https://www.media.mit.edu/people/picard/overview/) (1962) - engineer (MIT)
 * [Edward Feser](http://edwardfeser.blogspot.com/) (1968) - philosopher
 * [Aron Wall](http://www.wall.org/~aron/blog/bio/) - theoretical physicist (Cambridge)
 * [Luke Barnes](https://www.closertotruth.com/contributor/luke-barnes/profile) - theoretical physicist (Australia)
@@ -59,6 +60,7 @@ Against
 # Reasonable atheists
 
 * [Richard P. Feynman](http://www.wall.org/~aron/blog/what-about-science/) - physicist
+* [Stephen Hawking](https://en.wikipedia.org/wiki/Stephen_Hawking) - theoretical physicist, cosmologist (Cambridge)
 
 # More
 
