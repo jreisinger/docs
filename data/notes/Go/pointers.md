@@ -1,3 +1,5 @@
+## How do they work
+
 ```go
 var x int32 = 10 // 0000 1010
 var y bool = true
@@ -15,14 +17,6 @@ Variable | x                 | y  | pointerX          | pointerY          | poin
 * pointers are [really](https://play.golang.org/p/3Lz_C_sXaHv) 8 bytes
 * the point is they are always the same size no matter what type they point to
 * `nil` is an untyped identifier (in the universe block) that represents a lack of value
-
-Types implemented with pointers:
-
-* slices
-* maps
-* functions
-* channels
-* interfaces
 
 `&` - the address operator, `*` - the indirection operator or denoting a pointer type
 
@@ -76,3 +70,23 @@ p := person{
     LastName:   "Peterson",
 }
 ```
+
+## Pointer and non-pointer types
+
+Types implemented with pointers:
+
+* slices
+* maps
+* functions
+* channels
+* interfaces
+
+Non-pointer types:
+
+* primitives (numbers, booleans and strings)
+* structs
+* arrays
+
+## Sources
+
+* Learning Go, 2021
