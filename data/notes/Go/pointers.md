@@ -61,9 +61,9 @@ type person struct {
 }
 
 p := person{
-  FirstName:  "Pat",
-  MiddleName: "Perry", // This line won't compile
-  LastName:   "Peterson",
+    FirstName:  "Pat",
+    MiddleName: "Perry", // This line won't compile
+    LastName:   "Peterson",
 }
 
 func stringp(s string) *string {
@@ -71,8 +71,8 @@ func stringp(s string) *string {
 }
 
 p := person{
-  FirstName:  "Pat",
-  MiddleName: stringp("Perry"), // This works
-  LastName:   "Peterson",
+    FirstName:  "Pat",
+    MiddleName: stringp("Perry"), // This works
+    LastName:   "Peterson",
 }
 ```
