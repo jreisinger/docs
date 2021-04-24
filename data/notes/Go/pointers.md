@@ -23,3 +23,15 @@ Types implemented with pointers:
 * functions
 * channels
 * interfaces
+
+`&` - the address operator
+
+`*` - the indirection operator
+
+Before dereferencing a pointer you must make sure it's not nil:
+
+```
+var p *int
+fmt.Println(p == nil) // true
+fmt.Println(*p)       // panics
+```
