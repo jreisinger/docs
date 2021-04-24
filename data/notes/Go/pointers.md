@@ -28,7 +28,7 @@ Types implemented with pointers:
 
 Before dereferencing a pointer you must make sure it's not nil:
 
-```
+```go
 var p *int
 fmt.Println(p == nil) // true
 fmt.Println(*p)       // panics
