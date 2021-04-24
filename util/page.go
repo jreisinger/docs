@@ -31,6 +31,7 @@ func RenderPage(repoURL string, repoPath string, urlPath string) (*Page, error) 
 
 	title := path.Base(filePath)
 
+	// generate filePath variants with Title cased components
 	var allFilePathVariants []string
 	allFilePathVariants = append(allFilePathVariants, filePath)
 	allFilePathVariants = append(allFilePathVariants, titleCasePathComponents(filePath)...)
