@@ -26,10 +26,53 @@ Types implemented with pointers:
 
 `&` - the address operator, `*` - the indirection operator or denoting a pointer type
 
-Before dereferencing a pointer you must make sure it's not nil:
+Before dereferencing a pointer you must make sure it's not nil.
 
 ```go
 var p *int
 fmt.Println(p == nil) // true
 fmt.Println(*p)       // panics
+```
+
+The built-in `new` function creates a pointer to zero value of the given type.
+
+```go
+var x = new(int)
+fmt.Println(x == nil) // false
+fmt.Println(*x)       // 0
+```
+
+`new` is rarely used because you can take address of a struct literal. You can't use `&` before primitive literals (numbers, booleans and strings) or a constant because they don’t have memory addresses; they exist only at compile time.
+
+```go
+x := &Foo{}
+
+var y string
+z := &y
+```
+
+Use a helper function to turn a constant value into a pointer.
+
+```go
+type person struct {
+    FirstName  string
+    MiddleName *string
+    LastName   string
+}
+
+p := person{
+  FirstName:  "Pat",
+  MiddleName: "Perry", // This line won't compile
+  LastName:   "Peterson",
+}
+
+func stringp(s string) *string {
+    return &s
+}
+
+p := person{
+  FirstName:  "Pat",
+  MiddleName: stringp("Perry"), // This works
+  LastName:   "Peterson",
+}
 ```
