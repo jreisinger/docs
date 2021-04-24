@@ -123,7 +123,7 @@ func MakePerson() (Person, error) {
 
 One exception is when a function expects an interface:
 
-```
+```go
 f := struct{
     Name string
     Age  int
