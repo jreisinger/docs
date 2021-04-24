@@ -14,7 +14,7 @@ Variable | x                 | y  | pointerX          | pointerY          | poin
 
 * pointers are [really](https://play.golang.org/p/3Lz_C_sXaHv) 8 bytes
 * the point is they are always the same size no matter what type they point to
-* `nil` is an untyped identifier that represents a lack of value
+* `nil` is an untyped identifier (in the universe block) that represents a lack of value
 
 Types implemented with pointers:
 
