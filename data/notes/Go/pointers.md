@@ -91,8 +91,9 @@ Non-pointer types:
 
 * mutability means changing data in place
 * immutable types are safer from bugs and easier to understand
-* mutability brings flexibility and performance (you don't have to copy the data)
+* mutability brings flexibility and sometimes performance (you don't have to copy the data but the garbage collector might work more)
 * Go developers use pointers to indicate that a function parameter is mutable
+* you should use pointers as last resort
 
 ## Sources
 
