@@ -1,6 +1,6 @@
 ```go
-var x int32 = 10     // 0000 1010
-var y bool = true    // 0000 0001
+var x int32 = 10  // 0000 1010
+var y bool = true // 0000 0001
 pointerX := &x
 pointerY := &y
 var pointerZ *string // pointerZ == nil
