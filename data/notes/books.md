@@ -13,7 +13,7 @@ Some of the technical books that I liked. Rougly ordered by most recently read (
 
 # Programming
 
-* Learning Go (Boring Go :-)), 2021
+* Learning Go (Boring Go :-), 2021
 * The Pragmatic Programmer, 2019
 * *The Go Programming Language* (https://www.gopl.io/), 2016
 * Foundations of Python Network Programming, 2014
