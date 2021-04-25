@@ -3,7 +3,7 @@ Principles
 * effortful learning is deeper and more durable but might feel less productive
 * all new learning requires a foundation of prior knowledge (e.g. you need to remember algebra and geometry before you can learn trigonometry)
 * when you do mechanical repeating you quickly hit the limit of what you can keep in your mind
-* when you practice elaboration there are not know limits
+* when you practice elaboration there are not known limits
 * elaboration = expressing new material in your own words and connecting it with what you already know
 
 Practical hints
