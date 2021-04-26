@@ -87,7 +87,7 @@ Non-pointer types:
 * structs
 * arrays
 
-## Mutability
+# Mutability
 
 * mutability means changing data in place
 * immutable types are safer from bugs and easier to understand
@@ -134,7 +134,7 @@ f := struct {
 err := json.Unmarshal([]byte(`{"Name": "John", "Age": 41}`), &f)
 ```
 
-# Method receiver
+## Method receiver
 
 There are two reasons to use a pointer receiver:
 
@@ -143,7 +143,7 @@ There are two reasons to use a pointer receiver:
 
 Since methods often need to modify their receiver, pointer receivers are more common than value receivers.
 
-## Sources
+# Sources
 
 * Learning Go, 2021
 * https://tour.golang.org/methods/4
