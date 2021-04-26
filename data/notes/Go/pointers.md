@@ -138,8 +138,8 @@ err := json.Unmarshal([]byte(`{"Name": "John", "Age": 41}`), &f)
 
 There are two reasons to use a pointer receiver:
 
-1) so that the method can modify the value the receiver points to
-2) avoid copying the value on each method call (this can be more efficient if the receiver is a large struct, for example)
+1. so that the method can modify the value the receiver points to
+2. avoid copying the value on each method call (this can be more efficient if the receiver is a large struct, for example)
 
 Since methods often need to modify their receiver, pointer receivers are more common than value receivers.
 
