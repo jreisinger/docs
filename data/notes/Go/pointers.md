@@ -1,4 +1,4 @@
-## How do they work
+# How do they work
 
 ```go
 var x int32 = 10 // 0000 1010
@@ -71,7 +71,7 @@ p := person{
 }
 ```
 
-## Pointer and non-pointer types
+# Pointer and non-pointer types
 
 Types implemented with pointers:
 
@@ -94,9 +94,10 @@ Non-pointer types:
 * mutability brings flexibility and sometimes performance (you don't have to copy the data but the garbage collector might work more)
 * Go developers use pointers to indicate that a function parameter is mutable
 * you should use pointers as last resort
-* since methods often need to modify their receiver, pointer receivers are more common than value receivers
 
-## How to use them
+# How to use them
+
+## Populating structs
 
 Rather than populating a struct by passing a pointer to it into a function, have the function instantiate and return the struct.
 
@@ -132,6 +133,15 @@ f := struct {
 
 err := json.Unmarshal([]byte(`{"Name": "John", "Age": 41}`), &f)
 ```
+
+# Method receiver
+
+There are two reasons to use a pointer receiver:
+
+1) so that the method can modify the value the receiver points to
+2) avoid copying the value on each method call (this can be more efficient if the receiver is a large struct, for example)
+
+Since methods often need to modify their receiver, pointer receivers are more common than value receivers.
 
 ## Sources
 
