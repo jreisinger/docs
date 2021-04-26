@@ -134,7 +134,7 @@ f := struct {
 err := json.Unmarshal([]byte(`{"Name": "John", "Age": 41}`), &f)
 ```
 
-## Method receiver
+## Method receivers
 
 There are two reasons to use a pointer receiver:
 
