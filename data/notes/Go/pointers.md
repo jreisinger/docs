@@ -148,4 +148,4 @@ In general, all methods on a given type should have either value or pointer rece
 # Sources
 
 * Learning Go, 2021
-* https://tour.golang.org/methods/4
+* https://tour.golang.org/methods
