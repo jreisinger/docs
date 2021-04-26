@@ -94,6 +94,7 @@ Non-pointer types:
 * mutability brings flexibility and sometimes performance (you don't have to copy the data but the garbage collector might work more)
 * Go developers use pointers to indicate that a function parameter is mutable
 * you should use pointers as last resort
+* since methods often need to modify their receiver, pointer receivers are more common than value receivers
 
 ## How to use them
 
@@ -135,3 +136,4 @@ err := json.Unmarshal([]byte(`{"Name": "John", "Age": 41}`), &f)
 ## Sources
 
 * Learning Go, 2021
+* https://tour.golang.org/methods/4
