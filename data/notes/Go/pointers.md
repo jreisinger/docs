@@ -143,6 +143,8 @@ There are two reasons to use a pointer receiver:
 
 Since methods often need to modify their receiver, pointer receivers are more common than value receivers.
 
+In general, all methods on a given type should have either value or pointer receivers, but not a mixture of both.
+
 # Sources
 
 * Learning Go, 2021
