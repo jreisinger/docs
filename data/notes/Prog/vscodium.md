@@ -12,3 +12,7 @@ My setup of settings file [location](https://code.visualstudio.com/docs/getstart
 
 * MacOS: `ln -sf $HOME/data/vscodium/settings.json $HOME/Library/Application\ Support/VSCodium/User/settings.json`
 * Linux: `$HOME/.config/VSCodium/User/settings.json`
+
+Settings
+
+* Workbench > Editor: Open Positioning
