@@ -16,3 +16,5 @@ My setup of settings file [location](https://code.visualstudio.com/docs/getstart
 Settings
 
 * Workbench > Editor: Open Positioning
+* Gitlens > Codelens > Authors: Enabled
+* Gitlens > Codelens > Recent Change: Enabled
