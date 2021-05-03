@@ -38,7 +38,7 @@ kubectl run alpine    --image=alpine          --rm -it --restart=Never          
 
 kubectl run nslookup  --image=busybox         --rm -it --restart=Never --command -- nslookup <service>
 kubectl run wget      --image=busybox         --rm -it --restart=Never --command -- wget -qO- <service>:<port>
-kubectl run curl      --image=curlimages/curl --rm -it --restart=Never --coomand -- curl -LI <service>:<port>
+kubectl run curl      --image=curlimages/curl --rm -it --restart=Never --command -- curl -LI <service>:<port>
 ```
 
 * `--command` -- command to run instead of container's default entrypoint
