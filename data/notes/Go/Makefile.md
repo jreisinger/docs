@@ -1,14 +1,22 @@
+* defines (repeatable) steps to build your program
+* used since 1976 to build programs on Unix
+* each possible operation (like `build`) is called a *target*
+* `PHONY` keeps `make` from getting confused if there's a directory with the same name as a target
+
 ```
+.DEFAULT_GOAL := build
+
 test:
 	if [ ! -z "${DB_USER}" ]; then\
 		go clean -testcache ./...;\
-		GO111MODULE=on go test ./... -tags manual;\
+		go test ./... -tags manual;\
 	else\
-		GO111MODULE=on go test ./...;\
+		go test ./...;\
 	fi
+.PHONY:test
 
 build: test
-	GO111MODULE=on CGO_ENABLED=0 go build -o foo
+	CGO_ENABLED=0 go build -o foo
 
 run: build
 	./foo
