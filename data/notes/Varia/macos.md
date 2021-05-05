@@ -70,3 +70,9 @@ vim DefaultKeyBinding.dict
 Restart MacBook.
 
 Source: https://medium.com/@elhayefrat/how-to-fix-the-home-and-end-buttons-for-an-external-keyboard-in-mac-4da773a0d3a2
+
+# Fix inconsistent applications switching (Fn + Tab)
+
+```
+killall Dock
+```
