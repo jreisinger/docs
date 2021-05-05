@@ -39,6 +39,8 @@ sudo mount -o nolocks -t nfs 192.168.100.100:/srv/nfs/public ~/nfs
 
 # Fix Home and End keyboard keys
 
+NOTE: this seems to work only for terminal (not browser).
+
 ```
 sudo -i 
 mkdir -p ~/Library/KeyBindings ; cd ~/Library/KeyBindings
