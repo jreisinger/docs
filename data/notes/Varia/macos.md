@@ -36,3 +36,37 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 ```
 sudo mount -o nolocks -t nfs 192.168.100.100:/srv/nfs/public ~/nfs
 ```
+
+# Fix Home and End keyboard keys
+
+```
+sudo -i 
+mkdir -p ~/Library/KeyBindings ; cd ~/Library/KeyBindings
+vim DefaultKeyBinding.dict
+```
+
+```
+{
+/* Remap Home / End keys */
+/* Home Button*/
+"\UF729" = "moveToBeginningOfLine:"; 
+/* End Button */
+"\UF72B" = "moveToEndOfLine:"; 
+/* Shift + Home Button */
+"$\UF729" = "moveToBeginningOfLineAndModifySelection:"; 
+/* Shift + End Button */
+"$\UF72B" = "moveToEndOfLineAndModifySelection:"; 
+/* Ctrl + Home Button */
+"^\UF729" = "moveToBeginningOfDocument:"; 
+/* Ctrl + End Button */
+"^\UF72B" = "moveToEndOfDocument:"; 
+ /* Shift + Ctrl + Home Button */
+"$^\UF729" = "moveToBeginningOfDocumentAndModifySelection:";
+/* Shift + Ctrl + End Button*/
+"$^\UF72B" = "moveToEndOfDocumentAndModifySelection:"; 
+}
+```
+
+Restart MacBook.
+
+Source: https://medium.com/@elhayefrat/how-to-fix-the-home-and-end-buttons-for-an-external-keyboard-in-mac-4da773a0d3a2
