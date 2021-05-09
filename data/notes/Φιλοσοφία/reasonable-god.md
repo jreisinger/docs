@@ -1,5 +1,18 @@
 It looks like it's not possible to prove the God's existence using the [modern scientific method](http://www.wall.org/~aron/blog/the-pillars-of-science/). Is it then reasonable to think that God exists? Or is it just blind faith without any evidence?
 
+# Why even bother?
+
+Question whether God exists is probably the most important question because it affects one's view of the world. If taken seriously if defines how one lives.
+
+# How can one approach this question
+
+1. ~~Blind faith~~
+2. Historical arguments
+3. Philosophical arguments
+4. Faith
+
+# Strength of evidence
+
 [Fields of study](http://www.wall.org/~aron/blog/theology-less-speculative-than-quantum-gravity/) by the strength of evidence they can provide *on average*:
 
 ```
