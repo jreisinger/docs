@@ -40,20 +40,21 @@ For
 
 Against
 
-* Bible is not historical, i.e. it can't be believed.
+* ?
 
 # Philosophical arguments
 
 For
 
-* Existence of objective universal morality or decent behaviour or fair play (Lewis).
+* Aquinas: [five ways](https://aquinas101.thomisticinstitute.org/st-ia-q-2#FPQ2OUTP1) ([Latin/Italian](http://www.carimo.it/somma-teologica/somma.htm), [Slovak](https://blog.postoj.sk/8037/pat-ciest-rozumu-k-poznaniu-boha)).
+* Existence of objective universal morality or decent behaviour or fair play (C. S. Lewis).
 * [Kalam cosmological argument](https://en.wikipedia.org/wiki/Kalam_cosmological_argument)
 * [Leibniz's argument for the existence of God](https://www.reasonablefaith.org/videos/interviews-panels/leibnizs-argument-for-the-existence-of-god-bobby-conway/)
 
 Against
 
 * [Euthypro dilemma](https://en.wikipedia.org/wiki/Euthyphro_dilemma) <=> Objective universal morality.
-* Argument from the evil - an omnipotent and benevolent God should have eliminated all suffering. We observe plenty of man made and natural suffering in the world. <=> Free will can not be achieved without allowing the possibility of doing wrong things. What about suffering not cause by people (like tsunami)?
+* Argument from the evil - an omnipotent and benevolent God should have eliminated all suffering. We observe plenty of man made and natural suffering in the world. <=> Free will can not be achieved without allowing the possibility of doing wrong things. What about suffering not caused by people (like tsunami)?
 
 # Personal experience
 
