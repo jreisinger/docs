@@ -78,6 +78,7 @@ Against
 
 # More
 
+* http://www.wall.org/~aron/blog/will-the-real-god-god-please-stand-up/
 * Can religion be based on [evidence](http://www.wall.org/~aron/evidence.htm)?
 * https://www.reasonablefaith.org/media/debates/is-faith-in-god-reasonable/
 * [Is Faith in God Reasonable? Lane Craig vs Alex Rosenberg](https://www.youtube.com/watch?v=bhfkhq-CM84)
