@@ -58,14 +58,16 @@ at Hewlett-Packard Slovakia [Bratislava, 2004-2004]
 
 # Technologies used professionally
 
+(I especially enjoy those in bold)
+
 Operating systems
 
-* Linux/UNIX: *Ubuntu*, Debian, RHEL, CentOS, Solaris, OpenBSD
-* virtualization/cointainers: *Kubernetes*, Docker, OpenStack, Vagrant, VirtualBox, VMware, KVM, Xen
+* Linux/UNIX: Ubuntu, Debian, RHEL, CentOS, Solaris, OpenBSD
+* virtualization/cointainers: **Kubernetes**, Docker, OpenStack, Vagrant, VirtualBox, VMware, KVM, Xen
 
 Languages
 
-* artificial: *Go* (Golang), Python, [Perl](https://www.perl.org/), Bash
+* artificial: **Go** (Golang), Python, [Perl](https://www.perl.org/), Bash
 * natural: English, Slovak, Italian, Czech
 
 Networking
