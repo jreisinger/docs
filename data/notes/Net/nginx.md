@@ -213,7 +213,7 @@ Get values of variables (debugging):
 # /etc/nginx/nginx.conf
 add_header X-mine "$upstream_addr";
 
-curl localhost -v # look for X-mine header
+curl localhost -v # look for X-mine header in response
 ```
 
 # Resources
