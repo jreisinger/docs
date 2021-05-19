@@ -63,6 +63,31 @@ The `if` directive
 
 * `$proxy_host` - name and port (yes, also port if it's defined in `proxy_pass`) of a proxied server as specified in the `proxy_pass` directive
 
+[ngx_http_map_module](http://nginx.org/en/docs/http/ngx_http_map_module.html)
+
+* creates a new variable whose value depends on values of one or more source variables specified in the first parameter
+
+```
+http {
+    # ...
+    map $http_upgrade $connection_upgrade {
+        default Upgrade;
+        ''      close;
+    }
+    server {
+    # ...
+        location / {
+        # ...
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection $connection_upgrade;
+        }
+    }
+}
+```
+
+* [$http_upgrade](https://stackoverflow.com/questions/57898995/how-dose-nginx-get-the-value-of-http-upgrade) - source variable. It gets value from the request's `upgrade` header.
+* $connection_upgrade - new variable whose value depends on $http_upgrade. If $http_upgrade exists and is an empty string it gets set to `close`. In all other cases it will be set to `Upgrade`. 
+
 # Reverse proxy
 
 ## Request headers
