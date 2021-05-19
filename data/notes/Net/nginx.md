@@ -71,7 +71,7 @@ The `if` directive
 http {
     # ...
     map $http_upgrade $connection_upgrade {
-        default Upgrade;
+        default upgrade;
         ''      close;
     }
     server {
@@ -86,7 +86,7 @@ http {
 ```
 
 * [$http_upgrade](https://stackoverflow.com/questions/57898995/how-dose-nginx-get-the-value-of-http-upgrade) - source variable. It gets value from the request's `upgrade` header.
-* $connection_upgrade - new variable whose value depends on $http_upgrade. If $http_upgrade exists and is an empty string it gets set to `close`. In all other cases it will be set to `Upgrade`. 
+* $connection_upgrade - new variable whose value depends on $http_upgrade. If $http_upgrade exists and is an empty string it gets set to `close`. In all other cases it will be set to `upgrade`. 
 
 # Reverse proxy
 
