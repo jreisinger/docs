@@ -29,7 +29,7 @@ Solve one problem at a time, don't be overwhelmed by everything.
 
 ## Types
 
-Types are life. [Types](https://play.golang.org/p/WaYs0VSsZNg) tell you
+Types are life. [Types](https://play.golang.org/p/HL4ai-_L1yF) tell you
 
 * what is the memory size allocated for the value
 * what does the value represent (e. g. byte `11111111` represents number 255 if the type is `int`)
