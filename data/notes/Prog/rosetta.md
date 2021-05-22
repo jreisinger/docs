@@ -19,18 +19,18 @@ p.Introduce()
 
 ```go
 type Person struct {
-    Name string
-	  Age  int
+	Name string
+	Age  int
 }
 
 func (p Person) Introduce() {
-	  fmt.Printf("Hi, my name is %s and I'm %d.\n", p.Name, p.Age)
+	fmt.Printf("Hi, my name is %s and I'm %d.\n", p.Name, p.Age)
 }
 
 func main() {
-	  var p Person
-	  p.Name = "John"
-	  p.Age = 30
-	  p.Introduce()
+	var p Person
+	p.Name = "John"
+	p.Age = 30
+	p.Introduce()
 }
 ```
