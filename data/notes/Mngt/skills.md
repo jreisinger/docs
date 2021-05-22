@@ -1,6 +1,6 @@
-IT skills:
+IT skills
 
-* durable: models, architecture, methodologies
-* faster-changing: tools, languages
+* durable - theory: methodologies, patterns, algorithms
+* faster-changing - tools: programs, languages
 
-Source: Systems performance (2020)
+Inspired by: Systems performance, ch2 (2020)
