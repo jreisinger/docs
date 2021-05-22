@@ -1,4 +1,6 @@
-Python class vs Go struct
+# User-defined types
+
+## Python class vs Go struct
 
 ```python
 class Person:
