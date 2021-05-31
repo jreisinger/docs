@@ -61,7 +61,7 @@ The `if` directive
 
 [ngx_http_proxy_module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html)
 
-* `$proxy_host` - name and port (yes, also port if it's defined in `proxy_pass`) of a proxied server as specified in the `proxy_pass` directive
+* `$proxy_host` - name of a proxied server as specified in the `proxy_pass` directive
 
 [ngx_http_map_module](https://www.digitalocean.com/community/tutorials/how-to-use-nginx-s-map-module-on-ubuntu-20-04)
 
