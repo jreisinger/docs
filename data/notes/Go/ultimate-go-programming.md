@@ -1,4 +1,4 @@
-## Terminology
+## Bill's Terminology
 
 * mechanics - how things work
 * semantics - how things behave
@@ -25,8 +25,6 @@ Little copying is better than little dependency. Cost of DRY in Go is bigger tha
 
 We are writing code for today, designing and architecting for tomorrow.
 
-Solve one problem at a time, don't be overwhelmed by everything.
-
 ## Types
 
 Types are life. [Types](https://play.golang.org/p/HL4ai-_L1yF) tell you
@@ -52,6 +50,8 @@ e := struct {
 Arguments are passed by [value](https://play.golang.org/p/LoFTsgS3BUQ). A goroutine can access only data within its active frame (a slice of the stack) so the argument needs to be copied upon a function call. This is a mechanism for isolating memory mutations. It also means that if you need to mutate data you need to use a pointer.
 
 ## Solving problems with software
+
+Solve one problem at a time, don't be overwhelmed by everything.
 
 Steps:
 
