@@ -32,7 +32,7 @@ Types are life. [Types](https://play.golang.org/p/24H4L7Gofrz) tell you
 * what is the memory size allocated for the value
 * what does the value represent (e. g. byte `11111111` represents number 255 if the type is `int`)
 
-A [struct](https://play.golang.org/p/odaeukEGOUS) is a user-defined type that contains named fields:
+A [struct](https://play.golang.org/p/Av0NOh_cu_K) is a user-defined type that contains named fields:
 
 ```go
 // Declaration of anonymous (literal) struct type + initialization.
