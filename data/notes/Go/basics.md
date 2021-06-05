@@ -4,67 +4,6 @@ Go is a minimalist language; it only has 25 keywords and 1 loop type. By default
 
 Go's strong points are simplicity, efficiency, concurrency, portability.
 
-# Basic (built-in) types
-
-See also [Basic types](https://tour.golang.org/basics/11), [Zero values](https://tour.golang.org/basics/12), [Type conversions](https://tour.golang.org/basics/13) and [Type inference](https://tour.golang.org/basics/14).
-
-Go is statically typed - variables always have specific type and type cannot
-change during the program run time.
-
-Types help us reason about what our program is doing and help us catch many
-errors.
-
-Types are similar to sets in mathematics. They classify values (data) into groups and
-determine:
-
-* what is the [memory size](https://play.golang.org/p/s1M9pNjIIKp) allocated for the value
-* what the value represents (e. g. this byte `00001010` represents number 10 if the type is `int`)
-* what are intrinsic operations of that represention (e.g. arithmetic operations for numbers, indexing, `append` and `range` for slices)
-
-## Booleans
-
-* special 1-bit integer type used to represent true and false (or on and off)
-* logical operators: `&&`, `||`, `!`
-* truth tables define how these operators work
-
-## Strings
-
-* sequences of characters used to represent text
-* made up of individual bytes, usually (but not always) one for each character
-
-String literals are created with:
-
-* double quotes (`"Hello world"`) - cannot contain newlines and allow escape
-    sequeences (e.g. `\t`, `\n`)
-* backticks (`` `Hello world` ``)
-
-Common operations on strings:
-
-* find length: `len("Hello world")`
-* access a character: `"Hello world"[1]` -> 101 instead of e because the
-    character is represented by a byte (i.e. an integer)
-* concatenate strings: `"Hello " + "world"` -> Go figures out what to do based
-    on the type of the arguments
-
-## Numbers
-
-Computers use base-2 binary system to store and work with the numbers. So
-computers count like this: 0, 1, 10, 11, 100, 101, 110, 111, ...
-
-Floating-point types
-
-* contain decimal component (i.e. real numbers)
-* their actual representation on computer is quite complicated but not needed to
-    know to use them
-* inexact (1.01 – 0.99 using floating-point arithmetic results in
-    [0.02000000000000000042](https://play.golang.org/p/MyUt4hxlD2y))
-* NaN - not a number (for things like 0/0), +∞, -∞
-
-```go
-// we use .0 to tell Go it's a floating-point number
-fmt.Prinln("1 + 1 =", 1.0 + 1.0)
-```
-
 # Variables
 
 * variable - storage location, with a specific type and an associated name

@@ -1,4 +1,21 @@
-# What is a string
+# Strings
+
+* sequences of characters used to represent text
+* made up of individual bytes, usually (but not always) one for each character
+
+String literals are created with:
+
+* double quotes (`"Hello world"`) - cannot contain newlines and allow escape
+    sequeences (e.g. `\t`, `\n`)
+* backticks (`` `Hello world` ``)
+
+Common operations on strings:
+
+* find length: `len("Hello world")`
+* access a character: `"Hello world"[1]` -> 101 instead of e because the
+    character is represented by a byte (i.e. an integer)
+* concatenate strings: `"Hello " + "world"` -> Go figures out what to do based
+    on the type of the arguments
 
 String is a read-only **slice of bytes**. A string can hold arbitrary bytes not just UTF-8 text or any other predefined format. Here is a string literal that uses the `\xNN` notation (hex values of a byte range from `00` to `FF`):
 
@@ -75,6 +92,6 @@ $ hexdump a.go
 0000004
 ```
 
-# Source
+# More
 
 * https://blog.golang.org/strings

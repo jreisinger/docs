@@ -25,26 +25,6 @@ Go prefers convention over configuration because configuration is limiting. Let'
 
 Little copying is better than little dependency. Cost of DRY in Go is bigger than in other languages.
 
-## Types
-
-Types are life. [Types](https://play.golang.org/p/24H4L7Gofrz) tell you
-
-* what is the memory size allocated for the value
-* what does the value represent (e. g. byte `11111111` represents number 255 if the type is `int`)
-
-A [struct](https://play.golang.org/p/Av0NOh_cu_K) is a user-defined type that contains named fields:
-
-```go
-// Declaration of anonymous (literal) struct type + initialization.
-e := struct {
-	flag    bool
-	counter int
-}{
-	flag: true,
-	counter: 10,
-}
-```
-
 ## Functions
 
 Arguments are passed by [value](https://play.golang.org/p/LoFTsgS3BUQ). A goroutine can access only data within its active frame (a slice of the stack) so the argument needs to be copied upon a function call. This is a mechanism for isolating memory mutations. It also means that if you need to mutate data you need to use a pointer.
