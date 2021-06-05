@@ -2,13 +2,13 @@
 
 Go is statically typed - variables always have specific type and type cannot change during the program run time.
 
-Types help us reason about what our program is doing and help us catch many errors.
+[Types](https://play.golang.org/p/24H4L7Gofrz) help us reason about what our program is doing and help us catch many errors.
 
-[Types](https://play.golang.org/p/24H4L7Gofrz) classify values (data) into groups and determine:
+Types classify values (data) into groups and determine:
 
 * what is the memory size allocated for the value
 * what does the value represent (e.g. byte `11111111` represents decimal number 255 if the type is `int`)
-* what are intrinsice operations of that representation (e.g. arithmetic operations for numbers, indexing, `append` and `range` for slices)
+* what are intrinsic operations of that representation (e.g. arithmetic operations for numbers, indexing, `append` and `range` for slices)
 
 Types of Go types:
 
