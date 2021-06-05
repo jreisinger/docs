@@ -22,6 +22,4 @@ When am I done:
 * 70 - 80% test coverage
 * ask what can change, from technical and business perspective, and refactor the code to be able to handle that change
 
----
-
-* https://learning.oreilly.com/videos/ultimate-go-programming/9780135261651/
+Source: Bill Kennedy's [Ultimate Go Programming](https://learning.oreilly.com/videos/ultimate-go-programming/9780135261651/) video course.
