@@ -1,0 +1,21 @@
+> Simple, straightforward code is just plain easier to work with and less likely to have problems. As programs get bigger and more complicated, it's even more important to have clean, simple code. -- Brian Kernighan
+
+1. Make it correct.
+2. Make it clear (simple, straightforward).
+3. Make it fast.
+
+In that order.
+
+Engineering is not about just hacking the code. It's about evaluating the costs and benefits.
+
+We are writing code for today, designing and architecting for tomorrow.
+
+# Go
+
+> Data dominates. If you've chosen the right data structures and organized things well, the algorithms will almost always be self-evident. Data structures, not algorithms, are central to programming. -- Rob Pike
+
+Don't do object oriented design but data oriented design.
+
+Go prefers convention over configuration because configuration is limiting. Let's group by what one can do not by what one is. In Go there are [no classes](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/grouping_types_1.go) (or [Perl version](https://github.com/jreisinger?tab=repositories&q=animal)) and subclasses but [Interfaces](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/grouping_types_2.go) and composition.
+
+Little copying is better than little dependency. Cost of DRY in Go is bigger than in other languages.
