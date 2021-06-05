@@ -55,12 +55,13 @@ Solve one problem at a time, don't be overwhelmed by everything.
 
 Steps:
 
-1. Identify concrete high level tasks that will solve the problem - what needs to be done and in what order.
-2. Write a little [code](https://github.com/ardanlabs/gotraining/blob/master/topics/go/design/composition/decoupling/example1/example1.go) solving concrete problem - start at primitive level and deploy ASAP.
-3. Write tests at primitive level.
-4. Repeat 1. - 3. until the problem is solved.
-5. [Refactor](https://github.com/ardanlabs/gotraining/tree/master/topics/go/design/composition/decoupling) for change by decoupling.
-6. Refactor for readibility (mental model, names, cleverness).
+1. Identify concrete tasks that will solve the problem.
+2. Write a little [code](https://github.com/ardanlabs/gotraining/blob/master/topics/go/design/composition/decoupling/example1/example1.go) for a concrete task.
+3. Start at primitive level and deploy ASAP.
+4. Write tests for your code.
+5. Repeat 1. - 4. until the problem is solved.
+6. [Refactor](https://github.com/ardanlabs/gotraining/tree/master/topics/go/design/composition/decoupling) for change by decoupling.
+7. Refactor for readibility (mental model, names, cleverness).
 
 Design programs as layers of API:
 
