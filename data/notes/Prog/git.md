@@ -113,7 +113,7 @@ For example if you don't want to track dot-files, setup `.gitignore` like this:
 
 ```bash
 .*
-!/.gitignore
+!.gitignore
 ```
 
 See more [here](http://github.com/guides/ignore-for-git).
