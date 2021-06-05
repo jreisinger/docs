@@ -65,9 +65,9 @@ Steps:
 
 Design programs as layers of API:
 
-* [High](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/decoupling_1.go#L149-#L166) level - ease of use, exported, unit/integration tested (might replace tests below)
-* [Low](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/decoupling_1.go#L104-#L147) level - builds on primitive layer, maybe exported, unit tested (might replace tests below)
-* [Primitive](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/decoupling_1.go#L66-#L102) level - do one thing well, not exported, unit tested
+* [Primitive](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/decoupling_1.go#L66-#L102) layer - do one thing well, not exported, unit tested
+* [Low](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/decoupling_1.go#L104-#L147) layer - builds on primitive layer, maybe exported, unit tested (might replace primitive layer tests)
+* [High](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/decoupling_1.go#L149-#L166) layer - ease of use, exported, unit/integration tested 
 
 When am I done:
 
