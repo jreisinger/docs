@@ -60,18 +60,17 @@ Solve one problem at a time, don't be overwhelmed by everything.
 Steps:
 
 1. Identify concrete tasks that will solve the problem.
-2. Write a little [code](https://github.com/ardanlabs/gotraining/blob/master/topics/go/design/composition/decoupling/example1/example1.go) for a concrete task.
-3. Start at primitive level and deploy ASAP.
-4. Write tests for your code.
-5. Repeat 1. - 4. until the problem is solved.
-6. [Refactor](https://github.com/ardanlabs/gotraining/tree/master/topics/go/design/composition/decoupling) for change by decoupling.
-7. Refactor for readibility (mental model, names, cleverness).
+2. Write a little [code](https://github.com/ardanlabs/gotraining/blob/master/topics/go/design/composition/decoupling/example1/example1.go) implementing a concrete task.
+3. Write tests for your code and deploy ASAP.
+4. Repeat 1. - 3. until the problem is solved.
+5. [Refactor](https://github.com/ardanlabs/gotraining/tree/master/topics/go/design/composition/decoupling) for change by decoupling.
+6. Refactor for readibility by reviewing mental model, naming and cleverness.
 
 Design programs as layers of API:
 
-* [Primitive](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/decoupling_1.go#L66-#L102) layer - do one thing well, not exported, unit tested
-* [Low](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/decoupling_1.go#L104-#L147) layer - builds on primitive layer, maybe exported, unit tested (might replace primitive layer tests)
-* [High](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/decoupling_1.go#L149-#L166) layer - ease of use, exported, unit/integration tested 
+1. [Primitive](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/decoupling_1.go#L66-#L102) layer - do one thing well, not exported, unit tested
+2. [Low](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/decoupling_1.go#L104-#L147) layer - builds on primitive layer, may be exported, unit tested (might replace primitive layer tests)
+3. [High](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/decoupling_1.go#L149-#L166) layer - for ease of use, exported, unit/integration tested 
 
 When am I done:
 
