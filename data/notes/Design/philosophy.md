@@ -3,7 +3,7 @@
 > So all else being equal, scientists prefer hypotheses which are simple, uniform, common-sensical and aesthetically pleasing. -- Aaron Wall (http://www.wall.org/~aron/blog/pillar-of-science-ii-elegent-hypotheses/)
 
 1. Make it correct.
-2. Make it clear (simple, straightforward).
+2. Make it clear (simple, straightforward, uniform).
 3. Make it fast.
 
 In that order.
