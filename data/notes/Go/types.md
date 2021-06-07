@@ -8,7 +8,7 @@ Types classify values (data) into groups and determine:
 
 * what is the memory size allocated for the value
 * what does the value represent (e.g. byte `11111111` represents decimal number 255 if the type is `int`)
-* what are intrinsic operations of that representation (e.g. arithmetic operations for numbers, indexing, `append` and `range` for slices)
+* what are intrinsic [operations](https://tour.golang.org/methods/16) of that representation (e.g. arithmetic operations for numbers, `len` for strings)
 
 Types of Go types:
 
