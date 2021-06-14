@@ -1,12 +1,12 @@
 # Big O notation
 
-NOTE: [Logarithms](https://www.rapidtables.com/calc/math/Log_Calculator.html) (log) mentioned here are base 2.
-
 * a mathematical way of describing *scaling* - e.g. growth rate of algorithm's run(ning) time
 * used to classify (compare) systems based on how they respond to changes in input size
 * you can't really tell how fast an algorithm will be without benchmarking (CPU, disk, RAM [complexities](http://queue.acm.org/detail.cfm?id=1814327)) but *O()* notation can serve as a general guide
 * *O* is used because the growth rate of an algorithm's run time is known as its *order*
 * *order of magnitude* is related but different - how many digits are in a number describing size (1 000 is an order of magnitude larger than 100)
+
+NOTE: [Logarithms](https://www.rapidtables.com/calc/math/Log_Calculator.html) (log) mentioned here are base 2.
 
 For example, *simple search* is O(n) algorithm and *binary search* is O(log n) algorithm. It means that if you have for example 100 (sorted) items you need to search through you need at most (worst-case scenario) 100 steps using simple search and 7 steps (guesses, operations) using binary search. Also notice that the growth rate of the binary search algorithm is much smaller.
 
