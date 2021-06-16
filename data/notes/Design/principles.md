@@ -10,6 +10,6 @@ This is a simple concept but it forms the basis for almost every design pattern.
 
 # Program to an interface, not an implementation
 
-![image](https://user-images.githubusercontent.com/1047259/122170455-df26df80-ce7e-11eb-8926-cae70e89ca49.png)
+<img src="https://user-images.githubusercontent.com/1047259/122170455-df26df80-ce7e-11eb-8926-cae70e89ca49.png" style="max-width:100%;height:auto">
 
 Source: Head First Design Patterns (2020)
