@@ -6,7 +6,7 @@
 
 This is a simple concept but it forms the basis for almost every design pattern. All patterns provide a way to let some parts of the system vary independently of all other parts.
 
-![image](https://user-images.githubusercontent.com/1047259/122170144-85261a00-ce7e-11eb-8cbd-323f65aef8d3.png)
+<img src="https://user-images.githubusercontent.com/1047259/122170144-85261a00-ce7e-11eb-8cbd-323f65aef8d3.png" style="max-width:100%;height:auto">
 
 # Program to an interface, not an implementation
 
