@@ -5,7 +5,7 @@ Slice type is an abstraction built on top of array type.
 Arrays
 
 * fixed size
-* the size is part of the type: `[4]int` and `[5]int` distinct types
+* the size is part of the type: `[4]int` and `[5]int` are distinct types
 * don't need to be initialized explicitly
 
 ```
