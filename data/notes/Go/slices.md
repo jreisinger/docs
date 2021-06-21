@@ -2,7 +2,7 @@ Go's slice type provides a convenient and efficient means of working with sequen
 
 Slice type is an abstraction built on top of array type.
 
-Arrays
+# Arrays
 
 * fixed size
 * the size is part of the type: `[4]int` and `[5]int` are distinct types
@@ -18,7 +18,7 @@ var a [4]int // a[0] == 0, a[1] == 0, ...
 b := [2]string{"hello", "world"} // or [...]string{"hello", "world"}
 ```
 
-Slices
+# Slices
 
 * literal:
 
@@ -43,5 +43,64 @@ b := []byte{'g', 'o', 'l', 'a', 'n', 'g'}
 x := [3]string{"Лайка", "Белка", "Стрелка"}
 s := x[:] // a slice referencing the storage of x
 ```
+
+# Slice internals
+
+A slice is a descriptor of an array segment:
+
+```
+s := make([]byte, 5)
+
+
+[]byte                 [5]byte                             
++-----+                +----------------------------------+
+| ptr ---------------> |  x   |  x   |  x   |  x   |  x   |
+|     |                | byte | byte | byte | byte | byte |
+|-----|                +----------------------------------+
+| len |                   0      1      2      3      4         
+|  5  |                                                    
+|-----|                                                    
+| cap |                                                    
+|  5  |                                                    
++-----+      
+```
+
+```
+s = s[2:4]
+
+
+[]byte                 [5]byte                             
++-----+                +----------------------------------+
+| ptr -----------------|------|----->|  x   |  x   |      |
+|     |                | byte | byte | byte | byte | byte |
+|-----|                +----------------------------------+
+| len |                    0      1      2      3     4       
+|  2  |                                                    
+|-----|                                                    
+| cap |                                                    
+|  3  |                                                    
++-----+      
+```
+
+```
+s = s[:cap(s)]
+
+
+[]byte                 [5]byte                             
++-----+                +----------------------------------+
+| ptr -----------------|------|----->|  x   |  x   |  x   |
+|     |                | byte | byte | byte | byte | byte |
+|-----|                +----------------------------------+
+| len |                    0      1      2      3     4       
+|  3  |                                                    
+|-----|                                                    
+| cap |                                                    
+|  3  |                                                    
++-----+      
+```
+
+Slicing does not copy data. It creates a new slice that points to the original array.
+
+# Source
 
 https://blog.golang.org/slices-intro
