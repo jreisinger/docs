@@ -46,7 +46,9 @@ s := x[:] // a slice referencing the storage of x
 
 # Slice internals
 
-A slice is a descriptor of an array segment:
+A slice is a descriptor of an array segment.
+
+Slicing does not copy data. It creates a new slice that points to the original array.
 
 ```
 s := make([]byte, 5)
@@ -98,8 +100,6 @@ s = s[:cap(s)]
 |  3  |                                                    
 +-----+      
 ```
-
-Slicing does not copy data. It creates a new slice that points to the original array.
 
 # Source
 
