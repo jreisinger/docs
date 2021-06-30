@@ -32,7 +32,7 @@ Now this is so peculiar [zvlastny] that one might try to explain it away:
 
 1. We might try to make out that when you say a man ought not to do something we say that because what he's doing *doesn't happen to please us*. But that is simply untrue. I am not angry with a man who trips me by accident but I'm angry with one who tries to trip me even if he does not succeed. In war, each side might find a traitor on the other side very useful. But though they use him and they pay him they consider him a human vermin [haved] not a decent man. And as for decent behaviour in ourselves it's pretty obvious that it's often not the behaviour that is convenient to us. It means doing a homework when it would be easier to cheat, it' leaving a girl alone when you would like to make love to her.
 
-2. Though decent behaviour doesn't pay each particular person at each moment it sill *pays the human race as a whole*. Now, of course, it's perfectly true that safety and happiness come from individuals and nations being honest and fair and kind to each other. But it's [circular reasoning](https://en.wikipedia.org/wiki/Circular_reasoning) - Q: Why ought I to be unselfish? A: Because it's good for society. Q: Why should I care what's good for society except when it happens to pay me personally? A: Because you ought to be unselfish. What you are saying is true but you you are not getting any further.
+2. Though decent behaviour doesn't pay each particular person at each moment it sill *pays the human race as a whole*. Now, of course, it's perfectly true that safety and happiness come from individuals and nations being honest and fair and kind to each other. But it's [circular reasoning](https://en.wikipedia.org/wiki/Circular_reasoning) - Q: Why ought I to be unselfish? A: Because it's good for society. Q: Why should I care what's good for society except when it happens to pay me personally? A: Because you ought to be unselfish. What you are saying is true but you are not getting any further.
 
 Consequently, this Rule of Right and Wrong, or Law of Human Nature, or whatever you call it, must somehow or other be a real thing - a thing that is really there, not made up by ourselves. And yet it is not a fact in the ordinary sense, in the same way that our actual behaviour is a fact. It begins to look as if we shall have to admit that there is more than one kind of reality; that, in this particular case, there is something above and beyond the ordinary facts of men's behaviour, and yet quite definitely real - a real law, which none of us made, but which we find pressing on us.
 
@@ -40,7 +40,7 @@ Consequently, this Rule of Right and Wrong, or Law of Human Nature, or whatever 
 
 Ever since men were able to think, they were wondering what this universe really is and how it came to be there. Very roughly, two views have been held:
 
-1. Materialist view - matter and space just happen to exist, and always have existed, nobody knows why
+1. Materialist view - matter/energy and space just happen to exist, and always have existed, nobody knows why
 2. Religious view - what is behind the universe is more like a mind than it is like anything else we know
 
 Please don not think that one of these views was held long time ago and that the other has gradually taken its place. Wherever there have been thinking men both views turned up. Also note that you cannot find out which of these views is true by [science](http://www.wall.org/~aron/blog/the-pillars-of-science/) in the ordinary way.
