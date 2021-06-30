@@ -7,5 +7,5 @@ systemctl --user start onedrive
 
 # Check status and logs
 systemctl --user status onedrive
-journalctl --user -u onedrive
+journalctl --user -u onedrive -f
 ```
