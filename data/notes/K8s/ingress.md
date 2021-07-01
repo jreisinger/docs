@@ -17,6 +17,12 @@
 * it reads Ingress objects and merges them into NGINX config file and then signals to the NGINX process to restart
 * it has many features and options exposed via annotations
 * it parses HTTP request and based on `Host` header and URL path proxies the request to a service
+* it's a pod running NGINX process
+
+```
+kubectl get pods -n ingress-nginx \
+  -l app.kubernetes.io/name=ingress-nginx
+```
 
 # Manifests
 
