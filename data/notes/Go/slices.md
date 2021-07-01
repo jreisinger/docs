@@ -52,7 +52,7 @@ A slice is a descriptor of an array segment.
 Slicing does not copy data. It creates a new slice that points to the original array.
 
 ```
-s := make([]byte, 5) // make slice s
+s := make([]byte, 5) // allocate array of size 5 and return slice pointing to it
 
 
 []byte                 [5]byte                             
