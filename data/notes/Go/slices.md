@@ -102,6 +102,36 @@ s = s[:cap(s)] // grow s to its capacity
 +-----+      
 ```
 
+# Growing slices
+
+To increase the capacity of a slice one must create a new, larger slice and `copy` the contents of the original slice into it.
+
+```
+// Double the capacity of s.
+t := make([]string, len(s), (cap(s)+1)*2) // +1 in case cap(s) == 0
+copy(t, s)                                // copy the contents of s into t
+s = t                                     // assign the slice value to into s
+```
+
+The `append` function appends the elements x to the end of slice s, and grows the slice if a greater capacity is needed.
+
+```
+func append(s []T, x ...T) []T
+```
+
+```
+a := make([]int, 1)    // a == []int{0}
+a = append(a, 1, 2, 3) // a == []int{0, 1, 2, 3} 
+```
+
+To append one slice to another, use `...` to expand the second argument to a list of arguments:
+
+```
+a := []string{"Lewis", "Polkinghorne"}
+b := []string{"Knuth", "Wall", "Barnes"}
+a = append(a, b...) // equivalent to append(a, b[0], b[1], b[2])
+```
+
 # Source
 
 https://blog.golang.org/slices-intro
