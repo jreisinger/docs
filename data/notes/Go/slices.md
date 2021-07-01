@@ -6,13 +6,14 @@ Slice type is an abstraction built on top of array type.
 
 * fixed size
 * the size is part of the type: `[4]int` and `[5]int` are distinct types
-* don't need to be initialized explicitly
+
+Don't need to be initialized explicitly:
 
 ```
 var a [4]int // a[0] == 0, a[1] == 0, ...
 ```
 
-* literal:
+Literal:
 
 ```
 b := [2]string{"hello", "world"} // or [...]string{"hello", "world"}
@@ -20,13 +21,7 @@ b := [2]string{"hello", "world"} // or [...]string{"hello", "world"}
 
 # Slices
 
-* literal:
-
-```
-b := []string{"hello", "world"}
-```
-
-* you need to initiliaze a slice
+You need to initiliaze a slice by using `make`:
 
 ```
 var s []byte
@@ -34,7 +29,13 @@ fmt.Println(s[0])   // panic: runtime error: index out of range [0] with length 
 s = make([]byte, 5) // s == []byte{0, 0, 0, 0, 0}
 ```
 
-* you can also make a slice by slicing an existing slice or array
+or a literal:
+
+```
+b := []string{"hello", "world"}
+```
+
+You can also make a slice by slicing an existing slice or array:
 
 ```
 b := []byte{'g', 'o', 'l', 'a', 'n', 'g'}
