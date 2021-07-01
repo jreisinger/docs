@@ -1,4 +1,4 @@
-Kubernetes is a distributed operating system. Applications running on it are called cloud native.
+Kubernetes is a distributed operating system. Applications running on it are called cloud native. See [What is Kubernetes?](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) for more.
 
 Config and basic concepts
 =========================
