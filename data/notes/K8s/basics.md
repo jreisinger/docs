@@ -1,12 +1,27 @@
-Kubernetes is a distributed operating system. Applications running on it are called cloud-native.
+Kubernetes is a distributed operating system. Applications running on it are called cloud native.
+
+Config and basic concepts
+=========================
 
 `kubectl` configuration
-=======================
 
 ```bash
+# one of
 cat ~/.kube/config
-# or
+cat $KUBECONFIG
 kubectl config view
+```
+
+Context
+
+* to manage different `namespace`s, `cluster`s and `user`s
+
+```bash
+# list contexts
+kubectl config get-contexts
+
+# switch context
+kubectl config use-context <context-name>
 ```
 
 Namespace
@@ -17,31 +32,12 @@ Namespace
 * see [Namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/) for more 
 
 ```bash
-# your current namespace
-kubectl config get-contexts # search for asterisk
-
-# all namespaces in a cluster
+# all namespaces in a cluster, need admin rights
 kubectl get namespaces
-```
-
-Context
-
-* to change the default `namespace` more permanently
-* to manage different `cluster`s
-* to manage different `user`s
-
-```bash
-# list contexts
-kubectl config get-contexts
-
-# switch context
-kubectl config use-context <context-name>
 ```
 
 Basic objects
 =============
-
-<img src="https://github.com/jreisinger/notes/raw/master/static/kubernetes.png" style="max-width:100%;height:auto;"> 
 
 * everything in Kubernetes is represented by a RESTful resource aka. a Kubernetes object ([resources vs objects](https://stackoverflow.com/questions/52309496/difference-between-kubernetes-objects-and-resources))
 * each object exists at a unique HTTP path
@@ -64,6 +60,8 @@ kubectl apply -f obj.yaml
 kubectl delete -f obj.yaml  # no additional prompting!
 kubectl delete <type> <object>
 ```
+
+<img src="https://github.com/jreisinger/notes/raw/master/static/kubernetes.png" style="max-width:100%;height:auto;"> 
 
 Pod
 ---
@@ -151,7 +149,7 @@ Ingress
 
 Service of type LoadBalancer
 
-* for other ports than HTTP/S
+* for other ports than HTTP(S)
 
 Resources
 =========
