@@ -4,6 +4,7 @@ Some of the technical books that I liked. Rougly ordered by most recently read (
 
 # Sysadmin/SRE/DevOps
 
+* Cloud Native Go, 2021
 * Cloud Native DevOps with Kubernetes, 2019
 * *Unix and Linux System Administration Handbook* (ULSAH), 2017
 * The Practice of Cloud System Administration (PoCSA), 2014
