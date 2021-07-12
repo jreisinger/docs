@@ -7,7 +7,7 @@ Principles
 
 Practical hints
 
-* do periodic spaced out (getting little rusty) practice of two or more different but related topics in interleaved (not sequenced) fashion
+* do periodic spaced out (get little rusty) practice of two or more different but related topics in interleaved (not sequenced) fashion
 * recall facts and concepts from memory over re-reading and single-minded rapid repetition (mass practice)
 * try to solve a problem (often with errors) before being taught the solution
 * use different learning styles (e.g. auditory vs visual)
