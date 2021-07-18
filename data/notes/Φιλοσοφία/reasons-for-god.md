@@ -1,19 +1,14 @@
-It looks like it's not possible to prove the God's existence using the [modern scientific method](http://www.wall.org/~aron/blog/the-pillars-of-science/). Is it then reasonable to think that God exists? Or is it just blind faith without any evidence?
+It looks like it's not possible to prove the God's existence using the [modern scientific method](http://www.wall.org/~aron/blog/the-pillars-of-science/). This is because God, if exists, is not an object among other objects or a force among other forces. It's something totally different and external to the observable world. Is it then reasonable to think that God exists? Are there some arguments or reasons for God's existence? Or is it just blind faith without any type of evidence?
 
-# Why even bother?
-
-Question whether God exists is probably the most important question because it affects one's view of the world. If taken seriously if defines how one lives.
-
-# How can one approach this question
+How can one approach this question:
 
 1. ~~Blind faith~~
 2. Historical arguments
 3. Philosophical arguments
-4. Faith
+4. Reasonable theists
+5. Faith
 
-# Strength of evidence
-
-[Fields of study](http://www.wall.org/~aron/blog/theology-less-speculative-than-quantum-gravity/) by the strength of evidence they can provide *on average*:
+Fields of study by the [strength of evidence](http://www.wall.org/~aron/blog/theology-less-speculative-than-quantum-gravity/) they can provide on average:
 
 ```
 Math & Logic > Science > History > Most Philosophy
@@ -46,17 +41,19 @@ Against
 
 For
 
-* Aquinas: [five ways](https://aquinas101.thomisticinstitute.org/st-ia-q-2#FPQ2OUTP1) ([Latin/Italian](http://www.carimo.it/somma-teologica/somma.htm), [Slovak](https://blog.postoj.sk/8037/pat-ciest-rozumu-k-poznaniu-boha)).
-* Existence of objective universal morality or decent behaviour or fair play (C. S. Lewis).
+* Existence of objective universal morality or decent behaviour or fair play (C. S. Lewis: Mere Christinanity - Book I)
+* Five ways of Aquinas
 * [Kalam cosmological argument](https://en.wikipedia.org/wiki/Kalam_cosmological_argument)
 * [Leibniz's argument for the existence of God](https://www.reasonablefaith.org/videos/interviews-panels/leibnizs-argument-for-the-existence-of-god-bobby-conway/)
 
 Against
 
 * [Euthypro dilemma](https://en.wikipedia.org/wiki/Euthyphro_dilemma) <=> Objective universal morality.
-* Argument from the evil - an omnipotent and benevolent God should have eliminated all suffering. We observe plenty of man made and natural suffering in the world. <=> Free will can not be achieved without allowing the possibility of doing wrong things. What about suffering not caused by people (like tsunami)?
+* Argument from the evil - an omnipotent and benevolent God should have eliminated all suffering. We observe plenty of man made and natural suffering in the world. <=> Free will can not be achieved without allowing the possibility of doing wrong things. God can bring good through suffering - we can't always (most of the time) see how.
 
-# Personal experience
+# Faith
+
+In the sense that it's something that comes at the far edge of reason. Like when you know a person for a long time and then he tells you something you can't verify. You have to decide whether you believe him or not.
 
 > Why should they be impartial, what is being impartial, when the whole world is at war about whether one thing is a devouring superstition or a divine hope? I do not pretend to be impartial in the sense that the final act of faith fixes a man's mind because it satisfies his mind. But I do profess to be a great deal more impartial than they are; in the sense that I can tell the story fairly, with some sort of imaginative justice to all sides; and they cannot.  (The Everlasting Man)
 
@@ -67,12 +64,13 @@ Against
 * [Russell Stannard](https://en.wikipedia.org/wiki/Russell_Stannard) (1931) - physicist, sculptor, books for children (Open University)
 * [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) (1938) - computer scientist (Stanford)
 * [Larry Wall](https://en.wikipedia.org/wiki/Larry_Wall) (1954) - language designer
+* [Bishop Robert Barron](https://www.youtube.com/user/wordonfirevideo) (1959) - high Catholic priest and philosopher (USA)
 * [Rosalind Picard](https://www.media.mit.edu/people/picard/overview/) (1962) - engineer (MIT)
 * [Edward Feser](http://edwardfeser.blogspot.com/) (1968) - philosopher
-* [Aron Wall](http://www.wall.org/~aron/blog/bio/) - theoretical physicist (Cambridge)
-* [Luke Barnes](https://www.closertotruth.com/contributor/luke-barnes/profile) - theoretical physicist (Australia)
+* [Aron Wall](http://www.wall.org/~aron/blog/bio/) (1984) - theoretical physicist (Cambridge)
+* [Luke Barnes](https://www.closertotruth.com/contributor/luke-barnes/profile) - theoretical astrophysicist (Australia)
 
-# Reasonable atheists
+Reasonable atheists
 
 * [Richard P. Feynman](http://www.wall.org/~aron/blog/what-about-science/) - physicist
 * [Stephen Hawking](https://en.wikipedia.org/wiki/Stephen_Hawking) - theoretical physicist, cosmologist (Cambridge)
