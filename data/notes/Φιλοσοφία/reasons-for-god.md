@@ -42,9 +42,9 @@ Against
 For
 
 * Existence of objective universal morality or decent behaviour or fair play (C. S. Lewis: Mere Christinanity - Book I)
-* Five ways of Aquinas
+* Five ways of Aquinas -> [argument from motion](https://youtu.be/bdjjqFSEJ_Y)
 * [Kalam cosmological argument](https://en.wikipedia.org/wiki/Kalam_cosmological_argument)
-* [Leibniz's argument for the existence of God](https://www.reasonablefaith.org/videos/interviews-panels/leibnizs-argument-for-the-existence-of-god-bobby-conway/)
+* [Leibniz's contingency argument](https://www.reasonablefaith.org/videos/interviews-panels/leibnizs-argument-for-the-existence-of-god-bobby-conway/)
 
 Against
 
