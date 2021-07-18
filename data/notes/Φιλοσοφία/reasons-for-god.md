@@ -54,7 +54,7 @@ Against
 
 # Faith
 
-In the sense that it's something that comes at the far edge of reason. Like when you know a person for a long time and then he tells you something you can't verify. You have to decide whether you believe him or not.
+[In the sense](https://youtu.be/m_4PSgFjtvI) that it's something that comes at the far edge of reason. Like when you know a person for a long time and then he tells you something you can't verify. You have to decide whether you believe him or not.
 
 > Why should they be impartial, what is being impartial, when the whole world is at war about whether one thing is a devouring superstition or a divine hope? I do not pretend to be impartial in the sense that the final act of faith fixes a man's mind because it satisfies his mind. But I do profess to be a great deal more impartial than they are; in the sense that I can tell the story fairly, with some sort of imaginative justice to all sides; and they cannot.  (The Everlasting Man)
 
