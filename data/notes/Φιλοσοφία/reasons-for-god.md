@@ -45,6 +45,7 @@ For
 * Five ways of Aquinas -> [argument from motion](https://youtu.be/bdjjqFSEJ_Y)
 * [Kalam cosmological argument](https://en.wikipedia.org/wiki/Kalam_cosmological_argument)
 * [Leibniz's contingency argument](https://www.reasonablefaith.org/videos/interviews-panels/leibnizs-argument-for-the-existence-of-god-bobby-conway/)
+* [Argument from desire](https://youtu.be/X71Gq9a1qxE)
 
 Against
 
