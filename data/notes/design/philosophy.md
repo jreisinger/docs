@@ -1,3 +1,5 @@
+> The most important property of a program is whether is accomplishes the intention of its user. -- C.A.R. Hoare (1969)
+
 > Simple, straightforward code is just plain easier to work with and less likely to have problems. As programs get bigger and more complicated, it's even more important to have clean, simple code. -- Brian Kernighan
 
 > In short, simplicity is often the enemy of success. -- [Larry Wall](https://www.oreilly.com/openbook/opensources/book/larry.html)
