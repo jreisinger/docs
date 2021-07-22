@@ -16,7 +16,7 @@ cportal   ClusterIP   10.99.61.122   <none>        8080/TCP   79d
 
 * k8s's HTTP-based load balancing and "virtual hosting" system
 * at implementation level Ingress is different from pretty much any other k8s resource object
-* in particular it is split into 1) common resource specification (the Ingress object) and a controller implemetation
+* in particular it is split into 1) common resource specification (the Ingress object) and 2) a controller implemetation
 * there is no "standard" Ingress controller built into k8s - you have to pick and install one
 
 ## Nginx Ingress Controller
@@ -65,7 +65,7 @@ spec:
 
 ## TLS
 
-First we need a secret with TLS key and certificate:
+First we need a secret with TLS key and certificate for a given host (my-service.example.com in this case):
 
 ```
 # tls-secret.yaml
@@ -80,7 +80,7 @@ data:
   tls.key: <base64 encoded private key>
 ```
 
-Then we can reference the secret in Ingress:
+Then we can reference the secret in Ingress via `secretName` field:
 
 ```
 # tls-ingress.yaml
@@ -102,9 +102,13 @@ spec:
           servicePort: 8080
 ```
 
-You can use [cert-manager](https://cert-manager.io/docs/) (and e.g. [Let's Encrypt](https://letsencrypt.org/)) to automate certificates management.
+You can use [cert-manager](https://cert-manager.io/docs/) and e.g. [Let's Encrypt](https://letsencrypt.org/) to automate certificates management.
 
-# Troubleshooting
+# Tips and tricks
+
+If you specify duplicate or conflicting configurations of Ingress object, the behavior is undefined.
+
+An Ingress object can only refer to an upstream (backend) service in the same namespace. However, multiple Ingress objects in different namespaces can specify subpaths for the same host. These specifications are then merged together. This means that Ingress needs to be coordinated globally across the cluster.
 
 Get [nginx ingress](https://kubernetes.github.io/ingress-nginx/troubleshooting/) logs
 
