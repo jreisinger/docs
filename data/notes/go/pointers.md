@@ -1,11 +1,24 @@
+Go has pointers. A pointer holds the memory address of a value.
+
+The type `*T` is a pointer to a `T` value. Its zero value is `nil`.
+
+```go
+var p *int  // The * denotes a pointer type.
+i := 42
+p = &i      // The & operator generates a pointer to its operand.
+*p = 21     // The * operator denotes the pointer's underlying value.
+```
+
+The operation on the last line is known as "dereferencing" of "indirecting".
+
 # How do they work
 
 ```go
-var x int32 = 10 // 0000 1010
+var x int32 = 10        // 0000 1010
 var y bool = true
-pointerX := &x // address of x
+pointerX := &x          // address of x
 pointerY := &y
-var pointerZ *string // pointerZ == nil
+var pointerZ *string    // pointerZ == nil
 
 Value    |  0 |  0 |  0 | 10 |  1 |  0 |  0 |  0 |  1 |  0 |  0 |  0 |  5 |  0 |  0 |  0 |  0 |
 ---------|----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
@@ -17,8 +30,6 @@ Variable | x                 | y  | pointerX          | pointerY          | poin
 * pointers are [really](https://play.golang.org/p/3Lz_C_sXaHv) 8 bytes
 * the point is they are always the same size no matter what type they point to
 * `nil` is an untyped identifier (in the universe block) that represents a lack of value
-
-`&` - the address operator, `*` - the indirection operator or denoting a pointer type
 
 Before dereferencing a pointer you must make sure it's not nil.
 
@@ -36,7 +47,9 @@ fmt.Println(x == nil) // false
 fmt.Println(*x)       // 0
 ```
 
-`new` is rarely used because you can take address of a struct literal. You can't use `&` before primitive literals (numbers, booleans and strings) or a constant because they don’t have memory addresses; they exist only at compile time.
+`new` is rarely used because you can take address of a struct literal. You can't
+use `&` before primitive literals (numbers, booleans and strings) or a constant
+because they don’t have memory addresses; they exist only at compile time.
 
 ```go
 x := &Foo{}
@@ -148,4 +161,5 @@ In general, all methods on a given type should have either value or pointer rece
 # Sources
 
 * Learning Go, 2021
-* https://tour.golang.org/methods
+* tour.golang.org/methods
+* tour.golang.org/moretypes/1-14
