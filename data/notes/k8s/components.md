@@ -4,8 +4,8 @@
 
 <img src="https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg" style="max-width:100%;height:auto;"> 
 
-* nodes - worker machines (VMs or physicals) that run containerized applications - Pods
-* control plane - manages nodes and Pods
+* Node - worker machine (virtual or physical) that runs containerized applications via Pods
+* Control plane - manages Nodes and Pods
 
 ## Control plane components
 
