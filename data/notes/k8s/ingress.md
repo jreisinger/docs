@@ -1,14 +1,22 @@
 # Intro
 
 * the Service object operates at OSI L4 - it only forwards TCP and UDP connections
+```
+$ kubectl get svc cportal
+NAME      TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
+cportal   ClusterIP   10.99.61.122   <none>        8080/TCP   79d
+```
 * if you use Services of `type: NodePort` the clients must connect to a unique port per service
-* if you use Services of `type: LoadBalancer` you allocate scarse resources (IP addresses?) for each service
+* if you use Services of `type: LoadBalancer` you allocate scarse resources (IP addresses) for each service
 * for HTTP (L7) based services we can do better -> Ingress
 
 # Ingress
 
+![Typical software Ingress controller configuration](https://user-images.githubusercontent.com/1047259/126613022-2bb69f61-d0d6-4933-bc9e-e636071017f8.png)
+
 * k8s's HTTP-based load balancing and "virtual hosting" system
 * at implementation level Ingress is different from pretty much any other k8s resource object
+* in particular it is split into 1) common resource specification (the Ingress object) and a controller implemetation
 * there is no "standard" Ingress controller built into k8s - you have to pick and install one
 
 ## Nginx Ingress Controller
