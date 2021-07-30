@@ -1,4 +1,4 @@
-* aka generate and test, brute force, trial and error, exhaustive enumeration
+* aka brute force (generate and test, trial and error, exhaustive enumeration)
 * general problem solving technique and algorithm
 * systematically enumerate all possible candidates for a solution and check whether each satisfies the problem's statement
 
