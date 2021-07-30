@@ -2,7 +2,7 @@ Code and data for my [homepage](https://reisinge.net).
 
 ## Usage
 
-Edit stuff in `data` folder. It will be reflected almost instantly in the [homepage](https://reisinge.net).
+Edit stuff in `data` folder. It will be reflected almost instantly in the https://reisinge.net.
 
 ## Development
 
