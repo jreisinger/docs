@@ -35,6 +35,7 @@ Programming
 
 Management
 
+* The Manager's Path, 2017
 * The Unicorn Project, 2019
 * The Phoenix Project, 2013
 * Land the Tech Job You Love, 2009
