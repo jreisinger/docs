@@ -91,7 +91,7 @@ Various
 * VCS, CI/CD: git, TravisCI
 * chatops: Slack
 
-# Certificates and Formal Education
+# Certificates and formal education
 
 * LPIC-2: Linux Professional Institute Certification - Advanced Level Administration [2012 - 2017]
 * CCENT: Cisco Certified Entry Networking Technician [2013 - 2016]
