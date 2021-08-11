@@ -21,6 +21,8 @@ b := [2]string{"hello", "world"} // or [...]string{"hello", "world"}
 
 # Slices
 
+A slice does not store any data, it just describes a section of an underlying array.
+
 You need to initiliaze a slice by using `make`:
 
 ```
@@ -131,4 +133,5 @@ a = append(a, b...) // equivalent to append(a, b[0], b[1], b[2])
 
 # Source
 
-https://blog.golang.org/slices-intro
+* https://blog.golang.org/slices-intro
+* https://tour.golang.org/moretypes/7
