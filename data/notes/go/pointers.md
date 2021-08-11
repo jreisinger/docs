@@ -110,6 +110,23 @@ Non-pointer types:
 
 # How to use them
 
+## Accessing structs
+
+If you make a pointer to a struct, you can access its fields in two ways:
+
+```go
+type Person struct {
+	Name string
+	Age  int
+}
+
+func main() {
+	p := &Person{"Joe", 42}
+	fmt.Println((*p).Name) // explicit dereferencing; it's cumbersome
+	fmt.Println(p.Name)    // implicit dereferencing done by the language
+}
+```
+
 ## Populating structs
 
 Rather than populating a struct by passing a pointer to it into a function, have the function instantiate and return the struct.
