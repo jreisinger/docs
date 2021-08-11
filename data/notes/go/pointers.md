@@ -108,9 +108,22 @@ Non-pointer types:
 * Go developers use pointers to indicate that a function parameter is mutable
 * you should use pointers as last resort
 
-# How to use them
+# Structs
 
-## Accessing structs
+A [struct](https://play.golang.org/p/Av0NOh_cu_K) is a user-defined type that contains named fields:
+
+```go
+// Declaration of anonymous (literal) struct type + initialization.
+p := struct {
+	Person 	string
+	Age 	int
+}{
+	Person: "Joe",
+	Age: 	42,
+}
+```
+
+## Accessing struct pointers
 
 If you make a pointer to a struct, you can access its fields in two ways:
 
@@ -179,4 +192,4 @@ In general, all methods on a given type should have either value or pointer rece
 
 * Learning Go, 2021
 * tour.golang.org/methods
-* tour.golang.org/moretypes/1-14
+* tour.golang.org/moretypes/1
