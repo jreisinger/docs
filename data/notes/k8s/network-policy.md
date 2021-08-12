@@ -21,6 +21,17 @@ spec:
   - Egress
 ```
 
+To verify a network policy:
+
+```
+# run nginx pod
+kubectl run nginx --image=nginx
+
+# try to reach the nginx pod
+kubectl run busybox --image=busybox -it -- /bin/sh
+/ # wget 192.168.141.249 -O-
+```
+
 More
 
 * https://kubernetes.io/docs/concepts/services-networking/network-policies/
