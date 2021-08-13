@@ -1,5 +1,9 @@
 # Volumes
 
+A container using the temporary filesystem (default) vs a Volume:
+
+![image](https://user-images.githubusercontent.com/1047259/129347362-812374d7-3225-4e51-a4de-2ad9d8942fce.png)
+
 NOTE: If you need your data to live longer than your pod see [persistent volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
 
 K8s volume abstraction fixes two problems:
