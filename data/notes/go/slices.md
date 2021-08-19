@@ -23,12 +23,20 @@ b := [2]string{"hello", "world"} // or [...]string{"hello", "world"}
 
 A slice does not store any data, it just describes a section of an underlying array.
 
+It's zero value is `nil`:
+
+```
+var s []byte
+fmt.Println(s)        // []
+fmt.Println(s == nil) // true
+```
+
 You need to initiliaze a slice by using `make`:
 
 ```
 var s []byte
-fmt.Println(s[0])   // panic: runtime error: index out of range [0] with length 0
-s = make([]byte, 5) // s == []byte{0, 0, 0, 0, 0}
+fmt.Println(s[0])     // panic: runtime error: index out of range [0] with length 0
+s = make([]byte, 5)   // s == []byte{0, 0, 0, 0, 0}
 ```
 
 or a literal:
@@ -41,7 +49,7 @@ You can also make a slice by slicing an existing slice or array. Slicing is done
 
 ```
 b := []byte{'g', 'o', 'l', 'a', 'n', 'g'}
-// b[1:4] == []byte{'o', 'l' , 'a'}, sharing the same storage as b
+c := b[1:4] // c == []byte{'o', 'l' , 'a'}, sharing the same storage as b
 
 x := [3]string{"Лайка", "Белка", "Стрелка"}
 s := x[:] // a slice referencing the storage of x
