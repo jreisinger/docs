@@ -35,8 +35,8 @@ You need to initiliaze a slice by using `make`:
 
 ```
 var s []byte
-fmt.Println(s[0])     // panic: runtime error: index out of range [0] with length 0
-s = make([]byte, 5)   // s == []byte{0, 0, 0, 0, 0}
+fmt.Println(s[0])   // panic: runtime error: index out of range [0] with length 0
+s = make([]byte, 5) // s == []byte{0, 0, 0, 0, 0}
 ```
 
 or a literal:
@@ -48,11 +48,11 @@ b := []string{"hello", "world"}
 You can also make a slice by slicing an existing slice or array. Slicing is done by specifying a half-open range with two indices like `b[1:4]` or `x[0:len(x)]`:
 
 ```
-b := []byte{'g', 'o', 'l', 'a', 'n', 'g'}
-c := b[1:4] // c == []byte{'o', 'l' , 'a'}, sharing the same storage as b
+s := []byte{'g', 'o', 'l', 'a', 'n', 'g'}
+t := s[1:4] // []byte{'o', 'l' , 'a'}, sharing the same storage as s
 
-x := [3]string{"Лайка", "Белка", "Стрелка"}
-s := x[:] // a slice referencing the storage of x
+a := [3]string{"Лайка", "Белка", "Стрелка"}
+s := a[:] // s references the storage of a
 ```
 
 # Slice internals
