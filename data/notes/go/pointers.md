@@ -188,8 +188,10 @@ Since methods often need to modify their receiver, pointer receivers are more co
 
 In general, all methods on a given type should have either value or pointer receivers, but not a mixture of both.
 
-# Sources
+# Sources and more
 
 * Learning Go, 2021
 * tour.golang.org/methods
 * tour.golang.org/moretypes/1
+* https://yourbasic.org/golang/pointers-explained
+* https://dave.cheney.net/2017/04/29/there-is-no-pass-by-reference-in-go
