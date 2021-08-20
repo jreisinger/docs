@@ -1,73 +1,69 @@
-# Get info
+```
+alias k=kubectl
+complete -F __start_kubectl k # enable completion for k alias
+```
 
-`kubectl` output flags
+Output flags
 
-```sh
+```
 -o wide       # more details
--o yaml       # complete object in JSON format
+-o yaml       # complete object in YAML format
 --v=6         # verbosity
 --no-headers
 --sort-by=.metadata.creationTimestamp
 ```
 
-Explain resource types
-
-```sh
-kubectl explain pod.spec.containers.ports.protocol
-```
-
-Generate resource manifest
+Explain resource fields
 
 ```
-kubectl run demo --image=cloudnatived/demo:hello --dry-run -o yaml
+k explain pod.spec.containers.ports.protocol
 ```
 
-# Troubleshoot
-
-Show logs
-
-```sh
-kubectl logs [-f] <pod>
-kubectl exec -it <pod> -- bash  # or sh instead of bash
-```
-
-Run containers for troubleshooting
+Generate pod manifest
 
 ```
-kubectl run alpine    --image=alpine          --rm -it --restart=Never           -- sh
+k run nginx --image=nginx --dry-run=client -o yaml
+```
 
-kubectl run nslookup  --image=busybox         --rm -it --restart=Never --command -- nslookup <service>
-kubectl run wget      --image=busybox         --rm -it --restart=Never --command -- wget -qO- <service>:<port>
-kubectl run curl      --image=curlimages/curl --rm -it --restart=Never --command -- curl -LI <service>:<port>
+Troubleshoot
+
+```
+k logs [-f] <pod>
+k exec -it <pod> -- sh
+```
+
+Run a temporary pod inside a cluster and start a shell/command in it
+
+```
+k run alpine --image=alpine --rm -it -- sh
+k run busybox --image=busybox --rm -it -- nslookup <service>
 ```
 
 * `--command` -- command to run instead of container's default entrypoint
 
-# Interact
-
 Copy files
 
-```sh
-kubectl cp <pod>:/path/to/remote/file /path/to/local/file
+```
+k cp <pod>:/path/to/remote/file /path/to/local/file # or vice versa
 ```
 
 Port forwarding
 
-```sh
-kubectl port-forward kuard 8080:8080  # tunnel: localhost -> k8s master -> k8s worker node
+```
+k port-forward kuard 8080:8080  # tunnel: localhost -> k8s master -> k8s worker node
 ```
 
 Proxy server between localhost and K8s API server
 
-```sh
-kubectl proxy &                  # create proxy
+```
+k proxy &                  # create proxy
 curl localhost:8001/api/v1/pods  # get list of pods
 ```
 
 Suspend a cronjob
 
 ```
-kubectl patch cronjobs <cronjob> -p '{"spec" : {"suspend" : true }}'
+k patch cronjobs <cronjob> -p '{"spec" : {"suspend" : true }}'
 ```
 
 * if the cronjob is suspended for too long you get:
@@ -78,16 +74,14 @@ kubectl patch cronjobs <cronjob> -p '{"spec" : {"suspend" : true }}'
   Warning  FailedNeedsStart  11s (x6 over 111s)  cronjob-controller  Cannot determine if job needs to be started: too many missed start time (> 100). Set or decrease .spec.startingDeadlineSeconds or check clock skew
 ```
 
-# Cleanup
-
 Remove pod stuck in terminating state
 
 ```
-kubectl delete pod postgres-86d59f8fb-pjtgx --force --grace-period=0
+k delete pod <pod> --force --grace-period=0
 ```
 
 Delete objecs by label
 
-```sh
-kubectl delete deployments --all [--selector="app=myapp,env=dev"]
+```
+k delete deployments --all [--selector="app=myapp,env=dev"]
 ```
