@@ -1,9 +1,13 @@
-Go has pointers. A pointer holds the memory address of a value.
+Go has pointers.
+
+A pointer is a variable that holds the memory address of another variable.
+
+A variable is a piece of storage containing a value.
 
 The type `*T` is a pointer to a `T` value. Its zero value is `nil`.
 
 ```go
-var p *int  // The * denotes a pointer type.
+var p *int  // The * here denotes a pointer type variable/value.
 i := 42
 p = &i      // The & operator generates a pointer to its operand.
 *p = 21     // The * operator denotes the pointer's underlying value.
