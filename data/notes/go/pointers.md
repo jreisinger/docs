@@ -1,19 +1,17 @@
-Go has pointers.
+Go has pointers. Go does not have [reference variables](https://dave.cheney.net/2017/04/29/there-is-no-pass-by-reference-in-go).
 
-A pointer is a variable that holds the memory address of another variable.
-
-A variable is a piece of storage containing a value.
-
-The type `*T` is a pointer to a `T` value. Its zero value is `nil`.
+A pointer is a variable that holds the memory address of another variable. A variable is a piece of storage containing a value.
 
 ```go
-var p *int  // The * here denotes a pointer type variable/value.
+var p *int  // The * here means that p is a pointer to int.
 i := 42
 p = &i      // The & operator generates a pointer to its operand.
 *p = 21     // The * operator denotes the pointer's underlying value.
 ```
 
 The operation on the last line is known as "dereferencing" of "indirecting".
+
+The type `*T` is a pointer to a `T` value. Its zero value is `nil`.
 
 # How do they work
 
@@ -198,4 +196,3 @@ In general, all methods on a given type should have either value or pointer rece
 * tour.golang.org/methods
 * tour.golang.org/moretypes/1
 * https://yourbasic.org/golang/pointers-explained
-* https://dave.cheney.net/2017/04/29/there-is-no-pass-by-reference-in-go
