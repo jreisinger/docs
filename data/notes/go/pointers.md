@@ -16,7 +16,7 @@ The type `*T` is a pointer to a `T` value. Its zero value is `nil`.
 # How do they work
 
 ```go
-var x int32 = 10        // 0000 1010
+var x int32 = 10
 var y bool = true
 pointerX := &x          // address of x
 pointerY := &y
@@ -49,18 +49,14 @@ fmt.Println(x == nil) // false
 fmt.Println(*x)       // 0
 ```
 
-`new` is rarely used because you can take address of a struct literal. You can't
-use `&` before primitive literals (numbers, booleans and strings) or a constant
-because they don’t have memory addresses; they exist only at compile time.
+`new` is rarely used because you can take address of a struct literal.
 
 ```go
 x := &Foo{}
-
-var y string
-z := &y
 ```
 
-Use a helper function to turn a constant value into a pointer.
+You can't use `&` before primitive literals (numbers, booleans and strings) or a constant
+because they don’t have memory addresses; they exist only at compile time.
 
 ```go
 type person struct {
@@ -71,10 +67,14 @@ type person struct {
 
 p := person{
     FirstName:  "Pat",
-    MiddleName: "Perry", // This line won't compile
+    MiddleName: &"Perry", // This line won't compile
     LastName:   "Peterson",
 }
+```
 
+Use a helper function to turn a constant value into a pointer.
+
+```go
 func stringp(s string) *string {
     return &s
 }
@@ -115,7 +115,7 @@ Non-pointer types:
 A [struct](https://play.golang.org/p/Av0NOh_cu_K) is a user-defined type that contains named fields:
 
 ```go
-// Declaration of anonymous (literal) struct type + initialization.
+// Anonymous struct literal (declaration + initialization).
 p := struct {
 	Person 	string
 	Age 	int
@@ -171,12 +171,12 @@ func MakePerson() (Person, error) {
 One exception is when a function expects an interface:
 
 ```go
-f := struct {
+p := struct {
 	Name string
 	Age  int
 }{}
 
-err := json.Unmarshal([]byte(`{"Name": "John", "Age": 41}`), &f)
+err := json.Unmarshal([]byte(`{"Name": "John", "Age": 41}`), &p)
 ```
 
 ## Method receivers
