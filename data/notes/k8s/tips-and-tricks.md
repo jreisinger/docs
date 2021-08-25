@@ -35,25 +35,18 @@ Port forwarding
 k port-forward <pod> 8080:8080  # tunnel: localhost -> k8s master -> k8s worker node
 ```
 
-Proxy server between localhost and K8s API server
+Proxy between localhost and K8s API server
 
 ```
-k proxy &                        # create proxy
-curl localhost:8001/api/v1/pods  # get list of pods
+$ k proxy                            # create proxy
+Starting to serve on 127.0.0.1:8001
+$ curl localhost:8001/api/v1/pods    # get list of pods
 ```
 
 Suspend a cronjob
 
 ```
 k patch cronjobs <cronjob> -p '{"spec" : {"suspend" : true }}'
-```
-
-* if the cronjob is suspended for too long you get:
-
-```Events:
-  Type     Reason            Age                 From                Message
-  ----     ------            ----                ----                -------
-  Warning  FailedNeedsStart  11s (x6 over 111s)  cronjob-controller  Cannot determine if job needs to be started: too many missed start time (> 100). Set or decrease .spec.startingDeadlineSeconds or check clock skew
 ```
 
 Remove pod stuck in terminating state
