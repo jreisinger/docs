@@ -7,7 +7,7 @@
 
 *WARNING*: To use network policies, you must be using a [network plugin](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/) which supports NetworkPolicy. Creating a NetworkPolicy resource without a controller that implements it will have no effect.
 
-Disallowing all traffic:
+Disallow all traffic between pods in a namespace:
 
 ```
 apiVersion: networking.k8s.io/v1
@@ -19,17 +19,6 @@ spec:
   policyTypes:    # types of traffic
   - Ingress
   - Egress
-```
-
-To verify a network policy:
-
-```
-# run nginx pod
-kubectl run nginx --image=nginx
-
-# try to reach the nginx pod
-kubectl run busybox --image=busybox -it -- /bin/sh
-/ # wget 192.168.141.249 -O-
 ```
 
 More
