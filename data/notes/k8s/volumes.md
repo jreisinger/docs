@@ -1,22 +1,18 @@
-# Volumes
+K8s Volume abstraction fixes two problems:
+
+1. Need to share files between Containers within a Pod.
+2. Ephemeral nature of files in Containers (when a Container restarts the files get lost) => [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
+
+A process in a Container sees a filesystem view composed from their Docker image (mounted at the root of the FS) and Volumes (mounted at specified paths within the image).
+
+* Volume lifetime == Pod lifetime
+* Volume is a directory (with some data) that is accessible to the Containers in a Pod
+* `pod.spec.volumes` - what volumes to provide for a Pod
+* `pod.spec.containers.volumeMounts` - where to mount volumes into Containers
 
 A container using the temporary filesystem (default) vs a Volume:
 
 <img src="https://user-images.githubusercontent.com/1047259/129347362-812374d7-3225-4e51-a4de-2ad9d8942fce.png" style="max-width:100%;height:auto;"> 
-
-NOTE: If you need your data to live longer than your pod see [persistent volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
-
-K8s volume abstraction fixes two problems:
-
-1. ephemeral nature of files in Containers (when a Container restarts the files get lost)
-2. need to share files between Containers within a Pod
-
-A process in a Container sees a filesystem view composed from their Docker image (mounted at the root of the FS) and volumes (mounted at specified paths within the image).
-
-* volume lifetime == Pod lifetime
-* volume is a directory (with some data) that is accessible to the Containers in a Pod
-* `pod.spec.volumes` - what volumes to provide for a Pod
-* `pod.spec.containers.volumeMounts` - where to mount volumes into Containers
 
 # Types of Volumes
 
