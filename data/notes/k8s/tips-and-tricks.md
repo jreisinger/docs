@@ -20,7 +20,11 @@ k explain pod.spec.containers.ports
 Run a temporary pod inside a cluster
 
 ```
+# Shell into it.
 k run alpine --image=alpine --rm -it -- sh
+
+# Run a command in it
+k run alpine --image=alpine --rm -it --restart=Never --command -- env
 ```
 
 Copy files
