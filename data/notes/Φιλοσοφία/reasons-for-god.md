@@ -64,6 +64,7 @@ Against
 * [John Polkinghorne](https://en.wikipedia.org/wiki/John_Polkinghorne) (1930 - 2021) - theoretical physicist, theologian, and Anglican priest (Cambridge)
 * [Russell Stannard](https://en.wikipedia.org/wiki/Russell_Stannard) (1931) - physicist, sculptor, books for children (Open University)
 * [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) (1938) - computer scientist (Stanford)
+* John Lennox (1943) - mathematician, Christian apologist (Oxford)
 * [Larry Wall](https://en.wikipedia.org/wiki/Larry_Wall) (1954) - language designer
 * [Bishop Robert Barron](https://www.youtube.com/user/wordonfirevideo) (1959) - high Catholic priest and philosopher (USA)
 * [Rosalind Picard](https://www.media.mit.edu/people/picard/overview/) (1962) - engineer (MIT)
