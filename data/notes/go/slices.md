@@ -31,7 +31,7 @@ fmt.Println(s)        // []
 fmt.Println(s == nil) // true
 ```
 
-You need to initiliaze a slice by using `make`:
+You initiliaze a slice by using `make`:
 
 ```
 var s []byte
@@ -135,7 +135,7 @@ To append one slice to another, use `...` to expand the second argument to a lis
 
 ```
 a := []string{"Lewis", "Polkinghorne"}
-b := []string{"Knuth", "Wall", "Barnes"}
+b := []string{"Knuth", "Wall", "Lennox"}
 a = append(a, b...) // equivalent to append(a, b[0], b[1], b[2])
 ```
 
