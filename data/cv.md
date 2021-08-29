@@ -93,7 +93,7 @@ Various
 
 # Certificates and formal education
 
-* CKAD: Certified Kubernetes Application Developer [2021 - 2024]
+* [CKAD](https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/e99ffcde-a0bf-4318-a42e-8d321eb86f34-jozef-reisinger-certified-kubernetes-application-developer-ckad-certificate.pdf): Certified Kubernetes Application Developer [2021 - 2024]
 * CCENT: Cisco Certified Entry Networking Technician [2013 - 2016]
 * LPIC-2: Linux Professional Institute Certification - Advanced Level Administration [2012 - 2017]
 * CISSP: Certified Information Systems Security Professional [2011 - 2014]
