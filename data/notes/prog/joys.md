@@ -1,10 +1,12 @@
+<img src="https://user-images.githubusercontent.com/1047259/131242933-93419dcc-bacd-487a-89f7-89bec51c5a1a.png" style="max-width:100%;height:auto;"> 
+
 # The Joys of the Craft
 
 After reading a chapter or so from Frederick P. Brooks' Mythical Man-Month I (should) like working in IT for the following reasons:
 
 1. The sheer joy of building things (especially of my own design). It's the same delight as a kid is having in his mud pie. "This delight must be an image of God's delight in making things, a delight shown in the distinctness and newness of each leaf and each snowflake."
 
-2. Pleasure of making thinks tha are useful to other *people*.
+2. Pleasure of making thinks that are useful to other *people*.
 
 3. "The fascination of fashioning [utvárať] complex puzzle-like objects of interlocking moving parts and watching them work in subtle cycles, playing out the consequences of principles built in from the beginning."
 
