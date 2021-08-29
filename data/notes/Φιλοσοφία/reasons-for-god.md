@@ -65,7 +65,7 @@ Against
 * [Aron Wall](http://www.wall.org/~aron/blog/bio/) (1984) - theoretical physicist (Cambridge)
 * [Luke Barnes](https://www.closertotruth.com/contributor/luke-barnes/profile) - theoretical astrophysicist (Australia)
 
-and much [more](https://en.wikipedia.org/wiki/List_of_Christians_in_science_and_technology).
+and many [more](https://en.wikipedia.org/wiki/List_of_Christians_in_science_and_technology).
 
 Reasonable atheists
 
