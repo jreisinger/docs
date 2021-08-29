@@ -29,44 +29,48 @@ For
 * A. Wall: [Comparing Religions V: Historical Accounts](http://www.wall.org/~aron/blog/comparing-religions-v-historical-accounts/)
 * A. Wall: [Comparing Religions VI: Early Sources](http://www.wall.org/~aron/blog/comparing-religions-vi-early-sources/)
 * A. Wall: [Some comments on Biblical History](http://www.wall.org/~aron/blog/some-comments-on-biblical-history/)
+* Brant Pitre (Christian): The Case for Jesus: The Biblical and Historical Evidence for Christ (2016)
+* Bart Ehrman (atheist): Did Jesus Exist?: The Historical Argument for Jesus of Nazareth (2013)
 
 Against
-
-* ?
 
 # Philosophical arguments
 
 For
 
-* Existence of objective universal morality or decent behaviour or fair play (C. S. Lewis: Mere Christinanity - Book I)
-* Five ways of Aquinas -> [argument from motion](https://youtu.be/bdjjqFSEJ_Y)
+* Existence of objective universal morality or decent behaviour or fair play -> C. S. Lewis: Mere Christinanity - Book I
+* [Argument from motion](https://youtu.be/bdjjqFSEJ_Y) from the Five ways of Aquinas
 * [Kalam cosmological argument](https://en.wikipedia.org/wiki/Kalam_cosmological_argument)
 * [Leibniz's contingency argument](https://www.reasonablefaith.org/videos/interviews-panels/leibnizs-argument-for-the-existence-of-god-bobby-conway/)
 * [Argument from desire](https://youtu.be/X71Gq9a1qxE)
 
 Against
 
-* [Euthypro dilemma](https://en.wikipedia.org/wiki/Euthyphro_dilemma) <=> Objective universal morality.
 * Argument from the evil - an omnipotent and benevolent God should have eliminated all suffering. We observe plenty of man made and natural suffering in the world. <=> Free will can not be achieved without allowing the possibility of doing wrong things. God can bring good through suffering - we can't always (most of the time) see how.
 
 # Reasonable theists
 
-* [C.S. Lewis](https://en.wikipedia.org/wiki/C._S._Lewis) (1898 - 1963) - English literature (Oxford)
-* [John Polkinghorne](https://en.wikipedia.org/wiki/John_Polkinghorne) (1930 - 2021) - theoretical physicist, theologian, and Anglican priest (Cambridge)
-* [Russell Stannard](https://en.wikipedia.org/wiki/Russell_Stannard) (1931) - physicist, sculptor, books for children (Open University)
-* [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) (1938) - computer scientist (Stanford)
+* C.S. Lewis (1898 - 1963) - English literature, originally atheist (Oxford)
+* John Polkinghorne (1930 - 2021) - theoretical physicist, theologian, and Anglican priest (Cambridge)
+* Fred Brooks (1931) - SW engineer and architect, computer scientist, author of The Mythical Man-Month (Harvard)
+* Russell Stannard (1931) - physicist, sculptor, written books for children (Open University)
+* Donald Knuth (1938) - high priest of computer science (Stanford)
 * John Lennox (1943) - mathematician, Christian apologist (Oxford)
-* [Larry Wall](https://en.wikipedia.org/wiki/Larry_Wall) (1954) - language designer
-* [Bishop Robert Barron](https://www.youtube.com/user/wordonfirevideo) (1959) - high Catholic priest and philosopher (USA)
+* [William Lane Craig](https://www.reasonablefaith.org/) (1949) - philosopher, theologian, debater (USA, Munich)
+* Francis Collins (1950) - genetisist, led the [HGP](https://en.wikipedia.org/wiki/Human_Genome_Project) (Yale)
+* Larry Wall (1954) - language designer and BDFL
+* [Bishop Robert Barron](https://wordonfire.org) (1959) - high Catholic priest and philosopher (LA)
 * [Rosalind Picard](https://www.media.mit.edu/people/picard/overview/) (1962) - engineer (MIT)
 * [Edward Feser](http://edwardfeser.blogspot.com/) (1968) - philosopher
 * [Aron Wall](http://www.wall.org/~aron/blog/bio/) (1984) - theoretical physicist (Cambridge)
 * [Luke Barnes](https://www.closertotruth.com/contributor/luke-barnes/profile) - theoretical astrophysicist (Australia)
 
+and much [more](https://en.wikipedia.org/wiki/List_of_Christians_in_science_and_technology).
+
 Reasonable atheists
 
 * [Richard P. Feynman](http://www.wall.org/~aron/blog/what-about-science/) - physicist
-* [Stephen Hawking](https://en.wikipedia.org/wiki/Stephen_Hawking) - theoretical physicist, cosmologist (Cambridge)
+* Stephen Hawking - theoretical physicist, cosmologist (Cambridge)
 
 # Faith
 
