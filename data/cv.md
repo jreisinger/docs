@@ -93,8 +93,9 @@ Various
 
 # Certificates and formal education
 
-* LPIC-2: Linux Professional Institute Certification - Advanced Level Administration [2012 - 2017]
+* CKAD: Certified Kubernetes Application Developer [2021 - 2024]
 * CCENT: Cisco Certified Entry Networking Technician [2013 - 2016]
+* LPIC-2: Linux Professional Institute Certification - Advanced Level Administration [2012 - 2017]
 * CISSP: Certified Information Systems Security Professional [2011 - 2014]
 * CCNA: Cisco Certified Network Associate [2006 - 2009]
 * Cisco Networking Academy - Four semester study in computer systems networking and telecommunications [2005 - 2006]
