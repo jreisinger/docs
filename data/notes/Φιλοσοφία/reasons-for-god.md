@@ -2,11 +2,10 @@ It looks like it's not possible to prove the God's existence using the [modern s
 
 How can one approach this question:
 
-1. ~~Blind faith~~
-2. Historical arguments
-3. Philosophical arguments
-4. Reasonable theists
-5. Faith
+1. Historical arguments
+2. Philosophical arguments
+3. Reasonable theists
+4. ~~Blind~~ faith
 
 Fields of study by the [strength of evidence](http://www.wall.org/~aron/blog/theology-less-speculative-than-quantum-gravity/) they can provide on average:
 
