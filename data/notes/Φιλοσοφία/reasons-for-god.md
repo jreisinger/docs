@@ -1,6 +1,4 @@
-It looks like it's not possible to prove the God's existence using the [modern scientific method](http://www.wall.org/~aron/blog/the-pillars-of-science/). This is because God, if exists, is not an object among other objects or a force among other forces. It's something totally different and external to the observable world. Is it then reasonable to think that God exists? Are there some arguments or reasons for God's existence? Or is it just blind faith without any type of evidence?
-
-How can one approach this question:
+It looks like it's not possible to prove the God's existence using the [modern scientific method](http://www.wall.org/~aron/blog/the-pillars-of-science/). This is because God, if exists, is not an object among other objects or a force among other forces. It's something totally different and external to the observable world. Is it then reasonable to think that God exists? Are there some arguments or reasons for God's existence?
 
 1. Historical arguments
 2. Philosophical arguments
@@ -51,12 +49,6 @@ Against
 * [Euthypro dilemma](https://en.wikipedia.org/wiki/Euthyphro_dilemma) <=> Objective universal morality.
 * Argument from the evil - an omnipotent and benevolent God should have eliminated all suffering. We observe plenty of man made and natural suffering in the world. <=> Free will can not be achieved without allowing the possibility of doing wrong things. God can bring good through suffering - we can't always (most of the time) see how.
 
-# Faith
-
-[In the sense](https://youtu.be/m_4PSgFjtvI) that it's something that comes at the far edge of reason. Like when you know a person for a long time and then he tells you something you can't verify. You have to decide whether you believe him or not.
-
-> Why should they be impartial, what is being impartial, when the whole world is at war about whether one thing is a devouring superstition or a divine hope? I do not pretend to be impartial in the sense that the final act of faith fixes a man's mind because it satisfies his mind. But I do profess to be a great deal more impartial than they are; in the sense that I can tell the story fairly, with some sort of imaginative justice to all sides; and they cannot.  (The Everlasting Man)
-
 # Reasonable theists
 
 * [C.S. Lewis](https://en.wikipedia.org/wiki/C._S._Lewis) (1898 - 1963) - English literature (Oxford)
@@ -75,6 +67,12 @@ Reasonable atheists
 
 * [Richard P. Feynman](http://www.wall.org/~aron/blog/what-about-science/) - physicist
 * [Stephen Hawking](https://en.wikipedia.org/wiki/Stephen_Hawking) - theoretical physicist, cosmologist (Cambridge)
+
+# Faith
+
+[In the sense](https://youtu.be/m_4PSgFjtvI) that it's something that comes at the far edge of reason. Like when you know a person for a long time and then he tells you something you can't verify. You have to decide whether you believe him or not.
+
+> Why should they be impartial, what is being impartial, when the whole world is at war about whether one thing is a devouring superstition or a divine hope? I do not pretend to be impartial in the sense that the final act of faith fixes a man's mind because it satisfies his mind. But I do profess to be a great deal more impartial than they are; in the sense that I can tell the story fairly, with some sort of imaginative justice to all sides; and they cannot.  (The Everlasting Man)
 
 # More
 
