@@ -9,7 +9,7 @@ p = &i      // The & operator generates a pointer to its operand.
 *p = 21     // The * operator denotes the pointer's underlying value.
 ```
 
-The operation on the last line is known as "dereferencing" of "indirecting".
+The operation on the last line is known as "dereferencing" or "indirecting".
 
 The type `*T` is a pointer to a `T` value. Its zero value is `nil`.
 
@@ -24,7 +24,7 @@ var pointerZ *string    // pointerZ == nil
 
 Value    |  0 |  0 |  0 | 10 |  1 |  0 |  0 |  0 |  1 |  0 |  0 |  0 |  5 |  0 |  0 |  0 |  0 |
 ---------|----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
-Address  |  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 | 19 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 |
+Address  |  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 |
 ---------|----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
 Variable | x                 | y  | pointerX          | pointerY          | pointerZ          |
 ```
