@@ -1,5 +1,4 @@
-A [cloud native](https://github.com/cncf/toc/blob/main/DEFINITION.md)
-application incorporate all we've learned about running networked applications at scale over the past 60 years.
+A [cloud native](https://github.com/cncf/toc/blob/main/DEFINITION.md) application incorporates all we've learned about running networked applications at scale over the past 60 years.
 
 * 1950s - maiframe computers + dumb terminals
 * 1980s - inexpensive network connected PCs
