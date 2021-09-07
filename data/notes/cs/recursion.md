@@ -24,3 +24,15 @@ def countdown(i):
     else:         # recursive case
         countdown(i-1)
 ```
+
+The call stack with recursions (from "Grokking Algorithms")
+
+```
+def fact(x):
+    if x == 1:
+        return 1
+    else:
+        return x * fact(x-1)
+```
+
+<img src="https://user-images.githubusercontent.com/1047259/132297124-1d1f431e-22c9-423e-8651-ec9365580d02.png" style="max-width:100%;height:auto;"> 
