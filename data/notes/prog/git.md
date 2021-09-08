@@ -242,6 +242,22 @@ fi
 
 See [git-sync](https://github.com/jreisinger/dotfiles/blob/master/bin/git-sync) for my current setup.
 
+# Tags
+
+```
+# Fetch all tags from remote.
+git fetch --all --tags
+
+# List existing local tags.
+git tag
+
+# Add a new tag locally.
+git tag -a v0.2.3 -m "improve docs"
+
+# Push local tags to remote.
+git push --tags
+```
+
 # Tips and Tricks
 
 ## List tracked files
