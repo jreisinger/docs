@@ -12,7 +12,7 @@ Types classify values into groups and determine:
 
 Go's types categories:
 
-* [basic types](https://play.golang.org/p/-PDgYZDmBwU): numbers (integers, floats, complex), strings, booleans
+* [basic types](https://play.golang.org/p/z5uVUJsKxBw): numbers (integers, floats, complex), strings, booleans
 * aggregate types: arrays, structs (user-defined types)
 * [reference types](https://play.golang.org/p/NZ0VhQ_pwYR): pointers, slices, maps, functions, channels
 * interface types
