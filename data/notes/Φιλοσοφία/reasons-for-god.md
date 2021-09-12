@@ -1,4 +1,4 @@
-It looks like it's not possible to prove the God's existence using the [modern scientific method](http://www.wall.org/~aron/blog/the-pillars-of-science/). This is because God, if exists, is not an object among other objects or a force among other forces. It's something totally different and external to the observable world. Is it then reasonable to think that God exists? Are there some arguments or reasons for God's existence?
+It's not possible to prove (or disprove) the God's existence using the [modern scientific method](http://www.wall.org/~aron/blog/the-pillars-of-science/). This is because God, if exists, is not an object among other objects or a force among other forces. It's something totally different and external to the observable world. Is it then reasonable to think that God exists? Are there some arguments or reasons for God's existence?
 
 1. Historical arguments
 2. Philosophical arguments
