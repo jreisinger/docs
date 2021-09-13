@@ -112,7 +112,7 @@ Non-pointer types:
 
 # Structs
 
-A [struct](https://play.golang.org/p/Av0NOh_cu_K) is a user-defined type that contains named fields:
+A [struct](https://play.golang.org/p/PK5V3ERUdEp) is a user-defined type that contains named fields:
 
 ```go
 // Anonymous struct literal (declaration + initialization).
