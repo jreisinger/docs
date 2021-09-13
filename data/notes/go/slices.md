@@ -94,7 +94,7 @@ s = s[2:4] // slice s to length shorter than its capacity
 ```
 
 ```
-s = s[:cap(s)] // grow s to its capacity
+s = s[2:cap(s)] // grow s to its capacity
 
 []byte                 [5]byte                             
 +-----+                +----------------------------------+
