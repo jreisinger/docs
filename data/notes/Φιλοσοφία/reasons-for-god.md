@@ -38,6 +38,8 @@ Against
 
 For
 
+
+* “The most incomprehensible thing about the Universe is that it is comprehensible.” -- A. Einstein
 * Existence of objective universal morality or decent behaviour or fair play -> C. S. Lewis: Mere Christinanity - Book I
 * [Argument from motion](https://youtu.be/bdjjqFSEJ_Y) from the Five ways of Aquinas
 * [Kalam cosmological argument](https://en.wikipedia.org/wiki/Kalam_cosmological_argument)
