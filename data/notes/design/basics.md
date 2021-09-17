@@ -92,8 +92,7 @@ A good way to approach the implementation of a modest size program is to start a
 ## Prototyping and Spiral development
 
 * not an alternative to top-down design but a complementary approach
-* useful when dealing with new or unfamiliar features or technologies 
-* (everything may seem new to a novice programmer!)
+* useful when dealing with new or unfamiliar features or technologies (everything may seem new to a novice programmer!)
 * useful when you get stuck at a step
 * start with a simplified version of a program or a program component (prototype)
 * try to gradually add features until it meets full specification
