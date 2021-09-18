@@ -6,9 +6,9 @@ Sr. Security Engineer
 at Deutsche Telekom [Pan-Net](https://pan-net.cloud/) [Bratislava, 2017 - present]
 
 * Building and operating security products (WAF, SIEM, logs and metrics management) for both internal and external use.
-* Developing scripts, tools and playbooks using Bash, Python, Go and Ansible.
-* Maintaining Dockerfiles, Kubernetes manifests and CI/CD pipelines.
-* Managing projects/products.
+* Developing scripts and programs using Bash, Python and Go.
+* Maintaining Ansible playbooks, Kubernetes manifests and CI/CD pipelines.
+* Managing projects/products and teams.
 
 Security Engineer
 at First Data [Bratislava, 2016 - 2017]
