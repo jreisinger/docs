@@ -5,3 +5,5 @@ Hello and welcome to my homepage :-). I mostly keep technical notes here.
 ## About me
 
 I've been dabbling in the fields of operating, securing and building computer [programs](https://github.com/jreisinger) and systems. Among other things. Recently my areas of interest technology-wise are Go and Kubernetes. Before I concentrated on Perl and Linux. See my [CV](cv) for more details.
+
+> I think people who write programs do have at least a glimmer of extra insight into the nature of God... because creating a program often means that you have to create a small universe. -- Donald Knuth
