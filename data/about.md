@@ -1,6 +1,6 @@
 ## About website
 
-Hello and welcome to my homepage :-). I mostly keep technical notes here. `reisinge` was my first Unix login username.
+Hello and welcome to my homepage :-). I mostly keep technical notes here. `reisinge` was my first Unix login username back in the late '90s.
 
 ## About me
 
