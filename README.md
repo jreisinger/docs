@@ -1,21 +1,9 @@
-Code and data for my [homepage](https://reisinge.net).
+Data and code for my homepage living at [reisinge.net](https://reisinge.net).
 
-## Usage
+Changes inside `data` folder are automatically reflected in the homepage.
 
-Edit stuff in `data` folder. It will be reflected almost instantly in the https://reisinge.net.
+When you change the code
 
-## Development
+1) Test locally: `make run` and go to http://localhost:5001
 
-Test locally:
-
-```
-make run
-
-curl localhost:5001
-```
-
-Release to dockerhub:
-
-```
-make release
-```
+2) Release to dockerhub: `make release`
