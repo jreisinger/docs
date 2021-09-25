@@ -1,6 +1,4 @@
-Data and code for my homepage living at [reisinge.net](https://reisinge.net).
-
-Changes inside `data` folder are automatically reflected in the homepage.
+Data and code for my homepage living at [reisinge.net](https://reisinge.net). Changes inside `data` folder are automatically reflected in the homepage.
 
 When you change the code
 
