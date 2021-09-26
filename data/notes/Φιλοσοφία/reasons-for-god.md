@@ -65,6 +65,7 @@ Against
 * [Bishop Robert Barron](https://wordonfire.org) (1959) - high Catholic priest and philosopher (LA)
 * [Rosalind Picard](https://www.media.mit.edu/people/picard/overview/) (1962) - engineer (MIT)
 * [Edward Feser](http://edwardfeser.blogspot.com/) (1968) - philosopher
+* [Karin Öberg](https://youtu.be/b6mJIZaEy5g) (1982) - Swedish professor of astronomy (Harvard)
 * [Aron Wall](http://www.wall.org/~aron/blog/bio/) (1984) - theoretical physicist (Cambridge)
 * [Luke Barnes](https://www.closertotruth.com/contributor/luke-barnes/profile) - theoretical astrophysicist (Australia)
 
