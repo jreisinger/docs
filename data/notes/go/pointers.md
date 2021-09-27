@@ -1,23 +1,12 @@
 Go has pointers. Go does not have [reference variables](https://dave.cheney.net/2017/04/29/there-is-no-pass-by-reference-in-go).
 
-A pointer is a variable that holds the memory address of another variable. A variable is a piece of storage containing a value.
-
-```go
-var p *int  // The * here means that p is a pointer to int.
-i := 42
-p = &i      // The & operator generates a pointer to its operand.
-*p = 21     // The * operator denotes the pointer's underlying value.
-```
-
-The operation on the last line is known as "dereferencing" or "indirecting".
-
-The type `*T` is a pointer to a `T` value. Its zero value is `nil`.
-
 # How do they work
 
+A pointer is a variable that holds the memory address of another variable. A variable is a piece of storage that has a name and an address and contains a value.
+
 ```go
-var x int32 = 10
-var y bool = true
+var x int32 = 10        // 4 bytes
+var y bool = true       // 1 byte
 pointerX := &x          // address of x
 pointerY := &y
 var pointerZ *string    // pointerZ == nil
@@ -32,6 +21,19 @@ Variable | x                 | y  | pointerX          | pointerY          | poin
 * pointers are [really](https://play.golang.org/p/3Lz_C_sXaHv) 8 bytes
 * the point is they are always the same size no matter what type they point to
 * `nil` is an untyped identifier (in the universe block) that represents a lack of value
+
+# How to work with them
+
+The type `*T` is a pointer to a `T` value. Its zero value is `nil`.
+
+```go
+var p *int  // The * here means that p is a pointer to int.
+i := 42
+p = &i      // The & operator generates a pointer to its operand.
+*p = 21     // The * operator denotes the pointer's underlying value.
+```
+
+The operation on the last line is known as "dereferencing" or "indirecting".
 
 Before dereferencing a pointer you must make sure it's not nil.
 
@@ -86,23 +88,7 @@ p := person{
 }
 ```
 
-# Pointer and non-pointer types
-
-Types implemented with pointers:
-
-* slices
-* maps
-* functions
-* channels
-* interfaces
-
-Non-pointer types:
-
-* primitives (numbers, booleans and strings)
-* structs
-* arrays
-
-# Mutability
+## Mutability
 
 * mutability means changing data in place
 * immutable types are safer from bugs and easier to understand
@@ -110,7 +96,7 @@ Non-pointer types:
 * Go developers use pointers to indicate that a function parameter is mutable
 * you should use pointers as last resort
 
-# Structs
+## Structs
 
 A [struct](https://play.golang.org/p/Mp0PlEc6rOC) is a user-defined type that contains named fields:
 
@@ -125,7 +111,7 @@ p := struct {
 }
 ```
 
-## Accessing struct pointers
+### Accessing struct pointers
 
 If you make a pointer to a struct, you can access its fields in two ways:
 
@@ -142,7 +128,7 @@ func main() {
 }
 ```
 
-## Populating structs
+### Populating structs
 
 Rather than populating a struct by passing a pointer to it into a function, have the function instantiate and return the struct.
 
@@ -189,6 +175,22 @@ There are two reasons to use a pointer receiver:
 Since methods often need to modify their receiver, pointer receivers are more common than value receivers.
 
 In general, all methods on a given type should have either value or pointer receivers, but not a mixture of both.
+
+# Pointer and non-pointer types
+
+Types implemented with pointers:
+
+* slices
+* maps
+* functions
+* channels
+* interfaces
+
+Non-pointer types:
+
+* primitives (numbers, booleans and strings)
+* structs
+* arrays
 
 # Sources and more
 
