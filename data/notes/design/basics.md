@@ -1,8 +1,6 @@
-# Software design
+Software design is a combination of art and science. The essence of design is describing a system in terms of magical black boxes (functions or objects) and their interfaces. As usual, the key to success is practice.
 
-Design is a combination of art and science. The essence of design is describing a system in terms of magical black boxes (functions or objects) and their interfaces. As usual, the key to success is practice.
-
-## Top-Down Design
+# Top-Down Design
 
 * invaluable tool for developing complex algorithms
 * start with the general problem and try to express a solution (create an algorithm) in terms of smaller problems
@@ -85,11 +83,11 @@ def gameOver(a, b):
 if __name__ == '__main__': main()
 ```
 
-## Bottom-Up Implementation
+# Bottom-Up Implementation
 
 A good way to approach the implementation of a modest size program is to start at the lowest levels of the structure chart and work your way up, testing each component (*unit testing*) as (or before) you complete it. 
 
-## Prototyping and Spiral development
+# Prototyping and Spiral development
 
 * not an alternative to top-down design but a complementary approach
 * useful when dealing with new or unfamiliar features or technologies (everything may seem new to a novice programmer!)
@@ -124,19 +122,11 @@ def simOneGame():
 if __name__ == '__main__': simOneGame()
 ```
 
-## Object-oriented design
+# Object-oriented design
 
 * data-centered complement to top-down design
-
-Design tips
-
-1. Look for object candidates. Nouns are usually objects, verbs are methods. Primitive data types (numbers or strings) are probably not candidates for objects, grouping of related data items are.
-
-2. Design iteratively. No one designs a program top to bottom in a linear, systematic fashion.
-
-3. Try out alternatives. Good design involves a lot of trial and error. When you look at someone's code, it's finished work, not the process they went through to get there. "Plan to throw one away." -- Fred Brooks
-
-4. Keep it simple. Don't design in extra complexity until it is *really* needed.
+* nouns are usually objects, verbs are methods
+* primitive data types (numbers or strings) are probably not candidates for objects, grouping of related data items are
 
 ```
 #!/usr/bin/env python3
@@ -239,6 +229,14 @@ def main():
 
 main()
 ```
+
+# Design tips
+
+Design iteratively. No one designs a program top to bottom in a linear, systematic fashion.
+
+Try out alternatives. Good design involves a lot of trial and error. When you look at someone's code, it's finished work, not the process they went through to get there. "Plan to throw one away." -- Fred Brooks
+
+Keep it simple. Don't design in extra complexity until it is *really* needed.
 
 # Resources
 
