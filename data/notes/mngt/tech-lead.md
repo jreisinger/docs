@@ -14,7 +14,7 @@ Project planners break work down into rough deliverables. With this hat on, youâ
 
 ## Software developer and team leader
 
-In your position as tech lead, you should continue writing code, but not too much. Even if you are tempted to pull a rabbit out of the hat yourself, you must communicate this obstacle first. See below for more
+In your position as tech lead, you should continue writing code, but not too much. Even if you are tempted to pull a rabbit out of the hat yourself, you must communicate this obstacle first (see below for more). Teams often fail because they overworked themselves on a feature that their product manager would have been willing to compromise on. As a large project nears its delivery date, there will be compromises on functionality. Start looking for opportunities to delegate work, especially if there is part of the system you expected to build yourself that you have not had the time to tackle.
 
 ---
 
