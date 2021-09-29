@@ -16,7 +16,7 @@
     text-align: center;
     padding: inherit;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 /* Style inputs, select elements and textareas */
@@ -30,7 +30,7 @@
     /* resize: vertical; */
     float: right;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1rem;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -39,7 +39,7 @@
   display: none;
 }
 
-/* 
+/*
  * When the screen is less than 600 pixels wide, hide all links, except for the
  * first one ("Home"). Show the link that contains should open and close the
  * topnav (.icon).
@@ -53,7 +53,7 @@
   }
 }
 
-/* 
+/*
  * The "responsive" class is added to the topnav with JavaScript when the user
  * clicks on the icon. This class makes the topnav look good on small screens
  * (display the links vertically instead of horizontally).
@@ -98,9 +98,10 @@
 .footer span { display:block;float:right; }
 
 /* Headings */
-h1 {font-size:1.2rem;}
-h2 {font-size:1.0rem}
-h3 {font-size:0.8rem}
+/* h1, h2, h3 { letter-spacing: 0.03rem;} */
+h1 {font-size:1.5rem; font-weight: 400}
+h2 {font-size:1.2rem; font-weight: 500}
+h3 {font-size:0.9rem; font-weight: 600}
 
 /* Links */
 a:link { text-decoration: none; color: green}
@@ -113,7 +114,9 @@ body {
     counter-reset: h2counter;
     /* font-family: "Courier New", Courier, monospace; */
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: smaller;
+    font-size: 1rem;
+    letter-spacing: 0.0063rem;
+    color: #3e4042;
 }
 
 /* Inline code and code blocks */
@@ -122,6 +125,7 @@ pre, code {
     white-space: pre;
     overflow: auto;
     border-radius: 0.3125rem;
+    font-size: 0.8rem;
 }
 
 /* Code blocks only */
