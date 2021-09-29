@@ -1,3 +1,29 @@
+# The Main Roles of a Tech Lead
+
+_Source: The Manager's Path (2017)_
+
+Tech lead is often working with a product manager and a team of four other engineers to deliver a product. Sure, you’ll need to write some code and make some technical decisions. But that’s only one of the roles you’ll play, and it’s likely not even the most important one.
+
+## Systems architect and business analyst
+
+In the systems architect and business analyst roles, you identify the critical systems that need to change and the critical features that need to be built in order to deliver upcoming projects. The goal here is to provide some structure for basing estimates and ordering work. You need not perfectly identify every single element of a project, but there’s a lot of value in spending time thinking through the externalities and issues related to a project. This role requires you to have a good sense of the overall architecture of your systems and a solid understanding of how to design complex software. It probably also requires you to be able to understand business requirements and translate them into software.
+
+## Project planner
+
+Project planners break work down into rough deliverables. With this hat on, you’re learning to find efficient ways of breaking down the work so that the team can work quickly. Part of the challenge here is getting as much productive work done in parallel as possible. You will want to gather input from the experts on your team, and talk to the people who know the affected parts of the software deeply, so that they can help with the details here. You will also want to start identifying priorities as part of this process. Which pieces are critical, and which are optional? How can you work on the critical items early in the project?
+
+## Software developer and team leader
+
+In your position as tech lead, you should continue writing code, but not too much. Even if you are tempted to pull a rabbit out of the hat yourself, you must communicate this obstacle first. See below for more
+
+---
+
+Fortunately you don’t have to do all of these tasks at once. It may be uncomfortable at first, but you’ll find a balance with time and practice. This will eventually make you stronger and give you skills you need to move forward in your career.
+
+---
+
+My final advice is to remember that you can switch tracks if you want. It is common for people to try out management at some point, realize they don’t enjoy it, and go back to the technical track (enginneer, individual contributor). Nothing about this choice has to be permanent, but go in with your eyes wide open. Each role has benefits and drawbacks, and it’s up to you to feel out what you enjoy the most.
+
 # Stop Writing Code and Engineering in the Critical Path
 
 _Source: https://charity.wtf/2019/01/04/engineering-management-the-pendulum-or-the-ladder/_
