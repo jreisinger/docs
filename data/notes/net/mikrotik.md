@@ -12,4 +12,6 @@
 
 4) Do anological steps for EnableWLAN.
 
+NOTE: To disable/enable ethernet port 4:: `interface ethernet disable ether4` or `interface ethernet enable ether4`
+
 Source: https://goyoambrosio.com/2017/05/how-to-turn-off-wifi-at-night-in-mikrotik-routeros/
