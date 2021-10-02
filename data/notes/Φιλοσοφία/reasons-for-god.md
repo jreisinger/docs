@@ -5,17 +5,6 @@ It's not possible to prove (or disprove) the God's existence using the [modern s
 3. Reasonable theists
 4. ~~Blind~~ faith
 
-Fields of study by the [strength of evidence](http://www.wall.org/~aron/blog/theology-less-speculative-than-quantum-gravity/) they can provide on average:
-
-```
-Math & Logic > Science > History > Most Philosophy
-```
-
-However:
-
-* some philosophical arguments are very strong (e.g. if you don't believe the philosophical arguments that we can learn things about the external world based on observation, you can't have any grounds for believing in Science either)
-* math proofs are supposed to be completely certain, but if they are thounsands of lines long it is easy for errors to sneak in
-
 # Historical arguments
 
 Sources of evidence
@@ -24,20 +13,17 @@ Sources of evidence
 * Written documents
 * Archeological findings
 
-For
+Sources
 
+* Brant Pitre (Christian): The Case for Jesus: The Biblical and Historical Evidence for Christ (2016)
+* Bart Ehrman (atheist): Did Jesus Exist?: The Historical Argument for Jesus of Nazareth (2013)
 * A. Wall: [Comparing Religions V: Historical Accounts](http://www.wall.org/~aron/blog/comparing-religions-v-historical-accounts/)
 * A. Wall: [Comparing Religions VI: Early Sources](http://www.wall.org/~aron/blog/comparing-religions-vi-early-sources/)
 * A. Wall: [Some comments on Biblical History](http://www.wall.org/~aron/blog/some-comments-on-biblical-history/)
-* Brant Pitre (Christian): The Case for Jesus: The Biblical and Historical Evidence for Christ (2016)
-* Bart Ehrman (atheist): Did Jesus Exist?: The Historical Argument for Jesus of Nazareth (2013)
-
-Against
 
 # Philosophical arguments
 
 For
-
 
 * “The most incomprehensible thing about the Universe is that it is comprehensible.” -- A. Einstein
 * Existence of objective universal morality or decent behaviour or fair play -> C. S. Lewis: Mere Christinanity - Book I
@@ -48,7 +34,9 @@ For
 
 Against
 
-* Argument from the evil - an omnipotent and benevolent God should have eliminated all suffering. We observe plenty of man made and natural suffering in the world. <=> Free will can not be achieved without allowing the possibility of doing wrong things. God can bring good through suffering - we can't always (most of the time) see how.
+* Argument from the evil - an omnipotent and benevolent God should have eliminated all suffering. We observe plenty of man made and natural suffering in the world.   
+  * Free will can not be achieved without allowing the possibility of doing wrong things.
+  * God can bring good through suffering - we can't always (most of the time) see how.
 
 # Reasonable theists
 
