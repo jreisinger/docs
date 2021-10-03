@@ -13,7 +13,7 @@ Sources of evidence
 * Written documents
 * Archeological findings
 
-Sources
+Read
 
 * Brant Pitre (Christian): The Case for Jesus: The Biblical and Historical Evidence for Christ (2016)
 * Bart Ehrman (atheist): Did Jesus Exist?: The Historical Argument for Jesus of Nazareth (2013)
