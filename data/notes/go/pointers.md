@@ -145,12 +145,12 @@ func MakePerson(p *Person) error {
 Do this:
 
 ```go
-func MakePerson() (Person, error) {
+func MakePerson() (*Person, error) {
     p := Person{
         Name: "John",
         Age: 41,
     }
-    return p, nil
+    return &p, nil
 }
 ```
 
