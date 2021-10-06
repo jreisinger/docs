@@ -123,7 +123,7 @@ func (db database) price(w http.ResponseWriter, req *http.Request) {
 }
 ```
 
-* `db.list` is a function (or a method) that implements handler-like behavior but since it does not satisfy `http.Handler` interface and can't be passed directly to `mux.Handle`
+* `db.list` is a function (or a method) that implements handler-like behavior but since it does not satisfy `http.Handler` interface it can't be passed directly to `mux.Handle`
 * the expression `http.HandlerFunc(db.list)` is a *conversion*, not a function call, since `http.HandlerFunc` is a type
 * because registering a handler this way is so common, `ServeMux` has a convenience method `HandleFunc`
 
