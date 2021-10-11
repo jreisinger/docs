@@ -59,8 +59,6 @@ s := a[:] // s references the storage of a
 
 A slice is a descriptor of an array segment.
 
-Slicing does not copy data. It creates a new slice that points to the original array.
-
 ```
 s := make([]byte, 5) // allocate array of size 5 and return slice pointing to it
 
@@ -76,6 +74,8 @@ s := make([]byte, 5) // allocate array of size 5 and return slice pointing to it
 |  5  |                                                    
 +-----+      
 ```
+
+Slicing does not copy data. It creates a new slice that points to the original array.
 
 ```
 s = s[2:4] // slice s to length shorter than its capacity
