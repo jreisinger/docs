@@ -7,7 +7,7 @@
 > So all else being equal, scientists prefer hypotheses which are simple, uniform, common-sensical and aesthetically pleasing. ... Nevertheless, ultimately the criterion of elegance is subordinate to observations.  It doesn't matter how beautiful or simple your theory is, if it gets the facts wrong. -- [Aron Wall](http://www.wall.org/~aron/blog/pillar-of-science-ii-elegent-hypotheses/)
 
 1. Make it correct.
-2. Make it clear (simple, straightforward, uniform).
+2. Make it simple and clear.
 3. Make it fast.
 
 In that order.
