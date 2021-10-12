@@ -16,6 +16,8 @@ Engineering is not about just hacking the code. It's about evaluating the costs 
 
 We are writing code for today, designing and architecting for tomorrow.
 
+It is not possible to create a perfect program the first time. The insight necessary to find the right solution comes only with a combination of thought and experience; pure introspection will not produce a good system, nor will pure hacking. Reactions from users count heavily here; a cycle of prototyping, experiment, user feedback, and further refinement is most effective. -- The Practice of Programming
+
 # Go
 
 > Data dominates. If you've chosen the right data structures and organized things well, the algorithms will almost always be self-evident. Data structures, not algorithms, are central to programming. -- Rob Pike
