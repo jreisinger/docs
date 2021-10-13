@@ -103,11 +103,11 @@ A [struct](https://play.golang.org/p/Mp0PlEc6rOC) is a user-defined type that co
 ```go
 // Anonymous struct literal (declaration + initialization).
 p := struct {
-	Person 	string
-	Age 	int
+	Name string
+	Age  int
 }{
-	Person: "Joe",
-	Age: 	42,
+	Name: "John",
+	Age:  36,
 }
 ```
 
@@ -137,7 +137,7 @@ Don't do this:
 ```go
 func MakePerson(p *Person) error {
     p.Name = "John"
-    p.Age = 41
+    p.Age = 36
     return nil
 }
 ```
@@ -148,7 +148,7 @@ Do this:
 func MakePerson() (*Person, error) {
     p := Person{
         Name: "John",
-        Age: 41,
+        Age: 36,
     }
     return &p, nil
 }
@@ -162,7 +162,7 @@ p := struct {
 	Age  int
 }{}
 
-err := json.Unmarshal([]byte(`{"Name": "John", "Age": 41}`), &p)
+err := json.Unmarshal([]byte(`{"Name": "John", "Age": 36}`), &p)
 ```
 
 ## Method receivers
