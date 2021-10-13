@@ -1,26 +1,28 @@
-> The most important property of a program is whether is accomplishes the intention of its user. -- C.A.R. Hoare (1969)
+NOTE: Almost all advice is contextual, yet it is rarely delivered with any context. We may be the culmination of our experiences, but we view them through the lens of the present.
 
-> Simple, straightforward code is just plain easier to work with and less likely to have problems. As programs get bigger and more complicated, it's even more important to have clean, simple code. -- Brian Kernighan
-
-> In short, simplicity is often the enemy of success. -- [Larry Wall](https://www.oreilly.com/openbook/opensources/book/larry.html)
-
-> So all else being equal, scientists prefer hypotheses which are simple, uniform, common-sensical and aesthetically pleasing. ... Nevertheless, ultimately the criterion of elegance is subordinate to observations.  It doesn't matter how beautiful or simple your theory is, if it gets the facts wrong. -- [Aron Wall](http://www.wall.org/~aron/blog/pillar-of-science-ii-elegent-hypotheses/)
-
-1. Make it correct.
+1. Make it work correctly.
 2. Make it simple and clear.
-3. Make it fast.
+3. Make it fast if needed.
 
 In that order.
 
-Engineering is not about just hacking the code. It's about evaluating the costs and benefits.
+The most important property of a program is whether is accomplishes the intention of its user. -- C.A.R. Hoare (1969)
+
+Simple, straightforward code is just plain easier to work with and less likely to have problems. As programs get bigger and more complicated, it's even more important to have clean, simple code. -- Brian Kernighan
+
+You need a certain amount of complexity to do any particular job. ... In short, simplicity is often the enemy of success. -- [Larry Wall](https://www.oreilly.com/openbook/opensources/book/larry.html)
+
+So all else being equal, scientists prefer hypotheses which are simple, uniform, common-sensical and aesthetically pleasing. ... Nevertheless, ultimately the criterion of elegance is subordinate to observations.  It doesn't matter how beautiful or simple your theory is, if it gets the facts wrong. -- [Aron Wall](http://www.wall.org/~aron/blog/pillar-of-science-ii-elegent-hypotheses/)
+
+Engineering is not about just hacking the code. It's about delivering value. It's about evaluating the costs and benefits.
 
 We are writing code for today, designing and architecting for tomorrow.
 
 It is not possible to create a perfect program the first time. The insight necessary to find the right solution comes only with a combination of thought and experience; pure introspection will not produce a good system, nor will pure hacking. Reactions from users count heavily here; a cycle of prototyping, experiment, user feedback, and further refinement is most effective. -- The Practice of Programming
 
-# Go
+Data dominates. If you've chosen the right data structures and organized things well, the algorithms will almost always be self-evident. Data structures, not algorithms, are central to programming. -- Rob Pike
 
-> Data dominates. If you've chosen the right data structures and organized things well, the algorithms will almost always be self-evident. Data structures, not algorithms, are central to programming. -- Rob Pike
+# Go
 
 Don't do object oriented design but data oriented design.
 
