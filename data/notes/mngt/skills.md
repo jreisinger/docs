@@ -16,3 +16,4 @@ each is better for different use case and each makes you think in different
 way. You also need to have some domain specific knowledge like IT security or
 system administration.
 
+See also Epilogue in The Practice of Programming.
