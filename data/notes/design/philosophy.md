@@ -29,3 +29,15 @@ Don't do object oriented design but data oriented design.
 Go prefers convention over configuration because configuration is limiting. Let's group by what one can do not by what one is. In Go there are [no classes](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/grouping_types_1.go) (or [Perl version](https://github.com/jreisinger?tab=repositories&q=animal)) and subclasses but [Interfaces](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/grouping_types_2.go) and composition.
 
 Little copying is better than little dependency. Cost of DRY in Go is bigger than in other languages.
+
+# Perl
+
+* TIMTOWTDI
+    * don't rush to code up the first idea that pops into your head
+    * after you have an algorithm strive for clarity, simplicity, efficiency, scalability and elegance (poems of logic)
+* ask yourself how would you solve the problem - the straightforward solution is often (not always) simple, clear, and efficient enough
+* generality is good - consideration of a more general problem can lead to a better solution for some special case (max of "n" numbers instead of "three")
+    * if the general program is as easy to write as the special one go for the general one as it is more likely to be useful in other situations (maximum utility from the effort)
+* don't reinvent the wheel - a lot of very smart programmers have designed countless good algorithms and programs
+    * good for learning though
+* Just because you CAN do something a particular way doesn't mean that you SHOULD do it that way. Perl is designed to give you several ways to do anything, so consider picking the most readable one. See [perlstyle](http://perldoc.perl.org/perlstyle.html) for more.
