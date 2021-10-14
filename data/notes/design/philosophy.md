@@ -1,4 +1,4 @@
-NOTE: Almost all advice is contextual, yet it is rarely delivered with any context. We may be the culmination of our experiences, but we view them through the lens of the present.
+[NOTE](https://www.simplethread.com/20-things-ive-learned-in-my-20-years-as-a-software-engineer/): Almost all advice is contextual, yet it is rarely delivered with any context. We may be the culmination of our experiences, but we view them through the lens of the present.
 
 1. Make it work correctly.
 2. Make it simple and clear.
