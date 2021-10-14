@@ -57,15 +57,15 @@ A more realistic server triggers different behaviours based on the path componen
 
 ```
 // Shop v2
-func (db database) ServeHTTP(w http.ResponseWriter, req *http.Request) {
-	switch req.URL.Path {
+func (db database) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	switch r.URL.Path {
 	case "/list":
 		for item, price := range db {
 			fmt.Fprintf(w, "%s: %s\n", item, price)
 		}
 	// called like: /price?item=socks
 	case "/price":
-		item := req.URL.Query().Get("item")
+		item := r.URL.Query().Get("item")
 		price, ok := db[item]
 		if !ok {
 			w.WriteHeader(http.StatusNotFound) // 404
@@ -75,7 +75,7 @@ func (db database) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 		fmt.Fprintf(w, "%s\n", price)
 	default:
 		w.WriteHeader(http.StatusNotFound) // 404
-		fmt.Fprintf(w, "no such page: %s\n", req.URL)
+		fmt.Fprintf(w, "no such page: %s\n", r.URL)
 	}
 }
 ```
@@ -84,7 +84,7 @@ func (db database) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 * equivalently you could use the `http.Error` utility function:
 
 ```
-msg := fmt.Sprintf("no such page: %s\n", req.URL)
+msg := fmt.Sprintf("no such page: %s\n", r.URL)
 http.Error(w, msg, http.StatusNotFound) // 404
 ```
 
@@ -105,14 +105,14 @@ func main() {
 	log.Fatal(http.ListenAndServe("localhost:8000", mux))
 }
 
-func (db database) list(w http.ResponseWriter, req *http.Request) {
+func (db database) list(w http.ResponseWriter, r *http.Request) {
 	for item, price := range db {
 		fmt.Fprintf(w, "%s: %s\n", item, price)
 	}
 }
 
-func (db database) price(w http.ResponseWriter, req *http.Request) {
-	item := req.URL.Query().Get("item")
+func (db database) price(w http.ResponseWriter, r *http.Request) {
+	item := r.URL.Query().Get("item")
 	price, ok := db[item]
 	if !ok {
 		w.WriteHeader(http.StatusNotFound) // 404
@@ -143,8 +143,8 @@ func main() {
 ```
 func main() {
 	db := database{"shoes": 50, "socks": 5}
-	HandleFunc("/list", db.list)
-	HandleFunc("/price", db.price)
+	http.HandleFunc("/list", db.list)
+	http.HandleFunc("/price", db.price)
 	log.Fatal(http.ListenAndServe("localhost:8000", nil))
 }
 ```
