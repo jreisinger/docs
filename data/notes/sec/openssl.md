@@ -25,4 +25,8 @@ for FQDN in reisinge.net quote.reisinge.net quotes.reisinge.net wiki.reisinge.ne
 done
 ```
 
-See also https://github.com/pete911/certinfo.
+See also 
+
+* https://www.sslshopper.com/article-most-common-openssl-commands.html
+* [SREcon21 - Practical TLS Advice for Large Infrastructure](https://www.youtube.com/watch?v=ildysssp26c) - video
+* https://github.com/pete911/certinfo
