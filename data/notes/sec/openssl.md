@@ -27,5 +27,6 @@ done
 
 See also 
 
+* https://go.dev/blog/tls-cipher-suites
 * https://www.sslshopper.com/article-most-common-openssl-commands.html
 * https://github.com/pete911/certinfo
