@@ -24,7 +24,7 @@ the identified improvements.
 The problems are truly solved, not just glossed over.
 
 A climate of openess without retribution is fostered, and senior managers listen
-to messaged from all levels of the company.
+to messages from all levels of the company.
 
 Products start to be created more efficiently and with better quality.
 
@@ -32,20 +32,18 @@ Products start to be created more efficiently and with better quality.
 
 Managers read only short summary articles about the improvement method.
 
-The implementing managers ask workers to implement some specific improvemnts
-read in the blogs without costly discussion or modification.
+The implementing managers ask workers to implement some specific improvements
+(read in the blogs) without costly discussion or modification.
 
 Some specific improvements are ruled out with reasoning that they would be
 costly to implement.
 
-Executives and managers don't really listend to workers nor change their own way
+Executives and managers don't really listen to workers nor change their own way
 of working. What they state as improvement in communication is really only about
 downward communication.
 
-Managers don't involve executives because the superiors might feel threatened or
-embarrassed.
-
-Lack of executive involvement.
+Lack of executive involvement. Managers don't involve executives because the 
+superiors might feel threatened or embarrassed.
 
 Dilution of emphasis.
 
