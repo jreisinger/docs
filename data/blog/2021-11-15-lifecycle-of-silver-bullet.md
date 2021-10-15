@@ -1,3 +1,5 @@
+# Life cycle of a silver bullet
+
 I've watched SRECon [discussion](https://www.youtube.com/watch?v=pV3ArFwsfXA)
 about DevOps. They mentioned a paper from Sarah A. Sheard called "Life Cycle of
 a Silver Bullet". I googled it and read it and I was enlightened. (While writing
@@ -10,7 +12,7 @@ depends on how they are implemented. It this post I'll try to extract the
 positive and negative signals you can observe when trying to implement an
 improvement initiative, like DevOps or Agile.
 
-# Positive signals
+## Positive signals
 
 Someone with power to make changes (like an executive or a manager) takes a
 close look how his company is working to determine problems. He also looks at
@@ -26,7 +28,7 @@ to messaged from all levels of the company.
 
 Products start to be created more efficiently and with better quality.
 
-# Negative signals
+## Negative signals
 
 Managers read only short summary articles about the improvement method.
 
