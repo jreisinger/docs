@@ -245,23 +245,14 @@ See [git-sync](https://github.com/jreisinger/dotfiles/blob/master/bin/git-sync) 
 # Tags
 
 ```
-# Fetch all tags from remote.
-git fetch --all --tags
+git fetch --all --tags  # fetch all tags from remote
+git tag                 # list existing local tags
 
-# List existing local tags.
-git tag
+git tag -a v0.0.2 -m "improve naming"  # add new tag locally
+git push --tags                        # push local tags to remote
 
-# Add a new tag locally.
-git tag -a v2.0.3 -m "improve docs"
-
-# Push local tags to remote.
-git push --tags
-
-# Delete local tag.
-git tag -d v2.0.2
-
-# Delete remote tag.
-git push --delete origin v2.0.2
+git tag -d v0.0.1         # delete local tag
+git push --delete v0.0.1  # delete remote tag
 ```
 
 # Tips and Tricks
