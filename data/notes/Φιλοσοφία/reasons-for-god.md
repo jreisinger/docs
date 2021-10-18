@@ -5,7 +5,7 @@ It's not possible to prove (or disprove) the God's existence using the [modern s
 3. Reasonable theists
 4. ~~Blind~~ faith
 
-# Historical arguments
+# Historical reasons
 
 Sources of evidence
 
@@ -21,7 +21,7 @@ Read
 * A. Wall: [Comparing Religions VI: Early Sources](http://www.wall.org/~aron/blog/comparing-religions-vi-early-sources/)
 * A. Wall: [Some comments on Biblical History](http://www.wall.org/~aron/blog/some-comments-on-biblical-history/)
 
-# Philosophical arguments
+# Philosophical reasons
 
 For
 
