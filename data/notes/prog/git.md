@@ -252,10 +252,16 @@ git fetch --all --tags
 git tag
 
 # Add a new tag locally.
-git tag -a v0.2.3 -m "improve docs"
+git tag -a v2.0.3 -m "improve docs"
 
 # Push local tags to remote.
 git push --tags
+
+# Delete local tag.
+git tag -d v2.0.2
+
+# Delete remote tag.
+git push --delete origin v2.0.2
 ```
 
 # Tips and Tricks
