@@ -4,8 +4,10 @@ Slice type is an abstraction built on top of array type.
 
 # Arrays
 
-* fixed size
+* fixed-sized composite value
 * the size is part of the type: `[4]int` and `[5]int` are distinct types
+* value, not a pointer to the first array element like in C
+* like a struct but with indexed rather than named fields
 
 Don't need to be initialized explicitly:
 
@@ -27,16 +29,16 @@ It's zero value is `nil`:
 
 ```
 var s []byte
-fmt.Println(s)        // []
-fmt.Println(s == nil) // true
+fmt.Println(s == nil)          // true
+fmt.Println(s, len(s), cap(s)) // [] 0 0
+fmt.Println(s[0]) // panic: runtime error: index out of range [0] with length 0
 ```
 
 You initiliaze a slice by using `make`:
 
 ```
-var s []byte
-fmt.Println(s[0])   // panic: runtime error: index out of range [0] with length 0
 s = make([]byte, 5) // s == []byte{0, 0, 0, 0, 0}
+fmt.Println(s[0])   // 0
 ```
 
 or a literal:
