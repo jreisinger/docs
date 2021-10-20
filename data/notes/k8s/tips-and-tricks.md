@@ -25,7 +25,8 @@ k run alpine --image=alpine --rm -it -- sh
 
 # Run a command in it
 k run alpine --image=alpine --rm -it --restart=Never --command -- env
-k run alpine --image=alpine --rm -it --restart=Never --command -- wget -O- 192.168.206.75:2112/metrics -timeout 2
+k run alpine --image=alpine --rm -it --restart=Never --command -- wget \
+-O- 192.168.206.75:2112/metrics --timeout 2
 ```
 
 Copy files
