@@ -2,7 +2,7 @@
 
 I've watched SRECon [discussion](https://www.youtube.com/watch?v=pV3ArFwsfXA)
 about DevOps. They mentioned a paper from Sarah A. Sheard called "Life Cycle of
-a Silver Bullet". I googled it and read it and I was enlightened. (While writing
+a Silver Bullet". Written in 2003. I googled it and read it and I was enlightened. (While writing
 this, I've been served tea by a robot for the first time in my life!). The paper
 contains several ideas I had and several observations I made while being part of
 an attempt to introduce something like DevOps within a company.
