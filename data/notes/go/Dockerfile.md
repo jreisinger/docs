@@ -1,5 +1,6 @@
 ```
-FROM golang:1.14 AS build
+# Use an image containing environment for building Go programs.
+FROM golang:1.17 AS build
 
 # Set the current working directory inside container.
 WORKDIR /src
@@ -10,13 +11,19 @@ RUN go mod download
 
 # Build the source code.
 COPY . ./
-RUN make build
+RUN CGO_ENABLED=0 GOOS=linux go build -o myprog
 
 # Create a single layer image.
-FROM alpine:latest # or search for distroless images
-COPY --from=build /src/foo /bin/foo
+FROM alpine:latest
+COPY --from=build /src/myprog /bin/myprog
 
-ENTRYPOINT ["/bin/foo"]
+# Tell Docker to execute this command on a "docker run".
+ENTRYPOINT ["/bin/myprog"]
+```
+
+```
+docker build . -t myprog
+docker run myprog
 ```
 
 See also kvstore's [Dockerfile](https://github.com/jreisinger/kvstore/blob/master/Dockerfile).
