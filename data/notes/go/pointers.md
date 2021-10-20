@@ -1,8 +1,8 @@
-Go has pointers. Go does not have [reference variables](https://dave.cheney.net/2017/04/29/there-is-no-pass-by-reference-in-go).
+Go has [pointers](https://dave.cheney.net/2017/04/26/understand-go-pointers-in-less-than-800-words-or-your-money-back).
 
 # How do they work
 
-A pointer is a variable that holds the memory address of another variable. A variable is a piece of storage that has a name and an address and contains a value.
+A pointer is a value that points to the memory address of another variable. A variable is a convenient, alphanumeric pseudonym for a memory address. Memory address denotes a piece of storage that can contain a value.
 
 ```go
 var x int32 = 10        // 4 bytes
@@ -27,7 +27,7 @@ Variable | x                 | y  | pointerX          | pointerY          | poin
 The type `*T` is a pointer to a `T` value. Its zero value is `nil`.
 
 ```go
-var p *int  // The * here means that p is a pointer to int.
+var p *int  // The * here means that p holds a pointer to int.
 i := 42
 p = &i      // The & operator generates a pointer to its operand.
 *p = 21     // The * operator denotes the pointer's underlying value.
@@ -116,6 +116,7 @@ p := struct {
 If you make a pointer to a struct, you can access its fields in two ways:
 
 ```go
+// Named struct (declaration).
 type Person struct {
 	Name string
 	Age  int
