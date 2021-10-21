@@ -26,7 +26,9 @@ Data dominates. If you've chosen the right data structures and organized things 
 
 Don't do object oriented design but data oriented design.
 
-Go prefers convention over configuration because configuration is limiting. Let's group by what one can do not by what one is. In Go there are [no classes](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/grouping_types_1.go) (or [Perl version](https://github.com/jreisinger?tab=repositories&q=animal)) and subclasses but [Interfaces](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/grouping_types_2.go) and composition.
+Go prefers convention over configuration because configuration is limiting.
+
+Let's not group by what one [is](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/grouping_types_1.go) but by what one can [do](https://github.com/ardanlabs/gotraining-studyguide/blob/master/go/design/grouping_types_2.go). In Go there are no [classes](https://github.com/jreisinger?tab=repositories&q=animal) and subclasses but Interfaces and composition.
 
 Little copying is better than little dependency. Cost of DRY in Go is bigger than in other languages.
 
