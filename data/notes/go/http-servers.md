@@ -153,7 +153,7 @@ NOTE: the web server invokes each handler in a new goroutine, so handlers must t
 
 # Reponse handling
 
-## 200 OK
+## w.WriteHeader (method of ResponseWriter interface)
 
 These two handler functions are equivalent:
 
@@ -166,7 +166,7 @@ func ok2(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
-both generate line of information with protocol and status code plus two headers:
+both generate line of information with protocol and status code (Go doc calls this line response header) plus two headers:
 
 ```
 < HTTP/1.1 200 OK
@@ -175,7 +175,7 @@ both generate line of information with protocol and status code plus two headers
 < 
 ```
 
-## 500 Internal Server Error
+## http.Error function
 
 ```
 func err1(w http.ResponseWriter, r *http.Request) {
@@ -183,7 +183,7 @@ func err1(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
-generates only line of information (Go docs calls it response header) and two headers:
+generates only line of information and two headers:
 
 ```
 < HTTP/1.1 500 Internal Server Error
