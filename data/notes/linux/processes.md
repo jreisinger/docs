@@ -14,6 +14,8 @@ traditional approach. Another way to split the work between multiple entities
 is using the lighter weight *threads* which means multiple execution threads
 within a single process.
 
+## C
+
 This is how you clone (fork) a process in C:
 
 ```
@@ -43,6 +45,8 @@ int main(int argc, char* argv[]) {
     }
 }
 ```
+
+## Perl
 
 This is how you clone a process in Perl:
 
@@ -93,7 +97,7 @@ A sample use of `exec()`:
         die "exec() error: $!"; # shouldn't get here
     }
 
-Sources:
+# Sources
 
 * ULSAH
 * Network Programming with Perl
