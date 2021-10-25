@@ -1,3 +1,11 @@
+CIA triad - security goals
+
+* Confidentiality - seeks to prevent unauthorized read access to data
+* Integrity - seeks to prevent unauthorized write access to data
+  * data integrity (modification of data in DB)
+  * system integrity (malicious SW to open "back door" to OS) 
+* Availability - ensures that information is available when needed
+
 Least privilege
 
 * people and automated tools should be able to access only what they need to their job, and no more
