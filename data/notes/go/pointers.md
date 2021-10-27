@@ -1,8 +1,8 @@
-Go has [pointers](https://dave.cheney.net/2017/04/26/understand-go-pointers-in-less-than-800-words-or-your-money-back).
+Go has [pointers](https://dave.cheney.net/2017/04/26/understand-go-pointers-in-less-than-800-words-or-your-money-back). A pointer is a value that points to the memory address of another variable.
 
 # How do they work
 
-A pointer is a value that points to the memory address of another variable. A variable is a convenient, alphanumeric pseudonym for a memory address. Memory address denotes a piece of storage that can contain a value.
+A variable is a convenient, alphanumeric pseudonym for a memory address. Memory address denotes a piece of storage that can contain a value.
 
 ```go
 var x int32 = 10        // 4 bytes
@@ -18,9 +18,9 @@ Address  |  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 | 11 | 12 | 13 | 14 |
 Variable | x                 | y  | pointerX          | pointerY          | pointerZ          |
 ```
 
-* pointers are [really](https://play.golang.org/p/3Lz_C_sXaHv) 8 bytes
+* pointers are [really](https://play.golang.org/p/3Lz_C_sXaHv) 8 bytes (not 4 as in the picture)
 * the point is they are always the same size no matter what type they point to
-* `nil` is an untyped identifier (in the universe block) that represents a lack of value
+* `nil` is an untyped identifier (in the universe block) that represents a lack of value for pointer types
 
 # How to work with them
 
