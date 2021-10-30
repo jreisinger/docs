@@ -251,8 +251,8 @@ git tag                 # list existing local tags
 git tag -a v0.0.2 -m "improve naming"  # add new tag locally
 git push --tags                        # push local tags to remote
 
-git tag -d v0.0.1         # delete local tag
-git push --delete v0.0.1  # delete remote tag
+git tag -d v0.0.1                # delete local tag
+git push --delete origin v0.0.1  # delete remote tag
 ```
 
 # Tips and Tricks
