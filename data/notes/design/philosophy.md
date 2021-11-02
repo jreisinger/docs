@@ -14,10 +14,6 @@ You need a certain amount of complexity to do any particular job. ... In short, 
 
 So all else being equal, scientists prefer hypotheses which are simple, uniform, common-sensical and aesthetically pleasing. ... Nevertheless, ultimately the criterion of elegance is subordinate to observations.  It doesn't matter how beautiful or simple your theory is, if it gets the facts wrong. -- [Aron Wall](http://www.wall.org/~aron/blog/pillar-of-science-ii-elegent-hypotheses/)
 
-Engineering is not about just hacking the code. It's about delivering value. It's about evaluating the costs and benefits.
-
-We are writing code for today, designing and architecting for tomorrow.
-
 It is not possible to create a perfect program the first time. The insight necessary to find the right solution comes only with a combination of thought and experience; pure introspection will not produce a good system, nor will pure hacking. Reactions from users count heavily here; a cycle of prototyping, experiment, user feedback, and further refinement is most effective. -- The Practice of Programming
 
 Data dominates. If you've chosen the right data structures and organized things well, the algorithms will almost always be self-evident. Data structures, not algorithms, are central to programming. -- Rob Pike
