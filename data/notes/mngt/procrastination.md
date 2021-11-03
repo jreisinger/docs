@@ -9,7 +9,8 @@ What's the best/most important thing you could be working on, and why aren't you
 
 Solution:
 
-* let delight pull you, instead of a check list push you
+* let delight pull you, instead of a todo list push you
+* don't look a big problem too directly in the eye
 * work on small things first
 * split moral load with others
 
