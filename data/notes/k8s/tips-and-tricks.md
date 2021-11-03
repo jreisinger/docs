@@ -27,6 +27,8 @@ k run alpine --image=alpine --rm -it -- sh
 k run alpine --image=alpine --rm -it --restart=Never --command -- env
 k run alpine --image=alpine --rm -it --restart=Never --command -- wget \
 -O- 192.168.206.75:2112/metrics --timeout 2
+k run curl --image=curlimages/curl --rm -it --restart=Never --command -- \
+curl -s -o /dev/null -w "%{http_code}" -L https://google.com
 ```
 
 Copy files
