@@ -2,7 +2,7 @@ It's important to identify a breach ASAP. According to some studies the mean tim
 
 * log or event - record of specific thing that happened (e.g. log about an HTTP request)
 * alert - event where the system decides it's worth notifying someone
-* metrics - time based numbers giving info about something (e.g. number of HTTP requests per second)
+* metric - time based number giving info about something (e.g. number of HTTP requests per second)
 
 Logs are more difficult/costly to store and process.
 
@@ -32,7 +32,7 @@ Secret server
 Honeypots
 
 * distract and slow down attackers and alert you
-* advanced technique; after you home logging, monitoring, alerting and response running effectively
+* advanced technique; after you have logging, monitoring, alerting and response running effectively
 
 # How to watch
 
@@ -48,7 +48,7 @@ Search/correlation examples: search for all login failures during certain time p
 
 Alerting is where the art lies in log analysis. You need a balance between too many false positives and no alerts at all. You need a feedback loop to know whether to modify (increase threshold) or remove an alert. Consider running periodic tests that will generate alerts.
 
-There are some alerts that you should always follow up; e.g. multiple login failure for privileged users, malware detected. When logs stop flowing is a security issue too!
+There are some alerts that you should always follow up; e.g. multiple login failures for privileged users, malware detected. When logs stop flowing is a security issue too!
 
 Automated responses have potential to disrupt your business. Also can be leveraged by attackkers - an easy DoS attack using a simple port scanner or a few failed logins.
 
@@ -68,7 +68,5 @@ Sample SIEM alerts:
 * “A new administrative account was just created outside of normal business hours. Maybe someone’s working late, but maybe there’s an issue?”
 * “Someone was just added to the administrator group. That’s a rare event, so shouldn’t we check on it?”
 * “Why are there firewall denies with an internal system as the source? Either something is misconfigured or there’s an unauthorized user trying to move around the network.”
-
----
 
 Source: Practical Cloud Security (2019)
