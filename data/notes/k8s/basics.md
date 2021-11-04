@@ -6,9 +6,6 @@ Config and basic concepts
 `kubectl` configuration
 
 ```bash
-# one of
-cat ~/.kube/config
-cat $KUBECONFIG
 kubectl config view
 ```
 
