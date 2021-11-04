@@ -31,20 +31,25 @@ Built-in data types can be manipulated with operators, built-in functions, libra
 
 ## strings
 
-```python
->>> x = "Do not meddle    in \the affairs of \nwizards"
->>> x2 = x.replace("\the", "the")
->>> import re
->>> regex = re.compile(r"[\t ]+")
->>> regex.sub(" ", x2)
-'Do not meddle in the affairs of \nwizards'
+Strings are immutable.
 
-# raw strings do not interpret escape sequences
->>> print r'hello\nworld'
+Raw strings (`r""`) do not interpret escape sequences.
+
+```python
+>>> print(r"hello\nworld")
 hello\nworld
->>> print 'hello\nworld'
+>>> print("hello\nworld")
 hello
 world
+
+>>> x = "Do not meddle    in \the affairs of wizards"
+>>> x.replace("\t", "t")
+'Do not meddle    in the affairs of wizards'
+
+>>> import re
+>>> tabs = re.compile(r"[\t ]+")
+>>> tabs.sub(" ", x)
+'Do not meddle in he affairs of wizards'
 ```
 
 ## lists
