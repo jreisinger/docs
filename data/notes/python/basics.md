@@ -164,21 +164,24 @@ call(['ls', '-la'])
 # Filenames and Paths
 
 ```python
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 import os
 import sys
 
 def walk(dirname):
-"""Walk through a directory and print names of files"""
+    """Walk through a directory and print names of files
+    """
     for name in os.listdir(dirname):
         path = os.path.join(dirname, name)
         if os.path.isfile(path):
-            print path
+            print(path)
         elif os.path.isdir(path):
             walk(path)
 
-walk(sys.argv[1])
+if __name__ == "__main__":
+    walk(sys.argv[1])
+
 ```
 
 # Threading
@@ -229,7 +232,7 @@ for t in threads:
 # Classes and instances
 
 ```python
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 class me:
     def __init__(self, foo):
@@ -246,8 +249,8 @@ y = x.getval()
 z = me('baz')
 print(y)
 x.setval('ble')
-print x.getval()
-print z.getval()
+print(x.getval())
+print(z.getval())
 ```
 
 # Sources
