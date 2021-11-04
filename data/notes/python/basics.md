@@ -134,10 +134,10 @@ f = cmdargs.f
 try:
     fh = open(f)
     line = fh.readline()
-# generic exception; more specific exceptions could be caught before
-except Exception as e: 
-    print("There was an error: ", e)
-    exit(1)  # like tchrist said
+except Exception as e:  # generic exception;
+                        # more specific exceptions could be caught before
+    print("There was an error:", e)
+    exit(1) # like tchrist said
 else:
     print("1st line from", f, "is", line, end="")
     fh.close()
