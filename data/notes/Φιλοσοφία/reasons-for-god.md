@@ -9,9 +9,13 @@ It's not possible to prove (or disprove) the God's existence using the [modern s
 
 Sources of evidence
 
-* Testimonies (close history)
 * Written documents
 * Archeological findings
+* Testimonies (only close history)
+
+What this shows is that doing ancient history is HARD!  Just as in Science, the different types of data don't always agree very well, and we have to put things together the best we can. -- [A. Wall](http://www.wall.org/~aron/blog/some-comments-on-biblical-history/)
+
+Heck, cosmology is a more rigorous subject than archaeology, and there, until recently, we had this problem where many galaxies seemed to be older than the universe. -- [A. Wall](http://www.wall.org/~aron/blog/some-comments-on-biblical-history/)
 
 ## Historicity of Jesus
 
@@ -86,7 +90,7 @@ Reasonable atheists
 
 [In the sense](https://youtu.be/m_4PSgFjtvI) that it's something that comes at the far edge of reason. Like when you know a person for a long time and then he tells you something you can't verify. You have to decide whether you believe him or not.
 
-> Why should they be impartial, what is being impartial, when the whole world is at war about whether one thing is a devouring superstition or a divine hope? I do not pretend to be impartial in the sense that the final act of faith fixes a man's mind because it satisfies his mind. But I do profess to be a great deal more impartial than they are; in the sense that I can tell the story fairly, with some sort of imaginative justice to all sides; and they cannot.  (The Everlasting Man)
+> Why should they be impartial, what is being impartial, when the whole world is at war about whether one thing is a devouring superstition or a divine hope? I do not pretend to be impartial in the sense that the final act of faith fixes a man's mind because it satisfies his mind. But I do profess to be a great deal more impartial than they are; in the sense that I can tell the story fairly, with some sort of imaginative justice to all sides; and they cannot. -- Chesterton: [The Everlasting Man](http://gutenberg.net.au/ebooks01/0100311.txt)
 
 # More
 
