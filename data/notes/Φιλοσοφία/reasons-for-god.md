@@ -13,12 +13,30 @@ Sources of evidence
 * Written documents
 * Archeological findings
 
-Read
+## Historicity of Jesus
 
-* Brant Pitre (Christian): The Case for Jesus: The Biblical and Historical Evidence for Christ (2016)
-* Bart Ehrman (atheist): Did Jesus Exist?: The Historical Argument for Jesus of Nazareth (2013)
+"Virtually all scholars of antiquity agree that Jesus existed." -- [Wikipedia](https://en.wikipedia.org/wiki/Historicity_of_Jesus)
+
+Michael Grant, a classicist, states: "In recent years, 'no serious scholar has ventured to postulate the non historicity of Jesus,' or at any rate very few, and they have not succeeded in disposing of the much stronger, indeed very abundant, evidence to the contrary." -- Jesus (2004)
+
+Robert M. Price (a Christian atheist) who denies the existence of Jesus agrees that this perspective runs against the views of the majority of scholars. -- [Wikipedia](https://en.wikipedia.org/wiki/Historicity_of_Jesus)
+
+Bart Ehrman (a secular agnostic) wrote: "He certainly existed, as virtually every competent scholar of antiquity, Christian or non-Christian, agrees" -- Forged: writing in the name of God ISBN (2011), p. 285
+
+Bart Ehrman: "Serious historians of the early Christian movement—all of them—have spent many years preparing to be experts in their field. Just to read the ancient sources requires expertise in a range of ancient languages: Greek, Hebrew, Latin, and often Aramaic, Syriac, and Coptic, not to mention the modern languages of scholarship (for example, German and French). And that is just for starters. Expertise requires years of patiently examining ancient texts and a thorough grounding in the history and culture of Greek and Roman antiquity, the religions of the ancient Mediterranean world, both pagan and Jewish, knowledge of the history of the Christian church and the development of its social life and theology, and, well, lots of other things. It is striking that virtually everyone who has spent all the years needed to attain these qualifications is convinced that Jesus of Nazareth was a real historical figure." --  Did Jesus Exist?: The Historical Argument for Jesus of Nazareth (2012), p. 4 - 5
+
+More
+
 * A. Wall: [Comparing Religions V: Historical Accounts](http://www.wall.org/~aron/blog/comparing-religions-v-historical-accounts/)
 * A. Wall: [Comparing Religions VI: Early Sources](http://www.wall.org/~aron/blog/comparing-religions-vi-early-sources/)
+
+## Historicity of the Bible
+
+Jesus in the Gospels often quotes the Old testament obviously considering it true.
+
+More
+
+* Brant Pitre (Christian): The Case for Jesus: The Biblical and Historical Evidence for Christ (2016)
 * A. Wall: [Some comments on Biblical History](http://www.wall.org/~aron/blog/some-comments-on-biblical-history/)
 
 # Philosophical reasons
