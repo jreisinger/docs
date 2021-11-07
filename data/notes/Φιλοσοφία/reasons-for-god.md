@@ -31,6 +31,7 @@ Bart Ehrman: "Serious historians of the early Christian movementâ€”all of themâ€
 
 More
 
+* Robert Barron: [The Quest for the Historical Jesus](https://www.youtube.com/watch?v=CS8nQruSHHI)
 * A. Wall: [Comparing Religions V: Historical Accounts](http://www.wall.org/~aron/blog/comparing-religions-v-historical-accounts/)
 * A. Wall: [Comparing Religions VI: Early Sources](http://www.wall.org/~aron/blog/comparing-religions-vi-early-sources/)
 
