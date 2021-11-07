@@ -67,7 +67,7 @@ Against
 * Fred Brooks (1931) - SW engineer and architect, computer scientist, author of The Mythical Man-Month (Harvard)
 * Russell Stannard (1931) - physicist, sculptor, written books for children (Open University)
 * George Coyne (1933 - 2020) - American Jesuit priest and astronomer
-* Donald Knuth (1938) - high priest of computer science (Stanford)
+* Donald Knuth (1938) - "high priest" 🙂 of computer science (Stanford)
 * John Lennox (1943) - mathematician, Christian apologist (Oxford)
 * [William Lane Craig](https://www.reasonablefaith.org/) (1949) - philosopher, theologian, debater (USA, Munich)
 * Francis Collins (1950) - genetisist, led the [HGP](https://en.wikipedia.org/wiki/Human_Genome_Project) (Yale)
