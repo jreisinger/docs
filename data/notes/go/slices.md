@@ -136,8 +136,8 @@ a = append(a, 1, 2, 3) // a == []int{0, 1, 2, 3}
 To append one slice to another, use `...` to expand the second argument to a list of arguments:
 
 ```
-a := []string{"Lewis", "Polkinghorne"}
-b := []string{"Knuth", "Wall", "Lennox"}
+a := []string{"Polkinghorne", "Lennox"}
+b := []string{"Brooks", "Knuth", "Wall"}
 a = append(a, b...) // equivalent to append(a, b[0], b[1], b[2])
 ```
 
