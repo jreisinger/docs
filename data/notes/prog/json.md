@@ -12,15 +12,13 @@ program state. To transfer this data outside of the program's own address space
 (e.g. to another application over the network) it needs to be serialized. This
 process is also called marshalling or encoding.
 
+A JSON value MUST be an object `{}`, array `[]`, number, or string, or one of
+the following three literal names: `false`, `null`, `true`. The literal names 
+MUST be lowercase. No other literal names are allowed. [RFC 7159](https://www.rfc-editor.org/rfc/rfc7159.html#section-3)
+
 ## jq
 
-JSON command line JSON processor 
-
-JSON consists of these data types:
-
-* objects `{}`
-* arrays `[]`
-* numbers, strings, booleans, "null"
+JSON command line processor 
 
 Sample JSON file:
 
