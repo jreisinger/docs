@@ -1,4 +1,13 @@
-Go has [pointers](https://dave.cheney.net/2017/04/26/understand-go-pointers-in-less-than-800-words-or-your-money-back) 👈. A pointer is a value that points to the memory address of another variable.
+Go has pointers. A pointer 👉 is a value that points to the memory address of another value.
+
+```go
+type Student struct{ Name string }
+
+func main() {
+	s := &Student{"John"}
+	fmt.Printf("%p", s) // 0xc000092050
+}
+```
 
 # How do they work
 
@@ -195,7 +204,6 @@ Non-pointer types:
 
 # Sources and more
 
-* Learning Go, 2021
-* tour.golang.org/methods
 * tour.golang.org/moretypes/1
 * https://yourbasic.org/golang/pointers-explained
+* https://dave.cheney.net/2017/04/26/understand-go-pointers-in-less-than-800-words-or-your-money-back
