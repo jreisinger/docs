@@ -1,4 +1,4 @@
-Go has [pointers](https://dave.cheney.net/2017/04/26/understand-go-pointers-in-less-than-800-words-or-your-money-back). A pointer is a value that points to the memory address of another variable.
+Go has [pointers](https://dave.cheney.net/2017/04/26/understand-go-pointers-in-less-than-800-words-or-your-money-back) 👈. A pointer is a value that points to the memory address of another variable.
 
 # How do they work
 
