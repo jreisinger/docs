@@ -30,7 +30,7 @@ O(1) - constant scaling
 
 O(log n) - logarithmic scaling
 
-* grows slower as the size of the corpus being searched grows
+* as the input size grows runtime grows but slowly
 * ex. binary search
 
 ![image](https://user-images.githubusercontent.com/1047259/114350687-d1e13200-9b69-11eb-97e0-b0844da2bca7.png)
@@ -43,10 +43,7 @@ O(n) - linear scaling
 O(n^m) - exponential scaling
 
 * as input size grows the system slows down disproportionately
-
-O(n^2) - quadratic scaling
-
-* everybody says exponential when they really mean quadratic :-)
+* O(n^2) - quadratic scaling: everybody says exponential when they really mean quadratic :-)
 * ex. selection sort
 
 # Resources
