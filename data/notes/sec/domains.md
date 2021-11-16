@@ -23,6 +23,7 @@ Continuos security
 * many security teams focus on compliance with a security standard, number of security incidents and vulnerabilities on production systems
 * both are valid but different goals; this creates conflict and hurts the organization
 * solution => "continuos security" (or SecDevOps): allign goals by switching focus of security team from defending only the infrastructure to protecting the entire organization by improving it continuously
+* techniques from traditional security, such as vulnerability scanning, intrusion detection, and log monitoring, should be reused and adapted to fit in the DevOps pipeline
 
 ![image](https://user-images.githubusercontent.com/1047259/141968423-133c5f24-6c1e-4eaf-89e0-167fae88c31e.png)
 
