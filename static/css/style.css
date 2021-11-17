@@ -1,3 +1,9 @@
+/* color of the links, code blocks and quotes */
+:root {
+  /* --main-color: green; */
+  --main-color: #007d9c;
+}
+
 /* Top navigation bar */
 .topnav {
     max-width: 960px;
@@ -104,8 +110,8 @@ h2 {font-size:1.2rem; font-weight: 500}
 h3 {font-size:0.9rem; font-weight: 600}
 
 /* Links */
-a:link { text-decoration: none; color: green}
-a:visited { text-decoration: none; color: green}
+a:link { text-decoration: none; color: var(--main-color); }
+a:visited { text-decoration: none; color: var(--main-color); }
 a:hover { text-decoration: underline; }
 a:active { text-decoration: underline; }
 
@@ -132,7 +138,7 @@ pre, code {
 pre {
    background: #f7f7f7;
    border: 1px solid #ddd;
-   border-left: 2px solid green;
+   border-left: 2px solid var(--main-color);
    color: #666;
    page-break-inside: avoid;
    font-family: monospace;
@@ -148,7 +154,7 @@ pre {
 blockquote {
   background: #f7f7f7;
   border: 1px solid #ddd;
-  border-left: 2px solid green;
+  border-left: 2px solid var(--main-color);
   color: #666;
   margin: 1.5em 0px;
   padding: 0.5em 10px;
