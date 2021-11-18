@@ -8,7 +8,7 @@ TLS
 HTTP(S) runs over TCP
 
 1. Create TCP connection
-2. TLS - encrypt TCP connection (skip if HTTP)
+2. TLS - encrypt HTTP connection (skip if not HTTPS)
 3. HTTP connection
 
 (see [details](https://speakerdeck.com/lizrice/a-go-programmers-guide-to-secure-connections?slide=10))
@@ -25,7 +25,7 @@ X.509 Certificates
 * it proves the **identity** of the public key holder
 * it contains these fields:
   * subject name
-  * subject's public key
+  * subject public key
   * issuer (CA) name
   * validity
 * certs should use Subject Alternative Names (SANs), Common name (CN) was deprecated in 2000
@@ -54,9 +54,9 @@ dUHzICxBVC1lnHyYGjDuAMhe396lYAn8bCld1/L4NMGBCQ==
 ```
 
 * unfortunately some of these file extensions ^ are also used for other data such as private keys
-* there is not consitency in file naming, you can see:
-  * .key, .crt - information type (private key, certificate)
-  * .pem - file format (PEM)
+* there is not consistency in file naming, you can see:
+  * .key, .crt - extension denotes information type (private key, certificate)
+  * .pem - extension denotes file format (PEM)
 
 CLI tools
 
