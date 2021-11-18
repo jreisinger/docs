@@ -65,7 +65,7 @@ spec:
 
 ## TLS
 
-First we need a secret with TLS key and certificate for a given host (my-service.example.com in this case):
+First we need a secret with private key and certificate for a given host (my-service.example.com in this case):
 
 ```
 # tls-secret.yaml
