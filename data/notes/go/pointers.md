@@ -204,6 +204,6 @@ Non-pointer types:
 
 # Sources and more
 
-* tour.golang.org/moretypes/1
+* https://tour.golang.org/moretypes/1
 * https://yourbasic.org/golang/pointers-explained
 * https://dave.cheney.net/2017/04/26/understand-go-pointers-in-less-than-800-words-or-your-money-back
