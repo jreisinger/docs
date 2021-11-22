@@ -1,4 +1,4 @@
- The most important property of a program is whether is accomplishes the intention of its **user**. -- C.A.R. Hoare (1969)
+The most important property of a program is whether is accomplishes the intention of its **user**. -- C.A.R. Hoare (1969)
 
 **Simple**, straightforward code is just plain easier to work with and less likely to have problems. As programs get bigger and more complicated, it's even more important to have **clean**, simple code. -- Brian Kernighan
 
@@ -22,12 +22,11 @@ Little copying is better than little dependency. Cost of DRY in Go is bigger tha
 
 # Perl
 
-* TIMTOWTDI
-    * don't rush to code up the first idea that pops into your head
-    * after you have an algorithm strive for clarity, simplicity, efficiency, scalability and elegance (poems of logic)
+* don't rush to code up the first idea that pops into your head
+* after you have an algorithm strive for clarity, simplicity, efficiency, scalability and elegance (poems of logic)
 * ask yourself how would you solve the problem - the straightforward solution is often (not always) simple, clear, and efficient enough
 * generality is good - consideration of a more general problem can lead to a better solution for some special case (max of "n" numbers instead of "three")
-    * if the general program is as easy to write as the special one go for the general one as it is more likely to be useful in other situations (maximum utility from the effort)
+* if the general program is as easy to write as the special one go for the general one as it is more likely to be useful in other situations (maximum utility from the effort)
 * don't reinvent the wheel - a lot of very smart programmers have designed countless good algorithms and programs
-    * good for learning though
+* it's good for learning though
 * Just because you CAN do something a particular way doesn't mean that you SHOULD do it that way. Perl is designed to give you several ways to do anything, so consider picking the most readable one. See [perlstyle](http://perldoc.perl.org/perlstyle.html) for more.
