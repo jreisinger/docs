@@ -8,7 +8,7 @@ Keyboard shortcuts
 * find files: `Ctrl + P`
 * grep files (search): `Ctrl + Shift + F`
 
-My setup of settings file [location](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations):
+My setup of settings file [location](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations) (replace `VSCodium` with `Code` for VSCode):
 
 * MacOS: `ln -sf $HOME/data/vscodium/settings.json $HOME/Library/Application\ Support/VSCodium/User/settings.json`
 * Linux: `$HOME/.config/VSCodium/User/settings.json`
