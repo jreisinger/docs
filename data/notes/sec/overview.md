@@ -1,6 +1,11 @@
 > M$ Cloud Adoption Framework - [Secure](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/secure/)
 
+The ultimate objectives for a security organization don't change with the adaption of cloud services. How those objectives are achieved will change. Security teams must still focus on reducing business risk from attacks and work to get confidentiality, integrity, and availability security controls built into all information systems and data.
+
 <img src="https://user-images.githubusercontent.com/1047259/143010672-671723ff-85ee-4b9a-a6e1-e45ad50eef97.png" style="max-width:100%;height:auto;"> 
+
+* static security processes can't keep up with the pace of change in cloud platforms, the threat environment and the evolution of security technologies
+* security must shift to a continuosly evolving approach (continuos security) to match this pace
 
 > Practical Cloud Security (2019)
 
