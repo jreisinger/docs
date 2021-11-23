@@ -19,7 +19,7 @@ Detecting, responding to, and recovering from security incidents
 
 Continuos security
 
-* DevOps (and [Agile](http://agilemanifesto.org/) and [Deming](https://deming.org/explore/fourteen-points)) focuse is on shipping better products to *customers* faster
+* DevOps (and [Agile](http://agilemanifesto.org/) and [Deming](https://deming.org/explore/fourteen-points)) focuses on shipping better products to *customers* faster
 * many security teams focus on compliance with a security standard, number of security incidents and vulnerabilities on production systems
 * both are valid but different goals; this creates conflict and hurts the organization
 * solution => "continuos security" (or SecDevOps): allign goals by switching focus of security team from defending only the infrastructure to protecting the entire organization by improving it continuously
