@@ -1,3 +1,5 @@
+2021-11, PN (coming to an end :-)
+
 > M$ Cloud Adoption Framework - [Secure](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/secure/)
 
 The ultimate objectives for a security organization don't change with the adaption of cloud services. How those objectives are achieved will change. Security teams must still focus on reducing business risk from attacks and work to get confidentiality, integrity, and availability security controls built into all information systems and data.
