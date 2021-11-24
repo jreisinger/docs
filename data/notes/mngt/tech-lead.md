@@ -54,3 +54,6 @@ The more you can keep your hands warm, the more effective you will be as a coach
 
 I firmly believe every line manager should either be in the on call rotation or pinch hit liberally and regularly, but that’s a different post.
 
+# I became a tech lead in August 2021 :-)
+
+<img width="925" alt="Screenshot 2021-11-24 at 20 34 23" src="https://user-images.githubusercontent.com/1047259/143302740-4df47425-22d8-4fa6-a5a6-759eeaf3188d.png">
