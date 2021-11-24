@@ -56,4 +56,4 @@ I firmly believe every line manager should either be in the on call rotation or 
 
 # I became a tech lead in August 2021 :-)
 
-<img width="925" alt="Screenshot 2021-11-24 at 20 34 23" src="https://user-images.githubusercontent.com/1047259/143302740-4df47425-22d8-4fa6-a5a6-759eeaf3188d.png">
+<img style="max-width:100%;height:auto;" alt="Screenshot 2021-11-24 at 20 34 23" src="https://user-images.githubusercontent.com/1047259/143302740-4df47425-22d8-4fa6-a5a6-759eeaf3188d.png">
