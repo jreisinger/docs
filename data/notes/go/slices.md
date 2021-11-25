@@ -143,5 +143,6 @@ a = append(a, b...) // equivalent to append(a, b[0], b[1], b[2])
 
 # Source
 
-* https://blog.golang.org/slices-intro
-* https://tour.golang.org/moretypes/7
+* https://go.dev/tour/moretypes/7
+* https://go.dev/blog/slices-intro
+* https://go.dev/blog/slices
