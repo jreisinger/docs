@@ -1,4 +1,36 @@
-2021-11, PN (coming to an end :-)
+> My view of security areas to cover (2021-11 PN, coming to an end :-)
+
+(This is not how to do security but what to cover)
+
+Risk assessment and threat modelling
+
+* what are most valuable assets, most probable attacks and attackers (threat actors)
+* estimate where are the major risks (impact x probability)
+* public cloud brings shared responsibility - identify your responsibilities
+
+Identity and access management (IAM)
+
+* life cycle of identity and access
+* authentication and authorization
+
+Vulnerability management
+
+* Network vulnerability scanning
+* Application scanning (DAST)
+* Code scanning (SAST)
+* Image/container scanning
+
+Network security
+
+* encryption in motion (PKI, TLS)
+* WAF
+* AntiDDoS
+* IDS/IPS
+
+Detecting (monitoring) and responding to security incidents (attacks)
+
+* logs, metrics, SIEM
+* SIRP, SOC
 
 > M$ Cloud Adoption Framework - [Secure](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/secure/)
 
