@@ -13,16 +13,16 @@ HTTP(S) runs over TCP
 
 (see [details](https://speakerdeck.com/lizrice/a-go-programmers-guide-to-secure-connections?slide=10))
 
-Keys
+Asymmetric cryptography keys
 
-* public key - used to **encrypt** a message or verify a signature
-* private (secret) key - used to decrypt or sign a message
+* public - used to encrypt a message or verify a signature
+* private (secret) - used to decrypt or sign a message
 
 X.509 Certificates
 
 * basically a public key signed with private key of a trusted third party called certificate authority (CA)
 * can be verified using the public key of the CA
-* it proves the **identity** of the public key holder
+* it proves the identity of the public key holder
 * it contains these fields:
   * subject name
   * subject public key
