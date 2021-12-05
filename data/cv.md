@@ -1,6 +1,6 @@
-I have been computering for companies of varied sizes and types for 10+ years. My experience is mainly in systems administration (DevOps, SRE), IT security and programming. I try to stay on top of new technologies and practices and use them when/where appropriate. I am not bad at managing smaller projects and teams.
+I have been computering for companies of varied sizes and types. My experience is in systems administration (DevOps, SRE), IT security and related scripting/programming. I try to stay on top of new technologies and practices and use them when/where appropriate. I am not bad at managing smaller projects and teams.
 
-# Selected employment history
+# Employment history
 
 Sr. Security Engineer
 at Deutsche Telekom [Pan-Net](https://pan-net.cloud/) [Bratislava, 2017 - present]
@@ -56,40 +56,29 @@ at Hewlett-Packard Slovakia [Bratislava, 2004-2004]
 
 * Troubleshooted and fixed issues on Unix servers
 
-# Technologies used professionally
-
-I especially enjoy those in bold.
+# Technologies
 
 Operating systems
 
-* **Linux**/UNIX: Ubuntu, Debian, RHEL, CentOS, Solaris, OpenBSD
-* virtualization/cointainers: **Kubernetes**, Docker, OpenStack, Vagrant, VirtualBox, VMware, KVM, Xen
+* Kubernetes
+* Linux (Ubuntu/Debian)
 
-Languages
+Artificial languages
 
-* artificial: **Go** (**Golang**), Python, [Perl](https://www.perl.org/), Bash
-* natural: English, Slovak, Italian, Czech
+* Go (Golang)
+* Bash
+* Perl/Python
+
+Natural languages
+
+* English
+* Slovak/Czech
+* Italian
 
 Networking
 
-* general: Linux networking, iptables, Cisco switches, GSM
-* daemons: NGINX, sshd, Apache, Bind, vsftp, OpenLDAP, OpenVPN
-
-Various
-
-* configuration, orchestration: Ansible, OpenStack Heat
-* monitoring: Prometheus, Zabbix, Icinga, Nagios
-* big data and logs: Grafana, Graylog, Splunk, syslog-ng
-* databases: PostgreSQL, MySQL, Oracle
-* HA: HAProxy, keepalived, Pacemaker, DRBD
-* hardware: HP, Supermicro, Ironport, EMC, Netapp, Cisco
-* backups: rsync, ZFS, Bacula, rsnapshot
-* editors: Visual Studio Code, Atom, Vi(m), Notepad++
-* documentation: Hugo, Confluence, MediaWiki, MoinMoin
-* tickets, bugs and projects: GitLab, GitHub, Jira, RT, Redmine, Remedy
-* security: nmap, tcpdump, Wireshark, OSSEC, Metasploit
-* VCS, CI/CD: git, TravisCI
-* chatops: Slack
+* general concepts
+* HTTP, Nginx
 
 # Certificates and formal education
 
