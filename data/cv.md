@@ -94,10 +94,10 @@ CCNA: Cisco Certified Network Associate [2006 - 2009]
 
 # Formal education
 
-Cisco Networking Academy - four semesters, computer systems networking and telecommunications [2005 - 2006]
+Cisco Networking Academy - four semesters, networking and telecommunications [2005 - 2006]
 
 Università degli Studi di Firenze - one semester, economics and IT [2003 - 2003]
 
 University of Economics [1998 - 2004]
 
-Bilingual (Slovak - Italian) highschool [1993 - 1998]
+Bilingual (Slovak - Italian) high school [1993 - 1998]
