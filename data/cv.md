@@ -80,7 +80,7 @@ Networking
 * general concepts
 * HTTP, Nginx
 
-# Certificates and formal education
+# Certificates
 
 [CKAD](https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/e99ffcde-a0bf-4318-a42e-8d321eb86f34-jozef-reisinger-certified-kubernetes-application-developer-ckad-certificate.pdf): Certified Kubernetes Application Developer [2021 - 2024]
 
@@ -92,10 +92,12 @@ CISSP: Certified Information Systems Security Professional [2011 - 2014]
 
 CCNA: Cisco Certified Network Associate [2006 - 2009]
 
-Cisco Networking Academy - Four semester study in computer systems networking and telecommunications [2005 - 2006]
+# Formal education
 
-Università degli Studi di Firenze [2003 - 2003]
+Cisco Networking Academy - four semesters, computer systems networking and telecommunications [2005 - 2006]
+
+Università degli Studi di Firenze - one semester, economics and IT [2003 - 2003]
 
 University of Economics [1998 - 2004]
 
-Bilingual high-school, Slovak - Italian [1993 - 1998]
+Bilingual (Slovak - Italian) highschool [1993 - 1998]
