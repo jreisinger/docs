@@ -14,14 +14,14 @@ TIP: If you're writing a recursive function involving an array, the base case is
 ```python
 # Sum a list of numbers using a loop.
 def sumLoop(l):
-    total = 0
+    sum = 0
     for e in l:
-        total += e
-    return total
+        sum += e
+    return sum
 
-# Sum a list of numbers using Divide & Conquer technique.
-def sumDC(l):
+# Sum a list of numbers using D&C.
+def sumDaC(l):
     if l == []:
         return 0
-    return l[0] + sumDC(l[1:])
+    return l[0] + sumDaC(l[1:])
 ```
