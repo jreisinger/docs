@@ -1,4 +1,4 @@
-I have been computering for companies of varied sizes and types. My experience is in systems administration (DevOps, SRE), IT security and related scripting/programming. I try to stay on top of new technologies and practices and use them when/where appropriate. I am not bad at managing smaller projects and teams.
+I've been securing, operating and building computer systems. This includes writing scripts and programs. If you want to put a name on these activities it's systems administration, infrastructure engineering, SRE or DevOps. I've managed smaller projects and teams.
 
 # Employment history
 
