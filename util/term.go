@@ -6,6 +6,7 @@ import (
 	"math/rand"
 	"net/http"
 	"strings"
+	"time"
 )
 
 type term struct {
@@ -44,6 +45,7 @@ func fetchTerms(url string) ([]term, error) {
 
 // RandTerm returns a random term in MarkDown format.
 func RandTerm() ([]byte, error) {
+	rand.Seed(time.Now().UTC().UnixNano())
 	rawurl := "https://raw.githubusercontent.com/jreisinger/terms/main/terms.md"
 	url := "https://github.com/jreisinger/terms/blob/main/terms.md"
 	terms, err := fetchTerms(rawurl)

@@ -9,10 +9,6 @@ import (
 	"time"
 )
 
-func init() {
-	rand.Seed(time.Now().UTC().UnixNano())
-}
-
 type quote struct {
 	what   string
 	author string
@@ -42,6 +38,7 @@ func fetchQuotes(url string) ([]quote, error) {
 
 // RandQuote returns a random quote in MarkDown format.
 func RandQuote() ([]byte, error) {
+	rand.Seed(time.Now().UTC().UnixNano())
 	rawurl := "https://raw.githubusercontent.com/jreisinger/quotes/master/quotes.txt"
 	url := "https://github.com/jreisinger/quotes/blob/master/quotes.txt"
 	quotes, err := fetchQuotes(rawurl)
