@@ -1,4 +1,4 @@
-I've been securing, operating and building computer systems. This includes writing scripts and programs. If you want to put a name on these activities it's systems administration, infrastructure engineering, SRE or DevOps. I've managed smaller projects and teams.
+I've been securing, operating and building computer systems. This includes [writing](https://github.com/jreisinger) scripts and programs and managing smaller projects and teams. To give you some labels it's computer security, systems administration, infrastructure engineering.
 
 # Employment history
 
