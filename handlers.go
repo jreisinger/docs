@@ -98,7 +98,7 @@ func HandleRandom(w http.ResponseWriter, r *http.Request) {
 	body := util.MdToHtml(data)
 
 	p := &util.Page{
-		Title: "random",
+		Title: "quote",
 		Body:  body,
 	}
 
