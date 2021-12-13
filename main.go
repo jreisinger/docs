@@ -30,7 +30,7 @@ func main() {
 
 	http.HandleFunc("/search", HandleSearch)
 
-	http.HandleFunc("/quote", HandleRandom)
+	http.HandleFunc("/randbit", HandleRandom)
 
 	http.HandleFunc("/", HandleRest)
 
