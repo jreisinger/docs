@@ -2,6 +2,11 @@ Some of the (technical) books that I liked. Rougly ordered by most recently read
 
 > Reading furnishes the mind only with materials of knowledge; it is thinking that makes what we read ours. -- John Locke
 
+Security
+
+* Securing DevOps, 2018
+* Practical Cloud Security, 2019
+
 Sysadmin/SRE/DevOps
 
 * Cloud Native Go, 2021
