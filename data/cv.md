@@ -1,4 +1,4 @@
-I've been securing, operating and building computer systems. This includes writing [scripts](https://gist.github.com/jreisinger) and [programs](https://github.com/jreisinger). I've also managed smaller projects and teams. To give you some labels it's computer security, systems administration, infrastructure engineering.
+I've been securing, operating and building computer systems. This includes writing [scripts](https://gist.github.com/jreisinger) and [programs](https://github.com/jreisinger). To label these activities it's computer security, systems administration, infrastructure engineering. I've also managed smaller projects and teams. 
 
 # Employment history
 
