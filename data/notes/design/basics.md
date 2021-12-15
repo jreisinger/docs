@@ -149,7 +149,7 @@ class Player:
         return self.score
 
 class RBallGame:
-    """ RBallGame represents a game in progress.  A game has two players and
+    """ RBallGame represents a game in progress. A game has two players and
         keeps track of which one is currently serving.
     """
     def __init__(self, probA, probB):
@@ -236,7 +236,7 @@ Design iteratively. No one designs a program top to bottom in a linear, systemat
 
 Try out alternatives. Good design involves a lot of trial and error. When you look at someone's code, it's finished work, not the process they went through to get there. "Plan to throw one away." -- Fred Brooks
 
-Keep it simple. Don't design in extra complexity until it is *really* needed.
+Keep it simple. Don't design in extra complexity until it is *really* needed. "No idea went into Go until it had been simplified to its essence and then had clear benefits that justified the complexity being added." -- Russ Cox
 
 # Resources
 
