@@ -232,7 +232,7 @@ main()
 
 # Design tips
 
-Design iteratively. No one designs a program top to bottom in a linear, systematic fashion.
+Design iteratively. No one designs a program top to bottom in a linear, systematic fashion. "It is not possible to create a perfect program the first time. The insight necessary to find the right solution comes only with a combination of thought and experience; pure introspection will not produce a good system, nor will pure hacking. Reactions from users count heavily here; a **cycle** of prototyping, experiment, user feedback, and further refinement is most effective." -- The Practice of Programming
 
 Try out alternatives. Good design involves a lot of trial and error. When you look at someone's code, it's finished work, not the process they went through to get there. "Plan to throw one away." -- Fred Brooks
 
