@@ -17,7 +17,7 @@ Design programs as layers of API:
 2. Low layer - builds on primitive layer, may be exported, unit tested (might replace primitive layer tests)
 3. High layer - for ease of use, exported, unit/integration tested 
 
-When am I done:
+When am I done?
 
 * 70 - 80% test coverage
 * ask what can change, from technical and business perspective, and refactor the code to be able to handle that change
