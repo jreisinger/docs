@@ -1,16 +1,14 @@
-The most important property of a program is whether is accomplishes the intention of its **user**. -- C.A.R. Hoare (1969)
+The most important property of a program is whether is accomplishes the intention of its user. -- C.A.R. Hoare (1969)
 
-**Simple**, straightforward code is just plain easier to work with and less likely to have problems. As programs get bigger and more complicated, it's even more important to have **clean**, simple code. -- Brian Kernighan
+So all else being equal, scientists prefer hypotheses which are simple, uniform, common-sensical and aesthetically pleasing. ... Nevertheless, ultimately the criterion of elegance is subordinate to observations. It doesn't matter how beautiful or simple your theory is, if it gets the facts wrong. -- [Aron Wall](http://www.wall.org/~aron/blog/pillar-of-science-ii-elegent-hypotheses/)
 
-You need a certain amount of **complexity** to do any particular job. ... In short, simplicity is often the enemy of success. -- [Larry Wall](https://www.oreilly.com/openbook/opensources/book/larry.html)
+You need a certain amount of complexity to do any particular job. ... In short, simplicity is often the enemy of success. -- [Larry Wall](https://www.oreilly.com/openbook/opensources/book/larry.html) (1999)
 
-So all else being equal, scientists prefer hypotheses which are simple, uniform, common-sensical and aesthetically pleasing. ... Nevertheless, ultimately the criterion of elegance is subordinate to observations.  It doesn't matter how beautiful or simple your theory is, if it gets the facts wrong. -- [Aron Wall](http://www.wall.org/~aron/blog/pillar-of-science-ii-elegent-hypotheses/)
-
-It is not possible to create a perfect program the first time. The insight necessary to find the right solution comes only with a combination of thought and experience; pure introspection will not produce a good system, nor will pure hacking. Reactions from users count heavily here; a **cycle** of prototyping, experiment, user feedback, and further refinement is most effective. -- The Practice of Programming
-
-**Data** dominates. If you've chosen the right data structures and organized things well, the algorithms will almost always be self-evident. Data structures, not algorithms, are central to programming. -- Rob Pike
+Code should be clear and simple—straightforward logic, natural expression, conventional language use, meaningful names, neat formatting, helpful comments—and it should avoid clever tricks and unusual constructions. -- Kernighan, Pike (The Practice of Programming, 1999)
 
 # Go
+
+Data dominates. If you've chosen the right data structures and organized things well, the algorithms will almost always be self-evident. Data structures, not algorithms, are central to programming. -- Rob Pike
 
 Don't do object oriented design but data oriented design.
 
