@@ -69,11 +69,11 @@ Think about what you need to protect (assets: VMs, containers, DBs) and who is m
 
 Understand what areas you need to secure - this depends on the cloud model you are using and whether you are a consumer or provider:
 
-![image](https://user-images.githubusercontent.com/1047259/138699080-24091008-c78f-48c1-bcc9-e9ac6afd0f8d.png)
+<img src="https://user-images.githubusercontent.com/1047259/138699080-24091008-c78f-48c1-bcc9-e9ac6afd0f8d.png" style="max-width:100%;height:auto;"> 
 
 Figure out what needs to talk to what in your application. You should first secure places where line crosses a trust boundary:
 
-![image](https://user-images.githubusercontent.com/1047259/138698724-4a6ecae8-fe54-4d45-b7a8-3b35dfab50e1.png)
+<img src="https://user-images.githubusercontent.com/1047259/138698724-4a6ecae8-fe54-4d45-b7a8-3b35dfab50e1.png" style="max-width:100%;height:auto;"> 
 
 Know your risks (have at least a spreadsheet) and how you approach them:
 
