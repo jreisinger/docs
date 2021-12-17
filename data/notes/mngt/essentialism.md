@@ -1,5 +1,16 @@
 <img src="https://user-images.githubusercontent.com/1047259/145565704-37a721ac-9ec2-4f45-92f2-991d33a4f67a.jpg" style="max-width:100%;height:auto;"> 
 
+Core ideas behind essentialism:
+
+1) We can choose how to spend our energy and time.
+
+2) Almost everything is noise, and a very few things are exceptionally valuable.
+That's why we have to take time to figure out what is most important.
+
+3) We can't have it all or do it all. We need to accept the reality of
+trade-offs and stop asking "How can I make it all work?". Start asking the more
+honest question "Which problem do I want to solve?".
+
 Consider you want to solve the problem of a cluttered wardrobe. The steps:
 
 1) Explore and evaluate
