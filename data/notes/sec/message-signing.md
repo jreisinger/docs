@@ -1,5 +1,3 @@
-[Source](https://web.stanford.edu/class/cs253/).
-
 Three algorithms/functions for message signing
 
 * `G() -> (pk, sk)` -- generator returns public key (`pk`) and secret or private key (`sk`)
@@ -13,3 +11,5 @@ Correctness property
 Security property
 
 * `V(pk, x, t) = accept` -- should almost never be true when `x` and `t` are chosen by an attacker
+
+Source: https://web.stanford.edu/class/cs253/
