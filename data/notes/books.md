@@ -40,6 +40,7 @@ Programming
 
 Management
 
+* essentialism, 2014
 * The Manager's Path, 2017
 * The Unicorn Project, 2019
 * The Phoenix Project, 2013
