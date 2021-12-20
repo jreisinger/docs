@@ -13,7 +13,7 @@ honest question "Which problem do I want to solve?".
 
 Consider you want to solve the problem of a cluttered wardrobe. The steps:
 
-1) Explore and evaluate
+1) Explore - discern the vital few from the trivial many
 
 Instead of asking, "Is there a chance I will wear this someday?" you ask more
 disciplined questions: "Do I love this?" and "Do I look great in it?" If the
@@ -21,6 +21,21 @@ answer is no, it's candidate for elimination.
 
 Equivalent question for your personal or professional life: "Will this activity
 or effort make the highest possible contribution towards my goal?"
+
+Essentialists will commit and "go big" on only few vital ideas or activities,
+they explore more options at first to ensure they pick the right one later. For
+this we need:
+
+* space to think
+* time to look and listen
+* permission to play
+* wisdom to sleep
+* discipline to apply highly selective criteria to our choices
+
+Often these things are at best considered nice to have, at worst they are
+derided as evidence of weakness and wastefulness. “Of course, I’d love to be
+able to set aside time on the calendar simply to think, but it’s a luxury we
+can’t afford right now.”
 
 2) Eliminate
 
