@@ -37,7 +37,7 @@ fmt.Println(s[0]) // panic: runtime error: index out of range [0] with length 0
 You initiliaze a slice by using `make`:
 
 ```
-s = make([]byte, 5) // s == []byte{0, 0, 0, 0, 0}
+s = make([]byte, 3) // s == []byte{0, 0, 0}
 fmt.Println(s[0])   // 0
 ```
 
