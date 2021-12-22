@@ -16,6 +16,7 @@ func main() {
 	if rp != "" {
 		repoPath = rp
 	}
+
 	// serve static files
 	// (https://www.alexedwards.net/blog/serving-static-sites-with-go)
 	//
@@ -27,6 +28,10 @@ func main() {
 	http.HandleFunc("/favicon.ico", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, repoPath+"/static/favicon.ico")
 	})
+	//
+	// pics
+	pics := http.FileServer(http.Dir(repoPath + "/data/pics"))
+	http.Handle("/pics/", http.StripPrefix("/pics/", pics))
 
 	http.HandleFunc("/search", HandleSearch)
 	http.HandleFunc("/", HandleRest)
