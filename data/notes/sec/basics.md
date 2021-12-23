@@ -2,8 +2,8 @@
 
 Security governance
 
-* what are most valuable assets (data and compute resources identification and classification)
-* what are most probable attacks and attackers (threat actors)
+* what are your (most valuable) assets => data and compute resources identification and classification ([asset management](https://danielmiessler.com/blog/continuous-asset-management-security/))
+* what are most probable attacks and attackers (threat actors) targeting those assets
 * estimate where are the major risks - impact x probability (risk assessment)
 * public cloud brings shared responsibility - identify your responsibilities
 * educate other engineers - they should know the security basics
