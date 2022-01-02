@@ -50,3 +50,23 @@ Summa Theologica mirrors the structural outline of reality:
 
 <img src="https://user-images.githubusercontent.com/1047259/147875253-1f32ecf9-3438-479b-8f77-f7a6924ab05a.png" style="max-width:100%;height:auto">
 
+The "Article" is the basic thought-unit and it has five structural parts:
+
+1. A question in a yes or no format.
+2. Objections (usually three) to the answer he will give.
+3. His own position ("On the contrary ...").
+4. The body of the Article ("I answer that ...").
+5. Answer to each objection.
+
+If our question is vaguely or confusedly formulated, our answer will be, too. If
+we do not seriously consider opposing views, we spar without a partner and paw
+the air. If we do not do our homework, we only skim the shallows of our selves.
+If we do not prove our thesis, we are dogmatic, not critical. And if we do not
+understand and refute our opponents, we are left with nagging uncertainty that
+we have missed something and not really ended the contest.
+
+Like Socratic dialogue with Plato, this medieval method of philosophizing was
+very fruitful in its own day - and then got neglected, especially in our day.
+That is one of the unsolved mysteries of Western thought. Perhaps what stands in
+the way is our craze [sialenstvo] for originality and our proud refusal to be
+anyone's apprentice.
