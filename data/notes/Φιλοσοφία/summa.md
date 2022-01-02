@@ -48,4 +48,5 @@ story to our edifice of thought.
 
 Summa Theologica mirrors the structural outline of reality:
 
+<img src="https://user-images.githubusercontent.com/1047259/147875253-1f32ecf9-3438-479b-8f77-f7a6924ab05a.png" style="max-width:100%;height:auto">
 
