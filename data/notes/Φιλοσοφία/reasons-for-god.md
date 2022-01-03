@@ -21,6 +21,8 @@ Bart Ehrman: "Serious historians of the early Christian movementâ€”all of themâ€
 
 ## Historicity of Jesus
 
+If God is unreal, Jesus was history's biggest fool or fake. -- Peter Kreeft: A Shorter Summa (1993)
+
 "Virtually all scholars of antiquity agree that Jesus existed." -- [Wikipedia](https://en.wikipedia.org/wiki/Historicity_of_Jesus)
 
 Robert M. Price (a Christian atheist) who denies the existence of Jesus agrees that this perspective runs against the views of the majority of scholars. -- [Wikipedia](https://en.wikipedia.org/wiki/Historicity_of_Jesus)
@@ -87,14 +89,17 @@ Reasonable atheists
 * [Richard P. Feynman](http://www.wall.org/~aron/blog/what-about-science/) - physicist
 * Stephen Hawking - theoretical physicist, cosmologist (Cambridge)
 
-# Faith
+# Faith and providence
 
-[In the sense](https://youtu.be/m_4PSgFjtvI) that it's something that comes at the far edge of reason. Like when you know a person for a long time and then he tells you something you can't verify. You have to decide whether you believe him or not.
+Faith [in the sense](https://youtu.be/m_4PSgFjtvI) that it's something that comes at the far edge of reason. Like when you know a person for a long time and then he tells you something you can't verify. You have to decide whether you believe him or not.
+
+Providence perceivable in history (e.g. Scriptures) and in one's own life.
 
 > Why should they be impartial, what is being impartial, when the whole world is at war about whether one thing is a devouring superstition or a divine hope? I do not pretend to be impartial in the sense that the final act of faith fixes a man's mind because it satisfies his mind. But I do profess to be a great deal more impartial than they are; in the sense that I can tell the story fairly, with some sort of imaginative justice to all sides; and they cannot. -- Chesterton: [The Everlasting Man](http://gutenberg.net.au/ebooks01/0100311.txt)
 
 # More
 
+* Peter Kreeft: A Shorter Summa (extremely brief summary of 24 arguments for God's existence)
 * http://www.wall.org/~aron/blog/will-the-real-god-god-please-stand-up/
 * Can religion be based on [evidence](http://www.wall.org/~aron/evidence.htm)?
 * https://www.reasonablefaith.org/media/debates/is-faith-in-god-reasonable/
