@@ -24,6 +24,13 @@ log {
 sudo ./caddy run
 ```
 
+# Parsing logs
+
+```
+# get remote IP addresses
+cat access.log | perl -wlne '/(\{.*})/ && print $1' | jq -r '.request.remote_addr' | cut -d':' -f1 | sort | uniq
+```
+
 # More
 
 * https://caddyserver.com/docs/
