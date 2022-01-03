@@ -1,6 +1,6 @@
 2022-01-02
 
-These are the notes about the book A Shorter Summa by Peter Kreeft (1993).
+These are notes from the book A Shorter Summa by Peter Kreeft (1993).
 
 # Preface
 
