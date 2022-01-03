@@ -16,6 +16,7 @@ basicauth /* {
         Bob JDJhJDE0JENVblJPOVljYml4a3phTHNVelpmYk90MVVEdXV2aVFjYkl2ODJENDFEaG1KU29TRGNCUHp5
 }
 log {
+        format json
         output file /home/ubuntu/access.log
 }
 ```
@@ -28,8 +29,10 @@ sudo ./caddy run
 
 ```
 # get remote IP addresses
-cat access.log | perl -wlne '/(\{.*})/ && print $1' | jq -r '.request.remote_addr' | cut -d':' -f1 | sort | uniq
+cat access.log | jq -r '.request.remote_addr' | cut -d':' -f1 | sort | uniq
 ```
+
+Or use recent version of [goaccess](https://goaccess.io/).
 
 # More
 
