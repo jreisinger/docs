@@ -6,9 +6,8 @@ Prerequisites
 * External access to ports 80 and 443
 * caddy [binary](https://github.com/caddyserver/caddy/releases) (see Assets)
 
-Caddyfile
-
 ```
+# Caddyfile
 myserver.example.com
 file_server browse
 root * /data/public
