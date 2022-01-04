@@ -53,8 +53,8 @@ CIA triad - security goals
 
 Least privilege
 
-* concerns people and automated tools 
-* should be able to access only what they need to do their job, and no more
+* people and programs (and they modules) should be able to access only what they need to do their job, and no more
+* this limits the blast radius when system gets compromised 
 * deny by default
 
 Defense in depth
@@ -66,7 +66,13 @@ Risk management
 
 * risk is something bad that could happen
 * its level is based on its likelihood to happen and its impact
- 
+
+Attack surface
+
+* all possible ways a system can be attacked
+* higher complexity means bigger attack surface
+* bigger attack surface means higher probability of getting in
+
 # Approach
 
 The ultimate security objectives don't change with the adaption of a new paradigm (e.g. cloud services or DevOps). Security teams must still focus on reducing business risk from attacks and work to get confidentiality, integrity, and availability (C.I.A.) security controls built into information systems and data. How those objectives are achieved will change.
