@@ -1,8 +1,8 @@
 It's important to identify a breach ASAP. According to some studies the mean time is around 200 days.
 
 * log or event - record of specific thing that happened (e.g. log about an HTTP request)
-* alert - event where the system decides it's worth notifying someone
 * metric - time based number giving info about something (e.g. number of HTTP requests per second)
+* alert - event or metric where the system decides it's worth notifying someone
 
 Logs are more difficult/costly to store and process.
 
@@ -20,14 +20,14 @@ Logs from defensive tooling (WAFs, Anti-DDoS, FWs, IDS/IPS, Antivirus, Honeypots
 Services, OSs, middleware
 
 * CPU usage metrics: increase -> ransomware encryption or cryptomining
-* Network logs/metrics: denied traffic when source is internal or traffic spike -> DoS attack or attacker stealing data
+* Network logs/metrics: traffic spike -> DoS attack or attacker stealing data
 * Storage I/O metrics: increase -> ransomware, DoS, attacker stealing data
 * DB, message queue metrics: increase -> attacker stealing data or sends messages to other components
 
 Secret server
 
 * you should log all access to secrets
-* unusual activity: authn and authz failures, high secrets retrieval, use of amministrative credentials
+* unusual activity: authn and authz failures, high secrets retrieval, use of administrative credentials
 
 Honeypots
 
@@ -50,7 +50,7 @@ Alerting is where the art lies in log analysis. You need a balance between too m
 
 There are some alerts that you should always follow up; e.g. multiple login failures for privileged users, malware detected. When logs stop flowing is a security issue too!
 
-Automated responses have potential to disrupt your business. Also can be leveraged by attackkers - an easy DoS attack using a simple port scanner or a few failed logins.
+Automated responses have potential to disrupt your business. Also can be leveraged by attackers - an easy DoS attack using a simple port scanner or a few failed logins.
 
 Rotate different individuals in and out. You need some way to ensure that an alert is acknowledged within a certain amount of time or escalated to someone else to handle.
 
