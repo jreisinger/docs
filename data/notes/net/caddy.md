@@ -6,6 +6,8 @@ Prerequisites
 * External access to ports 80 and 443
 * caddy [binary](https://github.com/caddyserver/caddy/releases) (see Assets)
 
+Configuration
+
 ```
 # Caddyfile
 myserver.example.com
@@ -21,11 +23,13 @@ log {
 }
 ```
 
+Running
+
 ```
 sudo ./caddy run
 ```
 
-# Parsing logs
+Parsing logs
 
 ```
 # get remote IP addresses
