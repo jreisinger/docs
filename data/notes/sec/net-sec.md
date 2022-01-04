@@ -53,7 +53,7 @@ WAF and RASP
 
 Anti-DDoS
 
-* too make fake requests or too much useless traffic deny service for legitimate users
+* too many fake requests or too much useless traffic deny service for legitimate users
 * consider if anyone is going to care to knock you off the Internet and how big a problem is it for you if they do
 
 IDS/IPS
