@@ -1,3 +1,5 @@
+Simple to setup and run, nice logging (JSON), automatic TLS certificate management!
+
 # Sharing files
 
 Prerequisites
