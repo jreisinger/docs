@@ -63,7 +63,7 @@ Risk management
 
 The ultimate security objectives don't change with the adaption of a new paradigm (e.g. cloud services or DevOps). Security teams must still focus on reducing business risk from attacks and work to get confidentiality, integrity, and availability (C.I.A.) security controls built into information systems and data. How those objectives are achieved will change.
 
-## Steps
+## Basic steps
 
 Think about what you need to protect (assets: VMs, containers, DBs) and who is most likely to cause problems (threat actors: criminals, hacktivists, script kiddies, inside attackers, state actors).
 
