@@ -1,5 +1,7 @@
 There's no secure system. There are just more or less secure systems.
 
+Security is elusive and hard to measure.
+
 Security is a neverending process.
 
 Complexity is the enemy of security.
