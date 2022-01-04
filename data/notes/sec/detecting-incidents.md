@@ -58,7 +58,7 @@ In many cases, organizations use a hybrid model where some of the lower-level mo
 
 Sample SIEM alerts:
 
-* “Database traffic is up 200% from the monthly average. Maybe the application is just really popular right now, but is someone systematically stealing our data?”
+* “Database traffic is up 200% from the monthly average. Maybe the application is just really popular right now, or is someone systematically stealing our data?”
 * “We just saw an outbound connection to an IP address that has been used by a known threat actor recently, according to this threat intelligence feed. Is that a compromised system talking to a command-and-control server?”
 * “There were 150 failed login attempts on an account, followed by a success. Is that a successful brute-force attack?”
 * “We saw a single failed login attempt on 300 different accounts, followed by a success on account #301. Is that a successful password spraying attack?”
