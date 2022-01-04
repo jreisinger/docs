@@ -2,6 +2,8 @@ There's no secure system. There are just more or less secure systems.
 
 Security is a neverending process.
 
+Complexity is the enemy of security.
+
 # Areas
 
 Security governance
