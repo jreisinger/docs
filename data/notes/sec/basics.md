@@ -1,3 +1,7 @@
+There's no secure system. There are just more or less secure systems.
+
+Security is a neverending process.
+
 # Areas
 
 Security governance
