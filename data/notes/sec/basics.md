@@ -2,9 +2,48 @@ There's no secure system. There are just more or less secure systems.
 
 Security is elusive and hard to measure.
 
+Complexity is the enemy of security.
+
 Security is a neverending process.
 
-Complexity is the enemy of security.
+You need some level of security.
+
+# CIA triad - security goals
+
+Confidentiality
+
+* seek to prevent unauthorized read access to data
+
+Integrity
+
+* seek to prevent unauthorized write access to data
+* data integrity (modification of data in DB)
+* system integrity (malicious SW opens a "back door")
+ 
+Availability
+
+* ensure that information and service is available when needed
+
+# Principles
+
+These security principles will help you to increase your security.
+
+Least privilege
+
+* people and programs (and their modules) should be able to access only what they need to do their job, and no more
+* this limits the blast radius when system gets compromised 
+* deny by default
+
+Defense in depth
+
+* acknowledgement that almost any security control can fail
+* thus you need multiple layers of overlapping security controls
+
+Limiting attack surface
+
+* attack surface is all possible ways a system can be attacked
+* higher complexity means bigger attack surface
+* bigger attack surface means higher probability of getting in
 
 # Areas
 
@@ -12,7 +51,7 @@ Security governance
 
 * what are your (most valuable) assets => data and compute resources identification and classification ([asset management](https://danielmiessler.com/blog/continuous-asset-management-security/))
 * what are most probable attacks and attackers (threat actors) targeting those assets
-* estimate where are the major risks - impact x probability (risk assessment)
+* estimate where are the major risks (something bad that could happen) - impact x probability (risk assessment)
 * public cloud brings shared responsibility - identify your responsibilities
 * educate other engineers - they should know the security basics
 
@@ -36,42 +75,12 @@ Network security
 * antiDDoS
 * IDS/IPS, honeypots
 
-Detecting (monitoring) and responding to security incidents (attacks)
+Detecting and responding to security incidents
 
+* aka security monitoring
+* security incidents = attacks
 * logs, metrics => SIEM
 * SIRP, SOC
-
-# Concepts
-
-CIA triad - security goals
-
-* Confidentiality - seeks to prevent unauthorized read access to data
-* Integrity - seeks to prevent unauthorized write access to data
-  * data integrity (modification of data in DB)
-  * system integrity (malicious SW to open "back door" to OS) 
-* Availability - ensures that information and service is available when needed
-
-Least privilege
-
-* people and programs (and they modules) should be able to access only what they need to do their job, and no more
-* this limits the blast radius when system gets compromised 
-* deny by default
-
-Defense in depth
-
-* acknowledgement that almost any security control can fail
-* thus you need multiple layers of overlapping security controls
-
-Risk management
-
-* risk is something bad that could happen
-* its level is based on its likelihood to happen and its impact
-
-Attack surface
-
-* all possible ways a system can be attacked
-* higher complexity means bigger attack surface
-* bigger attack surface means higher probability of getting in
 
 # Approach
 
@@ -114,5 +123,6 @@ Know your risks (have at least a spreadsheet) and how you approach them:
 
 * Practical Cloud Security (2019)
 * Securing DevOps (2018)
+* Kubernetes Security (2018)
 * M$ Cloud Adoption Framework - security: https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/secure/
 * Attack tactics and techniques: https://attack.mitre.org/
