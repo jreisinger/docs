@@ -1,8 +1,8 @@
-# net/http
+# `net/http`
 
 * standard library package for implementing HTTP servers (and clients)
 
-## http.Handler interface
+## `Handler` interface
 
 * foundational element of `net/http`
 
@@ -88,7 +88,7 @@ msg := fmt.Sprintf("no such page: %s\n", r.URL)
 http.Error(w, msg, http.StatusNotFound) // 404
 ```
 
-## http.ServeMux struct
+## `ServeMux` struct
 
 * it's convenient to define logic for each URL in a separate function or method
 * related URLs (e.g. `/images/*.png`) might need similar logic
@@ -153,7 +153,7 @@ NOTE: the web server invokes each handler in a new goroutine, so handlers must t
 
 # Reponse handling
 
-## w.WriteHeader (method of ResponseWriter interface)
+## `w.WriteHeader` (method of ResponseWriter interface)
 
 These two handler functions are equivalent:
 
@@ -175,7 +175,7 @@ both generate line of information with protocol and status code (Go doc calls th
 < 
 ```
 
-## http.Error function
+## Errors
 
 ```
 func err1(w http.ResponseWriter, r *http.Request) {
@@ -214,3 +214,4 @@ generates also response body:
 
 * Black Hat Go (2020)
 * The Go Programming Language (2015)
+* https://pkg.go.dev/net/http
