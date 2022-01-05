@@ -151,9 +151,9 @@ func main() {
 
 NOTE: the web server invokes each handler in a new goroutine, so handlers must take precautions such as locking when accessing variables that other goroutines, including other requests to the same handler, may be accessing.
 
-# Reponse handling
+# Response handling
 
-## `w.WriteHeader` (method of ResponseWriter interface)
+## `WriteHeader` method of `ResponseWriter` interface
 
 These two handler functions are equivalent:
 
@@ -175,7 +175,7 @@ both generate line of information with protocol and status code (Go doc calls th
 < 
 ```
 
-## Errors
+## `Error` function
 
 ```
 func err1(w http.ResponseWriter, r *http.Request) {
