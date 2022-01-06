@@ -60,26 +60,23 @@ fmt.Println(x == nil) // false
 fmt.Println(*x)       // 0
 ```
 
-`new` is rarely used because you can take address of a struct literal.
+`new` is rarely used though because you can take address of a struct literal.
 
 ```go
 x := &Foo{}
 ```
 
-You can't use `&` before primitive literals (numbers, booleans and strings) or a constant
-because they don’t have memory addresses; they exist only at compile time.
+You can't use `&` before primitive literals (numbers, booleans and strings) or a constant.
 
 ```go
 type person struct {
     FirstName  string
-    MiddleName *string
-    LastName   string
+    LastName   *string
 }
 
 p := person{
     FirstName:  "Pat",
-    MiddleName: &"Perry", // This line won't compile
-    LastName:   "Peterson",
+    LastName:   &"Peterson",  // This line won't compile
 }
 ```
 
@@ -91,9 +88,8 @@ func stringp(s string) *string {
 }
 
 p := person{
-    FirstName:  "Pat",
-    MiddleName: stringp("Perry"), // This works
-    LastName:   "Peterson",
+    FirstName: "Pat",
+    LastName: stringp("Peterson"), // This works
 }
 ```
 
