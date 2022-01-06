@@ -14,20 +14,20 @@ func main() {
 A variable is a convenient, alphanumeric pseudonym for a memory address. Memory address denotes a piece of storage that can contain a value.
 
 ```go
-var x int32 = 10        // 4 bytes
-var y bool = true       // 1 byte
-pointerX := &x          // address of x
-pointerY := &y
-var pointerZ *string    // pointerZ == nil
+var x int32 = 10  // 4 bytes
+var y bool = true // 1 byte
+px := &x
+py := &y
+var pz *string    // pz == nil
 
 Value    |  0 |  0 |  0 | 10 |  1 |  0 |  0 |  0 |  1 |  0 |  0 |  0 |  5 |  0 |  0 |  0 |  0 |
 ---------|----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
 Address  |  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 |
 ---------|----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
-Variable | x                 | y  | pointerX          | pointerY          | pointerZ          |
+Variable | x                 | y  | px                | py                | pz                |
 ```
 
-* pointers are [really](https://go.dev/play/p/Js27uJKClEg) 8 bytes (not 4 as in the picture)
+* pointers are [really](https://go.dev/play/p/qXEsFl0XO5K) 8 bytes (not 4 as in the picture)
 * the point is they are always the same size no matter what type they point to
 * `nil` is an untyped identifier (in the universe block) that represents a lack of value for pointer types
 
