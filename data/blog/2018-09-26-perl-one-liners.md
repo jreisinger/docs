@@ -110,4 +110,6 @@ The [stat](https://perldoc.perl.org/functions/stat.html) function returns a 13-e
 
 ## More
 
+[perl1line.txt](https://catonmat.net/ftp/perl1line.txt)
+
 For a deeper dive see [Famous Perl One-Liners Explained](http://www.catonmat.net/blog/perl-one-liners-explained-part-one/). If you want a book have a look at [Minimal Perl for UNIX and Linux People](http://www.amazon.com/Minimal-Perl-UNIX-Linux-People/dp/1932394508/ref=sr_1_1?ie=UTF8&qid=1358096838&sr=8-1&keywords=minimal+perl+for+unix).
