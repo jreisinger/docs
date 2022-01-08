@@ -22,5 +22,6 @@ Misconfigured South Korean web servers that list the contents of directories not
 
 # More
 
-* [Google Hacking](http://www.amazon.com/Google-Hacking-Penetration-Testers-Johnny/dp/1597491764) (book)
-* [Untangling The Web](http://www.nsa.gov/public_info/_files/Untangling_the_Web.pdf) (PDF from NSA)
+[Google Hacking](http://www.amazon.com/Google-Hacking-Penetration-Testers-Johnny/dp/1597491764) (book)
+
+[Untangling The Web](http://www.nsa.gov/public_info/_files/Untangling_the_Web.pdf) (PDF from NSA)
