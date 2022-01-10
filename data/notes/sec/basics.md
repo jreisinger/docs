@@ -8,7 +8,12 @@ Security is a neverending process.
 
 You need some level of security.
 
-# CIA triad - security goals
+# CIA triad
+
+Traditional (since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf) - see picture below) security goals.
+
+![image](https://user-images.githubusercontent.com/1047259/148757897-f51c3d58-8f26-46d8-973b-854ae47d84d4.png)
+
 
 Confidentiality
 
