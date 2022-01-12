@@ -1,4 +1,4 @@
-FROM golang:1.16-alpine AS build
+FROM golang:alpine AS build
 
 ARG GOOS=darwin
 ARG GOARCH=amd64
@@ -19,7 +19,7 @@ RUN go build -o /bin/homepage
 
 # Create a single layer image.
 #FROM scratch # -> this doesn't work
-FROM alpine:latest
+FROM alpine:3.15
 WORKDIR /app/homepage
 COPY --from=build /bin/homepage /app/homepage/homepage
 COPY --from=build /go/src/homepage/template /app/homepage/template
