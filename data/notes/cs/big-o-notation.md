@@ -1,4 +1,4 @@
-# Big O notation
+# O-notation
 
 * a mathematical way of describing *scaling* - e.g. growth rate of algorithm's run(ning) time
 * used to classify (compare) systems based on how they respond to changes in input size
