@@ -6,7 +6,7 @@ Should be fully modern. Adding modern components alongside of legacy systems int
 
 Must adapt to business needs => service oriented APIs that are
 
-* isolated, modular and composable (no tight copupling which hinders progress and increases maintenance costs)
+* isolated, modular and composable (no tight coupling which hinders progress and increases maintenance costs)
 * easy to learn and maintain (constant turnover of engineers)
 * easy to deploy
 * scalable (up and down) and efficient
