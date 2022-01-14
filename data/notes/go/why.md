@@ -61,8 +61,8 @@ Supports distroless containers.
 ## Cloud native language
 
 * first class support on all cloud providers
-* designed for conatiners, small footprint, fast tests and builds
-* > 75% of projects in CNCF are written in Go (including Docker and Kubernetes)
+* designed for containers, small footprint, fast tests and builds
+* 75% of projects in CNCF are written in Go (including Docker and Kubernetes)
 * low resource use, instant startup times => ideal for event driven/serverless
 
 You can build performant and secure APIs using just Go standard library (including production ready web server).
