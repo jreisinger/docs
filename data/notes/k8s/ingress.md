@@ -12,7 +12,7 @@ cportal   ClusterIP   10.99.61.122   <none>        8080/TCP   79d
 
 # Ingress
 
-![Typical software Ingress controller configuration](https://user-images.githubusercontent.com/1047259/126613022-2bb69f61-d0d6-4933-bc9e-e636071017f8.png)
+<img src="https://user-images.githubusercontent.com/1047259/126613022-2bb69f61-d0d6-4933-bc9e-e636071017f8.png" style="max-width:100%;height:auto">
 
 * k8s's HTTP-based load balancing and "virtual hosting" system
 * at implementation level Ingress is different from pretty much any other k8s resource object
