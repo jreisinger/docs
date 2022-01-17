@@ -1,8 +1,8 @@
-# `net/http`
+# net/http
 
 * standard library package for implementing HTTP servers (and clients)
 
-## `Handler` interface
+## Handler interface
 
 * foundational element of `net/http`
 
@@ -20,8 +20,6 @@ func ListenAndServe(address string, h Handler) error
 
 * function that runs forever until it fails (always with a non-nil error)
 * requires an instance of the `Handler` interface to which all requests should be dispatched
-
-Super simple e-commerce site:
 
 ```
 // Shop - a super simple e-shop showing price of shoes and socks
@@ -88,7 +86,7 @@ msg := fmt.Sprintf("no such page: %s\n", r.URL)
 http.Error(w, msg, http.StatusNotFound) // 404
 ```
 
-## `ServeMux` struct
+## ServeMux struct
 
 * it's convenient to define logic for each URL in a separate function or method
 * related URLs (e.g. `/images/*.png`) might need similar logic
@@ -153,7 +151,7 @@ NOTE: the web server invokes each handler in a new goroutine, so handlers must t
 
 # Response handling
 
-## `WriteHeader` method of `ResponseWriter` interface
+## WriteHeader method of ResponseWriter interface
 
 These two handler functions are equivalent:
 
@@ -175,7 +173,7 @@ both generate line of information with protocol and status code (Go doc calls th
 < 
 ```
 
-## `Error` function
+## Error function
 
 ```
 func err1(w http.ResponseWriter, r *http.Request) {
