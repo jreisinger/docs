@@ -10,6 +10,8 @@ No idea went into Go until it had been simplified to its essence and then had cl
 
 Data dominates. If you've chosen the right data structures and organized things well, the algorithms will almost always be self-evident. Data structures, not algorithms, are central to programming. -- Rob Pike
 
+And in both [prose and code] I do a great deal of rereading and rewriting. The first draft, even if correct, is rarely ‘right’. -- [Rob Pike](https://www.red-gate.com/simple-talk/opinion/geek-of-the-week/rob-pike-geek-of-the-week/)
+
 Don't do object oriented design but data oriented design.
 
 Go prefers convention over configuration because configuration is limiting.
