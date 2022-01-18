@@ -16,8 +16,8 @@ A variable is a convenient, alphanumeric pseudonym for a memory address. Memory 
 ```go
 var x int32 = 10  // 4 bytes
 var y bool = true // 1 byte
-px := &x
-py := &y
+px := &x          // 4 bytes
+py := &y          // 4 bytes
 var pz *string    // pz == nil
 
 Value    |  0 |  0 |  0 | 10 |  1 |  0 |  0 |  0 |  1 |  0 |  0 |  0 |  5 |  0 |  0 |  0 |  0 |
@@ -27,13 +27,11 @@ Address  |  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 | 11 | 12 | 13 | 14 |
 Variable | x                 | y  | px                | py                | pz                |
 ```
 
-* pointers are [really](https://go.dev/play/p/qXEsFl0XO5K) 8 bytes (not 4 as in the picture)
-* the point is they are always the same size no matter what type they point to
-* `nil` is an untyped identifier (in the universe block) that represents a lack of value for pointer types
+Pointers are [always](https://go.dev/play/p/t638QHuE21E) only a machine word in size (usually 32 or 64 bits) no matter what type they point to.
 
 # How to work with them
 
-The type `*T` is a pointer to a `T` value. Its zero value is `nil`.
+The type `*T` is a pointer to a `T` value. Its zero value is `nil`. `nil` is an untyped identifier (in the universe block) that represents a lack of value for pointer types.
 
 ```go
 var p *int  // The * here means that p holds a pointer to int.
