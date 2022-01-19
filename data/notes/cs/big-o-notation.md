@@ -50,3 +50,4 @@ O(n^m) - exponential scaling
 
 * TPoCSA, Appendix C
 * Grokking Algorithms
+* The Practice of Programming, ch2.5
