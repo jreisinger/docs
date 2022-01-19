@@ -10,7 +10,6 @@ import (
 	"strings"
 
 	"github.com/jreisinger/homepage/search"
-	"github.com/jreisinger/homepage/util"
 )
 
 // HandleSearch handles requests for /search. It searches paths and contents of
@@ -42,7 +41,7 @@ func HandleSearch(w http.ResponseWriter, r *http.Request) {
 			if err != nil {
 				return err
 			}
-			html := util.MdToHtml(data)
+			html := MdToHtml(data)
 			matchedFileContent = search.GrepFileContent(string(html), rx)
 		}
 
@@ -61,14 +60,14 @@ func HandleSearch(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	p := &util.Page{
+	p := &Page{
 		Title: "search",
 		IsDir: true,
 		Files: foundFiles,
 	}
 
 	t, err := template.New("page.html").
-		Funcs(template.FuncMap{"removeTrailingSlash": util.RemoveTralingSlash}).
+		Funcs(template.FuncMap{"removeTrailingSlash": RemoveTralingSlash}).
 		ParseFiles("template/page.html")
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -87,9 +86,9 @@ func HandleRest(w http.ResponseWriter, r *http.Request) {
 		http.Redirect(w, r, "/about", http.StatusFound)
 	}
 
-	p, err := util.RenderPage(repoURL, repoPath, urlPath)
+	p, err := RenderPage(repoURL, repoPath, urlPath)
 	if err != nil {
-		if err == util.ErrorNotFound {
+		if err == ErrorNotFound {
 			http.Error(w, err.Error(), http.StatusNotFound)
 		} else {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -98,7 +97,7 @@ func HandleRest(w http.ResponseWriter, r *http.Request) {
 	}
 
 	t, err := template.New("page.html").
-		Funcs(template.FuncMap{"removeTrailingSlash": util.RemoveTralingSlash}).
+		Funcs(template.FuncMap{"removeTrailingSlash": RemoveTralingSlash}).
 		ParseFiles("template/page.html")
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)

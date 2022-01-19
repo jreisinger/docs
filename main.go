@@ -4,8 +4,6 @@ import (
 	"log"
 	"net/http"
 	"os"
-
-	"github.com/jreisinger/homepage/util"
 )
 
 var repoURL = "https://github.com/jreisinger/homepage"
@@ -33,7 +31,7 @@ func main() {
 	http.HandleFunc("/", HandleRest)
 
 	// regularly update the local repo from the upstream repo
-	go util.GitPuller(repoURL, repoPath)
+	go GitPuller(repoURL, repoPath)
 
 	// start a webserver
 	log.Fatal(http.ListenAndServe(":5001", nil))
