@@ -82,7 +82,9 @@ func Check(err error) {
 // string.
 func RemoveTralingSlash(s string) string {
 	suffix := "/"
-	s = strings.TrimSuffix(s, suffix)
+	if strings.HasSuffix(s, suffix) {
+		s = s[:len(s)-len(suffix)]
+	}
 	return s
 }
 
@@ -93,5 +95,5 @@ func LastModified(repoPath, filename string) (string, error) {
 	if err != nil {
 		return "", fmt.Errorf("%v: %s", err, output)
 	}
-	return string(output), nil
+	return fmt.Sprintf("%s", output), nil
 }
