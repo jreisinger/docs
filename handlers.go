@@ -8,8 +8,6 @@ import (
 	"path/filepath"
 	"regexp"
 	"strings"
-
-	"github.com/jreisinger/homepage/search"
 )
 
 // HandleSearch handles requests for /search. It searches paths and contents of
@@ -33,7 +31,7 @@ func HandleSearch(w http.ResponseWriter, r *http.Request) {
 	var foundFiles []string
 
 	err = filepath.Walk(repoPath+"/data", func(path string, info os.FileInfo, err error) error {
-		matchedFilePath := search.GrepFilePath(path, rx)
+		matchedFilePath := GrepFilePath(path, rx)
 		matchedFileContent := false
 
 		if !searchOnlyPath && !info.IsDir() {
@@ -42,11 +40,11 @@ func HandleSearch(w http.ResponseWriter, r *http.Request) {
 				return err
 			}
 			html := MdToHtml(data)
-			matchedFileContent = search.GrepFileContent(string(html), rx)
+			matchedFileContent = GrepFileContent(string(html), rx)
 		}
 
 		if matchedFilePath || matchedFileContent {
-			urlPath, err := search.FilesystemToURL(path)
+			urlPath, err := FilesystemToURL(path)
 			if err != nil {
 				return err
 			}
