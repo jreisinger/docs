@@ -3,7 +3,8 @@ build:
 
 run: build
 	# Use the working directory for a repo
-	REPOPATH="." ./homepage
+	#REPOPATH="." ./homepage
+	./homepage
 
 # can be more of course (see runp)
 PLATFORMS := linux/amd64
