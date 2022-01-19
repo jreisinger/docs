@@ -1,8 +1,5 @@
-test:
-	GO111MODULE=on go test ./...
-
-build: test
-	GO111MODULE=on go build
+build:
+	go build
 
 run: build
 	# Use the working directory for a repo
