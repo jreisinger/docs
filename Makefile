@@ -13,7 +13,7 @@ temp = $(subst /, ,$@)
 os = $(word 1, $(temp))
 arch = $(word 2, $(temp))
 
-release: test $(PLATFORMS)
+release: $(PLATFORMS)
 
 $(PLATFORMS):
 	# Build multiplatform images
