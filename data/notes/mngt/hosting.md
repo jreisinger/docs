@@ -15,5 +15,12 @@ Most practical choice (especially for new projects) is a public cloud provider, 
 * on-demand adjustment of storage, bandwidth, and compute capacity
 * ready-made solutions for common ancillary needs such as DBs, LBs, queues, monitoring and more
 * cheaper and simpler implementation highly available/redundant systems
+* these days most admins work in the cloud
+
+Cloud platforms:
+
+1. Amazon Web Services (AWS) - leader, broadest array of services
+2. Google Cloud Platform (GCP) - technologically advanced, user friendly
+3. DigitalOcean - simpler, good for developers
 
 Source: ULSAH 5th (2017), 1.11
