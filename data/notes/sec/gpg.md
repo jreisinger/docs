@@ -11,6 +11,7 @@ gpg --encrypt --sign --armor -r john.doe@example.org secret.conf
 
 # decrypt a file
 gpg --decrypt secret.conf.asc > secret.conf
-```
 
-More: https://www.howtogeek.com/427982/how-to-encrypt-and-decrypt-files-with-gpg-on-linux/
+# export a key (e.g. for pasting into GitHub, GitLab)
+gpg --armor --export <KEY>
+```
