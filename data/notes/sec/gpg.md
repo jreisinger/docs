@@ -13,5 +13,5 @@ gpg --encrypt --sign --armor -r john.doe@example.org secret.conf
 gpg --decrypt secret.conf.asc > secret.conf
 
 # export a key (e.g. for pasting into GitHub, GitLab)
-gpg --armor --export <KEY>
+gpg --armor --export [KEY]
 ```
