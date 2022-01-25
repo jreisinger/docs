@@ -6,7 +6,11 @@ gpg --list-keys --keyid-format=long
 gpg --full-generate-key
 
 # export public key (e.g. for pasting into GitHub, GitLab)
-gpg --armor --export [KEY]
+gpg --armor --export KEY
+
+# transfer the keys to new machine (Linux, Mac)
+mv ~/.gnupg ~/.gnupg.old
+scp -rp OTHERMACHINE:~/.gnupg ~/
 
 # verify and sign a key (the sender should supply a fingerprint to compare)
 gpg --fingerprint john.doe@example.org
