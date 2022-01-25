@@ -1,3 +1,5 @@
+NOTE: gpg key pairs are associated with identities not machines (like SSH keys). So you should have one personal and one work gpg key.
+
 ```
 # list imported keys
 gpg --list-keys --keyid-format=long
