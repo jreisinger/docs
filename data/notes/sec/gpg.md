@@ -1,6 +1,6 @@
 ```
 # list imported keys
-gpg --list-keys
+gpg --list-keys --keyid-format=long
 
 # generate key pair
 gpg --full-generate-key
