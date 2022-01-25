@@ -51,7 +51,9 @@ You can also make a slice by slicing an existing slice or array. Slicing is done
 
 ```
 s := []byte{'g', 'o', 'l', 'a', 'n', 'g'}
-t := s[1:4] // []byte{'o', 'l' , 'a'}, sharing the same storage as s
+t := s[1:4] // t == []byte{'o', 'l', 'a'}
+// t is sharing the same storage as s
+s[1] = 'e'  // t == []byte{'e', 'l', 'a'}
 
 a := [3]string{"Лайка", "Белка", "Стрелка"}
 s := a[:] // s references the storage of a
