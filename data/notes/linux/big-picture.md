@@ -59,12 +59,12 @@ Devices
 * traditional Unix way of representing devices as files
 * not all devices are represented as files, e.g. network interfaces
 * a pseudodevice looks like a device but it's another kernel feature
-  (implemented purely in software) - ex. `/dev/random`
+  (implemented purely in software) - ex. `/dev/random` (`man 4 random`)
 * convenient for user processes to reference and interface with devices supported by the kernel
 * the kernel assigns devices in the order in which they are found => may have different names between reboots
 * `Major` and `minor` device numbers help the kernel to identify the device. 
    Similar devices usually have the same major number.
-* little information about devices
+* little information about devices (e.g. see `ls -l /dev/sda`)
 
 /sys/devices
 
