@@ -5,13 +5,14 @@ Levels of abstraction in a Linux system
 =======================================
 
 We need to organize the components somehow, however. In this case we create
-groupings going from user to hardware:
+groupings going from hardware to user:
 
-User processes
+Hardware
 
-* GUI
-* servers
-* shell
+* CPU
+* RAM
+* disks
+* network ports
 
 Kernel
 
@@ -20,12 +21,11 @@ Kernel
 * syscalls
 * device drivers
 
-Hardware
+User processes
 
-* CPU
-* RAM
-* disks
-* network ports
+* GUI
+* servers
+* shell
 
 Difference between running kernel and user processes:
 
@@ -50,6 +50,49 @@ State
 
 * a particular arrangements of bits in RAM (three different states of 4 bits: 0001, 0101, 1000)
 * as it can consists of millions of bits we use abstract terms to describe it, ex. process is waiting for input, and we use the term *image* for a particular physical arrangements of bits
+
+Devices
+-------
+
+/dev
+
+* traditional Unix way of representing devices as files
+* not all devices are represented as files, e.g. network interfaces
+* a pseudodevice looks like a device but it's another kernel feature
+  (implemented purely in software) - ex. `/dev/random`
+* convenient for user processes to reference and interface with devices supported by the kernel
+* the kernel assigns devices in the order in which they are found => may have different names between reboots
+* `Major` and `minor` device numbers help the kernel to identify the device. 
+   Similar devices usually have the same major number.
+* little information about devices
+
+/sys/devices
+
+* part of sysfs (a virtual FS provided by the kernel that exports information about kernel subsystems)
+* system of files and directories (with symlinks)
+* uniform view for attached devices based on their HW attributes
+* to find the path and other attributes: `udevadm info --query=all --name=/dev/sda`
+
+Block device (`b`)
+
+* fixed total size
+* split in fixed chunks
+* easy to index
+* processes have random access to any block in the device
+
+Character device (`c`)
+
+* no size
+* works with data streams
+
+Pipe device (`p`)
+
+* like character device, with another process at the other end of the I/O stream instead of a kernel driver
+
+Socket device (`s`)
+
+* for interprocess communication
+* often found outside of the `/dev` directory
 
 Kernel
 ------
@@ -110,57 +153,6 @@ All user processes (except for init) start as a result of `fork()` usually
                        +-> copy of shell ---> exec(ls) ---> ls
                            
 * `exec()` is actually an entire family of syscalls for similar tasks
-
-Devices
-=======
-
-*psesudodevice* looks like a device but it's another kernel feature
-  (implemented purely in software) - ex. `/dev/random`
-
-Device files
-------------
-
-Block device (`b`)
-
-* fixed total size
-* split in fixed chunks
-* easy to index
-* processes have random access to any block in the device
-
-Character device (`c`)
-
-* no size
-* works with data streams
-
-Pipe device (`p`)
-
-* like character device, with another process at the other end of the I/O stream instead of a kernel driver
-
-Socket device (`s`)
-
-* for interprocess communication
-* often found outside of the `/dev` directory
-
-`Major` and `minor` device numbers help the kernel to identify the device. Similar devices usually have the same major number.
-
-Not all devices are represented as device files, e.g. network interfaces.
-
-/dev and /sys/devices
----------------------
-
-/dev
-
-* traditional Unix way of representing devices as files
-* convenient for user processes to reference and interface with devices supported by the kernel
-* little information about devices
-* the kernel assigns devices in the order in which they are found => may have different names between reboots
-
-/sys/devices
-
-* part of sysfs (a virtual FS provided by the kernel that exports information about kernel subsystems)
-* system of files and directories (with symlinks)
-* uniform view for attached devices based on their HW attributes
-* to find the path and other attributes: `udevadm info --query=all --name=/dev/sda`
 
 Resources
 =========
