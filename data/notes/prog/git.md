@@ -244,9 +244,11 @@ See [git-sync](https://github.com/jreisinger/dotfiles/blob/master/bin/git-sync) 
 
 # Tags
 
+You can specific points in a repo's history as being important. Typically, people use this functionality to mark release points (v1.0, v2.0, ...).
+
 ```
 git fetch --all --tags  # fetch all tags from remote
-git tag                 # list existing local tags
+git tag | sort -V       # list existing local tags sorting by version
 
 git tag -a v0.0.2 -m "improve naming"  # add new tag locally
 git push --tags                        # push local tags to remote
