@@ -1,6 +1,5 @@
 To study complex (software) systems we use *abstraction* - a fancy way to say that we
-don't care about details of the components (subsystems, modules, packages,
-...).
+don't care about details of the components (subsystems, modules, packages).
 
 Levels of abstraction in a Linux system
 =======================================
@@ -81,7 +80,7 @@ Process mngt.
 
 System calls a.k.a. *syscalls* - `man 2`
 
-* the kernel's API
+* functions provided by the kernel - the kernel's API
 * feature of kernel allowing user processes to request specific actions, ex.
     opening, reading and writing files, creating new processes
 * to execute a system call the kernel must temporarily switch to kernel mode,
@@ -96,6 +95,13 @@ System calls a.k.a. *syscalls* - `man 2`
     syscall, ex: `printf()` function provides output formatting and data
     buffering, whereas the `write()` syscall just outputs a block of bytes
 
+Userspace and users
+-------------------
+
+* userspace - the main memory allocated by the kernel to user processes
+* user - object for supporting permissions and boundaries
+* group - a set of users used mainly for sharing files access
+
 All user processes (except for init) start as a result of `fork()` usually
    followed by `exec()`, ex. - running `ls` command in shell:
 
@@ -105,18 +111,11 @@ All user processes (except for init) start as a result of `fork()` usually
                            
 * `exec()` is actually an entire family of syscalls for similar tasks
 
-*psesudodevice* looks like a device but it's another kernel feature
-  (implemented purely in software) - ex. `/dev/random`
-
-Userspace and users
--------------------
-
-* userspace - the main memory allocated by the kernel to user processes
-* user - object for supporting permissions and boundaries
-* group - a set of users used mainly for sharing files access
-
 Devices
 =======
+
+*psesudodevice* looks like a device but it's another kernel feature
+  (implemented purely in software) - ex. `/dev/random`
 
 Device files
 ------------
