@@ -8,7 +8,7 @@ contains several ideas I had and several observations I made while being part of
 an attempt to introduce something like DevOps within a company.
 
 Sheard claims that "improvement initiatives" can and do work, but it very much
-depends on how they are implemented. It this post I'll try to extract the
+depends on how they are implemented. It this post I'll try to extract from the paper the
 positive and negative signals you can observe when trying to implement an
 improvement initiative, like DevOps or Agile.
 
