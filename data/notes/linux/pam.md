@@ -1,5 +1,4 @@
 # PAM and NSS
-###### linux
 
 ## Pluggable Authentication Modules
 
@@ -98,8 +97,6 @@ provides system tools with lists of users and groups, maps UID to username, iden
 
 the order is important
 
-- - -
+---
 
-Source
-
-* Roderick W. Smith: LPIC-2 (2011)
+Source: Roderick W. Smith: LPIC-2 (2011)
