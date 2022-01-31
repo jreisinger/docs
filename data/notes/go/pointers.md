@@ -9,16 +9,18 @@ func main() {
 }
 ```
 
+Pointers are [always](https://go.dev/play/p/t638QHuE21E) only a machine word in size (usually 32 or 64 bits) no matter what type they point to.
+
 # How do they work
 
 A variable is a convenient, alphanumeric pseudonym for a memory address. Memory address denotes a piece of storage that can contain a value.
 
 ```go
-var x int32 = 10  // 4 bytes
-var y bool = true // 1 byte
-px := &x          // 4 bytes
-py := &y          // 4 bytes
-var pz *string    // pz == nil
+var x int32 = 10  // 4 bytes, holds value 10 (int32)
+var y bool = true // 1 byte, holds value 1 (bool)
+px := &x          // 4 bytes, holds value 1 (memory address of x)
+py := &y          // 4 bytes, holds value 5 (memory address of y)
+var pz *string    // 4 bytes, holds no value
 
 Value    |  0 |  0 |  0 | 10 |  1 |  0 |  0 |  0 |  1 |  0 |  0 |  0 |  5 |  0 |  0 |  0 |  0 |
 ---------|----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
@@ -26,8 +28,6 @@ Address  |  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 | 11 | 12 | 13 | 14 |
 ---------|----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
 Variable | x                 | y  | px                | py                | pz                |
 ```
-
-Pointers are [always](https://go.dev/play/p/t638QHuE21E) only a machine word in size (usually 32 or 64 bits) no matter what type they point to.
 
 # How to work with them
 
