@@ -20,7 +20,7 @@ var x int32 = 10  // 4 bytes, holds value 10 (int32)
 var y bool = true // 1 byte, holds value 1 (bool)
 px := &x          // 4 bytes, holds value 1 (memory address of x)
 py := &y          // 4 bytes, holds value 5 (memory address of y)
-var pz *string    // 4 bytes, holds no value
+var pz *string    // 4 bytes, holds no value (pz == nil)
 
 Value    |  0 |  0 |  0 | 10 |  1 |  0 |  0 |  0 |  1 |  0 |  0 |  0 |  5 |  0 |  0 |  0 |  0 |
 ---------|----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
