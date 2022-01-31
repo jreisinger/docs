@@ -9,11 +9,9 @@ func main() {
 }
 ```
 
-Pointers are [always](https://go.dev/play/p/t638QHuE21E) only a machine word in size (usually 32 or 64 bits) no matter what type they point to.
-
 # How do they work
 
-A variable is a convenient, alphanumeric pseudonym for a memory address. Memory address denotes a piece of storage that can contain a value.
+You can think of computer memory (RAM) as a sequence of boxes. Each box is labeled with a number. These numbers increment sequentially (1, 2, 3 ...). These numbers are called memory **addresses**. Memory address denotes a piece of storage that can contain a **value**. A **variable** is a convenient, alphanumeric pseudonym for a memory address.
 
 ```go
 var x int32 = 10  // 4 bytes, holds value 10 (int32)
@@ -28,6 +26,8 @@ Address  |  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 | 11 | 12 | 13 | 14 |
 ---------|----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
 Variable | x                 | y  | px                | py                | pz                |
 ```
+
+Pointers are [always](https://go.dev/play/p/t638QHuE21E) only a machine word in size (usually 32 or 64 bits) no matter what type they point to.
 
 # How to work with them
 
