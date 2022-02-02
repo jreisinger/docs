@@ -1,7 +1,8 @@
 Some of the SW systems I (co-)built
 
-* docker-sec-auth-ws, docker-sec-grafana-ws-provision - Grafana with custom authn and provisioning (Bash -> Go; PN)
+* wafmanager - WebShield component (WIP), provision, deprovision, update WAF instances in Kubernetes (Go; PN)
 * [checkip](https://github.com/jreisinger/checkip) - find out information about an IP address  (Go)
+* docker-sec-auth-ws, docker-sec-grafana-ws-provision - Grafana with custom authn and provisioning (Bash -> Go; PN)
 * [homepage](https://github.com/jreisinger/homepage) - responsive wiki-style web page (Go, HTML, Javascript)
 * [runp](https://github.com/jreisinger/runp) - run shell commands in parallel (Go)
 * [WebShield](https://portal.webshield.pan-net.cloud/) - cloud WAF (Bash, Python, Go, Kubernetes; PN)
