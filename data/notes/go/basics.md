@@ -1,4 +1,4 @@
-<img src="https://golang.org/lib/godoc/images/go-logo-blue.svg" style="max-width:100%;height:auto;float:right">
+<img src="https://go.dev/images/go-logo-blue.svg" style="max-width:100%;height:auto;float:right">
 
 Go is a minimalist language; it only has 25 keywords and 1 loop type. By default, Go programs are compiled directly into statically-linked executable binaries into which all necessary Go libraries and the Go runtime are copied.
 
