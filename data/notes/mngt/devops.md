@@ -37,6 +37,8 @@ DevOps has been formed by:
 * Innovation Culture
 * Toyota Kata
 
+<img width="441" alt="image" src="https://user-images.githubusercontent.com/1047259/152169337-a7181dcb-9c81-41c9-bbe2-68e153132ecd.png">
+
 # The Three Ways
 
 "The Three ways" are the underpinning principles that all the DevOps patterns
