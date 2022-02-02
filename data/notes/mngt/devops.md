@@ -1,6 +1,6 @@
-<img src="https://itrevolution.com/wp-content/uploads/2017/01/TPP_3rd_3D_layered_010318-e1553022345260-488x700.jpg" style="max-width:80px;height:auto;float:right">
-
 *2016-11-20*
+
+<img src="https://user-images.githubusercontent.com/1047259/152169337-a7181dcb-9c81-41c9-bbe2-68e153132ecd.png" style="max-width:100%;height:auto;float:right">
 
 > The opposite of DevOps is despair. -- Gene Kim
 
@@ -36,8 +36,6 @@ DevOps has been formed by:
 * CI, CD
 * Innovation Culture
 * Toyota Kata
-
-<img width="441" alt="image" src="https://user-images.githubusercontent.com/1047259/152169337-a7181dcb-9c81-41c9-bbe2-68e153132ecd.png">
 
 # The Three Ways
 
