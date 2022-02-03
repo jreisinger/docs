@@ -6,9 +6,9 @@ Complexity is the enemy of security.
 
 Security is a neverending process.
 
-You need some level of security.
+You need some level of security. To achieve it you need patience, vigilance, knowledge and persistence.
 
-# CIA triad
+# Goals (CIA triad)
 
 Traditional (since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf) - see picture below) security goals.
 
@@ -38,6 +38,7 @@ Least privilege
 * people and programs (and their modules) should be able to access only what they need to do their job, and no more
 * this limits the blast radius when system gets compromised 
 * deny by default
+* apply to FW rules, user permissions, file permissions and any other access control situation
 
 Defense in depth
 
@@ -49,6 +50,7 @@ Limiting attack surface
 * attack surface is all possible ways a system can be attacked
 * higher complexity means bigger attack surface
 * bigger attack surface means higher probability of getting in
+* apply to interfaces, exposed systems, unnecessary services, underused systems
 
 # Areas
 
