@@ -131,5 +131,6 @@ Know your risks (have at least a spreadsheet) and how you approach them:
 * Practical Cloud Security (2019)
 * Securing DevOps (2018)
 * Kubernetes Security (2018)
+* ULSAH 5th (2017)
 * M$ Cloud Adoption Framework - security: https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/secure/
 * Attack tactics and techniques: https://attack.mitre.org/
