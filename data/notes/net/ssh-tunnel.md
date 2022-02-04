@@ -39,3 +39,4 @@ We want to connect to a remote database running on dbserver but it is configured
  * [ssh -R 2222:localhost:22 user@host](http://explainshell.com/explain?cmd=ssh+-R+2222%3Alocalhost%3A22+user%40host)
  * [ssh -L 3307:localhost:3306 user@host](http://explainshell.com/explain?cmd=ssh+-L+3307%3Alocalhost%3A3306+user%40host)
  * SSH, The Secure Shell: The Definitive Guide, 2nd Ed. (2005) - Connecting Through a Gateway Host
+ * ULSAH 5th, ch. 27.7
