@@ -25,11 +25,14 @@ One of the greatest philosophers who ever lived, for at least eight reasons:
    precious thing, Truth.
 5. Profundity. No philosopher since St. Thomas has ever so successfully combined
    the two fundamental ideals of philosophical writing: clarity and profundity.
-6. Orthodoxy.
-7. Medievalism and modernity (8.). Marriage of faith and reason, revelation and
-   philosophy, the Biblical and the classical inheritances. Aquinas stands as a
-   shining example of an alternative to both the fundamentalists and the
-   liberals of his day and of any day.
+6. Orthodoxy. St. Thomas it the primary theological Doctor (Teacher) of the
+   Catholic Church. (You can never understand philosophy from its critics or
+   dissenters, only from a disciple.
+7. Marriage of faith and reason, revelation and philosophy, the Biblical and the
+   classical inheritances. Aquinas stands as a shining example of an alternative
+   to both the fundamentalists and the liberals of his day and of any day. For a
+   brief moment it seemed that a synthesis was possible.
+8. St. Thomas is important for us today precisely because of our lack.
 
 Of course St. Thomas cannot be the be-all and end-all of our thought. He cannot
 be an end, but he can be a beginning, like Socrates. There is no better bottom
