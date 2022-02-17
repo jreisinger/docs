@@ -96,7 +96,7 @@ CCNA: Cisco Certified Network Associate [2006 - 2009]
 
 Cisco Networking Academy - four semesters, networking and telecommunications [2005 - 2006]
 
-Università degli Studi di Firenze - one semester, economics and IT [2003 - 2003]
+Università degli Studi di Firenze - one semester, economics and IT [2003]
 
 University of Economics [1998 - 2004]
 
