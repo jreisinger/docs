@@ -4,11 +4,9 @@
 
 ```python
 class Person:
-
     def __init__(self, name="", age=0):
         self.name = name
         self.age = age
-
     def Introduce(self):
         print("Hi, my name is {} and I'm {}.".format(self.name, self.age))
 
