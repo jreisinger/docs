@@ -4,7 +4,7 @@ The most important property of a program is whether is accomplishes the intentio
 
 You need a certain amount of complexity to do any particular job. ... In short, simplicity is often the enemy of success. -- [Larry Wall](https://www.oreilly.com/openbook/opensources/book/larry.html) (1999)
 
-# Raymond (esr): The Cathedral and the Bazaar (1999)
+# Raymond: The Cathedral and the Bazaar (1999)
 
 Main points from [ch2](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/ar01s02.html) of The Cathedral and the Bazaar.
 
@@ -21,7 +21,7 @@ Code should be clear and simple—straightforward logic, natural expression, con
 
 It is not possible to create a perfect program the first time. The insight necessary to find the right solution comes only with a combination of thought and experience; pure introspection will not produce a good system, nor will pure hacking. Reactions from users count heavily here; a **cycle** of prototyping, experiment, user feedback, and further refinement is most effective.
 
-# Raymond (esr): The Art of UNIX Programming (2003)
+# Raymond: The Art of UNIX Programming (2003)
 
 All the [Unix] philosophy really boils down to one iron law, the hallowed ’KISS principle’ of master engineers everywhere:
 
