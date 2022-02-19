@@ -1,11 +1,16 @@
 # Health
 
+Hard disks failures typically stem from either platter surface defects (bad blocks) or mechanical failures.
+
 ```
 lsblk
 sudo umount /dev/sda1
-sudo smartctl -H /dev/sda1 # should show "SMART Health Status: OK"
-sudo badblocks -v /dev/sda1
+sudo e2fsck -c /dev/sda1 # check for bad blocks
 sudo mount /dev/sda1
+
+# If your disk supports SMART
+sudo smartctl -a /dev/sda1 | grep 'SMART support'
+sudo smartctl -H /dev/sda1
 ```
 
 # I/O Speed
