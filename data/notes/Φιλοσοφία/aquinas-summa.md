@@ -74,3 +74,8 @@ anyone's apprentice.
 
 St. Thomas chops his prose bite-sized segments for the same reason Mommy cuts
 Baby's meat into bite-sized chunks.
+
+The best preparation for reading the Summa is a review of basic, common sense
+logic, i.e., Aristotelian logic, especially the "Three Acts of the Mind", as the
+medievals labeled them: understanding, judging and reasoning, with their
+respective logical expressions: terms, propositions, and arguments.
