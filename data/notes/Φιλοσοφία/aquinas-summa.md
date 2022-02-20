@@ -2,6 +2,8 @@
 
 These are notes from the book A Shorter Summa by Peter Kreeft (1993).
 
+<img src="/static/shorter-summa.jpeg" style="max-width:100%;height:auto;float:right">
+
 # Preface
 
 * the Summa is the greatest, most ambitious, most rational book of theology ever
