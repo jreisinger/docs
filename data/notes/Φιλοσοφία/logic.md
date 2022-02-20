@@ -3,6 +3,20 @@
 * common sense logic
 * Aristotelian logic
 
+## Syllogism
+
+basic form of deductive argument, e.g.:
+
+1. Major proposition: "Rational animals are mortal."
+2. Minor proposition: "Socrates is a rational animal."
+3. Conclusion: "Therefore Socrates is mortal."
+
+Syllogism connects the subject ("Socrates") and predicate ("mortal") terms of
+its conclusion through its middle term ("rational animal") in its two
+propositions. The first of which states a general principle and the second
+brings a particular case under that principle. The conclusion then demonstrates
+the result of applying the general principle to the particular case.
+
 ## Logical expressions
 
 Term (understanding): the subject or predicate of a proposition, expressing a
@@ -35,16 +49,4 @@ predicate
 
 Predicate - term that says something about the subject
 
-## Syllogism
-
-basic form of deductive argument, e.g.:
-
-1. Major proposition: "Rational animals are mortal."
-2. Minor proposition: "Socrates is a rational animal."
-3. Conclusion: "Therefore Socrates is mortal."
-
-Syllogism connects the subject ("Socrates") and predicate ("mortal") terms of
-its conclusion through its middle term ("rational animal") in its two
-propositions. The first of which states a general principle and the second
-brings a particular case under that principle. The conclusion then demonstrates
-the result of applying the general principle to the particular case.
+Necessary - what cannot be otherwise
