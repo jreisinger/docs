@@ -1,4 +1,4 @@
-<img src="/static/shorter-summa.jpeg" style="max-width:100%;height:auto;float:right">
+<img src="/static/shorter-summa.jpeg" style="max-width:50%;height:auto;float:right">
 
 2022-01-02
 
