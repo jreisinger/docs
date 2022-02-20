@@ -2,10 +2,6 @@
 
 <img src="https://user-images.githubusercontent.com/1047259/152169337-a7181dcb-9c81-41c9-bbe2-68e153132ecd.png" style="max-width:100%;height:auto">
 
-> The opposite of DevOps is despair. -- Gene Kim
-
-> If HW and SW are sufficiently fault tolerant, the remaining problems are human. -- TPoCSA
-
 > CAMS: culture, automation, measurement, and sharing. -- D. Edwards, J. Willis (2010)
 
 DevOps is a set of techniques to solve the chronic conflict between Development
@@ -135,6 +131,7 @@ It's possible to apply these DevOps principles to any complex process:
 * [The Phoenix Project](https://itrevolution.com/book/the-phoenix-project/)
 * [TPoSaNA](http://the-sysadmin-book.com/)
 * [TPoCSA](http://the-cloud-book.com/)
+* ULSAH 5th
 
 ## More info
 
