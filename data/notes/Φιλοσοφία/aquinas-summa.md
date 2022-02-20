@@ -1,8 +1,8 @@
+<img src="/static/shorter-summa.jpeg" style="max-width:100%;height:auto;float:right">
+
 2022-01-02
 
 These are notes from the book A Shorter Summa by Peter Kreeft (1993).
-
-<img src="/static/shorter-summa.jpeg" style="max-width:100%;height:auto;float:right">
 
 # Preface
 
