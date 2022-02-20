@@ -71,3 +71,6 @@ very fruitful in its own day - and then got neglected, especially in our day.
 That is one of the unsolved mysteries of Western thought. Perhaps what stands in
 the way is our craze [sialenstvo] for originality and our proud refusal to be
 anyone's apprentice.
+
+St. Thomas chops his prose bite-sized segments for the same reason Mommy cuts
+Baby's meat into bite-sized chunks.
