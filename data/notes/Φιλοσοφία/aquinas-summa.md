@@ -79,3 +79,9 @@ The best preparation for reading the Summa is a review of basic, common sense
 logic, i.e., Aristotelian logic, especially the "Three Acts of the Mind", as the
 medievals labeled them: understanding, judging and reasoning, with their
 respective logical expressions: terms, propositions, and arguments.
+
+## On this book
+
+I noticed a remarkable improvement in my mental sharpness and order after doing
+long and slow reading of St. Thomas. The Master's habits rub off on his
+apprentices, if they have the good sense to stay close to him.
