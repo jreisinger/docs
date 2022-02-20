@@ -25,8 +25,8 @@ One of the greatest philosophers who ever lived, for at least eight reasons:
    precious thing, Truth.
 5. Profundity. No philosopher since St. Thomas has ever so successfully combined
    the two fundamental ideals of philosophical writing: clarity and profundity.
-6. Orthodoxy. St. Thomas it the primary theological Doctor (Teacher) of the
-   Catholic Church. (You can never understand philosophy from its critics or
+6. Orthodoxy [authorized or generally accepted theory]. St. Thomas it the primary theological Doctor (Teacher) of the
+   Catholic Church. You can never understand philosophy from its critics or
    dissenters, only from a disciple.
 7. Marriage of faith and reason, revelation and philosophy, the Biblical and the
    classical inheritances. Aquinas stands as a shining example of an alternative
