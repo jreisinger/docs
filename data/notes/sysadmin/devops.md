@@ -2,8 +2,6 @@
 
 <img src="https://user-images.githubusercontent.com/1047259/152169337-a7181dcb-9c81-41c9-bbe2-68e153132ecd.png" style="max-width:100%;height:auto">
 
-> C[L]AMS: culture, lean, automation, measurement, and sharing. -- D. Edwards, J. Willis (2010)
-
 Sysadmins have been traditionally separate from application developers and
 project managers. The theory was that developers push products forward with new
 features meanwhile change-resistant ops team would provide 24x7 management of
@@ -40,6 +38,49 @@ DevOps has been formed by:
 * CI, CD
 * Innovation Culture
 * Toyota Kata
+
+# CLAMS
+
+> C[L]AMS: culture, lean, automation, measurement, and sharing. -- D. Edwards, J. Willis (2010)
+
+Culture
+
+* people work together and focus on the overall picture
+* changes in reporting structure, seating layout, job responsibilities might be
+  needed
+* both devs and ops have on-call responsibilities
+* automated testing is a must
+* monitoring is a must
+* all prod environments are mirrored by identical dev environments
+* regular code and infrastructure reviews
+* regular stand-up meetings
+
+Lean
+
+* use real time tools to communicate
+* focus on solving component problems one at a time
+
+Automation
+
+* the most universally recognized aspect of DevOps
+* if you need to perform a task more than twice, it should be automated
+* don't automate what you don't understand
+* allows brainpower to be used to solve new and more difficult challenges
+* reduces the risk of human error
+* you might need one, some, or all of tools like: Ansible, Salt, Jenkins, Packer, Terraform
+* don't pick a tool and then look for the questions it answers
+* reevaluate your tool set every year or two
+
+Measurement
+
+* tools like Icinga, Prometheus, Grafana, ELK
+* having measurement data and doing something useful with it are two things
+* metrics must be visible and evangelized to all interested parties
+
+Sharing
+
+* incentivize staff to share their work internally (presentations, how-to
+  wiki articles) and externally (Meetups, blogs, conferences).
 
 # The Three Ways
 
