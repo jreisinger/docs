@@ -2,7 +2,13 @@
 
 <img src="https://user-images.githubusercontent.com/1047259/152169337-a7181dcb-9c81-41c9-bbe2-68e153132ecd.png" style="max-width:100%;height:auto">
 
-> CAMS: culture, automation, measurement, and sharing. -- D. Edwards, J. Willis (2010)
+> C[L]AMS: culture, lean, automation, measurement, and sharing. -- D. Edwards, J. Willis (2010)
+
+Sysadmins have been traditionally separate from application developers and
+project managers. The theory was that developers push products forward with new
+features meanwhile change-resistant ops team would provide 24x7 management of
+production environments. This arrangement often creates tremendous internal
+conflict and fails to meet the needs of the business and its clients.
 
 DevOps is a set of techniques to solve the chronic conflict between Development
 an IT Operations. This conflict causes:
@@ -19,7 +25,9 @@ The techniques are:
 * technical practices
 * cultural norms
 
-DevOps is an emerging field in operations. The practice of DevOps typically appears in web applications and cloud environments, but its influence is spreading to all parts of all industries.
+DevOps is an emerging field in operations. The practice of DevOps typically
+appears in web applications and cloud environments, but its influence is
+spreading to all parts of all industries.
 
 The principles behind DevOps work patterns are the same principles that
 transformed manufacturing.
