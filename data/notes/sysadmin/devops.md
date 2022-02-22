@@ -25,8 +25,8 @@ transformed manufacturing. DevOps has been formed by:
 
 # The Three Ways
 
-"The Three ways" are the underpinning principles that all the DevOps patterns
-can be derived from.
+"The Three ways" mentioned in The Phoenix Project book are the underpinning
+principles that all the DevOps patterns can be derived from.
 
 ## The First Way - systems thinking
 
