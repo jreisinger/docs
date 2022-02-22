@@ -73,7 +73,7 @@ Practices:
 
 # CLAMS
 
-> C[L]AMS: culture, lean, automation, measurement, and sharing. -- D. Edwards, J. Willis (2010)
+> C[L]AMS: culture, [lean,] automation, measurement, and sharing. -- D. Edwards, J. Willis (2010)
 
 Culture
 
