@@ -181,3 +181,13 @@ blockquote {
 #toc .h6 {
     text-indent: 1.5in;
 }
+
+/* images */
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 50%;
+  height: auto;
+  float: right;
+}
