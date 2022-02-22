@@ -78,8 +78,6 @@ Practices:
 Culture
 
 * people work together and focus on the overall picture
-* changes in reporting structure, seating layout, job responsibilities might be
-  needed
 * both devs and ops have on-call responsibilities
 * automated testing is a must
 * monitoring is a must
