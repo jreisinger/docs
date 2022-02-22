@@ -5,3 +5,5 @@ When you change the code
 1) Test locally: `make run` and go to http://localhost:5001
 
 2) Release to dockerhub: `make release`
+
+NOTE: in case of problems with some missing files (like CSS), exec to homepage container and run `git pull` in /tmp/homepage.
