@@ -39,49 +39,6 @@ DevOps has been formed by:
 * Innovation Culture
 * Toyota Kata
 
-# CLAMS
-
-> C[L]AMS: culture, lean, automation, measurement, and sharing. -- D. Edwards, J. Willis (2010)
-
-Culture
-
-* people work together and focus on the overall picture
-* changes in reporting structure, seating layout, job responsibilities might be
-  needed
-* both devs and ops have on-call responsibilities
-* automated testing is a must
-* monitoring is a must
-* all prod environments are mirrored by identical dev environments
-* regular code and infrastructure reviews
-* regular stand-up meetings
-
-Lean
-
-* use real time tools to communicate
-* focus on solving component problems one at a time
-
-Automation
-
-* the most universally recognized aspect of DevOps
-* if you need to perform a task more than twice, it should be automated
-* don't automate what you don't understand
-* allows brainpower to be used to solve new and more difficult challenges
-* reduces the risk of human error
-* you might need one, some, or all of tools like: Ansible, Salt, Jenkins, Packer, Terraform
-* don't pick a tool and then look for the questions it answers
-* reevaluate your tool set every year or two
-
-Measurement
-
-* tools like Icinga, Prometheus, Grafana, ELK
-* having measurement data and doing something useful with it are two things
-* metrics must be visible and evangelized to all interested parties
-
-Sharing
-
-* incentivize staff to share their work internally (presentations, how-to
-  wiki articles) and externally (Meetups, blogs, conferences).
-
 # The Three Ways
 
 "The Three ways" are the underpinning principles that all the DevOps patterns
@@ -129,6 +86,50 @@ Practices:
 * rewarding innovation and risk taking
 * rewarding improvements
 * at least 20% of Dev and Ops cycles allocated towards nonfunctional requirements
+
+# CLAMS
+
+> C[L]AMS: culture, lean, automation, measurement, and sharing. -- D. Edwards, J. Willis (2010)
+
+Culture
+
+* people work together and focus on the overall picture
+* changes in reporting structure, seating layout, job responsibilities might be
+  needed
+* both devs and ops have on-call responsibilities
+* automated testing is a must
+* monitoring is a must
+* all prod environments are mirrored by identical dev environments
+* regular code and infrastructure reviews
+* regular stand-up meetings
+
+Lean
+
+* use real time tools to communicate
+* focus on solving component problems one at a time
+
+Automation
+
+* the most universally recognized aspect of DevOps
+* if you need to perform a task more than twice, it should be automated
+* don't automate what you don't understand
+* allows brainpower to be used to solve new and more difficult challenges
+* reduces the risk of human error
+* you might need one, some, or all of tools like: Ansible, Salt, Jenkins, Packer, Terraform
+* don't pick a tool and then look for the questions it answers
+* reevaluate your tool set every year or two
+
+Measurement
+
+* tools like Icinga, Prometheus, Grafana, ELK
+* having measurement data and doing something useful with it are two things
+* metrics must be visible and evangelized to all interested parties
+
+Sharing
+
+* incentivize staff to share their work internally (presentations, how-to
+  wiki articles) and externally (Meetups, blogs, conferences).
+
 
 # DevOps without Devs
 
