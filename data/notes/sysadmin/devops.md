@@ -52,7 +52,7 @@ To prevent problems from happening again or enable faster detection and recovery
 
 Practices:
 
-* stopping the production line when builds/tests go wrong
+* "stopping the production line" when builds/tests go wrong
 * constantly elevating the improvements of daily work over daily work
 * fast automated test suites
 * shared goals and shared pain between Devs and Ops
