@@ -120,9 +120,6 @@ It's possible to apply these DevOps principles to any complex process:
 1) Turn chaotic processes into repeatable, measurable ones.
 
 * document process until consistent => automate => self-service
-
-2) Automate.
-
 * to scale don't do IT tasks but maintain the system that does the IT tasks
 
 3) Talk about problems and issues within and between teams.
