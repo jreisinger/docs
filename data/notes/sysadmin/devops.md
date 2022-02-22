@@ -9,28 +9,12 @@ production environments. This arrangement often creates tremendous internal
 conflict and fails to meet the needs of the business and its clients.
 
 DevOps is a set of techniques to solve the chronic conflict between Development
-an IT Operations. This conflict causes:
-
-* increased time to market
-* problematic code deployments
-* increased number of Sev 1 outages
-* unplanned work
-* technical debt
-
-The techniques are:
-
-* architecture and processes
-* technical practices
-* cultural norms
-
-DevOps is an emerging field in operations. The practice of DevOps typically
-appears in web applications and cloud environments, but its influence is
-spreading to all parts of all industries.
+an IT Operations. DevOps is an emerging field in operations. The practice of
+DevOps typically appears in web applications and cloud environments, but its
+influence is spreading to all parts of all industries.
 
 The principles behind DevOps work patterns are the same principles that
-transformed manufacturing.
-
-DevOps has been formed by:
+transformed manufacturing. DevOps has been formed by:
 
 * [Lean](https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898/ref=sr_1_3?ie=UTF8&qid=1539069703&sr=8-3&keywords=lean+startup&dpID=51T-sMqSMiL&preST=_SY291_BO1,204,203,200_QL40_&dpSrc=srch) principles
 * [Agile](http://agilemanifesto.org/) Community
