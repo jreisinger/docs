@@ -112,54 +112,9 @@ Sharing
 * incentivize staff to share their work internally (presentations, how-to
   wiki articles) and externally (Meetups, blogs, conferences).
 
-
-# DevOps without Devs
-
-It's possible to apply these DevOps principles to any complex process:
-
-1) Turn chaotic processes into repeatable, measurable ones.
-
-* document process until consistent => automate => self-service
-* to scale don't do IT tasks but maintain the system that does the IT tasks
-
-3) Talk about problems and issues within and between teams.
-
-* don't obscure or suffer through problems
-* have channels for communicating problems and issues
-
-4) Try new things, measure the results, keep the successes, and learn from the failures.
-
-* create a culture of learning and experimentation
-* use management practices that are blameless and reward learning
-
-5) Do work in small batches so we can learn and pivot along the way.
-
-* it's better to deliver some results each day than to hold back and deliver the entire result at the end
-* you'll get feedback and fix problems sooner and avoid too much waisted effort
-
-6) Drive configuration and infrastructure from machine readable sources kept under a source control system.
-
-* IaC is flexible, testable and can benefit from software engineering techniques
-
-7) Always be improving.
-
-* always be identifying the next big bottleneck and experiment to fix it
-* don't wait for a major disaster
-
-8) Pull, don't push.
-
-* build processes to meet demand, not accommodate supply
-* determine the desired weekly output, allocate resources, and pull the work through the system to completion
-
-9) Build community.
-
-* you, your team, your company and world's IT community are interdependent
-
 # Sources
 
 * [The Phoenix Project](https://itrevolution.com/book/the-phoenix-project/)
-* [TPoSaNA](http://the-sysadmin-book.com/)
-* [TPoCSA](http://the-cloud-book.com/)
 * ULSAH 5th
 
 ## More info
