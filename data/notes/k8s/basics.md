@@ -36,7 +36,7 @@ kubectl get namespaces
 Basic objects
 =============
 
-* everything in Kubernetes is represented by a RESTful resource aka. a Kubernetes object ([resources vs objects](https://stackoverflow.com/questions/52309496/difference-between-kubernetes-objects-and-resources))
+* everything in Kubernetes is represented by a RESTful resource or a Kubernetes object ([resources vs objects](https://stackoverflow.com/questions/52309496/difference-between-kubernetes-objects-and-resources))
 * each object exists at a unique HTTP path
 * the `kubectl` makes requests to these URLs to access the objects
 * `get` is conceptually similar to `ps`
