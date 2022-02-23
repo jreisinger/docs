@@ -74,7 +74,7 @@ docker rmi <image_id>
 Remove all images on your Docker host:
 
 ```bash
-docker rmi $(docker images -q -)
+docker rmi $(docker images -q)
 ```
 
 # Containers
