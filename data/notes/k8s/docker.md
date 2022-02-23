@@ -217,8 +217,8 @@ Clean up:
 
 ```bash
 # you will be asked to confirm
-docker system prune                                     # containers, images
-docker images prune                                     # only images
+docker system prune                               # containers, networks, images
+docker images prune                               # only images
 
 # be careful!
 docker volume rm $(docker volume ls -qf dangling=true)  # volumes
