@@ -202,10 +202,7 @@ $ cat /etc/docker/daemon.json
 To verify:
 
 ```
-docker build --no-cache -<<EOF
-FROM busybox
-RUN cat /etc/resolv.conf | grep nameserver
-EOF
+docker run --rm -it busybox cat /etc/resolv.conf
 ```
 
 # Monitoring and cleanup
