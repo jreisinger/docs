@@ -34,8 +34,4 @@ Observability
 * metrics, logging and tracing
 * but their existence is not enough - data is not information
 
-IaaS vs PaaS vs SaaS security responsibility
-
-<img src="https://user-images.githubusercontent.com/1047259/136159426-797502ab-ef09-4739-9d31-2ae1a7bed71d.png" style="max-width:100%;height:auto;"> 
-
-Source: Cloud Native Go (2021), Practical Cloud Security (2019)
+Source: Cloud Native Go (2021)
