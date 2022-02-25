@@ -1,10 +1,10 @@
-There's no secure system. There are just more or less secure systems.
-
-Security is elusive and hard to measure.
+Security is a neverending process.
 
 Complexity is the enemy of security.
 
-Security is a neverending process.
+Security is elusive and hard to measure.
+
+There's no secure system. There are just more or less secure systems.
 
 You need some level of security. To achieve it you need patience, vigilance, knowledge and persistence.
 
