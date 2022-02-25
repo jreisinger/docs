@@ -51,7 +51,7 @@ Limiting attack surface
 
 * attack surface is all possible ways a system can be attacked
 * higher complexity means bigger attack surface
-* bigger attack surface means higher probability of getting in
+* bigger attack surface means higher probability of getting attacked
 * apply to interfaces, exposed systems, unnecessary services, underused systems
 
 # Areas
