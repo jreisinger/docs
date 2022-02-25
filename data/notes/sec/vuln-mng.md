@@ -13,7 +13,7 @@ Cloud, CI/CD and microservice architectures have changed how vulnerability manag
 
 Data access
 
-* e.g. leaving resoruces open to the public, using poor credentials, not removing access for individuals who no longer need it
+* e.g. leaving resources open to the public, using poor credentials, not removing access for individuals who no longer need it
 
 Application
 
