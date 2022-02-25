@@ -1,4 +1,4 @@
-I've been securing, operating and building computer systems. This includes writing [programs](https://github.com/jreisinger). To label these activities it's information security, system administration, infrastructure engineering. I've also managed smaller projects and teams. 
+I've been securing, operating and building computer systems for about 15 years. This includes writing [programs](https://github.com/jreisinger). I started out as an IT auditor and system administrator, later moved to DevOps and security engineering. I've also managed smaller projects and teams.
 
 # Employment history
 
