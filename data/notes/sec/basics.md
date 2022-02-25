@@ -29,6 +29,8 @@ Availability
 
 * ensure that information and service is available when needed
 
+Sometimes [non-repudation](https://en.wikipedia.org/wiki/Non-repudiation) is added to these three.
+
 # Principles
 
 These security principles will help you to increase your security.
