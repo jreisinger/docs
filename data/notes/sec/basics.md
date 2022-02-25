@@ -8,7 +8,7 @@ There's no secure system. There are just more or less secure systems.
 
 You need some level of security. To achieve it you need patience, vigilance, knowledge and persistence.
 
-# Goals (CIA triad)
+# CIA triad
 
 Traditional (since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf) - see picture below) security goals.
 
