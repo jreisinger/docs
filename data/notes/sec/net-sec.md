@@ -2,7 +2,7 @@ If you can't talk to a component at all, it's difficult to compromise.
 
 If everything were configured absolutely perfectly, you could safely have no network controls at all.
 
-IP whitelisting is still important as long as it ins't the primary defense or auth method:
+IP whitelisting is still important as long as it isn't the primary defense or auth method:
 
 * whitelist - list of things that are allowed, with everything else denied
 * blacklist - list of things that are denied, with everything else allowed

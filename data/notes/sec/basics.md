@@ -1,14 +1,14 @@
-There's no secure system. There are just more or less secure systems.
-
-Security is elusive and hard to measure.
+Security is a neverending process.
 
 Complexity is the enemy of security.
 
-Security is a neverending process.
+Security is elusive and hard to measure.
+
+There's no secure system. There are just more or less secure systems.
 
 You need some level of security. To achieve it you need patience, vigilance, knowledge and persistence.
 
-# Goals (CIA triad)
+# CIA triad
 
 Traditional (since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf) - see picture below) security goals.
 
@@ -28,6 +28,8 @@ Integrity
 Availability
 
 * ensure that information and service is available when needed
+
+Sometimes [non-repudation](https://en.wikipedia.org/wiki/Non-repudiation) is added to these three.
 
 # Principles
 
@@ -49,7 +51,7 @@ Limiting attack surface
 
 * attack surface is all possible ways a system can be attacked
 * higher complexity means bigger attack surface
-* bigger attack surface means higher probability of getting in
+* bigger attack surface means higher probability of getting attacked
 * apply to interfaces, exposed systems, unnecessary services, underused systems
 
 # Areas
