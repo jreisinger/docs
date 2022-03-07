@@ -56,18 +56,21 @@ Limiting attack surface
 
 # Areas
 
-Security governance
+Asset and risk management
 
-* what are your (most valuable) assets => data and compute resources identification and classification ([asset management](https://danielmiessler.com/blog/continuous-asset-management-security/))
+* what are your (most valuable) data and compute/storage/network resources ([asset management](https://danielmiessler.com/blog/continuous-asset-management-security/))
 * what are most probable attacks and attackers (threat actors) targeting those assets
 * estimate where are the major risks (something bad that could happen) - impact x probability (risk assessment)
-* public cloud brings shared responsibility - identify your responsibilities
-* educate other engineers - they should know the security basics
 
 Identity and access management (IAM)
 
 * life cycle of identity (authentication) and access rights (authorization)
 * concerns both humans and programs
+
+Data encryption
+
+* encryption in motion (PKI, TLS)
+* encryption at rest (secrets management)
 
 Vulnerability management
 
@@ -78,15 +81,13 @@ Vulnerability management
 
 Network security
 
-* encryption in motion (PKI, TLS)
-* encryption at rest (secrets management)
 * WAF
 * antiDDoS
 * IDS/IPS, honeypots
 
-Detecting and responding to security incidents
+Security monitoring
 
-* aka security monitoring
+* detecting and responding to security incidents
 * security incidents = attacks
 * logs, metrics => SIEM
 * SIRP, SOC
@@ -96,6 +97,8 @@ Detecting and responding to security incidents
 The ultimate security objectives don't change with the adaption of a new paradigm (e.g. cloud services or DevOps). Security teams must still focus on reducing business risk from attacks and work to get confidentiality, integrity, and availability (C.I.A.) security controls built into information systems and data. How those objectives are achieved will change.
 
 ## Basic steps
+
+Understand the business of the organization you are trying to protect.
 
 Think about what you need to protect (assets: VMs, containers, DBs) and who is most likely to cause problems (threat actors: criminals, hacktivists, script kiddies, inside attackers, state actors).
 
