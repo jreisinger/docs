@@ -4,8 +4,10 @@ Go has pointers 👉. A pointer is a value that points to the memory address of 
 type Student struct{ Name string }
 
 func main() {
-	s := &Student{"John"}
-	fmt.Printf("%p", s) // 0xc000092050
+	s := Student{"John"}
+	ps := &s
+	fmt.Printf("%v\n", s)  // {John}
+	fmt.Printf("%p\n", ps) // 0xc000010230
 }
 ```
 
@@ -14,10 +16,10 @@ func main() {
 You can think of computer memory (RAM) as a sequence of boxes. Each box is labeled with a number. These numbers increment sequentially (1, 2, 3 ...). These numbers are called memory **addresses**. Memory address denotes a piece of storage that can contain a **value**. A **variable** is a convenient, alphanumeric pseudonym for a memory address.
 
 ```go
-var x int32 = 10  // 4 bytes, holds value 10 (int32)
-var y bool = true // 1 byte, holds value 1 (bool)
-px := &x          // 4 bytes, holds value 1 (memory address of x)
-py := &y          // 4 bytes, holds value 5 (memory address of y)
+var x int32 = 10  // 4 bytes, holds value 10
+var y bool = true // 1 byte, holds value 1
+px := &x          // 4 bytes, holds value 1 - memory address of x
+py := &y          // 4 bytes, holds value 5 - memory address of y
 var pz *string    // 4 bytes, holds no value (pz == nil)
 
 Value    |  0 |  0 |  0 | 10 |  1 |  0 |  0 |  0 |  1 |  0 |  0 |  0 |  5 |  0 |  0 |  0 |  0 |
@@ -112,19 +114,9 @@ In general, all methods on a given type should have either value or pointer rece
 
 # Pointer and non-pointer types
 
-Types implemented with pointers:
+Types implemented with pointers: slices, maps, functions, channels, interfaces
 
-* slices
-* maps
-* functions
-* channels
-* interfaces
-
-Non-pointer types:
-
-* primitives (numbers, booleans and strings)
-* structs
-* arrays
+Non-pointer types: primitives (numbers, booleans and strings), structs, arrays
 
 # Sources and more
 
