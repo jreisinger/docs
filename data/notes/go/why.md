@@ -73,4 +73,5 @@ Composition over inheritance.
 
 ## Sources/more
 
-* [Go Day 2021 - Modern Enterprise Applications](https://www.youtube.com/watch?v=5fgG1qZaV4w)
+* [Modern Enterprise Applications](https://www.youtube.com/watch?v=5fgG1qZaV4w), 2021
+* [Clear is better than clever](https://youtu.be/NwEuRO_w8HE), 2019
