@@ -143,6 +143,22 @@ b := []string{"Brooks", "Knuth", "Wall"}
 a = append(a, b...) // equivalent to append(a, b[0], b[1], b[2])
 ```
 
+Since the zero value of a slice (`nil`) acts like a zero-length slice, you can declare a slice variable and then append to it in a loop:
+
+```
+// Filter returns a new slice holding only
+// the elements of s that satisfy fn().
+func Filter(s []int, fn func(int) bool) {
+    var p []int // == nil
+    for _, v := range s {
+        if fn(v) {
+            p = append(p, v)
+        }
+    }
+    return p
+}
+```
+
 # Source
 
 * https://go.dev/tour/moretypes/7
