@@ -1,19 +1,18 @@
 Security is a neverending process.
 
-Complexity is the enemy of security.
-
 Security is elusive and hard to measure.
 
 There's no secure system. There are just more or less secure systems.
 
 You need some level of security. To achieve it you need patience, vigilance, knowledge and persistence.
 
-# CIA triad
+# Goals
 
-Traditional (since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf) - see picture below) security goals.
+CIA triad represents the traditional (since
+[1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf)
+- see picture below) security goals.
 
 ![image](https://user-images.githubusercontent.com/1047259/148757897-f51c3d58-8f26-46d8-973b-854ae47d84d4.png)
-
 
 Confidentiality
 
@@ -34,6 +33,12 @@ Sometimes [non-repudation](https://en.wikipedia.org/wiki/Non-repudiation) is add
 # Principles
 
 These security principles will help you to increase your security.
+
+Clarity and simplicity
+
+* complexity is the enemy of security
+* complexity hides (security) bugs
+* clear (easy to understand), simple (ease to use) security controls and tools are more likely to be implemented and used
 
 Least privilege
 
@@ -74,10 +79,10 @@ Data encryption
 
 Vulnerability management
 
-* Network vulnerability scanning
-* Application scanning (DAST)
-* Code scanning (SAST)
-* Image/container scanning
+* Network vulnerability scanning (Nexpose)
+* Application scanning, DAST (OWASP ZAP)
+* Code scanning, SAST (SonarQube)
+* Image/container scanning (trivy)
 
 Network security
 
@@ -89,12 +94,11 @@ Security monitoring
 
 * detecting and responding to security incidents
 * security incidents = attacks
-* logs, metrics => SIEM
-* SIRP, SOC
+* SIEM (logs, metricd), SIRP, SOC
 
 # Approach
 
-The ultimate security objectives don't change with the adaption of a new paradigm (e.g. cloud services or DevOps). Security teams must still focus on reducing business risk from attacks and work to get confidentiality, integrity, and availability (C.I.A.) security controls built into information systems and data. How those objectives are achieved will change.
+The ultimate security goals don't change with the adaption of a new paradigm (e.g. cloud services or DevOps). Security teams must still focus on reducing business risk from attacks and work to get confidentiality, integrity, and availability (CIA) security controls built into information systems and data. How those goals are achieved will change.
 
 ## Basic steps
 
