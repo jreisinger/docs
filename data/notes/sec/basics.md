@@ -121,7 +121,7 @@ Know your risks (have at least a spreadsheet) and how you approach them:
 * transfer the risk - pay someone else to manage the risk (e.g. insurance)
 * accept the risk - benefits > risk
 
-## Continuos security
+## Continuous security
 
 * DevOps (and [Agile](http://agilemanifesto.org/) and [Deming](https://deming.org/explore/fourteen-points)) focuses on shipping better products to *customers* faster
 * many security teams focus on compliance with a security standard, number of security incidents and vulnerabilities on production systems
