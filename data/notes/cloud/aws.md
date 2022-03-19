@@ -42,5 +42,4 @@ You can use [terraform](https://github.com/vallard/EKS-Training/blob/master/segm
 # Resources
 
 * Hands-On Amazon Elastic Kubernetes Service (EKS) LiveLessons: Running Microservices by Vallard Benincosa Jr. (video, 2021)
-* Amazon Web Services AWS LiveLessons 2nd Edition by Richard Jones (2019)
 * AWS System Administration (2018)
