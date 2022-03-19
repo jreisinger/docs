@@ -46,7 +46,17 @@ Credential types
 * Access key + secret key: CLI, SDK
 * Access/secret key + session token: role-based access
 
+IAM Best practices
+
+* protect master (root) account credentials (email address + password) at all costs
+* don't use root account for day-to-day operations
+* delete any existing access/secret keys for root account
+* enable (and enforce) MFA
+* follow principle of least privilege
+* rotate long-term credentials (access/secret keys, passwords)
+
 # Resources
 
 * Hands-On Amazon Elastic Kubernetes Service (EKS) LiveLessons: Running Microservices by Vallard Benincosa Jr. (video, 2021)
+* Amazon Web Services AWS LiveLessons 2nd Edition by Richard Jones (2019)
 * AWS System Administration (2018)
