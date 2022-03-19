@@ -39,6 +39,13 @@ Networking
 
 You can use [terraform](https://github.com/vallard/EKS-Training/blob/master/segment02-iam/iam.tf) to create these ^.
 
+Credential types
+
+* Email + password: master account (root!) access
+* Username + password: AWS web console
+* Access key + secret key: CLI, SDK
+* Access/secret key + session token: role-based access
+
 # Resources
 
 * Hands-On Amazon Elastic Kubernetes Service (EKS) LiveLessons: Running Microservices by Vallard Benincosa Jr. (video, 2021)
