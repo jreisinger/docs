@@ -11,21 +11,26 @@ basic form of deductive argument, e.g.:
 2. Minor proposition: "Socrates is a rational animal."
 3. Conclusion: "Therefore Socrates is mortal."
 
-Syllogism connects the subject ("Socrates") and predicate ("mortal") terms of
+Syllogism connects the subject ("Socrates") and predicate terms ("mortal") of
 its conclusion through its middle term ("rational animal") in its two
 propositions. The first of which states a general principle and the second
 brings a particular case under that principle. The conclusion then demonstrates
 the result of applying the general principle to the particular case.
 
+Subject - the term in a proposition about which something is said in the
+predicate
+
+Predicate - term that says something about the subject
+
 ## Logical expressions
 
-Term (understanding): the subject or predicate of a proposition, expressing a
+**Term** (understanding): the subject or predicate of a proposition, expressing a
 concept
 
 * clear (unambiguous)
 * unclear (ambiguous)
 
-Proposition (judging): declarative sentence, affirmative or negative
+**Proposition** (judging): declarative sentence, affirmative or negative
 
 * true
     * evident
@@ -38,15 +43,10 @@ Proposition (judging): declarative sentence, affirmative or negative
     * not evident
 * false
 
-Argument (reasoning): a proof that a certain proposition is true by showing that
+**Argument** (reasoning): a proof that a certain proposition is true by showing that
 it follows (logically and necessarily) from other propositions being true
 
 * logically valid
 * logically invalid
-
-Subject - the term in a proposition about which something is said in the
-predicate
-
-Predicate - term that says something about the subject
 
 Necessary - what cannot be otherwise
