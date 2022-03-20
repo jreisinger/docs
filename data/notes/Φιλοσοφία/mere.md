@@ -1,4 +1,6 @@
-**NOTE**: The chapters of this book build on the previous chapters so they should be read and understood in sequence.
+Notes or excerpts from the Lewis' book Mere Christianity.
+
+The chapters of this book build on the previous chapters so they should be read and understood in sequence.
 
 # Book I. Right and wrong as a clue to the meaning of the Universe
 
