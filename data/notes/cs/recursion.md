@@ -1,3 +1,5 @@
+> To understand recursion, you must first understand recursion.
+
 * should be used when it makes the solution clearer
 * there is no performance benefit to using recursion; in fact loops are sometimes better for performance
 
