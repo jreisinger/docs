@@ -5,7 +5,7 @@ I've been securing, operating and building computer systems for about 15 years. 
 Sr. Security Engineer
 at Deutsche Telekom [Pan-Net](https://pan-net.cloud/) [Bratislava, 2017 - present]
 
-* Building security products (WAF, SIEM, logs and metrics management).
+* Building security products (WAF, SIEM).
 * Developing scripts and programs using Go, Bash and Python.
 * Operating systems in private (and public) cloud the DevOps way.
 * Maintaining Ansible playbooks, Kubernetes manifests and CI/CD pipelines.
