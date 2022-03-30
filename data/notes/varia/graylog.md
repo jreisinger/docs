@@ -96,8 +96,8 @@ type:"ssh login"
 Numeric fields support range queries:
 
 ```
-http_response_code[500 TO 504] # inclusive
-http_response_code{400 TO 404} # exclusive
+http_response_code:[500 TO 504] # inclusive
+http_response_code:{400 TO 404} # exclusive
 bytes:{0 TO 64]
 http_response_code:>=400
 http_response_code:(>=400 AND <500)
