@@ -7,6 +7,7 @@ func main() {
 	s := Student{"John"}
 	ps := &s
 	fmt.Printf("%v\n", s)  // {John}
+	fmt.Printf("%v\n", ps) // &{John}
 	fmt.Printf("%p\n", ps) // 0xc000010230
 }
 ```
