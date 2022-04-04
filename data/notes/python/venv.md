@@ -13,9 +13,9 @@ python3 -m venv venv # 'venv' is a common name for a virtual environment
 
 ```
 # activate the virtual environment
+source venv/bin/activate
 # echo $VIRTUAL_ENV
 # which python
-source venv/bin/activate
 
 # install packages into the virtual environment
 pip install -r requirements.txt
@@ -29,9 +29,9 @@ pip freeze [>requirements.txt]
 
 ```
 # deactivate the virtual environment
+deactivate
 # echo $VIRTUAL_ENV
 # which python
-deactivate
 ```
 
 You can safely .gitignore the virtual environment folder:
