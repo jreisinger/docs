@@ -12,7 +12,9 @@ python3 -m venv venv # 'venv' is a common name for a virtual environment
 ```
 
 ```
-# activate the virtual environment (VIRTUAL_ENV will get set)
+# activate the virtual environment
+# echo $VIRTUAL_ENV
+# which python
 source venv/bin/activate
 
 # install packages into the virtual environment
@@ -26,7 +28,9 @@ pip freeze [>requirements.txt]
 ```
 
 ```
-# deactivate the virtual environment (VIRTUAL_ENV will get unset)
+# deactivate the virtual environment
+# echo $VIRTUAL_ENV
+# which python
 deactivate
 ```
 
