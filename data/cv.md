@@ -1,4 +1,4 @@
-I've been securing, operating and building computer systems for about 15 years. This includes writing [programs](https://github.com/jreisinger). I started as an IT auditor, moved to systems administration and security engineering. I've also managed smaller projects and teams.
+I've been securing, operating and building computer systems for about 15 years. This includes writing [programs](https://github.com/jreisinger). I started as an IT auditor, moved to systems administration and security engineering. I've also managed projects and teams.
 
 # Employment history
 
@@ -9,7 +9,7 @@ at Deutsche Telekom [Pan-Net](https://pan-net.cloud/) [Bratislava, 2017 - presen
 * Developing scripts and programs using Go, Bash and Python.
 * Operating systems in private (and public) cloud the DevOps way.
 * Maintaining Ansible playbooks, Kubernetes manifests and CI/CD pipelines.
-* Managing projects/products and teams.
+* Managing projects and teams.
 
 Security Engineer
 at First Data [Bratislava, 2016 - 2017]
@@ -47,39 +47,15 @@ at Slovak Telekom [Bratislava, 2004 - 2006, 2011 - 2013]
 * Administered internal lab consisting of Linux servers and Cisco networking devices.
 * Managed small (up to 4 people) audit teams.
 
-Project Implementation Manager for Italian region
-at AT&T [Bratislava, 2004-2004]
+# Main technologies
 
-* Studied WAN and LAN networks
+Operating systems: Linux (Ubuntu/Debian), Kubernetes
 
-Unix 1st line support specialist
-at Hewlett-Packard Slovakia [Bratislava, 2004-2004]
+Artificial languages: Go (Golang), Bash, Perl/Python
 
-* Troubleshooted and fixed issues on Unix servers
+Natural languages: English, Italian, Slovak/Czech
 
-# Technologies
-
-Operating systems
-
-* Kubernetes
-* Linux (Ubuntu/Debian)
-
-Artificial languages
-
-* Go (Golang)
-* Bash
-* Perl/Python
-
-Natural languages
-
-* English
-* Slovak/Czech
-* Italian
-
-Networking
-
-* general concepts
-* HTTP, Nginx
+Security and networking: general concepts and tools
 
 # Certificates
 
