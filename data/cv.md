@@ -6,9 +6,9 @@ Sr. Security Engineer
 at Deutsche Telekom [Pan-Net](https://pan-net.cloud/) [2017 - present]
 
 * Building security products (WAF, SIEM).
-* Developing scripts and programs using Go, Bash and Python.
-* Operating systems in private (and public) cloud the DevOps way.
+* Developing programs and scripts using Go, Bash and Python.
 * Maintaining Ansible playbooks, Kubernetes manifests and CI/CD pipelines.
+* Operating systems in private (and public) cloud the DevOps way.
 * Managing projects and teams.
 
 Security Engineer
