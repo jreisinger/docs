@@ -18,13 +18,17 @@ func main() {
 	now := time.Now()                                    // current local time
 	epoch := time.Date(1970, 1, 1, 0, 0, 0, 0, time.UTC) // specific time
 
-	// Parsing time from string (pkg.go.dev/time#pkg-constants)
+	// You format date and time by example based on this eigth components:
+	// Mon Jan 2 03:04:05PM 2006 UTC-0700
+	// See pkg.go.dev/time#pkg-constants for predefined constants.
+
+	// Parsing time from string 
 	commitStr := "Sun Mar 2 20:47:34 2008 -0800" // research.swtch.com/govcs
 	commit, _ := time.Parse("Mon Jan 2 15:04:05 2006 -0700", commitStr)
 	commitStr = commit.Format(time.RFC3339Nano)
 	commit, _ = time.Parse(time.RFC3339Nano, commitStr)
 
-	// Formatting time (pkg.go.dev/time#pkg-constants)
+	// Formatting time
 	p("custom\t", epoch.Format("2.1.2006 03:04:05"))
 	p("RFC3339\t", epoch.Format(time.RFC3339))
 	p("Unix\t", epoch.Format(time.UnixDate))
