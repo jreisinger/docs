@@ -1,3 +1,4 @@
+```
 package main
 
 import (
@@ -42,3 +43,4 @@ func main() {
 	p("now+1h\t", now.Add(time.Hour))
 	p("now-1h\t", now.Add(-time.Hour)) // Sub is used to get diff
 }
+```
