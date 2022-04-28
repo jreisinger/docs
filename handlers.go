@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"html/template"
 	"io/ioutil"
 	"net/http"
@@ -87,7 +88,8 @@ func HandleRest(w http.ResponseWriter, r *http.Request) {
 	p, err := RenderPage(repoURL, repoPath, urlPath)
 	if err != nil {
 		if err == ErrorNotFound {
-			http.Error(w, err.Error(), http.StatusNotFound)
+			w.WriteHeader(http.StatusNotFound)
+			fmt.Fprintf(w, err.Error())
 		} else {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 		}
