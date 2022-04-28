@@ -19,7 +19,7 @@ type Page struct {
 }
 
 var (
-	ErrorNotFound = errors.New(`<a href="search">search</a> and you will find`)
+	ErrorNotFound = errors.New(`<a href="/search">search</a> and you will find`)
 )
 
 // RenderPage renders a file or a directory as an HTML page.
