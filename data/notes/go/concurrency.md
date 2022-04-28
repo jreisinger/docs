@@ -7,7 +7,7 @@ Concurrent programming
 
 Why?
 
-* the world is a complex system of interacting, independently activities
+* the world is a complex system of interacting, independently behaving pieces
 * we want to model and interact with this world
 * the number of processors in a computer grows faster than their speed
 
