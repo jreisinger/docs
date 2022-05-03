@@ -1,3 +1,5 @@
+![tar pit](./static/tar-pit.png)
+
 ## About website
 
 Welcome to my homepage, friend :-). I mostly keep technical notes here. `reisinge` was my first Unix login name back in the late '90s.
