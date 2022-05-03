@@ -1,4 +1,4 @@
-![tar pit](./static/tar-pit.png)
+![tar pit](/static/tar-pit.png)
 
 ## About website
 
