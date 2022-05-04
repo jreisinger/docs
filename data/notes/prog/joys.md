@@ -46,7 +46,7 @@ This then is programming, both a tar pit in which many efforts have floundered a
 
 Source: Frederick P. Brooks: The Mythical Man-Month (1975, 1995)
 
-Note: I first copied here onle the joys. I underestimated the importance of knowing about the woes too.
+Note: I first copied here only the joys. I underestimated the importance of knowing about the woes too.
 
 Note 2: Matu, 7 years old sitting next to me, has been building Lego stuff since the morning :-).
 
