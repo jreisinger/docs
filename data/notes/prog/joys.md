@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/1047259/131242933-93419dcc-bacd-487a-89f7-89bec51c5a1a.png" style="max-width:100%;height:auto;"> 
+![tar pit](/static/tar-pit.png)
 
 # The Joys of the Craft
 
