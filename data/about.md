@@ -1,4 +1,7 @@
-![tar pit](/static/tar-pit.png)
+[![tar pit][image]][hyperlink]
+
+[image]: /static/tar-pit.png
+[hyperlink]: /notes/prog/joys
 
 ## About website
 
