@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function htmlTableOfContents (documentRef) {
     var documentRef = documentRef || document;
     var toc = documentRef.querySelector("nav#toc details");
-    if (toc !== undefined) { // no table of contents on the page
+    if (toc == undefined) { // no table of contents on the page
         return
     }
     var headings = [].slice.call(documentRef.body.querySelectorAll('h1, h2, h3, h4, h5, h6'));
