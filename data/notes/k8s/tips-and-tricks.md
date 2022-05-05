@@ -70,8 +70,8 @@ Delete objecs by label
 k delete deployments --all [--selector="app=myapp,env=dev"]
 ```
 
-Get all containers
+Get all pods in all namespaces
 
 ```
-kubectl get pods --all-namespaces -o jsonpath={.items[*].spec.containers[*].name}
+kubectl get pods --all-namespaces -o jsonpath='{range .items[*]}{"\n"}{.metadata.name}{end}'
 ```
