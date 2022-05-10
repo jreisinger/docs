@@ -1,8 +1,11 @@
+# New
+
 * https://infosec-jobs.com/go-jobs/
 * https://github.com/lukasz-madon/awesome-remote-job
-* https://wiki.reisinge.net/CategoryJob
 * https://www.cyberseek.org/
+* https://wiki.reisinge.net/Jobs
 
+# Old
 
 <img src="/static/20220329_pn.jpg" style="max-width:100%;height:auto"> PN [2017 - present]
 
