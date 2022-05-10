@@ -13,7 +13,7 @@ The value of CA:
 * its brand
 * ability to protect its private key
 
-# Compontents
+# Components
 
 Certificates - digitally signed collection of information (2-4 KB)
 
