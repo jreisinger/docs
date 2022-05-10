@@ -15,17 +15,8 @@ The value of CA:
 
 # Components
 
-Certificates - digitally signed collection of information (2-4 KB)
+Certificate authority (CA) - collection of HW, SW and people operating it
 
-* about user, computer, network device that holds the corresponding private key
-* about the issuing CA
-  * encryption and/or signing algorithms
-  * list of X.509 v3 extensions
-  * info for determining revocation status and validity of certificate
-
-Certificate authority (CA)
-
-* collection of HW, SW and people operating it
 * known by two attributes: its name, its public key
 * performs four basic PKI functions (some may be delegated to other components of PKI):
   * issues certificates (i.e., creates and signs them)
@@ -34,20 +25,23 @@ Certificate authority (CA)
   * maintains archives of status info about the expired certificates that it issued
 * may issue certificates to users, to other CAs, or both
 
-Registration authority (RA)
- 
-* trusted by CA to register or vouch [ručiť] for the identity of users
+Registration authority (RA) - trusted by CA to register or vouch [ručiť] for the identity of users
 
-Repository
+Certificates - digitally signed collection of information (2-4 KB)
 
-* DB of active digital certificates for CA system
+* about user, computer, network device that holds the corresponding private key
+* about the issuing CA
+  * encryption and/or signing algorithms
+  * list of X.509 v3 extensions
+  * info for determining revocation status and validity of certificate
 
-Certificate revocation list (CRL)
+Repository - DB of active digital certificates for CA system
 
-* certificate may be revoked [zrušiť, odobrať] because:
-  * owner's private key has been lost
-  * owner leaves the company/agency
-  * owner's name changes
+Certificate revocation list (CRL) - certificate may be revoked [zrušiť, odobrať] because:
+
+* owner's private key has been lost
+* owner leaves the company/agency
+* owner's name changes
 
 # Sources and more
 
