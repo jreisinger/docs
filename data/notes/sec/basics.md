@@ -8,9 +8,7 @@ You need some level of security. To achieve it you need patience, vigilance, kno
 
 # Goals
 
-CIA triad represents the traditional (since
-[1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf)
-- see picture below) security goals.
+CIA triad represents the traditional (since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf) - see picture below) security goals.
 
 ![image](https://user-images.githubusercontent.com/1047259/148757897-f51c3d58-8f26-46d8-973b-854ae47d84d4.png)
 
@@ -81,7 +79,7 @@ Vulnerability management
 
 * Network vulnerability scanning (Nexpose)
 * Application scanning, DAST (OWASP ZAP)
-* Code scanning, SAST (SonarQube)
+* Code scanning, SAST (SonarQube - code, tfsec - IaC)
 * Image/container scanning (trivy)
 
 Network security
@@ -94,7 +92,7 @@ Security monitoring
 
 * detecting and responding to security incidents
 * security incidents = attacks
-* SIEM (logs, metricd), SIRP, SOC
+* SIEM (logs, metrics), SIRP, SOC
 
 # Approach
 
@@ -108,11 +106,11 @@ Think about what you need to protect (assets: VMs, containers, DBs) and who is m
 
 Understand what areas you need to secure - this depends on the cloud model you are using and whether you are a consumer or provider:
 
-<img src="https://user-images.githubusercontent.com/1047259/138699080-24091008-c78f-48c1-bcc9-e9ac6afd0f8d.png" style="max-width:100%;height:auto;"> 
+<img src="https://user-images.githubusercontent.com/1047259/138699080-24091008-c78f-48c1-bcc9-e9ac6afd0f8d.png" style="max-width:50%;height:auto;"> 
 
 Figure out what needs to talk to what in your application. You should first secure places where line crosses a trust boundary:
 
-<img src="https://user-images.githubusercontent.com/1047259/138698724-4a6ecae8-fe54-4d45-b7a8-3b35dfab50e1.png" style="max-width:100%;height:auto;"> 
+<img src="https://user-images.githubusercontent.com/1047259/138698724-4a6ecae8-fe54-4d45-b7a8-3b35dfab50e1.png" style="max-width:50%;height:auto;"> 
 
 Know your risks (have at least a spreadsheet) and how you approach them:
 
