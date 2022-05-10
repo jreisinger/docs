@@ -1,7 +1,7 @@
 About
 
 * inspired by fail2ban
-* identify attacka via behavior analysis
+* identify attacks via behavior analysis
 * create global real-time IP reputation DB
 
 Business model
