@@ -1,5 +1,3 @@
-![tar pit](/static/tar-pit.png)
-
 # The Joys of the Craft
 
 Why is programming fun? What delights may its practicioner expect as his reward?
