@@ -1,7 +1,7 @@
 TLS
 
 * new name for SSL
-* **identity** of one or both communcation parties
+* **identity** of one or both communication parties
 * **encryption** of the communication
 * HTTPS = HTTP over TLS
 
