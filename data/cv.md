@@ -3,7 +3,7 @@ I've been securing, operating and building computer systems for about 15 years. 
 # Employment history
 
 Sr. Security Engineer
-at Deutsche Telekom [Pan-Net](https://pan-net.cloud/) [2017 - present]
+at Deutsche Telekom Pan-Net [2017 - present]
 
 * Building security products (WAF, SIEM).
 * Developing programs and scripts using Go, Bash and Python.
@@ -19,13 +19,13 @@ at First Data [2016 - 2017]
 * Implemented a testing environment using VirtualBox, Vagrant, Ansible.
 
 Sr. Linux Systems Specialist
-at [Eset](https://www.eset.com/) [2015 - 2016]
+at Eset [2015 - 2016]
 
 * Administered Linux (Debian/Ubuntu) servers and services running on top of them (e.g.  MySQL, Postfix).
 * Introduced a configuration management tool (Ansible) and some other DevOps patterns like infrastructure as code, automated testing.
 
 System and Network Administrator
-at [Institute of Science and Technology](https://ist.ac.at/) [2013 - 2015]
+at Institute of Science and Technology Austria [2013 - 2015]
 
 * Took care of Linux based infrastructure (email system, web servers, file servers, DNS) and networking.
 * Built tools and automated tasks via Perl, Bash and Ansible.
@@ -51,11 +51,11 @@ at Slovak Telekom [2004 - 2006, 2011 - 2013]
 
 Operating systems: Linux (Ubuntu/Debian), Kubernetes
 
-Artificial languages: Go (Golang), Bash, Perl/Python
+Artificial languages: Go (Golang), Bash, Python/Perl
 
 Natural languages: English, Italian, Slovak/Czech
 
-Security and networking: general concepts and tools
+[Security](https://github.com/jreisinger/homepage/tree/master/data/notes/sec/) and networking: general concepts and tools
 
 # Certificates
 
