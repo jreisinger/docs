@@ -55,7 +55,7 @@ Artificial languages: Go (Golang), Bash, Python/Perl
 
 Natural languages: English, Italian, Slovak/Czech
 
-[Security](https://github.com/jreisinger/homepage/tree/master/data/notes/sec/) and networking: general concepts and tools
+Security and networking: general concepts and tools
 
 # Certificates
 
