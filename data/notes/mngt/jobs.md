@@ -1,3 +1,4 @@
+* https://infosec-jobs.com/go-jobs/
 * https://github.com/lukasz-madon/awesome-remote-job
 * https://wiki.reisinge.net/CategoryJob
 * https://www.cyberseek.org/
