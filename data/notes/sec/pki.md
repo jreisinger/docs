@@ -1,5 +1,7 @@
 2011-09-16 (migrated from wiki.reisinge.net/PKI)
 
+# What and why
+
 Public Key Infrastructure (PKI)
 
 * binds public keys to entities
@@ -11,7 +13,7 @@ The value of CA:
 * its brand
 * ability to protect its private key
 
-## PKI compontents
+# Compontents
 
 Certificates - digitally signed collection of information (2-4 KB)
 
@@ -47,7 +49,7 @@ Certificate revocation list (CRL)
   * owner leaves the company/agency
   * owner's name changes
 
-## Source
+# Sources and more
 
 * [Introduction to Public Key Technology and the Federal PKI Infrastructure](http://csrc.nist.gov/publications/nistpubs/800-32/sp800-32.pdf)
 * [An introduction to PKI (Video)](http://www.youtube.com/watch?v=EizeExsarH8)
