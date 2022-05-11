@@ -3,6 +3,38 @@ You can do k8s access control via:
 * RBAC (Role Based Access Control)
 * managing access by cluster (w/o RBAC anyone with access to cluster can do anything)
 
+# Overview
+
+<img width="639" alt="image" src="https://user-images.githubusercontent.com/1047259/167849081-bc128f2b-5757-4d4c-82e1-c19f71836cee.png">
+
+<img width="631" alt="image" src="https://user-images.githubusercontent.com/1047259/167849397-a4aa7317-1e6b-4f9d-beb8-c4ed1edd28dd.png">
+
+Group and users
+
+* represent real persons
+* distributed by cluster admin
+* not an API resource
+
+Service account
+
+* represents a program
+* assigned to a pod (if not `default` service account is used)
+
+```
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: build-bot
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: build-observer
+spec:
+  serviceAccountName: build-bot
+...
+```
+
 # RBAC
 
 Find out whether RBAC is enabled on a cluster (one line for each control node):
