@@ -34,9 +34,8 @@ These security principles will help you to increase your security.
 
 Clarity and simplicity
 
-* complexity is the enemy of security
-* complexity hides (security) bugs
-* clear (easy to understand), simple (ease to use) security controls and tools are more likely to be implemented and used
+* obscurity and complexity (in code, processes, communication) hide (security) problems
+* easy to understand and easy to use security controls and tools are more likely to be used
 
 Least privilege
 
