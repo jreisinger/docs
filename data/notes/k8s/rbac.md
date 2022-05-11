@@ -35,7 +35,9 @@ spec:
 ...
 ```
 
-# RBAC
+# RBAC primitives
+
+<img width="638" alt="image" src="https://user-images.githubusercontent.com/1047259/167874790-755953d0-2f25-467e-911e-6f4703c52500.png">
 
 Find out whether RBAC is enabled on a cluster (one line for each control node):
 
@@ -48,19 +50,25 @@ Find out whether RBAC is enabled on a cluster (one line for each control node):
 
 In Kubernetes, permissions are additive; users start with no permissions, and you can add permissions using Roles and RoleBindings. You can’t subtract permissions from someone who already has them.
 
-## User (`serviceaccounts`)
+## ServiceAccount
 
 * every time you connect to a cluster you do so as a specific user
-* there is `default` service account for each namespace
 * service account - user account associated with automated system
+* there is `default` service account for each namespace
 * authentication depends on the cluster provider (e.g. `gcloud` uses a token per cluster)
 * users can have different sets of permissions - governed by `roles`
 
-## Role (`roles`)
+## Role
 
 * a specific set of permissions
 * `Role` - defines roles on a namespace level
 * `ClusterRole` - defines roles accross the whole cluster
+
+There are some [defaults](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#default-roles-and-role-bindings):
+
+<img width="638" alt="image" src="https://user-images.githubusercontent.com/1047259/167877282-9a9e4e0c-d68b-4b25-9710-f4a11cd0c8b6.png">
+
+or you can create your own:
 
 ```
 # role that grants read access to secrets in any namespace
@@ -74,7 +82,7 @@ rules:
   verbs: ["get", "watch", "list"]
 ```
 
-## RoleBinding (`rolebindings`)
+## RoleBinding
 
 * associate a user with a role
 * also here you can have RoleBinding or ClusterRoleBinding
@@ -105,3 +113,4 @@ kubectl get rolebindings.rbac.authorization.k8s.io --all-namespaces
 # Sources
 
 * https://learning.oreilly.com/library/view/cloud-native-devops/9781492040750/ch11.html
+* Benjamin Muschko: Certified Kubernetes Administrator (CKA) Study Guide (2022)
