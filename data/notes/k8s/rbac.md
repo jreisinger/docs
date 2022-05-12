@@ -1,7 +1,7 @@
 You can do k8s access control via:
 
-* RBAC (Role Based Access Control)
-* managing access by cluster (w/o RBAC anyone with access to cluster can do anything) - ok for testing, small deployments
+* managing access per cluster (anyone with access can do anything); ok for testing, small deployments
+* RBAC (Role Based Access Control) - production setup
 
 # Overview
 
