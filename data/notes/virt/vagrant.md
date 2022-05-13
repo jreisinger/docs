@@ -4,7 +4,7 @@
 
 [Install](https://www.vagrantup.com/downloads) Vagrant
 
-* on Ubuntu 20.04.4 LTS (focal) I had to remove the apt package and download the binary  
+* on Ubuntu 20.04.4 LTS (focal) I had to remove the apt package and download the binary to get the latest version 
 
 List boxes available locally
 
@@ -16,7 +16,7 @@ Initialize vagrant environment
     cd ubuntu-focal64
     vagrant init ubuntu/ubuntu-focal64
     
-* `Vagrantfile` is created
+* `Vagrantfile` is created, you should commit it to version control
 
 Start vagrant environment
 
@@ -70,5 +70,4 @@ For using Vagrant in a proxy (corporate :-)) environment run [setup_proxy](https
 Resources
 
 * https://docs.vagrantup.com
-* https://sysadmincasts.com/episodes/4-vagrant
-* http://docs-v1.vagrantup.com/v1/docs/
+* ~~https://sysadmincasts.com/episodes/4-vagrant~~
