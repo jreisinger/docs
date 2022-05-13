@@ -14,7 +14,7 @@ Initialize vagrant environment
 
     mkdir ubuntu-focal64
     cd ubuntu-focal64
-    vagrant init ubuntu/ubuntu-focal64  # or use ~/bin/genVagranfile
+    vagrant init ubuntu/ubuntu-focal64
     
 * `Vagrantfile` is created
 
