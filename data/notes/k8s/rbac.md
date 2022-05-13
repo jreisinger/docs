@@ -9,7 +9,7 @@ You can do k8s access control via:
 
 <img width="631" alt="image" src="https://user-images.githubusercontent.com/1047259/167849397-a4aa7317-1e6b-4f9d-beb8-c4ed1edd28dd.png">
 
-Group and users
+Groups and users
 
 * represent real persons
 * distributed by cluster admin
