@@ -1,46 +1,40 @@
-* box - a virtual machine image
 * machine - a virtual machine
+* box - a virtual machine image
+* base box - used to start the VM from the clean state
 
-[Search](https://atlas.hashicorp.com/boxes/search) and add a box:
+[Install](https://www.vagrantup.com/downloads) Vagrant
 
-    # the URL of the found box copied from the browser
-    vagrant box add https://atlas.hashicorp.com/ubuntu/boxes/trusty64
- 
-* added box is global to the vagrant install
-* this is the *base* box (used to start the VM from the clean state)
-* base boxes are stored in `~/.vagrant.d/boxes`
+* on Ubuntu 20.04.4 LTS (focal) I had to remove the apt package and download the binary  
 
 List boxes available locally
 
     vagrant box list
 
-Initialize vagrant environment:
+Initialize vagrant environment
 
-    mkdir ubuntu-trusty64
-    cd ubuntu-trusty64
-    vagrant init ubuntu/trusty64  # or use ~/bin/genVagranfile
+    mkdir ubuntu-focal64
+    cd ubuntu-focal64
+    vagrant init ubuntu/ubuntu-focal64  # or use ~/bin/genVagranfile
     
 * `Vagrantfile` is created
 
-Start vagrant environment:
+Start vagrant environment
 
     vagrant up
 
-* vagrant "imports" (copies) the base box to provider specific location (ex. `~/.VirtualBox`)
-
-Check machines status:
+Check machines status
 
     vagrant status
     
-Check machines SSH configuration:
+Check machines SSH configuration
 
     vagrant ssh-config
 
-Ssh to a machine:
+Ssh to a machine
 
     vagrant ssh
 
-Clean up:
+Clean up
 
     # save VM's state; fastest to start again; eats most diskspace (hard disk + saved state of RAM)
     vagrant suspend
