@@ -49,6 +49,34 @@ Clean up
 Show status of all vagrant environments on the host (independent of the directory you're in)
 
     vagrant global-status [--prune]
+    
+Multi-machine Vagrantfile
+
+```
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/focal64"
+
+  config.vm.define "master" do |machine|
+    machine.vm.hostname = "master"
+    machine.vm.network "private_network", type: "dhcp"
+  end
+
+  config.vm.define "worker" do |machine|
+    machine.vm.hostname = "worker"
+    machine.vm.network "private_network", type: "dhcp"
+  end
+
+  # ping worker.localhost
+  config.vm.provision "allow_guest_host_resolution", type: "shell",
+    inline: <<-SHELL
+      apt-get update
+      apt-get install -y avahi-daemon libnss-mdns
+    SHELL
+end
+```
 
 To share a folder from the host on the guest, add following to `Vagrantfile`
 
