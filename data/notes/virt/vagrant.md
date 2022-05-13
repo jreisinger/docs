@@ -62,6 +62,10 @@ Vagrant.configure("2") do |config|
   config.vm.define "master" do |machine|
     machine.vm.hostname = "master"
     machine.vm.network "private_network", type: "dhcp"
+
+    config.vm.provider "virtualbox" do |vb|
+      vb.memory = "2048"
+    end
   end
 
   config.vm.define "worker" do |machine|
