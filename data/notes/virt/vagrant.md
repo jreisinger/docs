@@ -44,18 +44,18 @@ Clean up
 
     # power down and remove all of the guest hard disks; even slower to
     # start again (reimport of the base box and reprovisioning)
-    vagrant destroy
+    vagrant destroy [-f]
 
-Show status of all vagrant environments on the host (independent of the directory you're in):
+Show status of all vagrant environments on the host (independent of the directory you're in)
 
     vagrant global-status [--prune]
 
-To share a folder from the host on the guest, add following to `Vagrantfile`:
+To share a folder from the host on the guest, add following to `Vagrantfile`
 
     config.vm.synced_folder "../../eset-repos", "/shared/eset-repos",
       owner: "jreisinger", group: "jreisinger"
 
-For using Vagrant in a proxy (corporate :-)) environment run [setup_proxy](https://github.com/jreisinger/dotfiles/blob/master/bin/setup_proxy) or these:
+For using Vagrant in a proxy (corporate :-)) environment run [setup_proxy](https://github.com/jreisinger/dotfiles/blob/master/bin/setup_proxy) or these
 
     # Note the whitespace to prevent saving the credentials in the bash history.
     # You need something like HISTCONTROL=ignoreboth in ~/.bashrc though.
