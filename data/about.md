@@ -1,4 +1,5 @@
 ![tar pit](/static/tar-pit.png "tar pit")
+<!-- ![sea](/static/sea.jpg "sea") -->
 
 ## About website
 
