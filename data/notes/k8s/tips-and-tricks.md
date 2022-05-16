@@ -1,10 +1,3 @@
-Alias and completion
-
-```
-alias k=kubectl
-complete -F __start_kubectl k # enable completion for k alias
-```
-
 Generate pod manifest
 
 ```
@@ -23,10 +16,13 @@ Run a temporary pod inside a cluster
 # Shell into it.
 k run alpine --image=alpine --rm -it -- sh
 
-# Run a command in it
-k run alpine --image=alpine --rm -it --restart=Never --command -- env
-k run alpine --image=alpine --rm -it --restart=Never --command -- wget \
--O- 192.168.206.75:2112/metrics --timeout 2
+# Run a command in it.
+k run alpine --image=alpine --rm -it --restart=Never --command -- \
+env
+
+k run alpine --image=alpine --rm -it --restart=Never --command -- \
+wget -O- https://example.com --timeout 2
+
 k run curl --image=curlimages/curl --rm -it --restart=Never --command -- \
 curl -s -o /dev/null -w "%{http_code}" -L https://google.com
 ```
@@ -37,36 +33,10 @@ Copy files
 k cp <pod>:/path/to/remote/file /path/to/local/file # or vice versa
 ```
 
-Suspend a cronjob
-
-```
-k patch cronjobs <cronjob> -p '{"spec" : {"suspend" : true }}'
-```
-
-Remove pod stuck in terminating state
-
-```
-k delete pod <pod> --force --grace-period=0
-```
-
-Delete objecs by label
-
-```
-k delete deployments --all [--selector="app=myapp,env=dev"]
-```
-
-Get all pods in all namespaces
-
-```
-kubectl get pods --all-namespaces -o jsonpath='{range .items[*]}{"\n"}{.metadata.name}{end}'
-```
-
-# Networking
-
 Port forwarding
 
 ```
-k port-forward <pod> 8080:8080 # tunnel: localhost -> k8s master -> k8s worker node
+k port-forward <pod> 8080:8080  # tunnel: localhost -> k8s master -> k8s worker node
 ```
 
 Proxy between localhost and K8s API server
@@ -81,8 +51,8 @@ $ curl localhost:8001/api/v1/namespaces/some-ns/services/nginx/proxy/ # access n
 Get pod subnets
 
 ```
-for node in $(kubectl get --no-headers nodes | cut -d' ' -f1); do
+for node in $(k get --no-headers nodes | cut -d' ' -f1); do
   echo -ne "$node\t"
-  kubectl get node $node -o json | jq .spec.podCIDR
+  k get node $node -o json | jq .spec.podCIDR
 done
 ```
