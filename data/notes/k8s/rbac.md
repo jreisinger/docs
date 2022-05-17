@@ -89,7 +89,7 @@ rules:
 
 ```
 # daisy can edit stuff in demo namespace only
-king: RoleBinding
+kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: daisy-edit
