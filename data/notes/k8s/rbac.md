@@ -97,7 +97,6 @@ metadata:
 subjects:
 - kind: User
   name: daisy
-  apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: ClusterRole
   name: edit
