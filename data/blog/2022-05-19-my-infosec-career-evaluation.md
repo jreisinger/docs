@@ -37,3 +37,5 @@ I read Daniel Miessler's [article](https://danielmiessler.com/blog/build-success
 * 🚫 media savvy (trained to speak with the media about various topics)
 * 🤏 tech/business hybrid (be able to speak and work with devs and managers)
 * 🤏 creativity (able not only execute what you're given but come up with new ideas and approaches to problems on a regular cadence)
+
+Some of the above attributes are applicable only to certain career phases (junior, senior, team lead). Others are universal.
