@@ -29,7 +29,6 @@ It's zero value is `nil`:
 
 ```
 var s []byte                   // s == nil
-fmt.Println(s == nil)          // true
 fmt.Println(s, len(s), cap(s)) // [] 0 0
 fmt.Println(s[0]) // panic: runtime error: index out of range [0] with length 0
 ```
