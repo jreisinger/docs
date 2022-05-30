@@ -48,8 +48,8 @@ DNS tunneling allows for
 
 * getting free airport WiFi
 * use SSH over DNS to get through corporate FW
-* stealing sensitive information
-* malware finding command and control points
+* stealing sensitive information (data exfiltration)
+* malware communicating with its command and control (C2) infrastructure
 
 In the last two cases, clients evade detection by breaking data down into
 query-sized chunks, disguising sensitive data as DNS queries, and sending
@@ -114,3 +114,4 @@ Geographic location
 
 * https://www.infoblox.com/dns-security-resource-center/
 * https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610 - exfiltrating data via DNS (2021)
+* https://blog.malwarebytes.com/threat-intelligence/2022/05/how-the-saitama-backdoor-uses-dns-tunnelling/ (2022)
