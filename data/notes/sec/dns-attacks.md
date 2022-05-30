@@ -48,9 +48,10 @@ DNS tunneling allows for
 
 * getting free airport WiFi
 * use SSH over DNS to get through corporate FW
-* stealing sensitive information and malware finding command and control points
+* stealing sensitive information
+* malware finding command and control points
 
-In the last case, clients evade detection by breaking data down into
+In the last two cases, clients evade detection by breaking data down into
 query-sized chunks, disguising sensitive data as DNS queries, and sending
 them to malicious DNS servers on the far end who can unpack these queries and
 reconstruct the data.
