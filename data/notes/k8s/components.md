@@ -62,3 +62,7 @@ Selected addons:
 * WebUI (Dashboard) - web based UI
 * Container Resource Monitoring - generic time-series metrics
 * Cluster-level Logging
+
+# Kubernetes primitives
+
+<img width="687" alt="image" src="https://user-images.githubusercontent.com/1047259/170937963-dd5927c8-3624-4874-95dd-4a3906caef6c.png">
