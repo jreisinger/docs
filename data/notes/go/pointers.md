@@ -52,6 +52,8 @@ fmt.Println(p == nil) // true
 fmt.Println(*p)       // panics
 ```
 
+## `new` and `&`
+
 The built-in `new` function creates a pointer to zero value of the given type.
 
 ```go
@@ -93,13 +95,11 @@ p := person{
 }
 ```
 
-## Mutability
+## Pointer and non-pointer types
 
-* mutability means changing data in place
-* mutability brings flexibility and sometimes performance (you don't have to copy the data but the garbage collector might work more)
-* immutable types are safer from bugs and easier to understand
-* you should use pointers as last resort
-* Go developers use pointers to indicate that a function parameter is mutable
+Types implemented with pointers: slices, maps, functions, channels, interfaces
+
+Non-pointer types: primitives (numbers, booleans and strings), structs, arrays
 
 ## Method receivers
 
@@ -112,11 +112,13 @@ Since methods often need to modify their receiver, pointer receivers are more co
 
 In general, all methods on a given type should have either value or pointer receivers, but not a mixture of both.
 
-# Pointer and non-pointer types
+## Mutability
 
-Types implemented with pointers: slices, maps, functions, channels, interfaces
-
-Non-pointer types: primitives (numbers, booleans and strings), structs, arrays
+* mutability means changing data in place
+* mutability brings flexibility and sometimes performance (you don't have to copy the data but the garbage collector might work more)
+* immutable types are safer from bugs and easier to understand
+* you should use pointers as last resort
+* Go developers use pointers to indicate that a function parameter is mutable
 
 # Sources and more
 
