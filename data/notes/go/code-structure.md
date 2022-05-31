@@ -60,7 +60,7 @@ type Lesson struct {
 
 I am opting to go this route because I believe these two contexts will vary enough to justify the separation, but I also suspect that neither will grow to be large enough to justify any further organization.
 
-Rather than overthinking it, I find it more useful to pick something that looks like a reasonably good fit and to adapt as needed.
+Rather than overthinking it, I find it more useful to pick something that looks like a reasonably good fit and adapt it if needed.
 
 # Packages as layers
 
