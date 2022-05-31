@@ -22,7 +22,7 @@ You can use [go-code](https://github.com/jreisinger/dotfiles/blob/master/bin/go-
 
 ## See also
 
-* [How to Write Go Code](https://golang.org/doc/code.html) - official tutorial
+* https://golang.org/doc/code.html (official tutorial)
 * https://blog.golang.org/using-go-modules
 * https://github.com/golang/go/wiki/Modules
 
