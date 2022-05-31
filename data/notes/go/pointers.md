@@ -1,27 +1,26 @@
-Go has pointers 👉. A pointer is a value that points to the memory address of another value.
+Go has pointers 👉. A pointer is a value that points to the memory address of another variable. Variable is a label or nickname for a memory address.
 
 ```go
-type Student struct{ Name string }
-
 func main() {
-	s := Student{"John"}
-	ps := &s
-	fmt.Printf("%v\n", s)  // {John}
-	fmt.Printf("%v\n", ps) // &{John}
-	fmt.Printf("%p\n", ps) // 0xc000010230
+	a := 200
+	b := &a
+	fmt.Printf("%v\n", a) // 200
+	fmt.Printf("%v\n", b) // 0xc000018030
 }
 ```
+
+<img width="287" alt="image" src="https://user-images.githubusercontent.com/1047259/171110311-7456b542-da42-4a50-8e28-380ea01e7abc.png">
 
 # How do they work
 
 You can think of computer memory (RAM) as a sequence of boxes. Each box is labeled with a number. These numbers increment sequentially (1, 2, 3 ...). These numbers are called memory **addresses**. Memory address denotes a piece of storage that can contain a **value**. A **variable** is a convenient, alphanumeric pseudonym for a memory address.
 
 ```go
-var x int32 = 10  // 4 bytes, holds value 10
-var y bool = true // 1 byte, holds value 1
-px := &x          // 4 bytes, holds value 1 - memory address of x
-py := &y          // 4 bytes, holds value 5 - memory address of y
-var pz *string    // 4 bytes, holds no value (pz == nil)
+var x int32 = 10  // 4 bytes at address 1, holds value 10
+var y bool = true // 1 byte at address 5, holds value 1
+px := &x          // 4 bytes at address 6, holds value 1 (memory address of x)
+py := &y          // 4 bytes at address 10, holds value 5 (memory address of y)
+var pz *string    // 4 bytes at address 14, holds no value (nil)
 
 Value    |  0 |  0 |  0 | 10 |  1 |  0 |  0 |  0 |  1 |  0 |  0 |  0 |  5 |  0 |  0 |  0 |  0 |
 ---------|----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
