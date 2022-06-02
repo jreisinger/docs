@@ -23,9 +23,9 @@ The following terms describe how a system performs as data size grows: the syste
 
 O(1) - constant scaling
 
-* no matter the scale of the input, performance of the system does not change
-* ex. hash-table lookup in RAM
+* no matter the size of the input, performance of the system does not change
 * such algorithms are rare
+* ex. hash-table lookup in RAM
 
 O(log n) - logarithmic scaling
 
