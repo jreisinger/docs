@@ -1,7 +1,6 @@
 # O-notation
 
-* a mathematical way of describing *scaling* - e.g. growth rate of algorithm's run(ning) time
-* used to classify (compare) systems based on how they respond to changes in input size
+* used to classify (compare) algorithms based on how they respond to changes in input size, i.e. how they scale
 * you can't really tell how fast an algorithm will be without benchmarking (CPU, disk, RAM [complexities](http://queue.acm.org/detail.cfm?id=1814327)) but *O()* notation can serve as a general guide
 * *O* is used because the growth rate of an algorithm's run time is known as its *order*
 * *order of magnitude* is related but different - how many digits are in a number describing size (1 000 is an order of magnitude larger than 100)
@@ -20,7 +19,7 @@ All this means that binary search is faster than simple search and it gets a lot
 
 # Scaling
 
-The following terms describe how a system performs as data size grows: the system is unaffected, gets slower, or gets much slower.
+The following terms describe how a system performs as data size grows: the system is unaffected, gets bit slower, gets slower, or gets much slower.
 
 O(1) - constant scaling
 
