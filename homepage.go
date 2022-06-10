@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"html/template"
 	"io/ioutil"
@@ -90,9 +91,24 @@ func searchHandler(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "page", p)
 }
 
+var validPath = regexp.MustCompile("^/([a-zA-Z0-9]+)$")
+
+func getUrlPath(w http.ResponseWriter, r *http.Request) (string, error) {
+	m := validPath.FindStringSubmatch(r.URL.Path)
+	if m == nil {
+		http.NotFound(w, r)
+		return "", errors.New("invalid URL path")
+	}
+	return m[1], nil
+}
+
 // handler handles all requests not handled by other handlers.
 func handler(w http.ResponseWriter, r *http.Request) {
-	urlPath := r.URL.Path[1:] // remove leading "/"
+	// urlPath := r.URL.Path[1:] // remove leading "/"
+	urlPath, err := getUrlPath(w, r)
+	if err != nil {
+		return
+	}
 
 	if urlPath == "" {
 		http.Redirect(w, r, "/about", http.StatusFound)
