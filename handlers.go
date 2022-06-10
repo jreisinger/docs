@@ -32,7 +32,7 @@ func searchHandler(w http.ResponseWriter, r *http.Request) {
 
 	var foundFiles []string
 
-	err = filepath.Walk(repoPath+"/data", func(path string, info os.FileInfo, err error) error {
+	err = filepath.Walk(repoLocalPath+"/data", func(path string, info os.FileInfo, err error) error {
 		matchedFilePath := grepFilePath(path, rx)
 		matchedFileContent := false
 
@@ -72,7 +72,7 @@ func searchHandler(w http.ResponseWriter, r *http.Request) {
 // getUrlPath validates the URL path of the request by matching it against
 // validPath regex.
 func getUrlPath(r *http.Request) (string, error) {
-	m := validPath.FindStringSubmatch(r.URL.Path)
+	m := validUrlPath.FindStringSubmatch(r.URL.Path)
 	if m == nil {
 		return "", errors.New("invalid URL path")
 	}
@@ -93,7 +93,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	p, err := loadPage(repoURL, repoPath, urlPath)
+	p, err := loadPage(repoRemoteUrl, repoLocalPath, urlPath)
 	if err != nil {
 		if err == ErrorNotFound {
 			w.WriteHeader(http.StatusNotFound)
@@ -124,13 +124,13 @@ func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
 
 // faviconHandler serves favicon.ico from "static" folder.
 func faviconHandler(w http.ResponseWriter, r *http.Request) {
-	icon := filepath.Join(repoPath, "static", "favicon.ico")
+	icon := filepath.Join(repoLocalPath, "static", "favicon.ico")
 	http.ServeFile(w, r, icon)
 }
 
 // staticHandler serves files from "static" folder: CSS styles and pictures.
 func staticHandler() http.Handler {
-	fileServer := http.FileServer(http.Dir(repoPath + "/static/"))
+	fileServer := http.FileServer(http.Dir(repoLocalPath + "/static/"))
 	return http.StripPrefix("/static/", fileServer)
 }
 

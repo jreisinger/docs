@@ -9,9 +9,9 @@ import (
 )
 
 var (
-	repoURL   = "https://github.com/jreisinger/homepage"
-	repoPath  = "/tmp/homepage"
-	validPath = regexp.MustCompile(`^/([a-zA-Z0-9/\-\.Φιλοσοφία]+)$`)
+	repoRemoteUrl = "https://github.com/jreisinger/homepage"
+	repoLocalPath = "/tmp/homepage"
+	validUrlPath  = regexp.MustCompile(`^/([a-zA-Z0-9/\-\.Φιλοσοφία]+)$`)
 )
 
 func main() {
@@ -20,13 +20,19 @@ func main() {
 	http.HandleFunc("/search", searchHandler)
 	http.HandleFunc("/", handler)
 
-	if _, err := os.Stat(repoPath); os.IsNotExist(err) {
-		log.Printf("cloning %s to %s", repoURL, repoPath)
-		gitClone(repoURL, repoPath)
+	if err := os.RemoveAll(repoLocalPath); err != nil {
+		log.Fatal(err)
 	}
+	log.Printf("cloning %s to %s", repoRemoteUrl, repoLocalPath)
+	if err := gitClone(repoRemoteUrl, repoLocalPath); err != nil {
+		log.Fatal(err)
+	}
+
 	go func() {
 		for {
-			gitPull(repoPath)
+			if err := gitPull(repoLocalPath); err != nil {
+				log.Fatal(err)
+			}
 			time.Sleep(time.Second * 2)
 		}
 	}()
