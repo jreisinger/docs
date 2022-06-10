@@ -22,8 +22,8 @@ var (
 	ErrorNotFound = errors.New(`<a href="/search">search</a>, and you will find`)
 )
 
-// RenderPage renders a file or a directory as an HTML page.
-func RenderPage(repoURL string, repoPath string, urlPath string) (*Page, error) {
+// loadPage returns a repo file or directory as a Page.
+func loadPage(repoURL string, repoPath string, urlPath string) (*Page, error) {
 	dataPath := repoPath + "/data"
 
 	// map URL path to filesystem path (without .md)
