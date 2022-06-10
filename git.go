@@ -8,8 +8,8 @@ import (
 	git "gopkg.in/src-d/go-git.v4"
 )
 
-// GitPuller regularly git pulls a repoURL to repoPath. Can be run as a goroutine.
-func GitPuller(repoURL string, repoPath string) {
+// gitPuller regularly git pulls a repoURL to repoPath. Can be run as a goroutine.
+func gitPuller(repoURL string, repoPath string) {
 	for {
 		if _, err := os.Stat(repoPath); os.IsNotExist(err) {
 			gitClone(repoURL, repoPath)
@@ -24,7 +24,9 @@ func gitClone(repoURL string, repoPath string) {
 	_, err := git.PlainClone(repoPath, false, &git.CloneOptions{
 		URL: repoURL,
 	})
-	Check(err)
+	if err != nil {
+		log.Fatal(err)
+	}
 }
 
 func gitPull(repoPath string) {

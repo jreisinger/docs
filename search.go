@@ -5,22 +5,13 @@ import (
 	"strings"
 )
 
-func What(pattern string) bool {
-	var searchOnlyPath bool
-	if strings.HasPrefix(pattern, "path:") {
-		searchOnlyPath = true
-		pattern = strings.TrimPrefix(pattern, "path:")
-	}
-	return searchOnlyPath
-}
-
-// GrepFileContent searches for pattern inside inside a file.
-func GrepFileContent(content string, pattern *regexp.Regexp) bool {
+// grepFileContent searches for pattern inside inside a file.
+func grepFileContent(content string, pattern *regexp.Regexp) bool {
 	return pattern.Match([]byte(content))
 }
 
-// GrepFilePath searches for pattern inside a file pathh.
-func GrepFilePath(path string, pattern *regexp.Regexp) bool {
+// grepFilePath searches for pattern inside a file pathh.
+func grepFilePath(path string, pattern *regexp.Regexp) bool {
 	match := pattern.FindString(path)
 	if match == "" {
 		return false
@@ -28,8 +19,8 @@ func GrepFilePath(path string, pattern *regexp.Regexp) bool {
 	return true
 }
 
-// FilesystemToURL changes filesystem path into URL path.
-func FilesystemToURL(path string) (string, error) {
+// filesystemToURL changes filesystem path into URL path.
+func filesystemToURL(path string) (string, error) {
 	// Trim .md suffix
 	path = strings.TrimSuffix(path, ".md")
 
