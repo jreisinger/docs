@@ -11,9 +11,9 @@ import (
 	"strings"
 )
 
-// HandleSearch handles requests for /search. It searches paths and contents of
+// searchHandler handles requests for /search. It searches paths and contents of
 // files in data folder.
-func HandleSearch(w http.ResponseWriter, r *http.Request) {
+func searchHandler(w http.ResponseWriter, r *http.Request) {
 	pattern := r.URL.Query().Get("regexp")
 
 	var searchOnlyPath bool
@@ -77,8 +77,8 @@ func HandleSearch(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-// HandleRest handles all requests except for /search.
-func HandleRest(w http.ResponseWriter, r *http.Request) {
+// handler handles all requests not handled by other handlers.
+func handler(w http.ResponseWriter, r *http.Request) {
 	urlPath := r.URL.Path[1:] // remove leading "/"
 
 	if urlPath == "" {
@@ -108,4 +108,15 @@ func HandleRest(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
+}
+
+// faviconHandler serves favicon.ico from "static" folder.
+func faviconHandler(w http.ResponseWriter, r *http.Request) {
+	http.ServeFile(w, r, filepath.Join(repoPath+"static"+"favicon.ico"))
+}
+
+// staticHandler serves files from "static" folder, CSS styles and pictures.
+func staticHandler() http.Handler {
+	fileServer := http.FileServer(http.Dir(repoPath + "/static/"))
+	return http.StripPrefix("/static/", fileServer)
 }
