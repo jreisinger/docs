@@ -24,7 +24,7 @@ func main() {
 		log.Fatal(err)
 	}
 	log.Printf("cloning %s to %s", repoRemoteUrl, repoLocalPath)
-	if err := gitClone(repoRemoteUrl, repoLocalPath); err != nil {
+	if err := gitClone(repoLocalPath, repoRemoteUrl); err != nil {
 		log.Fatal(err)
 	}
 

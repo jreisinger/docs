@@ -1,12 +1,13 @@
 package main
 
 import (
-	git "gopkg.in/src-d/go-git.v4"
+	git "github.com/go-git/go-git/v5"
 )
 
-func gitClone(remoteUrl string, localPath string) error {
+func gitClone(localPath, remoteUrl string) error {
 	_, err := git.PlainClone(localPath, false, &git.CloneOptions{
 		URL: remoteUrl,
+		// ReferenceName: "master",
 	})
 	return err
 }
