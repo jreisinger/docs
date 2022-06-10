@@ -14,8 +14,9 @@ import (
 )
 
 var (
-	repoURL  = "https://github.com/jreisinger/homepage"
-	repoPath = "/tmp/homepage"
+	repoURL   = "https://github.com/jreisinger/homepage"
+	repoPath  = "/tmp/homepage"
+	validPath = regexp.MustCompile(`^/([a-zA-Z0-9/\-\.Φιλοσοφία]+)$`)
 )
 
 func main() {
@@ -91,8 +92,6 @@ func searchHandler(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "page", p)
 }
 
-var validPath = regexp.MustCompile(`^/([a-zA-Z0-9/\-Φιλοσοφία]+)$`)
-
 // getUrlPath validates the URL path of the request by matching it against
 // validPath regex.
 func getUrlPath(r *http.Request) (string, error) {
@@ -147,7 +146,8 @@ func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
 
 // faviconHandler serves favicon.ico from "static" folder.
 func faviconHandler(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, filepath.Join(repoPath+"static"+"favicon.ico"))
+	icon := filepath.Join(repoPath, "static", "favicon.ico")
+	http.ServeFile(w, r, icon)
 }
 
 // staticHandler serves files from "static" folder: CSS styles and pictures.
