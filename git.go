@@ -2,23 +2,9 @@ package main
 
 import (
 	"log"
-	"os"
-	"time"
 
 	git "gopkg.in/src-d/go-git.v4"
 )
-
-// gitPuller regularly git pulls a repoURL to repoPath. Can be run as a goroutine.
-func gitPuller(repoURL string, repoPath string) {
-	for {
-		if _, err := os.Stat(repoPath); os.IsNotExist(err) {
-			gitClone(repoURL, repoPath)
-		}
-
-		gitPull(repoPath)
-		time.Sleep(time.Second * 2)
-	}
-}
 
 func gitClone(repoURL string, repoPath string) {
 	_, err := git.PlainClone(repoPath, false, &git.CloneOptions{

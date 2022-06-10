@@ -2,10 +2,9 @@ build:
 	go build
 
 run: build
-	# Use the working directory for a repo
-	REPOPATH="." ./homepage
+	./homepage
 
-# can be more of course (see runp)
+# can be more for multiplatform images
 PLATFORMS := linux/amd64
 
 temp = $(subst /, ,$@)
@@ -15,7 +14,6 @@ arch = $(word 2, $(temp))
 release: $(PLATFORMS)
 
 $(PLATFORMS):
-	# Build multiplatform images
 	docker build --build-arg GOOS=$(os) --build-arg GOARCH=$(arch) -t homepage-$(os)-$(arch) .
 
 	# Push image to public registry - hub.docker.com

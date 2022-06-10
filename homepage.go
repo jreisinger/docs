@@ -5,6 +5,7 @@ import (
 	"net/http"
 	"os"
 	"regexp"
+	"time"
 )
 
 var (
@@ -14,17 +15,23 @@ var (
 )
 
 func main() {
-	rp := os.Getenv("REPOPATH")
-	if rp != "" {
-		repoPath = rp
-	}
-
 	http.Handle("/static/", staticHandler())
 	http.HandleFunc("/favicon.ico", faviconHandler)
 	http.HandleFunc("/search", searchHandler)
 	http.HandleFunc("/", handler)
 
-	go gitPuller(repoURL, repoPath)
+	if _, err := os.Stat(repoPath); os.IsNotExist(err) {
+		log.Printf("cloning %s to %s", repoURL, repoPath)
+		gitClone(repoURL, repoPath)
+	}
+	go func() {
+		for {
+			gitPull(repoPath)
+			time.Sleep(time.Second * 2)
+		}
+	}()
 
-	log.Fatal(http.ListenAndServe(":5001", nil))
+	addr := ":5001"
+	log.Printf("started HTTP server at %s", addr)
+	log.Fatal(http.ListenAndServe(addr, nil))
 }
