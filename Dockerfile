@@ -1,13 +1,11 @@
-FROM golang:alpine AS build
-
-ARG GOOS=darwin
-ARG GOARCH=amd64
+# syntax=docker/dockerfile:1
+FROM golang:1.18-alpine AS build
 
 # Set the current working directory inside container.
 WORKDIR /go/src/homepage
 
 # Install tools required for building the app.
-RUN apk add git
+RUN apk add --no-cache git
 
 # Download all dependencies.
 COPY go.mod go.sum ./
@@ -19,12 +17,11 @@ RUN go build -o /bin/homepage
 
 # Create a single layer image.
 #FROM scratch # -> this doesn't work
-FROM alpine:3.15
+FROM alpine:latest
 WORKDIR /app/homepage
 COPY --from=build /bin/homepage /app/homepage/homepage
-COPY --from=build /go/src/homepage/template /app/homepage/template
-RUN apk update
-RUN apk add git
+COPY --from=build /go/src/homepage/tmpl /app/homepage/tmpl
+RUN apk add --no-cache git
 
 EXPOSE 5001
 ENTRYPOINT ["/app/homepage/homepage"]
