@@ -115,7 +115,7 @@ func faviconHandler(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, filepath.Join(repoPath+"static"+"favicon.ico"))
 }
 
-// staticHandler serves files from "static" folder, CSS styles and pictures.
+// staticHandler serves files from "static" folder: CSS styles and pictures.
 func staticHandler() http.Handler {
 	fileServer := http.FileServer(http.Dir(repoPath + "/static/"))
 	return http.StripPrefix("/static/", fileServer)
