@@ -83,6 +83,7 @@ func getUrlPath(r *http.Request) (string, error) {
 func handler(w http.ResponseWriter, r *http.Request) {
 	if r.URL.Path == "/" {
 		http.Redirect(w, r, "/about", http.StatusFound)
+		return
 	}
 
 	urlPath, err := getUrlPath(r)
