@@ -9,7 +9,7 @@ at Deutsche Telekom Pan-Net [2017 - present]
 * Developing programs and scripts using Go, Bash and Python.
 * Maintaining Ansible playbooks, Kubernetes manifests and CI/CD pipelines.
 * Operating systems in private (and public) cloud the DevOps way.
-* Managing projects and teams.
+* Managing projects and team.
 
 Security Engineer
 at First Data [2016 - 2017]
