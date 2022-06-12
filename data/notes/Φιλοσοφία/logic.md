@@ -23,6 +23,8 @@ predicate
 
 Predicate - term that says something about the subject
 
+If you are a programmer you might find [this code](https://github.com/jreisinger/syllogism) useful.
+
 ## Logical expressions
 
 **Term** (understanding): the subject or predicate of a proposition, expressing a
