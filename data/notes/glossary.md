@@ -40,6 +40,10 @@ are derived from data.
 
 You can list the contents of a directory if it's readable (`r`), but you can only access a file in a directory if the directory is executable (`x`). Typical (absolute) permission modes for directories: `755`, `700`, `711`.
 
+## philosophy
+
+literally, the love of wisdom; the science that seeks to understand all things by knowing their causes by natural reason
+
 ## filesystem
 
 A form of database. It supplies the structure to transform a simple block device into the sophisticated hierachy of files and subdirectories that users can understand.
