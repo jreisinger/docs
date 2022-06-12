@@ -34,7 +34,7 @@ One of the greatest philosophers who ever lived, for at least eight reasons:
    classical inheritances. Aquinas stands as a shining example of an alternative
    to both the fundamentalists and the liberals of his day and of any day. For a
    brief moment it seemed that a synthesis was possible.
-8. St. Thomas is important for us today precisely because of our lack.
+8. St. Thomas is important for us today precisely because of our lack of seven Thomistic syntheses: (1) of faith and reason, (2) of the Biblical and the classical, the Judeo-Christian and the Greco-Roman heritages, (3) the ideals of clarity and profundity, (4) of common sense and technical sophistication, (5) of theory and practice, (6) of understanding, intuitive vision and a demanding, accurate logic, and (7) of the one and the many, a cosmic unity or "big picture" and carefully sorted out distinctions.
 
 Of course St. Thomas cannot be the be-all and end-all of our thought. He cannot
 be an end, but he can be a beginning, like Socrates. There is no better bottom
