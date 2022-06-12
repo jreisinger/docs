@@ -1,18 +1,19 @@
 # Basic logic
 
-* common sense logic
-* Aristotelian logic
+* is common sense logic
+* is Aristotelian logic
+* Aristotle (4 c. B.C.) was a student of Plato who was a student of Socrates
 
 ## Syllogism
 
-basic form of deductive argument, e.g.:
+is basic form of deductive argument, e.g.:
 
-1. Major proposition: "Rational animals are mortal."
-2. Minor proposition: "Socrates is a rational animal."
-3. Conclusion: "Therefore Socrates is mortal."
+1. Rational animals are mortal. - major proposition
+2. Socrates is a rational animal. - minor proposition
+3. Therefore Socrates is mortal. - conclusion
 
-Syllogism connects the subject ("Socrates") and predicate terms ("mortal") of
-its conclusion through its middle term ("rational animal") in its two
+Syllogism connects the subject (Socrates) and predicate terms (mortal) of
+its conclusion through its middle term (rational animal) in its two
 propositions. The first of which states a general principle and the second
 brings a particular case under that principle. The conclusion then demonstrates
 the result of applying the general principle to the particular case.
@@ -50,3 +51,7 @@ it follows (logically and necessarily) from other propositions being true
 * logically invalid
 
 Necessary - what cannot be otherwise
+
+## Sources
+
+* A Shorter Summa by Peter Kreeft (1993)
