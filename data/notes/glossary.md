@@ -95,7 +95,7 @@ eyes_obj = Eyes(color='blue')  # instantiation
     | E     | 240 - 255   |                           |                    | Experimental                    |
     '-------+-------------+---------------------------+--------------------+---------------------------------'
 
-## Latency numbers (~2012)
+## latency numbers (~2012)
 
 ```
 L1 cache reference                           0.5 ns
@@ -154,6 +154,8 @@ Source: ULSAH, p. 210, 204
 process between a sender and a receiver authenticating each other's identity to be sure who they are talking to. Mutual TLS (mTLS) is one well-known way to achieve mutually authenticated (and encrypted) traffic.
 
 <img width="493" alt="image" src="https://user-images.githubusercontent.com/1047259/173361854-0449cd88-d4ec-4e03-aff7-3c06c4a9f0c1.png">
+
+source: https://isovalent.com/blog/post/2022-05-03-servicemesh-security/
 
 ## newline
 
