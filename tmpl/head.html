@@ -1,0 +1,48 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124886160-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124886160-4');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ .Title }}</title>
+
+<!-- Stolen from https://github.com/artyom/mdserver -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    htmlTableOfContents();
+} );
+function htmlTableOfContents (documentRef) {
+    var documentRef = documentRef || document;
+    var toc = documentRef.querySelector("nav#toc details");
+    if (toc == undefined) { // no table of contents on the page
+        return
+    }
+    var headings = [].slice.call(documentRef.body.querySelectorAll('h1, h2, h3, h4, h5, h6'));
+    //if (headings.length < 2) { return };
+    headings.forEach(function (heading, index) {
+        var anchor = documentRef.createElement('a');
+        anchor.setAttribute('name', 'toc' + index);
+        anchor.setAttribute('id', 'toc' + index);
+
+        var link = documentRef.createElement('a');
+        var ref = heading.getAttribute( "id" );
+        link.setAttribute('href', '#' + ref);
+        link.textContent = heading.textContent;
+
+        var div = documentRef.createElement('div');
+        div.setAttribute('class', heading.tagName.toLowerCase());
+
+        div.appendChild(link);
+        toc.appendChild(div);
+        heading.parentNode.insertBefore(anchor, heading);
+    });
+}
+</script>
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">

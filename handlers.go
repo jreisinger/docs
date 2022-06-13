@@ -111,7 +111,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 var templates = template.Must(
 	template.New("page").
 		Funcs(template.FuncMap{"removeTrailingSlash": removeTralingSlash}).
-		ParseFiles(filepath.Join("tmpl", "page.html")),
+		ParseGlob(filepath.Join("tmpl", "*.html")),
 )
 
 // renderTemplate fills in tmpl template with p data and writes it to w.
