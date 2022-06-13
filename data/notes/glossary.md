@@ -151,7 +151,9 @@ Source: ULSAH, p. 210, 204
 
 ## mutual authentication
 
-process between a sender and a receiver authenticating each other's identity to be sure who they are talking to. Mutual TLS (mTLS) is one well-known way to achieve mutually authenticated (and encrypted) traffic. 
+process between a sender and a receiver authenticating each other's identity to be sure who they are talking to. Mutual TLS (mTLS) is one well-known way to achieve mutually authenticated (and encrypted) traffic.
+
+<img width="493" alt="image" src="https://user-images.githubusercontent.com/1047259/173361854-0449cd88-d4ec-4e03-aff7-3c06c4a9f0c1.png">
 
 ## newline
 
