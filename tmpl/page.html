@@ -11,11 +11,7 @@
             {{if .IsDir}}
                 <ul style="list-style-type:disclosure-closed">
                 {{range .Files}}
-                    {{ if $UrlPath }}
-                        <li><a href="/{{ $UrlPath | removeTrailingSlash }}/{{ . }}">{{ . }}</a></li>
-                    {{ else }}
-                        <li><a href="{{ $UrlPath | removeTrailingSlash }}/{{ . }}">{{ . }}</a></li>
-                    {{ end }}
+                    <li><a href="{{ $UrlPath | removeTrailingSlash }}/{{ . }}">{{ . }}</a></li>
                 {{end}}
                 </ul>
                 <p class="footer">
