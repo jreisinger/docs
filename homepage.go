@@ -4,14 +4,12 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"regexp"
 	"time"
 )
 
 var (
 	repoRemoteUrl = "https://github.com/jreisinger/homepage"
 	repoLocalPath = "/tmp/homepage"
-	validUrlPath  = regexp.MustCompile(`^/([a-zA-Z0-9/\-\.Φιλοσοφία]+)$`)
 )
 
 func main() {

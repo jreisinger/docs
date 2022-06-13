@@ -1,7 +1,6 @@
 package main
 
 import (
-	"errors"
 	"fmt"
 	"html/template"
 	"io/ioutil"
@@ -69,18 +68,8 @@ func searchHandler(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "page", p)
 }
 
-// getUrlPath validates the URL path of the request by matching it against
-// validPath regex.
-func getUrlPath(r *http.Request) (string, error) {
-	m := validUrlPath.FindStringSubmatch(r.URL.Path)
-	if m == nil {
-		return "", errors.New("invalid URL path")
-	}
-	return m[1], nil
-}
-
 func aboutHandler(w http.ResponseWriter, r *http.Request) {
-	p, err := loadPage(r)
+	p, err := loadPage(r.URL.Path)
 	if err != nil {
 		handleError(w, r, err)
 		return
@@ -89,7 +78,7 @@ func aboutHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func notesHandler(w http.ResponseWriter, r *http.Request) {
-	p, err := loadPage(r)
+	p, err := loadPage(r.URL.Path)
 	if err != nil {
 		handleError(w, r, err)
 		return
@@ -98,7 +87,7 @@ func notesHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func blogHandler(w http.ResponseWriter, r *http.Request) {
-	p, err := loadPage(r)
+	p, err := loadPage(r.URL.Path)
 	if err != nil {
 		handleError(w, r, err)
 		return
@@ -113,7 +102,7 @@ func pageHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	p, err := loadPage(r)
+	p, err := loadPage(r.URL.Path)
 	if err != nil {
 		handleError(w, r, err)
 		return
