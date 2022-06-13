@@ -12,11 +12,7 @@
 
             <ul style="list-style-type:disclosure-closed">
             {{range .Files}}
-                {{ if $UrlPath }}
-                    <li><a href="/{{ $UrlPath | removeTrailingSlash }}/{{ . }}">{{ . }}</a></li>
-                {{ else }}
                     <li><a href="{{ $UrlPath | removeTrailingSlash }}/{{ . }}">{{ . }}</a></li>
-                {{ end }}
             {{end}}
             </ul>
 
