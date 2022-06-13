@@ -136,7 +136,7 @@ A program will typically build a complex data structure to hold the current
 program state. To transfer this data outside of the program's own address space
 (e.g. to another application over the network) it needs to be serialized.
 
-## Media speed (~2010)
+## media speed (~2010)
 
     +-------------------+------------+----------------------+-------------------+-------------+----------+
     | What              | Size       | Sequential Read Speed| Random Read Speed | Write Speed | Cost     |
@@ -148,6 +148,10 @@ program state. To transfer this data outside of the program's own address space
     '-------------------+------------+----------------------+-------------------+-------------+----------'
 
 Source: ULSAH, p. 210, 204
+
+## mutual authentication
+
+process between a sender and a receiver authenticating each other's identity to be sure who they are talking to. Mutual TLS (mTLS) is one well-known way to achieve mutually authenticated (and encrypted) traffic. 
 
 ## newline
 
