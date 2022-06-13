@@ -17,8 +17,12 @@ var (
 func main() {
 	http.Handle("/static/", staticHandler())
 	http.HandleFunc("/favicon.ico", faviconHandler)
+
+	http.HandleFunc("/about", aboutHandler)
+	http.HandleFunc("/notes", notesHandler)
+	http.HandleFunc("/blog", blogHandler)
 	http.HandleFunc("/search", searchHandler)
-	http.HandleFunc("/", handler)
+	http.HandleFunc("/", pageHandler)
 
 	if err := os.RemoveAll(repoLocalPath); err != nil {
 		log.Fatal(err)

@@ -79,32 +79,57 @@ func getUrlPath(r *http.Request) (string, error) {
 	return m[1], nil
 }
 
-// handler handles all requests not handled by other handlers.
-func handler(w http.ResponseWriter, r *http.Request) {
+func aboutHandler(w http.ResponseWriter, r *http.Request) {
+	p, err := loadPage(r)
+	if err != nil {
+		handleError(w, r, err)
+		return
+	}
+	renderTemplate(w, "about", p)
+}
+
+func notesHandler(w http.ResponseWriter, r *http.Request) {
+	p, err := loadPage(r)
+	if err != nil {
+		handleError(w, r, err)
+		return
+	}
+	renderTemplate(w, "notes", p)
+}
+
+func blogHandler(w http.ResponseWriter, r *http.Request) {
+	p, err := loadPage(r)
+	if err != nil {
+		handleError(w, r, err)
+		return
+	}
+	renderTemplate(w, "blog", p)
+}
+
+// pageHandler handles all requests not handled by other handlers.
+func pageHandler(w http.ResponseWriter, r *http.Request) {
 	if r.URL.Path == "/" {
 		http.Redirect(w, r, "/about", http.StatusFound)
 		return
 	}
 
-	urlPath, err := getUrlPath(r)
+	p, err := loadPage(r)
 	if err != nil {
-		w.WriteHeader(http.StatusNotFound)
-		fmt.Fprintf(w, "invalid URL path: %q", r.URL.Path)
+		handleError(w, r, err)
 		return
 	}
+	renderTemplate(w, "page", p)
+}
 
-	p, err := loadPage(repoRemoteUrl, repoLocalPath, urlPath)
+func handleError(w http.ResponseWriter, r *http.Request, err error) {
 	if err != nil {
 		if err == ErrorNotFound {
 			w.WriteHeader(http.StatusNotFound)
-			fmt.Fprintf(w, err.Error())
 		} else {
-			http.Error(w, err.Error(), http.StatusInternalServerError)
+			w.WriteHeader(http.StatusInternalServerError)
 		}
-		return
+		fmt.Fprint(w, err)
 	}
-
-	renderTemplate(w, "page", p)
 }
 
 // templates caches available HTML templates.

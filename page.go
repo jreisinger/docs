@@ -6,6 +6,7 @@ import (
 	"html/template"
 	"io/ioutil"
 	"log"
+	"net/http"
 	"os"
 	"os/exec"
 	"path"
@@ -31,9 +32,15 @@ var (
 	ErrorNotFound = errors.New(`<a href="/search">search</a>, and you will find`)
 )
 
-// loadPage returns a file or a directory as a Page.
-func loadPage(repoURL string, repoPath string, urlPath string) (*Page, error) {
-	dataPath := repoPath + "/data"
+// loadPage validates the URL path from the request and loads corresponding file
+// or directory from the local repo as a page.
+func loadPage(request *http.Request) (*Page, error) {
+	urlPath, err := getUrlPath(request)
+	if err != nil {
+		return nil, fmt.Errorf("invalid URL path: %q", request.URL.Path)
+	}
+
+	dataPath := repoLocalPath + "/data"
 
 	// map URL path to filesystem path (without .md)
 	filePath := dataPath + "/" + urlPath
@@ -45,9 +52,9 @@ func loadPage(repoURL string, repoPath string, urlPath string) (*Page, error) {
 		if strings.HasSuffix(filePath, "blog") {
 			files = listFiles(filePath, true)
 		}
-		return &Page{Title: title, Files: files, RepoURL: repoURL, UrlPath: urlPath, IsDir: true}, nil
+		return &Page{Title: title, Files: files, RepoURL: repoRemoteUrl, UrlPath: urlPath, IsDir: true}, nil
 	} else if isFile(filePath + ".md") { // if file is a file return file contents
-		lastModified, err := lastModified(repoPath, filePath+".md")
+		lastModified, err := lastModified(repoLocalPath, filePath+".md")
 		if err != nil {
 			return nil, err
 		}
@@ -59,10 +66,10 @@ func loadPage(repoURL string, repoPath string, urlPath string) (*Page, error) {
 
 		body := mdToHtml(data)
 
-		return &Page{Title: title, Body: body, RepoURL: repoURL, UrlPath: urlPath, LastModified: lastModified}, nil
+		return &Page{Title: title, Body: body, RepoURL: repoRemoteUrl, UrlPath: urlPath, LastModified: lastModified}, nil
 	}
 
-	err := ErrorNotFound
+	err = ErrorNotFound
 	return nil, err
 }
 

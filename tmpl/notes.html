@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{template "head.html"}}
+    </head>
+    <body>
+        {{template "topnav.html"}}
+
+        {{$UrlPath:=.UrlPath}}
+        <div class="content">
+            <img src="/static/gopher.png" style="max-width:100%;height:auto;float:right">
+
+            <ul style="list-style-type:disclosure-closed">
+            {{range .Files}}
+                {{ if $UrlPath }}
+                    <li><a href="/{{ $UrlPath | removeTrailingSlash }}/{{ . }}">{{ . }}</a></li>
+                {{ else }}
+                    <li><a href="{{ $UrlPath | removeTrailingSlash }}/{{ . }}">{{ . }}</a></li>
+                {{ end }}
+            {{end}}
+            </ul>
+
+            <p class="footer">
+                ✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}">source</a>
+            </p>
+        </div>
+
+    </body>
+</html>

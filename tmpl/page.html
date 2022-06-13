@@ -1,54 +1,33 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        {{template "head.html"}}
+    </head>
+    <body>
+        {{template "topnav.html"}}
 
-<head>
-{{template "head.html"}}
-</head>
-
-<body>
-{{template "topnav.html"}}
-
-{{$UrlPath:=.UrlPath}}
-
-<div class="content">
-
-{{if (eq .Title "notes")}}
-<img src="/static/gopher.png" style="max-width:100%;height:auto;float:right">
-{{end}}
-
-{{if .IsDir}}
-
-<ul style="list-style-type:disclosure-closed">
-{{range .Files}}
-    {{ if $UrlPath }}
-        <li><a href="/{{ $UrlPath | removeTrailingSlash }}/{{ . }}">{{ . }}</a></li>
-    {{ else }}
-        <li><a href="{{ $UrlPath | removeTrailingSlash }}/{{ . }}">{{ . }}</a></li>
-    {{ end }}
-{{end}}
-</ul>
-
-✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}">source</a>
-
-{{else}}
-
-{{if and (ne .Title "notes") (ne .Title "blog") (ne .Title "about")}}
-<p><nav id="toc"><details close><summary>{{$UrlPath}}</summary></details></nav></p>
-{{end}}
-
-{{.Body}}
-
-
-<p class="footer">
-✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}.md">source</a>
-{{if and (ne .Title "notes") (ne .Title "blog") (ne .Title "about")}}
-<span>{{ .LastModified }}</span>
-{{end}}
-</p>
-
-{{end}}
-
-</div>
-</body>
-
+        {{$UrlPath:=.UrlPath}}
+        <div class="content">
+            {{if .IsDir}}
+                <ul style="list-style-type:disclosure-closed">
+                {{range .Files}}
+                    {{ if $UrlPath }}
+                        <li><a href="/{{ $UrlPath | removeTrailingSlash }}/{{ . }}">{{ . }}</a></li>
+                    {{ else }}
+                        <li><a href="{{ $UrlPath | removeTrailingSlash }}/{{ . }}">{{ . }}</a></li>
+                    {{ end }}
+                {{end}}
+                </ul>
+                <p class="footer">
+                ✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}">source</a>
+                </p>
+            {{else}}
+                <p><nav id="toc"><details close><summary>{{$UrlPath}}</summary></details></nav></p>
+                {{.Body}}
+                <p class="footer">
+                ✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}.md">source</a> <span>{{ .LastModified }}</span>
+                </p>
+            {{end}}
+        </div>
+    </body>
 </html>
