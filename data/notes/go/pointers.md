@@ -1,4 +1,4 @@
-Go has pointers 👉. A pointer is a value that points to the memory address of another variable. Variable is a label or nickname for a memory address.
+Go has pointers 👉. A pointer is a value that points to the memory address of a variable.
 
 ```go
 func main() {
@@ -29,7 +29,7 @@ Address  |  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 | 11 | 12 | 13 | 14 |
 Variable | x                 | y  | px                | py                | pz                |
 ```
 
-Pointers are [always](https://go.dev/play/p/t638QHuE21E) only a machine word in size (usually 32 or 64 bits) no matter what type they point to.
+Pointers are [always](https://go.dev/play/p/t638QHuE21E) only a machine word ~~in size~~ wide (usually 32 or 64 bits) no matter what type they point to.
 
 # How to work with them
 
@@ -42,9 +42,7 @@ p = &i      // The & operator generates a pointer to its operand.
 *p = 21     // The * operator denotes the pointer's underlying value.
 ```
 
-The operation on the last line is known as "dereferencing" or "indirecting".
-
-Before dereferencing a pointer you must make sure it's not nil.
+The operation on the last line is known as "dereferencing" or "indirecting". Before dereferencing a pointer you must make sure it's not nil.
 
 ```go
 var p *int
@@ -107,8 +105,6 @@ There are two reasons to use a pointer receiver:
 
 1. so that the method can modify the value the receiver points to
 2. avoid copying the value on each method call (this can be more efficient if the receiver is a large struct, for example)
-
-Since methods often need to modify their receiver, pointer receivers are more common than value receivers.
 
 In general, all methods on a given type should have either value or pointer receivers, but not a mixture of both.
 
