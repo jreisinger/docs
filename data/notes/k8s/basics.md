@@ -3,7 +3,7 @@ Kubernetes is a distributed operating system. Applications running on it are cal
 Config and basic concepts
 =========================
 
-`kubectl` configuration
+`kubectl` cluster configuration
 
 ```bash
 kubectl config view
@@ -43,9 +43,9 @@ Basic objects
 
 ```sh
 # view Kubernetes objects/resources
-kubectl get all [-l app=nginx] # all resources [with a label app=nginx]
-kubectl get <type>             # all resources of given type
-kubectl get <type> <object>    # specific resource
+kubectl get all [-l app=nginx] # all objects [with a label app=nginx]
+kubectl get <type>             # all objects of given type
+kubectl get <type> <object>    # specific object
 
 # details about an object
 kubectl describe <type> <object>
