@@ -39,7 +39,7 @@ func main() {
 		}
 	}()
 
-	addr := ":5001"
+	addr := "localhost:5001"
 	log.Printf("started HTTP server at %s", addr)
 	log.Fatal(http.ListenAndServe(addr, nil))
 }
