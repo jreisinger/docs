@@ -1,13 +1,25 @@
 You can do k8s access control via:
 
-* managing access per cluster (anyone with access can do anything); ok for testing, small deployments
+* managing access per cluster (anyone with access can do anything) - ok for testing, small deployments
 * RBAC (Role Based Access Control) - production setup
+
+Find out whether RBAC is enabled on a cluster (one line for each control node):
+
+```
+$ kubectl describe pod -n kube-system -l component=kube-apiserver | grep authorization
+      --authorization-mode=Node,RBAC
+      --authorization-mode=Node,RBAC
+      --authorization-mode=Node,RBAC
+```
 
 # Overview
 
-<img width="639" alt="image" src="https://user-images.githubusercontent.com/1047259/167849081-bc128f2b-5757-4d4c-82e1-c19f71836cee.png">
+* every time you connect to a cluster you do so as a specific user
+* service account - user account associated with a program running in a pod
+* there is `default` service account for each namespace
+* users can have different sets of permissions - governed by `roles`
 
-<img width="631" alt="image" src="https://user-images.githubusercontent.com/1047259/167849397-a4aa7317-1e6b-4f9d-beb8-c4ed1edd28dd.png">
+<img width="639" alt="image" src="https://user-images.githubusercontent.com/1047259/167849081-bc128f2b-5757-4d4c-82e1-c19f71836cee.png">
 
 Groups and users
 
@@ -18,7 +30,7 @@ Groups and users
 Service account
 
 * represents a program
-* assigned to a pod (if not `default` service account is used)
+* assigned to a pod (if not, `default` service account is used)
 
 ```
 apiVersion: v1
@@ -35,34 +47,21 @@ spec:
 ...
 ```
 
+Authentication depends on the cluster provider.
+
+<img width="631" alt="image" src="https://user-images.githubusercontent.com/1047259/167849397-a4aa7317-1e6b-4f9d-beb8-c4ed1edd28dd.png">
+
 # RBAC primitives
 
 <img width="638" alt="image" src="https://user-images.githubusercontent.com/1047259/167874790-755953d0-2f25-467e-911e-6f4703c52500.png">
 
-Find out whether RBAC is enabled on a cluster (one line for each control node):
-
-```
-> kubectl describe pod -n kube-system -l component=kube-apiserver | grep authorization
-      --authorization-mode=Node,RBAC
-      --authorization-mode=Node,RBAC
-      --authorization-mode=Node,RBAC
-```
-
 In Kubernetes, permissions are additive; users start with no permissions, and you can add permissions using Roles and RoleBindings. You can’t subtract permissions from someone who already has them.
-
-## ServiceAccount
-
-* every time you connect to a cluster you do so as a specific user
-* service account - user account associated with automated system
-* there is `default` service account for each namespace
-* authentication depends on the cluster provider (e.g. `gcloud` uses a token per cluster)
-* users can have different sets of permissions - governed by `roles`
 
 ## Role
 
 * a specific set of permissions
-* `Role` - defines roles on a namespace level
-* `ClusterRole` - defines roles accross the whole cluster
+* `Role` - defines permissions on a namespace level
+* `ClusterRole` - defines permissions accross the whole cluster
 
 There are some [defaults](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#default-roles-and-role-bindings):
 
@@ -84,7 +83,7 @@ rules:
 
 ## RoleBinding
 
-* associate a user with a role
+* associates a user with a role
 * also here you can have RoleBinding or ClusterRoleBinding
 
 ```
@@ -103,7 +102,7 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ```
 
-* see existing RoleBindings:
+* to see existing RoleBindings:
 
 ```
 kubectl get rolebindings.rbac.authorization.k8s.io --all-namespaces
