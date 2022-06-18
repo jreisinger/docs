@@ -14,7 +14,7 @@ $ kubectl describe pod -n kube-system -l component=kube-apiserver | grep authori
 
 # Overview
 
-* every time you connect to a cluster you do so as a specific user
+* every time you connect to a cluster API you do so as a specific user
 * service account - user account associated with a program running in a pod
 * there is `default` service account for each namespace
 * users can have different sets of permissions - governed by `roles`
