@@ -1,4 +1,4 @@
-Reviewed: 2022-06-20
+Last reviewed: 2022-06-20
 
 # Testing Perl script
 
