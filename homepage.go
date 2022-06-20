@@ -21,6 +21,7 @@ func main() {
 
 	http.Handle("/static/", staticHandler())
 	http.HandleFunc("/favicon.ico", faviconHandler)
+	http.HandleFunc("/sitemap.xml", sitemapHandler)
 
 	http.HandleFunc("/about", aboutHandler)
 	http.HandleFunc("/notes", notesHandler)

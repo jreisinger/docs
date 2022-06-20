@@ -9,6 +9,8 @@ import (
 	"path/filepath"
 	"regexp"
 	"strings"
+
+	"github.com/ikeikeikeike/go-sitemap-generator/stm"
 )
 
 // searchHandler handles requests for /search. It searches paths and contents of
@@ -140,6 +142,18 @@ func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
 func faviconHandler(w http.ResponseWriter, r *http.Request) {
 	icon := filepath.Join(repoLocalPath, "static", "favicon.ico")
 	http.ServeFile(w, r, icon)
+}
+
+func sitemapHandler(w http.ResponseWriter, r *http.Request) {
+	sm := stm.NewSitemap()
+	sm.SetDefaultHost("http://reisinge.net")
+
+	sm.Create()
+	sm.Add(stm.URL{"loc": "/notes", "changefreq": "daily"})
+	sm.Add(stm.URL{"loc": "/blog", "changefreq": "monthly"})
+	sm.Add(stm.URL{"loc": "/about", "changefreq": "monthly"})
+
+	w.Write(sm.XMLContent())
 }
 
 // staticHandler serves files from "static" folder: CSS styles and pictures.

@@ -5,13 +5,17 @@ go 1.18
 require (
 	github.com/go-git/go-git/v5 v5.4.2
 	github.com/gomarkdown/markdown v0.0.0-20191104174740-4d42851d4d5a
+	github.com/ikeikeikeike/go-sitemap-generator v1.0.2
 )
 
 require (
 	github.com/Microsoft/go-winio v0.4.16 // indirect
 	github.com/ProtonMail/go-crypto v0.0.0-20210428141323-04723f9f07d7 // indirect
 	github.com/acomagu/bufpipe v1.0.3 // indirect
+	github.com/beevik/etree v1.1.0 // indirect
+	github.com/clbanning/mxj v1.8.4 // indirect
 	github.com/emirpasic/gods v1.12.0 // indirect
+	github.com/fatih/structs v1.1.0 // indirect
 	github.com/go-git/gcfg v1.5.0 // indirect
 	github.com/go-git/go-billy/v5 v5.3.1 // indirect
 	github.com/imdario/mergo v0.3.12 // indirect
