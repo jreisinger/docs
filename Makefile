@@ -2,7 +2,8 @@ build:
 	go build
 
 run: build
-	./homepage
+	# Use the current working directory as the local repo path
+	REPO_LOCAL_PATH="." ./homepage
 
 # can be more for multiplatform images
 PLATFORMS := linux/amd64

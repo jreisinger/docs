@@ -4,6 +4,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"strings"
 	"time"
 )
 
@@ -13,6 +14,11 @@ var (
 )
 
 func main() {
+	// REPO_LOCAL_PATH is used in Makefile.
+	if rlp := os.Getenv("REPO_LOCAL_PATH"); rlp != "" {
+		repoLocalPath = rlp
+	}
+
 	http.Handle("/static/", staticHandler())
 	http.HandleFunc("/favicon.ico", faviconHandler)
 
@@ -22,22 +28,26 @@ func main() {
 	http.HandleFunc("/search", searchHandler)
 	http.HandleFunc("/", pageHandler)
 
-	if err := os.RemoveAll(repoLocalPath); err != nil {
-		log.Fatal(err)
-	}
-	log.Printf("cloning %s to %s", repoRemoteUrl, repoLocalPath)
-	if err := gitClone(repoLocalPath, repoRemoteUrl); err != nil {
-		log.Fatal(err)
-	}
-
-	go func() {
-		for {
-			if err := gitPull(repoLocalPath); err != nil {
-				log.Fatal(err)
-			}
-			time.Sleep(time.Second * 2)
+	// If not developing, i.e. using "." as local repo path.
+	if strings.HasPrefix(repoLocalPath, "/tmp/") {
+		if err := os.RemoveAll(repoLocalPath); err != nil {
+			log.Fatal(err)
 		}
-	}()
+
+		log.Printf("cloning %s to %s", repoRemoteUrl, repoLocalPath)
+		if err := gitClone(repoLocalPath, repoRemoteUrl); err != nil {
+			log.Fatal(err)
+		}
+
+		go func() {
+			for {
+				if err := gitPull(repoLocalPath); err != nil {
+					log.Fatal(err)
+				}
+				time.Sleep(time.Second * 2)
+			}
+		}()
+	}
 
 	addr := ":5001"
 	log.Printf("started HTTP server at %s", addr)
