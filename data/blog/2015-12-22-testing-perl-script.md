@@ -1,3 +1,5 @@
+Reviewed: 2022-06-20
+
 # Testing Perl script
 
 At [$work](https://www.eset.com/), I was to upgrade several Debians from Squeezy through Wheezy to
