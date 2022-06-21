@@ -10,7 +10,7 @@ My most common use cases boil down to:
 For both use cases the workflow looks like this:
 
 1. Build and run a WAF container
-2. Make changes to the WAF container
+2. Make changes to the running WAF container
 3. Test the WAF container
 4. Commit and push the changes
 
@@ -46,7 +46,7 @@ bcb445f3a683        nginx                     "/docker-entrypoint.…"   4 secon
 
 `waf-runner` will keep on `tail`ing the logs until you hit Ctrl-C.
 
-## Make changes to the WAF container
+## Make changes to the running WAF container
 
 If you want to make temporary changes to the WAF you can get into the container:
 
@@ -56,8 +56,6 @@ $ docker exec -it testing-waf /bin/sh
 / # nginx -s reload
 / # exit
 ```
-
-To make permanent changes you modify the WAF's `Dockerfile` and/or related configuration files.
 
 ## Test the WAF container
 
@@ -97,11 +95,15 @@ This means that `waf-tester` will make a GET request with this URL `<scheme>://<
 
 There exist additional `input` and `output` fields. You can use different methods, insert custom headers or instead of checking the request status code you can check the WAF logs.
 
-The YAML format is based on [FTW](https://github.com/CRS-support/ftw/blob/master/docs/YAMLFormat.md) but some fields are missing. Others, like `dest_addr`, are ignored. See the [code](https://github.com/jreisinger/waf-tester/blob/master/yaml/types.go) for details.
+The YAML format is based on [FTW](https://github.com/CRS-support/ftw/blob/master/docs/YAMLFormat.md) but some fields are missing. Others, like `dest_addr`, are ignored. See the [code](https://github.com/jreisinger/waf-tester/blob/master/wafyaml/types.go) for details.
+
+## Commit and push the changes
+
+To make permanent changes you modify the WAF's `Dockerfile` and/or related configuration files.
 
 ## Practical example: adding a WAF rule
 
-WAF rules (or signatures) is what helps WAFs to distinguish between legitimate and malicious requests. Let's say that I want to run some tests against a [NAXSI](https://github.com/nbs-system/naxsi) WAF with default rules. To run this WAF locally in a container I execute this:
+WAF rules (or signatures) is what helps WAFs to distinguish between legitimate and malicious requests. Let's say that I want to run some tests against a [NAXSI](https://github.com/nbs-system/naxsi) WAF with default rules. To run this WAF locally:
 
 ```
 $ waf-runner waf/nginx/naxsi
