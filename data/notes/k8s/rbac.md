@@ -12,11 +12,15 @@ $ k describe pod -n kube-system -l component=kube-apiserver | grep authorization
       --authorization-mode=Node,RBAC
 ```
 
-Check the pods list permissions assigned to user johndoe:
+Basic user access management:
 
 ```
-$ k auth can-i list pods --as johndoe
-no
+# check the permissions assigned to user johndoe
+k auth can-i list pods --as johndoe
+
+# assign new permissions to user johndoe
+k create role pod-reader -n default --resource=pods --verb=watch,list,get
+k create rolebinding read-pods -n default --role=pod-reader --user=johndoe
 ```
 
 # Overview
