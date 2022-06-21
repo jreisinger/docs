@@ -3,26 +3,6 @@ You can do k8s access control via:
 * managing access per cluster (anyone with access can do anything) - ok for testing, small deployments
 * RBAC (Role Based Access Control) - production setup
 
-Find out whether RBAC is enabled on a cluster (one line for each control node):
-
-```
-$ k describe pod -n kube-system -l component=kube-apiserver | grep authorization
-      --authorization-mode=Node,RBAC
-      --authorization-mode=Node,RBAC
-      --authorization-mode=Node,RBAC
-```
-
-Basic user access management:
-
-```
-# check the permissions assigned to user johndoe
-k auth can-i list pods --as johndoe
-
-# assign new permissions to user johndoe
-k create role pod-reader -n default --resource=pods --verb=watch,list,get
-k create rolebinding read-pods -n default --role=pod-reader --user=johndoe
-```
-
 # Overview
 
 * every time you connect to a cluster API you do so as a specific user
@@ -117,6 +97,36 @@ roleRef:
 
 ```
 kubectl get rolebindings.rbac.authorization.k8s.io --all-namespaces
+```
+
+# Commands
+
+Find out whether RBAC is enabled on a cluster (one line for each control node):
+
+```
+$ k describe pod -n kube-system -l component=kube-apiserver | grep authorization
+      --authorization-mode=Node,RBAC
+      --authorization-mode=Node,RBAC
+      --authorization-mode=Node,RBAC
+```
+
+Basic user access management:
+
+```
+# check the permissions assigned to user johndoe
+k auth can-i list pods --as johndoe
+
+# assign new permissions to user johndoe
+k create role pod-reader -n default --resource=pods --verb=watch,list,get
+k create rolebinding read-pods -n default --role=pod-reader --user=johndoe
+```
+
+Basic service account access management:
+
+```
+k create serviceaccount api-access -n apps
+k create clusterrole api-clusterrole --resource=pods --verb=watch,list,get
+k create clusterrolebinding api-clusterrolebinding --clusterrole=api-clusterrole --serviceaccount=apps:api-access
 ```
 
 # Sources
