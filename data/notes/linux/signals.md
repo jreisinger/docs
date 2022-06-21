@@ -19,7 +19,7 @@ Selected signal types:
 * STOP - freeze the process (stays in memory ready to continue where it left
     off)
 * CONT - continue running the STOPed process
-* QUIT - similar to TERM but generates a core dump in not caugh (`Ctrl-\`)
+* QUIT - similar to TERM but generates a core dump if not caugh (`Ctrl-\`)
 * CHLD - one of the child processes stopped running - or, more likely, exited
 * [HUP](http://world.std.com/~swmcd/steven/tech/daemon.html)
 * TSTP - pressing `Ctrl-Z` sends TSTP to a process
