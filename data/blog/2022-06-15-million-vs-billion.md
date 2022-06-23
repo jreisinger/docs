@@ -6,3 +6,5 @@ $ calc 1_000_000/3600/24
 $ calc 1_000_000_000/3600/24/365
 1000000000/3600/24/365 = 31.7097919837645865043125317097919837646
 ```
+
+([calc](https://github.com/jreisinger/HOME/blob/main/bin/calc) is a simple CLI calculator I've been using for doing math in terminal)
