@@ -51,7 +51,7 @@ at Slovak Telekom [2004 - 2006, 2011 - 2013]
 
 Operating systems: Linux (Ubuntu/Debian), Kubernetes
 
-Artificial languages: Go (Golang), Bash, Python/Perl
+Artificial languages: [Go](https://github.com/jreisinger?tab=repositories&language=go) (Golang), [Bash](https://github.com/jreisinger?tab=repositories&language=shell), [Python](https://github.com/jreisinger?tab=repositories&language=python), [Perl](https://github.com/jreisinger?tab=repositories&language=perl)
 
 Natural languages: English, Italian, Slovak/Czech
 
