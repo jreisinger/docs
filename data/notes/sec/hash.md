@@ -3,7 +3,7 @@ Created: 2018-08-10
 There are several classes of hashes (hash functions) used for different purposes
 
 * hash datatype in Perl or dictionary (`hash` function) in Python maps a lookup string to a memory location (fast and short)
-* networking protocols checksums like CRC or Adler (rarely go over 32-bits in length)
+* networking protocols checksums like CRC or Adler (rarely go over 32-bits in length, used for error detection)
 * cryptographic hashes (this article is about them)
 
 Hash properties
