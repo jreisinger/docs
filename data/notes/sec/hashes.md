@@ -1,55 +1,54 @@
-*2018-08-10*
+Created: 2018-08-10
 
-There are several classes of hashes (hash functions) used for different purposes:
+There are several classes of hashes (hash functions) used for different purposes
 
-* hash datatype in Perl (maps a lookup string to a memory location; fast and short)
+* hash datatype in Perl or dictionary (`hash` function) in Python maps a lookup string to a memory location (fast and short)
 * networking protocols checks like CRC or Adler (rarely go over 32-bits in length)
 * cryptographic hashes (this article is about them)
 
-Cryptographic hashes
+Hash properties
 
-* provide an encryption using an algorithm and *no key*
-* a variable length plaintext is "hashed" into a fixed-length hash value (also called a *message digest* or a *hash*)
-* primarily used to provide integrity --> if the hash changed, the plaintext must have changed
-* have an "avalanche effect" --> changing just one bit of input creates a completely different output
+* deterministic behavior - a given input always produces the same output
+* fixed-length hash values (also called message digests) for arbitrary long messages
+* avalanche effect - small diffs between messages produce large diffs between hash values
 
-Collisions
+Cryptographic hash - additional properties
 
-* hashes are not unique - number of possible plaintexts is far larger than the number of possible hashes
-* searching for collision to match a specific text should not be possible accomplish in a reasonable amount of time
+* one way function - easy to invoke, infeasable [1] to reverse engineer
+* collision resistance - hash values for different messages must almost [1] never have the same value
 
-Types
+[1] Reverting a hash value or searching for a collision should not be practically possible. This is a moving target and cryptographic strength weakens with time.
+
+Cryptographic hash usage
+
+* primarily used to provide data (message) integrity
+* if the hash value changed, the plaintext must have changed
+
+Safe algorithms
+
+* SHA2 - family of algorithms (224 to 512-bits), use SHA-256 for general-purpose cryptographic hashing
+* SHA3 - Keccak won a [competition](https://csrc.nist.gov/projects/hash-functions/sha-3-project) announced in 2003, use SHA3-256 in high-security environments
+* BLAKE2 - not as popular but leverages modern CPU architecture to hash at extreme speeds -> good for large messages
+
+Unsafe algorithms (should never be used for security purposes when creating a new system)
 
 * MD5 - 128-bit, considered weak since late 90s
 * SHA1 - 160-bit, developed by the NSA, [broken](https://www.schneier.com/blog/archives/2005/02/sha1_broken.html) in 2005, [completely broken](https://sha-mbles.github.io/) in 2020
-* SHA2 - group of algorithms (224 to 512-bits), kind of secure
-* SHA3 - Keccak won a [competition](https://csrc.nist.gov/projects/hash-functions/sha-3-project) announced in 2003, **recommended**
 
-Perl
+Examples
 
-``` sh
-$ perl -MDigest::SHA3=sha3_512_hex -E 'say sha3_512_hex( "plaintext" )'
+```
+$ python -c 'import hashlib; print(hashlib.sha256(b"hello").hexdigest())'
+2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824
+$ ruby -e 'require "digest"; puts Digest::SHA256.hexdigest "hello"'
+2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824
+$ perl -MDigest::SHA=sha256_hex -E 'say sha256_hex( "hello" )'
+2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824
 ```
 
-Go
+* [Go](https://go.dev/play/p/tiT5N29hc4o)
 
-``` go
-package main
+Sources
 
-import (
-	"fmt"
-
-	"golang.org/x/crypto/sha3"
-)
-
-func main() {
-	hash := sha3.New512()
-	hash.Write([]byte("plaintext"))
-	fmt.Printf("%x\n", hash.Sum(nil))
-}
-```
-
-Sources:
-
+* Full Stack Python Security (2021)
 * http://www.wumpus-cave.net/2014/03/27/perl-encryption-primer-hashes
-* http://wiki.reisinge.net/CISSP/03_Cryptography/HashFunctions
