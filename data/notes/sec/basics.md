@@ -8,6 +8,8 @@ You need some level of security. To achieve it you need patience, vigilance, kno
 
 # Goals
 
+Security is the ability to resist attack.
+
 CIA triad represents the traditional (since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf) - see picture below) security goals.
 
 ![image](https://user-images.githubusercontent.com/1047259/148757897-f51c3d58-8f26-46d8-973b-854ae47d84d4.png)
@@ -34,8 +36,8 @@ These security principles will help you to increase your security.
 
 Clarity and simplicity
 
-* obscurity and complexity (in code, processes, communication) hide (security) problems
-* easy to understand and easy to use security controls and tools are more likely to be used
+* obscurity and complexity in code, processes, communication hide (security) problems
+* easy to understand and easy to use security controls and tools are more likely to be used (correctly)
 
 Least privilege
 
@@ -48,13 +50,14 @@ Defense in depth
 
 * acknowledgement that almost any security control can fail
 * thus you need multiple layers of overlapping security controls
+* adding another layer is also more cost effective than perfecting a single layer
 
 Limiting attack surface
 
-* attack surface is all possible ways a system can be attacked
+* attack surface is all possible ways a system can be attacked (through user, system, network)
 * higher complexity means bigger attack surface
 * bigger attack surface means higher probability of getting attacked
-* apply to interfaces, exposed systems, unnecessary services, underused systems
+* apply to exposed systems, unnecessary services, underused systems
 
 # Areas
 
@@ -134,9 +137,9 @@ Know your risks (have at least a spreadsheet) and how you approach them:
 
 # More
 
+* Full Stack Python Security (2021)
 * Practical Cloud Security (2019)
 * Securing DevOps (2018)
 * Kubernetes Security (2018)
 * ULSAH 5th (2017)
-* M$ Cloud Adoption Framework - security: https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/secure/
 * Attack tactics and techniques: https://attack.mitre.org/
