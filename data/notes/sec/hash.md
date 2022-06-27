@@ -15,7 +15,7 @@ Hash properties
 Cryptographic hash - additional properties
 
 * one way function - easy to invoke, infeasable [1] to reverse engineer
-* collision resistance - hash values for different messages must almost [1] never have the same value
+* [collision](https://github.com/jreisinger/unsafehash) resistance - hash values for different messages must almost [1] never have the same value
 
 [1] Reverting a hash value or searching for a collision should not be practically possible. This is a moving target and cryptographic strength weakens with time.
 
