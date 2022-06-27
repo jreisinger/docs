@@ -18,7 +18,7 @@ Exit code can be used in conditionals like this:
     $ if grep -q bla /etc/passwd; then echo ok; else echo error; fi
     error
 
-The shell runs the command after the `if` keywords. If the command exits with
+The shell runs the command after the `if` keyword. If the command exits with
 0, the `then` clause commands are executed, else `else` clause commands are
 run.
 
