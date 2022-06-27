@@ -1,6 +1,6 @@
 Public information about selected attacks on information systems.
 
-# 2022-06 Slovak Telekom
+# 2022-06 Slovak Telekom's website down
 
 https://www.telekom.sk/:
 
@@ -19,3 +19,7 @@ Mrzí nás, že v súčasnosti nemôžete vybaviť svoje požiadavky, naše tím
 ```
 
 * https://zive.aktuality.sk/clanok/j42eNLl/telekom-zasiahol-kyberneticky-utok-ma-problemy-s-internymi-systemami/
+
+# 2022-06 Cloudflare mitigates 26 mil. rps HTTPS DDoS attack
+
+* https://blog.cloudflare.com/26m-rps-ddos/
