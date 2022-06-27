@@ -7,10 +7,17 @@ Service provides discoverable names and loadbalancing.
 Service type defines how the matching Pods are exposed.
 
 * ClusterIP - on cluster-internal IP address (reachable only from within cluster)
-* NodePort - on each node's IP address and a static port
+* NodePort - on each node's IP address and a static port (30000 - 32767)
 * LoadBalancer - on cloud provider's load balancer
 * ExternalName - maps a service to a DNS name
 
 A service does not need a deployment but they can work in tandem. A Deployment manages Pods and their replication. A Service routes network requests to a set of Pods.
 
 <img src="https://user-images.githubusercontent.com/1047259/130795064-04865c74-17e9-408a-944b-b8ffcacb0557.png" style="max-width:100%;height:auto;"> 
+
+Create deployment + service:
+
+```
+kubectl create deployment echoserver --image=k8s.gcr.io/echoserver --port=8080 --replicas=5
+kubectl expose deployment echoserver --port=80 --target-port=8080
+```
