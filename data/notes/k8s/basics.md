@@ -67,7 +67,7 @@ Pod
 * one or more containers working together symbiotically
 * all containers in a Pod always land on the same node
 * once scheduled to a node, Pods don't move
-* each container runs its own cgroup but they *share* hostname, port space and filesystem
+* each container runs its own cgroup but they *share* hostname, IP address + port space and filesystem
 * containers can communicate via IPC, loopback interface (`localhost` hostname) and can share files
 * like a logical host
 * if you want to persist data across multiple instances of a Pod, you need to use `PersistentVolumes`
