@@ -1,6 +1,6 @@
 Public information about selected attacks on information systems.
 
-## 2022-06 Slovak Telekom
+# 2022-06 Slovak Telekom
 
 https://www.telekom.sk/:
 
