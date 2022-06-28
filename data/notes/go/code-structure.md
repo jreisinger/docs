@@ -102,3 +102,5 @@ Using interfaces like this definitely makes it easier to test smaller pieces of 
 ---
 
 Source: https://changelog.com/posts/on-go-application-structure
+
+More: https://youtu.be/spKM5CyBwJA
