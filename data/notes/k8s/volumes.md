@@ -135,3 +135,7 @@ spec:
       - mountPath: "/mnt/data"
         name: app-storage
 ```
+
+# Sources
+
+* Certified Kubernetes Administrator (CKA) Study Guide (2022)
