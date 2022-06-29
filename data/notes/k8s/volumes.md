@@ -16,7 +16,7 @@ A container using the temporary filesystem (default) vs a Volume:
 
 # Types of Volumes
 
-There are many types of volumes. The type determines the medium backing the volume and its runtime behaviour. Some of the volume types are listed here.
+There are many [types of volumes](https://kubernetes.io/docs/concepts/storage/volumes/#volume-types). The type determines the medium backing the volume and its runtime behaviour. Some of the volume types are listed here.
 
 `emtpyDir`
 
@@ -86,7 +86,7 @@ spec:
 
 Data stored on a Volume persist a Pod restart. If you want to persist data even over node and cluster lifetime, like in a database, use Persistent Volumes.
 
-<img src="https://user-images.githubusercontent.com/1047259/130926316-1297169b-5d44-442d-a03d-2bcec8468042.png" style="max-width:100%;height:auto;"> 
+![130926316-1297169b-5d44-442d-a03d-2bcec8468042](https://user-images.githubusercontent.com/1047259/176382749-e72a804f-c3a9-4e05-924b-fcca190e0c84.png)
 
 ```
 apiVersion: v1
@@ -135,7 +135,3 @@ spec:
       - mountPath: "/mnt/data"
         name: app-storage
 ```
-
-# Resources
-
-* https://kubernetes.io/docs/concepts/storage/volumes
