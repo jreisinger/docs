@@ -89,6 +89,7 @@ Data stored on a Volume persist a Pod restart. If you want to persist data even 
 ![130926316-1297169b-5d44-442d-a03d-2bcec8468042](https://user-images.githubusercontent.com/1047259/176382749-e72a804f-c3a9-4e05-924b-fcca190e0c84.png)
 
 ```
+# NOTE: You don't need to create a PV, at least on a kind cluster.
 apiVersion: v1
 kind: PersistentVolume
 metadata:
