@@ -97,12 +97,10 @@ spec:
   capacity:
     storage: 1Gi
   accessModes:
-    # Read/write access by a single node.
-    - ReadWriteOnce
-    # Read-only access by many nodes.
-    #- ReadOnlyMany
-    # Read/write access by many nodes.
-    #- ReadWriteMany
+    - ReadWriteOnce     # RWO, read/write access by a single node
+    #- ReadOnlyMany     # ROX, read-only access by many nodes
+    #- ReadWriteMany    # RWX, read/write access by many nodes
+    #- ReadWriteOncePod # RWOP, read/write access by a single pod
   hostPath:
     path: /data/db
 ---
