@@ -1,18 +1,15 @@
-K8s Volume abstraction fixes two problems:
+Containers store data in a temporary fielsystem which is empty each time a Pod starts. A Volume persists data beyond a container restart (volume lifetime = Pod lifetime). A PersistentVolume keeps data even beyond a Pod or node/cluster restart. 
 
+Thus K8s Volume abstraction fixes two problems:
+
+1. Ephemeral nature of files in Containers (when a Container restarts the files get lost).
 1. Need to share files between Containers within a Pod.
-2. Ephemeral nature of files in Containers (when a Container restarts the files get lost).
 
 A process in a Container sees a filesystem view composed from their Docker image (mounted at the root of the FS) and Volumes (mounted at specified paths within the image). It can read and write files to this filesystem.
 
-* Volume lifetime == Pod lifetime
-* Volume is a directory (with some data) that is accessible to the Containers in a Pod
-* `pod.spec.volumes` - what volumes to provide for a Pod
-* `pod.spec.containers.volumeMounts` - where to mount volumes into Containers
-
 A container using the temporary filesystem (default) vs a Volume:
 
-<img src="https://user-images.githubusercontent.com/1047259/129347362-812374d7-3225-4e51-a4de-2ad9d8942fce.png" style="max-width:100%;height:auto;"> 
+![129347362-812374d7-3225-4e51-a4de-2ad9d8942fce](https://user-images.githubusercontent.com/1047259/176395171-e934df27-6eac-4704-8a0f-f9c45c6d1d2e.png)
 
 # Types of Volumes
 
@@ -84,12 +81,12 @@ spec:
 
 # Persistent Volumes
 
-Data stored on a Volume persist a Pod restart. If you want to persist data even over node and cluster lifetime, like in a database, use Persistent Volumes.
+Data stored on a Volume persist a Pod restart. If you want to persist data even over node and cluster lifetime, like in a database, use Persistent Volumes (PV). The PVC abstracts the underlying implementation details of a PV. A PV can be provisioned statically by creating an object or dynamically by a provisioner assingned to a storage class.
 
 ![130926316-1297169b-5d44-442d-a03d-2bcec8468042](https://user-images.githubusercontent.com/1047259/176382749-e72a804f-c3a9-4e05-924b-fcca190e0c84.png)
 
 ```
-# NOTE: You don't need to create a PV, at least on a kind cluster.
+# NOTE: on a kind cluster you don't need to create a PV object manually.
 apiVersion: v1
 kind: PersistentVolume
 metadata:
