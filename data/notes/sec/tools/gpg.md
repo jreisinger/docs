@@ -11,16 +11,23 @@ gpg --full-generate-key
 gpg --armor --export KEY
 
 # transfer the keys to new machine (Linux, Mac)
-mv ~/.gnupg ~/.gnupg.old
-scp -rp OTHERMACHINE:~/.gnupg ~/
+mv ~/.gnupg ~/.gnupg.old          # on the new machine
+scp -rp OTHERMACHINE:~/.gnupg ~/  # on the new machine
+```
 
-# verify and sign a key (the sender should supply a fingerprint to compare)
+```
+# 1) import a public key
+gpg --import john_doe_gpg.asc
+
+# 2) verify and sign the public key (the sender should supply a fingerprint to compare)
 gpg --fingerprint john.doe@example.org
 gpg --sign-key john.doe@example.org
 
-# encrypt a file
-gpg --encrypt --sign --armor -r john.doe@example.org secret.conf
+# 3) encrypt a file with the public key
+gpg --encrypt --sign --armor --recipient john.doe@example.org my-secret.conf
+```
 
-# decrypt a file
-gpg --decrypt secret.conf.asc > secret.conf
+```
+# decrypt a file (with your private key)
+gpg --decrypt their-secret.conf.asc > their-secret.conf
 ```
