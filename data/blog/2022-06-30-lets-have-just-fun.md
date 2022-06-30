@@ -1,4 +1,4 @@
-Some engineers and managers prefer random approach to work as opposed to a systematic one. By random (or freestyle) approach I mean:
+Some engineers, both junior and senior, and managers prefer random approach to work as opposed to a systematic one. By random (or freestyle) approach I mean:
 
 * generating quick ideas without followup
 * kidnapping discussions with unrelated digressions
@@ -6,6 +6,9 @@ Some engineers and managers prefer random approach to work as opposed to a syste
 * making decisions without discussion
 * organizing useless meetings
 * hacking code without designing it
+* not using drawings when explaining concepts or designs
+* not tracking issues/tickets/projects 
+* not documenting
  
 By systematic (or disciplined) approach I mean the opposite.
 
@@ -17,31 +20,29 @@ The signs of unhealthy level of organizational complexity are:
 * people don't show interest in the meetings
 * the same problems being discussed again and again
 * difficulty to schedule meetings, too many meetings
-* non-existent or bad issues/tickets/projects tracking
-* non-existent or bad documentation
 * bureaucracy and rules that make no sense
 * non-existent or unclear team/company strategy and goals
 * non-existent or toxic team/company culture
 
-The signs of unhealthy level of technical complexity in software projects:
+The signs of unhealthy level of technical complexity in software systems:
 
 * hard to use (unclear API and documentation)
-* unclear or hard to understand design
-* hard to find bugs
-* hard to add new features
+* unclear design
+* difficult to find bugs
+* difficult to add new features
 * difficult to take over (or hand over)
 * operational problems and outages
 
 (You can have unnecessary complexity also on personal level but I won't discuss this here and now.)
 
-So it seems that the issue is (unnecessary) complexity. The solution then must be simplicity.
+So it seems that the issue is unnecessary complexity. The solution then must be simplicity.
 
-Simplicity is actually hard. To keep things simple you have to think about them. Consider what is the goal, what resources you have, what are the pros and cons of various ways to achieve the goal. You also have to discuss you ideas and listen to other people's ideas. Once you have somehow clear ideas you have to communicate them well in written and oral form. Then you have to implement them (e.g. writing some code) and organize in accordance with them (via meetings, documentation, code structure). You have to be able to resist various pressures and temptations (saying NO). And you have to do all this again and again. This requires time, skill, motivation and patience.
+Simplicity is actually hard. To keep things simple you have to think about them, write your ideas down and review them several times. Consider what is the goal, what resources you have, what are the pros and cons of various ways to achieve the goal. You also have to discuss your ideas and listen to other people's ideas. Once you have somehow clear ideas you have to communicate them well. Then you have to implement them (e.g. writing some code) and organize in accordance with them (via meetings, documentation, code structure). You have to be able to resist various pressures and temptations (you must be able to say NO to most things). And you have to do all this again and again. This requires time, skill, motivation, patience and persistence.
 
-In case your current team/company doesn't want or is not able to do this there are three options for you:
+In case your current team/company doesn't want or is not able to do this (and you want and are) there are three options for you:
 
 * accept it and consider it a party instead of chaos :-)
-* get into a (management) position from which you can influence this
+* get into a (management) position from which you can influence things
 * get into a company (which seems to be) heading in the right direction
 
-This first option is the easiest one but not necessarily the right one. And of course you can and should always strive for simplicity on individual level. But you only have a certain amount of time, energy and patience.
+This first option is the easiest one but not necessarily the right one. Of course you can and should always strive for simplicity on individual level. But you only have a certain amount of time, energy and patience.
