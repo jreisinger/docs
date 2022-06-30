@@ -5,14 +5,14 @@ I get that the random approach is easier (and more fun?) and that it tends to pr
 The signs of unhealthy level of organizational complexity are:
 
 * meetings without agenda, conclusions and followup
-* difficulty to schedule meetings
-* too many meetings
 * people don't show interest in the meetings
+* the same problems being discussed again and again
+* difficulty to schedule meetings, too many meetings
 * non-existent or bad issues/tickets/projects tracking
 * non-existent or bad documentation
+* bureaucracy and rules that make no sense
 * non-existent or unclear team/company strategy and goals
 * non-existent or toxic team/company culture
-* bureaucracy and rules that make no sense
 
 The signs of unhealthy level of technical complexity in software projects:
 
