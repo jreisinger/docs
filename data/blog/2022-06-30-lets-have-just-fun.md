@@ -27,7 +27,7 @@ The signs of unhealthy level of technical complexity in software projects:
 
 So it seems that the issue is (unnecessary) complexity. The solution then must be simplicity.
 
-Simplicity is actually hard. To keep things simple you have to think about them. Consider what is the goal, what resources you have, what are the pros and cons of various ways to achieve the goal. Once you have somehow clear ideas you have to communicate them well in written and oral form. Put them in place, e.g. writing some code. Organize in accordance with them (via meetings, documentation, code structure). You have to be able to resist various pressures and temptations (saying NO). And you have to do all this again and again. This requires time, skill, motivation and patience.
+Simplicity is actually hard. To keep things simple you have to think about them. Consider what is the goal, what resources you have, what are the pros and cons of various ways to achieve the goal. You also have to discuss you ideas and listen to other people's ideas. Once you have somehow clear ideas you have to communicate them well in written and oral form. Then you have to implement them (e.g. writing some code) and organize in accordance with them (via meetings, documentation, code structure). You have to be able to resist various pressures and temptations (saying NO). And you have to do all this again and again. This requires time, skill, motivation and patience.
 
 In case your current team/company doesn't want or is not able to do this there are three options for you:
 
