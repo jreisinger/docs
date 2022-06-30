@@ -1,4 +1,13 @@
-Some engineers and managers prefer random approach to work as opposed to a systematic one. By random (or freestyle) approach I mean generating quick ideas without followup. Making decisions without discussion. Organizing useless meetings and hacking code without designing it. By systematic (or disciplined) approach I mean the opposite.
+Some engineers and managers prefer random approach to work as opposed to a systematic one. By random (or freestyle) approach I mean:
+
+* generating quick ideas without followup
+* kidnapping discussions with unrelated digressions
+* dumping ideas without putting an effort into thinking them over
+* making decisions without discussion
+* organizing useless meetings
+* hacking code without designing it
+ 
+By systematic (or disciplined) approach I mean the opposite.
 
 I get that the random approach is easier (and more fun?) and that it tends to produce new ideas. But if you use it too much it will create unnecessary chaos and technical debt after some time. In other words it will increase organizational and technical complexity without adding value. So you need some balance between freestyle and disciplined approach. To find the balance look for the signs.
 
