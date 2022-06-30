@@ -15,6 +15,8 @@ mv ~/.gnupg ~/.gnupg.old          # on the new machine
 scp -rp OTHERMACHINE:~/.gnupg ~/  # on the new machine
 ```
 
+When you want to send an encrypted file to someone:
+
 ```
 # 1) import a public key
 gpg --import john_doe_gpg.asc
@@ -26,6 +28,8 @@ gpg --sign-key john.doe@example.org
 # 3) encrypt a file with the public key
 gpg --encrypt --sign --armor --recipient john.doe@example.org my-secret.conf
 ```
+
+When you received an encrypted file from someone:
 
 ```
 # decrypt a file (with your private key)
