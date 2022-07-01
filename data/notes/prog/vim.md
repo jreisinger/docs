@@ -10,11 +10,12 @@ retab # apply tabs -> spaces
 
 set nofoldenable
 
-set textwidth=0
-set colorcolumn=0
+set textwidth=0 colorcolumn=0
 
 syntax off
-setlocal spell spelllang=en_us # enable spell checking in local buffer only
+
+# enable spell checking in local buffer only
+setlocal spell spelllang=en_us
 ```
 
 How to search:
