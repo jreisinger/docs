@@ -5,7 +5,8 @@ Hard disks failures typically stem from either platter surface defects (bad bloc
 ```
 lsblk
 sudo umount /dev/sda1
-sudo e2fsck -c /dev/sda1 # check for bad blocks
+sudo fsck -y /dev/sda1 # check and repair
+sudo fsck -c /dev/sda1 # check for bad blocks
 sudo mount /dev/sda1
 
 # If your disk supports SMART
