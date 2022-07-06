@@ -16,7 +16,7 @@ Groups and users
 
 * represent real persons
 * distributed by cluster admin
-* not an API resource
+* not an API resource (`k api-resources | grep -i user`)
 
 Service account
 
@@ -67,7 +67,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: secret-reader
 rules:
-- apiGroups: [""]
+- apiGroups: [""] # "" indicates the core API group
   resources: ["secrets"]
   verbs: ["get", "watch", "list"]
 ```
