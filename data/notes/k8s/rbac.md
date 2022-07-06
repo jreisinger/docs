@@ -93,13 +93,7 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ```
 
-* to see existing RoleBindings:
-
-```
-kubectl get rolebindings.rbac.authorization.k8s.io --all-namespaces
-```
-
-# Commands
+# kubectl commands
 
 Find out whether RBAC is enabled on a cluster (one line for each control node):
 
@@ -108,6 +102,12 @@ $ k describe pod -n kube-system -l component=kube-apiserver | grep authorization
       --authorization-mode=Node,RBAC
       --authorization-mode=Node,RBAC
       --authorization-mode=Node,RBAC
+```
+
+See existing RoleBindings in all namespaces:
+
+```
+k get rolebindings.rbac.authorization.k8s.io -A -o wide
 ```
 
 Basic user access management:
