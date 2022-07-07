@@ -56,7 +56,7 @@ HMAC functions are a generic way to use any orginary hash function as though it 
 * a specific kind of side channel attacks
 * a side channel attack derives unauthorized information by measuring a physical side channel (time, sound, power consumption, EM radiation, radio waves, heat)
 
-Secure systems compare hash values in length-constant time, sacrificing a bit of performance to prevent timing attack vulnerabilities. In Python use `hmac.compare_digest()` insted of `==`.
+Secure systems compare hash values in length-constant time, sacrificing a bit of performance to prevent timing attack vulnerabilities. In Python use `hmac.compare_digest()` instead of `==`.
 
 # Sources
 
