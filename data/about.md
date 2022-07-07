@@ -7,6 +7,6 @@ Welcome to my homepage, friend. I mostly keep technical notes here. `reisinge` w
 
 ## About me
 
-I try to put some fences and boardwalks across the tar pits of computing infrastructure :-). See my [CV](https://reisinge.net/cv) for more details.
+I try to put some fences and boardwalks in the tar pits of computing infrastructure :-). See my [CV](https://reisinge.net/cv) for more.
 
 > I think people who write programs do have at least a glimmer of extra insight into the nature of God... because creating a program often means that you have to create a small universe. -- Donald Knuth
