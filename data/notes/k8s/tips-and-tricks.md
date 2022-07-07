@@ -24,7 +24,7 @@ k run alpine --image=alpine --rm -it --restart=Never --command -- \
 wget -O- https://example.com --timeout 2
 
 k run curl --image=curlimages/curl --rm -it --restart=Never --command -- \
-curl -s -o /dev/null -w "%{http_code}" -L https://google.com
+curl -s -o /dev/null -w "%{http_code}\n" -L https://google.com
 ```
 
 Copy files
@@ -39,7 +39,7 @@ Port forwarding
 k port-forward <pod> 8080:8080 # tunnel: localhost -> k8s master -> k8s worker node
 ```
 
-Get pod subnets
+Get pod subnets assigned to the nodes
 
 ```
 for node in $(k get --no-headers nodes | cut -d' ' -f1); do
