@@ -47,7 +47,7 @@ $ perl -MDigest::SHA=sha256_hex -E 'say sha256_hex( "hello" )'
 ```
 
 * [Python](https://gist.github.com/jreisinger/833d02c2f544439e481b2e5ab5171baa)
-* [Go](https://go.dev/play/p/tiT5N29hc4o)
+* [Go](https://go.dev/play/p/jN4EbkuVzCi)
 
 Sources
 
