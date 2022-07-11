@@ -7,9 +7,9 @@ $ tree
 .
 ├── Chart.yaml  # describes the chart (name, description, version, author)
 ├── templates   # K8s manifests with templating directives
-│   ├── web-app-pod-template.yaml
-│   └── web-app-service-template.yaml
-└── values.yaml # default configuration
+│   ├── web-app-pod.yaml
+│   └── web-app-service.yaml
+└── values.yaml # defaults
 ```
 
 Chart.yaml:
@@ -20,7 +20,7 @@ name: web-app
 version: 2.5.4
 ```
 
-web-app-pod-template.yaml:
+web-app-pod.yaml:
 
 ```
 apiVersion: v1
@@ -42,8 +42,26 @@ spec:
       value: {{ .Values.db_password }}
     ports:
     - containerPort: 3000
-      protocol: TCP
-  restartPolicy: Always
+```
+
+web-app-service.yaml:
+
+```
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: web-app-service
+  name: web-app-service
+spec:
+  ports:
+  - name: web-app-port
+    port: {{ .Values.service_port }}
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app: web-app
+  type: NodePort
 ```
 
 values.yaml:
