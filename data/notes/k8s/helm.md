@@ -1,6 +1,6 @@
 Helm is a templating engine and package manager for the Kubernetes "operating system".
 
-In Helm's vocabulary, a package is called a *chart*. It contains:
+In Helm's vocabulary, a package is called a *chart*. It [contains](https://github.com/bmuschko/cka-study-guide/tree/master/ch04/templating-tools/helm):
 
 ```
 $ tree
