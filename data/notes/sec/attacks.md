@@ -1,9 +1,15 @@
 Public information about selected attacks on information systems.
 
-# 2022-06 Slovak Telekom hit by ransomware attack
+# 2022
+
+## 07 Fake job offer hack of Axie Infinity
+
+https://thehackernews.com/2022/07/hackers-used-fake-job-offer-to-hack-and.html
+
+## 06 Slovak Telekom hit by ransomware attack
 
 https://zive.aktuality.sk/clanok/j42eNLl/telekom-zasiahol-ransomverovy-utok-web-uz-funguje/
 
-# 2022-06 Cloudflare mitigates 26 mil. rps HTTPS DDoS attack
+## 06 Cloudflare mitigates 26 mil. rps HTTPS DDoS attack
 
 https://blog.cloudflare.com/26m-rps-ddos/
