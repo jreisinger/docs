@@ -96,6 +96,8 @@ Security monitoring
 * security incidents = attacks
 * SIEM (logs, metrics), SIRP, SOC
 
+See also [CISSP](https://en.wikipedia.org/wiki/Certified_Information_Systems_Security_Professional) domains.
+
 # Approach
 
 The ultimate security goals don't change with the adaption of a new paradigm (e.g. cloud services or DevOps). Security teams must still focus on reducing business risk from attacks and work to get confidentiality, integrity, and availability (CIA) security controls built into information systems and data. How those goals are achieved will change.
