@@ -34,7 +34,7 @@ kubectl get pods -A -l app.kubernetes.io/name=ingress-nginx
 # Manifests
 
 ```
-$ k create ingress my-service --dry-run=client -o yaml --rule="my-service.example.com/api/v1=my-service:8080"
+$ k create ingress my-service --dry-run=client -o yaml --rule="my-service.example.com/*=my-service:8080"
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -50,8 +50,8 @@ spec:
             name: my-service
             port:
               number: 8080
-        path: /api/v1
-        pathType: Exact
+        path: /
+        pathType: Prefix # remove * to get Exact
 status:
   loadBalancer: {}
 ```
