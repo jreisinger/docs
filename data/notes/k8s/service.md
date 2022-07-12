@@ -18,6 +18,6 @@ A service does not need a deployment but they can work in tandem. A Deployment m
 Create deployment + service:
 
 ```
-kubectl create deployment echoserver --image=k8s.gcr.io/echoserver --port=8080 --replicas=5
+kubectl create deployment echoserver --image=k8s.gcr.io/echoserver:1.10 --port=8080 --replicas=5
 kubectl expose deployment echoserver --port=80 --target-port=8080
 ```
