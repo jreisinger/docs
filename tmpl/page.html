@@ -18,7 +18,7 @@
                 ✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}">source</a>
                 </p>
             {{else}}
-                <p><nav id="toc"><details close><summary>{{$UrlPath}}</summary></details></nav></p>
+                <p><nav id="toc"><details close><summary>{{ $UrlPath | removeLeadingSlash }}</summary></details></nav></p>
                 {{.Body}}
                 <p class="footer">
                 ✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}.md">source</a> <span>{{ .LastModified }}</span>

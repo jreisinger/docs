@@ -126,7 +126,7 @@ func handleError(w http.ResponseWriter, r *http.Request, err error) {
 // templates caches available HTML templates.
 var templates = template.Must(
 	template.New("page").
-		Funcs(template.FuncMap{"removeTrailingSlash": removeTralingSlash}).
+		Funcs(template.FuncMap{"removeTrailingSlash": removeTralingSlash, "removeLeadingSlash": removeLeadingSlash}).
 		ParseGlob(filepath.Join("tmpl", "*.html")),
 )
 
@@ -168,6 +168,16 @@ func removeTralingSlash(s string) string {
 	suffix := "/"
 	if strings.HasSuffix(s, suffix) {
 		s = s[:len(s)-len(suffix)]
+	}
+	return s
+}
+
+// RemoveLeadingSlash removes slash ("/") if it's the first character in a
+// string.
+func removeLeadingSlash(s string) string {
+	prefix := "/"
+	if strings.HasPrefix(s, prefix) {
+		s = s[len(prefix):]
 	}
 	return s
 }
