@@ -28,39 +28,32 @@ cportal   ClusterIP   10.99.61.122   <none>        8080/TCP   79d
 * it's a pod running NGINX process
 
 ```
-kubectl get pods -n ingress-nginx \
-  -l app.kubernetes.io/name=ingress-nginx
+kubectl get pods -A -l app.kubernetes.io/name=ingress-nginx
 ```
 
 # Manifests
 
 ```
-# simple-ingress.yaml
-# any HTTP request is forwarded to my-service
-apiVersion: extensions/v1beta1
+$ k create ingress my-service --dry-run=client -o yaml --rule="my-service.example.com/api/v1=my-service:8080"
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: simple-ingress
-spec:
-  backend:
-    serviceName: my-service
-    servicePort: 8080
-```
-
-```
-# host-ingress.yaml
-apiVersion: extensions/v1beta1
-kind: Ingress
-metadata:
-  name: host-ingress
+  creationTimestamp: null
+  name: my-service
 spec:
   rules:
   - host: my-service.example.com
     http:
       paths:
       - backend:
-          serviceName: my-service
-          servicePort: 8080
+          service:
+            name: my-service
+            port:
+              number: 8080
+        path: /api/v1
+        pathType: Exact
+status:
+  loadBalancer: {}
 ```
 
 ## TLS
