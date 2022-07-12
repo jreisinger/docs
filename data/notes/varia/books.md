@@ -1,6 +1,6 @@
 <img src="/static/books.png" style="max-width:100%;height:auto">
 
-Some of the (technical) books that I liked. Roughly ordered by most recently read.
+Some of the (mostly technical) books that I liked. Roughly ordered by most recently read.
 
 > Reading furnishes the mind only with materials of knowledge; it is thinking that makes what we read ours. -- John Locke
 
