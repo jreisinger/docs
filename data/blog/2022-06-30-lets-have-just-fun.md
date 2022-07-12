@@ -26,7 +26,8 @@ The signs of unhealthy level of organizational complexity are:
 
 The signs of unhealthy level of technical complexity in software systems:
 
-* hard to use (unclear API and documentation)
+* hard to use
+* unclear API and documentation
 * unclear design
 * difficult to find bugs
 * difficult to add new features
