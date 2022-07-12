@@ -11,6 +11,7 @@ Security
 
 Sysadmin/SRE/DevOps
 
+* Certified Kubernetes Administrator (CKA) Study Guide, 2022
 * Cloud Native Go, 2021
 * Cloud Native DevOps with Kubernetes, 2019
 * [Unix and Linux System Administration Handbook](https://www.admin.com/) (ULSAH) 5th edition, 2017
