@@ -4,7 +4,7 @@ My other web sites
 
 My presence on the Internet
 
-* https://stackoverflow.com/users/1039320/jreisinger
+* https://stackoverflow.com/users/1039320
 * https://sk.linkedin.com/in/jozefreisinger
 * https://twitter.com/JozefReisinger
 * https://www.flickr.com/photos/jozrei
