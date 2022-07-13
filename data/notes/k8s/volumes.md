@@ -1,13 +1,11 @@
-Containers store data in a temporary fielsystem which is empty each time a Pod starts. A Volume persists data beyond a container restart (volume lifetime = Pod lifetime). A PersistentVolume keeps data even beyond a Pod or node/cluster restart. 
+Containers store data in a temporary fielsystem which is empty each time a container starts. A Volume persists data beyond a container restart. A PersistentVolume keeps data even beyond a Pod or node/cluster restart. 
 
 Thus K8s Volume abstraction fixes two problems:
 
-1. Ephemeral nature of files in Containers (when a Container restarts the files get lost).
+1. Ephemeral nature of files in Containers.
 1. Need to share files between Containers within a Pod.
 
-A process in a Container sees a filesystem view composed from their Docker image (mounted at the root of the FS) and Volumes (mounted at specified paths within the image). It can read and write files to this filesystem.
-
-A container using the temporary filesystem (default) vs a Volume:
+A process in a Container sees a filesystem view composed from their Docker image (mounted at the root of the FS) and Volumes (mounted at specified paths within the image). It can read and write files to this filesystem. A container using the defaut temporary filesystem vs a containers using a Volume:
 
 ![129347362-812374d7-3225-4e51-a4de-2ad9d8942fce](https://user-images.githubusercontent.com/1047259/176395171-e934df27-6eac-4704-8a0f-f9c45c6d1d2e.png)
 
@@ -42,6 +40,8 @@ spec:
 `hostPath`
 
 * file or directory from the host node's filesystem
+* persists data after Pod restart
+* presents many security risks
 
 `configMap`
 
@@ -81,7 +81,7 @@ spec:
 
 # Persistent Volumes
 
-Data stored on a Volume persist a Pod restart. If you want to persist data even over node and cluster lifetime, like in a database, use Persistent Volumes (PV). The PVC abstracts the underlying implementation details of a PV. A PV can be provisioned statically by creating an object or dynamically by a provisioner assingned to a storage class.
+If you want to persist data even over node and cluster lifetime, like in a database, use Persistent Volumes (PV). The PVC abstracts the underlying implementation details of a PV. A PV can be provisioned statically by creating an object or dynamically by a provisioner assingned to a storage class.
 
 ![130926316-1297169b-5d44-442d-a03d-2bcec8468042](https://user-images.githubusercontent.com/1047259/176382749-e72a804f-c3a9-4e05-924b-fcca190e0c84.png)
 
