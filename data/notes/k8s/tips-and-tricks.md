@@ -1,7 +1,15 @@
+Shell setup
+
+```
+alias k="kubectl"
+export do="--dry-run=client -o yaml"
+export now="--force --grace-period=0"
+```
+
 Generate pod manifest
 
 ```
-k run nginx --image=nginx --port=80 --dry-run=client -o yaml
+k run nginx --image=nginx --port=80 $do
 ```
 
 Explain manifest fields
@@ -14,17 +22,14 @@ Run a temporary pod inside a cluster
 
 ```
 # Shell into it.
-k run alpine --image=alpine --rm -it -- sh
+k run tmp --image=alpine --rm -it --restart=Never -- sh
+/ # apk update && apk add bash && bash
+```
 
+```
 # Run a command in it.
-k run alpine --image=alpine --rm -it --restart=Never --command -- \
-env
-
-k run alpine --image=alpine --rm -it --restart=Never --command -- \
-wget -O- https://example.com --timeout 2
-
-k run curl --image=curlimages/curl --rm -it --restart=Never --command -- \
-curl -s -o /dev/null -w "%{http_code}\n" -L https://google.com
+k run tmp --image=busybox --rm -it --restart=Never -- wget example.com --timeout 2
+k run rmp --image=curlimages/curl --rm -it --restart=Never -- curl example.com --max-time 2
 ```
 
 Copy files
