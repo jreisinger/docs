@@ -1,6 +1,6 @@
 ![image](https://user-images.githubusercontent.com/1047259/175539790-bcdfb1f1-560c-4204-904c-8def089a6416.png)
 
-Simplicity, the most important.
+Simplicity, so important.
 
 Complexity is a problem because complex systems are hard to *understand* and thus hard to
 
