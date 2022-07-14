@@ -3,6 +3,7 @@ module github.com/jreisinger/homepage
 go 1.18
 
 require (
+	github.com/dustin/go-humanize v1.0.0
 	github.com/go-git/go-git/v5 v5.4.2
 	github.com/gomarkdown/markdown v0.0.0-20191104174740-4d42851d4d5a
 	github.com/ikeikeikeike/go-sitemap-generator v1.0.2

@@ -21,7 +21,7 @@
                 <p><nav id="toc"><details close><summary>{{ $UrlPath | removeLeadingSlash }}</summary></details></nav></p>
                 {{.Body}}
                 <p class="footer">
-                ✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}.md">source</a> <span>{{ .LastModified }}</span>
+                ✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}.md">source</a> <span>touched {{ .LastModified }}</span>
                 </p>
             {{end}}
         </div>

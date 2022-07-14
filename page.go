@@ -12,7 +12,9 @@ import (
 	"path/filepath"
 	"sort"
 	"strings"
+	"time"
 
+	"github.com/dustin/go-humanize"
 	"github.com/gomarkdown/markdown"
 	"github.com/gomarkdown/markdown/parser"
 )
@@ -128,11 +130,15 @@ func isFile(filePath string) bool {
 
 // lastModified returns when a file from a repo was last modified according to git.
 func lastModified(repoPath, filename string) (string, error) {
-	cmd := exec.Command("git", "log", "-1", "--pretty=%ci", filename)
+	cmd := exec.Command("git", "log", "-1", "--pretty=format:%ad", "--date=iso", filename)
 	cmd.Dir = repoPath
 	output, err := cmd.CombinedOutput()
 	if err != nil {
 		return "", fmt.Errorf("%v: %s", err, output)
 	}
-	return fmt.Sprintf("%s", output), nil
+	t, err := time.Parse("2006-01-02 15:04:05 -0700", fmt.Sprintf("%s", output))
+	if err != nil {
+		return "", err
+	}
+	return humanize.Time(t), nil
 }
