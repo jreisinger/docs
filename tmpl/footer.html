@@ -1,0 +1,8 @@
+{{define "footer"}}
+    <p class="footer">
+        ✎ <a href="{{ .RepoURL }}/tree/master/data{{ .UrlPath }}.md">source</a>
+        {{if .LastModified}}
+        <span>touched {{ .LastModified }}</span>
+        {{end}}
+    </p>
+{{end}}

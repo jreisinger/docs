@@ -6,12 +6,9 @@
     <body>
         {{template "topnav.html"}}
 
-        {{$UrlPath:=.UrlPath}}
         <div class="content">
             {{.Body}}
-            <p class="footer">
-            ✎ <a href="{{ .RepoURL }}/tree/master/data/{{ $UrlPath }}.md">source</a> <span>touched {{ .LastModified }}</span>
-            </p>
+            {{template "footer" .}}
         </div>
     </body>
 </html>
