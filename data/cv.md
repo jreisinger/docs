@@ -49,7 +49,7 @@ at Slovak Telekom [2004 - 2006, 2011 - 2013]
 
 # Main technologies
 
-Operating systems: Linux (Ubuntu/Debian), Kubernetes
+Operating systems: Kubernetes, Linux (Ubuntu/Debian)
 
 Artificial languages: [Go](https://github.com/jreisinger?tab=repositories&language=go) (Golang), [Bash](https://github.com/jreisinger?tab=repositories&language=shell), [Python](https://github.com/jreisinger?tab=repositories&language=python), [Perl](https://github.com/jreisinger?tab=repositories&language=perl)
 
