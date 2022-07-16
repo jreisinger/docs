@@ -59,6 +59,8 @@ Security and networking: general concepts and tools
 
 # Certificates
 
+[CKA](https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/e99ffcde-a0bf-4318-a42e-8d321eb86f34-jozef-reisinger-4fefcc1d-306b-4481-9883-93c42ebac1ad-certificate.pdf): Certified Kubernetes Administrator [2022 - 2025]
+
 [CKAD](https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/e99ffcde-a0bf-4318-a42e-8d321eb86f34-jozef-reisinger-certified-kubernetes-application-developer-ckad-certificate.pdf): Certified Kubernetes Application Developer [2021 - 2024]
 
 CCENT: Cisco Certified Entry Networking Technician [2013 - 2016]
