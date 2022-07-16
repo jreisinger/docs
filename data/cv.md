@@ -75,6 +75,6 @@ Cisco Networking Academy: networking and telecommunications, four semesters [200
 
 Università degli Studi di Firenze: economics and IT, one semester [2003]
 
-University of Economics [1998 - 2004]
+University of Economics in Bratislava [1998 - 2004]
 
 Bilingual (Slovak - Italian) high school [1993 - 1998]
