@@ -6,14 +6,18 @@ These are notes from the book A Shorter Summa by Peter Kreeft (1993).
 
 # Preface
 
-* the Summa is the greatest, most ambitious, most rational book of theology ever
+* the Summa (3000 pages) is the greatest, most ambitious, most rational book of theology ever
   written
 * it contains much philosophy
+* St. Thomas expresses the medieval mind par excellence 
 * not to know St. Thomas means ignoring the most important intellectual
   development between 384 B.C. (the death of Aristotle) and 1637 A.D. (the
   publication of Descartes' Discourse on Method)
+* A Shorter Summa (200 pages) is a little book designed for beginners
 
 # Introduction
+
+> I read it every night before I go to bed. If my mother were to come in during the process and say, "Turn off that light. It's late," I with lifted finger and broad bland beatific expression, would reply, "On the contrary, I answer that the light, being eternal and limitless, cannot be turned off. Shut your eyes," or some such thing. -- Flannery O'Connor, The Habbit of Being
 
 ## On St. Thomas
 
