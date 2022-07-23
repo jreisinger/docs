@@ -23,9 +23,9 @@ These are notes from the book A Shorter Summa by Peter Kreeft (1993).
 
 One of the greatest philosophers who ever lived, for at least eight reasons:
 
-1. He tells the truth.
-2. Common sense - St. Thomas is plain and reasonable as your uncle.
-3. Practicality (dish of herring).
+1. He tells the truth. "The study of philosophy is not the study of what men have opined, but of what is the truth."
+2. Common sense - St. Thomas is plain and reasonable in ethics as your uncle.
+3. Both practical and theoretical wisdom.
 4. Clarity. Those who love truth passionately usually also love simplicity and
    clarity of style so that as many people as possible can benefit from this
    precious thing, Truth.
