@@ -3,7 +3,7 @@ Leibniz said that the first question which should rightly be asked is: "Why is t
 Leibniz' Contingency Argument
 
 1. Everything that exists has an explanation of its existence, either in the necessity of its nature `*` , or in an external cause `**`.
-2. If the universe has an explanation of its existence, that explanation is God `**`.
+2. If the universe has an explanation of its existence, that explanation is God `***`.
 3. The universe exists.
 4. The explanation of the universe's existence is God.
 
