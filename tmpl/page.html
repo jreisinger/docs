@@ -1,10 +1,11 @@
+{{define "PAGE"}}
 <!DOCTYPE html>
 <html>
     <head>
-        {{template "head.html"}}
+        {{template "HEAD" .}}
     </head>
     <body>
-        {{template "topnav.html"}}
+        {{template "TOPNAV" .}}
 
         {{$UrlPath:=.UrlPath}}
         <div class="content">
@@ -18,7 +19,8 @@
                 <p><nav id="toc"><details close><summary>{{ $UrlPath | removeLeadingSlash }}</summary></details></nav></p>
                 {{.Body}}
             {{end}}
-            {{template "footer" .}}
+            {{template "FOOTER" .}}
         </div>
     </body>
 </html>
+{{end}}

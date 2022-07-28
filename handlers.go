@@ -67,7 +67,7 @@ func searchHandler(w http.ResponseWriter, r *http.Request) {
 		Files: foundFiles,
 	}
 
-	renderTemplate(w, "page", p)
+	renderTemplate(w, "PAGE", p)
 }
 
 func aboutHandler(w http.ResponseWriter, r *http.Request) {
@@ -76,7 +76,7 @@ func aboutHandler(w http.ResponseWriter, r *http.Request) {
 		handleError(w, r, err)
 		return
 	}
-	renderTemplate(w, "about", p)
+	renderTemplate(w, "ABOUT", p)
 }
 
 func notesHandler(w http.ResponseWriter, r *http.Request) {
@@ -85,7 +85,7 @@ func notesHandler(w http.ResponseWriter, r *http.Request) {
 		handleError(w, r, err)
 		return
 	}
-	renderTemplate(w, "notes", p)
+	renderTemplate(w, "NOTES", p)
 }
 
 func blogHandler(w http.ResponseWriter, r *http.Request) {
@@ -94,7 +94,7 @@ func blogHandler(w http.ResponseWriter, r *http.Request) {
 		handleError(w, r, err)
 		return
 	}
-	renderTemplate(w, "blog", p)
+	renderTemplate(w, "BLOG", p)
 }
 
 // pageHandler handles all requests not handled by other handlers.
@@ -109,7 +109,7 @@ func pageHandler(w http.ResponseWriter, r *http.Request) {
 		handleError(w, r, err)
 		return
 	}
-	renderTemplate(w, "page", p)
+	renderTemplate(w, "PAGE", p)
 }
 
 func handleError(w http.ResponseWriter, r *http.Request, err error) {
@@ -123,16 +123,17 @@ func handleError(w http.ResponseWriter, r *http.Request, err error) {
 	}
 }
 
-// templates caches available HTML templates.
-var templates = template.Must(
-	template.New("page").
+// tmpl caches available HTML template files containing template definitions as
+// one template with nested templates.
+var tmpl = template.Must(
+	template.New("template").
 		Funcs(template.FuncMap{"removeTrailingSlash": removeTralingSlash, "removeLeadingSlash": removeLeadingSlash}).
 		ParseGlob(filepath.Join("tmpl", "*.html")),
 )
 
 // renderTemplate fills in tmpl template with p data and writes it to w.
-func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
-	err := templates.ExecuteTemplate(w, tmpl+".html", p)
+func renderTemplate(w http.ResponseWriter, name string, p *Page) {
+	err := tmpl.ExecuteTemplate(w, name, p)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 	}

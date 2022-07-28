@@ -1,10 +1,11 @@
+{{define "NOTES"}}
 <!DOCTYPE html>
 <html>
     <head>
-        {{template "head.html"}}
+        {{template "HEAD" .}}
     </head>
     <body>
-        {{template "topnav.html"}}
+        {{template "TOPNAV" .}}
 
         {{$UrlPath:=.UrlPath}}
         <div class="content">
@@ -16,8 +17,9 @@
             {{end}}
             </ul>
 
-            {{template "footer" .}}
+            {{template "FOOTER" .}}
         </div>
 
     </body>
 </html>
+{{end}}
