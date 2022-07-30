@@ -1,18 +1,43 @@
 # Security Design Principles
 
-**Implement a strong identity foundation**: Implement the principle of least privilege and enforce separation of duties with appropriate authorization for each interaction with your AWS resources. Centralize identity management, and aim to eliminate reliance on long-term static credentials.
+Implement a strong identity foundation
 
-**Enable traceability**: Monitor, alert, and audit actions and changes to your environment in real time. Integrate log and metric collection with systems to automatically investigate and take action.
+* implement principle of least privilege
+* enforce separation of duties with authorization for each interaction with AWS resources
+* centralize identity management
+* aim to eliminate long-term static credentials
 
-**Apply security at all layers**: Apply a defense in depth approach with multiple security controls. Apply to all layers (for example, edge of network, VPC, load balancing, every instance and compute service, operating system, application, and code).
+Enable traceability
 
-**Automate security best practices**: Automated software-based security mechanisms improve your ability to securely scale more rapidly and cost-effectively. Create secure architectures, including the implementation of controls that are defined and managed as code in version-controlled templates.
+* monitor and alert actions in your environment in real time
+* integrate log and metric collection with systems to automatically investigate and take action
 
-**Protect data in transit and at rest**: Classify your data into sensitivity levels and use mechanisms, such as encryption, tokenization, and access control where appropriate.
+Apply security at all layers
 
-**Keep people away from data**: Use mechanisms and tools to reduce or eliminate the need for direct access or manual processing of data. This reduces the risk of mishandling or modification and human error when handling sensitive data.
+* apply a defense in depth approach 
+* apply security controls at multiple layers (e.g., edge of network, VPC, load balancing, every instance and compute service, operating system, application, and code)
 
-**Prepare for security events**: Prepare for an incident by having incident management and investigation policy and processes that align to your organizational requirements. Run incident response simulations and use tools with automation to increase your speed for detection, investigation, and recovery.
+Automate security best practices
+
+* automated software-based security mechanisms allow you to scale more securely, rapidly and cost-effectively
+* create secure architectures
+* define and manage security controls as code in version-controlled templates
+
+Protect data in transit and at rest
+
+* classfify your data into sensitivity levels
+* use encryption, tokenization, and access control where appropriate
+
+Keep people away from data
+
+* use memchanisms and tools to reduce direct access or manual processing of data
+* this reduces the risk of mishandling of sensitive data and human error 
+
+Prepare for security events
+
+* have incident managment and investigation process adequate to your organization requirements
+* run incident response simulations
+* use tools with automation to increat speed for detection, investigation, and recovery
 
 Source: https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/security.html
 
