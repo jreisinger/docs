@@ -123,6 +123,4 @@ Imperative
 * functions are the primary focus
 * we pass them objects to work with
 
-# Sources
-
-* Python Programming: An Introduction to Computer Science (2010)
+Source: Python Programming: An Introduction to Computer Science (2010)
