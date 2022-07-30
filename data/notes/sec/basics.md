@@ -1,4 +1,4 @@
-Security is a neverending process.
+Security is the ability to resist attack.
 
 Security is elusive and hard to measure.
 
@@ -6,11 +6,11 @@ There's no secure system. There are just more or less secure systems.
 
 You need some level of security. To achieve it you need patience, vigilance, knowledge and persistence.
 
+Security is a neverending process.
+
 # Goals
 
-Security is the ability to resist attack.
-
-CIA triad represents the traditional (since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf) - see picture below) security goals.
+CIA triad represents the traditional (since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf)) security goals:
 
 ![image](https://user-images.githubusercontent.com/1047259/148757897-f51c3d58-8f26-46d8-973b-854ae47d84d4.png)
 
@@ -36,15 +36,15 @@ These security principles will help you to increase your security.
 
 Clarity and simplicity
 
-* obscurity and complexity in code, processes, communication hide (security) problems
+* obscurity and complexity in code, processes and communication hide (security) problems
 * easy to understand and easy to use security controls and tools are more likely to be used (correctly)
 
-Least privilege
+Limit attack surface
 
-* people and programs (and their modules) should be able to access only what they need to do their job, and no more
-* this limits the blast radius when system gets compromised 
-* deny by default
-* apply to FW rules, user permissions, file permissions and any other access control situation
+* attack surface is all possible ways a system can be attacked (through user, system, network)
+* higher complexity means bigger attack surface
+* bigger attack surface means higher probability of getting attacked
+* apply to exposed systems, unnecessary services, underused systems
 
 Defense in depth
 
@@ -52,12 +52,12 @@ Defense in depth
 * thus you need multiple layers of overlapping security controls
 * adding another layer is also more cost effective than perfecting a single layer
 
-Limiting attack surface
+Least privilege
 
-* attack surface is all possible ways a system can be attacked (through user, system, network)
-* higher complexity means bigger attack surface
-* bigger attack surface means higher probability of getting attacked
-* apply to exposed systems, unnecessary services, underused systems
+* people and programs (and their modules) should be able to access only what they need to do their job, and no more
+* this limits the blast radius when system gets compromised 
+* deny by default
+* apply to any access control or authorization situation (e.g. FW rules, user groups, file permissions) 
 
 # Areas
 
