@@ -1,10 +1,8 @@
 # Computer Science
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ada_Lovelace_portrait.jpg/167px-Ada_Lovelace_portrait.jpg" style="max-width:100%;height:auto;float:right" alt="Ada Lovelace">
-
 * fundamental question for CS is *what can be computed*?
 * it uses techniques of design, analysis, and experimentation
-* computers are to CS what telescopes are to astronomy (Dijkstra[?](https://en.wikiquote.org/wiki/Computer_science))
+* computers are to CS what telescopes are to astronomy (Dijkstra?)
 
 # Computer
 
@@ -29,11 +27,11 @@ Functional view of a computer:
 ```
 
 * Memory - stores programs and data that CPU acts on
-  * main is fast but volatile
-  * secondary is permanent: HD, CD, DVD, ...
+  * Main is fast but volatile
+  * Secondary is permanent: HD, CD, DVD, ...
 * CPU - simple arithmetic (e.g. adding 2 numbers) and logical (e.g. testing 2 
   numbers are equal) operations
-* I/O devices - for entering/displaying data
+* I/O Devices - for entering/displaying data
 
 Running a program (HD -> RAM -> CPU):
 
@@ -48,7 +46,7 @@ Running a program (HD -> RAM -> CPU):
 * every structure in a PL has a precise form (its syntax) and a precise meaning 
   (its semantics)
 
-CPU can only understand a very **low-level** (machine) language. Machine
+CPU can only understand a very **low-level**, machine, language. Machine
 language is created by the designers of the particular CPU. Adding two numbers
 looks like (instructions and data are really represented in binary notation -
 sequences of 0s and 1s):
@@ -60,18 +58,18 @@ add the two numbers in the CPU
 store the result into location 2023
 ```
 
-In **high-level** (human-oriented) language - like Python - it looks like:
+In **high-level**, human-oriented, language (like Python) it looks like:
 
 ```
 c = a + b
 ```
 
-## by translation mechanism
+## By translation mechanism
 
 There are two ways to translate a high-level language to machine language: to
 compile it or to interpret it.
 
-**Compiled**
+Compiled
 
 ```
 Source +---> Compiler +---> Machine
@@ -83,9 +81,9 @@ Code                        Code
                             Program
 ```
 
-* compiler - a complex program; no longer needed after a program is translated
+* Compiler - a complex program; no longer needed after a program is translated
 
-**Interpreted**
+Interpreted
 
 ```
             +--------------+
@@ -97,11 +95,11 @@ Inputs +--> |              |
             +--------------+
 ```
 
-* interpreter - program that simulates a computer that understands a high-level
+* Interpreter - program that simulates a computer that understands a high-level
   language
 * more flexible (interactive) development
 
-## by program scale
+## By program scale
 
 Traditional systems languages (C++, Ada, Java)
 
@@ -113,7 +111,7 @@ Scripting languages (Perl, Python, Bash)
 * for writing small/medium-scaled programs easy
 * "agile" languages 
 
-## by programming paradigm
+## By programming paradigm
 
 Object oriented
 
