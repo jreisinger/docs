@@ -101,12 +101,12 @@ Inputs +--> |              |
 
 ## By program scale
 
-Traditional systems languages (C++, Ada, Java)
+Systems languages (Ada, C++, Java)
 
 * for large-scale programming
 * emphasis on structure and discipline
 
-Scripting languages (Perl, Python, Bash)
+Scripting languages (Bash, Perl, Python)
 
 * for writing small/medium-scaled programs easy
 * "agile" languages 
