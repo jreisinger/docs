@@ -26,6 +26,4 @@ Congruential generators
     first, which comes from you. This first number is called the *seed* of the
     random number generator, and you provide it to Perl (and C) with `srand()`.
 
-Source:
-
-* Jon Orwant: Computer Science & Perl Programming (2002)
+Source: Jon Orwant, Computer Science & Perl Programming (2002)
