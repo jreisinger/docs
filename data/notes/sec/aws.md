@@ -25,19 +25,19 @@ Automate security best practices
 
 Protect data in transit and at rest
 
-* classfify your data into sensitivity levels
+* classify your data into sensitivity levels
 * use encryption, tokenization, and access control where appropriate
 
 Keep people away from data
 
-* use memchanisms and tools to reduce direct access or manual processing of data
+* use mechanisms and tools to reduce direct access or manual processing of data
 * this reduces the risk of mishandling of sensitive data and human error 
 
 Prepare for security events
 
-* have incident managment and investigation process adequate to your organization requirements
+* have incident management and investigation process adequate to your organization requirements
 * run incident response simulations
-* use tools with automation to increat speed for detection, investigation, and recovery
+* use tools with automation to increase speed for detection, investigation, and recovery
 
 Source: https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/security.html
 
