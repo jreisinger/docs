@@ -82,7 +82,7 @@ and many [more](https://en.wikipedia.org/wiki/List_of_Christians_in_science_and_
 
 Reasonable atheists
 
-* [Richard P. Feynman](http://www.wall.org/~aron/blog/what-about-science/) (1918 - 1988) - physicist
+* [Richard P. Feynman](http://www.wall.org/~aron/blog/what-about-science/) (1918 - 1988) - physicist (MIT, Princeton)
 * [Stephen Hawking](https://www.youtube.com/watch?v=S-yx5WN4efo) (1942 - 2018) - theoretical physicist, cosmologist (Cambridge)
 
 and many more.
