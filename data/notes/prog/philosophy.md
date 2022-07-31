@@ -4,6 +4,8 @@ The most important property of a program is whether is accomplishes the intentio
 
 You need a certain amount of complexity to do any particular job. ... In short, simplicity is often the enemy of success. -- [Larry Wall](https://www.oreilly.com/openbook/opensources/book/larry.html) (1999)
 
+Many of those parts were redundant. But that redundancy was absolutely necessary to achieve the goal of putting someone on the moon in 1969. So if some of those rocket parts had the job of being redundant, then each of those parts still had to do their part. -- [Larry Wall](https://www.oreilly.com/openbook/opensources/book/larry.html) (1999)
+
 # The Cathedral and the Bazaar (Raymond, 1999)
 
 Main points from [ch2](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/ar01s02.html) of The Cathedral and the Bazaar.
