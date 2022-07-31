@@ -1,4 +1,4 @@
-The five ideals:
+The [five ideals](https://itrevolution.com/five-ideals-of-devops/):
 
 1. Locality and simplicity
 2. Focus, flow and joy
@@ -6,4 +6,4 @@ The five ideals:
 4. Psychological safety
 5. Customer focus
 
--- The Unicorn Project (2019)
+Source: The Unicorn Project (2019)
