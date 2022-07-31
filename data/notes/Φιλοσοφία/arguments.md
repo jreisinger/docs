@@ -27,7 +27,7 @@ More
 * Brant Pitre (Christian): The Case for Jesus: The Biblical and Historical Evidence for Christ (2016)
 * A. Wall: [Some comments on Biblical History](http://www.wall.org/~aron/blog/some-comments-on-biblical-history/)
 
-## Notes on the study of history
+# Notes on the study of history
 
 Sources of evidence
 
