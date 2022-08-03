@@ -1,7 +1,3 @@
-My other web sites
-
-* https://quotes.reisinge.net
-
 My presence on the Internet
 
 * https://github.com/jreisinger
@@ -12,3 +8,7 @@ My presence on the Internet
 * https://www.flickr.com/photos/jozrei
 * https://perlmonks.org/?node_id=898593
 * https://metacpan.org/author/REISINGE
+
+My other web sites
+
+* https://quotes.reisinge.net
