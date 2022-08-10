@@ -54,7 +54,7 @@ For
 * “The most incomprehensible thing about the Universe is that it is comprehensible.” -- A. Einstein
 * Existence of objective universal morality or decent behaviour or fair play -> C. S. Lewis: Mere Christinanity - Book I
 * [Argument from motion](https://youtu.be/bdjjqFSEJ_Y) from the Five ways of Aquinas
-* [Kalam cosmological argument](https://en.wikipedia.org/wiki/Kalam_cosmological_argument)
+* [Kalam cosmological argument](https://www.reasonablefaith.org/kalam)
 * [Leibniz's contingency argument](https://www.reasonablefaith.org/videos/interviews-panels/leibnizs-argument-for-the-existence-of-god-bobby-conway/)
 * [Argument from desire](https://youtu.be/X71Gq9a1qxE)
 
