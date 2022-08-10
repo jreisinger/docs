@@ -77,6 +77,7 @@ For
 * [Karin Öberg](https://youtu.be/b6mJIZaEy5g) (1982) - Swedish professor of astronomy (Harvard)
 * [Aron Wall](http://www.wall.org/~aron/blog/bio/) (1984) - theoretical physicist (Cambridge)
 * [Luke Barnes](https://www.closertotruth.com/contributor/luke-barnes/profile) - theoretical astrophysicist (Australia)
+* [Sy Garte](https://youtu.be/OMBQwGzn_TE) - retired biochemist (USA)
 
 and many [more](https://en.wikipedia.org/wiki/List_of_Christians_in_science_and_technology).
 
