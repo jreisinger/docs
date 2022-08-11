@@ -1,14 +1,14 @@
 # Glossary
 
-AWS
+AWS (Amazon Web Services)
 
 * world's most comprehensive and broadly adopted cloud platform
 * over 200 services from globally distributed data centers (Lego)
 * allows for lower costs and more agility
 
-ARN
+ARN (Amazon Resource Name)
 
-* Amazon Resource Name, globally unique identifier
+* globally unique identifier
 * `arn:<partition>:<service>:[<region>]:<account-id>:<resource-id>`, e.g.:
   * partition: aws, aws-cn, aws-us-gov
   * service: ec2, s3, iam
@@ -20,7 +20,29 @@ AWS console
 
 * the web interface
 * orange buttons are important
-* only some services are region scoped
+* only some services are Region scoped
+
+AZ (Availability Zone)
+
+* one or more collocated (within walking distance) data centers
+* HA building block
+* atomic unit of resource scope
+* there are logical and physical AZ IDs, e.g. eu-central-1a (euc1-az2)
+
+AWS Region
+
+* multiple, physically separate AZs
+* traffic between AZs is encrypted
+* service API endpoints are hosted here
+
+<img width="553" alt="image" src="https://user-images.githubusercontent.com/1047259/184126933-29fb8020-fd6e-425f-996a-cb353689dd4e.png">
+
+Edge locations
+
+* separate infrastructure from Regions
+* connected to Regions networks
+* scope for global services (e.g. DNS, content caching)
+* cca 10 times as many edge locations as Regions
 
 # Shared responsibility model
 
