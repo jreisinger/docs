@@ -1,12 +1,26 @@
 # Glossary
 
-ARN = Amazon Resource Name, globally unique identifier, `arn:<partition>:<service>:[<region>]:<account-id>:<resource-id>`, e.g.:
+AWS
 
-* partition: aws, aws-cn, aws-us-gov
-* service: ec2, s3, iam
-* region: us-east-1, eu-west-1, ap-south-1
-* account-id: 123456789012
-* resource-id: User/Chad, instance/i-XXXXXX, volume/vol-XXXXXX
+* world's most comprehensive and broadly adopted cloud platform
+* over 200 services from globally distributed data centers (Lego)
+* allows for lower costs and more agility
+
+ARN
+
+* Amazon Resource Name, globally unique identifier
+* `arn:<partition>:<service>:[<region>]:<account-id>:<resource-id>`, e.g.:
+  * partition: aws, aws-cn, aws-us-gov
+  * service: ec2, s3, iam
+  * region: us-east-1, eu-west-1, ap-south-1
+  * account-id: 123456789012
+  * resource-id: User/Chad, instance/i-XXXXXX, volume/vol-XXXXXX
+
+AWS console
+
+* the web interface
+* orange buttons are important
+* only some services are region scoped
 
 # Shared responsibility model
 
