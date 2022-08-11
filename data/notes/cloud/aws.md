@@ -75,6 +75,7 @@ Networking
 
 * AWS services are 100% API driven
 * these service APIs require permissions for all requests
+* each AWS account is associated with one an only one root user (email becomes the username)
 
 ![image](https://user-images.githubusercontent.com/1047259/156759604-c7e6dc08-6ddd-474a-836d-8fd06a2e5208.png)
 
@@ -96,7 +97,7 @@ IAM Best practices
 
 * protect master (root!) account credentials (email address + password) at all costs
 * don't use root account for day-to-day operations
-* delete any existing access/secret keys for root account
+* delete any existing access/secret (API) keys for root account
 * enable (and enforce) MFA
 * follow principle of least privilege
 * rotate long-term credentials (access/secret keys, passwords)
