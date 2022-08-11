@@ -1,3 +1,7 @@
+# Shared responsibility model
+
+<img width="797" alt="image" src="https://user-images.githubusercontent.com/1047259/184105057-21ea6de5-0610-43ba-9488-02ba5b1f7ce9.png">
+
 # Basic concepts
 
 EC2 (Elastic Compute Cloud)
@@ -41,5 +45,6 @@ You can use [terraform](https://github.com/vallard/EKS-Training/blob/master/segm
 
 # Resources
 
-* Hands-On Amazon Elastic Kubernetes Service (EKS) LiveLessons: Running Microservices by Vallard Benincosa Jr. (video, 2021)
+* Amazon Web Services (AWS), 3rd Edition by Chad Smith (video, 2022)
+* Hands-On Amazon Elastic Kubernetes Service (EKS) LiveLessons by Vallard Benincosa Jr. (video, 2021)
 * AWS System Administration (2018)
