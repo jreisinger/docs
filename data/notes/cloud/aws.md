@@ -44,12 +44,6 @@ Edge locations
 * scope for global services (e.g. DNS, content caching)
 * cca 10 times as many edge locations as Regions
 
-# Shared responsibility model
-
-<img width="682" alt="image" src="https://user-images.githubusercontent.com/1047259/184105488-b7445fdf-30df-40eb-a3cd-37312f2c3b6a.png">
-
-# Basic concepts
-
 EC2 (Elastic Compute Cloud)
 
 * core part of AWS
@@ -58,11 +52,6 @@ EC2 (Elastic Compute Cloud)
 * idea from 1960s
 * main advantage - cost savings due to flexibility, ex. instances can be launched/terminated based on the traffic levels
 * AMI (Amazon Machine Image) - an image of a configured instance
-
-Processing power
-
-* "One EC2 Compute Unit provides the equivalent CPU capacity of a 1.0-1.2 GHz 2007 Opteron or 2007 Xeon processor."
-* you need to benchmark it for your needs since AWS is built by incrementally adding commodity HW
 
 Storage
 
@@ -78,7 +67,14 @@ Networking
 * behind the scenes AWS will map a public/private IPs and create two DNS entries
 * split-view DNS system - different responses depending on from where do you ask => always reference the public hostname of the instance (rather than the public IP) to save [costs](https://aws.amazon.com/ec2/pricing/#DataTransfer)
 
-# IAM
+# Shared responsibility model
+
+<img width="682" alt="image" src="https://user-images.githubusercontent.com/1047259/184105488-b7445fdf-30df-40eb-a3cd-37312f2c3b6a.png">
+
+# IAM (Identity and Access Management)
+
+* AWS services are 100% API driven
+* these service APIs require permissions for all requests
 
 ![image](https://user-images.githubusercontent.com/1047259/156759604-c7e6dc08-6ddd-474a-836d-8fd06a2e5208.png)
 
