@@ -80,8 +80,8 @@ Networking
 ![image](https://user-images.githubusercontent.com/1047259/156759604-c7e6dc08-6ddd-474a-836d-8fd06a2e5208.png)
 
 1. Create policies (JSON) that define access to services.
-2. Create a group and assign policies to it.
-3. Create a user and assign them to groups.
+2. Create a group and assign (permission) policies to it.
+3. Create a user and assign them to (user) groups.
 4. Create roles (from the predifined ones). Roles are like users but for services (machine accounts).
 
 You can use [terraform](https://github.com/vallard/EKS-Training/blob/master/segment02-iam/iam.tf) to create these ^.
