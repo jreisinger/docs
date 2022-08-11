@@ -49,23 +49,3 @@ Source: https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/secur
 4. Prepare for an incident
 
 Source: https://youtu.be/u6BCVkXkPnM
-
-# IAM
-
-Credential types
-
-* Email + password: master account (root!) access
-* Username + password: AWS web console
-* Access key + secret key: CLI, SDK
-* Access/secret key + session token: role-based access
-
-IAM Best practices
-
-* protect master (root) account credentials (email address + password) at all costs
-* don't use root account for day-to-day operations
-* delete any existing access/secret keys for root account
-* enable (and enforce) MFA
-* follow principle of least privilege
-* rotate long-term credentials (access/secret keys, passwords)
-
-Source: Amazon Web Services AWS LiveLessons 2nd Edition by Richard Jones (2019)
