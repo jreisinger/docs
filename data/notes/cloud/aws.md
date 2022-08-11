@@ -1,3 +1,13 @@
+# Glossary
+
+ARN = Amazon Resource Name, globally unique identifier, `arn:<partition>:<service>:[<region>]:<account-id>:<resource-id>`, e.g.:
+
+* partition: aws, aws-cn, aws-us-gov
+* service: ec2, s3, iam
+* region: us-east-1, eu-west-1, ap-south-1
+* account-id: 123456789012
+* resource-id: User/Chad, instance/i-XXXXXX, volume/vol-XXXXXX
+
 # Shared responsibility model
 
 <img width="682" alt="image" src="https://user-images.githubusercontent.com/1047259/184105488-b7445fdf-30df-40eb-a3cd-37312f2c3b6a.png">
