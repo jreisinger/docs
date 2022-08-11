@@ -85,8 +85,25 @@ Networking
 
 You can use [terraform](https://github.com/vallard/EKS-Training/blob/master/segment02-iam/iam.tf) to create these ^.
 
+Credential types
+
+* Email + password: master (root!) account
+* Username + password: AWS console (web browser)
+* Access key + secret key: CLI, SDK
+* Access/secret key + session token: role-based access
+
+IAM Best practices
+
+* protect master (root!) account credentials (email address + password) at all costs
+* don't use root account for day-to-day operations
+* delete any existing access/secret keys for root account
+* enable (and enforce) MFA
+* follow principle of least privilege
+* rotate long-term credentials (access/secret keys, passwords)
+
 # Resources
 
 * Amazon Web Services (AWS), 3rd Edition by Chad Smith (video, 2022)
 * Hands-On Amazon Elastic Kubernetes Service (EKS) LiveLessons by Vallard Benincosa Jr. (video, 2021)
+* Amazon Web Services (AWS) LiveLessons, 2nd Edition by Richard Jones (video, 2019)
 * AWS System Administration (2018)
