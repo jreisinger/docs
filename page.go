@@ -50,7 +50,8 @@ func loadPage(urlPath string) (*Page, error) {
 	} else if isFile(filePath + ".md") { // if file is a file return file contents
 		lastModified, err := lastModified(repoLocalPath, filePath+".md")
 		if err != nil {
-			return nil, err
+			log.Printf("getting last modified time of %s: %v",
+				repoLocalPath+filePath+".md", err)
 		}
 
 		data, err := ioutil.ReadFile(filePath + ".md")

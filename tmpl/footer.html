@@ -4,7 +4,9 @@
             ✎ <a href="{{ .RepoURL }}/tree/master/data{{ .UrlPath }}">source</a>
         {{else}}
             ✎ <a href="{{ .RepoURL }}/tree/master/data{{ .UrlPath }}.md">source</a>
-            <span>touched {{ .LastModified }}</span>
+            {{if .LastModified}}
+                <span>touched {{ .LastModified }}</span>
+            {{end}}
         {{end}}
     </p>
 {{end}}
