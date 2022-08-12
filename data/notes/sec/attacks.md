@@ -21,3 +21,7 @@ https://zive.aktuality.sk/clanok/j42eNLl/telekom-zasiahol-ransomverovy-utok-web-
 ## 06 Cloudflare mitigates 26 mil. rps HTTPS DDoS attack [DDoS]
 
 https://blog.cloudflare.com/26m-rps-ddos/
+
+## 05 Cisco Talos cyber attack
+
+https://blog.talosintelligence.com/2022/08/recent-cyber-attack.html
