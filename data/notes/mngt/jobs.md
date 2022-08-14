@@ -7,7 +7,7 @@
 
 # Old
 
-<img src="/static/20220329_pn.jpg" style="max-width:100%;height:auto"> PN [2017 - present]
+<img src="/static/20220329_pn.jpg" style="max-width:100%;height:auto"> PN [2017 - 2022]
 
 <img src="/static/20170412_fd.jpg" style="max-width:100%;height:auto"> FD [2016 - 2017]
 
