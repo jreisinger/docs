@@ -1,6 +1,6 @@
 # Assume role via aws CLI tool
 
-1. Create policy "s3-create-bucket" that allows creating s3 buckets:
+Create policy "s3-create-bucket" that allows creating s3 buckets:
 
 ```json
 {
@@ -21,9 +21,9 @@
 }
 ```
 
-2. Create role "s3-create-bucket" that allows creating s3 buckets (i.e. refers
-   the above policy) for the same account (e.g. 123456789012). It's trust
-   policy will look like:
+Create role "s3-create-bucket" that allows creating s3 buckets (i.e. refers
+the above policy) for the same account (e.g. 123456789012). It's trust
+policy will look like:
 
 ```json
 {
@@ -41,7 +41,7 @@
 }
 ```
 
-3. Create `assume-s3-create-bucket-role` policy:
+Create `assume-s3-create-bucket-role` policy:
 
 ```json
 {
@@ -57,9 +57,9 @@
 }
 ```
 
-4. Attach `assume-s3-create-bucket-role` policy to your user.
+Attach `assume-s3-create-bucket-role` policy to your user.
 
-5. Add to your `~/.aws/config`:
+Add to your `~/.aws/config`:
 
 ```
 [profile assume-role]
@@ -67,7 +67,7 @@ role_arn = arn:aws:iam::123456789012:role/s3-create-bucket
 source_profile = default
 ```
 
-6. Create an s3 bucket using the `assume-role` profile defined above:
+Create an s3 bucket using the `assume-role` profile defined above:
 
 ```
 aws --profile assume-role s3api create-bucket --bucket GLOBALLY_UNIQUE_NAME
