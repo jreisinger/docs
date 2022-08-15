@@ -28,10 +28,10 @@ You can use [terraform](https://github.com/vallard/EKS-Training/blob/master/segm
 ## Roles
 
 * IAM identity
-* Associated with permissions (inline, managed)
+* Associated with permission policies (inline, managed)
 * assumed by other principals
 * similar to `sudo`
-* in addition has role trust policy
+* similar to user but in addition has role trust policy
 
 ## Permission policies and boundaries
 
