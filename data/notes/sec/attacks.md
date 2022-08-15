@@ -22,6 +22,6 @@ https://zive.aktuality.sk/clanok/j42eNLl/telekom-zasiahol-ransomverovy-utok-web-
 
 https://blog.cloudflare.com/26m-rps-ddos/
 
-## 05 Cisco Talos cyber attack
+## 05 Cisco Talos cyber attack [Social Engineering]
 
 https://blog.talosintelligence.com/2022/08/recent-cyber-attack.html
