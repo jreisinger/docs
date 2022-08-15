@@ -1,12 +1,10 @@
-Security is the ability to resist attack.
+Security is a neverending process.
 
-Security is elusive and hard to measure.
+Security is the ability to resist attack.
 
 There's no secure system. There are just more or less secure systems.
 
 You need some level of security. To achieve it you need patience, vigilance, knowledge and persistence.
-
-Security is a neverending process.
 
 # Goals
 
@@ -14,21 +12,13 @@ CIA triad represents the traditional (since [1977](https://nvlpubs.nist.gov/nist
 
 ![image](https://user-images.githubusercontent.com/1047259/148757897-f51c3d58-8f26-46d8-973b-854ae47d84d4.png)
 
-Confidentiality
-
-* seek to prevent unauthorized read access to data
-
-Integrity
-
-* seek to prevent unauthorized write access to data
-* data integrity (modification of data in DB)
-* system integrity (malicious SW opens a "back door")
- 
-Availability
-
-* ensure that information and service is available when needed
+* Confidentiality: seek to prevent unauthorized read access to data or systems
+* Integrity: seek to prevent unauthorized write access to data or systems (e.g. malicious SW opens a "back door")
+* Availability: ensure that data and service is available when needed
 
 Sometimes [non-repudation](https://en.wikipedia.org/wiki/Non-repudiation) is added to these three.
+
+The ultimate security goals don't change with the adaption of a new paradigm (e.g. cloud services or DevOps). Security teams must still focus on reducing business risk from attacks and work to get confidentiality, integrity, and availability (CIA) security controls built into information systems and data. How those goals are achieved will change.
 
 # Principles
 
@@ -36,14 +26,14 @@ These security principles will help you to increase your security.
 
 Clarity and simplicity
 
-* obscurity and complexity in code, processes and communication hide (security) problems
+* obscurity and unnecessary complexity hide (security) problems
 * easy to understand and easy to use security controls and tools are more likely to be used (correctly)
+* apply to code, processes, communication
 
-Limit attack surface
+Minimal attack surface
 
 * attack surface is all possible ways a system can be attacked (through user, system, network)
-* higher complexity means bigger attack surface
-* bigger attack surface means higher probability of getting attacked
+* higher complexity means bigger attack surface thus higher probability of getting attacked
 * apply to exposed systems, unnecessary services, underused systems
 
 Defense in depth
@@ -54,10 +44,10 @@ Defense in depth
 
 Least privilege
 
-* people and programs (and their modules) should be able to access only what they need to do their job, and no more
-* this limits the blast radius when system gets compromised 
 * deny by default
-* apply to any access control or authorization situation (e.g. FW rules, user groups, file permissions) 
+* people and programs should be able to access only what they need to do their job, and no more
+* this limits the blast radius when system gets compromised 
+* apply to any access control or authorization situation
 
 # Areas
 
@@ -98,11 +88,7 @@ Security monitoring
 
 See also [CISSP](https://en.wikipedia.org/wiki/Certified_Information_Systems_Security_Professional) domains.
 
-# Approach
-
-The ultimate security goals don't change with the adaption of a new paradigm (e.g. cloud services or DevOps). Security teams must still focus on reducing business risk from attacks and work to get confidentiality, integrity, and availability (CIA) security controls built into information systems and data. How those goals are achieved will change.
-
-## Basic steps
+# Basic steps
 
 Understand the business of the organization you are trying to protect.
 
@@ -123,7 +109,7 @@ Know your risks (have at least a spreadsheet) and how you approach them:
 * transfer the risk - pay someone else to manage the risk (e.g. insurance)
 * accept the risk - benefits > risk
 
-## Continuous security
+# Continuous security
 
 * DevOps (and [Agile](http://agilemanifesto.org/) and [Deming](https://deming.org/explore/fourteen-points)) focuses on shipping better products to *customers* faster
 * many security teams focus on compliance with a security standard, number of security incidents and vulnerabilities on production systems
