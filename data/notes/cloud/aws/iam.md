@@ -14,7 +14,7 @@
 
 # IAM resources
 
-![image](https://user-images.githubusercontent.com/1047259/156759604-c7e6dc08-6ddd-474a-836d-8fd06a2e5208.png)
+![156759604-c7e6dc08-6ddd-474a-836d-8fd06a2e5208](https://user-images.githubusercontent.com/1047259/184610339-fa8c4a0c-b853-4dcc-a05f-2d8f9b6960a9.png)
 
 Basic steps
 
