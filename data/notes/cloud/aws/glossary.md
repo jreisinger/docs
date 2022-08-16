@@ -25,8 +25,8 @@
 * multiple, physically separate AZs
 * traffic between AZs is encrypted
 * service API endpoints are hosted here
-
-<img width="553" alt="image" src="https://user-images.githubusercontent.com/1047259/184126933-29fb8020-fd6e-425f-996a-cb353689dd4e.png">
+ 
+![aws-region drawio](https://user-images.githubusercontent.com/1047259/184850533-2ec4ecc2-0d07-4774-8e77-777415a2e08f.png)
 
 # AZ (Availability Zone)
 
@@ -37,11 +37,9 @@
 
 # EC2 (Elastic Compute Cloud)
 
-* core part of AWS
-* launched in 2006
+* core part of AWS, launched in 2006
 * rent computing resources by the hour in the form of VMs aka instances
 * idea from 1960s
-* main advantage - cost savings due to flexibility, ex. instances can be launched/terminated based on the traffic levels
 * AMI (Amazon Machine Image) - an image of a configured instance
 
 # Edge locations
@@ -57,10 +55,10 @@
 2. EBS (Elastic Block Store) - attached over the network; recommended for most of use cases
 3. SSDs - since 2012; similar to instance storage but massively higher IO speeds
 
-* it's possible to attach multiple volumes (of either type) and build a SW RAID on them
+It's possible to attach multiple volumes (of either type) and build a SW RAID on them.
 
 # Networking
 
 * every instance has a private IP (can only be used within EC2 network) and a public IP
 * behind the scenes AWS will map a public/private IPs and create two DNS entries
-* split-view DNS system - different responses depending on from where do you ask => always reference the public hostname of the instance (rather than the public IP) to save [costs](https://aws.amazon.com/ec2/pricing/#DataTransfer)
+* split-view DNS system - different responses depending on from where do you ask
