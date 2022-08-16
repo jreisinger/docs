@@ -48,6 +48,8 @@ NAT Gateway
 * suggestion: 1 NAT GW per AZ for higher resilience
 * this resource costs money! 
 
+---
+
 Network ACL
 
 * associate with 1+ subnets
@@ -66,7 +68,9 @@ Security groups
 * rules evaluated as a whole
 * suggestion: 1 security group per application per tier (public, private, db)
 
-Gateway endpoint
+---
+
+Gateway endpoint (Endpoints)
 
 * attach to VPC
 * s3 and DynamoDB access
@@ -74,7 +78,7 @@ Gateway endpoint
 * Route table entry required
 * suggestion: use it instead of NAT gateway to optimize cost
 
-Interface endpoint
+Interface endpoint (Endpoints)
 
 * similar to Gateway endpoint (same icon)
 * associate with 1 subnet
