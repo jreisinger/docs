@@ -1,4 +1,5 @@
-![aws-vpc drawio](https://user-images.githubusercontent.com/1047259/184865788-37330a4e-5af1-4793-9ddf-6779a0006fa6.png)
+![aws-vpc drawio](https://user-images.githubusercontent.com/1047259/184867484-9f11dfbf-e883-4c88-af03-5035ecba78c8.png)
+
 
 VPC = Virtual Private Cloud!
 
