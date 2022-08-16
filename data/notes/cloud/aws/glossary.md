@@ -20,7 +20,7 @@
 * orange buttons are important
 * only some services are Region scoped
 
-# AWS Region
+# Region
 
 * multiple, physically separate AZs
 * traffic between AZs is encrypted
@@ -48,17 +48,3 @@
 * connected to Regions networks
 * scope for global services (e.g. DNS, content caching)
 * cca 10 times as many edge locations as Regions
-
-# Storage
-
-1. instance storage - attached to the physical host that runs your instance; recommended for fast temporary storage
-2. EBS (Elastic Block Store) - attached over the network; recommended for most of use cases
-3. SSDs - since 2012; similar to instance storage but massively higher IO speeds
-
-It's possible to attach multiple volumes (of either type) and build a SW RAID on them.
-
-# Networking
-
-* every instance has a private IP (can only be used within EC2 network) and a public IP
-* behind the scenes AWS will map a public/private IPs and create two DNS entries
-* split-view DNS system - different responses depending on from where do you ask
