@@ -1,4 +1,6 @@
-VPC = Virtual Private Cloud
+![aws-vpc drawio](https://user-images.githubusercontent.com/1047259/184865788-37330a4e-5af1-4793-9ddf-6779a0006fa6.png)
+
+VPC = Virtual Private Cloud!
 
 * virtual data center network
 * Region scope
