@@ -46,4 +46,22 @@ NAT Gateway
 * deploy into subnet
 * AZ scope (not as fault tolerant as Region scope)
 * suggestion: 1 NAT GW per AZ for higher resilience
- 
+* this resource costs money! 
+
+Network ACL
+
+* associate with 1+ subnets
+* stateless firewall resource (to enable traffic you need both directions)
+* inbound/outbound rules
+* allow/deny rules
+* rules order is important
+* suggestion: 1 NACL for public subnets and individual NACL for private subnets
+
+Security groups
+
+* associate with 1+ network interface
+* statefull firewall resource
+* inbound/outbound rules
+* default deny (on custom NACL)
+* rules evaluated as a whole
+* suggestion: 1 security group per application per tier (public, private, db)
