@@ -65,3 +65,21 @@ Security groups
 * default deny (on custom NACL)
 * rules evaluated as a whole
 * suggestion: 1 security group per application per tier (public, private, db)
+
+Gateway endpoint
+
+* attach to VPC
+* s3 and DynamoDB access
+* same-region resources only
+* Route table entry required
+* suggestion: use it instead of NAT gateway to optimize cost
+
+Interface endpoint
+
+* similar to Gateway endpoint (same icon)
+* associate with 1 subnet
+* associate with 1 Security group
+* associate with 1 AWS service
+* creates ENI in subnet
+* overrides DNS
+* suggestion: use to connect to private endpoints in VPCs in other accounts
