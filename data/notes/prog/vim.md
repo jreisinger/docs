@@ -13,3 +13,9 @@ syntax off
 # enable spell checking in local buffer only
 setlocal spell spelllang=en_us
 ```
+
+Buffers
+
+* list: `:ls`
+* switch: `:b<num>` 
+* switch to previous: `<C-^>` or `<C-6>` 
