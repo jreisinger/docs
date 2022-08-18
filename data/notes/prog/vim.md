@@ -18,4 +18,5 @@ Buffers
 
 * list: `:ls`
 * switch: `:b<num>` 
-* switch to previous: `<C-^>` or `<C-6>` 
+* switch to previous: `<C-^>` or `<C-6>`
+* simplified: `:nnoremap <F5> :buffers<CR>:buffer<Space>`
