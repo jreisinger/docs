@@ -16,9 +16,8 @@ setlocal spell spelllang=en_us
 
 Buffers
 
-* list: `:ls`
+* list: `:ls[!]`
 * add: `:n <filename>`
 * delete: `:bd[<num>]`
 * switch: `:b<num>`
-* switch to previous: `<C-^>` or `<C-6>`
-* simplified: `:nnoremap <F5> :buffers<CR>:buffer<Space>`
+* switch to previous: `<C-^>`
