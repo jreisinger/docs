@@ -1,6 +1,6 @@
 # Security principles
 
-This is from the [security](Source: https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/security.html) pillar of the AWS Well-Architected framework.
+This is from the [security](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/security.html) pillar of the AWS Well-Architected framework.
 
 Implement a strong identity foundation
 
