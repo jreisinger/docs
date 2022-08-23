@@ -1,4 +1,6 @@
-# Security Design Principles
+# Security principles
+
+This is from the [security](Source: https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/security.html) pillar of the AWS Well-Architected framework.
 
 Implement a strong identity foundation
 
@@ -39,9 +41,7 @@ Prepare for security events
 * run incident response simulations
 * use tools with automation to increase speed for detection, investigation, and recovery
 
-Source: https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/security.html
-
-# Security Steps
+# Security steps
 
 1. IAM
 2. Use automation
