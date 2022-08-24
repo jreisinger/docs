@@ -21,3 +21,9 @@ Buffers
 * delete: `:bd[<num>]`
 * switch: `:b<num>`
 * switch to previous: `<C-^>`
+
+vim-go plugin
+
+* install/update: `git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go`
+* completion: `<C-x-o>`
+* docs: `<K>`
