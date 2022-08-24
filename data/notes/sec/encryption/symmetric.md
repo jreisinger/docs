@@ -61,7 +61,7 @@ Twofish
 **AES**
 
 * Rijndael standardize byt NIST in 2001
-* 128-bit block size, key size of 128, 192, or 256 bits
+* 128-bit block size, key size of 128, 192, or **256** bits
 * used by `Fernet`, HTTPS, compressions, filesystems, hashing, VPNs
 
 # Stream ciphers
