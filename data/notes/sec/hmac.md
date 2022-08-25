@@ -1,6 +1,6 @@
 # Keyed hashing
 
-Hash functions are useful for ensuring data integrity - has the data changed?. But they won't help with data (or message) authentication - who authored this data?. For this you need:
+Hash functions are useful for ensuring data integrity - has the data changed? But they won't help with data (or message) authentication - who authored this data? For this you need:
 
 * a key
 * a keyed hash function
