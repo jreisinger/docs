@@ -3,7 +3,7 @@
 * used to classify (compare) algorithms based on how they respond to changes in input size, i.e. how they scale
 * you can't really tell how fast an algorithm will be without benchmarking (CPU, disk, RAM [complexities](http://queue.acm.org/detail.cfm?id=1814327)) but *O()* notation can serve as a general guide
 * *O* is used because the growth rate of an algorithm's run time is known as its *order*
-* *order of magnitude* is related but different - how many digits are in a number describing size (1 000 is an order of magnitude larger than 100)
+* *order of magnitude* is related but different - it essentially means tenfold (1 000 is an order of magnitude larger than 100)
 
 NOTE: [Logarithms](https://www.rapidtables.com/calc/math/Log_Calculator.html) (log) mentioned here are base 2.
 
