@@ -2,8 +2,8 @@ Created: 2018-08-10
 
 There are several classes of hashes (hash functions) used for different purposes
 
-* hash datatype in Perl or dictionary (`hash` function) in Python maps a lookup string to a memory location (fast and short)
-* networking protocols checksums like CRC or Adler (rarely go over 32-bits in length) are used for error detection
+* data types like hash in Perl or dictionary in Python map a key to a memory location using hashes (fast and short)
+* networking protocol checksums like CRC or Adler are used for error detection (rarely go over 32-bits in length)
 * cryptographic hashes - this article is about them
 
 Hash properties
@@ -12,7 +12,7 @@ Hash properties
 * fixed-length hash values (also called message digests) for arbitrary long messages
 * avalanche effect - small diffs between messages produce large diffs between hash values
 
-Cryptographic hash - additional properties
+Cryptographic hash has additional properties
 
 * one way function - easy to invoke, infeasable [1] to reverse engineer
 * [collision](https://github.com/jreisinger/unsafehash) resistance - hash values for different messages must almost [1] never have the same value
