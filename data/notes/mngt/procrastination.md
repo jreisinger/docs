@@ -1,4 +1,4 @@
-There are countless things you could do, so you must not do some of them. Instead of the thing you (or someone else) think you should be working on, you can be doing a) nothing (useful) b) something less important c) something more important.
+There are countless things you could do, so you must not do some of them. Instead of the thing you (or someone else) think you should be working on, you can be doing a) nothing b) something less important c) something more important.
 
 We don't want type a) and b) procrastination.
 
