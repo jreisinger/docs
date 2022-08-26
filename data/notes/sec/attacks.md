@@ -2,6 +2,10 @@ Public information about selected attacks on information systems.
 
 # 2022
 
+## 08 LastPass developer systems hacked to steal source code
+
+https://www.bleepingcomputer.com/news/security/lastpass-developer-systems-hacked-to-steal-source-code/
+
 ## 07 Akamai Migigates Largest European DDoS Attack on Record [DDoS]
 
 https://www.akamai.com/blog/security/largest-european-ddos-attack-ever
