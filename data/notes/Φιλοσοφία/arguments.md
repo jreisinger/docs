@@ -1,4 +1,4 @@
-It's not possible to prove (or disprove) the God's existence using the [modern scientific method](http://www.wall.org/~aron/blog/the-pillars-of-science/). This is because God, if exists, is not an object among other objects or a force among other forces. It's something totally different and external to the observable world. Is it then reasonable to think that God exists? Are there some arguments or reasons for God's existence? (These arguments can be classified into historical, cosmological, psychological ... But here I am more interested in the ones that I can understand and make most sense to me.)
+It's not possible to prove (or disprove) the God's existence using the [modern scientific method](http://www.wall.org/~aron/blog/the-pillars-of-science/). This is because God, if exists, is not an object among other objects or a force among other forces. It's something very different and external to the observable world. Is it then reasonable to think that God exists? Are there some reasons or arguments for God's existence? (These arguments can be classified into historical, cosmological, psychological ... But here I am more interested to find the ones that I can understand and that make most sense to me.)
 
 # Historicity of Jesus
 
@@ -70,9 +70,9 @@ For
 * John Lennox (1943) - mathematician, Christian apologist (Oxford)
 * [William Lane Craig](https://www.reasonablefaith.org/) (1949) - philosopher, theologian, debater (USA, Munich)
 * Francis Collins (1950) - genetisist, led the [HGP](https://en.wikipedia.org/wiki/Human_Genome_Project) (Yale)
-* Larry Wall (1954) - language designer and BDFL, author of Perl
+* Larry Wall (1954) - language designer and BDFL, author of Perl 🐪
 * [Bishop Robert Barron](https://wordonfire.org) (1959) - high Catholic priest and philosopher (LA)
-* [Rosalind Picard](https://www.media.mit.edu/people/picard/overview/) (1962) - engineer (MIT)
+* [Rosalind Picard](https://www.media.mit.edu/people/picard/overview/) (1962) - engineer, founder of Empatica (MIT)
 * [Edward Feser](http://edwardfeser.blogspot.com/) (1968) - philosopher
 * [Karin Öberg](https://youtu.be/b6mJIZaEy5g) (1982) - Swedish professor of astronomy (Harvard)
 * [Aron Wall](http://www.wall.org/~aron/blog/bio/) (1984) - theoretical physicist (Cambridge)
