@@ -2,7 +2,7 @@ Public information about selected attacks on information systems.
 
 # 2022
 
-## 09 Merge requests and insecure GitHub workflows may lead to supply-chain attacks [CI/CD, supply-chain]
+## 09 Merge requests and insecure GitHub workflows may lead to supply-chain attacks [ci/cd, supply-chain]
 
 https://www.theregister.com/2022/09/01/google_firebase_apache_camel_github/
 
@@ -10,7 +10,7 @@ https://www.theregister.com/2022/09/01/google_firebase_apache_camel_github/
 
 https://www.bleepingcomputer.com/news/security/lastpass-developer-systems-hacked-to-steal-source-code/
 
-## 07 Akamai Migigates Largest European DDoS Attack on Record [DDoS]
+## 07 Akamai Migigates Largest European DDoS Attack on Record [ddos]
 
 https://www.akamai.com/blog/security/largest-european-ddos-attack-ever
 
@@ -26,7 +26,7 @@ https://thehackernews.com/2022/07/hackers-used-fake-job-offer-to-hack-and.html
 
 https://zive.aktuality.sk/clanok/j42eNLl/telekom-zasiahol-ransomverovy-utok-web-uz-funguje/
 
-## 06 Cloudflare mitigates 26 mil. rps HTTPS DDoS attack [DDoS]
+## 06 Cloudflare mitigates 26 mil. rps HTTPS DDoS attack [ddos]
 
 https://blog.cloudflare.com/26m-rps-ddos/
 
