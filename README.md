@@ -3,7 +3,7 @@
 
 ## About this
 
-Welcome to my homepage, friend. I mostly keep technical notes here.
+Welcome to my homepage, friend. I keep here my (mostly) technical [notes](notes) and [blog](blog) posts.
 
 ## About me
 
