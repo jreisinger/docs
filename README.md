@@ -1,9 +1,12 @@
-Data and code for my homepage living at [reisinge.net](https://reisinge.net). Changes inside `data` folder are automatically reflected in the homepage.
+![tar pit](/static/tar-pit.png "tar pit")
+<!-- ![sea](/static/sea.jpg "sea") -->
 
-When you change the code
+## About this
 
-1) Test locally: `make run` and go to http://localhost:5001
+Welcome to my homepage, friend. I mostly keep technical notes here.
 
-2) Release to dockerhub: `make release`
+## About me
 
-NOTE: in case of problems with some missing files (like CSS), exec to homepage container and run `git pull` in /tmp/homepage.
+I try to understand and navigate the tar pits of computing :-). Some of my preferred technologies nowadays are Go and Kubernetes. Before I concentrated on Perl and Linux. See my [CV](cv.md) and [links](links.md) for more.
+
+> I think people who write programs do have at least a glimmer of extra insight into the nature of God... because creating a program often means that you have to create a small universe. -- Donald Knuth
