@@ -10,11 +10,11 @@ at Empatica [2022 - present]
 Sr. Security Engineer
 at Deutsche Telekom Pan-Net [2017 - 2022]
 
-* Building security products (WAF, SIEM).
-* Developing programs and scripts using Go, Bash and Python.
-* Maintaining Ansible playbooks, Kubernetes manifests and CI/CD pipelines.
-* Operating systems in private (and public) cloud the DevOps way.
-* Managing projects and team.
+* Built security products (WAF, SIEM).
+* Developed programs and scripts using Go, Bash and Python.
+* Maintained Ansible playbooks, Kubernetes manifests and CI/CD pipelines.
+* Operated systems in private (and public) cloud the DevOps way.
+* Managed projects and team.
 
 Security Engineer
 at First Data [2016 - 2017]
