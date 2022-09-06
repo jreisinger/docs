@@ -1,9 +1,8 @@
 ![tar pit](/static/tar-pit.png "tar pit")
-<!-- ![sea](/static/sea.jpg "sea") -->
 
 ## About this
 
-Welcome to my homepage, friend. I keep here my (mostly) technical [notes](notes) and [blog](blog) posts.
+Welcome to my homepage, friend. I keep my (mostly) technical [notes](notes) and [blog](blog) posts here.
 
 ## About me
 
