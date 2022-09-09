@@ -56,11 +56,13 @@ at Slovak Telekom [2004 - 2006, 2011 - 2013]
 
 Operating systems: Kubernetes, Linux (Ubuntu/Debian)
 
-Artificial languages: [Go](https://github.com/jreisinger?tab=repositories&language=go)lang, [Bash](https://github.com/jreisinger?tab=repositories&language=shell), [Python](https://github.com/jreisinger?tab=repositories&language=python), [Perl](https://github.com/jreisinger?tab=repositories&language=perl)
+Artificial languages: [Go](https://github.com/jreisinger?tab=repositories&language=go)lang, [Bash](https://github.com/jreisinger?tab=repositories&language=shell), [Python](https://github.com/jreisinger?tab=repositories&language=python)`*`, [Perl](https://github.com/jreisinger?tab=repositories&language=perl)`*`
 
-Natural languages: English, Italian, Slovak/Czech
+Natural languages: English, Slovak/Czech, Italian`*`
 
-Security and networking: general concepts and tools
+Tools: Terraform, Ansible`*`
+
+`*` means not being used that much recently
 
 # Certifications
 
