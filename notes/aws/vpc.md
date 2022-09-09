@@ -1,6 +1,5 @@
 ![aws-vpc drawio](https://user-images.githubusercontent.com/1047259/184867484-9f11dfbf-e883-4c88-af03-5035ecba78c8.png)
 
-
 VPC = Virtual Private Cloud!
 
 * virtual data center network

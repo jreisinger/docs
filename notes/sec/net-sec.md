@@ -7,11 +7,11 @@ IP whitelisting is still important as long as it isn't the primary defense or au
 * whitelist - list of things that are allowed, with everything else denied
 * blacklist - list of things that are denied, with everything else allowed
 
-You place simpler, less-trusted components in DMZ (proxy, LB, static content web server); if that component is comprimised, it should not provide large advantange to the attacker.
+You place simpler, less-trusted components in DMZ (proxy, LB, static content web server); if that component is compromised, it should not provide large advantage to the attacker.
 
-Proxies (forward, reverse) are useful for both functional and security requirements. Although you can have proxy for almost any protocol; there are usually HTTP/HTTPS proxies.
+Proxies (forward, reverse) are useful for both functional and security requirements. Although you can have proxy for almost any protocol there are usually HTTP/HTTPS proxies.
 
-Network features virtualization (NFV) or virtual network functions (VNFs) reflect the idea you no longer need a dedicated box for FW, router or IDS/IPS.
+Network features virtualisation (NFV) or virtual network functions (VNFs) reflect the idea you no longer need a dedicated box for FW, router or IDS/IPS.
 
 Overlay network is a virtual network often accomplished by encapsulation (VxLAN, GRE, IP-in-IP).
 
@@ -23,7 +23,7 @@ IPv6 security improvements: mandatory support for IPsec transport security, cryp
 
 **Prioritize** network controls in the following order (don't put bars on second-story windows before your doors have a lock).
 
-Ecnryption in motion
+1) Encryption in motion
 
 * use TLS (1.3) for all communication that crosses a switch (physical or virtual)
 * not needed for components within OS or pod
@@ -31,38 +31,38 @@ Ecnryption in motion
 * TLS loses most of its effect if you don't authenticate the other end by certificate checking (MITM attack)
 * this means you need to create a separate keypair and getting a certificate signed - painful and difficult to automate -> getting easier (HashiCorp Vault, Istio)
 
-FW implementations in the cloud
+2) FW implementations in the cloud
 
 * Virtual FW appliances - largely lift-and-shift model from on-prem environments
-* Network access control list (ACLs) - instead of operating a FW you simply define rules
-* Security groups - similar for ACLs but at per-OS or per-pod level
+* Network access control list (NACLs) - instead of operating a FW you simply define rules
+* Security groups - similar for NACLs but at per-OS or per-pod level
 
-The first FW control you should design is a permiter of some form.
+The first FW control you should design is a perimeter of some form.
 
-Admin access
+3) Admin access
 
 * bastion hosts
 * VPN (site-to-site, client-to-site)
 
-WAF and RASP
+4) WAF and RASP
 
 * extra layer of protection against common programming errors
 * smart proxy
 * you need to setup the rules properly and look at the alerts
 * make sure all traffic passes through WAF (whitelisting, but can be difficult)
 
-Anti-DDoS
+5) Anti-DDoS
 
 * too many fake requests or too much useless traffic deny service for legitimate users
 * consider if anyone is going to care to knock you off the Internet and how big a problem is it for you if they do
 
-IDS/IPS
+6) IDS/IPS
 
 * detect/block traffic matching a signature or behavior (e.g. connections to a lot of ports -> scanning)
 * network or host based
 
 Egress filtering protects against data exfiltration and watering hole attack (e.g. you pull update from a malicious server).
 
-Data loss prevention (DLP) watches for sensitive data that are imrpoperly stored or are leaving the environment.
+Data loss prevention (DLP) watches for sensitive data that are improperly stored or are leaving the environment.
 
 Source: Practical Cloud Security (2019)
