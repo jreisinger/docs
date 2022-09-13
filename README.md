@@ -1,4 +1,4 @@
-![tar pit](/static/tar-pit.png "tar pit")
+<!--- ![tar pit](/static/tar-pit.png "tar pit") --->
 
 Welcome to my homepage, friend. I keep my (mostly) technical [notes](notes) and [blog](blog) posts here. See my [CV](cv.md) and [links](links.md) for more about me.
 
