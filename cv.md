@@ -58,11 +58,11 @@ Operating systems: Kubernetes, Linux (Ubuntu/Debian)
 
 Artificial languages: [Go](https://github.com/jreisinger?tab=repositories&language=go)lang, [Bash](https://github.com/jreisinger?tab=repositories&language=shell), [Python](https://github.com/jreisinger?tab=repositories&language=python)`*`, [Perl](https://github.com/jreisinger?tab=repositories&language=perl)`*`
 
-Natural languages: English, Slovak/Czech, Italian`*`
+Natural languages: English, Slovak/Czech`*`, Italian`*`
 
 Tools: Terraform, Ansible`*`
 
-`*` means not being used that much recently
+`*` not being used that much recently
 
 # Certifications
 
