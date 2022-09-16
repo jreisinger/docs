@@ -24,7 +24,7 @@ These security principles will help you to increase your security.
 
 Clarity and simplicity
 
-* obscurity and unnecessary complexity hide (security) problems
+* obscurity and unnecessary [complexity](https://www.schneier.com/blog/archives/2022/08/security-and-cheap-complexity.html) hide (security) problems
 * easy to understand and easy to use security controls and tools are more likely to be used (correctly)
 * apply to code, processes, communication
 
