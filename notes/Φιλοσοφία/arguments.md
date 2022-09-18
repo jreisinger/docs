@@ -2,6 +2,8 @@ It's not possible to prove (or disprove) the God's existence using the [modern s
 
 # Historicity of Jesus
 
+https://en.wikipedia.org/wiki/Lewis%27s_trilemma
+
 If God is unreal, Jesus was history's biggest fool or fake. -- Peter Kreeft: A Shorter Summa (1993)
 
 "Virtually all scholars of antiquity agree that Jesus existed." -- [Wikipedia](https://en.wikipedia.org/wiki/Historicity_of_Jesus)
