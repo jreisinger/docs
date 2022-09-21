@@ -1,6 +1,6 @@
 2022-01-02
 
-These are notes from the book A [Shorter Summa](/static/shorter-summa.jpeg) by Peter Kreeft (1993).
+These are notes from the book [A Shorter Summa](/static/shorter-summa.jpeg) by Peter Kreeft (1993).
 
 # Preface
 
