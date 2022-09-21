@@ -1,8 +1,6 @@
-<img src="/static/shorter-summa.jpeg" style="max-width:25%;height:auto;float:right">
-
 2022-01-02
 
-These are notes from the book A Shorter Summa by Peter Kreeft (1993).
+These are notes from the book A [Shorter Summa](/static/shorter-summa.jpeg) by Peter Kreeft (1993).
 
 # Preface
 
@@ -55,7 +53,9 @@ story to our edifice of thought.
 * St. Thomas believed not only that there was all truth Somewhere but also that
   there was some truth everywhere
 
-Summa Theologica mirrors the structural outline of reality: <img src="https://user-images.githubusercontent.com/1047259/147875253-1f32ecf9-3438-479b-8f77-f7a6924ab05a.png" style="max-width:100%;height:auto">
+Summa Theologica mirrors the structural outline of reality:
+
+<img src="https://user-images.githubusercontent.com/1047259/147875253-1f32ecf9-3438-479b-8f77-f7a6924ab05a.png" width="500"/>
 
 The "Article" is the basic thought-unit and it has five structural parts:
 
