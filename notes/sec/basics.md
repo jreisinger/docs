@@ -25,7 +25,7 @@ These security principles will help you to increase your security:
 * Simplicity - [complexity](https://www.schneier.com/blog/archives/2022/08/security-and-cheap-complexity.html) is the worst enemy of security
 * Minimal attack surface - minimize possible ways a system can be attacked
 * Least privilege - deny by default to limit the blast radius of a compromise
-* Defense in depth - since any security control can fail, multiple ovelapping layers are needed
+* Defense in depth - since any security control can fail, multiple overlapping layers are needed
 
 # Areas
 
