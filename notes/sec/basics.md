@@ -39,7 +39,7 @@ Vulnerability mngt - network (Nexpose), application - DAST (OWASP ZAP), code - S
 
 Network security - WAF, antiDDoS, IDS/IPS, honepots
 
-See also [CISSP](https://en.wikipedia.org/wiki/Certified_Information_Systems_Security_Professional) domains.
+See also [CISSP](https://en.wikipedia.org/wiki/Certified_Information_Systems_Security_Professional) domains cyberseek [roles](https://www.cyberseek.org/pathway.html).
 
 # Basic steps
 
