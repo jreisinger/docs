@@ -6,15 +6,15 @@ Security is a neverending process.
 
 # Goals
 
-CIA triad represents the traditional (since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf)) security goals:
+CIA triad represents the traditional, since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf), security goals:
 
-![image](https://user-images.githubusercontent.com/1047259/148757897-f51c3d58-8f26-46d8-973b-854ae47d84d4.png)
+> The protection of system data and resources from accidental and deliberate threats to confidentiality, integrity and availability.
 
 * Confidentiality: seek to prevent unauthorized read access to data or systems
-* Integrity: seek to prevent unauthorized write access to data or systems (e.g. malicious SW opens a "back door")
+* Integrity: seek to prevent unauthorized write access to data or systems
 * Availability: ensure that data and service is available when needed
 
-Sometimes [non-repudation](https://en.wikipedia.org/wiki/Non-repudiation) is added to these three.
+Sometinems non-repudation is added to these three.
 
 The ultimate security goals don't change with the adaption of a new paradigm (e.g. cloud services or DevOps). Security teams must still focus on reducing business risk from attacks and work to get confidentiality, integrity, and availability (CIA) security controls built into information systems and data. How those goals are achieved will change.
 
