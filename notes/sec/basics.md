@@ -29,40 +29,15 @@ These security principles will help you to increase your security:
 
 # Areas
 
-Asset and risk management
+Asset and risk management - what are your most valuable assets and most probable attacks and their impact
 
-* what are your (most valuable) data and compute/storage/network resources ([asset management](https://danielmiessler.com/blog/continuous-asset-management-security/))
-* what are most probable attacks and attackers (threat actors) targeting those assets
-* estimate where are the major risks (something bad that could happen) - impact x probability (risk assessment)
+Identity and access management (IAM) - life cycle of identities (authn) and access rights (authz)
 
-Identity and access management (IAM)
+Data encryption - in motion (PKI, TLS), at rest (secrets mngt)
 
-* life cycle of identity (authentication) and access rights (authorization)
-* concerns both humans and programs
+Vulnerability mngt - network (Nexpose), application - DAST (OWASP ZAP), code - SAST (SonarQube, tfsec), image and container (trivy) scanning
 
-Data encryption
-
-* encryption in motion (PKI, TLS)
-* encryption at rest (secrets management)
-
-Vulnerability management
-
-* Network vulnerability scanning (Nexpose)
-* Application scanning, DAST (OWASP ZAP)
-* Code scanning, SAST (SonarQube - code, tfsec - IaC)
-* Image/container scanning (trivy)
-
-Network security
-
-* WAF
-* antiDDoS
-* IDS/IPS, honeypots
-
-Security monitoring
-
-* detecting and responding to security incidents
-* security incidents = attacks
-* SIEM (logs, metrics), SIRP, SOC
+Network security - WAF, antiDDoS, IDS/IPS, honepots
 
 See also [CISSP](https://en.wikipedia.org/wiki/Certified_Information_Systems_Security_Professional) domains.
 
