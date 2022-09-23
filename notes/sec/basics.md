@@ -14,7 +14,7 @@ CIA triad represents the traditional, since [1977](https://nvlpubs.nist.gov/nist
 * Integrity: seek to prevent unauthorized write access to data or systems
 * Availability: ensure that data and service is available when needed
 
-Sometinems non-repudation is added to these three.
+Sometimes non-repudation is added to these three.
 
 The ultimate security goals don't change with the adaption of a new paradigm (e.g. cloud services or DevOps). Security teams must still focus on reducing business risk from attacks and work to get confidentiality, integrity, and availability (CIA) security controls built into information systems and data. How those goals are achieved will change.
 
