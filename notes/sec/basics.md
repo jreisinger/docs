@@ -20,32 +20,12 @@ The ultimate security goals don't change with the adaption of a new paradigm (e.
 
 # Principles
 
-These security principles will help you to increase your security.
+These security principles will help you to increase your security:
 
-Clarity and simplicity
-
-* obscurity and unnecessary [complexity](https://www.schneier.com/blog/archives/2022/08/security-and-cheap-complexity.html) hide (security) problems
-* easy to understand and easy to use security controls and tools are more likely to be used (correctly)
-* apply to code, processes, communication
-
-Minimal attack surface
-
-* attack surface is all possible ways a system can be attacked (through user, system, network)
-* higher complexity means bigger attack surface thus higher probability of getting attacked
-* apply to exposed systems, unnecessary services, underused systems
-
-Defense in depth
-
-* acknowledgement that almost any security control can fail
-* thus you need multiple layers of overlapping security controls
-* adding another layer is also more cost effective than perfecting a single layer
-
-Least privilege
-
-* deny by default
-* people and programs should be able to access only what they need to do their job, and no more
-* this limits the blast radius when system gets compromised 
-* apply to any access control or authorization situation
+* Simplicity - [complexity](https://www.schneier.com/blog/archives/2022/08/security-and-cheap-complexity.html) is the worst enemy of security
+* Minimal attack surface - minimize possible ways a system can be attacked
+* Least privilege - deny by default to limit the blast radius of a compromise
+* Defense in depth - since any security control can fail, multiple ovelapping layers are needed
 
 # Areas
 
