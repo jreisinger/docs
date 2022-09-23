@@ -1,8 +1,8 @@
-Security is a neverending process.
-
-Security is the ability to resist attack.
+Security is the ability to resist and handle attacks.
 
 There's no secure system. There are just more or less secure systems.
+
+Security is a neverending process.
 
 # Goals
 
