@@ -48,16 +48,32 @@ story to our edifice of thought.
   wrote Summas)
 * it's more like an encyclopedia than a textbook
 * there is extreme economy in the use of words (should appeal to us busy moderns)
-* medievals had passion for order
-* a summarized debate (shared journey to discovery)
+
+A Summa is really a summarized *debate*:
+
+* for medievals debate was a fine art, a serious science, and a fascinating entertainment
+* not a personal contest in cleverness, nor "sharing opinions" but a shared journey to discovery
+* the "objections" from the other side are options to be considered and learned from
+* distinguishing of truths from errors
 * St. Thomas believed not only that there was all truth Somewhere but also that
   there was some truth everywhere
 
-Summa Theologica mirrors the structural outline of reality:
+Techniques
+
+* induction
+* deduction
+
+Data
+
+* ordinary experience
+* divine revelation
+* philosophical axioms ("first principles")
+
+Medievals had passion for order because they believed that God had passion for order when He designed the universe. Summa Theologica mirrors the structural outline of reality:
 
 <img src="https://user-images.githubusercontent.com/1047259/147875253-1f32ecf9-3438-479b-8f77-f7a6924ab05a.png" width="500"/>
 
-The "Article" is the basic thought-unit and it has five structural parts:
+The "Article" (question for moderns) is the basic thought-unit and it has five structural parts:
 
 1. A question in a yes or no format.
 2. Objections (usually three) to the answer he will give.
