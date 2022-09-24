@@ -17,7 +17,7 @@ I read Daniel Miessler's [article](https://danielmiessler.com/blog/build-success
 * ✅ be always working on ([GitHub](https://github.com/jreisinger/)) projects
 * ✅ make contributions (on GitHub)
 * 🚫 practice with bug bounties (BugCrowd, HackerOne)
-* ✅ have a presence ([web site](https://reisinge.net), [blog](https://reisinge.net/blog), [Twitter](https://twitter.com/JozefReisinger))
+* ✅ have a presence ([web site](https://jreisinger.github.io), [blog](https://jreisinger.blogspot.com), [Twitter](https://twitter.com/JozefReisinger))
 * ✅ network with others (interact on Twitter, go to conferences, ...)
 * 🚫 respond to Call for Papers (CFP)
 * ✅ professionalism
