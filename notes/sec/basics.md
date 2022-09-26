@@ -55,6 +55,8 @@ Figure out what needs to talk to what in your application. You should first secu
 
 <img src="https://user-images.githubusercontent.com/1047259/138698724-4a6ecae8-fe54-4d45-b7a8-3b35dfab50e1.png" style="max-width:100%;height:auto;"> 
 
+Anything inside a trust boundary can trust, at least to some level, anything else inside that boundary but requires verification before trusting anything outside that boundary. If an attacker gets into a part of a trust boundary, she'll probably have control over all trust boundary eventually. So getting through each trust boundary should take some effort.
+
 Know your risks (have at least a spreadsheet) and how you approach them:
 
 * avoid the risk - turn off the system, benefits < risk
