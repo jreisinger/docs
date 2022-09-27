@@ -68,46 +68,6 @@ Archives
 * after logs are ingested and pass through configured processing pipelines, logs matching the filter query in an Archive are sent to a user-defined cloud storage
 * can only be configured by users with admin permissions
 
-# Logs
-
-Attributes - info extracted from logs, e.g.:
-
-<img width="897" alt="image" src="https://user-images.githubusercontent.com/1047259/192524551-b2f6b980-41ed-464a-b6c1-86433a268534.png">
-
-There are three ways to work with logs in a unified way:
-
-1. Make sure logs from various sources have the same syntax and naming convention (impossible! :-).
-2. Device complicated queries that take into account all relevant logs.
-3. Normalize logs into JSON with standard attribute names via pipelines.
-
-JSON logs are parsed automatically and attibutes are extracted.
-
-Semi-structured (non-JSON) logs are parsed via Grok processor.
-
-# Web GUI
-
-DD Events
-
-* informational messages about your system that are consumed by events explorer 
-
-Tags
-
-* you can observe aggregate datapoints across several hosts
-* bind different data types to allow for correlation between metrics, traces, and logs
-* DD recommends looking at containers, VMs, and cloud infra at the `service` level in aggregate (e.g. look at CPU usage across a collection of hosts that represent a service, rather than CPU usage for server A and B)
-
-Log facets
-
-* user-defined tags and attributes from your indexed logs
-* meant for qualitative or quantitative data analysis
-
-Search query can contain
-
-* assigned tags like `env` and `service`
-* attributes extracted from the logs like `@http.status_code`
-* text strings from log messages
-* see [search syntax](https://docs.datadoghq.com/logs/explorer/search_syntax) for more
-
 # Sending logs to DD
 
 1) Install DD agent as Docker container:
@@ -132,6 +92,46 @@ Datadog agent (v. 7.XX.X) started on <Hostname>
 * `-e DD_CONTAINER_EXCLUDE="name:datadog-agent"`
 
 5) See Logs > Search (Search for `tags:jr`)
+
+# Processing logs
+
+There are three ways to work with logs in a unified way:
+
+1. Make sure logs from various sources have the same syntax and naming convention (impossible! :-).
+2. Device complicated queries that take into account all relevant logs.
+3. Normalize logs into JSON with standard attribute names via pipelines.
+
+JSON logs are parsed automatically and attibutes are extracted.
+
+Semi-structured (non-JSON) logs are parsed via Grok processor.
+
+Attributes - info extracted from logs, e.g.:
+
+<img width="897" alt="image" src="https://user-images.githubusercontent.com/1047259/192524551-b2f6b980-41ed-464a-b6c1-86433a268534.png">
+
+# Web GUI
+
+DD Events
+
+* informational messages about your system that are consumed by events explorer 
+
+Tags
+
+* you can observe aggregate datapoints across several hosts
+* bind different data types to allow for correlation between metrics, traces, and logs
+* DD recommends looking at containers, VMs, and cloud infra at the `service` level in aggregate (e.g. look at CPU usage across a collection of hosts that represent a service, rather than CPU usage for server A and B)
+
+Log facets
+
+* user-defined tags and attributes from your indexed logs
+* meant for qualitative or quantitative data analysis
+
+Search query can contain
+
+* assigned tags like `env` and `service`
+* attributes extracted from the logs like `@http.status_code`
+* text strings from log messages
+* see [search syntax](https://docs.datadoghq.com/logs/explorer/search_syntax) for more
 
 # Sources
 
