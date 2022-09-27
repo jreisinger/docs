@@ -68,17 +68,27 @@ Archives
 * after logs are ingested and pass through configured processing pipelines, logs matching the filter query in an Archive are sent to a user-defined cloud storage
 * can only be configured by users with admin permissions
 
+# Logs
+
+Attributes - info extracted from logs, e.g.:
+
+<img width="897" alt="image" src="https://user-images.githubusercontent.com/1047259/192524551-b2f6b980-41ed-464a-b6c1-86433a268534.png">
+
+There are three ways to work with logs in a unified way:
+
+1. Make sure logs from various sources have the same syntax and naming convention (impossible! :-).
+2. Device complicated queries that take into account all relevant logs.
+3. Normalize logs into JSON with standard attribute names via pipelines.
+
+JSON logs are parsed automatically and attibutes are extracted.
+
+Semi-structured (non-JSON) logs are parsed via Grok processor.
+
 # Web GUI
 
 DD Events
 
 * informational messages about your system that are consumed by events explorer 
-
-Attributes
-
-* info extracted from logs, e.g.:
-
-<img width="897" alt="image" src="https://user-images.githubusercontent.com/1047259/192524551-b2f6b980-41ed-464a-b6c1-86433a268534.png">
 
 Tags
 
