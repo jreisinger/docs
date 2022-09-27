@@ -76,7 +76,9 @@ DD Events
 
 Attributes
 
-* info extracted from logs
+* info extracted from logs, e.g.:
+
+<img width="897" alt="image" src="https://user-images.githubusercontent.com/1047259/192524551-b2f6b980-41ed-464a-b6c1-86433a268534.png">
 
 Tags
 
