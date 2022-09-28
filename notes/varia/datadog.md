@@ -93,6 +93,11 @@ Datadog agent (v. 7.XX.X) started on <Hostname>
 
 5) See Logs > Search (Search for `tags:jr`)
 
+DD [agent logs](https://docs.datadoghq.com/agent/logs) related parameters
+
+* `source` - defines which integration is sending the logs; or it's a custom name
+* `service` - the name of the service owning the logs; defaults to the container short-image if no Autodiscovery logs configuration is present (to override add Autodiscovery Docker labels/pod annotations, ex.: `"com.datadoghq.ad.logs"='[{"service": "service-name"}]'`
+
 # Processing logs
 
 There are three ways to work with logs in a unified way:
