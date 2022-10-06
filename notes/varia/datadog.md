@@ -130,6 +130,7 @@ Log facets
 
 * user-defined tags and attributes from your indexed logs
 * meant for qualitative or quantitative data analysis
+* once a facet is created, its content is populated for all new logs flowing in the index
 
 Search query can contain
 
