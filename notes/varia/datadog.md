@@ -139,6 +139,14 @@ Search query can contain
 * text strings from log messages
 * see [search syntax](https://docs.datadoghq.com/logs/explorer/search_syntax) for more
 
+# Searching logs
+
+All logs without docker_image tag:
+
+```
+-docker_image:*
+```
+
 # Sources
 
 * https://docs.datadoghq.com
