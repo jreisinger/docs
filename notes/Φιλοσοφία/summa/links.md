@@ -1,0 +1,3 @@
+- https://summaexplorer.herokuapp.com (nicely structured)
+- http://summa.op.cz (Czech, Latin, English)
+- 
