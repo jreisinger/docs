@@ -17,7 +17,7 @@ For example, *simple search* is O(n) algorithm and *binary search* is O(log n) a
 
 All this means that binary search is faster than simple search and it gets a lot faster as the input size increases.
 
-# Scaling
+## Scaling
 
 The following terms describe how a system performs as data size grows: the system is unaffected, gets bit slower, gets slower, or gets much slower.
 
@@ -45,7 +45,7 @@ O(n^m) - exponential scaling
 * O(n^2) - quadratic scaling: everybody says exponential when they really mean quadratic :-)
 * ex. selection sort
 
-# Resources
+## Resources
 
 * TPoCSA, Appendix C
 * Grokking Algorithms
