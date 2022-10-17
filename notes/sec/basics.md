@@ -47,7 +47,7 @@ Understand the business of the organization you are trying to protect.
 
 Think about what you need to protect (assets: VMs, containers, DBs) and who is most likely to cause problems (threat actors: criminals, hacktivists, script kiddies, inside attackers, state actors).
 
-Understand what areas you need to secure - this depends on the cloud model you are using and whether you are a consumer or provider:
+Understand what is your responsibility - this depends on the cloud model you are using and whether you are a consumer or provider:
 
 <img src="https://user-images.githubusercontent.com/1047259/138699080-24091008-c78f-48c1-bcc9-e9ac6afd0f8d.png" style="max-width:100%;height:auto;"> 
 

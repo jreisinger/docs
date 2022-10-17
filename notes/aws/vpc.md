@@ -16,6 +16,8 @@ VPC subnets
 * associate with Route table and Network ACL
 * types
   * public: bidirectional Internet access via IGW
+    * must have an IGW attached to VPC
+    * must have a route (0.0.0.0/0) pointing to outside world via the IGW
   * private: outbound Internet access via NAT GW
   * VPC/VPN only subnet: no Internet access, or only via VPN/DX
 * 5 reserved IP addresses:
