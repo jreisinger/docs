@@ -50,8 +50,6 @@ NAT Gateway
 * suggestion: 1 NAT GW per AZ for higher resilience
 * this resource costs money! 
 
----
-
 Network ACL
 
 * associate with 1+ subnets
@@ -70,7 +68,7 @@ Security groups
 * rules evaluated as a whole
 * suggestion: 1 security group per application per tier (public, private, db)
 
-<img width="1196" alt="image" src="https://user-images.githubusercontent.com/1047259/196147124-2a30c826-e7e3-42c5-943c-1a769c9cd037.png">
+<img width="1185" alt="image" src="https://user-images.githubusercontent.com/1047259/196147838-7cf7516d-0a51-4b05-a1b2-b55c19bdcaff.png">
 
 ---
 
