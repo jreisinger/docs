@@ -18,6 +18,7 @@ VPC subnets
   * public: bidirectional Internet access via IGW
     * must have an IGW attached to VPC
     * must have a route (0.0.0.0/0) pointing to outside world via the IGW
+    <img width="941" alt="image" src="https://user-images.githubusercontent.com/1047259/196145423-e659d894-8224-469d-804a-d3c800a9a204.png">
   * private: outbound Internet access via NAT GW
   * VPC/VPN only subnet: no Internet access, or only via VPN/DX
 * 5 reserved IP addresses:
