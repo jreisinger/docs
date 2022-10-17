@@ -65,7 +65,7 @@ Security groups
 * associate with 1+ network interface
 * statefull firewall resource
 * inbound/outbound rules
-* default deny (on custom NACL)
+* only allow rules (what is not allowed is denied)
 * rules evaluated as a whole
 * suggestion: 1 security group per application per tier (public, private, db)
 
