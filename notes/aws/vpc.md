@@ -59,6 +59,8 @@ Network ACL
 * rules order is important
 * suggestion: 1 NACL for public subnets and individual NACL for private subnets
 
+<img width="846" alt="image" src="https://user-images.githubusercontent.com/1047259/196148897-689f3a8d-1b61-43a3-9a6e-8b2d16959951.png">
+
 Security groups
 
 * associate with 1+ network interface
