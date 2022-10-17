@@ -18,6 +18,7 @@ VPC subnets
   * public: bidirectional Internet access via IGW
     * must have an IGW attached to VPC
     * must have a route (0.0.0.0/0) pointing to outside world via the IGW
+    <img width="941" alt="image" src="https://user-images.githubusercontent.com/1047259/196145423-e659d894-8224-469d-804a-d3c800a9a204.png">
   * private: outbound Internet access via NAT GW
   * VPC/VPN only subnet: no Internet access, or only via VPN/DX
 * 5 reserved IP addresses:
@@ -68,6 +69,8 @@ Security groups
 * only allow rules (what is not allowed is denied)
 * rules evaluated as a whole
 * suggestion: 1 security group per application per tier (public, private, db)
+
+<img width="1196" alt="image" src="https://user-images.githubusercontent.com/1047259/196147124-2a30c826-e7e3-42c5-943c-1a769c9cd037.png">
 
 ---
 
