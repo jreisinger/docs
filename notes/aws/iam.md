@@ -2,7 +2,7 @@
 
 * AWS services are 100% API driven
 * these service APIs require permissions for all requests
-* IAM is one of the AWS services that provides authn (identity) and authz (permissions)
+* IAM is one of the AWS services that provides authn (identity + verification) and authz (access level or type)
 
 # AWS account and root user
 
