@@ -111,5 +111,6 @@ helm uninstall happy-panda
 
 Sources:
 
+* https://helm.sh/docs/intro/using_helm/
 * Benjamin Muschko: Certified Kubernetes Administrator (CKA) Study Guide (2022)
 * Butcher, Farina, Dolitsky: Learning Helm (2021)
