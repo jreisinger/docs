@@ -73,11 +73,40 @@ db_password: password
 service_port: 3000
 ```
 
+Other two important concepts besides Chart are:
+
+* Repository - place where Charts are collected and shared (like CPAN but for k8s)
+* Release - an instance of a Chart running in a K8s
+
 Commands:
 
-```
-$ helm template . # template locally and display on a console
-$ helm package .  # bundle the template files into a chart archive file (.tgz)
+```sh
+helm template . # template locally and display on a console
+helm package .  # bundle the template files into a chart archive file (.tgz)
+
+# add a Repository
+helm search hub wordpress # or https://artifacthub.io
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm repo list
+
+# install Release with default values
+helm install happy-panda bitnami/wordpress
+
+# install another Release with customized values
+echo '{mariadb.auth.database: user0db, mariadb.auth.username: user0}' > values.yaml
+helm install --generate-name -f values.yaml bitnami/wordpress
+
+# upgrade/rollback existing Release
+helm upgrade happy-panda -f values.yaml bitnami/wordpress
+helm get values happy-panda
+helm rollback happy-panda 1
+
+# get status and list of Releases
+helm status happy-panda
+helm list --all
+
+# uninstall Release
+helm uninstall happy-panda
 ```
 
 Sources:
