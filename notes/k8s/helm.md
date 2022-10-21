@@ -83,7 +83,9 @@ Commands:
 ```sh
 helm template . # template locally and display on a console
 helm package .  # bundle the template files into a chart archive file (.tgz)
+```
 
+```sh
 # add a Repository
 helm search hub wordpress # or https://artifacthub.io
 helm repo add bitnami https://charts.bitnami.com/bitnami
