@@ -8,9 +8,9 @@
 
 Why are computer systems so insecure?
 
-The reason is that they have so many complex layers. Why there are so many layers, and why those layers are so complex-even for what should be a simple thing like counting up votes?
+The reason is that they have so many complex layers. Why there are so many layers? And why those layers are so complex (even for what should be a simple thing like counting up votes)?
 
-It's because complexity is cheap. For most of human history, a more complex device was more expensive to build than a simpler device. This is not the case in modern computing. It is often more cost-effective to take a very complicated device or software, and make it simulate simplicity, than to make a simpler one. 
+It's because complexity is cheap. For most of human history, a more complex device was more expensive to build than a simpler device. This is not the case in modern computing. It is often more cost-effective to take a very complicated device, and make it simulate simplicity, than to make a simpler one. The same is true of sofware. 
 
 Suppose you need a machine that does something. Complex general-purpose CPUs are cheap because of economies of scale and Moore's law (ARM Cortex-M0 CPUs cost pennies). Software specializes a CPU that could do anything (universal computation) to become a device that does something.
 
