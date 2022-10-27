@@ -6,9 +6,24 @@
 
 # AWS account and root user
 
-* has access to unique tasks (e.g. account settings, support plan, billing)
+```plain
+Organization
+    Account1
+        root
+        User1
+        User2
+        ...
+    Account2
+        root
+        User1
+        User2
+        ...
+    ...
+```
+
 * each AWS account is associated with one and only one root user
-* root user uses generic login URL
+* root has access to unique tasks (e.g. account settings, support plan, billing)
+* root uses generic login URL
 * email becomes the username
 * you should use email alias so you can have multiple accounts
 
