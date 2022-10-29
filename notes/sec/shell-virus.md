@@ -1,5 +1,7 @@
 # Shell virus
 
+Based on McIlroy's [Virology 101](https://www.cs.princeton.edu/courses/archive/spr09/cos333/virology101.pdf).
+
 Start a lab container that will autodestroy upon exit:
 
 ```
@@ -28,5 +30,3 @@ chmod u+x virus
 ```
 
 Count the virus population inside the cointainer again (see above).
-
-Based on McIlroy's [Virology 101](https://www.cs.princeton.edu/courses/archive/spr09/cos333/virology101.pdf).
