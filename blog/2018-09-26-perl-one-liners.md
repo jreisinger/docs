@@ -34,7 +34,7 @@ $ cat birthdays.txt
 11/27/42 Jimi Hendrix
 06/24/44 Jeff Beck
 
-❯ perl -wlane 'print $F[1]' birthdays.txt
+$ perl -wlane 'print $F[1]' birthdays.txt
 Eric
 Jimi
 Jeff
