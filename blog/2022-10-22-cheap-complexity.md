@@ -12,7 +12,6 @@ The reason is that they have so many complex layers. Why there are so many layer
 
 It's because complexity is cheap. For most of human history, a more complex device was more expensive to build than a simpler device. This is not the case in modern computing. It is often more cost-effective to take a very complicated device, and make it simulate simplicity, than to make a simpler one. The same is true of sofware. 
 
-Suppose you need a machine that does something. Complex general-purpose CPUs are cheap because of economies of scale and Moore's law (ARM Cortex-M0 CPUs cost pennies). Software specializes a CPU that could do anything (universal computation) to become a device that does something.
+Suppose you need a machine that does something not that complex, like a fridge. Complex general-purpose CPUs are cheap because of economies of scale and Moore's law (ARM Cortex-M0 CPUs cost pennies). Software specializes a CPU that could do anything (universal computation) to become a device that does something.
 
 Similarly a (huge and complex) general-purpose operating system is free, but a simpler, custom-designed, perhaps more secure OS would be very expensive to build.
-
