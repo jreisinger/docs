@@ -24,6 +24,29 @@ These are some of the most used command line switches:
 
 See [perlrun](http://perldoc.perl.org/perlrun.html) for more.
 
+## Cut 
+
+Cut out 2nd and 1st space separated field (column):
+
+```
+$ cat birthdays.txt
+03/30/45 Eric Clapton
+11/27/42 Jimi Hendrix
+06/24/44 Jeff Beck
+
+❯ perl -wlane 'print $F[1]' birthdays.txt
+Eric
+Jimi
+Jeff
+
+$ perl -wlane 'print join " ", @F[1,0]' birthdays.txt
+Eric 03/30/45
+Jimi 11/27/42
+Jeff 06/24/44
+```
+
+The field numbering starts at 0. We use [join](https://perldoc.perl.org/functions/join) to put a space between cut out fields.
+
 ## Search
 
 Find lines in logs that contain error or warning:
@@ -79,24 +102,6 @@ perl -i -wpe 's/\r//'  <file1> <file2> ... # dos-to-unix
 perl -i -wpe 's/$/\r/' <file1> <file2> ... # unix-to-dos
 ```
 
-## Cut 
-
-Cut out 2nd and 1st space seprated field (column):
-
-```
-$ cat birthdays.txt
-03/30/45 Eric Clapton
-11/27/42 Jimi Hendrix
-06/24/44 Jeff Beck
-
-$ perl -wlane 'print join " ", @F[1,0]' birthdays.txt
-Eric 03/30/45
-Jimi 11/27/42
-Jeff 06/24/44
-```
-
-The field numbering starts at 0. We use [join](https://perldoc.perl.org/functions/join) to put a space between cut out fields.
-
 ## Calculate
 
 Calculate the total size of log files older than 30 days:
@@ -106,7 +111,7 @@ find /opt/splunk/syslog/ -iname "*log*" -type f -mtime +30 | \
 perl -wlne '$sum += (stat)[7]}{print $sum'
 ```
 
-The [stat](https://perldoc.perl.org/functions/stat.html) function returns a 13-element list of status info about a file. We take the 8th element (with index `7`) which is the size of a file. We loop over the found files and add the size of each into the `$sum` variable. The handy [Eskimo Greeting Operator](http://www.catonmat.net/blog/secret-perl-operators/#eskimo) is for priting the `$sum` when the loop is over (suggested by [PerlMonks](http://www.perlmonks.org/?node_id=1172707)).
+The [stat](https://perldoc.perl.org/functions/stat.html) function returns a 13-element list of status info about a file. We take the 8th element (with index `7`) which is the size of a file. We loop over the found files and add the size of each into the `$sum` variable. The handy [Eskimo Greeting Operator](http://www.catonmat.net/blog/secret-perl-operators/#eskimo) is for printing the `$sum` when the loop is over (suggested by [PerlMonks](http://www.perlmonks.org/?node_id=1172707)).
 
 ## More
 
