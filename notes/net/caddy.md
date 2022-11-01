@@ -8,7 +8,7 @@ Simple to setup and run, nice logging (JSON), automatic TLS certificate manageme
 
 # Configuration
 
-## Sharing files
+Sharing files
 
 ```
 # Caddyfile
@@ -25,7 +25,7 @@ log {
 }
 ```
 
-## Redirect
+Redirect
 
 ```
 # Caddyfile
