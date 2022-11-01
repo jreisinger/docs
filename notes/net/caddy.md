@@ -42,7 +42,8 @@ sudo ./caddy run
 cat access.log | jq -r '.request.remote_ip' | cut -d':' -f1 | sort | uniq
 
 # get remote IP addresses excluding 4xx response status 
-cat access.log | jq -r '"\(.request.remote_ip)\t\(.status)"' | grep -vE ' 4..$' | cut -d':' -f1 | sort | uniq```
+cat access.log | jq -r '"\(.request.remote_ip)\t\(.status)"' | grep -vE ' 4..$' | cut -d':' -f1 | sort | uniq
+```
 
 Or use recent version of [goaccess](https://goaccess.io/).
 
