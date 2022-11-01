@@ -19,6 +19,10 @@ basicauth /* {
         # password hash created with `caddy hash-password`
         Bob JDJhJDE0JENVblJPOVljYml4a3phTHNVelpmYk90MVVEdXV2aVFjYkl2ODJENDFEaG1KU29TRGNCUHp5
 }
+log {
+        format json
+        output file /home/ubuntu/access.log
+}
 ```
 
 ## Redirect
@@ -27,6 +31,10 @@ basicauth /* {
 # Caddyfile
 example.com something.example.com
 redir https://example.org
+log {
+        format json
+        output file /home/ubuntu/access.log
+}
 ```
 
 # Running
