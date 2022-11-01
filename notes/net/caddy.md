@@ -46,8 +46,8 @@ sudo ./caddy run
 # Parsing logs
 
 ```
-# get remote IP addresses
-cat access.log | jq -r '.request.remote_ip' | cut -d':' -f1 | sort | uniq
+# continually get remote IP addresses accessing the server
+tail -F access.log | jq -r '.request.remote_ip'
 
 # get remote IP addresses excluding 4xx response status 
 cat access.log | jq -r '"\(.request.remote_ip)\t\(.status)"' | grep -vE ' 4..$' | cut -d':' -f1 | sort | uniq
