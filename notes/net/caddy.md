@@ -8,29 +8,23 @@ Simple to setup and run, nice logging (JSON), automatic TLS certificate manageme
 
 # Configuration
 
-Sharing files
+`Caddyfile`:
 
 ```
-# Caddyfile
-something.example.com
+example.com something.example.com
+
+# Redirect
+redir https://example.org
+
+# Sharing files
 file_server browse
 root * /data/public
 basicauth /* {
         # password hash created with `caddy hash-password`
         Bob JDJhJDE0JENVblJPOVljYml4a3phTHNVelpmYk90MVVEdXV2aVFjYkl2ODJENDFEaG1KU29TRGNCUHp5
 }
-log {
-        format json
-        output file /home/ubuntu/access.log
-}
-```
 
-Redirect
-
-```
-# Caddyfile
-example.com something.example.com
-redir https://example.org
+# Logging
 log {
         format json
         output file /home/ubuntu/access.log
@@ -40,7 +34,7 @@ log {
 # Running
 
 ```
-sudo ./caddy run
+sudo -E ./caddy run
 ```
 
 # Parsing logs
