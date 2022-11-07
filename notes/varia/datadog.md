@@ -5,7 +5,7 @@ Metrics, Traces and Logs -> when, where
 * when: all these data types contain creation timestamp
 * where: reserved tags (host, device, source, service, env, version) indicate where the data originated from
 * metrics -> **what** is happening (e.g. what is the latency, what is number of page views, what is the number of instances in an autoscaling deployment)
-* traces -> **how** is sth. happenning (e.g. how are requests  being processed)
+* traces -> **how** is sth. happenning (e.g. how are requests being processed)
 * logs -> **why** is sth. happenning (e.g. why did a request fail, why did a user visit a page, why did a cluster autoscale)
 
 Logs
@@ -139,7 +139,7 @@ Search query can contain
 * text strings from log messages
 * see [search syntax](https://docs.datadoghq.com/logs/explorer/search_syntax) for more
 
-# Searching logs
+## Searching logs
 
 All logs without docker_image tag:
 
