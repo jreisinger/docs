@@ -7,6 +7,21 @@
 
 *WARNING*: To use network policies, you must be using a [network plugin](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/) which supports NetworkPolicy. Creating a NetworkPolicy resource without a controller that implements it will have no effect.
 
+Isolating all pods within a namespace:
+
+```
+# Deny all ingress and all egress traffic.
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: default-deny
+spec:
+  podSelector: {} # all pods in NS
+  policyTypes:    # types of traffic
+  - Ingress
+  - Egress
+```
+
 Only coffeeshop can talk to payment-processor API:
 
 ```
@@ -28,19 +43,24 @@ spec:
 
 <img src="https://user-images.githubusercontent.com/1047259/130800106-f114c4ad-04a0-42ef-9f23-54800c95ad96.png" style="max-width:100%;height:auto;"> 
 
-Isolating all pods within a namespace:
+Enable networkin policies in kind cluster:
 
 ```
-# Deny all ingress and all egress traffic.
-apiVersion: networking.k8s.io/v1
-kind: NetworkPolicy
-metadata:
-  name: default-deny-all
-spec:
-  podSelector: {} # all pods in NS
-  policyTypes:    # types of traffic
-  - Ingress
-  - Egress
+cat > kind-config.yaml <<EOF
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+- role: control-plane
+- role: worker
+networking:
+  disableDefaultCNI: true
+  podSubnet: 192.168.0.0/16
+EOF
+kind create cluster --config=kind-config.yaml
+kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.24.5/manifests/tigera-operator.yaml
+kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.24.5/manifests/custom-resources.yaml
+
+watch kubectl get pods -n calico-system
 ```
 
 More

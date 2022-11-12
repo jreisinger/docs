@@ -1,3 +1,10 @@
+Container tools
+
+* docker - container runtime + tool for managing containers and images
+* containerd - container runtime (slowly replacing docker)
+* crictl - CLI for CRI-compatible container runtimes
+* podman - tool for managing containers and images
+
 Shell setup
 
 ```
