@@ -5,22 +5,19 @@ You can do k8s access control via:
 
 # Overview
 
-* every time you connect to a cluster API you do so as a specific user
-* service account - user account associated with a program running in a pod
-* there is `default` service account for each namespace
-* users can have different sets of permissions - governed by `roles`
-
 <img width="639" alt="image" src="https://user-images.githubusercontent.com/1047259/167849081-bc128f2b-5757-4d4c-82e1-c19f71836cee.png">
 
 Groups and users
 
-* represent real persons
-* distributed by cluster admin
-* not an API resource (`k api-resources | grep -i user`)
+* every time you connect to a cluster API you do so as a specific user
+* user represents a real person
+* it's someone with cert (signed by cluster CA and distributed by cluster admin) and key
+* there is no API resource User (`k api-resources | grep -i user`)
+* users can have different sets of permissions - governed by `roles`
 
-Service account
+Service accounts
 
-* represents a program
+* represents a program running in a pod (there is `default` service account for each namespace)
 * assigned to a pod (if not, `default` service account is used)
 
 ```
@@ -111,6 +108,33 @@ k get rolebindings.rbac.authorization.k8s.io -A -o wide
 ```
 
 Basic user access management:
+
+```
+# create key
+openssl genrsa -out jane.key 2048
+
+# create CSR
+openssl req -new -key jane.key -out jane.csr
+
+# get cert
+cat <<EOF | kubectl apply -f -
+apiVersion: certificates.k8s.io/v1
+kind: CertificateSigningRequest
+metadata:
+  name: jane
+spec:
+  request: <OUTPUT FROM: base64 -w 0 jane.csr>
+  signerName: kubernetes.io/kube-apiserver-client
+  expirationSeconds: 86400  # one day
+  usages:
+  - client auth
+EOF
+
+# use crt and key
+k config set-credentials jane --client-key=jane.key --client-certificate=jane.crt --embed-certs
+k config set-context jane --user=jane --cluster=kind-kind
+k config use-context jane
+```
 
 ```
 # check the permissions assigned to user johndoe
