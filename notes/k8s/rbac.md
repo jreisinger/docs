@@ -3,11 +3,11 @@ You can do k8s access control via:
 * managing access per cluster (anyone with access can do anything) - ok for testing, small deployments
 * RBAC (Role Based Access Control) - production setup
 
-# Overview
+# RBAC primitives
 
-<img width="639" alt="image" src="https://user-images.githubusercontent.com/1047259/167849081-bc128f2b-5757-4d4c-82e1-c19f71836cee.png">
+<img width="638" alt="image" src="https://user-images.githubusercontent.com/1047259/167874790-755953d0-2f25-467e-911e-6f4703c52500.png">
 
-Groups and users
+User ("normal user")
 
 * every time you connect to a cluster API you do so as a specific user
 * user represents a real person
@@ -15,7 +15,7 @@ Groups and users
 * there is no API resource User (`k api-resources | grep -i user`)
 * users can have different sets of permissions - governed by `roles`
 
-Service accounts
+Service account
 
 * represents a program running in a pod (there is `default` service account for each namespace)
 * assigned to a pod (if not, `default` service account is used)
@@ -35,17 +35,7 @@ spec:
 ...
 ```
 
-Authentication depends on the cluster provider.
-
-<img width="631" alt="image" src="https://user-images.githubusercontent.com/1047259/167849397-a4aa7317-1e6b-4f9d-beb8-c4ed1edd28dd.png">
-
-# RBAC primitives
-
-<img width="638" alt="image" src="https://user-images.githubusercontent.com/1047259/167874790-755953d0-2f25-467e-911e-6f4703c52500.png">
-
-In Kubernetes, permissions are additive; users start with no permissions, and you can add permissions using Roles and RoleBindings. You can’t subtract permissions from someone who already has them.
-
-## Role
+Role
 
 * a specific set of permissions
 * `Role` - defines permissions on a namespace level
@@ -69,7 +59,7 @@ rules:
   verbs: ["get", "watch", "list"]
 ```
 
-## RoleBinding
+RoleBinding
 
 * associates a user with a role
 * also here you can have RoleBinding or ClusterRoleBinding
@@ -145,6 +135,8 @@ k create role pod-reader -n default --resource=pods --verb=watch,list,get
 k create rolebinding read-pods -n default --role=pod-reader --user=johndoe
 ```
 
+NOTE: In Kubernetes, permissions are additive; users start with no permissions, and you can add permissions using Roles and RoleBindings. You can’t subtract permissions from someone who already has them.
+
 Basic service account access management:
 
 ```
@@ -153,7 +145,10 @@ k create clusterrole api-clusterrole --resource=pods --verb=watch,list,get
 k create clusterrolebinding api-clusterrolebinding --clusterrole=api-clusterrole --serviceaccount=apps:api-access
 ```
 
+NOTE: ClusterRoleBinding applies to all namespaces including future namespaces.
+
 # Sources
 
+* https://www.udemy.com/course/certified-kubernetes-security-specialist
 * https://learning.oreilly.com/library/view/cloud-native-devops/9781492040750/ch11.html
 * Benjamin Muschko: Certified Kubernetes Administrator (CKA) Study Guide (2022)
