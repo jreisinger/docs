@@ -1,31 +1,17 @@
-Check TLS/SSL **version** (you should be using TLS)
+Check SSL/TLS protocol (you should be using TLS) and version
 
 ```
-openssl s_client -connect reisinge.net:443 2> /dev/null | egrep -i '(tls|ssl)'
+openssl s_client -connect reisinge.net:443 2> /dev/null | grep Protocol
 ```
 
-Check **generic** TLS certificate info
+Check generic TLS certificate info
 
 ```
-openssl x509 -in jane.crt -text -noout
-```
-
-```
-openssl s_client -connect reisinge.net:443  -servername reisinge.net | openssl x509 -noout -text
+openssl s_client -connect reisinge.net:443 -servername reisinge.net | openssl x509 -noout -text
 ```
 
 * most valuable information is in the `X509v3 extensions` section
-
-Check TLS certificate **validity** start and end dates for multiple domains
-
-```
-for FQDN in reisinge.net quote.reisinge.net quotes.reisinge.net wiki.reisinge.net www.reisinge.net; do
-    echo "--- $FQDN ---"
-    echo | \
-    openssl s_client -connect $FQDN:443 -servername $FQDN 2>/dev/null | \
-    openssl x509 -noout -dates | perl -wlpe 's/=/\t/'
-done
-```
+* you can get certificate also from a file, e.g. `cat file.crt | openssl x509 -noout -text`
 
 See also 
 
