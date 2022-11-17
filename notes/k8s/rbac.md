@@ -113,19 +113,25 @@ openssl genrsa -out jane.key 2048
 # create CSR
 openssl req -new -key jane.key -out jane.csr
 
-# get cert
+# create CSR K8s resource
 cat <<EOF | kubectl apply -f -
 apiVersion: certificates.k8s.io/v1
 kind: CertificateSigningRequest
 metadata:
   name: jane
 spec:
-  request: <OUTPUT FROM: base64 -w 0 jane.csr>
+  request: $(base64 -w 0 jane.csr)
   signerName: kubernetes.io/kube-apiserver-client
   expirationSeconds: 86400  # one day
   usages:
   - client auth
 EOF
+
+# approve CSR, i.e. issue cert
+k certificate approve jane
+
+# get cert
+k get csr jane -ojson | jq -r .status.certificate | base64 -d > jane.crt
 
 # use crt and key
 k config set-credentials jane --client-key=jane.key --client-certificate=jane.crt --embed-certs

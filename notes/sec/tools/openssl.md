@@ -7,6 +7,10 @@ openssl s_client -connect reisinge.net:443 2> /dev/null | egrep -i '(tls|ssl)'
 Check **generic** TLS certificate info
 
 ```
+openssl x509 -in jane.crt -text -noout
+```
+
+```
 openssl s_client -connect reisinge.net:443  -servername reisinge.net | openssl x509 -noout -text
 ```
 
