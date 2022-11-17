@@ -1,18 +1,16 @@
-Security is the ability to resist and handle attacks.
+Security is a neverending process of preventing and handling security incidents.
 
 There's no secure system. There are just more or less secure systems.
 
-Security is a neverending process.
-
 # Goals
 
-CIA triad represents the traditional, since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf), security goals:
+CIA triad represents the traditional (since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf)), security goals:
 
 > The protection of system data and resources from accidental and deliberate threats to confidentiality, integrity and availability.
 
-* Confidentiality: seek to prevent unauthorized read access to data or systems
-* Integrity: seek to prevent unauthorized write access to data or systems
-* Availability: ensure that data and service is available when needed
+* Confidentiality: no unauthorized read access to data or systems
+* Integrity: no unauthorized write access to data or systems
+* Availability: data and service available when needed
 
 Sometimes non-repudation is added to these three.
 
@@ -29,15 +27,34 @@ These security principles will help you to increase your security:
 
 # Areas
 
-Asset and risk management - what are your most valuable assets and most probable attacks and their impact
+Asset and risk management
 
-Identity and access management (IAM) - life cycle of identities (authn) and access rights (authz)
+* what are your most valuable assets 
+* what are most probable attacks and their impact
 
-Data encryption - in motion (PKI, TLS), at rest (secrets mngt)
+Identity and access management (IAM) - life cycle of 
 
-Vulnerability mngt - network (Nexpose), application - DAST (OWASP ZAP), code - SAST (SonarQube, tfsec), image and container (trivy) scanning
+* identities (authn)
+* access rights (authz)
 
-Network security - WAF, antiDDoS, IDS/IPS, honepots
+Data encryption
+
+* in motion (PKI, TLS)
+* at rest (secrets mngt)
+
+Vulnerability mngt - detect security issues in
+
+* network and systems from outside (Nexpose)
+* applications from outside - DAST (OWASP ZAP)
+* application and infrastructure code - SAST (SonarQube, tfsec)
+* application image and container (trivy) scanning
+
+Network security
+
+* WAF
+* antiDDoS
+* IDS/IPS
+* honepots
 
 See also [CISSP](https://en.wikipedia.org/wiki/Certified_Information_Systems_Security_Professional) domains cyberseek [roles](https://www.cyberseek.org/pathway.html).
 
