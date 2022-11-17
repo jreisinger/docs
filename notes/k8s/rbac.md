@@ -80,6 +80,13 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ```
 
+There are 4 different RBAC combinations possible and 3 valid ones:
+
+1. Role + RoleBinding - available in single Namespace, applied in single Namespace
+2. ClusterRole + ClusterRoleBinding - available cluster-wide, applied cluster-wide
+3. ClusterRole + RoleBinding - available cluster-wide, applied in single Namespace
+4. Role + ClusterRoleBinding - NOT POSSIBLE: available in single Namespace, applied cluster-wide
+
 # kubectl commands
 
 Find out whether RBAC is enabled on a cluster (one line for each control node):
