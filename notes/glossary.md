@@ -247,6 +247,12 @@ b'\xe6\x96\x80'
 
 (in Go) is a piece of storage containing a value
 
+## webhook
+
+HTTP-based callback function for event-driven communication between two APIs.
+E.g. you give Twilio an URL to be called with specific payload (data) when error
+or warning occurs on your account.
+
 ## xor
 
 Exclusive or, the opposite of inclusive (normal) or.
