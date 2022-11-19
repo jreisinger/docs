@@ -249,9 +249,10 @@ b'\xe6\x96\x80'
 
 ## webhook
 
-HTTP-based callback function for event-driven communication between two APIs.
-E.g. you give Twilio an URL to be called with specific payload (data) when error
-or warning occurs on your account.
+An HTTP callback: an HTTP POST that occurs when something happens; a simple
+event-driven communication between two APIs. E.g. you give Twilio an URL to be
+called with specific payload (data) when error or warning occurs on your
+account.
 
 ## xor
 
