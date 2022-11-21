@@ -10,7 +10,7 @@ Parmenides argued that change is illusion, it can't exist. Take for example that
 
 Aristotle agrees that something can't come of nothing. But he says the coldness of the coffee is not nothing. It's not actually present but it's present potentially in a way other qualities are not. For example a coffee has no potential to become fuel for a gasoline engine. So change exists and can be described as *actualization of potential*.
 
-How does a change happen based on a mere observation? There's always something that brings it about. It's not the coffee that makes itself cold. It's the surrounding air or maybe ice cubes. It also follows from what a changes is: the actualization of a potential. Potential coldness can hardly do anything, only what is actual can do anything.
+How does a change happen? By mere observation we can see there's always something that brings it about. It's not the coffee that makes itself cold. It's the surrounding air or maybe ice cubes. It also follows from what a changes is: the actualization of a potential. Potential coldness can hardly do anything, only what is actual can do anything.
 
 So some potentials are actualized, and when they are, there must be something already actual which actualizes them. And sometimes when a potential is being actualized, what actualizes it is itself something which has gone from potential to actual. So we have a series of changers and things changed. The coldness of the coffee was caused by the coolness of the air, the air was cooled by the air conditioner, the air conditioner was turned on by you. This series of changes typically extend backward in time in a *linear* fashion. It can in theory extend backward to infinity.
 
