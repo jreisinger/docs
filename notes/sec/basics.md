@@ -47,14 +47,14 @@ Vulnerability mngt - detect security issues in
 * network and systems from outside (Nexpose)
 * applications from outside - DAST (OWASP ZAP)
 * application and infrastructure code - SAST (SonarQube, tfsec)
-* application image and container (trivy) scanning
+* application image and container (trivy)
 
 Network security
 
 * WAF
 * antiDDoS
 * IDS/IPS
-* honepots
+* honeypots
 
 See also [CISSP](https://en.wikipedia.org/wiki/Certified_Information_Systems_Security_Professional) domains cyberseek [roles](https://www.cyberseek.org/pathway.html).
 
