@@ -42,6 +42,13 @@ Data encryption
 * in motion (PKI, TLS)
 * at rest (secrets mngt)
 
+Network security
+
+* WAF
+* antiDDoS
+* IDS/IPS
+* honeypots
+
 Vulnerability mngt - detect security issues in
 
 * network and systems from outside (Nexpose)
@@ -49,12 +56,9 @@ Vulnerability mngt - detect security issues in
 * application and infrastructure code - SAST (SonarQube, tfsec)
 * application image and container (trivy)
 
-Network security
+Security monitoring
 
-* WAF
-* antiDDoS
-* IDS/IPS
-* honeypots
+* detecting and responding to security incidents
 
 See also [CISSP](https://en.wikipedia.org/wiki/Certified_Information_Systems_Security_Professional) domains cyberseek [roles](https://www.cyberseek.org/pathway.html).
 
