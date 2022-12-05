@@ -286,6 +286,8 @@ A failed scan in CI/CD can
 * prevent the image from being deployed
 * send an alert (if the image is already in production)
 
+<img width="545" alt="image" src="https://user-images.githubusercontent.com/1047259/205614637-6f42337a-83cb-40ee-9e51-f9d830cf85a0.png">
+
 ## Storage
 
 ## Correct versions
