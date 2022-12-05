@@ -259,7 +259,7 @@ Use dedicated service accounts
 
 * software you run on a cluster gets there in the form of container images
 * images must not include known critical [vulnerabilities](https://nvd.nist.gov/)
-* images must be the ones you intended to use and mustn't been manipulated
+* images must be the ones you intended to use and mustn't have been manipulated
 
 # Scanning
 
@@ -280,21 +280,42 @@ Use dedicated service accounts
 
 ## CI/CD
 
+<img width="545" alt="image" src="https://user-images.githubusercontent.com/1047259/205614637-6f42337a-83cb-40ee-9e51-f9d830cf85a0.png">
+
 A failed scan in CI/CD can
-* result in a failed build
 * prevent the image from being pushed to registry
 * prevent the image from being deployed
-* send an alert (if the image is already in production)
+* send an alert
 
-<img width="545" alt="image" src="https://user-images.githubusercontent.com/1047259/205614637-6f42337a-83cb-40ee-9e51-f9d830cf85a0.png">
+Sample image policy: fail all images with high-severity vulns
 
 ## Storage
 
+* unless you are pulling public images, you need to grant registry access to your cluster
+* use read-only accounts if your cluster doesn't need to push images to registry
+
 ## Correct versions
+
+* pod spec references container image by using registry, owner, repo and version, e.g. `gcr.io/myname/myimage:1.0.1`
+* tags (`1.0.1`) are mutable - the same tag can be moved to refer to a different image
+* images can have multiple tags
+* you can use unique digest instead of tag (gcr.io/myname/myimage@sha256:4a5573037f358b6cdfa2...) but then you need to update YAML whenever there's a new version
+* it's much more common to *use semver tags*
+* if you supply neither tag nor digest, the image tagged `latest` is used (should be avoided because you won't know what version you are running)
+* use `AlwaysPullImages` admission controller to ensure you have most recent version for the given tag
 
 ## Trust and supply chain
 
+* in high-risk or high-security environments you need to make sure that the pulled image is the genuine, intended code
+* see https://kubernetes-security.info/#running-containers-securely for tools
+
 ## Minimizing attack surface
+
+* as a general rule, the smaller the image, the smaller the attack surface
+* you rarely need to [include ssh](https://jpetazzo.github.io/2014/06/23/docker-ssh-considered-evil/)
+* if you exclude cat, more etc. the attacker can't read (easily) the credentials
+* if you exclude shells the attacker can't do anything  (easily)
+* on the other hand, troubleshooting will be harder
 
 # Running containers securely
 
