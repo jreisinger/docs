@@ -3,7 +3,6 @@
 ```
                   +---------------------------------+
                   | Cluster                         |
-                  |                                 |
 Access to         |   +--------------------------+  |
 machines or VMs   |   | Node                     |  |
 ------------------+-->|           +------+       |  |   Access to etcd API
@@ -14,13 +13,10 @@ Access via        |   |    +----------------+    |  |   Intercept/modify/inject
 K8s API or proxy  |   |    |  Control plane |    |  |   control-plane traffic
 ------------------+---+--->|  components    +----+--+--------------------------
                   |   |    +----------------+    |  |
-                  |   |                          |  |
-                  |   |                          |  |
                   |   +--------------------------+  |
                   |                                 |
                   |   +--------------------------+  |
-                  |   | Node                     |  |
-Access via        |   |                          |  |
+Access via        |   | Node                     |  |
 Kubelet API       |   |         +-----------+    |  |
 ------------------+---+-------->| Kubelet   |    |  |
                   |   |         +-----------+    |  |
@@ -28,9 +24,9 @@ Kubelet API       |   |         +-----------+    |  |
                   |   | +----------------------+ |  |
                   |   | |Pod                   | |  |
                   |   | | +------------------+ | |  |
-Escape container  |   | | | Container        | | |  |  Intercep/modify/inject
+Escape container  |   | | | Container        | | |  |  Intercept/modify/inject
 to host through   |   | | |  +-------------+ | | |  |  application traffic
-------------------+---+-+-+--+ Application +-+-+-+--+------------------------
+<-----------------+---+-+-+--+ Application +-+-+-+--+------------------------
 vulnerability or  |   | | |  +-------------+ | | |  |
 volume mount      |   | | |   ^              | | |  |
                   |   | | +---+--------------+ | |  |
@@ -207,6 +203,57 @@ Best practices
 * have identity lifecycle; when people leave, invalidate their credentials
 
 # Authorization
+
+* assigning and enforcing permissions (to create pods or get secrets) to users and applications
+* by default permissions are denied, unless explicitly allowed by a policy
+
+## Authorization concepts
+
+```
+                (1)   +--------+   (3)
+             +--------+ Client +--------+
+             |        +--------+        |path
+ +---+   +---v---+                      |resource
+ |401|<--+ Authn |                      |verb
+ +---+   +---+---+                      |namespace
+             | (2)                      |
+             | user                     |...
+             | group                    |
++--------+   |                          |
+| Authz  +---v--------------------------v--+
+| modules|          Authorization          |
++--------+---+--------------------------+--+
+             |                          |(4)
+             |                          |
+           +-v-+              +---------v--+
+           |403|              |Admission   |
+           +---+              |controllers |
+                              +------------+
+```
+
+## Authorization modes
+
+* Node - special purpose; grants permissions to kubelets based on the pods they are scheduled to run
+* ABAC - access rights granted through policies which combine attributes together
+* RBAC - regulates access based on the roles of individuals users; see `rbac.md`
+* Webhook - HTTP callback (POST); allows for integration with external authorizers
+
+## Tooling and good practices
+
+Tooling - see https://kubernetes-security.info/#authorization
+
+Use RBAC (`--authorization-mode=RBAC`)
+
+Disable automounting of the default service account token (`automountServiceAccountToken: false`)
+* especially important if you're not using RBAC
+* most apps don't need to talks to the API server
+```
+$ kubectl patch serviceaccount default -p $'automountServiceAccountToken: false'
+```
+
+Use dedicated service accounts
+* if a pod is compromised, attacker can access serviceaccount associated with that pod
+* if your app needs API access create a dedicated service account and RBAC for it
 
 # Securing container images
 

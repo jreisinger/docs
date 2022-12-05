@@ -41,7 +41,6 @@ Role
 * `Role` - defines permissions on a namespace level
 * `ClusterRole` - defines permissions accross the whole cluster
 
-There are some [defaults](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#default-roles-and-role-bindings):
 
 <img width="638" alt="image" src="https://user-images.githubusercontent.com/1047259/167877282-9a9e4e0c-d68b-4b25-9710-f4a11cd0c8b6.png">
 
@@ -58,6 +57,12 @@ rules:
   resources: ["secrets"]
   verbs: ["get", "watch", "list"]
 ```
+
+Before creating your own Role consider using [default ones](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#default-roles-and-role-bindings):
+
+* User facing roles: cluster-admin, admin (for namespaces), edit and view
+* For core cluster components: system:kube-controller-manager, system:node, ...
+* For other cluster components: system:persistent-volume-provisioner, ...
 
 RoleBinding
 
@@ -80,14 +85,18 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ```
 
-There are 4 different RBAC combinations possible and 3 valid ones:
+Verbs (actions on resources)
 
-1. Role + RoleBinding - available in single Namespace, applied in single Namespace
-2. ClusterRole + ClusterRoleBinding - available cluster-wide, applied cluster-wide
-3. ClusterRole + RoleBinding - available cluster-wide, applied in single Namespace
-4. Role + ClusterRoleBinding - NOT POSSIBLE: available in single Namespace, applied cluster-wide
+* get, list (read-only)
+* create, update, patch, delete, deletecollection (read-write)
 
-# kubectl commands
+Rules of thumb:
+
+* to grant access to a resource in a single namespace use Role + RoleBinding
+* to reuse a role in a couple of namespaces define ClusterRole + RoleBinding
+* to grant access to cluster-wide resources (like nodes) or to namespaces resources across all namespaces, use ClusterRole + ClusterRoleBinding
+
+# Demo (kubectl commands)
 
 Find out whether RBAC is enabled on a cluster (one line for each control node):
 
@@ -104,7 +113,7 @@ See existing RoleBindings in all namespaces:
 k get rolebindings.rbac.authorization.k8s.io -A -o wide
 ```
 
-Basic user access management:
+## User access management
 
 ```
 # create key
@@ -150,12 +159,16 @@ k create rolebinding read-pods -n default --role=pod-reader --user=johndoe
 
 NOTE: In Kubernetes, permissions are additive; users start with no permissions, and you can add permissions using Roles and RoleBindings. You can’t subtract permissions from someone who already has them.
 
-Basic service account access management:
+## Service account access management
+
+You have an app that needs access to pod info. The default `view` role is too much (`kubectl describe clusterrole view`).
 
 ```
-k create serviceaccount api-access -n apps
-k create clusterrole api-clusterrole --resource=pods --verb=watch,list,get
-k create clusterrolebinding api-clusterrolebinding --clusterrole=api-clusterrole --serviceaccount=apps:api-access
+k create ns myapp
+k create serviceaccount myappid -n myapp
+k create role podview --resource=pods --verb=list,get -n myapp
+k create rolebinding podviewer --serviceaccount=myapp:myappid --role podview -n myapp
+k auth can-i --as=system:serviceaccount:myapp:myappid list pods -n myapp
 ```
 
 NOTE: ClusterRoleBinding applies to all namespaces including future namespaces.
