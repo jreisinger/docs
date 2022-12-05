@@ -257,6 +257,43 @@ Use dedicated service accounts
 
 # Securing container images
 
+* software you run on a cluster gets there in the form of container images
+* images must not include known critical [vulnerabilities](https://nvd.nist.gov/)
+* images must be the ones you intended to use and mustn't been manipulated
+
+# Scanning
+
+* to detect vulns you need to use container image scanner
+* rescan (every 24 hours) because new vulnerabilities are found all the time
+* some registries can do the scanning 
+ 
+[Image sccanners](https://kubernetes-security.info/#securing-your-container-images) do the following
+* at a minimum, look at the installed (yum, apt) packages
+* examine files installed (ADD, COPY, or RUN) during build time
+* detect known malware (e.g., viruses)
+* detect sensitive data (like passwords and tokens)
+
+## Patching
+
+* when a vuln is found update the container with a fixed version of the package
+* rebuild and redeploy the new container image (usually done via CI/CD)
+
+## CI/CD
+
+A failed scan in CI/CD can
+* result in a failed build
+* prevent the image from being pushed to registry
+* prevent the image from being deployed
+* send an alert (if the image is already in production)
+
+## Storage
+
+## Correct versions
+
+## Trust and supply chain
+
+## Minimizing attack surface
+
 # Running containers securely
 
 # Secrets management
