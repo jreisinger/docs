@@ -43,10 +43,10 @@ spec:
 
 <img src="https://user-images.githubusercontent.com/1047259/130800106-f114c4ad-04a0-42ef-9f23-54800c95ad96.png" style="max-width:100%;height:auto;"> 
 
-Enable networkin policies in kind cluster:
+Enable network policies in kind cluster:
 
 ```
-cat > kind-config.yaml <<EOF
+cat > /tmp/kind-config.yaml <<EOF
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 nodes:
@@ -56,7 +56,7 @@ networking:
   disableDefaultCNI: true
   podSubnet: 192.168.0.0/16
 EOF
-kind create cluster --config=kind-config.yaml
+kind create cluster --config=/tmp/kind-config.yaml
 kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.24.5/manifests/tigera-operator.yaml
 kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.24.5/manifests/custom-resources.yaml
 

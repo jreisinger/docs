@@ -319,6 +319,107 @@ Sample image policy: fail all images with high-severity vulns
 
 # Running containers securely
 
+* use least privilege to carry out the task at hand
+* do only minimal host mounts necessary
+* limit communication between apps, and to/from outside word
+
+## Say no to root
+
+There's [little](https://opensource.com/article/18/3/just-say-no-root-containers) [need](https://youtu.be/ltrV-Qmh3oY) to run containers as root:
+
+* container needs to modify the host system (e.g. kernel configurations)
+* container needs to bind to privileged ports (below 1024) -> can be avoided via port mappings and service abstraction
+* installing packages at container runtime -> bad practice anyway, because you can scan the packages
+
+Use `USER` command in Dockerfile.
+
+## Admission control
+
+After authn and authz API server perfmorms admission control before persisting the request to etcd. From the admission controllers included in the API these are security relevant:
+
+AlwaysPullImages
+* modifies every new pod to Always pull policy
+* by default when an image is pulled to a node it can be accessed by other pods on the node bypassing registry credentials check
+
+DenyEscalatingExec
+* denies exec and attach commands
+* prevents attackers from launching interactive shells in (possibly privileged) containers
+
+PodSecurityPolicy
+* determines whether a pod should be admitted based on the security context and policies
+
+LimitRange, ResourceQuota
+* ensures resource constraints
+* preventiing DoS attacks
+
+NodeRestriction
+* limits permissions of each kubelet
+
+## Security boundaries
+
+[Security boundary](https://cloud.google.com/blog/products/gcp/exploring-container-security-isolation-at-different-layers-of-the-kubernetes-stack/) - set of controls to provent a process affecting other processes or accessing other users' data.
+
+Cluster
+* network isolation
+* you might prefer different cluster for each team or environment
+
+Node
+* resource isolation
+* use nodeSelector or even better node or pod affinity to assign pods to specific nodes
+
+Namespace
+* virtual cluster
+* basic unit of authorization
+
+Pod
+* groups containers; they are scheduled on the same node
+* you can isolate pods via security context or network policies
+
+Container
+* combination of cgoups, namespaces and copy-on-write filesystems that manages the application-level dependencies
+* unless you're using runtime sandboxing, no strong isolation beyond the kernel-level security ones
+
+## Policies
+
+Kubernetes offers two pod-level security-policy mechanisms that can restrict what processes can do within a pod and how pods can communicate.
+
+Security context
+
+* defines privilege and access control settings on pod or container level
+
+```
+# all containers must run as 1001
+# in webserver container prevent setuid binaries changing the effective user ID as well as prevent files from enabling extra capabilities
+apiVersion: v1
+kind: Pod
+metadata:
+  name: securepod
+spec:
+  securityContext:
+    runAsUser: 1001
+  containers:
+  - name: webserver
+    image: quay.io/mhausenblas/pingsvc:2
+    securityContext:
+      allowPrivilegeEscalation: false
+  - name: shell
+    image: centos:7
+    command:
+    - "/bin/bash"
+    - "-c"
+    - "sleep 10000"
+```
+
+Security policies
+
+* allow cluster or namespace admin to enforce security context
+* cluster-wide resource used by admission controllers (PodSecurityPolicy plugin must be enabled)
+* NOTE: replaced by pod security admission or a 3rd party admission plugin
+
+Network policies
+
+* see network-policy.md
+
 # Secrets management
 
 # Sources and more
