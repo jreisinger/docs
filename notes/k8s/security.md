@@ -423,6 +423,58 @@ Network policies
 
 # Secrets management
 
+* your application often needs access to secrets like credentials
+
+## Applying the principle of least privilege
+
+* containers should be able to read only secrets they need
+* use different secrets for different environments (dev credentials can be shared with more people than prod credentials)
+
+## Secret encryption
+
+* [at rest](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/) - so attacker with access to the FS cannot simply read them from a file
+* in transit (TLS) - so attacker snooping on the network cannot read them as they pass
+
+etcd
+
+* the default storage
+* base64 encoded (not encrypted!)
+
+Using 3rd party stores (like cloud provider's KMS or HashiCorp Vault) is considered by many a more secure solution.
+
+## Passing secrets into containerized code
+
+(1) build them into the image itself - don't do this
+* anyone who has access to the image can get secrets 
+* if you want to change secret, like DB credentials, you need to rebuild the image -> possible downtime
+* it's probably [git versioned](https://www.infoworld.com/article/3064355/how-you-might-be-leaking-your-secrets-onto-github.html)
+
+(2) passing them as environment variables
+* [12-factor app](https://12factor.net/config) has tought us to separate config from code
+* it's helpful when you need to run the same code in different scenarios (laptop, dev, prod)
+* however it's easy to leak environment via logs or command line (contemplate if this is an issue for your application or organization)
+  * a crashed process often dumps entire environment
+  * `kubectl describe pod ...` shows environment
+  * `docker inspect ...` shows environment
+
+(3) passing them in files
+* via volume mounted into the container
+* if the volume is a temporary FS it's even better because it stays in memory (it's good practice to never store secrets in plain text)
+
+## Secret rotation and revocation
+
+* the longer a given secret remains valid, the more likely it has been compromised
+* it's [no longer considered best practice](https://www.ncsc.gov.uk/blog-post/problems-forcing-regular-password-expiry) but not for secrets used by machines
+* but you should have a way to change secrets when compromised
+* depending on how your code is written, you may need to restart a pod (e.g. when read from envvar/file as part of initialization)
+* application might reread the secret on regular basis or in response to a failure with currently held value -> Kubernetes can update file secret without restarting pod (this is not true for environment secrets)
+
+## Secret access from within the container and from kubelet
+
+* if attacker gains execution access to a container there's high likelihood they accessed secrets
+* mitigations: runtime protection, slim images (without cat, more, less, bash, sh)
+* --enable-admission-plugins=NodeRestriction - kubelet can access only secrets of pods scheduled to its node
+
 # Sources and more
 
 * Kubernetes Security (2018)
