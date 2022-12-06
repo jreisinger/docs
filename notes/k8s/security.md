@@ -419,6 +419,7 @@ Security policies
 Network policies
 
 * see network-policy.md
+* public clouds pass config info to nodes via Metadata API that can cause security issues like the one disclosed in [Shopify bug bounty](https://hackerone.com/reports/341876)
 
 # Secrets management
 
