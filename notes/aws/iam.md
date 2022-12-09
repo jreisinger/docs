@@ -42,19 +42,18 @@ You can use [terraform](https://github.com/vallard/EKS-Training/blob/master/segm
 
 ## Roles
 
-* IAM identity
+* assumed by other principals (similar to `sudo`)
 * Associated with permission policies (inline, managed)
-* assumed by other principals
-* similar to `sudo`
-* similar to user but in addition has role trust policy
 
 ## Permission policies and boundaries
 
 Permission policies (grant permissions to perform actions)
 
 * identity-based policies
-  * (AWS- or customer-)managed: standalone resource, version controlled, can be associated with 1+ IAM users, groups or roles
-  * inline: embedded with (parameter of) IAM user, group or role
+  * standalone resource, version controlled
+  * can be associated with 1+ IAM users, groups or roles
+  * AWS- or customer-managed
+  * inline: embedded within IAM user, group or role
 * resource-based policies
   * new element: Principal
   * Principal values vary by resource
@@ -77,27 +76,10 @@ Permission boundaries (define the maximum permissions for a resource)
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "PartnerUploadOnlyWithACL",
-            "Effect": "Allow",
-            "Principal": {"AWS": "123456789012"},
-            "Action": "s3:PutObject",
-            "Resource": "arn:aws:s3:::brightkey-data-bucket/*",
-            "Condition": {
-                "StringEquals": {"s3:x-amz-acl": "bucket-onwer-full-control"}
-            }
-        }
-    ]
-}
-```
-
-```json
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
             "Sid": "AccessToSpecificBucketsOnly",
             "Effect": "Allow",
-            "Principal": "*",
+            // "Principal": "*",
+            "Principal": {"AWS": "123456789012"},
             "Action": [ "s3:GetObject", "s3:PutObject" ],
             "Resource": [
                 "arn:aws:s3:::brightkey-data1",
