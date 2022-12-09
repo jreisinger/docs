@@ -1,11 +1,12 @@
 <img src="/static/books.png" style="max-width:100%;height:auto">
 
-Some of the (mostly technical) books that I liked. Roughly ordered by most recently read.
+Some of the books that I read (at least partially). Roughly ordered by most recently read in each area.
 
 > Reading furnishes the mind only with materials of knowledge; it is thinking that makes what we read ours. -- John Locke
 
 Security
 
+* Kubernetes Security, 2018
 * Securing DevOps, 2018
 * Practical Cloud Security, 2019
 
@@ -43,6 +44,8 @@ Programming
 
 Management
 
+* Word on Fire Bible: The Gospels, 2020
+* Five Proofs of the Existence of God, 2017
 * essentialism, 2014
 * The Manager's Path, 2017
 * The Unicorn Project, 2019
