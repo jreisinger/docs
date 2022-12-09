@@ -29,8 +29,11 @@ These security principles will help you to increase your security:
 
 Asset and risk management
 
+* risk = possibility of something bad happening
+* threat = a path to that risk occuring
+---
 * what are your most valuable assets 
-* what are most probable attacks and their impact
+* what are most probable threats and their impact; how to handle them
 
 Identity and access management (IAM) - life cycle of 
 
@@ -72,11 +75,11 @@ Understand what is your responsibility - this depends on the cloud model you are
 
 <img src="https://user-images.githubusercontent.com/1047259/138699080-24091008-c78f-48c1-bcc9-e9ac6afd0f8d.png" style="max-width:100%;height:auto;"> 
 
-Figure out what needs to talk to what in your application. You should first secure places where line crosses a trust boundary:
+Figure out what needs to talk to what in your application. You should first secure places where line crosses a trust (or security) boundary:
 
 <img src="https://user-images.githubusercontent.com/1047259/138698724-4a6ecae8-fe54-4d45-b7a8-3b35dfab50e1.png" style="max-width:100%;height:auto;"> 
 
-Anything inside a trust boundary can trust, at least to some level, anything else inside that boundary but requires verification before trusting anything outside that boundary. If an attacker gets into a part of a trust boundary, she'll probably have control over all trust boundary eventually. So getting through each trust boundary should take some effort.
+Anything inside a trust boundary can trust, at least to some level, anything else inside that boundary but requires verification before trusting anything outside that boundary. If an attacker gets into a part of a trust boundary, she'll probably have control over all trust boundary eventually. So getting through each trust boundary should take some effort. An example of a trust boundary is an application container (docker).
 
 Know your risks (have at least a spreadsheet) and how you approach them:
 
