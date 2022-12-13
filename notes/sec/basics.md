@@ -77,7 +77,7 @@ Understand what is your responsibility - this depends on the cloud model you are
 
 Figure out what needs to talk to what in your application. You should first secure places where line crosses a trust (or security) boundary:
 
-<img src="https://user-images.githubusercontent.com/1047259/138698724-4a6ecae8-fe54-4d45-b7a8-3b35dfab50e1.png" style="max-width:100%;height:auto;"> 
+<img src="https://user-images.githubusercontent.com/1047259/207269071-8fffd922-7fe5-4bdd-8172-944cc5a470a7.png" style="max-width:100%;height:auto;">
 
 Anything inside a trust boundary can trust, at least to some level, anything else inside that boundary but requires verification before trusting anything outside that boundary. If an attacker gets into a part of a trust boundary, she'll probably have control over all trust boundary eventually. So getting through each trust boundary should take some effort. An example of a trust boundary is an application container (docker).
 
