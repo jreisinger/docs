@@ -40,10 +40,12 @@ Identity and access management (IAM) - life cycle of
 * identities (authn)
 * access rights (authz)
 
-Data encryption
+Vulnerability mngt - detect security issues in
 
-* in motion (PKI, TLS)
-* at rest (secrets mngt)
+* network and systems from outside (Nexpose)
+* applications from outside - DAST (OWASP ZAP)
+* application and infrastructure code - SAST (SonarQube, tfsec)
+* application image and container (trivy)
 
 Network security
 
@@ -52,16 +54,14 @@ Network security
 * IDS/IPS
 * honeypots
 
-Vulnerability mngt - detect security issues in
-
-* network and systems from outside (Nexpose)
-* applications from outside - DAST (OWASP ZAP)
-* application and infrastructure code - SAST (SonarQube, tfsec)
-* application image and container (trivy)
-
 Security monitoring
 
 * detecting and responding to security incidents
+
+Data encryption
+
+* in motion (PKI, TLS)
+* at rest (secrets mngt)
 
 See also [CISSP](https://en.wikipedia.org/wiki/Certified_Information_Systems_Security_Professional) domains cyberseek [roles](https://www.cyberseek.org/pathway.html).
 
