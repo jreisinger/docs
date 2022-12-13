@@ -1,6 +1,10 @@
-Security is a neverending process of preventing and handling security incidents.
+# Lessons learned
 
-There's no secure system. There are just more or less secure systems.
+* (information) security == infosecurity == cybersecurity
+* There's no 100% secure system. There are just more or less secure systems.
+* In many environments development and operations are prioritized over security. Until a security incident happens.
+* Security is a long term systematic process.
+* "Ensure your doors are locked sucurely before putting bars on your second-store windows!"
 
 # Goals
 
@@ -27,18 +31,20 @@ These security principles will help you to increase your security:
 
 # Areas
 
-Asset and risk management
+Data, asset and risk management
 
+* what are your (most valuable) data and (compute, storage, network) assets
 * risk = possibility of something bad happening
+* risk level = likelihood x impact
 * threat = a path to that risk occuring
----
-* what are your most valuable assets 
-* what are most probable threats and their impact; how to handle them
+* what are most probable threats against your data and assets and their impact 
+* how to handle these threats
+* encrypt (some) data at rest (secrets mngt)
 
 Identity and access management (IAM) - life cycle of 
 
-* identities (authn)
-* access rights (authz)
+* if an attacker has (admin!) credentials all patches and firewalls won't help
+* authn (identities) + authz (access rights, roles)
 
 Vulnerability mngt - detect security issues in
 
@@ -46,47 +52,53 @@ Vulnerability mngt - detect security issues in
 * applications from outside - DAST (OWASP ZAP)
 * application and infrastructure code - SAST (SonarQube, tfsec)
 * application image and container (trivy)
+* code reviews
+* penetration testing
 
 Network security
 
+* if you can't talk to a component, you can't compromise it
 * WAF
 * antiDDoS
 * IDS/IPS
 * honeypots
+* encryption in motion (PKI, TLS)
 
-Security monitoring
+Security monitoring (SIEM)
 
 * detecting and responding to security incidents
+* unfortunately you won't always be susccefull at protecting your assets
+* in 2022, it took an average of 9 months to identify and contain a [breach](https://www.ibm.com/reports/data-breach)
 
-Data encryption
+Compliance
 
-* in motion (PKI, TLS)
-* at rest (secrets mngt)
+* proving your security to a 3rd party
+* much easier if you have actually secured your systems and data
 
-See also [CISSP](https://en.wikipedia.org/wiki/Certified_Information_Systems_Security_Professional) domains cyberseek [roles](https://www.cyberseek.org/pathway.html).
+See also [CISSP](https://en.wikipedia.org/wiki/Certified_Information_Systems_Security_Professional) domains and cyberseek [roles](https://www.cyberseek.org/pathway.html).
 
-# Basic steps
+# First steps
 
-Understand the business of the organization you are trying to protect.
+(1) Understand the business of the organization you are trying to protect.
 
-Think about what you need to protect (assets: VMs, containers, DBs) and who is most likely to cause problems (threat actors: criminals, hacktivists, script kiddies, inside attackers, state actors).
+(2) Think about what you need to protect (data, assets) and who is most likely to cause problems (criminals, hacktivists, script kiddies, inside attackers, state actors).
 
-Understand what is your responsibility - this depends on the cloud model you are using and whether you are a consumer or provider:
+(3) Understand what is your responsibility - this depends on the cloud model you are using and whether you are a consumer or provider:
 
 <img src="https://user-images.githubusercontent.com/1047259/138699080-24091008-c78f-48c1-bcc9-e9ac6afd0f8d.png" style="max-width:100%;height:auto;"> 
 
-Figure out what needs to talk to what in your application. You should first secure places where line crosses a trust (or security) boundary:
-
-<img src="https://user-images.githubusercontent.com/1047259/207269071-8fffd922-7fe5-4bdd-8172-944cc5a470a7.png" style="max-width:100%;height:auto;">
-
-Anything inside a trust boundary can trust, at least to some level, anything else inside that boundary but requires verification before trusting anything outside that boundary. If an attacker gets into a part of a trust boundary, she'll probably have control over all trust boundary eventually. So getting through each trust boundary should take some effort. An example of a trust boundary is an application container (docker).
-
-Know your risks (have at least a spreadsheet) and how you approach them:
+(4) Know your risks (have at least a spreadsheet) and how you approach them:
 
 * avoid the risk - turn off the system, benefits < risk
 * mitigate the risk - apply some security measures
 * transfer the risk - pay someone else to manage the risk (e.g. insurance)
 * accept the risk - benefits > risk
+
+(5) Figure out trust (or security) boudaries. Draw what needs to talk to what:
+
+<img src="https://user-images.githubusercontent.com/1047259/207269071-8fffd922-7fe5-4bdd-8172-944cc5a470a7.png" style="max-width:100%;height:auto;">
+
+Anything inside a trust boundary can trust, at least to some level, anything else inside that boundary but requires verification before trusting anything outside that boundary. If an attacker gets into a part of a trust boundary, she'll probably have control over all trust boundary eventually. So getting through each trust boundary should take some effort. An example of a trust boundary is an application container (docker).
 
 # Continuous security
 
@@ -102,11 +114,8 @@ Know your risks (have at least a spreadsheet) and how you approach them:
 * (2) Monitoring and responding to attacks - 2nd phase of continuous security; fraud and intrusion detection, digital forensics, and incident response
 * (3) Assessing risks and maturing security - go beyond the technology and look at the organization’s security posture from a high altitude; risk management
 
-# More
+# Sources and more
 
-* Full Stack Python Security (2021)
 * Practical Cloud Security (2019)
 * Securing DevOps (2018)
-* Kubernetes Security (2018)
-* ULSAH 5th (2017)
 * Attack tactics and techniques: https://attack.mitre.org/
