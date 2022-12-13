@@ -52,6 +52,7 @@ Vulnerability mngt - detect security issues in
 * applications from outside - DAST (OWASP ZAP)
 * application and infrastructure code - SAST (SonarQube, tfsec)
 * application image and container (trivy)
+---
 * code reviews
 * penetration testing
 
