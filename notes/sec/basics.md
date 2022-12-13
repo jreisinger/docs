@@ -41,10 +41,10 @@ Data, asset and risk management
 * how to handle these threats
 * encrypt (some) data at rest (secrets mngt)
 
-Identity and access management (IAM) - life cycle of 
+Identity and access management (IAM)
 
 * if an attacker has (admin!) credentials all patches and firewalls won't help
-* authn (identities) + authz (access rights, roles)
+* life cycle of authn (identities) and authz (access rights, roles)
 
 Vulnerability mngt - detect security issues in
 
