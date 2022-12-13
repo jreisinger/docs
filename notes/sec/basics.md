@@ -5,6 +5,7 @@
 * In many environments development and operations are prioritized over security. Until a security incident happens.
 * Security is a long term systematic process.
 * "Ensure your doors are locked sucurely before putting bars on your second-store windows!"
+* Split security into areas and define ownership for each area.
 
 # Goals
 
