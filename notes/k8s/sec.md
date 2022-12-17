@@ -118,6 +118,11 @@ Penetrations testing
 
 * hire a pen-tester company/specialist
 * https://github.com/aquasecurity/kube-hunter
+```
+k apply -f https://raw.githubusercontent.com/aquasecurity/kube-hunter/main/job.yaml
+k describe job kube-hunter
+k logs kube-hunter-ID
+```
 
 # Authentication
 
