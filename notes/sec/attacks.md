@@ -2,6 +2,10 @@ Public information about selected attacks on information systems.
 
 # 2022
 
+## 11 Institute of Science and Technology Austria (ISTA) is victim of a targeted cyberattack
+
+https://ist.ac.at/en/information-about-the-cyberattack-on-ista/
+
 ## 09 Merge requests and insecure GitHub workflows may lead to supply-chain attacks [ci/cd, supply-chain]
 
 https://www.theregister.com/2022/09/01/google_firebase_apache_camel_github/
