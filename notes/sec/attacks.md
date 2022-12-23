@@ -2,6 +2,10 @@ Public information about selected attacks on information systems.
 
 # 2022
 
+## 12 LastPass users' info and password vault data are now in hackers’ hands
+
+https://arstechnica.com/information-technology/2022/12/lastpass-says-hackers-have-obtained-vault-data-and-a-wealth-of-customer-info/
+
 ## 11 Institute of Science and Technology Austria (ISTA) is victim of a targeted cyberattack
 
 https://ist.ac.at/en/information-about-the-cyberattack-on-ista/
