@@ -36,7 +36,7 @@ k run tmp --image=alpine --rm -it --restart=Never -- sh
 ```
 # Run a command in it.
 k run tmp --image=busybox --rm -it --restart=Never -- wget example.com --timeout 2
-k run rmp --image=curlimages/curl --rm -it --restart=Never -- curl example.com --max-time 2
+k run tmp --image=curlimages/curl --rm -it --restart=Never -- curl example.com --max-time 2
 ```
 
 Copy files
