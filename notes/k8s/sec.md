@@ -260,6 +260,17 @@ Use dedicated service accounts
 * if a pod is compromised, attacker can access serviceaccount associated with that pod
 * if your app needs API access create a dedicated service account and RBAC for it
 
+# EKS authentication and authorization
+
+1. - 4. -> authentication, 5., 6. -> authorization
+
+1. `kubectl` runs aws `eks get-token ...` (to see it do `cat $KUBECONFIG`) to get a bearer token.
+2. The token is passed to the kube-apiserver which forwards it to the authentication webhook.
+3. The webhook calls the pre-signed URL that is base64-encoded in the token’s body.
+4. The URL validates the signature and returns user info (user’s account, ARN, user ID).
+5. The kube-apiserver reads the `aws-auth` cm to associate user with an RBAC group.
+6. RBAC groups are referenced in [Cluster]RoleBindings.
+
 # Securing container images
 
 * software you run on a cluster gets there in the form of container images
