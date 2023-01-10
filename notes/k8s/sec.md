@@ -41,6 +41,8 @@ volume mount      |   | | |   ^              | | |  |
                               | in application code
 ```
 
+Possible damage
+
 * unauthorized compute resources usage (e.g. Tesla cryptojacking)
 * disrupting your existing services
 * accessing your data
