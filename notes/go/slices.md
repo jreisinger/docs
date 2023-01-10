@@ -7,7 +7,7 @@ Slice type is an abstraction built on top of array type.
 * fixed-sized composite value
 * the size is part of the type: `[4]int` and `[5]int` are distinct types
 * value, not a pointer to the first array element like in C
-* like a struct but with indexed rather than named fields
+* like a struct but with indexed fields of single type rather than named fields of any type
 
 Don't need to be initialized explicitly:
 
