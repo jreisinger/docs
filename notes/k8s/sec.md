@@ -4,9 +4,9 @@
                   +---------------------------------+
                   | Cluster                         |
 Access to         |   +--------------------------+  |
-machines or VMs   |   | Node                     |  |
+machines or VMs   |   | Control plane            |  |
 ------------------+-->|           +------+       |  |   Access to etcd API
-                  |   |           | etcd |<------+--+----------------------
+                  |   |           | etcd |<------+--+---------------------
                   |   |           +------+       |  |
                   |   |                          |  |
 Access via        |   |    +----------------+    |  |   Intercept/modify/inject
@@ -16,7 +16,7 @@ K8s API or proxy  |   |    |  Control plane |    |  |   control-plane traffic
                   |   +--------------------------+  |
                   |                                 |
                   |   +--------------------------+  |
-Access via        |   | Node                     |  |
+Access via        |   | Nodes                    |  |
 Kubelet API       |   |         +-----------+    |  |
 ------------------+---+-------->| Kubelet   |    |  |
                   |   |         +-----------+    |  |
@@ -26,7 +26,7 @@ Kubelet API       |   |         +-----------+    |  |
                   |   | | +------------------+ | |  |
 Escape container  |   | | | Container        | | |  |  Intercept/modify/inject
 to host through   |   | | |  +-------------+ | | |  |  application traffic
-<-----------------+---+-+-+--+ Application +-+-+-+--+------------------------
+<-----------------+---+-+-+--+ Application +-+-+-+--+-------------------------
 vulnerability or  |   | | |  +-------------+ | | |  |
 volume mount      |   | | |   ^              | | |  |
                   |   | | +---+--------------+ | |  |
@@ -145,7 +145,7 @@ Service accounts
 * if you don't specify `spec.serviceAccountName` in pod default SA is used
 
 ```
-$ k run -it --rm jumpod --restart=Never --image=alpine -- sh
+$ k run -it --rm somepod --restart=Never --image=alpine -- sh
 / # ls /var/run/secrets/kubernetes.io/serviceaccount/
 ca.crt     namespace  token
 ```
@@ -262,9 +262,9 @@ Use dedicated service accounts
 
 # EKS authentication and authorization
 
-1. - 4. -> authentication, 5., 6. -> authorization
+Steps 1. - 4. -> authentication; 5., 6. -> authorization
 
-1. `kubectl` runs aws `eks get-token ...` (to see it do `cat $KUBECONFIG`) to get a bearer token.
+1. `kubectl` runs `aws eks get-token ...` (to see it do `cat $KUBECONFIG`) to get a bearer token.
 2. The token is passed to the kube-apiserver which forwards it to the authentication webhook.
 3. The webhook calls the pre-signed URL that is base64-encoded in the token’s body.
 4. The URL validates the signature and returns user info (user’s account, ARN, user ID).
