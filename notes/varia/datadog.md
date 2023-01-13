@@ -1,6 +1,6 @@
 # Terminology and concepts
 
-Metrics, Traces and Logs -> when, where
+Metrics, Traces and Logs
 
 * when: all these data types contain creation timestamp
 * where: reserved tags (host, device, source, service, env, version) indicate where the data originated from
@@ -22,11 +22,6 @@ All DD agent and apps configurations in Docker are done via:
 * environment variables
 * volumes
 * Docker labels
-
-Integrations
-
-* bring together all metrics and logs from a source and pass them to DD
-* there are intergrations for various sources available
 
 Integration types
 
@@ -67,6 +62,35 @@ Archives
 * store logs in user-provided cloud storage for long-term retention and quick rehydration whenever needed
 * after logs are ingested and pass through configured processing pipelines, logs matching the filter query in an Archive are sent to a user-defined cloud storage
 * can only be configured by users with admin permissions
+
+Attributes
+
+* info extracted from logs, e.g.:
+
+<img width="897" alt="image" src="https://user-images.githubusercontent.com/1047259/192524551-b2f6b980-41ed-464a-b6c1-86433a268534.png">
+
+Tags
+
+* bind different data types to allow for correlation between metrics, traces, and logs
+* let you observe aggregate datapoints across several hosts
+* DD recommends looking at containers, VMs, and cloud infra at the `service` level in aggregate (e.g. look at CPU usage across a collection of hosts that represent a service, rather than CPU usage for server A and B)
+
+Log facets
+
+* user-defined tags and attributes from your indexed logs
+* meant for qualitative or quantitative data analysis
+* once a facet is created, its content is populated for all new logs flowing in the index
+
+DD Events
+
+* informational messages about your system that are consumed by events explorer 
+
+Search query can contain
+
+* assigned tags like `env` and `service`
+* attributes extracted from the logs like `@http.status_code`
+* text strings from log messages
+* see [search syntax](https://docs.datadoghq.com/logs/explorer/search_syntax) for more
 
 # Sending logs to DD
 
@@ -109,35 +133,6 @@ There are three ways to work with logs in a unified way:
 JSON logs are parsed automatically and attibutes are extracted.
 
 Semi-structured (non-JSON) logs are parsed via Grok processor.
-
-Attributes - info extracted from logs, e.g.:
-
-<img width="897" alt="image" src="https://user-images.githubusercontent.com/1047259/192524551-b2f6b980-41ed-464a-b6c1-86433a268534.png">
-
-# Web GUI
-
-DD Events
-
-* informational messages about your system that are consumed by events explorer 
-
-Tags
-
-* you can observe aggregate datapoints across several hosts
-* bind different data types to allow for correlation between metrics, traces, and logs
-* DD recommends looking at containers, VMs, and cloud infra at the `service` level in aggregate (e.g. look at CPU usage across a collection of hosts that represent a service, rather than CPU usage for server A and B)
-
-Log facets
-
-* user-defined tags and attributes from your indexed logs
-* meant for qualitative or quantitative data analysis
-* once a facet is created, its content is populated for all new logs flowing in the index
-
-Search query can contain
-
-* assigned tags like `env` and `service`
-* attributes extracted from the logs like `@http.status_code`
-* text strings from log messages
-* see [search syntax](https://docs.datadoghq.com/logs/explorer/search_syntax) for more
 
 ## Searching logs
 
