@@ -36,7 +36,7 @@ Basic steps
 1. Create policies (JSON) that define access to services.
 2. Create a group and assign (permission) policies to it.
 3. Create a user and assign them to (user) groups.
-4. Create roles (from the predifined ones). Roles are like users but for services (machine accounts).
+4. Create roles (from the predifined ones).
 
 You can use [terraform](https://github.com/vallard/EKS-Training/blob/master/segment02-iam/iam.tf) to create these ^.
 
