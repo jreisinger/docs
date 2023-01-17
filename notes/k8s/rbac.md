@@ -110,7 +110,7 @@ $ k describe pod -n kube-system -l component=kube-apiserver | grep authorization
 See existing RoleBindings in all namespaces:
 
 ```
-k get rolebindings.rbac.authorization.k8s.io -A -o wide
+k get rolebindings -A -o wide --sort-by=".metadata.creationTimestamp"
 ```
 
 ## User access management
