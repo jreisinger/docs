@@ -20,21 +20,26 @@
 * orange buttons are important
 * only some services are Region scoped
 
-# Region
-
-* multiple, physically separate AZs
-* traffic between AZs is encrypted
-* service API endpoints are hosted here
- 
-![aws-region drawio](https://user-images.githubusercontent.com/1047259/184850533-2ec4ecc2-0d07-4774-8e77-777415a2e08f.png)
-
 # AZ (Availability Zone)
 
 * one or more collocated (within walking distance) data centers
 * HA building block
 * atomic unit of resource scope
-* there are logical and physical AZ IDs, e.g. eu-central-1a (euc1-az2)
+* there are logical (eu-central-1a) and physical (euc1-az2) AZ IDs
 
+# Region
+
+* multiple physically separate AZs, usually within a city
+* traffic between AZs is encrypted
+* service API endpoints are hosted here
+
+```
+eu-central-1    EU (Frankfurt)  <- Region
+eu-central-1a                   <- AZ
+eu-central-1b                   <- AZ
+eu-central-1c                   <- AZ
+```
+ 
 # EC2 (Elastic Compute Cloud)
 
 * core part of AWS, launched in 2006
