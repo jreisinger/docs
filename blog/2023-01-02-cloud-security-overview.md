@@ -8,7 +8,7 @@ I have some experience securing computing infrastructure and applications. These
 
 Have at least basic idea about what data and compute/storage/network resources you are protecting. Think (and write down) which of these assets are the most critical and what are the greatest risks. You don't need to spend too much time on this especially if you have only a small security team. However, if you skip this area altogether you are just guessing.
 
-You can't expect all employees to be security experts but you should make sure they have basic security awareness, e.g. produce regular Slack posts about relevant topics. All engineers should adhere to basic security principles:
+You can't expect all employees to be security experts but you should make sure they have basic security awareness; e.g. produce regular Slack posts about relevant topics. All engineers should adhere to basic security principles:
 
 * minimal attack surface - minimize possible ways a system can be attacked
 * least privilege - deny by default to limit the blast radius of a compromise
