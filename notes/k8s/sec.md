@@ -262,7 +262,7 @@ Use dedicated service accounts
 * if a pod is compromised, attacker can access serviceaccount associated with that pod
 * if your app needs API access create a dedicated service account and RBAC for it
 
-# EKS authentication and authorization
+## EKS authentication and authorization
 
 Steps 1. - 4. -> authentication; 5., 6. -> authorization
 
@@ -347,7 +347,7 @@ There's [little](https://opensource.com/article/18/3/just-say-no-root-containers
 
 * container needs to modify the host system (e.g. kernel configurations)
 * container needs to bind to privileged ports (below 1024) -> can be avoided via port mappings and service abstraction
-* installing packages at container runtime -> bad practice anyway, because you can scan the packages
+* installing packages at container runtime -> bad practice anyway, because you can't scan the packages
 
 Use `USER` command in Dockerfile.
 

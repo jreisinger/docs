@@ -1,5 +1,15 @@
 Public information about selected attacks on information systems.
 
+# 2023
+
+## 01 Royal Mail restarts limited overseas post after cyber-attack [ransomware]
+
+https://www.bbc.co.uk/news/business-64324000.amp
+
+## 01 Impact of the CircleCI Security Incident on the Datadog Agent [data breach]
+
+https://docs.datadoghq.com/agent/faq/circleci-incident-impact-on-datadog-agent/
+
 # 2022
 
 ## 12 LastPass users' info and password vault data are now in hackers’ hands
