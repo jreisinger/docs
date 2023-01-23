@@ -10,10 +10,10 @@ Keyboard shortcuts
 
 To redefine keyboard shortcuts: File > Preferences > Keyboard Shortcuts
 
-My setup of settings file [location](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations) (replace `VSCodium` with `Code` if you use VSCode):
+My settings file [location](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations) (replace `VSCodium` with `Code` if you use VSCode):
 
-* MacOS: `ln -sf $HOME/data/vscodium/settings.json $HOME/Library/Application\ Support/VSCodium/User/settings.json`
-* Linux: `ln -sf $HOME/data/vscodium/settings.json $HOME/.config/VSCodium/User/settings.json`
+* MacOS: `ln -s <path-to-data>/vscodium/settings.json '~/Library/Application Support/Code/User/settings.json'`
+* Linux: `ln -s <path-to-data>/vscodium/settings.json ~/.config/VSCodium/User/settings.json`
 
 Settings
 
