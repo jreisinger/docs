@@ -1,7 +1,8 @@
 Why is security hard
 
 Security is the capability of a system to achieve some goal in the presence of
-an adversary. If your system is connected to the Internet it has adversaries.
+an adversary (threat actor). If your system is connected to the Internet it has
+adversaries.
 
 High-level thinking about security
 
