@@ -18,3 +18,5 @@ Why is security hard? Negative goal.
 - Simple mistake in mechanism can have serious security implications.
 - Realistic threat modesl are open-ended (almost negative models).
 - Iterative process: design, update threat model as necessary, etc.
+
+Source: https://ocw.mit.edu/courses/6-858-computer-systems-security-fall-2014/resources/lecture-1-introduction-threat-models/
