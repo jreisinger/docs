@@ -1,11 +1,11 @@
 # Lessons learned
 
-* (information) security == infosecurity == cybersecurity
+* Names (new to old): cybersecurity = info security == information security == computer security == network/data/application security.
 * There's no 100% secure system. There are just more or less secure systems.
-* In many environments development and operations are prioritized over security. Until a security incident happens.
 * Security is a long term systematic process.
+* Security is hard to measure.
+* In many environments development and operations are prioritized over security.
 * "Ensure your doors are locked sucurely before putting bars on your second-store windows!"
-* Split security into areas and define ownership for each area.
 
 # Goals
 
@@ -69,7 +69,7 @@ Network security
 Security monitoring (SIEM)
 
 * detecting and responding to security incidents
-* unfortunately you won't always be susccefull at protecting your assets
+* unfortunately you won't always be susccesfull at protecting your assets
 * in 2022, it took an average of 9 months to identify and contain a [breach](https://www.ibm.com/reports/data-breach)
 
 Compliance
@@ -83,7 +83,7 @@ See also [CISSP](https://en.wikipedia.org/wiki/Certified_Information_Systems_Sec
 
 (1) Understand the business of the organization you are trying to protect.
 
-(2) Think about what you need to protect (data, assets) and who is most likely to cause problems (criminals, hacktivists, script kiddies, inside attackers, state actors).
+(2) Think about what you need to protect (data, assets) and who is most likely to cause problems (see threat-actors.md).
 
 (3) Understand what is your responsibility - this depends on the cloud model you are using and whether you are a consumer or provider:
 
