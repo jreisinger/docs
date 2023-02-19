@@ -14,7 +14,7 @@ A fly dies (substantial).
 
 What if our entire life is a dream or hallucination?
 
-You still have one experience or though, then another. That is a kind of change.
+You still have one experience or thought, then another. That is a kind of change.
 
 ---
 
@@ -32,7 +32,7 @@ But something can't come from nothing.
 
 Coldness is not *actually* present but it's present *potentially* in a way other qualities are not.
 
-Change is actualization of potential.
+Change = actualization of potential.
 
 ---
 
@@ -93,7 +93,7 @@ Sometimes we have a series of changers and things changed.
 # Universality of this conclusion
 
 * what is true of the coffee is true of any material thing as well
-* the undeniable reality of change entails the existence of God
+* the undeniable reality of change entails the existence of Unmoved Mover
 
 ---
 
