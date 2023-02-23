@@ -1,5 +1,7 @@
 Public information about selected attacks on information systems.
 
+See also: https://github.com/ramimac/aws-customer-security-incidents
+
 # 2023
 
 ## 01 Royal Mail restarts limited overseas post after cyber-attack [ransomware]
