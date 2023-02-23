@@ -1,6 +1,9 @@
 Public information about selected attacks on information systems.
 
-See also: https://github.com/ramimac/aws-customer-security-incidents
+See also
+
+* https://github.com/ramimac/aws-customer-security-incidents
+* https://www.hackmageddon.com/
 
 # 2023
 
