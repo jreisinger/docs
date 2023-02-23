@@ -97,7 +97,7 @@ Search query can contain
 1) Install DD agent as Docker container:
 
 ```
-docker run --cgroupns host --pid host --name dd-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -e DD_API_KEY="$DD_API_KEY" -e DD_ENV=dev -e DD_TAGS=jr gcr.io/datadoghq/agent:7
+docker run --cgroupns host --pid host --name name:datadog-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -e DD_API_KEY="$DD_API_KEY" -e DD_ENV=dev -e DD_TAGS=jr gcr.io/datadoghq/agent:7
 ```
 
 2) Check Events > Explorer, it should show (filter for `tags:jr`):
