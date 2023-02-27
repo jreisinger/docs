@@ -7,7 +7,7 @@ NAME      TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
 cportal   ClusterIP   10.99.61.122   <none>        8080/TCP   79d
 ```
 * if you use Services of `type: NodePort` the clients must connect to a unique port per service
-* if you use Services of `type: LoadBalancer` you allocate scarse resources (IP addresses) for each service
+* if you use Services of `type: LoadBalancer` you allocate scarce resources (IP addresses) for each service
 * for HTTP (L7) based services we can do better -> Ingress
 
 # Ingress
