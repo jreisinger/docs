@@ -1,11 +1,13 @@
+Reviewed: 2022-02-27
+
 # Lessons learned
 
-* Names (new to old): cybersecurity = info security == information security == computer security == network/data/application security.
+* Names (new to old): cybersecurity, infosecurity (information security), computer security, network/data/application security.
 * There's no 100% secure system. There are just more or less secure systems.
-* Security is a long term systematic process.
+* Security is a long term systematic and process. You need to regularly review and rebalance.
 * Security is hard to measure.
-* In many environments development and operations are prioritized over security.
-* "Ensure your doors are locked sucurely before putting bars on your second-store windows!"
+* In some companies development and operations are prioritized over security.
+* Security is not just about technology, it's also about people and processes. This is hard for often introverted technology focused engineers.
 
 # Goals
 
@@ -28,58 +30,59 @@ These security principles will help you to increase your security:
 * Simplicity - [complexity](https://www.schneier.com/blog/archives/2022/08/security-and-cheap-complexity.html) is the worst enemy of security
 * Minimal attack surface - minimize possible ways a system can be attacked
 * Least privilege - deny by default to limit the blast radius of a compromise
+* Compartmentalization - use security boundaries to limit the blast radius of a compromise (e.g. AWS landing zone)
 * Defense in depth - since any security control can fail, multiple overlapping layers are needed
+* Ability to restore data and systems - backups, IaC, documentation, fire drills
 
 # Areas
 
 Data, asset and risk management
 
 * what are your (most valuable) data and (compute, storage, network) assets
-* risk = possibility of something bad happening
-* risk level = likelihood x impact
-* threat = a path to that risk occuring
-* what are most probable threats against your data and assets and their impact 
-* how to handle these threats
-* encrypt (some) data at rest (secrets mngt)
+* what are the (highest) risks of your data and assets
+    * risk = possibility of something bad happening
+    * risk level = likelihood x impact
+    * threat = a path to that risk occurring
+* how to handle these risks
+* data encryption at rest
 
 Identity and access management (IAM)
 
 * if an attacker has (admin!) credentials all patches and firewalls won't help
 * life cycle of authn (identities) and authz (access rights, roles)
 
-Vulnerability mngt - detect security issues in
+Vulnerability management
 
-* network and systems from outside (Nexpose)
-* applications from outside - DAST (OWASP ZAP)
-* application and infrastructure code - SAST (SonarQube, tfsec)
-* application image and container (trivy)
----
+* detect security issues in
+    * network and systems from outside (Nexpose)
+    * applications from outside - DAST (OWASP ZAP)
+    * application and infrastructure code - SAST (SonarQube, tfsec)
+    * application image and container (trivy)
 * code reviews
 * penetration testing
 
 Network security
 
 * if you can't talk to a component, you can't compromise it
-* WAF
-* antiDDoS
-* IDS/IPS
-* honeypots
-* encryption in motion (PKI, TLS)
+* WAF, antiDDoS, IDS/IPS, honeypots
+* data encryption in motion (PKI, TLS)
 
 Security monitoring (SIEM)
 
 * detecting and responding to security incidents
-* unfortunately you won't always be susccesfull at protecting your assets
+* unfortunately you won't always be successful at protecting your assets
 * in 2022, it took an average of 9 months to identify and contain a [breach](https://www.ibm.com/reports/data-breach)
 
 Compliance
 
 * proving your security to a 3rd party
-* much easier if you have actually secured your systems and data
+* much easier if you have actually secured your systems and data :-)
 
 See also [CISSP](https://en.wikipedia.org/wiki/Certified_Information_Systems_Security_Professional) domains and cyberseek [roles](https://www.cyberseek.org/pathway.html).
 
 # First steps
+
+It can be overwhelming to know where to start. Because the weakest link matters + there are dependencies between systems that can be chain-exploited. Ensure your doors are locked securely before putting bars on your second-store windows!
 
 (1) Understand the business of the organization you are trying to protect.
 
@@ -92,11 +95,11 @@ See also [CISSP](https://en.wikipedia.org/wiki/Certified_Information_Systems_Sec
 (4) Know your risks (have at least a spreadsheet) and how you approach them:
 
 * avoid the risk - turn off the system, benefits < risk
+* transfer the risk - pay someone else to manage the risk (e.g. insurance, SaaS)
 * mitigate the risk - apply some security measures
-* transfer the risk - pay someone else to manage the risk (e.g. insurance)
 * accept the risk - benefits > risk
 
-(5) Figure out trust (or security) boudaries. Draw what needs to talk to what:
+(5) Figure out trust (or security) boundaries. Draw what needs to talk to what:
 
 <img src="https://user-images.githubusercontent.com/1047259/207269071-8fffd922-7fe5-4bdd-8172-944cc5a470a7.png" style="max-width:100%;height:auto;">
 
