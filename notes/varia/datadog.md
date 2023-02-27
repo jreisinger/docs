@@ -5,8 +5,8 @@ Metrics, Traces and Logs
 * when: all these data types contain creation timestamp
 * where: reserved tags (host, device, source, service, env, version) indicate where the data originated from
 * metrics -> **what** is happening (e.g. what is the latency, what is number of page views, what is the number of instances in an autoscaling deployment)
-* traces -> **how** is sth. happenning (e.g. how are requests being processed)
 * logs -> **why** is sth. happenning (e.g. why did a request fail, why did a user visit a page, why did a cluster autoscale)
+* traces -> **how** is sth. happenning (e.g. how are requests being processed)
 
 Logs
 
@@ -83,7 +83,8 @@ Log facets
 
 DD Events
 
-* informational messages about your system that are consumed by events explorer 
+* records of notable changes relevant for managing and troubleshooting IT operations
+* e.g.: code deployments, service health, configuration changes, or monitoring alerts
 
 Search query can contain
 
