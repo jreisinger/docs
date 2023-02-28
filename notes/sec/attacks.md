@@ -7,6 +7,10 @@ See also
 
 # 2023
 
+## 02 More detail about LastPass breach [data breach]
+
+https://infosec.exchange/@briankrebs/109940001072018363
+
 ## 01 Royal Mail restarts limited overseas post after cyber-attack [ransomware]
 
 https://www.bbc.co.uk/news/business-64324000.amp
@@ -17,7 +21,7 @@ https://docs.datadoghq.com/agent/faq/circleci-incident-impact-on-datadog-agent/
 
 # 2022
 
-## 12 LastPass users' info and password vault data are now in hackers’ hands
+## 12 LastPass users' info and password vault data are now in hackers’ hands [data breach]
 
 https://arstechnica.com/information-technology/2022/12/lastpass-says-hackers-have-obtained-vault-data-and-a-wealth-of-customer-info/
 
@@ -29,7 +33,7 @@ https://ist.ac.at/en/information-about-the-cyberattack-on-ista/
 
 https://www.theregister.com/2022/09/01/google_firebase_apache_camel_github/
 
-## 08 LastPass developer systems hacked to steal source code
+## 08 LastPass developer systems hacked to steal source code [data breach]
 
 https://www.bleepingcomputer.com/news/security/lastpass-developer-systems-hacked-to-steal-source-code/
 
