@@ -55,7 +55,7 @@ It can be overwhelming to know where to start. Because the weakest link matters,
 
 Understand the business of the organization you are trying to protect.
 
-Think about what you need to protect, who (threat actors) is most likely to cause problems and how ([threat](https://attack.mitre.org) [models](https://microsoft.github.io/Threat-Matrix-for-Kubernetes)).
+Think about what you need to protect, who (threat actors and [groups](https://attack.mitre.org/groups)) is most likely to cause problems and how ([threat](https://attack.mitre.org) [models](https://microsoft.github.io/Threat-Matrix-for-Kubernetes)).
 
 Understand what is your responsibility. This depends on the cloud model you are using (IaaS, PaaS, SaaS) and whether you are a consumer or provider.
 
