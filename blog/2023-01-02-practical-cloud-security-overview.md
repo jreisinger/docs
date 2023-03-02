@@ -1,6 +1,6 @@
-# Practical cloud security
+# Practical cloud security overview
 
-Information security, or cybersecurity, is a never ending systematic effort to reduce security risks. Security risks stem from the fact that people make mistakes (in code, configurations, processes, architecture). Some other people, called threat actors, try to exploit these vulnerabilities.
+Information security, or cybersecurity, is a never ending systematic effort to reduce security risks. Security risks stem from the fact that people make mistakes (in code, configurations, processes, architecture). Some other people try to exploit these vulnerabilities.
 
 # Goals
 
