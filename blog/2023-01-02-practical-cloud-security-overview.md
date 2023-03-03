@@ -2,7 +2,7 @@
 
 ![](https://user-images.githubusercontent.com/1047259/222765764-e826697a-0f33-4240-892f-db39265adbbc.png)
 
-Information security, or cybersecurity, is a never ending systematic effort to reduce security risks. Security risks stem from the fact that people make mistakes (in code, configurations, processes, architecture). Some other people try to exploit these vulnerabilities.
+Information security, or cybersecurity, is a never ending systematic effort to reduce security risks. Security risks stem from the fact that people tend to make suboptimal decisions and mistakes (in code, configurations, processes, architecture) creating vulnerabilities in systems. Some other people try to exploit these vulnerabilities.
 
 # Goals
 
