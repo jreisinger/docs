@@ -1,5 +1,7 @@
 # Perl one-liners
 
+![](https://user-images.githubusercontent.com/1047259/222774261-22c055b2-caee-492a-8456-79349e2c82b8.png)
+
 I think Perl one-liners are still super useful. They are small [Perl](https://www.perl.org/) programs that are run directly from command line. Like this one from the Kubernetes [job](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/#running-an-example-job) documentation:
 
 ```
