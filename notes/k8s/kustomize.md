@@ -1,14 +1,6 @@
-[kustomization](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/) is the customization of k8s objects through a `kustomization.yaml` file.
+Kubernetes YAML files are complicated, verbose and repetitive. Kustomize allows you to start with a base YAML manifests, and use *overlays* to patch manifests for different environments and configurations.
 
 ```
-$ ls
-kustomization.yaml  nginx.yaml
-
-$ cat kustomization.yaml 
-namespace: t012
-resources:
-  - nginx.yaml
-
 $ cat nginx.yaml 
 apiVersion: v1
 kind: Pod
@@ -21,6 +13,15 @@ spec:
 ```
 
 ```
+$ cat kustomization.yaml 
+namespace: t012
+resources:
+  - nginx.yaml
+```
+
+```
 k kustomize  # print the transformed manifest to stdout
 k apply -k . # apply the transformed manifest
 ```
+
+See https://github.com/cloudnativedevops/demo/tree/main/hello-kustomize/demo for more.

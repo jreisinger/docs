@@ -1,4 +1,4 @@
-Helm is a templating engine and package manager for the Kubernetes "operating system".
+Helm is a templating engine and package manager for the Kubernetes "operating system". It helps you manage application settings and variables. 
 
 In Helm's vocabulary, a package is called a *chart*. It [contains](https://github.com/bmuschko/cka-study-guide/tree/master/ch04/templating-tools/helm):
 
@@ -81,11 +81,12 @@ Other two important concepts besides Chart are:
 Commands:
 
 ```sh
-helm template . # template locally and display on a console
-helm package .  # bundle the template files into a chart archive file (.tgz)
-```
+# template locally and display on a console
+helm template .
 
-```sh
+# bundle the template files into a chart archive file (.tgz)
+helm package .
+
 # add a Repository
 helm search hub wordpress # or https://artifacthub.io
 helm repo add bitnami https://charts.bitnami.com/bitnami
@@ -98,9 +99,11 @@ helm install happy-panda bitnami/wordpress
 echo '{mariadb.auth.database: user0db, mariadb.auth.username: user0}' > values.yaml
 helm install --generate-name -f values.yaml bitnami/wordpress
 
-# upgrade/rollback existing Release
+# upgrade existing Release
 helm upgrade happy-panda -f values.yaml bitnami/wordpress
 helm get values happy-panda
+
+# rollback existing Release
 helm rollback happy-panda 1
 
 # get status and list of Releases
