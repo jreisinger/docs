@@ -2,10 +2,15 @@ Public information about selected attacks on information systems.
 
 See also
 
-* https://github.com/ramimac/aws-customer-security-incidents
 * https://www.hackmageddon.com/
+* https://github.com/ramimac/aws-customer-security-incidents
+* https://www.cisa.gov/known-exploited-vulnerabilities-catalog
 
 # 2023
+
+## 02 Hackers Claim They Breached T-Mobile More Than 100 Times in 2022 [SIM-swapping]
+
+https://krebsonsecurity.com/2023/02/hackers-claim-they-breached-t-mobile-more-than-100-times-in-2022/
 
 ## 02 More detail about LastPass breach [data breach]
 
