@@ -8,7 +8,7 @@ I think Perl one-liners are still super useful. They are small [Perl](https://ww
 perl -Mbignum=bpi -wle 'print bpi(2000)' # calculate PI to 2000 digits
 ```
 
-`perl` is the Perl language interpreter. `-M` and `-wle` are command line switches (or options) that modify the `perl`'s behaviour. See below for explanation of what they mean. The string within double quotes is the Perl code that gets executed. In this case it uses the `bpi` subroutine from the [bignum](https://perldoc.perl.org/bignum.html) module to calculate the PI with accuracy of 2000 digits. The command will take a while to finish.
+`perl` is the Perl language interpreter. `-M` and `-wle` are command line switches (or flags or options) that modify the `perl`'s behaviour. See below for explanation of what they mean. The string within the quotes is the Perl code that gets executed. In this case it uses the `bpi` subroutine from the [bignum](https://perldoc.perl.org/bignum.html) module to calculate the PI with accuracy of 2000 digits. The command will take a while to finish.
 
 ## Switches
 
@@ -20,9 +20,9 @@ These are some of the most used command line switches:
 * `-p` -- loop through lines, reading and **p**rinting them (in-script equivalent: `while (<>) { [<code>] print }`)
 * `-n` -- loop through lines, reading but **n**ot printing them
 * `-l` -- print a new**l**ine (`$/` actually) after each line of output and chomp input newlines if used with `-n` or `-p`
-* `-i[<.ext>]` (**i**ntrepid) -- create backup file (with `<.ext>` extension if defined)
-* `-a` (**a**utosplit) -- split the `$_` default variable into `@F` array (space is the default separator, change it with `-F`, ex. `-F:`)
-* `-M<module>[=<subroutine>,...]` -- load subroutine(s) from a **m**odule
+* `-i[<.ext>]` -- edit files **i**n-place, optionally create backups with `<.ext>` extension
+* `-a` -- **a**utosplit the `$_` default variable into `@F` array (space is the default separator, change it with `-F`, ex. `-F:`)
+* `-M<module>[=<subroutine>,...]` -- load subroutine(s) from a **M**odule
 
 See [perlrun](http://perldoc.perl.org/perlrun.html) for more.
 
@@ -32,22 +32,14 @@ Cut out 2nd and 1st space separated field (column):
 
 ```
 $ cat birthdays.txt
-03/30/45 Eric Clapton
-11/27/42 Jimi Hendrix
-06/24/44 Jeff Beck
-
-$ perl -wlane 'print $F[1]' birthdays.txt
-Eric
-Jimi
-Jeff
-
+2890-09-22 Bilbo Baggins
+2968-09-22 Frodo Baggins
 $ perl -wlane 'print join " ", @F[1,0]' birthdays.txt
-Eric 03/30/45
-Jimi 11/27/42
-Jeff 06/24/44
+Bilbo 2890-09-22
+Frodo 2968-09-22
 ```
 
-The field numbering starts at 0. We use [join](https://perldoc.perl.org/functions/join) to put a space between cut out fields.
+The field numbering starts at 0. We use [join](https://perldoc.perl.org/functions/join) to put a space between the cut out fields.
 
 ## Search
 
