@@ -40,7 +40,7 @@ If an attacker gets credentials all patches and firewalls won't help. Manage use
 
 ## Vulnerability management
 
-Detect and remediate security bugs and misconfigurations in application (Sonar[Qube|Cloud], ZaP, trivy) and infrastructure (tfsec) code, systems and networks (Nexpose). Before (SAST) and after (DAST) deployment. Important point to emphasize here is to make sure that the vulnerabilities found by the scanners are also remediated not only reported. So detect them as soon as possible in the process of developing and deploying code and infrastructure. First handle only the critical ones. Code reviews and penetration testing is helpful but expensive.
+Detect and remediate security bugs and misconfigurations in application (Sonar[Qube|Cloud], ZaP, trivy) and infrastructure (tfsec) code, systems and networks (Nexpose). Before ([SAST, SCA](https://github.blog/2022-09-09-sca-vs-sast-what-are-they-and-which-one-is-right-for-you/)) and after (DAST) deployment. Important point to emphasize here is to make sure that the vulnerabilities found by the scanners are also remediated not only reported. So detect them as soon as possible in the process of developing and deploying code and infrastructure. First handle only the critical ones. Code reviews and penetration testing is helpful but expensive.
 
 ## Security monitoring
 
