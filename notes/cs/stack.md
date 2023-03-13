@@ -1,4 +1,4 @@
-2023-03-13
+*2023-03-13*
 
 Stack is a simple data structure that allows for two operations:
 

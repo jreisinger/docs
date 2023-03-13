@@ -1,4 +1,4 @@
-*2018-08-07 08:43*
+*2018-08-07*
 
 Both are memory regions.
 
