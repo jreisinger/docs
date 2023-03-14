@@ -103,7 +103,7 @@ Non-pointer types: primitives (numbers, booleans and strings), structs, arrays
 
 ## Method receivers
 
-There are two reasons to use a pointer receiver:
+There are two reasons to use a [pointer receiver](https://go.dev/tour/methods/4):
 
 1. so that the method can modify the value the receiver points to
 2. avoid copying the value on each method call (this can be more efficient if the receiver is a large struct, for example)
@@ -116,9 +116,24 @@ type person struct {
 	lastName  string
 }
 
-// If you didn't use pointer receiver (*person) this method would be ineffective.
+// If we didn't use pointer receiver (*person) this method would be ineffective.
+// A value receiver (person) would operate on a copy of the original value.
 func (p *person) rename(lastName string) {
 	p.lastName = lastName
+}
+
+func (p *person) name() string {
+	return p.firstName + " " + p.lastName
+}
+```
+
+As a convenience, [Go interprets](https://go.dev/tour/methods/6) the statement `john.rename("Smith")` as `(&john).Rename("Smith")` since the rename method has a pointer receiver.
+
+```go
+func main() {
+	john := person{firstName: "John", lastName: "Doe"}
+	john.rename("Smith")
+	fmt.Println(john.name())
 }
 ```
 
