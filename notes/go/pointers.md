@@ -1,11 +1,13 @@
-Go has pointers 👉. A pointer is a value that points to the memory address of a variable.
+Last reviewed: *2023-03-14*
+
+Go has pointers 👉. A pointer is a value denoting (or pointing to) the memory address of a variable.
 
 ```go
 func main() {
 	a := 200
-	b := &a
-	fmt.Printf("%v\n", a) // 200
-	fmt.Printf("%v\n", b) // 0xc000018030
+	b := &a			// &a is a pointer	
+	fmt.Printf("%v\n", a) 	// 200
+	fmt.Printf("%v\n", b) 	// 0xc000018030
 }
 ```
 
@@ -70,13 +72,13 @@ You can't use `&` before primitive literals (numbers, booleans and strings) or a
 
 ```go
 type person struct {
-    FirstName  string
-    LastName   *string
+    firstName  string
+    lastName   *string
 }
 
 p := person{
-    FirstName:  "Pat",
-    LastName:   &"Peterson",  // This line won't compile
+    firstName:  "Pat",
+    lastName:   &"Peterson",  // This line won't compile
 }
 ```
 
@@ -88,8 +90,8 @@ func stringp(s string) *string {
 }
 
 p := person{
-    FirstName: "Pat",
-    LastName: stringp("Peterson"), // This works
+    firstName: "Pat",
+    lastName: stringp("Peterson"), // This works
 }
 ```
 
@@ -108,7 +110,19 @@ There are two reasons to use a pointer receiver:
 
 In general, all methods on a given type should have either value or pointer receivers, but not a mixture of both.
 
-## Mutability
+```go
+type person struct {
+	firstName string
+	lastName  string
+}
+
+// If you didn't use pointer receiver (*person) this method would be ineffective.
+func (p *person) rename(lastName string) {
+	p.lastName = lastName
+}
+```
+
+## Notes on mutability
 
 * mutability means changing data in place
 * mutability brings flexibility and sometimes performance (you don't have to copy the data but the garbage collector might work more)
