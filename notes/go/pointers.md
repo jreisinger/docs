@@ -1,4 +1,4 @@
-Last reviewed: *2023-03-14*
+Reviewed: 2023-03-14
 
 Go has pointers 👉. A pointer is a value denoting (or pointing to) the memory address of a variable.
 

@@ -1,4 +1,4 @@
-*2015-06-01*
+Created: 2015-06-01
 
 GRUB 2 vs. GRUB (Legacy)
 

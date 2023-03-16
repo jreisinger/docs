@@ -1,4 +1,4 @@
-*2017-07-24*
+Created: 2017-07-24
 
 Docker is a container technology a.k.a container runtime. Cointainers standardize software packaging.
 It's a well timed fusion of

@@ -1,4 +1,4 @@
-*2014-09-09*
+Created: 2014-09-09
 
 Unix filesystem consists of two parts:
 

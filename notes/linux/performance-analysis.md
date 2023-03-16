@@ -1,4 +1,4 @@
-*2015-06-14*
+Created: 2015-06-14
 
 Taking stock of hardware
 ========================

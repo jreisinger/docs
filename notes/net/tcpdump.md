@@ -1,4 +1,4 @@
-Last reviewed: *2023-03-12*
+Reviewed: 2023-03-12
 
 * despite its name it can do much more than capturing TCP headers
 * can sniff traffic on many network types (including 802.1Q VLAN)

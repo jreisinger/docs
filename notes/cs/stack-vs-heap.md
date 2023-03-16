@@ -1,5 +1,3 @@
-*2018-08-07*
-
 Both are memory regions.
 
 Stack (temporary to a function)

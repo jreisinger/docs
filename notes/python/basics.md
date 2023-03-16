@@ -1,4 +1,4 @@
-*2016-05-13*
+Created: 2016-05-13
 
 All Python *objects* are instances of one class or another.
 

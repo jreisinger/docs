@@ -1,4 +1,4 @@
-*2011-09-16* (migrated from wiki.reisinge.net/PKI on 2022-05-10)
+Created: 2011-09-16 (migrated from wiki.reisinge.net/PKI on 2022-05-10)
 
 # What and why
 

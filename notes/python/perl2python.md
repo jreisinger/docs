@@ -1,4 +1,4 @@
-*2016-01-11*
+Created: 2016-01-11
 
 Going from Perl to Python ...
 

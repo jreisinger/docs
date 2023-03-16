@@ -1,4 +1,4 @@
-*2015-10-20*
+Created: 2015-10-20
 
 Signal -- a message from the kernel (or a process) to a process. Used for:
 

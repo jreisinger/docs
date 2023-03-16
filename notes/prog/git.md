@@ -1,4 +1,4 @@
-*2014-01-06*
+Created: 2014-01-06
 
 <img src="https://git-scm.com/images/logos/2color-lightbg@2x.png" style="max-width:100%;height:auto;float:right">
 
