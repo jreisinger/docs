@@ -78,6 +78,13 @@ You can configure rules via:
 * other configuration options in `crs/setup.conf` (like DOS protection, IP reputation, protocol enforcement)
 * "includes" in `nginx-modsecurity.conf` (`Include /etc/nginx/modsecurity/crs/rules/*.conf`) - not supported by docs AFAIK
 
+There are generally four ways of handling a false positive:
+
+1. You can disable a rule completely (e.g. `SecRuleRemoveById 958895`)
+2. You can remove an argument from inspection by a rule (e.g. `SecRuleUpdateTargetById 958895 !ARGS:email`)
+3. You can disable a rule for a given request at runtime (typically based on the URI requested)
+4. You can remove an argument from inspection by a rule for a given request at runtime
+
 More
 
 * https://coreruleset.org
