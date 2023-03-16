@@ -1,6 +1,6 @@
-*2019-10-01*
+Created: 2019-10-01 Updated: 2023-03-16
 
-# ModSecurity
+# ModSecurity WAF
 
 ModSecurity is a WAF engine (library, module) for Apache, Nginx, IIS. ModSecurity 3.0 has a new modular architecture - it's composed of:
 
@@ -9,8 +9,8 @@ ModSecurity is a WAF engine (library, module) for Apache, Nginx, IIS. ModSecurit
 
 Files
 
-* `nginx.conf` - ModSecurity-Nginx [directives](https://github.com/SpiderLabs/ModSecurity-nginx#usage) (like `modsecurity on`, `modsecurity_rules_file /etc/nginx/modsecurity/nginx-modsecurity.conf`)
-* `modsecurity/modsecurity.conf` - ModSecurity [directives](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v2.x%29#Configuration_Directives) v2.x (like `SecRuleEngine`, `SecRequestBodyAccess`, `SecAuditEngine`)
+* `nginx.conf` - ModSecurity-Nginx [directives](https://github.com/SpiderLabs/ModSecurity-nginx#usage), like `modsecurity on`, `modsecurity_rules_file /etc/nginx/modsecurity/nginx-modsecurity.conf`
+* `modsecurity/modsecurity.conf` - ModSecurity [directives](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29#user-content-Configuration_Directives), like `SecRuleEngine`, `SecRequestBodyAccess`, `SecAuditEngine`
 
 Tips
 
