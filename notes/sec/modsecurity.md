@@ -1,4 +1,4 @@
-Created: 2019-10-01 Updated: 2023-03-16
+Created: 2019-10-01 Reviewed: 2023-03-17
 
 # ModSecurity WAF
 
@@ -34,17 +34,14 @@ SecRule REQUEST_URI "@streq /index.php" "id:1,phase:1,t:lowercase,deny"
 
 ### SecDefaultAction
 
-If no ACTIONS are provided is `SecRule`, default actions apply as per `SecDefaultAction`.
+If no ACTIONS are provided in `SecRule`, default actions apply as per `SecDefaultAction`.
 
 ```
 SecDefaultAction "phase:1,log,auditlog,pass"
 SecDefaultAction "phase:2,log,auditlog,pass"
 ```
 
-## More
-
-* https://www.modsecurity.org/CRS/Documentation/making.html
-* https://support.kemptechnologies.com/hc/en-us/articles/209635223-How-to-write-a-WAF-rule-Modsecurity-Rule-Writing
+More: https://coreruleset.org/docs/rules/creating/
 
 # OWASP ModSecurity Core Rule Set (CRS)
 
