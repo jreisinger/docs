@@ -52,12 +52,10 @@ NAT Gateway
 
 Network ACL
 
-* associate with 1+ subnets
-* stateless firewall resource (to enable traffic you need both directions)
-* inbound/outbound rules
-* allow/deny rules
+* associate with 1+ subnets but a subnet can have only 1 NACL
+* stateless firewall resource -> you need to consider both directions (inbound/outbound rules)
 * rules order is important
-* suggestion: 1 NACL for public subnets and individual NACL for private subnets
+* suggestion: 1 NACL for public subnets and individual NACLs for private subnets
 
 <img width="846" alt="image" src="https://user-images.githubusercontent.com/1047259/196148897-689f3a8d-1b61-43a3-9a6e-8b2d16959951.png">
 
