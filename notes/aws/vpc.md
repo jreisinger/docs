@@ -50,20 +50,19 @@ NAT Gateway
 * suggestion: 1 NAT GW per AZ for higher resilience
 * this resource costs money! 
 
-Network ACL
+Network ACL (subnet level)
 
-* associate with 1+ subnets but a subnet can have only 1 NACL
-* stateless firewall resource -> you need to consider both directions (inbound/outbound rules)
+* associate with 1+ subnets (but a subnet can have only 1 NACL)
+* state*less* firewall resource -> you need to consider both directions (inbound/outbound rules)
 * rules order is important
 * suggestion: 1 NACL for public subnets and individual NACLs for private subnets
 
 <img width="846" alt="image" src="https://user-images.githubusercontent.com/1047259/196148897-689f3a8d-1b61-43a3-9a6e-8b2d16959951.png">
 
-Security groups
+Security groups (instance level)
 
 * associate with 1+ network interface
-* statefull firewall resource
-* inbound/outbound rules
+* state*full* firewall resource
 * only allow rules (what is not allowed is denied)
 * rules evaluated as a whole
 * suggestion: 1 security group per application per tier (public, private, db)
