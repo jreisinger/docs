@@ -27,7 +27,7 @@ declarative sentence, affirmative or negative
 
 [Argument](https://dai.fmph.uniba.sk/~filit/fvd/dokaz.html) (reasoning): a proof
 that a certain proposition is true by showing that it follows (logically and
-necessarily) from other propositions being true
+necessarily - what cannot be otherwise) from other propositions being true
 
 * logically valid
 * logically invalid
