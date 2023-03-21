@@ -11,9 +11,9 @@ Reviewed: 2023-03-21
 test:
 	if [ ! -z "${DB_USER}" ]; then\
 		go clean -testcache ./...;\
-		go test ./... -tags manual;\
+		go test ./... -cover -tags manual;\
 	else\
-		go test ./...;\
+		go test ./... -cover;\
 	fi
 .PHONY:test
 
@@ -22,4 +22,7 @@ build: test
 
 run: build
 	./foo
+
+install: test
+	go install
 ```
