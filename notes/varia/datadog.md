@@ -98,25 +98,24 @@ Search query can contain
 1) Install DD agent as Docker container:
 
 ```
-docker run --cgroupns host --pid host --name name:datadog-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -e DD_API_KEY="$DD_API_KEY" -e DD_ENV=dev -e DD_TAGS=jr gcr.io/datadoghq/agent:7
+docker run --cgroupns host --pid host --name datadog-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -e DD_API_KEY="$DD_API_KEY" -e DD_ENV=dev -e DD_TAGS=jrtest gcr.io/datadoghq/agent:7
 ```
 
-2) Check Events > Explorer, it should show (filter for `tags:jr`):
+2) Check Service Mgmt > Events, it should show (filter for `tags:jrtest`):
 
 ```
 Datadog agent (v. 7.XX.X) started on <Hostname>
 ```
 
-3) See Metrics > Explorer (from `jr`).
+3) See Metrics > Explorer (from `jrtest`).
 
 4) Agent sends only metrics by default, to send also logs add:
 
-* `-e DD_LOGS_ENABLED=true` - enable log collection from the agent container
-* `-e DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true` - enable log collection from the all other containers
-* `-e DD_LOGS_CONFIG_DOCKER_CONTAINER_USE_FILE=true`
+* `-e DD_LOGS_ENABLED=true` - enable logs collection
+* `-e DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true` - enable log collection from all other containers
 * `-e DD_CONTAINER_EXCLUDE="name:datadog-agent"`
 
-5) See Logs > Search (Search for `tags:jr`)
+5) See Logs > Search (Search for `tags:jrtest`)
 
 DD [agent logs](https://docs.datadoghq.com/agent/logs) related parameters
 
