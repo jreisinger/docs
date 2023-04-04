@@ -1,3 +1,5 @@
+Reviewed: 2023-04-04
+
 Good app structure
 
 * makes it easier to reason about the code
@@ -7,12 +9,12 @@ Good app structure
 
 # Organizing by context
 
-Some lanaguages, like Ruby, have a standard way of arganizing code based on the architectural patterns being used. MVC, for example. In Go, usually we structure the code by reflecting the domain we're implemeting. We don't base the code structure on the scaffolding but on the specific types in the domain of the project we are working on. For example:
+Some lanaguages, like Ruby, have a standard way of organizing code based on the architectural patterns being used. MVC, for example. In Go, usually we structure the code by reflecting the domain we're implemeting. We don't base the code structure on the scaffolding but on the specific types in the domain of the project we are working on. For example:
 
 ```
-teacher/
-  ... (some go files here)
 student/
+  ... (some go files here)
+teacher/
   ... (some go files here)
 ```
 
@@ -20,10 +22,10 @@ student/
 package student
 
 type Lesson struct {
-  Name         string // Name of the lesson, eg: "How to run a test"
-  Video        string // URL to the video for this lesson. Empty if the user
-                      // doesn't have access to this.
-  SourceCode   string // URL to the source code for this lesson.
+  Name         string     // Name of the lesson, eg: "How to run a test"
+  Video        string     // URL to the video for this lesson. Empty if the user
+                          // doesn't have access to this.
+  SourceCode   string     // URL to the source code for this lesson.
   CompletedAt  *time.Time // A boolean representing whether or not the lesson
                           // was completed by this user.
   // + more
