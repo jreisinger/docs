@@ -25,3 +25,4 @@ func main() {
 ```
 
 * https://yourbasic.org/golang/regexp-cheat-sheet/
+* https://gobyexample.com/regular-expressions
