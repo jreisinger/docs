@@ -46,7 +46,7 @@ More technically (and precisely): No potential can be actualized unless somethin
 
 ---
 
-# Types of change
+# Series of changes
 
 Sometimes we have a series of changers and things changed.
 
@@ -85,7 +85,7 @@ Sometimes we have a series of changers and things changed.
 # Unmoved Mover
 
 * since we are talking about existence -> this first member must be able to actualize the potential for other things to exist without having to have its own existence actualized by anything
-* this first member doesn't have any potential for existence that needs to be actualized, it's just actual, always and already actual => it doesn't *have* actuality like things it actualized do but it *is* pure actuality itself
+* this first member doesn't have any potential for existence that needs to be actualized, it's just actual, always and already actual => it doesn't *have* actuality like things it actualizes do but it *is* pure actuality itself
 * this first member = uncaused cause = unmoved mover (Aristotle) = unactualized actualizer
 
 ---
@@ -97,7 +97,7 @@ Sometimes we have a series of changers and things changed.
 
 ---
 
-# Unmoved Mover = God?
+# Characteristics of Unmoved Mover 
 
 * the ultimate cause of existence of all things - keeps all things in being from moment to moment
 * immutable - pure actuality devoid of potentiality
