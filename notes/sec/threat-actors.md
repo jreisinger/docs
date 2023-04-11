@@ -42,6 +42,6 @@ C: Disrupt of modify HW/SW supply chains. Ability to infiltrate organizations/su
 S: Stuxnet (multiple zero-days, infiltration of 3 organizations including 2 PKIs with offline root CAs), SUNBURST (targeted supply chain attack, infiltration of hundreds of organizations).
 ```
 
-NOTE: threat actors can be hybrid of different categories.
+NOTE: threat actors can be hybrids of different categories.
 
 Source: Hacking Kubernetes (2021)
