@@ -10,27 +10,26 @@ CIA triad represents the traditional (since [1977](https://nvlpubs.nist.gov/nist
 * integrity: no unauthorized write access to data or systems
 * availability: data and service available when needed
 
-So risk is the possibility of something bad happening. And threat is a path to the risk occurring. In case you don't know about your risks and threats or you don't handle them, you can run into troubles. Your data can be stolen or encrypted. Your infrastructure or applications can be shut down, misused for crypto-mining or launching attacks against other targets. Your customers or employees can get scammed. All these lead to operational problems (you have to handle security incidents instead of normal business), reputation and financial losses (you loose customers and/or get fined). Obviously, you want to avoid this at least to a certain degree.
+So risk is the possibility of something bad happening. And threat is a path to the risk occurring. In case you don't know about your risks and threats or you don't handle them, you can run into troubles. Your data can be stolen or encrypted. Your infrastructure or applications can be shut down, misused for crypto-mining or launching attacks against other targets. Your customers or employees can get scammed. All these lead to operational problems (you have to handle security incidents instead of normal business), reputation and financial losses (you lose customers and/or get fined). Obviously, you want to avoid this at least to a certain degree.
 
 # Security principles and areas
-
 
 Probably the most popular way to handle the computing infrastructure and applications these days goes by the name cloud (native) computing. However, the security principles above and the goals below don't change with the adaption of a new paradigm, like cloud computing or DevOps. The techniques and tools might change though.
 
 OK, so how do we handle the security risks and threats? First, there are the **principles** you should apply whenever possible:
 
-* [simplicity](https://www.schneier.com/essays/archives/1999/11/a_plea_for_simplicit.html) - the worst enemy of security is [complexity](https://www.schneier.com/blog/archives/2022/08/security-and-cheap-complexity.html), it makes attacks easier and defense harder
+* simplicity - the worst enemy of security is [complexity](https://www.schneier.com/blog/archives/2022/08/security-and-cheap-complexity.html), it makes attacks easier and defense harder
 * minimal attack surface - minimize possible ways a system can be attacked
 * least privilege - deny by default to limit the blast radius of a compromise
 * segmentation - create boundaries between systems to limit the blast radius of a compromise
 * defense in depth - since any security control can fail have multiple overlapping layers of controls
 * ability to restore data and systems - have backups and restore tests, documentation or Infrastructure as Code
 
-Second, you have to care about many things because the weakest link in the chain matters. To not get overwhelmed one might create some abstractions in the form of distinct areas to cover.
+Second, you have to care about many things because the weakest link in the chain of interconnected systems can get exploited. Not to get overwhelmed one might create some abstractions in the form of distinct areas to cover.
 
 ## Governance and risk management
 
-You should get at least a rough understanding of your organization's business. Understand what is your responsibility (IaaS, PaaS, SaaS) and what data and compute/storage/network resources you are protecting. Get some idea which of these assets are the most critical (valuable) and [who](https://attack.mitre.org/groups) is most likely to cause problems and [how](https://attack.mitre.org).
+You should get at least a rough understanding of your organization's business and products. Find out your responsibility boundaries and what data and compute/storage/network resources you need to protect. This depends on the service model you use or provide (IaaS, PaaS or SaaS). Get some idea [who](https://github.com/jreisinger/docs/blob/master/notes/sec/threat-actors.md) is most likely to cause problems and [how](https://attack.mitre.org).
 
 Risk level is the likelihood of a risk times its impact. You can approach each risk in one of these ways:
 
@@ -47,12 +46,12 @@ If an attacker gets credentials all patches and firewalls won't help. Manage use
 
 ## Vulnerability management
 
-Detect and remediate security bugs and misconfigurations in application (SonarQube, ZaP, trivy) and infrastructure (tfsec) code, systems and networks (Nexpose). Before ([SAST, SCA](https://github.blog/2022-09-09-sca-vs-sast-what-are-they-and-which-one-is-right-for-you/)) and after (DAST) deployment. Important point to emphasize here is to make sure that the vulnerabilities found by the scanners are also remediated not only reported. So detect them as soon as possible in the process of developing and deploying code and infrastructure. First handle only the critical ones. Code reviews and penetration testing is helpful but expensive.
+Detect and remediate security bugs and misconfigurations in application (SonarQube, ZaP, trivy) and infrastructure (tfsec) code, systems and networks (Nexpose). Before ([SAST, SCA](https://github.blog/2022-09-09-sca-vs-sast-what-are-they-and-which-one-is-right-for-you/)) and after (DAST) deployment. Important point to emphasize here is to make sure that the vulnerabilities found by the scanners are also remediated not only reported. So detect them as soon as possible in the process of developing and deploying code and infrastructure. First handle only the critical ones. Code reviews and penetration testing is helpful but expensive. Regularly upgrade (patch) your systems and dependencies (have a reminder).
 
 ## Security monitoring
 
-You want to know what's going on and then do something about. Detect threats and security incidents, and respond to them. You do this by first collecting and parsing logs and metrics in a central place (Splunk, Graylog, Datadog). Then you create alerts - a log/metric query with a threshold - and handle them when they get triggered. Find a good balance between too many and too few alerts. Prefer quality over quantity to avoid alert fatigue.
+You want to know what's going on and then do something about. Detect threats and security incidents, and respond to them. You do this by first collecting and parsing logs and metrics in a central place (Splunk, Graylog, Datadog). Then you create alerts (a log/metric query with a threshold) and handle them when they get triggered. Find a good balance between too many and too few alerts. Prefer quality over quantity to avoid alert fatigue.
 
 ## Network security
 
-If you can't talk to a component, you can't compromise it. Use network policies, ACLs, WAFs, antiDDoS, IDS/IPS when it makes sense. Try to create trust boundaries. Anything inside a trust (or security) boundary can trust, at least to some level, anything else inside that boundary but requires verification before trusting anything outside that boundary. Also (almost always) encrypt data in motion using TLS.
+If you can't talk to a component, you can't compromise it. Use network policies, ACLs, WAFs, antiDDoS, IDS/IPS when it makes sense. Try to create trust boundaries. Anything inside a trust (or security) boundary can trust, at least to some level, anything else inside that boundary but requires verification before trusting anything outside that boundary. Also (almost always) encrypt data in motion using [TLS](https://github.com/jreisinger/docs/blob/master/notes/go/tls.md).
