@@ -10,7 +10,7 @@ CIA triad represents the traditional (since [1977](https://nvlpubs.nist.gov/nist
 * integrity: no unauthorized write access to data or systems
 * availability: data and service available when needed
 
-So risk is the possibility of something bad happening. And threat is a path to the risk occurring. In case you don't know about your risks and threats or you don't handle them, you can run into troubles. Your data can be stolen or encrypted. Your infrastructure or applications can be shut down, misused for crypto-mining or launching attacks against other targets. Your customers or employees can get scammed. All these lead to operational problems (you have to handle security incidents instead of normal business), reputation and financial losses (you lose customers and/or get fined). Obviously, you want to avoid this at least to a certain degree.
+So risk is the possibility of something bad happening. And threat is a path to the risk occurring. In case you don't know about your risks and threats or you don't handle them, you can run into [troubles](https://www.hackmageddon.com/). Your data can be stolen or encrypted. Your infrastructure or applications can be shut down, misused for crypto-mining or launching attacks against other targets. Your customers or employees can get scammed. All these lead to operational problems (you have to handle security incidents instead of normal business), reputation and financial losses (you lose customers and/or get fined). Obviously, you want to avoid this at least to a certain degree.
 
 # Security principles and areas
 
@@ -54,4 +54,4 @@ You want to know what's going on and then do something about. Detect threats and
 
 ## Network security
 
-If you can't talk to a component, you can't compromise it. Use network policies, ACLs, WAFs, antiDDoS, IDS/IPS when it makes sense. Try to create trust boundaries. Anything inside a trust (or security) boundary can trust, at least to some level, anything else inside that boundary but requires verification before trusting anything outside that boundary. Also (almost always) encrypt data in motion using [TLS](https://github.com/jreisinger/docs/blob/master/notes/go/tls.md).
+If you can't talk to a component, you can't compromise it. Use network policies, ACLs, VPNs, WAFs, antiDDoS, IDS/IPS when it makes sense. Try to create trust boundaries. Anything inside a trust (or security) boundary can trust, at least to some level, anything else inside that boundary but requires verification before trusting anything outside that boundary. Also (almost always) encrypt data in motion using [TLS](https://github.com/jreisinger/docs/blob/master/notes/go/tls.md).
