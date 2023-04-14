@@ -29,7 +29,7 @@ Second, you have to care about many things because the weakest link in the chain
 
 ## Governance and risk management
 
-You should get at least a rough understanding of your organization's business and products. Find out your responsibility boundaries and what data and compute/storage/network resources you need to protect. This depends on the service model you use or provide (IaaS, PaaS or SaaS). Get some idea [who](https://github.com/jreisinger/docs/blob/master/notes/sec/threat-actors.md) is most likely to cause problems and [how](https://attack.mitre.org).
+You should get at least a rough understanding of your organization's business and products. Find out your [responsibility](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/shared-responsibility.html) boundaries and what data and compute/storage/network resources you need to protect. This depends on the service model you use or provide (IaaS, PaaS or SaaS). Get some idea [who](https://github.com/jreisinger/docs/blob/master/notes/sec/threat-actors.md) is most likely to cause problems and [how](https://attack.mitre.org).
 
 Risk level is the likelihood of a risk times its impact. You can approach each risk in one of these ways:
 
@@ -38,7 +38,7 @@ Risk level is the likelihood of a risk times its impact. You can approach each r
 * mitigate it - apply some security measures (controls)
 * accept it - if benefits > risk (this should be conscious)
 
-You might need to prove your security to a 3rd party; this is called compliance.
+You might need to prove your security to a 3rd party; this is called [compliance](https://aws.amazon.com/compliance/).
 
 ## Identity and access management
 
