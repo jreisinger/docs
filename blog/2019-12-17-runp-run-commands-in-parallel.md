@@ -1,5 +1,3 @@
-# runp: run shell commands in parallel
-
 I'm using shell (bash specifically) on daily basis. From time to time a need arises to run multiple commands in parallel. For example my [.bashrc](https://github.com/jreisinger/dotfiles/blob/master/.bashrc) runs commands like these to download or clone vim plugins I use:
 
 ```
@@ -9,7 +7,7 @@ rm -rf $HOME/.vim/pack/plugins/start/grep.vim && git clone https://github.com/ye
 rm -rf $HOME/.vim/pack/plugins/start/vim-go && git clone https://github.com/fatih/vim-go.git $HOME/.vim/pack/plugins/start/vim-go
 ```
 
-The problem is that these commmands run sequentially and it takes a while until they are done. I was thinking of a way how to speed them up. So to scratch my itch I came up with [runp](https://github.com/jreisinger/runp).
+The problem is that these commands run sequentially and it takes a while until they are done. I was thinking of a way how to speed them up. So to scratch my itch I came up with [runp](https://github.com/jreisinger/runp).
 
 ## Why and how to use it
 
@@ -66,9 +64,9 @@ The commands to execute can be supplied also via stdin. It means that `runp` can
 
 ```
 $ for dir in $HOME /etc /tmp; do echo sudo "du -sh $dir"; done | runp -q | sort -h
-13M	/tmp
-17M	/etc
-370G	/home/reisinge
+13M	  /tmp
+17M	  /etc
+370G  /home/reisinge
 ```
 
 Here we generate the commands to run in a bash for loop. Then we pipe the commands into `runp`. Finally the `runp`'s output (stdout) is sorted.
@@ -77,9 +75,9 @@ We can simplify by using the `-p` flag which adds a prefix string to the final c
 
 ```
 $ echo -e "$HOME\n/etc\n/tmp" | runp -q -p 'sudo du -sh' | sort -h
-13M	/tmp
-17M	/etc
-370G	/home/reisinge
+13M	  /tmp
+17M	  /etc
+370G  /home/reisinge
 ```
 
 The final example shows how to find open ports from a list of hosts and ports:
