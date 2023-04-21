@@ -46,7 +46,7 @@ But on bigger repos this might take several seconds every time you commit. To av
 export GHORG=jreisinger # CHANGE ME
 mkdir /tmp/$GHORG && cd /tmp/$GHORG
 # clone all repos in parallel
-gh repo list $GHORG --limit 1000 | cut -f 1 | runp -n -p 'gh repo clone'
+gh repo list $GHORG --limit 1000 | cut -f 1 | runp -p 'gh repo clone'
 # check existing commits in all repos in parallel
 ls | runp -p 'gitleaks detect --no-banner -s'
 ```
