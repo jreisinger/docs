@@ -1,8 +1,10 @@
 ![](https://user-images.githubusercontent.com/1047259/222765764-e826697a-0f33-4240-892f-db39265adbbc.png)
 
+Probably the most popular way to handle the computing infrastructure and applications these days goes by the name cloud (native) computing. However, the security goals and principles below don't change with the adaption of a new paradigm. The techniques and tools might change though.
+
 # What is security and why we need it
 
-Information security, or cybersecurity, is a never ending systematic effort to manage security risks. The risks mostly stem from the fact that people, for various reasons, make suboptimal decisions and mistakes - in design, implementation, configuration, operations - creating vulnerabilities in systems. And, some other people - threat actors or groups - try to exploit these vulnerabilities for various reasons.
+Information security, or cybersecurity, is a never ending systematic effort to manage security risks. The risks mostly stem from the fact that people, for various reasons, make suboptimal decisions and mistakes - in design, implementation, configuration, operations - creating vulnerabilities in systems. And, some other people (threat actors or groups) try to exploit these vulnerabilities for various reasons.
 
 CIA triad represents the traditional (since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf)) security **goals**: "The protection of system data and resources from accidental and deliberate threats to confidentiality, integrity, and availability."
 
@@ -13,8 +15,6 @@ CIA triad represents the traditional (since [1977](https://nvlpubs.nist.gov/nist
 So risk is the possibility of something bad happening. And threat is a path to the risk occurring. In case you don't know about your risks and threats or you don't handle them, you can run into [troubles](https://www.hackmageddon.com/). Your data can be stolen or encrypted. Your infrastructure or applications can be shut down, misused for crypto-mining or launching attacks against other targets. Your customers or employees can get scammed. All these lead to operational problems (you have to handle security incidents instead of normal business), reputation and financial losses (you lose customers and/or get fined). Obviously, you want to avoid this at least to a certain degree.
 
 # Security principles and areas
-
-Probably the most popular way to handle the computing infrastructure and applications these days goes by the name cloud (native) computing. However, the security principles above and the goals below don't change with the adaption of a new paradigm, like cloud computing or DevOps. The techniques and tools might change though.
 
 OK, so how do we handle the security risks and threats? First, there are the **principles** you should apply whenever possible:
 
@@ -33,10 +33,10 @@ You should get at least a rough understanding of your organization's business an
 
 Risk level is the likelihood of a risk times its impact. You can approach each risk in one of these ways:
 
-* avoid it - don't build the system in the first place or turn it off if benefits < risk
+* avoid it - don't build the system in the first place or turn it off if benefits are lower than risks
 * transfer it - pay someone else to manage the risk (e.g. SaaS, insurance)
 * mitigate it - apply some security measures (controls)
-* accept it - if benefits > risk (this should be conscious)
+* accept it - if benefits are higher than risks (this should be conscious)
 
 You might need to prove your security to a 3rd party; this is called [compliance](https://aws.amazon.com/compliance/).
 
