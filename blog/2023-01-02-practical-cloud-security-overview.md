@@ -4,6 +4,8 @@ Probably the most popular way to handle the computing infrastructure and applica
 
 # What is security and why we need it
 
+> The art of war teaches us to rely not on the likelihood of the enemy’s not coming, but on our own readiness to receive him; not on the chance of his not attacking, but rather on the fact that we have made our position unassailable. -- Sun Tzŭ: The Art of War
+
 Information security, or cybersecurity, is a never ending systematic effort to manage security risks. The risks mostly stem from the fact that people, for various reasons, make suboptimal decisions and mistakes - in design, implementation, configuration, operations - creating vulnerabilities in systems. And, some other people (threat actors or groups) try to exploit these vulnerabilities for various reasons.
 
 CIA triad represents the traditional (since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf)) security **goals**: "The protection of system data and resources from accidental and deliberate threats to confidentiality, integrity, and availability."
@@ -28,6 +30,8 @@ OK, so how do we handle the security risks and threats? First, there are the **p
 Second, you have to care about many things because the weakest link in the chain of interconnected systems can get exploited. Not to get overwhelmed one might create some abstractions in the form of distinct areas to cover.
 
 ## Governance and risk management
+
+> If you know the enemy and know yourself, you need not fear the result of a hundred battles. -- Sun Tzŭ: The Art of War
 
 You should get at least a rough understanding of your organization's business and products. Find out your [responsibility](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/shared-responsibility.html) boundaries and what data and compute/storage/network resources you need to protect. This depends on the service model you use or provide (IaaS, PaaS or SaaS). Get some idea [who](https://github.com/jreisinger/docs/blob/master/notes/sec/threat-actors.md) is most likely to cause problems and [how](https://attack.mitre.org).
 
