@@ -9,3 +9,11 @@ Components
 * eventBridge - send events from your app to different services (event-driven architecture)
 * logs - central logs repository
 * log, container (EKS + ECS), lambda insights - metrics
+
+Metrics
+* time-ordered set of data points
+* lika a variable that's assuming various values (data points) over time 
+* ex: CPU usage of an EC2 instance, latency of an ELB load balancer
+
+Namespaces
+* containers (isolation) for metrics
