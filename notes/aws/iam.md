@@ -26,6 +26,9 @@ Organization
 * root uses generic login URL
 * email becomes the username
 * you should use email alias so you can have multiple accounts
+* AWS accounts
+  * master payer - contains billing data
+  * linked - doesn't show billing data
 
 # IAM resources
 
