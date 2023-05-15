@@ -30,6 +30,25 @@ Organization
   * master payer - contains billing data
   * linked - doesn't show billing data
 
+# Organizations
+
+to handle multiple accounts
+
+terminology
+* organization - hierarchical structure (family tree) of accounts
+* root - container at the top of the tree
+* OU - container to categorize/group accounts
+* account - to configure and provision resources
+* master account - account (with star) managing the organization; shouldn't be used to provision resources 
+* SCP - what services and operations are allowed at most (applied recursively to root, OU or account)
+
+# Service control policy (SCP)
+
+* permission boundary (guardrail)
+* doesn't grant access
+* doesn't affect resource-based policies, only principals managed by your accounts
+* doesn't affect actions performed by the master account
+
 # IAM resources
 
 ![156759604-c7e6dc08-6ddd-474a-836d-8fd06a2e5208](https://user-images.githubusercontent.com/1047259/184610339-fa8c4a0c-b853-4dcc-a05f-2d8f9b6960a9.png)
