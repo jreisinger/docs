@@ -196,7 +196,7 @@ To integrate with other authentication protocols such as LDAP, SAML, and Kerbero
 
 ## Tooling and good practices
 
-Depending on where you run you clusters, you migh use:
+Depending on where you run you clusters, you might use:
 
 * Keycloak - open source IAM with support for existing LDAP servers
 * Dex - defers authentication to other identity providers, like LDAP, SAML, GitHub, Google, AD
