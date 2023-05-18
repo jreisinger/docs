@@ -97,7 +97,7 @@ s = s[2:4] // slice s to length shorter than its capacity
 ```
 
 ```
-s = s[:cap(s)] // grow s to its capacity
+s = s[:cap(s)] // grow length of s to its capacity
 
 []byte                 [5]byte                             
 +-----+                +----------------------------------+
@@ -112,7 +112,7 @@ s = s[:cap(s)] // grow s to its capacity
 +-----+      
 ```
 
-# Growing slices
+# Growing capacity of slices
 
 To increase the capacity of a slice one must create a new, larger slice and `copy` the contents of the original slice into it.
 
