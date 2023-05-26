@@ -11,7 +11,7 @@ Implement a strong identity foundation 🔑
 
 Enable traceability 🔍
 
-* monitor and alert actions in your environment in real time
+* monitor, alert and audit actions in your environment in real time
 * integrate log and metric collection with systems to automatically investigate and take action
 
 Apply security at all layers 🏰
