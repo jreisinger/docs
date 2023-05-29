@@ -124,6 +124,12 @@ list dynamic dependencies
 
 a Linux kernel feature that connects two network segments (poor man's router)
 
+# log shippers
+
+* metricbeat - lightweight shipper for metrics from elastic
+* filebeat - lightweight shipper for logs from elastic
+* fluentd - open source data collector for unified logging layer
+
 ## loose coupling
 
 A system property and design strategy in which a system’s components have minimal knowledge of any other components. Two systems can be said to be loosely coupled when changes to one component generally don’t require changes to the other.
