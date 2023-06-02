@@ -1,3 +1,5 @@
+Reviewed: 2023-06-02
+
 My Go stuff on the Web
 
 * [repos](https://github.com/jreisinger?utf8=%E2%9C%93&tab=repositories&q=&type=&language=go)
@@ -7,8 +9,8 @@ My Go stuff on the Web
 Useful ([non](https://golang.org/pkg/) [obvious](https://blog.golang.org/)) links
 
 * https://yourbasic.org/golang/
-* [Go wiki](https://github.com/golang/go/wiki)
 * https://gobyexample.com/
+* [Go wiki](https://github.com/golang/go/wiki)
 * [Go for Perl hackers](https://github.com/oalders/go-for-perl-hackers)
 * [Pete's Go examples](https://github.com/pete911/go-examples)
 

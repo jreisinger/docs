@@ -1,8 +1,10 @@
-# net/http
+Reviewed: 2023-06-02
+
+# Package `net/http`
 
 * standard library package for implementing HTTP servers (and clients)
 
-## Handler interface
+## `Handler` interface
 
 * foundational element of `net/http`
 
@@ -16,7 +18,7 @@ type Handler interface {
 func ListenAndServe(address string, h Handler) error
 ```
 
-`ListenAndServe`
+## `ListenAndServe`
 
 * function that runs forever until it fails (always with a non-nil error)
 * requires an instance of the `Handler` interface to which all requests should be dispatched
@@ -86,7 +88,7 @@ msg := fmt.Sprintf("no such page: %s\n", r.URL)
 http.Error(w, msg, http.StatusNotFound) // 404
 ```
 
-## ServeMux struct
+## `ServeMux` struct
 
 * it's convenient to define logic for each URL in a separate function or method
 * related URLs (e.g. `/images/*.png`) might need similar logic
@@ -149,9 +151,7 @@ func main() {
 
 NOTE: the web server invokes each handler in a new goroutine, so handlers must take precautions such as locking when accessing variables that other goroutines, including other requests to the same handler, may be accessing.
 
-# Response handling
-
-## WriteHeader method of ResponseWriter interface
+## `WriteHeader` method of `ResponseWriter` interface
 
 These two handler functions are equivalent:
 
@@ -173,25 +173,10 @@ both generate line of information with protocol and status code (Go doc calls th
 < 
 ```
 
-## Error function
+## `Error` function
 
 ```
-func err1(w http.ResponseWriter, r *http.Request) {
-	w.WriteHeader(http.StatusInternalServerError) // 500
-}
-```
-
-generates only line of information and two headers:
-
-```
-< HTTP/1.1 500 Internal Server Error
-< Date: Sat, 16 May 2020 15:25:28 GMT
-< Content-Length: 0
-< 
-```
-
-```
-func err2(w http.ResponseWriter, r *http.Request) {
+func err(w http.ResponseWriter, r *http.Request) {
 	http.Error(w, "500 something's wrong with the server", http.StatusInternalServerError)
 }
 ```
@@ -210,6 +195,5 @@ generates also response body:
 
 # Sources
 
-* Black Hat Go (2020)
 * The Go Programming Language (2015)
-* https://pkg.go.dev/net/http
+* Black Hat Go (2020)

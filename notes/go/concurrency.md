@@ -1,3 +1,5 @@
+Reviewed: 2023-06-02
+
 Concurrent programming
 
 * a way to structure software
@@ -42,57 +44,8 @@ Select
 * if multiple can proceed, select chooses pseudo-randomly
 * the default case, if present, executes immediately if no channel is ready
 
-Example
-
-```go
-package main
-
-import (
-    "fmt"
-    "time"
-)
-
-func main() {
-    ch1 := make(chan string)
-    ch2 := make(chan string)
-
-    go func() {
-        for {
-            ch1<- "from 1"
-            time.Sleep(time.Second * 2)
-        }
-    }()
-
-    go func() {
-        for {
-            ch2<- "from 2"
-            time.Sleep(time.Second * 3)
-        }
-    }()
-
-    go func() {
-        for {
-            select {
-            case msg1 := <-ch1:
-                fmt.Println(msg1)
-            case msg2 := <-ch2:
-                fmt.Println(msg2)
-            default:
-                fmt.Println("nothing ready")
-                time.Sleep(time.Second * 1)
-            }
-        }
-    }()
-
-    var input string
-    fmt.Scanln(&input)
-}
-```
-
 More
 
-* https://github.com/jreisinger/go-concurrency-patterns
-* https://github.com/jreisinger/work
-* https://github.com/jreisinger/katas
+* https://github.com/jreisinger/gokatas
 * The Go Programming Language (2015)
 * Go In Practice (2016)
