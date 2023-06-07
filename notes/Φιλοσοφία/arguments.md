@@ -1,14 +1,18 @@
+Reviewed: 2023-06-07
+
 It's not possible to prove (or disprove) the God's existence using the [modern scientific method](http://www.wall.org/~aron/blog/the-pillars-of-science/). This is because God, if exists, is not an object among other objects or a force among other forces. It's something very different and external to the observable world. Is it then reasonable to think that God exists? Are there some reasons or arguments for God's existence? (These arguments can be classified into historical, cosmological, psychological ... But here I am more interested to find the ones that I can understand and that make most sense to me.)
 
-# Historicity of Jesus
+# Jesus
 
-https://en.wikipedia.org/wiki/Lewis%27s_trilemma
+[Lewis's trilemma](https://en.wikipedia.org/wiki/Lewis%27s_trilemma) (Lunatic, Liar, or Lord): "I am trying here to prevent anyone saying the really foolish thing that people often say about Him: I'm ready to accept Jesus as a great moral teacher, but I don't accept his claim to be God. That is the one thing we must not say. A man who was merely a man and said the sort of things Jesus said would not be a great moral teacher. He would either be a lunatic — on the level with the man who says he is a poached egg — or else he would be the Devil of Hell. You must make your choice. Either this man was, and is, the Son of God, or else a madman or something worse. You can shut him up for a fool, you can spit at him and kill him as a demon or you can fall at his feet and call him Lord and God, but let us not come with any patronizing nonsense about his being a great human teacher. He has not left that open to us. He did not intend to. ... Now it seems to me obvious that He was neither a lunatic nor a fiend: and consequently, however strange or terrifying or unlikely it may seem, I have to accept the view that He was and is God."
 
-If God is unreal, Jesus was history's biggest fool or fake. -- Peter Kreeft: A Shorter Summa (1993)
+"If God is unreal, Jesus was history's biggest fool or fake." -- Peter Kreeft: A Shorter Summa (1993)
+
+## But did he exist?
 
 "Virtually all scholars of antiquity agree that Jesus existed." -- [Wikipedia](https://en.wikipedia.org/wiki/Historicity_of_Jesus)
 
-Robert M. Price (a Christian atheist) who denies the existence of Jesus agrees that this perspective runs against the views of the majority of scholars. -- [Wikipedia](https://en.wikipedia.org/wiki/Historicity_of_Jesus)
+"Robert M. Price (a Christian atheist) who denies the existence of Jesus agrees that this perspective runs against the views of the majority of scholars." -- [Wikipedia](https://en.wikipedia.org/wiki/Historicity_of_Jesus)
 
 Michael Grant, a classicist, states: "In recent years, 'no serious scholar has ventured to postulate the non historicity of Jesus,' or at any rate very few, and they have not succeeded in disposing of the much stronger, indeed very abundant, evidence to the contrary." -- [Jesus](https://books.google.sk/books?id=zVUxICZlgYIC&redir_esc=y) (2004)
 
@@ -20,16 +24,7 @@ More
 * A. Wall: [Comparing Religions V: Historical Accounts](http://www.wall.org/~aron/blog/comparing-religions-v-historical-accounts/)
 * A. Wall: [Comparing Religions VI: Early Sources](http://www.wall.org/~aron/blog/comparing-religions-vi-early-sources/)
 
-# Historicity of the Bible
-
-Jesus in the Gospels often quotes the Old testament obviously considering it true.
-
-More
-
-* Brant Pitre (Christian): The Case for Jesus: The Biblical and Historical Evidence for Christ (2016)
-* A. Wall: [Some comments on Biblical History](http://www.wall.org/~aron/blog/some-comments-on-biblical-history/)
-
-# Notes on the study of history
+## Notes on the study of history
 
 Sources of evidence
 
@@ -42,6 +37,15 @@ Sources of evidence
 Heck, cosmology is a more rigorous subject than archaeology, and there, until recently, we had this problem where many galaxies seemed to be older than the universe. -- [A. Wall](http://www.wall.org/~aron/blog/some-comments-on-biblical-history/)
 
 Bart Ehrman: "Serious historians of the early Christian movement—all of them—have spent many years preparing to be experts in their field. Just to read the ancient sources requires expertise in a range of ancient languages: Greek, Hebrew, Latin, and often Aramaic, Syriac, and Coptic, not to mention the modern languages of scholarship (for example, German and French). And that is just for starters. Expertise requires years of patiently examining ancient texts and a thorough grounding in the history and culture of Greek and Roman antiquity, the religions of the ancient Mediterranean world, both pagan and Jewish, knowledge of the history of the Christian church and the development of its social life and theology, and, well, lots of other things. It is striking that virtually everyone who has spent all the years needed to attain these qualifications is convinced that Jesus of Nazareth was a real historical figure." --  [Did Jesus Exist?](https://www.amazon.com/Did-Jesus-Exist-Historical-Argument/dp/0062206443) (2012), p. 4 - 5
+
+# Bible
+
+Jesus in the Gospels often quotes the Old testament obviously considering it true.
+
+More
+
+* Brant Pitre (Christian): The Case for Jesus: The Biblical and Historical Evidence for Christ (2016)
+* A. Wall: [Some comments on Biblical History](http://www.wall.org/~aron/blog/some-comments-on-biblical-history/)
 
 # Philosophical arguments
 
@@ -93,7 +97,7 @@ and many more.
 # More
 
 * Peter Kreeft: A Shorter Summa (extremely brief summary of 24 arguments for God's existence)
-* http://www.wall.org/~aron/blog/will-the-real-god-god-please-stand-up/
+* <http://www.wall.org/~aron/blog/will-the-real-god-god-please-stand-up/>
 * Can religion be based on [evidence](http://www.wall.org/~aron/evidence.htm)?
-* https://www.reasonablefaith.org/media/debates/is-faith-in-god-reasonable/
+* <https://www.reasonablefaith.org/media/debates/is-faith-in-god-reasonable/>
 * [Is Faith in God Reasonable? Lane Craig vs Alex Rosenberg](https://www.youtube.com/watch?v=bhfkhq-CM84)
