@@ -5,7 +5,9 @@
 5. You want to end up with 5 topics under each of the 5 chapters.
 6. Create super-simple slides. One slide == one message. Slides != handouts.
 
-NOTE: you are going to need 10-20 hours of preparation for an hour of talk.
+NOTE
+* if you can't come up with at least 50 sub-topics you shouldn't give a talk
+* you are going to need 10-20 hours of preparation for an hour of talk
 
 Source
 
