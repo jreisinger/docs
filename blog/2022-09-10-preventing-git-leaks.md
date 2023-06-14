@@ -1,5 +1,7 @@
 ![](https://user-images.githubusercontent.com/1047259/233588004-d2feae9d-5962-462a-bc6f-6d426ab8f026.png)
 
+NOTE: don't commit secrets even when the repo is private. The files or their contents get copied and the platforms holding the repos get [compromised](https://www.darkreading.com/application-security/github-private-rsa-ssh-key-mistakenly-exposed-public-repository).
+
 I keep most of my code and prose on GitHub in public repos. I do it because I get reliable storage for free that I can access from any computer. And it might be helpful to others. Also it engages my [hubris](https://thethreevirtues.com/) :-). It's working nicely but sometimes I get a bad feeling when I push stuff. I'm worried that I might leak some sensitive information like passwords, API keys or tokens. The obvious solution is to think twice before committing and pushing data.
 
 ## New commits
