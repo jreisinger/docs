@@ -66,3 +66,16 @@ After you are done, you might want to remove the temporary repos:
 ```sh
 rm -rf /tmp/$GHORG
 ```
+
+## Gitleaks cheatsheet
+
+```
+# show secrets I'm about to commit (use --staged in pre-commit hook)
+gitleaks protect -v
+
+# show secrets that have been committed in the past
+gitleaks detect -v
+
+# show secrets in files no matter whether they are tracked by git
+gitleaks detect --no-git -v
+```
