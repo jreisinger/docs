@@ -76,6 +76,6 @@ gitleaks protect -v
 # show secrets that have been committed in the past
 gitleaks detect -v
 
-# show secrets in files no matter whether they are tracked by git
+# show secrets no matter whether they are tracked by git
 gitleaks detect --no-git -v
 ```
