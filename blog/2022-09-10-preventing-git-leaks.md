@@ -1,5 +1,7 @@
 ![](https://user-images.githubusercontent.com/1047259/233588004-d2feae9d-5962-462a-bc6f-6d426ab8f026.png)
 
+NOTE: don't commit secrets even when the repo is private. The files or their contents get copied and the platforms holding the repos get [compromised](https://www.darkreading.com/application-security/github-private-rsa-ssh-key-mistakenly-exposed-public-repository).
+
 I keep most of my code and prose on GitHub in public repos. I do it because I get reliable storage for free that I can access from any computer. And it might be helpful to others. Also it engages my [hubris](https://thethreevirtues.com/) :-). It's working nicely but sometimes I get a bad feeling when I push stuff. I'm worried that I might leak some sensitive information like passwords, API keys or tokens. The obvious solution is to think twice before committing and pushing data.
 
 ## New commits
@@ -31,6 +33,8 @@ set -xe
 gitleaks protect --no-banner --staged
 ```
 
+If, for some good reason, you want to skip gitleaks when committing: `SKIP=gitleaks git commit -m "commit message"`
+
 ## Existing commits
 
 The steps above will prevent you from committing secrets from now on. But you should also check existing commits because you might have committed a secret in the past. You can either do it on each commit by adding these lines to `~/.git-global-hooks/pre-commit`:
@@ -61,4 +65,17 @@ After you are done, you might want to remove the temporary repos:
 
 ```sh
 rm -rf /tmp/$GHORG
+```
+
+## Gitleaks cheatsheet
+
+```
+# show secrets I'm about to commit (use --staged in pre-commit hook)
+gitleaks protect -v
+
+# show secrets that have been committed in the past
+gitleaks detect -v
+
+# show secrets no matter whether they are tracked by git
+gitleaks detect --no-git -v
 ```
