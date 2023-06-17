@@ -122,7 +122,7 @@ Permission boundaries (define the maximum permissions for a resource)
 # Federation
 
 * you can use an outside identity provider and manage only permissions via IAM
-* SAML (e.g. external AD, Google Gsuite, Okta), OpenID (e.g. Amazon, Facebook, Google)
+* SAML (e.g. external AD, [jumpcloud](https://support.jumpcloud.com/s/article/Single-Sign-On-SSO-With-AWS-SSO), Google Gsuite, Okta), OpenID (e.g. Amazon, Facebook, Google)
 * account scope or multiple accounts with AWS SSO (all accounts must be part of the same organization)
 * mobile app federation with AWS Cognito
 
