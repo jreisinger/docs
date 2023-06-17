@@ -119,6 +119,11 @@ Permission boundaries (define the maximum permissions for a resource)
 }
 ```
 
+# AWS IAM Identity Center
+
+* susccessor to AWS Single Sign-On
+* centrally manage workforce access to multiple AWS ccounts and applications
+
 # Federation
 
 * you can use an outside identity provider and manage only permissions via IAM
