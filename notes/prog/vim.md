@@ -1,22 +1,27 @@
 Common commands (prefix all these with `:`)
 
 ```
-set tabstop=4 shiftwidth=4 expandtab
-retab # apply tabs -> spaces
+# whitespace
+set list            # show whitespace characters
+set tabstop=4       # how many spaces a tab is worth
+set shiftwidth=4    # how many spaces an indentation is worth
+set expandtab       # use spaces
+set noexpandtab     # use tabs
+retab               # change tabs to spaces
+retab!              # change spaces to tabs
 
-syntax off
+# syntax
+syntax off                      # don't highlight
+setlocal spell spelllang=en_us  # spell checking in local buffer only
 
-# enable spell checking in local buffer only
-setlocal spell spelllang=en_us
+# buffers
+ls[!]           # list
+n <filename>    # add
+bn              # next
+bp              # previous
+b<num>          # switch
+bd[<num>]       # delete
 ```
-
-Buffers
-
-* list: `:ls[!]`
-* add: `:n <filename>`
-* delete: `:bd[<num>]`
-* switch: `:b<num>`
-* switch to previous: `<C-^>`
 
 [vim-go](https://github.com/fatih/vim-go/) plugin
 

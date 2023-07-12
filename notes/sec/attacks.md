@@ -1,12 +1,14 @@
-Public information about selected attacks on information systems.
-
-See also
+Public information about selected attacks on information systems. See also
 
 * https://www.hackmageddon.com/
 * https://github.com/ramimac/aws-customer-security-incidents
 * https://www.cisa.gov/known-exploited-vulnerabilities-catalog
 
 # 2023
+
+## 07 JumpCloud resets admin API keys amid ‘ongoing incident’
+
+https://www.bleepingcomputer.com/news/security/jumpcloud-resets-admin-api-keys-amid-ongoing-incident/
 
 ## 02 Hackers Claim They Breached T-Mobile More Than 100 Times in 2022 [SIM-swapping]
 

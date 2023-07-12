@@ -2,8 +2,14 @@ Reviewed: 2023-03-21
 
 * defines (repeatable) steps to build your program
 * used since 1976 to build programs on Unix
-* each possible operation (like `build`) is called a *target*
-* `PHONY` keeps `make` from getting confused if there's a directory with the same name as a target
+
+```
+install: test
+	go install
+
+test:
+	go test ./...
+```
 
 ```
 .DEFAULT_GOAL := build
@@ -26,3 +32,7 @@ run: build
 install: test
 	go install
 ```
+
+* target - each possible operation (like `build`)
+* [goals](https://www.gnu.org/software/make/manual/html_node/Goals.html) - targets that make should strive ultimately to update
+* `PHONY` - keeps make from getting confused if there's a directory with the same name as a target
