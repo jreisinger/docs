@@ -1,11 +1,7 @@
----
-date: 2023-07-10
----
+1. Don't do it. [^1]
+2. Keep it simple stupid. [^2]
+3. Delete it. [^3]
 
-1. Don't do it :-).[^1]
-2. Keep it simple stupid.
-3. It does one thing, well.
-4. A single person can fully understand it.
-5. Connect multiple such things, if needed.
-
-[^1]: Think why it's needed, who is going to use and maintain it.
+[^1]: Unless it's really, really, really needed.
+[^2]: So a single person can fully understand it.
+[^3]: If it doesn't feel right.
