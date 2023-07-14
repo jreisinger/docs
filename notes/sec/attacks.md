@@ -8,6 +8,8 @@ Public information about selected attacks on information systems. See also
 
 ## 07 JumpCloud resets admin API keys amid ‘ongoing incident’
 
+> sophisticated nation-state sponsored threat actor that gained unauthorized access to our systems to target a small and specific set of our customers -- JumpCloud report (https://news.ycombinator.com/item?id=36706216)
+
 https://www.bleepingcomputer.com/news/security/jumpcloud-resets-admin-api-keys-amid-ongoing-incident/
 
 ## 02 Hackers Claim They Breached T-Mobile More Than 100 Times in 2022 [SIM-swapping]
