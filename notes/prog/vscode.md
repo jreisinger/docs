@@ -10,6 +10,6 @@ Keyboard shortcuts (`Cmd` instead of `Ctrl` on MacOS)
 
 My settings file [location](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations):
 
-* MacOS: `ln -s <cloudstorage-path>/data/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json`
-* Linux: `ln -s <cloudstorage-path>/data/vscode/settings.json $HOME/.config/Code/User/settings.json`
+* MacOS: `ln -s <cloudstorage-path>/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json`
+* Linux: `ln -s <cloudstorage-path>/vscode/settings.json $HOME/.config/Code/User/settings.json`
 
