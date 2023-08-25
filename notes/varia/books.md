@@ -48,6 +48,7 @@ Programming
 Management :-)
 
 * Pirsig: Zen and the Art of Motorcycle Maintenance, 1974
+* Andy Weir: Hail Mary, 2021
 * Flannery O'Connor: Dobrého člověka těžko najdeš, 1955
 * C.S.Lewis: Vesmirna trilogia, 1938/1943/1945
 * Word on Fire Bible: The Gospels, 2020
