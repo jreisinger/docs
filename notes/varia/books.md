@@ -6,6 +6,7 @@ Some of the books that I read (at least partially). Roughly ordered by most rece
 
 Security
 
+* Security Chaos Engineering, 2023
 * Kubernetes Security, 2018
 * Securing DevOps, 2018
 * Practical Cloud Security, 2019
@@ -42,8 +43,11 @@ Programming
 * Skúsiš programovať? (The Beginner's Programming Handbook - In Basic & Machine Code), 1984
 * Skúsiš to s mikropočítačom? (The Beginner's Computer Handbook), 1983
 
-Management
+Management :-)
 
+* Pirsig: Zen and the Art of Motorcycle Maintenance, 1974
+* Flannery O'Connor: Dobrého člověka těžko najdeš, 1955
+* C.S.Lewis: Vesmirna trilogia, 1938/1943/1945
 * Word on Fire Bible: The Gospels, 2020
 * Five Proofs of the Existence of God, 2017
 * essentialism, 2014
