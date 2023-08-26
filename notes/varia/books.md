@@ -48,11 +48,16 @@ Programming
 Management :-)
 
 * Pirsig: Zen and the Art of Motorcycle Maintenance, 1974
+* John Eldredge: Divoký v srdci, 2005
+* Chesterton: Otrodoxie, 1908
 * Andy Weir: Hail Mary, 2021
-* Flannery O'Connor: Dobrého člověka těžko najdeš, 1955
-* C.S.Lewis: Vesmirna trilogia, 1938/1943/1945
+* Flannery O'Connorová: Dobrého člověka těžko najdeš, 1955
+* Barron: Arguing Religion, 2018
+* Tomáš Halík: Odpoledne Křesťanství, 2021
+* C.S. Lewis: Kozmická trilógia, 1938/1943/1945
 * Word on Fire Bible: The Gospels, 2020
 * Five Proofs of the Existence of God, 2017
+* C.S. Lewis: Hovory, 1952
 * essentialism, 2014
 * The Manager's Path, 2017
 * The Unicorn Project, 2019
