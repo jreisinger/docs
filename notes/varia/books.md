@@ -26,6 +26,7 @@ Sysadmin/SRE/DevOps
 
 Programming
 
+* The Power of Go: Tools, 2024
 * Learning Go (Boring Go :-), 2021
 * The Pragmatic Programmer, 2019
 * [The Go Programming Language](https://www.gopl.io/), 2016
