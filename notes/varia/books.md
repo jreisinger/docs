@@ -1,5 +1,3 @@
-<img src="/static/books.png" style="max-width:100%;height:auto">
-
 Some of the books that I read (at least partially). Roughly ordered by most recently read in each area.
 
 > Reading furnishes the mind only with materials of knowledge; it is thinking that makes what we read ours. -- John Locke
