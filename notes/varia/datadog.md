@@ -1,27 +1,23 @@
+Reviewed: 2023-09-22
+
 # Terminology and concepts
 
-Metrics, Traces and Logs
+Logs, metrics and Traces
 
-* when: all these data types contain creation timestamp
-* where: reserved tags (host, device, source, service, env, version) indicate where the data originated from
-* metrics -> **what** is happening (e.g. what is the latency, what is number of page views, what is the number of instances in an autoscaling deployment)
-* logs -> **why** is sth. happenning (e.g. why did a request fail, why did a user visit a page, why did a cluster autoscale)
-* traces -> **how** is sth. happenning (e.g. how are requests being processed)
+* logs:     WHY is sth. happenning (e.g. why did a request fail, why did a cluster autoscale)
+* metrics:  WHAT is happening (e.g. what is number of page views, what is the number of instances in an autoscaling deployment)
+* traces:   HOW is sth. happenning (e.g. how are requests being processed)
+* WHEN:     all these data types contain creation timestamp
+* WHERE:    reserved tags (host, device, source, service, env, version) indicate where the data originated from
 
 Logs
 
-* info from logs can be extracted in the form of attributes
+* info from logs can be extracted in the form of ATTRIBUTES
 * DD takes into account that not all ingested logs are of equal value
 * so log ingestion and indexing are decoupled
 * you can collect all logs and
-    * archive the ones you don't need (you can Rehydrate them as needed)
-    * index and manage the relevant ones
-
-All DD agent and apps configurations in Docker are done via:
-
-* environment variables
-* volumes
-* Docker labels
+  * archive the ones you don't need (you can Rehydrate them as needed)
+  * index and manage the relevant ones
 
 Integration types
 
@@ -32,21 +28,17 @@ Integration types
 
 Pipelines
 
-* ordered set of processors
-* applied to a filtered subset of ingested logs (after collection but before indexing so all logs are processed)
+* ordered set of PROCESSORS
+* applied to a filtered subset of ingested logs (after collection but before indexing so ALL logs are processed)
 * the resulting logs have a uniform structure with standard attribute names and normalized time/date
-
-Pipeline types
-
-1. OOTB intergration pipelines for common log sources
-2. custom pipelines for custom log sources
-
-Processor types
-
-* Grok Parser - extracts attributes from semi-structured text messages
-* Several remappers - remap source attributes to standard attributes
-* Category processor - enriches logs with attributes that categorize them
-* Lookup processor - defines mapping between a log attribute and a human readable value saved in an Enrichment Table or the processors mapping table
+* pipeline types
+  1. OOTB intergration pipelines for common log sources
+  2. custom pipelines for custom log sources
+* processor types
+  * Grok Parser - extracts attributes from semi-structured text messages
+  * Several remappers - remap source attributes to standard attributes
+  * Category processor - enriches logs with attributes that categorize them
+  * Lookup processor - defines mapping between a log attribute and a human readable value saved in an Enrichment Table or the processors mapping table
 
 Indexes
 
@@ -71,7 +63,7 @@ Attributes
 
 Tags
 
-* bind different data types to allow for correlation between metrics, traces, and logs
+* bind different data types to allow for correlation between logs, metrics and traces
 * let you observe aggregate datapoints across several hosts
 * DD recommends looking at containers, VMs, and cloud infra at the `service` level in aggregate (e.g. look at CPU usage across a collection of hosts that represent a service, rather than CPU usage for server A and B)
 
@@ -84,7 +76,7 @@ Log facets
 DD Events
 
 * records of notable changes relevant for managing and troubleshooting IT operations
-* e.g.: code deployments, service health, configuration changes, or monitoring alerts
+* e.g. code deployments, service health, configuration changes, or monitoring alerts
 
 Search query can contain
 
@@ -94,6 +86,12 @@ Search query can contain
 * see [search syntax](https://docs.datadoghq.com/logs/explorer/search_syntax) for more
 
 # Sending logs to DD
+
+NOTE: configuration for Docker DD agent and apps are all done via:
+
+* environment variables
+* volumes
+* Docker labels
 
 1) Install DD agent as Docker container:
 
@@ -134,9 +132,9 @@ JSON logs are parsed automatically and attibutes are extracted.
 
 Semi-structured (non-JSON) logs are parsed via Grok processor.
 
-## Searching logs
+# Searching logs
 
-All logs without docker_image tag:
+All logs without `docker_image` tag:
 
 ```
 -docker_image:*
