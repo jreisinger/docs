@@ -1,6 +1,13 @@
+Reviewed: 2023-09-25
+
 Some of the SW systems I (co-)built
 
-* [gokatas](https://github.com/jreisinger/gokatas) - Memorize and perfect your Go movements 🥋
+* aws-s3pub - find out which of your AWS buckets are public (Go; Empatica)
+* aws-dbinfo - info on resources from various AWS database services (Go; Empatica)
+* dd-awsinfo - information about Datadog integrations with AWS accounts (Go; Empatica)
+* [pocs](https://gihub.com/jreisinger/pocs) - proof of concepts and reinventig wheel (Go)
+* [tools](https://github.com/jreisinger/tools) - command line tools (Go)
+* [gokatas](https://github.com/jreisinger/gokatas) - nemorize and perfect your Go movements 🥋 (Go)
 * wafmanager - WebShield component (WIP), provision, deprovision, update WAF instances in Kubernetes (Go; PN)
 * [checkip](https://github.com/jreisinger/checkip) - find out information about an IP address  (Go)
 * docker-sec-auth-ws, docker-sec-grafana-ws-provision - Grafana with custom authn and provisioning (Bash -> Go; PN)
