@@ -17,8 +17,8 @@ func main() {
 	}
 }
 
-func getTLSVersion(addr string, insecureSkipVerify bool) (string, error) {
-	conn, err := tls.Dial("tcp", addr, &tls.Config{InsecureSkipVerify: insecureSkipVerify})
+func getTLSVersion(addr string) (string, error) {
+	conn, err := tls.Dial("tcp", addr, &tls.Config{InsecureSkipVerify: true})
 	if err != nil {
 		return "", err
 	}
