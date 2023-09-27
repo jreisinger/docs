@@ -8,7 +8,7 @@ import (
 
 func main() {
 	for _, addr := range os.Args[1:] {
-		ver, err := getTLSVersion(addr, *insecure)
+		ver, err := getTLSVersion(addr)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "tlsver: %v\n", err)
 			continue
