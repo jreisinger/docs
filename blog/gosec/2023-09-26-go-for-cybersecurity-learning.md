@@ -40,11 +40,11 @@ Let's have look. As usual we need two generic steps to solve this puzzle. First 
 
 TLS (Transport Layer Security), formerly known as SSL, is a protocol to encrypt, authenticate and check the integrity of data that is transferred over network. You can think of it as secure TCP. The nowadays omnipresent HTTPS is an extension of HTTP that uses TLS underneath. As you can see in the picture below in yellow, a TLS connection is initiated via TLS handshake (the blue stuff is the standard three-way TCP handshake).
 
-![TLS handshake](https://github.com/jreisinger/docs/blob/master/blog/gosec/tls-handshake.png)
+![TLS handshake](https://raw.githubusercontent.com/jreisinger/docs/master/blog/gosec/tls-handshake.png)
 
 One of the things negotiated during the handshake between the client and the server is the version of TLS to use. As usual, there are several TLS versions. TLS 1.3 is the latest version, that also happens to be the fastest and most secure. You should be using TLS 1.3.
 
-![TLS versions](https://github.com/jreisinger/docs/blob/master/blog/gosec/tls-versions.png)
+![TLS versions](https://raw.githubusercontent.com/jreisinger/docs/master/blog/gosec/tls-versions.png)
 
 ## What is TLS - learning by doing
 
