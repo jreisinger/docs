@@ -2,23 +2,25 @@
 
 I think cybersecurity practitioners should be able to program. If they do, they can understand computer technologies better and they can automate tasks by building tools. And this is something I want to demonstrate a bit in this post and the [next one](https://jreisinger.blogspot.com/2023/09/go-for-cybersecurity-tools.html).
 
+NOTE: You can read the this post also on [github](https://github.com/jreisinger/docs/blob/master/blog/gosec/2023-09-26-go-for-cybersecurity-learning.md).
+
 ## But why Go
 
 I think no one really doubts it's a good thing to be able to program. But why Go and not some other language, like Python? I think you should also learn Python and Bash and Javascript, if you can. Following are some qualities of Go I like.
 
-Simplicity. Einstein said "Everything should be made as simple as possible, but not simpler". That sounds right and Go is trying to follow this idea. You want simplicity because there's already enough technological (and organizational) chaos. You want simplicity because it's easier to understand and thus tends to have fewer bugs and it's easier to modify or extend.
+Simplicity. Einstein said "Everything should be made as simple as possible, but not simpler". Go (language and programs) follow this idea. You want simplicity because there's already enough technological (and organizational) complexity. Simpler systems are easier to understand and thus tends to have fewer bugs and are easier to modify.
 
-Security. Go is a relatively new language (version 1.0 was release in 2012) built with safety and security in mind. This is not true of languages created in the pre-Internet era (Python appeared in 1991 and C in 1972) that was more innocent. 
+Security. Go is a relatively new language (version 1.0 was released in 2012) built with safety and security in mind. This is not true of languages created in the pre-Internet era that was more innocent (Python appeared in 1991 and C in 1972). 
 
-Backward compatibility. Go maintainers [claim](https://go.dev/doc/go1compat) that "it is intended that programs written to the Go 1 specification will continue to compile and run correctly, unchanged, over the lifetime of that specification. ... The APIs [the standard packages] may grow, acquiring new packages and features, but not in a way that breaks existing Go 1 code." It basically means that you don't need to worry that the programs you write will stop working and you will need to investigate what to do to bring them back to life.
+Backward compatibility. Go maintainers [claim](https://go.dev/doc/go1compat) that "it is intended that programs written to the Go 1 specification will continue to compile and run correctly, unchanged, over the lifetime of that specification. ... The APIs [the standard library] may grow, acquiring new packages and features, but not in a way that breaks existing Go 1 code." It basically means that you don't need to worry that the programs you write will stop working and you will need to investigate what to do to bring them back to life.
 
 Future proof. I think Go has a future so it makes sense to invest into learning (or even mastering) it. Go was developed and it's maintained by very experienced and skilled people, like Rob Pike (of Plan 9 and UTF-8 fame), [Ken](https://github.com/ken) Thompson (Unix, B, grep), Russ Cox. Although it's an open source language, it's supported by Google that's not likely to run out of money in the foreseeable future. A lot of important software is already written in Go, like Kubernetes or Terraform. It has a first class support on all cloud providers and most of the Cloud Native Computing Foundation (CNCF) projects are written in Go.
 
-Typed, compiled, C-like language. If you are (as I was) familiar only with dynamic scripting languages like Python or Perl, Go will help you to really understand what are the large-scale systems languages like.
+Typed, compiled. If you are (as I was) familiar only with dynamic scripting languages like Python or Perl, Go will help you to really understand what are the large-scale systems languages like.
 
 Cross-compilation to a single binary. You can build your program to run on any supported computer (CPU) architecture and operating system. For example, if your are using a Mac and want to run your tool on a Linux based Raspberry Pi:
 
-```
+```sh
 $ GOOS=linux GOARCH=arm64 go build mytool.go
 $ scp ./mytool user@raspberry.net:
 $ ssh user@raspberry.net ./mytool
@@ -26,23 +28,23 @@ $ ssh user@raspberry.net ./mytool
 
 To list all supported platforms:
 
-```
+```sh
 $ go tool dist list
 ```
 
 ## TLS version
 
-You (or your boss :-) read [somewhere](https://www.cloudflare.com/en-gb/learning/ssl/why-use-tls-1.3/) that TLS 1.2 is not secure and fast enough. Everyone should be using TLS 1.3! Are we?
+Imagine you (or your boss :-) read [somewhere](https://www.cloudflare.com/en-gb/learning/ssl/why-use-tls-1.3/) that TLS 1.2 is not fast and secure enough. Everyone should be using TLS 1.3! Are we?
 
 Let's have look. As usual we need two generic steps to solve this puzzle. First of all we need to know what TLS is. Second of all we check what versions are we using for our services.
 
 ## What is TLS - learning by reading
 
-TLS (Transport Layer Security), formerly known as SSL, is a protocol to encrypt, authenticate and check the integrity of data that is transferred over network. You can think of it as secure TCP. The nowadays omnipresent HTTPS is an extension of HTTP that uses TLS underneath. As you can see in the picture below in yellow, a TLS connection is initiated via TLS handshake (the blue stuff is the standard three-way TCP handshake).
+TLS (Transport Layer Security), formerly known as SSL, is a protocol to encrypt, authenticate and check the integrity of data that is transferred over network. You can think of it as secure TCP. The nowadays omnipresent HTTPS is an extension of HTTP that uses TLS underneath. As you can see in yellow in the picture below, a TLS connection is initiated via TLS handshake. (The blue stuff is the standard three-way TCP handshake).
 
 ![TLS handshake](https://raw.githubusercontent.com/jreisinger/docs/master/blog/gosec/tls-handshake.png)
 
-One of the things negotiated during the handshake between the client and the server is the version of TLS to use. As usual, there are several TLS versions. TLS 1.3 is the latest version, that also happens to be the fastest and most secure. You should be using TLS 1.3.
+One of the things negotiated during the handshake between the client and the server is the version of TLS to use. There are several TLS versions. TLS 1.3 is the latest version, that also happens to be the fastest and most secure. You should be using TLS 1.3.
 
 ![TLS versions](https://raw.githubusercontent.com/jreisinger/docs/master/blog/gosec/tls-versions.png)
 
@@ -80,7 +82,7 @@ for {
 }
 ```
 
-The handle function is running in a goroutine which means the program doesn't block waiting for the function to return. In continues running the loop handling multiple connection concurrently.
+The handle function is running in a goroutine which means the program doesn't block waiting for the function to return. It continues running the loop handling multiple connection concurrently.
 
 The connection handling is really simple, we just copy back whatever we receive:
 
