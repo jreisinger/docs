@@ -1,10 +1,10 @@
 # Go for cybersecurity - tools
 
-After getting a basic idea of what TLS is in the [previous post](https://jreisinger.blogspot.com/2023/09/go-for-cybersecurity-learning.html), let's write a tool the will help us finding out the TLS version of a server. The first idea might be to range over the arguments that should be TCP addresses. For each address we'll get and print the TLS version.
+After getting a basic idea of what TLS is in the [previous post](https://jreisinger.blogspot.com/2023/09/go-for-cybersecurity-learning.html), let's write a tool the will help us finding out the TLS version of a server.
 
-NOTE: You can read the this post also on [github](https://github.com/jreisinger/docs/blob/master/blog/gosec/2023-09-27-go-for-cybersecurity-tools.md).
+NOTE: You can read this post also on [github](https://github.com/jreisinger/docs/blob/master/blog/gosec/2023-09-27-go-for-cybersecurity-tools.md).
 
-We might start with a pseudo-code like:
+The first idea might be to range over the arguments that should be TCP addresses. For each address we'll get and print the TLS version. We might start with a pseudo-code like:
 
 ```
 for all IP addresses supplied as CLI arguments:
