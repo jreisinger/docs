@@ -1,6 +1,6 @@
-# Go for cybersecurity tools
+# Go for cybersecurity - tools
 
-After getting a basic idea of what TLS is in the previous post, let's write a tool the will help us finding out the TLS version of a server. The first idea might be to range over the arguments that should be TCP addresses. For each address we'll get and print the TLS version.
+After getting a basic idea of what TLS is in the [previous post](https://jreisinger.blogspot.com/2023/09/go-for-cybersecurity-learning.html), let's write a tool the will help us finding out the TLS version of a server. The first idea might be to range over the arguments that should be TCP addresses. For each address we'll get and print the TLS version.
 
 We might start with a pseudo-code like:
 
@@ -56,9 +56,9 @@ $ go run tlsver.go example.com:443 example.net:443 wall.org:443
 
 As you can see, Larry is a bit behind :-).
 
-See the whole program at https://github.com/jreisinger/docs/blog/gosec/tlsver/1.
+See the whole program at [https://github.com/jreisinger/docs/blog/gosec/tlsver/1](https://github.com/jreisinger/docs/tree/master/blog/gosec/tlsver/1).
 
-## Adding concurrency
+# Adding concurrency
 
 The code above works fine. But imagine that we want to check the TLS version of a thousand hosts. Connecting to the hosts one after another might take some time. Concurrency means organizing the program in a way that multiple processes can execute independently. Even at the same time if you have multiple processors (which you most certainly do nowadays). Go has an excellent support for doing this.
 
@@ -140,7 +140,7 @@ TLS 1.2	linkedin.com:443
 <...SNIP...>
 ```
 
-See the whole program at https://github.com/jreisinger/docs/blog/gosec/tlsver/2.
+See the whole program at [https://github.com/jreisinger/docs/blog/gosec/tlsver/2](https://github.com/jreisinger/docs/tree/master/blog/gosec/tlsver/1).
 
 # Tips for designing programs
 
