@@ -8,10 +8,7 @@ import (
 )
 
 func main() {
-	insecure := flag.Bool("insecure", false, "don't verify server certificate")
-	flag.Parse()
-
-	for _, addr := range flag.Args() {
+	for _, addr := range os.Args[1:] {
 		ver, err := getTLSVersion(addr, *insecure)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "tlsver: %v\n", err)
