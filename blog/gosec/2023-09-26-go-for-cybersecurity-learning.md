@@ -1,7 +1,5 @@
 # Go for cybersecurity - learning
 
-([Source](https://github.com/jreisinger/docs/blob/master/blog/gosec/2023-09-26-go-for-cybersecurity-learning.md) of this post.)
-
 I think cybersecurity practitioners should be able to program. If they do, they can understand computer technologies better and they can automate tasks by building tools. And this is something I want to demonstrate a bit in this post and the [next one](https://jreisinger.blogspot.com/2023/09/go-for-cybersecurity-tools.html).
 
 ## But why Go
