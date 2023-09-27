@@ -216,3 +216,9 @@ client read: hello from client
 ```
 
 You can find the whole code at https://github.com/jreisinger/docs/tree/master/blog/gosec/tls.
+
+# More
+
+* https://eli.thegreenplace.net/2021/go-socket-servers-with-tls/
+* https://eli.thegreenplace.net/2021/go-https-servers-with-tls/
+* https://github.com/lizrice/secure-connections
