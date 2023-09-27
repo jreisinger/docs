@@ -2,6 +2,8 @@
 
 After getting a basic idea of what TLS is in the [previous post](https://jreisinger.blogspot.com/2023/09/go-for-cybersecurity-learning.html), let's write a tool the will help us finding out the TLS version of a server. The first idea might be to range over the arguments that should be TCP addresses. For each address we'll get and print the TLS version.
 
+NOTE: You can read the this post also on [github](https://github.com/jreisinger/docs/blob/master/blog/gosec/2023-09-27-go-for-cybersecurity-tools.md).
+
 We might start with a pseudo-code like:
 
 ```
@@ -48,10 +50,10 @@ func getTLSVersion(addr string) (string, error) {
 Let's run the program (saved under filename `tlsver.go`):
 
 ```sh
-$ go run tlsver.go example.com:443 example.net:443 wall.org:443
-1.3	example.com:443
-1.3	example.net:443
-1.2	wall.org:443
+$ go run tlsver/1/tlsver.go example.com:443 example.net:443 wall.org:443
+TLS 1.3	example.com:443
+TLS 1.3	example.net:443
+TLS 1.2	wall.org:443
 ```
 
 As you can see, Larry is a bit behind :-).
@@ -62,7 +64,7 @@ See the whole program at [https://github.com/jreisinger/docs/blog/gosec/tlsver/1
 
 The code above works fine. But imagine that we want to check the TLS version of a thousand hosts. Connecting to the hosts one after another might take some time. Concurrency means organizing the program in a way that multiple processes can execute independently. Even at the same time if you have multiple processors (which you most certainly do nowadays). Go has an excellent support for doing this.
 
-Basically we want to run the getTLSVersion function and forget about. Then run the next one and forget about it. And so on. Obviously we need to feed some input (function parameters) into the function and collect its output (return values). We use `in` and `out` channels for this. The channels are like typed shell pipes (`$ ls | wc -l`). The type in our case is `host` - it holds all the necessary input and output data. When we fire up goroutines we usually don't want to allow for an unlimited number of them because we might exhaust computing resources (like open sockets or file descriptors). So we run only 30 goroutines. We also want to know when the goroutines are done. For this we use the `WaitGroup`, which is kind of a concurrency-safe counter.
+Basically we want to run the getTLSVersion function and forget about. Then run the next one and forget about it (like when you background a shell command with `&`). And so on. Obviously we need to feed some input (function parameters) into the function and collect its output (return values). We use `in` and `out` channels for this. The channels are like typed shell pipes (`$ ls | wc -l`). The type in our case is `host` - it holds all the necessary information. When we fire up goroutines we usually don't want to allow for an unlimited number of them because we might exhaust computing resources (like open sockets or file descriptors). So we run only 30 goroutines. We also want to know when the goroutines are done. For this we use the `WaitGroup`, which is kind of a concurrency-safe counter.
 
 ```go
 type host struct {
@@ -126,21 +128,15 @@ for h := range out {
 Now we can quickly check many hosts:
 
 ```sh
+$ go install tlsver/2/tlsver.go
 $ cat ~/Downloads/top1000domains.txt | tlsver -insecure -concurrency 10
 TLS 1.3	facebook.com:443
 TLS 1.3	youtube.com:443
-TLS 1.3	google.co.in:443
-TLS 1.3	twitter.com:443
-TLS 1.2	live.com:443
-TLS 1.3	wikipedia.org:443
 TLS 1.2	bing.com:443
-TLS 1.2	amazon.com:443
-TLS 1.2	msn.com:443
-TLS 1.2	linkedin.com:443
 <...SNIP...>
 ```
 
-See the whole program at [https://github.com/jreisinger/docs/blog/gosec/tlsver/2](https://github.com/jreisinger/docs/tree/master/blog/gosec/tlsver/1).
+See the whole program at [https://github.com/jreisinger/docs/blog/gosec/tlsver/2](https://github.com/jreisinger/docs/tree/master/blog/gosec/tlsver/2).
 
 # Tips for designing programs
 
