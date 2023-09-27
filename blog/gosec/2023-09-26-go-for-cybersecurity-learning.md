@@ -1,8 +1,10 @@
-# Go for cybersecurity learning
+# Go for cybersecurity - learning
 
-I think cybersecurity practitioners should be able to program. If they do, they can understand computer technologies better and they can automate tasks by building tools. And this is something I want to demonstrate a bit in this post and the next one.
+([Source](https://github.com/jreisinger/docs/edit/master/blog/gosec/2023-09-26-go-for-cybersecurity-learning.md) of this post.)
 
-# But why Go
+I think cybersecurity practitioners should be able to program. If they do, they can understand computer technologies better and they can automate tasks by building tools. And this is something I want to demonstrate a bit in this post and the [next one](https://jreisinger.blogspot.com/2023/09/go-for-cybersecurity-tools.html).
+
+## But why Go
 
 I think no one really doubts it's a good thing to be able to program. But why Go and not some other language, like Python? I think you should also learn Python and Bash and Javascript, if you can. Following are some qualities of Go I like.
 
@@ -30,7 +32,7 @@ To list all supported platforms:
 $ go tool dist list
 ```
 
-# TLS version
+## TLS version
 
 You (or your boss :-) read [somewhere](https://www.cloudflare.com/en-gb/learning/ssl/why-use-tls-1.3/) that TLS 1.2 is not secure and fast enough. Everyone should be using TLS 1.3! Are we?
 
@@ -133,7 +135,7 @@ $ go run tcp/client/main.go
 client read: Hello from client.
 ```
 
-You can find the code in https://github.com/jreisinger/docs/blog/gosec/tcp.
+You can find the whole code at https://github.com/jreisinger/docs/tree/master/blog/gosec/tcp.
 
 ### TLS
 
@@ -212,3 +214,5 @@ defer conn.Close()
 $ go run tls/client/main.go -cert localhost.pem
 client read: hello from client
 ```
+
+You can find the whole code at https://github.com/jreisinger/docs/tree/master/blog/gosec/tls.
