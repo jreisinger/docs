@@ -148,8 +148,3 @@ Keep it simple. Don't design in extra complexity until it is really needed.
 
 Solve one problem at a time, don't be overwhelmed by everything.
 
-# More
-
-* https://eli.thegreenplace.net/2021/go-socket-servers-with-tls/
-* https://eli.thegreenplace.net/2021/go-https-servers-with-tls/
-* https://github.com/lizrice/secure-connections
