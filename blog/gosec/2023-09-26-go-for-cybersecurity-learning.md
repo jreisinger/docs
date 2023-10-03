@@ -8,7 +8,7 @@ NOTE: You can read this post also on [github](https://github.com/jreisinger/docs
 
 I think no one really doubts it's a good thing to be able to program. But why Go and not some other language, like Python? I think you should also learn Python and Bash and Javascript, if you can. Following are some qualities of Go I like.
 
-Simplicity. Einstein said "Everything should be made as simple as possible, but not simpler". Go (language and programs) follow this idea. You want simplicity because there's already enough technological (and organizational) complexity. Simpler systems are easier to understand and thus tends to have fewer bugs and are easier to modify.
+Simplicity. Einstein said "Everything should be made as simple as possible, but not simpler". Go language and programs follow this idea. You want simplicity because there's already enough technological (and organizational) complexity. Simpler systems are easier to understand and thus tend to have fewer bugs and are easier to modify.
 
 Security. Go is a relatively new language (version 1.0 was released in 2012) built with safety and security in mind. This is not true of languages created in the pre-Internet era that was more innocent (Python appeared in 1991 and C in 1972). 
 
@@ -16,9 +16,9 @@ Backward compatibility. Go maintainers [claim](https://go.dev/doc/go1compat) tha
 
 Future proof. I think Go has a future so it makes sense to invest into learning (or even mastering) it. Go was developed and it's maintained by very experienced and skilled people, like Rob Pike (of Plan 9 and UTF-8 fame), [Ken](https://github.com/ken) Thompson (Unix, B, grep), Russ Cox. Although it's an open source language, it's supported by Google that's not likely to run out of money in the foreseeable future. A lot of important software is already written in Go, like Kubernetes or Terraform. It has a first class support on all cloud providers and most of the Cloud Native Computing Foundation (CNCF) projects are written in Go.
 
-Typed, compiled. If you are (as I was) familiar only with dynamic scripting languages like Python or Perl, Go will help you to really understand what are the large-scale systems languages like.
+Typed, compiled. If you are (as I used to be) familiar only with dynamic scripting languages like Python or Perl, Go will help you to really understand what are the large-scale systems languages like.
 
-Cross-compilation to a single binary. You can build your program to run on any supported computer (CPU) architecture and operating system. For example, if your are using a Mac and want to run your tool on a Linux based Raspberry Pi:
+Cross-compilation to a single binary. You can build your program to run on any supported computer (CPU) architecture and operating system. For example, if you are using a Mac and want to run your tool on a Linux based Raspberry Pi:
 
 ```sh
 $ GOOS=linux GOARCH=arm64 go build mytool.go
