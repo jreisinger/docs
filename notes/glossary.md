@@ -294,3 +294,10 @@ Exclusive or expression in Python:
 Example of exclusive or in English: "You can have pizza or chicken" - you probably
 don't mean you can have both.
 
+Exclusive disjunction is often used for bitwise operations. Examples:
+
+    1 XOR 1 = 0
+    1 XOR 0 = 1
+    0 XOR 1 = 1
+    0 XOR 0 = 0
+
