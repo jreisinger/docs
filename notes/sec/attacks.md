@@ -6,6 +6,12 @@ Public information about selected attacks on information systems. See also
 
 # 2023
 
+## 10 HTTP/2 zero-day vulnerability results in record-breaking DDoS attacks
+
+https://blog.cloudflare.com/zero-day-rapid-reset-http2-record-breaking-ddos-attack/
+
+- That's why https://scratch.mit.edu/ has been returning "Error 429 Too many requests" for couple of days? And Matu can't program? 
+
 ## 07 JumpCloud resets admin API keys amid ‘ongoing incident’
 
 > sophisticated nation-state sponsored threat actor that gained unauthorized access to our systems to target a small and specific set of our customers -- JumpCloud report (https://news.ycombinator.com/item?id=36706216)
