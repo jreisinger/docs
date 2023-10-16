@@ -1,6 +1,6 @@
 # Go for cybersecurity - learning
 
-I think cybersecurity practitioners should be able to program. If they do, they can understand computer technologies better and they can automate tasks by building tools. And this is something I want to demonstrate a bit in this post and the [next one](https://jreisinger.blogspot.com/2023/09/go-for-cybersecurity-tools.html).
+I think cybersecurity practitioners should be able to program. If they do, they can understand computer technologies better and they can automate tasks by building tools. This is something I want to demonstrate a bit in this post and the [next one](https://jreisinger.blogspot.com/2023/09/go-for-cybersecurity-tools.html).
 
 NOTE: You can read this post also on [github](https://github.com/jreisinger/docs/blob/master/blog/gosec/2023-09-26-go-for-cybersecurity-learning.md).
 
@@ -10,11 +10,11 @@ I think no one really doubts it's a good thing to be able to program. But why Go
 
 Simplicity. Einstein said "Everything should be made as simple as possible, but not simpler". Go language and programs follow this idea. You want simplicity because there's already enough technological (and organizational) complexity. Simpler systems are easier to understand and thus tend to have fewer bugs and are easier to modify.
 
-Security. Go is a relatively new language (version 1.0 was released in 2012) built with safety and security in mind. This is not true of languages created in the pre-Internet era that was more innocent (Python appeared in 1991 and C in 1972). 
+Security. Go is a relatively new language (version 1.0 was released in 2012) built with safety and security in mind. This is not true of languages created in the pre-Internet era that was more innocent (Python appeared in 1991, C in 1972). 
 
-Backward compatibility. Go maintainers [claim](https://go.dev/doc/go1compat) that "it is intended that programs written to the Go 1 specification will continue to compile and run correctly, unchanged, over the lifetime of that specification. ... The APIs [the standard library] may grow, acquiring new packages and features, but not in a way that breaks existing Go 1 code." It basically means that you don't need to worry that the programs you write will stop working and you will need to investigate what to do to bring them back to life.
+Backward compatibility. Go maintainers [intend](https://go.dev/doc/go1compat) that "programs written to the Go 1 specification will continue to compile and run correctly, unchanged, over the lifetime of that specification. ... The APIs [the standard library] may grow, acquiring new packages and features, but not in a way that breaks existing Go 1 code." It basically means that you don't need to worry that the programs you write will stop working and you will need to investigate what to do to bring them back to life.
 
-Future proof. I think Go has a future so it makes sense to invest into learning (or even mastering) it. Go was developed and it's maintained by very experienced and skilled people, like Rob Pike (of Plan 9 and UTF-8 fame), [Ken](https://github.com/ken) Thompson (Unix, B, grep), Russ Cox. Although it's an open source language, it's supported by Google that's not likely to run out of money in the foreseeable future. A lot of important software is already written in Go, like Kubernetes or Terraform. It has a first class support on all cloud providers and most of the Cloud Native Computing Foundation (CNCF) projects are written in Go.
+Future proof. I think Go has a future so it makes sense to invest into learning (or even mastering) it. Go was created and it's maintained by very experienced and skilled people, like Rob Pike (of Plan 9 and UTF-8 fame), [Ken](https://github.com/ken) Thompson (Unix, B, grep), Russ Cox. It's an open source language and it's used and supported by Google that's not likely to run out of money in the foreseeable future. Many other big companies companies, like Cloudflare or PayPal, are using Go internally. A lot of important open source software is written in Go, like Kubernetes or Terraform. It has a first class support on all cloud providers and most of the Cloud Native Computing Foundation (CNCF) projects are written in Go.
 
 Typed, compiled. If you are (as I used to be) familiar only with dynamic scripting languages like Python or Perl, Go will help you to really understand what are the large-scale systems languages like.
 
@@ -40,7 +40,7 @@ Let's have look. As usual we need two generic steps to solve this puzzle. First 
 
 ## What is TLS - learning by reading
 
-TLS (Transport Layer Security), formerly known as SSL, is a protocol to encrypt, authenticate and check the integrity of data that is transferred over network. You can think of it as secure TCP. The nowadays omnipresent HTTPS is an extension of HTTP that uses TLS underneath. As you can see in yellow in the picture below, a TLS connection is initiated via TLS handshake. (The blue stuff is the standard three-way TCP handshake).
+TLS (Transport Layer Security), formerly known as SSL, is a protocol to encrypt, authenticate and check the integrity of data that is transferred over network. You can think of it as secure TCP. The nowadays omnipresent HTTPS is an extension of HTTP that uses TLS underneath. As you can see in the picture below in yellow, a TLS connection is initiated via TLS handshake. (The blue stuff is the standard three-way TCP handshake).
 
 ![TLS handshake](https://raw.githubusercontent.com/jreisinger/docs/master/blog/gosec/tls-handshake.png)
 
@@ -82,9 +82,9 @@ for {
 }
 ```
 
-The handle function is running in a goroutine which means the program doesn't block waiting for the function to return. It continues running the loop handling multiple connection concurrently.
+The handle function is running in a goroutine which means the program doesn't block waiting for the function to return. It continues running the loop handling multiple connections concurrently.
 
-The connection handling is really simple, we just copy back whatever we receive:
+The connection handling in this case is really simple, we just copy back whatever we receive:
 
 ```go
 func handle(conn net.Conn) {
@@ -95,7 +95,7 @@ func handle(conn net.Conn) {
 
 The **client** code has also three parts: connecting, writing and reading.
 
-First we need to connect to an address of a TCP server:
+First we need to connect to the address of a TCP server:
 
 ```go
 conn, err := net.Dial("tcp", "localhost:8000")
@@ -130,12 +130,12 @@ Now let's run the server and client:
 ```sh
 $ go run tcp/server/echo.go
 
-# from another terminal tab/window
+# from another terminal
 $ go run tcp/client/main.go
 client read: Hello from client.
 ```
 
-You can find the whole code at https://github.com/jreisinger/docs/tree/master/blog/gosec/tcp.
+You can find the whole code [here](https://github.com/jreisinger/docs/tree/master/blog/gosec/tcp).
 
 ### TLS
 
@@ -151,7 +151,7 @@ if err != nil {
 defer ln.Close()
 ```
 
-Ok, we need some configuration for TLS to work. What's that? TLS works by using public key cryptography. The TLS server needs a private key to encrypt and sign data and a certificate to authenticate to the client:
+Ok, we need some configuration for TLS to work. What's that? TLS uses public key cryptography. The TLS server needs a private key to encrypt and sign data and a certificate to authenticate to the client:
 
 ```go
 certFile := flag.String("cert", "cert.pem", "certificate file")
@@ -215,10 +215,10 @@ $ go run tls/client/main.go -cert localhost.pem
 client read: hello from client
 ```
 
-You can find the whole code at https://github.com/jreisinger/docs/tree/master/blog/gosec/tls.
+You can find the whole code [here](https://github.com/jreisinger/docs/tree/master/blog/gosec/tls).
 
 # More
 
-* https://eli.thegreenplace.net/2021/go-socket-servers-with-tls/
-* https://eli.thegreenplace.net/2021/go-https-servers-with-tls/
-* https://github.com/lizrice/secure-connections
+* [Go socket servers with TLS](https://eli.thegreenplace.net/2021/go-socket-servers-with-tls/)
+* [Go HTTP servers with TLS](https://eli.thegreenplace.net/2021/go-https-servers-with-tls/)
+* [Secure connections](https://github.com/lizrice/secure-connections)
