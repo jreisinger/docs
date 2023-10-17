@@ -64,7 +64,7 @@ type
     MX     Mail Exchanger (Controls email routing)
     DNSKEY Public Key (Public key for a DNS name - used for DNSSEC)
     CAA    Certification Authority Authorization
-    SPF    Sender Policy (Identifies mail servers, inhibits forging)
+    SPF    Sender Policy Framework (Identifies mail servers, inhibits forging)
     DKIM   DomainKeys Identified Mail (Signature system for email - verify sender and message integrity)
     CNAME  Canonical Name (Nicknames or aliases for a host)
     SRV    Services (Gives locations of well-known services)
