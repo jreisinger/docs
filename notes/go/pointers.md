@@ -95,11 +95,11 @@ p := person{
 }
 ```
 
-## Pointer and non-pointer types
+## Reference and non-reference types
 
-Types implemented with pointers: slices, maps, functions, channels, interfaces
+Types implemented with references: pointers, slices, maps, functions, channels, interfaces
 
-Non-pointer types: primitives (numbers, booleans and strings), structs, arrays
+Non-reference types: primitives (numbers, booleans and strings), structs, arrays
 
 ## Method receivers
 
