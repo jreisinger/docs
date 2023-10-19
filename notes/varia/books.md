@@ -46,9 +46,12 @@ Programming
 
 Management :-)
 
+* Tom Rudelius: Chasing Proof, Finding Faith, 2023
+* Joseph Ratzinger: Uvod do krestanstva, 1968/2000
 * Pirsig: Zen and the Art of Motorcycle Maintenance, 1974
 * John Eldredge: Divoký v srdci, 2005
-* Chesterton: Otrodoxie, 1908
+* Schmitz, Fr. Mike: Pocket Guide to the Sacrament of Reconciliation, 2020
+* Chesterton: Ortodoxie, 1908
 * Andy Weir: Hail Mary, 2021
 * Flannery O'Connorová: Dobrého člověka těžko najdeš, 1955
 * Barron: Arguing Religion, 2018
