@@ -6,6 +6,14 @@ Public information about selected attacks on information systems. See also
 
 # 2023
 
+## 10 Yet another Okta compromise
+
+https://blog.cloudflare.com/how-cloudflare-mitigated-yet-another-okta-compromise/
+
+- Cloudflare gives recommendations for Okta and its customers :-)
+
+"Okta’s shares fell 11.5% after they reported that someone got into their support system using stolen credentials and accessed client files that included valid Okta session tokens. Customer BeyondTrust said they saw the attack happen on October 2nd when someone tried to use a token to create a super-admin account." -- Daniel Miessler: UL NO. 404
+
 ## 10 HTTP/2 zero-day vulnerability results in record-breaking DDoS attacks
 
 https://blog.cloudflare.com/zero-day-rapid-reset-http2-record-breaking-ddos-attack/
