@@ -96,3 +96,116 @@ HMAC-SHA512
 
 - plenty of instances to have no authn at all
 - if API does not handle sensitive data and provides public info only
+
+# Common vulnerabilities
+
+## Information disclosure
+
+- useful to start gaining access to an API
+- API responses
+- public sources like: code repos, search results, news, social media, target's website, and public API directories
+- unknowingly sharing all users' info
+- verbose messaging like: "user does not exist", "incorrect password"
+- tech stack components vendors and versions
+
+## Broken object level authorization (BOLA)
+
+- consumer can access resources that they shouldn't, e.g. 
+```
+GET /api/resouce/**1**
+GET /users/account/find?user_id=**15**
+POST /company/account/**Apple**/balance
+POST /admin/pwreset/account/**90**
+```
+
+## Broken user authentication
+
+Missing or incorrect implementation of
+- user registration and password reset
+- token generation (low randomness)
+- token handling (hardcoded tokens)
+- access to resources w/o authn
+
+## Excessive data exposure
+
+- API endpoint reports more info than needed
+- this vulnerability bypasses every security control :-)
+
+## Lack of resources and rate limiting
+
+- lead to DoS
+- many API providers monetize their APIs via rate limiting
+
+Test
+1. rate limiting works (HTTP 429)
+2. is enforced
+
+## Broken function level authorization (BFLA)
+
+- user of one role or group can access API functionality of another role or group
+- similar to BOLA but about actions instead of resources
+
+Test
+1. find administrative API docs (or discover endpoints)
+2. send requests for admin functionality as non-admin
+
+## Mass assignment
+
+- occurs when more parameters are allowed than needed
+```
+{
+"User": "John",
+"Password": "secr3t",
+"isAdmin": true <---
+}
+```
+
+Test
+1. find interesting parameters is docs
+2. add them to a request (you can do fuzzing)
+
+## Security misconfigurations
+
+- lack of input sanitization -> upload of malicious payloads to the server
+- API provider sends headers with instructions that might be misused, e.g.:
+```
+X-Powered-By: VulnService 1.11  <-- search for exploits
+X-XSS-Protection: 0             <-- mount XSS attack
+X-Response-Time: 566.43         <-- time requests
+```
+- no HTTPS used <- MITM attack
+- unnecessary methods used <- bigger attack surface
+
+Tools: Nessus, Qualys, OWASP ZAP, Nikto
+
+## Injections
+
+- no input sanitization
+- if you get response directly from DB -> [No]SQL injection vulnerability (`"' OR 1=0--"`)
+
+## Improper assets management
+
+- exposing APIs that are retired or still in development -> bigger attack surface
+
+Tests
+- check changelogs, repo version history
+- search for /v1/, /v2/, /v3/, ...
+- search for /alpha/, /beta/, /test/, /uat/, /demo/, ...
+- guessing, fuzzing, or bruteforcing requests
+
+## Business logic vulnerabilities
+
+- intended features that attackers can use maliciously
+- come from an assumption that 
+    - consumers will follow directions 
+    - will use API only in certain way
+    - wiil only use browser (not Burp or Postman :-) to interact with the wep app
+
+Check API docs for
+- "Only use feature X to perform function Y."
+- "Do not do X with endpoint Y."
+- "Only admins should perform request X."
+
+---
+
+Source: Hacking APIs (2022)
