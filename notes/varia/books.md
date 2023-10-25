@@ -14,7 +14,7 @@ Sysadmin/SRE/DevOps
 * Certified Kubernetes Administrator (CKA) Study Guide, 2022
 * Cloud Native Go, 2021
 * Cloud Native DevOps with Kubernetes, 2019
-* Unix and Linux System Administration Handbook (ULSAH) 5th edition, 2017
+* Unix and Linux System Administration Handbook ([ULSAH](https://admin.com/)) 5th edition, 2017
 * The Practice of Cloud System Administration (PoCSA), 2014
 * How Linux Works, 2014
 * Implementing Splunk, 2015
