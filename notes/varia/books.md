@@ -4,6 +4,7 @@ Some of the books that I read (at least partially). Roughly ordered by most rece
 
 Security
 
+* Navigating the Cybersecurity Career Path, 2022
 * Security Chaos Engineering, 2023
 * Kubernetes Security, 2018
 * Securing DevOps, 2018
