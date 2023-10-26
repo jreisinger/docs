@@ -1,5 +1,20 @@
 The most important property of a program is whether is accomplishes the intention of its user. -- C.A.R. Hoare (1969)
 
+## Computer programming as an art (Knuth, 1974)
+
+Senses in which a program can be "good":
+
+1. it works correctly
+2. it's easy to change
+3. it interacts gracefully with users
+4. it uses computer's resources efficiently
+
+Both 1. and 2. are achieved when the program is easy to read and understand by a person who knows the appropriate language.
+
+Ad 4. - but premature optimization is the root of all evil!
+
+[source](https://dl.acm.org/doi/epdf/10.1145/361604.361612)
+
 ## Perl (Wall, 1988)
 
 You need a certain amount of complexity to do any particular job. ... In short, simplicity is often the enemy of success. -- [Larry Wall](https://www.oreilly.com/openbook/opensources/book/larry.html) (1999)
@@ -25,17 +40,17 @@ It is not possible to create a perfect program the first time. The insight neces
 
 All the [Unix] philosophy really boils down to one iron law, the hallowed [posvätný] ’KISS principle’ of master engineers everywhere:
 
-![image](https://user-images.githubusercontent.com/1047259/149891682-0e0e2633-2ea7-4862-ae9d-106f99493bb8.png)
+![](https://user-images.githubusercontent.com/1047259/149891682-0e0e2633-2ea7-4862-ae9d-106f99493bb8.png)
 
 ## A Regular Expression Matcher (Kernighan, Pike 2007) 
-
-(https://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html)
 
 Beatiful code is
 
 * simple - clear and easy to understand
 * compact - just enough code to do the job
 * general - solving a broad class of problems in uniform way
+
+[source](https://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html)
 
 ## Go (Griesemer, Pike, Thompson, 2009)
 
