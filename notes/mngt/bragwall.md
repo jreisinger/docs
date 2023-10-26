@@ -1,3 +1,5 @@
+To fight the imposter syndrome ...
+
 2023
 
 - unified log attributes in Datadog
