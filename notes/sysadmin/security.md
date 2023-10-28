@@ -17,15 +17,15 @@ Common areas of security compromise:
 
 * social engineering
 * software vulnerabilities
+```perl
+#!/usr/bin/perl
+# Example of user input validation error. 
+# What if a user enters ../../../etc/passwd?
 
-        #!/usr/bin/perl
-        # Example of user input validation error
-
-        open HTMLFILE, "/var/www/html/$ARGV[0] or die "trying\n";
-        while (<HTMLFILE>) { print }
-        close HTMLFILE;
-
-    What if a user enters `../../../etc/passwd`?
+open HTMLFILE, "/var/www/html/$ARGV[0] or die "trying\n";
+while (<HTMLFILE>) { print }
+close HTMLFILE;
+```
 * configuration errors (not-so-securely is often a default software configuration)
 
 Attack phases
