@@ -2,14 +2,16 @@ Security problems at the Internet level started in 1988 with "Morris worm".
 
 A systems administrator should:
 
-* make sure systems are secured
+* make sure systems are up to date
+* make sure systems are backed up
 * make sure systems are monitored
 * make sure users are properly educated
 * keep in touch with current security technology
 * hire professionals to help with problems that exceed his knowledge
 
-No system is secure, you can only make it more security. Security is a process
-though.
+No system is secure, you can only make it more secure.
+
+Security is a process, it's never done.
 
 You can't have both security and convenience.
 
@@ -38,4 +40,4 @@ Attack phases
 
 Sources:
 
-* ULSAH, Ch. 22 - Security
+* ULSAH (2013), Ch. 22 - Security
