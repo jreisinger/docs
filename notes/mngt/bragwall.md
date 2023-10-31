@@ -2,6 +2,7 @@ To fight the imposter syndrome ...
 
 2023
 
+- did and tested Datadog-Pagerduty integration to call us when there's an issue
 - unified log attributes in Datadog
 - delivered company-wide presentation about data breach and security
 - obtained "AWS Certified Cloud Practitioner" certification
