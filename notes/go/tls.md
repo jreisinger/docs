@@ -3,12 +3,11 @@ TLS
 * new name for SSL
 * **identity** of one or both communication parties
 * **encryption** of the communication
-* HTTPS = HTTP over TLS
 
-HTTP(S) runs over TCP
+Net phases
 
 1. Create TCP connection
-2. TLS - encrypt HTTP connection (skip if not HTTPS)
+2. Encrypt HTTP connection with TLS (skip if not HTTPS)
 3. HTTP connection
 
 (see [details](https://speakerdeck.com/lizrice/a-go-programmers-guide-to-secure-connections?slide=10))
@@ -53,7 +52,6 @@ dUHzICxBVC1lnHyYGjDuAMhe396lYAn8bCld1/L4NMGBCQ==
 -----END CERTIFICATE-----
 ```
 
-* unfortunately some of these file extensions ^ are also used for other data such as private keys
 * there is not consistency in file naming, you can see:
   * .key, .crt - extension denotes information type (private key, certificate)
   * .pem - extension denotes file format (PEM)
@@ -68,7 +66,11 @@ CLI tools
 Error messages
  
 * `connection refused` - wrong port (or lack of server resources)
-* `certificate signed by uknown authority` - reveived a cert but it's not trusted
+* `certificate signed by unknown authority` - received a cert but it's not trusted
 * `remote error` - it's the other end that's complaining
 
-[CODE](https://github.com/jreisinger/go-tls)
+See also:
+
+* https://github.com/jreisinger/docs/tree/master/blog/gosec
+* https://github.com/jreisinger/pocs
+
