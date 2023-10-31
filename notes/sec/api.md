@@ -231,6 +231,13 @@ docker run --rm -p 80:3000 bkimminich/juice-shop
 
 ## Doing passive recon
 
+Typically leverages OSINT.
+
+Phases:
+1. Cast a wide net
+2. Adapt and focus
+3. Document the attack surface
+
 Amass
 
 ```
@@ -256,10 +263,18 @@ Exposed info on GitHub
 git log --grep='(key|token|password)' -i -E
 ```
 * issues
+* pull requests
 
 ## Doing active recon
 
-Open ports, versions and vulnerabilities
+The process is not linear.
+
+Phases:
+1. Detection scanning - discover where HTTP or HTTPS is running (nmap)
+2. Hands-on analysis - understand the application (browser, F12, Burp)
+3. Targeted scanning - (Gobuster, Burp, ZAP)
+
+Open ports, versions and vulnerabilities:
 
 ```
 nmap -sC -sV localhost
@@ -269,6 +284,26 @@ Web server info, misconfigurations and vulnerabilities
 
 ```
 nikto -h http://localhost
+```
+
+Robots.txt tells search engine web crawlers to omit some URL paths to avoid overloading the site. It also tells us which paths the target want to keep secret. \o/
+
+You can discover URLs by:
+1. crawling - scanning for references and links to other web pages (ZAP)
+2. brute forcing (Gobuster)
+
+Gobuster - bruteforce endpoints (URLs)
+
+```
+gobuster dir -u http://localhost:80 -w ~/github.com/danielmiessler/SecLists/Discovery/Web-Content/api/api-endpoints.txt
+```
+
+Kiterunner
+
+```
+kr scan http://localhost -A=apiroutes-231028
+# to see the available wordlists
+kr wordlist list
 ```
 
 ## Finding (and exploiting) vulnerabilities
