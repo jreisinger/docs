@@ -1,5 +1,6 @@
-> To understand recursion, you must first understand recursion.
+To understand recursion, you must first understand recursion.
 
+Recursion
 * should be used when it makes the solution clearer
 * there is no performance benefit to using recursion; in fact loops are sometimes better for performance
 
@@ -8,10 +9,11 @@ Every recursive function should have two parts:
 * base case - the function doesn't call itself
 * recursive case - the function calls itself
 
-Wrong (no base case -> infinite loop):
+Wrong:
 
-```
+```python
 def countdown(i):
+    # no base case -> infinite loop
     print(i)
     countdown(i-1)
 ```
