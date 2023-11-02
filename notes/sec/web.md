@@ -6,8 +6,8 @@
 
 More
 
-* https://web.stanford.edu/class/cs253/
-* https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy
+* <https://web.stanford.edu/class/cs253/> (2019)
+* <https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy>
 
 # Let's Encrypt
 
@@ -33,17 +33,9 @@ If the signature over the once is valid, and the challenges check out, the agent
 
 Once the agent has an authorized key pair, it can request, renew and revoke the certificates.
 
-## More
-
-* https://letsencrypt.org/how-it-works/
-* notes/k8s/ingress
-
 # More
 
-* https://wiki.reisinge.net/ZakladyKryptografie
-* [Standord Web Security course](https://web.stanford.edu/class/cs253/) (2019)
-
-# Sources
-
+* <https://letsencrypt.org/how-it-works/>
+* notes/k8s/ingress
 * [Web Application Security](https://learning.oreilly.com/library/view/web-application-security/9781492053101/) (2020)
 * [The Web Application Hacker's Handbook](https://learning.oreilly.com/library/view/the-web-application/9781118026472/) (2011)
