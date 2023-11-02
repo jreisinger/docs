@@ -2,9 +2,10 @@ TLS
 
 * new name for SSL
 * **identity** of one or both communication parties
-* **encryption** of the communication
+* **encryption** and **integrity** of the communication
+* kind of "secure TCP"
 
-Net phases
+Phases
 
 1. Create TCP connection
 2. Encrypt HTTP connection with TLS (skip if not HTTPS)
@@ -28,30 +29,8 @@ X.509 Certificates
   * issuer (CA) name
   * validity
 * certs should use Subject Alternative Names (SANs), Common name (CN) was deprecated in 2000
-* binary format (ASN.1) - `.der`
-* Base64 encoding to represent it as text - `.pem`:
-
-```
------BEGIN CERTIFICATE-----
-MIIC7jCCAlegAwIBAgIBATANBgkqhkiG9w0BAQQFADCBqTELMAkGA1UEBhMCWFkx
-FTATBgNVBAgTDFNuYWtlIERlc2VydDETMBEGA1UEBxMKU25ha2UgVG93bjEXMBUG
-A1UEChMOU25ha2UgT2lsLCBMdGQxHjAcBgNVBAsTFUNlcnRpZmljYXRlIEF1dGhv
-cml0eTEVMBMGA1UEAxMMU25ha2UgT2lsIENBMR4wHAYJKoZIhvcNAQkBFg9jYUBz
-bmFrZW9pbC5kb20wHhcNOTgxMDIxMDg1ODM2WhcNOTkxMDIxMDg1ODM2WjCBpzEL
-MAkGA1UEBhMCWFkxFTATBgNVBAgTDFNuYWtlIERlc2VydDETMBEGA1UEBxMKU25h
-a2UgVG93bjEXMBUGA1UEChMOU25ha2UgT2lsLCBMdGQxFzAVBgNVBAsTDldlYnNl
-cnZlciBUZWFtMRkwFwYDVQQDExB3d3cuc25ha2VvaWwuZG9tMR8wHQYJKoZIhvcN
-AQkBFhB3d3dAc25ha2VvaWwuZG9tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKB
-gQDH9Ge/s2zcH+da+rPTx/DPRp3xGjHZ4GG6pCmvADIEtBtKBFAcZ64n+Dy7Np8b
-vKR+yy5DGQiijsH1D/j8HlGE+q4TZ8OFk7BNBFazHxFbYI4OKMiCxdKzdif1yfaa
-lWoANFlAzlSdbxeGVHoT0K+gT5w3UxwZKv2DLbCTzLZyPwIDAQABoyYwJDAPBgNV
-HRMECDAGAQH/AgEAMBEGCWCGSAGG+EIBAQQEAwIAQDANBgkqhkiG9w0BAQQFAAOB
-gQAZUIHAL4D09oE6Lv2k56Gp38OBDuILvwLg1v1KL8mQR+KFjghCrtpqaztZqcDt
-2q2QoyulCgSzHbEGmi0EsdkPfg6mp0penssIFePYNI+/8u9HT4LuKMJX15hxBam7
-dUHzICxBVC1lnHyYGjDuAMhe396lYAn8bCld1/L4NMGBCQ==
------END CERTIFICATE-----
-```
-
+* binary format (ASN.1): .der
+* text format (Base64 encoded): .pem
 * there is not consistency in file naming, you can see:
   * .key, .crt - extension denotes information type (private key, certificate)
   * .pem - extension denotes file format (PEM)
@@ -71,6 +50,6 @@ Error messages
 
 See also:
 
-* https://github.com/jreisinger/docs/tree/master/blog/gosec
-* https://github.com/jreisinger/pocs
+* <https://github.com/jreisinger/docs/tree/master/blog/gosec>
+* <https://github.com/jreisinger/pocs>
 

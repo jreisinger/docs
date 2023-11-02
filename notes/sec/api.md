@@ -214,7 +214,6 @@ crAPI
 
 ```
 curl -o docker-compose.yml https://raw.githubusercontent.com/OWASP/crAPI/main/deploy/docker/docker-compose.yml
-docker-compose pull
 docker-compose -f docker-compose.yml --compatibility up -d
 ```  
 
@@ -260,7 +259,7 @@ Exposed info on GitHub
     * gitleaks
 * commit logs 
 ```
-git log --grep='(key|token|password)' -i -E
+git log --name-only --notes --grep='(key|token|password)' -i -E
 ```
 * issues
 * pull requests

@@ -151,7 +151,7 @@ if err != nil {
 defer ln.Close()
 ```
 
-Ok, we need some configuration for TLS to work. What's that? TLS uses public key cryptography. The TLS server needs a private key to encrypt and sign data and a certificate to authenticate to the client:
+Ok, we need some configuration for TLS to work. What's that? TLS uses public key cryptography. The TLS server needs a private key to decrypt and sign data and a certificate to authenticate to the client:
 
 ```go
 certFile := flag.String("cert", "cert.pem", "certificate file")
