@@ -13,4 +13,4 @@ Leibniz' Contingency Argument
 
 `***` God = the extremely powerful, uncaused, necessarily existing, non-contingent, non-physical, immaterial, eternal being, who created the entire universe and everything in it.
 
-Source: https://www.reasonablefaith.org/Leibniz-Contingency-Argument
+Source: <https://www.reasonablefaith.org/Leibniz-Contingency-Argument>
