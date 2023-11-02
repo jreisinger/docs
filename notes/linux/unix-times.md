@@ -15,13 +15,13 @@ Entries in the index are called `inodes` (index nodes). Inodes contain metadata 
 
 There is also a time information among the metadata. Actually three types of them:
 
-    .-------------+------------+---------+------------------------------------------------------------------.
-    | Type        | Short name | ls opts | Defines the last time when ...                                   |
-    +-------------+------------+---------+------------------------------------------------------------------+
-    | Access Time | atime      | -lu     | file was read, directory was searched                            |
-    | Modify Time | mtime      | -l      | file was written to, directory's entry was added/renamed/removed |
-    | Change Time | ctime      | -lc     | inode information (the metadata) was changed                     |
-    '-------------+------------+---------+------------------------------------------------------------------'
+	.-------------+-------+---------+--------------------------------------------------------.
+	| Type        | Short | ls opts | Defines the last time when ...                         |
+	+-------------+-------+---------+--------------------------------------------------------+
+	| Access Time | atime | -lu     | file read, directory searched                          |
+	| Modify Time | mtime | -l      | file written to, directory entry added/renamed/removed |
+	| Change Time | ctime | -lc     | inode information (the metadata) changed               |
+	'-------------+-------+---------+--------------------------------------------------------'
 
 ## Using timestamps
 
