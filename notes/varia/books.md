@@ -4,8 +4,8 @@ Some of the books that I read (at least partially). Roughly ordered by most rece
 
 Security
 
-* Navigating the Cybersecurity Career Path, 2022
-* Security Chaos Engineering, 2023
+* Navigating the Cybersecurity Career Path, 2022 [2023]
+* Security Chaos Engineering, 2023 [2023]
 * Kubernetes Security, 2018
 * Securing DevOps, 2018
 * Practical Cloud Security, 2019
@@ -25,7 +25,7 @@ Sysadmin/SRE/DevOps
 
 Programming
 
-* The Power of Go: Tools, 2024
+* The Power of Go: Tools, 2024 [2023]
 * Learning Go (Boring Go :-), 2021
 * The Pragmatic Programmer, 2019
 * [The Go Programming Language](https://www.gopl.io/), 2016
@@ -47,12 +47,13 @@ Programming
 
 Management :-)
 
-* Tom Rudelius: Chasing Proof, Finding Faith, 2023
-* Joseph Ratzinger: Uvod do krestanstva, 1968/2000
-* Pirsig: Zen and the Art of Motorcycle Maintenance, 1974
-* John Eldredge: Divoký v srdci, 2005
-* Schmitz, Fr. Mike: Pocket Guide to the Sacrament of Reconciliation, 2020
-* Chesterton: Ortodoxie, 1908
+* Josef Pieper: Štěstí a kontemplace, 1957 [2023]
+* Tom Rudelius: Chasing Proof, Finding Faith, 2023 [2023]
+* Joseph Ratzinger: Uvod do krestanstva, 1968/2000 [2023]
+* Pirsig: Zen and the Art of Motorcycle Maintenance, 1974 [2023]
+* John Eldredge: Divoký v srdci, 2005 [2023]
+* Schmitz, Fr. Mike: Pocket Guide to the Sacrament of Reconciliation, 2020 [2023]
+* Chesterton: Ortodoxie, 1908 [2023]
 * Andy Weir: Hail Mary, 2021
 * Flannery O'Connorová: Dobrého člověka těžko najdeš, 1955
 * Barron: Arguing Religion, 2018
