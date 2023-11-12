@@ -43,6 +43,24 @@ III
 - toto vedie k neslychanej komplikacii: na zaklade neporusitelne blazenej skutocnosti Bozej sa zlo vo svete stava naozaj nepochopitelne
 - napriek tomu, takato viera znamena, ze "velka Bozia radost je jedina skutocnost" (Claudel)
 
+IV
+
+- "Ziadat si blazenost nie je nic ineho ako ziadat, aby vola bola uspokojena"
+- vsetka energia ludskej prirodzenosti: hlad a smad
+- blazenost ako napoj, blazenost ako pitie
+- utisenie ocakavame "odinakial"; "To, v com blazenost spociva, je niecim mimo duse"
+- naproti tomu je sebestacnost stoika: "Pre mna je dobre tesit sa svojim vlastnym duchom"
+- v mravnom cine je uspokojenie obstastnujuce hlbsie ako akykolvek dar, ktory moze dat jeden clovek druhemu
+- avsak z takehoto stastia clovek nemoze zit; najhlbsi smad sa takto neda utisit
+- "titanska" pycha, ktora si nechce nechat nic darovat, pozaduje v skutocnosti prilis malo, zaostava za pravou velkostou cloveka
+- "umele bohatstvo", t.j. majetok, ktory clovek bezprostredne nepotrebuje, dokaze vyvolavat nekonecnu ziadost - klamnu napodobeninu, ktora je vsak v skutocnosti protiklad tuhy po blazenosti
+- bytost zjavne zamerana na nieco ine "nemoze mat za posledny ciel uchovat sa v byti"
+- kto by se vina zdrziaval natolko, ze by tazko poskodzoval svoju prirodzenost, nebol by bez hriechu (Tomas)
+- dobra sveta (napr. majetok, zdravie, dusevne nadanie, cest, mier) skutocne nie su malo; avsak nestacia na utisenie najhlbsieho smadu ludskej bytosti
+- treba bonum universale: "dobro v uplnosti" - tak velmi dobre, ze v nom nie je nic, co by nebolo dobre, a mimo neho nie je nic, co by dobre nebolo
+- tento az desive nesmierny extrem ma meno Boh; "Dobro v uplnosti sa nenachadza v nicom stvorenom, ale iba v Bohu"
+- konecny duch je zo svojej podstaty neutisitelny, jedine ak by sa mu dostalo samotneho Boha
+
 ---
 
 [0] Kontemplacia = najvyssia forma poznania.
