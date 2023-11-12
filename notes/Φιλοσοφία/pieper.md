@@ -4,9 +4,9 @@ I
 - korene tejto myslienky siahaju mimo dejinny cas (a mozno aj mimo ludsku oblast vobec)
 - pod stastim sa tu rozumie to, co ludia obvykle myslia
 - v jazykoch existuju oznacenia pre rozne urovne stastia (plnost Bozieho zivota nepodliehajuceho smrti vs pohodlie cloveka sediaceho doma za pecou)
-- oznacenia aj najvyssich urovni stastia podliehaju banalizacii
+- jazykove oznacenia aj najvyssich urovni stastia podliehaju banalizacii
 - v tejto matucej rovnomennosti je uchovana urcita fundamentalna skutocnost: "Ako sa stvorene dobro podoba dobru nestvorenemu, tak je aj dosiahnutie stvoreneho dobra napodobou blazenosti." [1]
-- tym, ze ludia hovoria vsetkemu dosahovaniu stvoreneho dobra (napr. smadny sa napije) stastie, kazde utisenie smeruje k utisenie najvyssiemu, k blazenosti
+- tym, ze ludia hovoria vsetkemu dosahovaniu stvoreneho dobra (napr. smadny sa napije) stastie, kazde utisenie smeruje k utiseniu najvyssiemu, k blazenosti
 - v kazdom pozemskom naplneni sa ukazuje: toto nestaci, nie je to to, co skutocne hladame, nemoze nas to uplne uspokojit ("Hrozne je, ze opit sa nikdy neda uplne.")
 - k definitivnemu uspokojeniu ludskej prirodzenosti, k zvrchovanemu utiseniu jej najhlbsieho smadu dochadza v kontemplacii
 - nejde o zvlastne stastie "mudrca" ani o jednu z mnohych moznosti
@@ -29,6 +29,19 @@ II
 - existovat ako clovek znamena byt "na ceste" a teda ne-blazeny
 - "Iba Bohu je dokonala blazenost vlastna cez jeho prirodzenost."
 - dokonale blazeneho sa neda predstavit, presahuje to moznosti nasho myslenia
+
+III
+
+- dnes informacia, ze blazenost patri k Bozim "vlastnostiam" ani pre krestanov nehra skoro ziadnu rolu
+- naproti tomu sa v Teologickej sume pise, ze skutocnost Boha celkom miname, pokial ho nemyslime ako dokonale blazeneho
+- mysli sa tym skor to, ze "On je svoja blazenost", ba dokonca "Boh a blazenost su to iste"
+- ktokolvek iny, kto je stastny, ma podiel na stasti, ktorym nie je on sam
+- avsak Boh je blazeny tym, ze je
+- ak Bozia blazenost nespociva v tom, ze sa deje alebo je nieco dalsie, tak nemoze by zakalena alebo zvacsena ziadnym dianim v oblasti stvorenia
+- zarazajuci dosledok: bieda sveta nerusi Boziu blazenost
+- avsak: uzdravenie by nebolo ani myslitelne, keby v zaklade a zdroji skutocnosti nebolo toto nekonecne a nedotknutelne uplne, zdrave a neporusene bytie
+- toto vedie k neslychanej komplikacii: na zaklade neporusitelne blazenej skutocnosti Bozej sa zlo vo svete stava naozaj nepochopitelne
+- napriek tomu, takato viera znamena, ze "velka Bozia radost je jedina skutocnost" (Claudel)
 
 ---
 
