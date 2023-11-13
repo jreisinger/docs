@@ -8,3 +8,5 @@ Atheism vs Theism
 * [Top 10 Christian vs. Atheist Debates EVERYONE Should Watch](https://youtu.be/QjsDp85DMcY)
 
 > The existence of God does not, of course, depend on any particular person's ability to effectively argue for (or against) him. -- [Aron Wall](http://www.wall.org/~aron/blog/thoughts-on-the-carroll-craig-debate/)
+
+<img src="/static/aquinas-vs-dawkins.png" style="max-width:100%;width:640px">
