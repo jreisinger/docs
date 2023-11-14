@@ -90,6 +90,7 @@ helm package .
 # add a Repository
 helm search hub wordpress # or https://artifacthub.io
 helm repo add bitnami https://charts.bitnami.com/bitnami
+helm repo update
 helm repo list
 
 # install Release with default values
