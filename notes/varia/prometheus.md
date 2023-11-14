@@ -85,7 +85,7 @@ up{instance="localhost:9090",job="prometheus"}          1
 * snapshot of state, current absolute value
 * we usually agregate it with `sum`, `avg`, `min` or `max`
 
-Total FS size on each machine (node_filesystem_size_bytes metric comes from Node exporter):
+Total FS size on each machine (`node_filesystem_size_bytes` metric comes from Node exporter):
 
 ```
 sum(node_filesystem_size_bytes) without(device, fstype, mountpoint)
@@ -178,7 +178,7 @@ P8s can discover targets to monitor by using K8s API. There are currently these 
 
 Useful metrics
 
-* process_resident_memory_bytes - how much memory is the application using (in bytes)
+* `process_resident_memory_bytes` - how much memory is the application using (in bytes)
 
 # Sources
 
