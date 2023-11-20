@@ -14,7 +14,7 @@ Security. Go is a relatively new language (version 1.0 was released in 2012) bui
 
 Backward compatibility. Go maintainers [intend](https://go.dev/doc/go1compat) that "programs written to the Go 1 specification will continue to compile and run correctly, unchanged, over the lifetime of that specification. ... The APIs [the standard library] may grow, acquiring new packages and features, but not in a way that breaks existing Go 1 code." It basically means that you don't need to worry that the programs you write will stop working and you will need to investigate what to do to bring them back to life.
 
-Future proof. I think Go has a future so it makes sense to invest into learning (or even mastering) it. Go was created and it's maintained by very experienced and skilled people, like Rob Pike (of Plan 9 and UTF-8 fame), [Ken](https://github.com/ken) Thompson (Unix, B, grep), Russ Cox. It's an open source language and it's used and supported by Google that's not likely to run out of money in the foreseeable future. Many other big companies companies, like Cloudflare or PayPal, are using Go internally. A lot of important open source software is written in Go, like Kubernetes or Terraform. It has a first class support on all cloud providers and most of the Cloud Native Computing Foundation (CNCF) projects are written in Go.
+Future proof. I think Go has a future so it makes sense to invest into learning (or even mastering) it. Go was created and it's maintained by very experienced and skilled people, like Rob Pike (of Plan 9 and UTF-8 fame), [Ken](https://github.com/ken) Thompson (Unix, B, grep), Russ Cox. It's an open source language and it's used and supported by Google that's not likely to run out of money in the foreseeable future. Many other big companies, like Cloudflare or PayPal, are using Go internally. A lot of important open source software is written in Go, for example Kubernetes or Terraform. It has a first class support on all cloud providers and most of the Cloud Native Computing Foundation (CNCF) projects are written in Go.
 
 Typed, compiled. If you are (as I used to be) familiar only with dynamic scripting languages like Python or Perl, Go will help you to really understand what are the large-scale systems languages like.
 
@@ -58,7 +58,7 @@ Let's start with TCP because we said that TLS is kind of a secure version of TCP
 
 The **server** code has three parts: listening, accepting and handling.
 
-First we need to start listening for incoming TCP connections on some address (host + port):
+First we need to start listening for incoming TCP connections on some address (host:port):
 
 ```go
 ln, err := net.Listen("tcp", "localhost:8000")
@@ -151,7 +151,7 @@ if err != nil {
 defer ln.Close()
 ```
 
-Ok, we need some configuration for TLS to work. What's that? TLS uses public key cryptography. The TLS server needs a private key to decrypt and sign data and a certificate to authenticate to the client:
+Ok, we need some configuration for TLS to work. What's that? TLS uses public key cryptography. The TLS server needs a certificate to authenticate to the client and a private key to decrypt and sign data:
 
 ```go
 certFile := flag.String("cert", "cert.pem", "certificate file")
@@ -181,7 +181,7 @@ $ mkcert localhost
 $ go run tls/server/echo.go -cert localhost.pem -key localhost-key.pem
 ```
 
-X509 certificates contain server's public key, along with its identity and a signature by a trusted authority (typically a Certificate Authority). You can have a look:
+X509 certificates contain server's public key, along with its identity and a signature by a trusted authority (typically a Certificate Authority). We can have a look:
 
 ```sh
 $ openssl x509 -in localhost.pem -text -noout
