@@ -26,20 +26,6 @@ Integration types
 * Library: library for your language (Node.js, Python) calling Datadog API
 * Custom check
 
-Pipelines
-
-* ordered set of PROCESSORS
-* applied to a filtered subset of ingested logs (after collection but before indexing so ALL logs are processed)
-* the resulting logs have a uniform structure with standard attribute names and normalized time/date
-* pipeline types
-  1. OOTB intergration pipelines for common log sources
-  2. custom pipelines for custom log sources
-* processor types
-  * Grok Parser - extracts attributes from semi-structured text messages
-  * Several remappers - remap source attributes to standard attributes
-  * Category processor - enriches logs with attributes that categorize them
-  * Lookup processor - defines mapping between a log attribute and a human readable value saved in an Enrichment Table or the processors mapping table
-
 Indexes
 
 * allow you to filter logs into value groups with different retention periods, quotas, usage monitoring and billing
@@ -78,13 +64,6 @@ DD Events
 * records of notable changes relevant for managing and troubleshooting IT operations
 * e.g. code deployments, service health, configuration changes, or monitoring alerts
 
-Search query can contain
-
-* assigned tags like `env` and `service`
-* attributes extracted from the logs like `@http.status_code`
-* text strings from log messages
-* see [search syntax](https://docs.datadoghq.com/logs/explorer/search_syntax) for more
-
 # Sending logs to DD
 
 NOTE: configuration for Docker DD agent and apps are all done via:
@@ -122,6 +101,20 @@ DD [agent logs](https://docs.datadoghq.com/agent/logs) related parameters
 
 # Processing logs
 
+Pipelines
+
+* ordered set of PROCESSORS
+* applied to a filtered subset of ingested logs (after collection but before indexing so ALL logs are processed)
+* the resulting logs have a uniform structure with standard attribute names and normalized time/date
+* pipeline types
+  1. OOTB intergration pipelines for common log sources
+  2. custom pipelines for custom log sources
+* processor types
+  * Grok Parser - extracts attributes from semi-structured text messages
+  * Several remappers - remap source attributes to standard attributes
+  * Category processor - enriches logs with attributes that categorize them
+  * Lookup processor - defines mapping between a log attribute and a human readable value saved in an Enrichment Table or the processors mapping table
+
 There are three ways to work with logs in a unified way:
 
 1. Make sure logs from various sources have the same syntax and naming convention (impossible! :-).
@@ -134,6 +127,13 @@ Semi-structured (non-JSON) logs are parsed via Grok processor.
 
 # Searching logs
 
+Search query can contain
+
+* assigned tags like `env` and `service`
+* attributes extracted from the logs like `@http.status_code`
+* text strings from log messages
+* see [search syntax](https://docs.datadoghq.com/logs/explorer/search_syntax) for more
+
 All logs without `docker_image` tag:
 
 ```
@@ -142,5 +142,5 @@ All logs without `docker_image` tag:
 
 # Sources
 
-* https://docs.datadoghq.com
-* https://learn.datadoghq.com/courses/take/intro-to-log-management
+* <https://docs.datadoghq.com>
+* <https://learn.datadoghq.com/courses/take/intro-to-log-management>
