@@ -101,6 +101,10 @@ DD [agent logs](https://docs.datadoghq.com/agent/logs) related parameters
 
 # Processing logs
 
+JSON logs are parsed automatically and attibutes are extracted.
+
+Semi-structured (non-JSON) logs are parsed via Grok processor.
+
 Pipelines
 
 * ordered set of PROCESSORS
@@ -120,10 +124,11 @@ There are three ways to work with logs in a unified way:
 1. Make sure logs from various sources have the same syntax and naming convention (impossible! :-).
 2. Device complicated queries that take into account all relevant logs.
 3. Normalize logs into JSON with standard attribute names via pipelines.
+4. Use [aliasing](https://docs.datadoghq.com/logs/log_configuration/attributes_naming_convention/#aliasing).
 
-JSON logs are parsed automatically and attibutes are extracted.
-
-Semi-structured (non-JSON) logs are parsed via Grok processor.
+* reserved attributes (host, source, status, service, trace_id, message) - automatically generated
+* standard attributes - default ones that can be customized
+* aliasing (within standard attributes page) - once you have standard attributes settled
 
 # Searching logs
 
