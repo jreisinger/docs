@@ -287,6 +287,10 @@ nikto -h http://localhost
 
 Robots.txt tells search engine web crawlers to omit some URL paths to avoid overloading the site. It also tells us which paths the target want to keep secret. \o/
 
+```
+curl localhost:8888/robots.txt
+```
+
 You can discover URLs by:
 1. crawling - scanning for references and links to other web pages (ZAP)
 2. brute forcing (Gobuster)
@@ -294,20 +298,24 @@ You can discover URLs by:
 Gobuster - bruteforce endpoints (URLs)
 
 ```
-gobuster dir -u http://localhost:80 -w ~/github.com/danielmiessler/SecLists/Discovery/Web-Content/api/api-endpoints.txt
+# some web apps always return 200, so you need to blacklist it (i.e. consider it a negative status code, like 404)
+gobuster dir -u http://localhost:8888 -w ~/github.com/danielmiessler/SecLists/Discovery/Web-Content/api/api-endpoints-res.txt -b "200"
 ```
 
-Kiterunner
+Kiterunner - intelligently discover API endpoints and resources
 
 ```
 kr scan http://localhost -A=apiroutes-231028
 # to see the available wordlists
 kr wordlist list
+
+# to use a wordlist instead of a .kite file
+kr brute http://localhost:8888 -w all.txt
 ```
 
 ## Finding (and exploiting) vulnerabilities
 
-## Reporting vulnerabilties
+## Reporting vulnerabilities
 
 
 ---
