@@ -20,7 +20,7 @@ But there are also some helpful tools, like gitleaks. It basically finds and rep
 
 ```sh
 #!/bin/bash
-# Detect secrets in a git repos using https://github.com/zricethezav/gitleaks
+# Detect secrets in a git repo using https://github.com/zricethezav/gitleaks
 
 if [[ $SKIP == "gitleaks" ]]; then
     echo "skipping gitleaks checks ..."
