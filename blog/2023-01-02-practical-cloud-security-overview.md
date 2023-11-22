@@ -2,27 +2,37 @@
 
 IT industry has been undergoing seismic shifts regularly. The latest one goes by the name cloud computing. However, the security goals, principles and areas don't change with the adaption of a new paradigm. Terminology, methods and tools change, though.
 
-# Why we need security and what are its goals
+# Why we need security
 
-The need for security stems from the fact that people, for various reasons, make suboptimal decisions and mistakes - in design, implementation, configuration, operations - creating vulnerabilities in systems. And, some other people (threat actors or groups) try to exploit these vulnerabilities for various reasons. Since it's impossible to prevent all the vulnerabilities in complex systems, you can't achieve perfect security. What is your north star, then?
+The need for security stems from the fact that people make suboptimal decisions and mistakes - in design, implementation, configuration, operations - creating vulnerabilities in systems. And, some other people - threat actors or groups - try to exploit these vulnerabilities for various reasons.
 
-Cybersecurity is a never ending effort to manage risks of computer systems by increasing their resiliency to threats. A risk is the possibility of something bad happening. And threat is a path to the risk occurring. In case you don't know about your risks and threats or you don't manage them, you can run into [troubles](https://www.hackmageddon.com/). Your data can be stolen or encrypted for ransom. Your infrastructure or applications can be shut down, misused for crypto-mining or launching attacks against other targets. Your customers or employees can get scammed. All these lead to operational problems (you have to handle security incidents instead of normal business), reputation and financial losses (you lose customers and/or get fined). Obviously, you want to avoid this at least to a certain degree.
+In case you don't know or don't care about your vulnerabilities and threats, you can run into [troubles](https://www.hackmageddon.com/). Your data can be stolen or encrypted for ransom. Your infrastructure or applications can be shut down, misused for crypto-mining or for launching attacks against other targets. Your customers or employees can get scammed.
 
-More formally, CIA triad represents the traditional (since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf)) security goals: "The protection of system data and resources from accidental and deliberate threats to confidentiality, integrity, and availability."
+This creates all sorts of problems. Operational problems, when employees have to handle security incidents instead of normal business. Loss of reputation and consequently of employees and customers. The company can get fined or someone (like a CISO) can even go to jail. All this gets reflected also in terms of financial losses. Obviously, you want to avoid this at least to a certain degree.
+
+# Security goals
+
+It's impossible to not create any vulnerabilities and you can't make the bad actors disappear. So what can we do then? Well, we can avoid at least some of the vulnerabilities and we can handle or contain at least some of the exploits.
+
+More formally, cybersecurity is a never ending effort to manage risks of computer systems by increasing their resiliency to threats. A risk is the possibility of something bad happening and it's defined by its likelihood and impact. Threat is a path to the risk occurring; it's the combination of a vulnerability and a threat actor.
+
+Even more formally, CIA triad represents the traditional (since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf)) security goals: "The protection of system data and resources from accidental and deliberate threats to confidentiality, integrity, and availability."
 
 * confidentiality: no unauthorized access to data or resources
 * integrity: no unauthorized changes to data or resources
 * availability: data and resources available when needed
 
-# Security principles and areas
+# Security principles
 
-Ok, so how do we manage the security risks and protect against threats? First, there are some principles everybody should keep in mind and apply whenever possible:
+OK, so how do we achieve the security goals? First, there are some principles everybody should keep in mind and apply whenever possible:
 
 * simplicity - the worst enemy of security is [complexity](https://www.schneier.com/blog/archives/2022/08/security-and-cheap-complexity.html), it makes attacks easier and defense harder
 * minimal attack surface - minimize possible ways a system can be attacked
 * least privilege - deny by default to limit the blast radius of a compromise
 * segmentation - create boundaries between systems to limit the blast radius of a compromise
 * defense in depth - since any security control can fail have multiple overlapping layers of controls
+
+# Security areas
 
 Second, you have to care about many things because the weakest link in the chain of interconnected systems can get exploited. Not to get overwhelmed one might create some abstractions in the form of distinct areas to cover.
 
