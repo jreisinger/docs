@@ -8,7 +8,7 @@ Logs, metrics and Traces
 * metrics:  WHAT is happening (e.g. what is number of page views, what is the number of instances in an autoscaling deployment)
 * traces:   HOW is sth. happenning (e.g. how are requests being processed)
 * WHEN:     all these data types contain creation timestamp
-* WHERE:    reserved tags (host, device, source, service, env, version) indicate where the data originated from
+* WHERE:    three of the reserved attributes (host, source, service) and two of the recommended tags (env, service) indicate where the data originated from
 
 Logs
 
@@ -47,6 +47,10 @@ Attributes
 
 <img width="897" alt="image" src="https://user-images.githubusercontent.com/1047259/192524551-b2f6b980-41ed-464a-b6c1-86433a268534.png">
 
+* reserved attributes (host, source, status, service, trace_id, message) - automatically generated
+* standard attributes - default ones that can be customized
+* aliasing to standard attributes - once you have standard attributes settled
+
 Tags
 
 * bind different data types to allow for correlation between logs, metrics and traces
@@ -66,17 +70,37 @@ DD Events
 
 # Sending logs to DD
 
-NOTE: configuration for Docker DD agent and apps are all done via:
+**Note**: When sending logs in a JSON format to Datadog, there is a set of reserved attributes that have a specific meaning within Datadog.
 
-* environment variables
-* volumes
-* Docker labels
+There are many ways you can [send logs](https://docs.datadoghq.com/logs/log_collection) to DD:
+
+- directly to a DD logging endpoint via TCP, TLS or HTTPS
+- via log-shipper daemon (rsyslog, syslog-ng, fluentd, ...)
+- via DD agent from
+    - host
+    - application
+    - container (agent can collect logs from all the containers)
+- via DD forwarder that is an AWS lambda function (serverless)
+- via integration
+
+## Via DD agent in Docker container on macOS
 
 1) Install DD agent as Docker container:
 
 ```
-docker run --cgroupns host --pid host --name datadog-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -e DD_API_KEY="$DD_API_KEY" -e DD_ENV=dev -e DD_TAGS=jrtest gcr.io/datadoghq/agent:7
+docker run --name datadog-agent \
+--cgroupns host \
+--pid host \
+-v /var/run/docker.sock:/var/run/docker.sock:ro \
+-v /proc/:/host/proc/:ro \
+-v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro \
+-e DD_API_KEY="$DD_API_KEY" \
+-e DD_ENV=dev \
+-e DD_TAGS=jrtest \
+gcr.io/datadoghq/agent:7
 ```
+
+* configuration for Docker DD agent and apps is all done via environment variables (in this ^ case), volumes or Docker labels
 
 2) Check Service Mgmt > Events, it should show (filter for `tags:jrtest`):
 
@@ -101,7 +125,7 @@ DD [agent logs](https://docs.datadoghq.com/agent/logs) related parameters
 
 # Processing logs
 
-JSON logs are parsed automatically and attibutes are extracted.
+JSON logs are parsed automatically and attributes are extracted.
 
 Semi-structured (non-JSON) logs are parsed via Grok processor.
 
@@ -119,16 +143,12 @@ Pipelines
   * Category processor - enriches logs with attributes that categorize them
   * Lookup processor - defines mapping between a log attribute and a human readable value saved in an Enrichment Table or the processors mapping table
 
-There are three ways to work with logs in a unified way:
+To have unified log attributes: 
 
-1. Make sure logs from various sources have the same syntax and naming convention (impossible! :-).
-2. Device complicated queries that take into account all relevant logs.
-3. Normalize logs into JSON with standard attribute names via pipelines.
-4. Use [aliasing](https://docs.datadoghq.com/logs/log_configuration/attributes_naming_convention/#aliasing).
-
-* reserved attributes (host, source, status, service, trace_id, message) - automatically generated
-* standard attributes - default ones that can be customized
-* aliasing (within standard attributes page) - once you have standard attributes settled
+- device complicated queries that take into account all relevant logs -> unwieldy
+- use standard attributes
+- use [aliasing](https://docs.datadoghq.com/logs/log_configuration/attributes_naming_convention/#aliasing) to standard attributes
+- normalize logs into JSON with standard attribute names via pipelines
 
 # Searching logs
 
