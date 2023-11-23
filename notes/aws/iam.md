@@ -68,7 +68,6 @@ You can use [terraform](https://github.com/vallard/EKS-Training/blob/master/segm
 * similar to `sudo`
 * associated with permission policies (inline, managed)
 * dynamically generated temporary credentials per session (no long-term credentials associated)
-
 * trust relationship - who can assume the role, defined in the role
 * assume policy - whether the principal can assume the role, defined in the principal
 
