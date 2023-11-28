@@ -81,3 +81,10 @@ Cloudflare mitigates 26 mil. rps HTTPS DDoS attack [ddos]
 Cisco Talos cyber attack [social engineering]
 
 * https://blog.talosintelligence.com/2022/08/recent-cyber-attack.html
+
+## 2017
+
+WannaCry ransomware [healthcare]
+
+* https://h-isac.org/may-16-2017-wannacry-update/
+    * 16 hospitals within the NHS (UK) have canceled surgeries
