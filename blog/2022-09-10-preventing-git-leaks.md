@@ -35,6 +35,8 @@ gitleaks protect --no-banner --staged
 
 If, for some good reason, you want to skip gitleaks when committing: `SKIP=gitleaks git commit -m "commit message"`
 
+You can also make gitleaks ignore a secret either by `#gitleaks:allow` inline comment next to the secret or by adding finding’s fingerprint to the `.gitleaksignore` file at the root of your repo. See [docs](https://github.com/gitleaks/gitleaks/tree/master#additional-configuration) for details.
+
 ## Existing commits
 
 The steps above will prevent you from committing secrets from now on. But you should also check existing commits because you might have committed a secret in the past. You can either do it on each commit by adding these lines to `~/.git-global-hooks/pre-commit`:
