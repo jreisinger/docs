@@ -1,12 +1,12 @@
 ![](https://user-images.githubusercontent.com/1047259/233588004-d2feae9d-5962-462a-bc6f-6d426ab8f026.png)
 
-NOTE: don't commit secrets even when the repo is private. The files or their contents get copied and the platforms holding the repos get [compromised](https://www.darkreading.com/application-security/github-private-rsa-ssh-key-mistakenly-exposed-public-repository).
+I keep most of my code and prose on GitHub in public repos. I do it because I get reliable storage for free that I can access from any computer. And some of the repos might be helpful to others. Also it engages my [hubris](https://thethreevirtues.com/) :-). It's working nicely but sometimes I get a bad feeling when I push stuff. I'm worried that I might leak some sensitive information like passwords, API keys or tokens.
 
-I keep most of my code and prose on GitHub in public repos. I do it because I get reliable storage for free that I can access from any computer. And it might be helpful to others. Also it engages my [hubris](https://thethreevirtues.com/) :-). It's working nicely but sometimes I get a bad feeling when I push stuff. I'm worried that I might leak some sensitive information like passwords, API keys or tokens. The obvious solution is to think twice before committing and pushing data.
+NOTE: don't assume that committing secrets is ok when the repo is private. The files or their contents get copied and the platforms holding the repos get [compromised](https://www.darkreading.com/application-security/github-private-rsa-ssh-key-mistakenly-exposed-public-repository).
 
-## New commits
+## Spotting secrets in new commits
 
-But there are also some helpful tools, like gitleaks. It basically finds and reports secrets in the files you are about to commit. I want to run it whenever I commit something in *any* of my repos. These are the steps to make that happen:
+The obvious solution is to think twice before committing and pushing data. But there are also some helpful tools, like gitleaks. It basically finds and reports secrets in the files you are about to commit. I want to run it whenever I commit something in *any* of my repos. These are the steps to make that happen:
 
 1. Install [gitleaks](https://github.com/gitleaks/gitleaks).
 2. Add this to your `~/.gitconfig`:
@@ -58,13 +58,8 @@ ls | runp -p 'gitleaks detect --no-banner -s'
 If `runp` exits with 0, all is good. Otherwise scroll up to review the output. To check a repo for committed leaks:
 
 ```sh
-cd $REPO && gitleaks detect --no-banner -v
-```
-
-After you are done, you might want to remove the temporary repos:
-
-```sh
-rm -rf /tmp/$GHORG
+cd <repo>
+gitleaks detect --no-banner -v
 ```
 
 ## Gitleaks cheatsheet
