@@ -1,4 +1,4 @@
-Created: 2014-01-06
+Created: 2014-01-06, Reviewed: 2023-12-04
 
 <img src="https://git-scm.com/images/logos/2color-lightbg@2x.png" style="max-width:100%;height:auto;float:right">
 
@@ -17,7 +17,7 @@ git config --global github.login=jlebowski
 git config --global github.email=jlebowski@gmail.com
 ```
 
-You only need to do this *once*. You might also like to add some aliases and other [configuration](https://github.com/jreisinger/dotfiles/blob/master/.gitconfig) settings.
+You only need to do this *once*. You might also like to add some aliases and other [configuration](https://github.com/jreisinger/githome/blob/main/.gitconfig) settings.
 
 ## Everyday configuration
 
@@ -223,24 +223,6 @@ git branch -d experimental_idea # you might need -D if not merged
 # delete a remote branch
 git push origin --delete experimental_idea
 ```
-
-## My workflow
-
-```
-if [[ $CURRENT_BRANCH == "master" ]]; then
-    run_cmd 'git pull'
-    run_cmd 'git push'
-else
-    #run_cmd 'git pull'
-    run_cmd 'git checkout master'
-    run_cmd 'git pull'
-    run_cmd "git checkout $CURRENT_BRANCH"
-    run_cmd 'git merge master'
-    run_cmd 'git push'
-fi
-```
-
-See [git-sync](https://github.com/jreisinger/dotfiles/blob/master/bin/git-sync) for my current setup.
 
 # Tags
 
