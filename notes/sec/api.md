@@ -112,13 +112,26 @@ HMAC-SHA512
 
 ## Broken object level authorization (BOLA)
 
-- consumer can access resources that they shouldn't, e.g. 
+- consumer can access resources that they shouldn't by manipulating the **ID** of an object sent within the request, e.g. 
 ```
 GET /api/resouce/**1**
 GET /users/account/find?user_id=**15**
 POST /company/account/**Apple**/balance
 POST /admin/pwreset/account/**90**
 ```
+- object ID examples
+    - sequential integers
+    - UUIDs
+    - generic strings
+- location
+    - URL path or query string parameters
+    - request headers
+    - request payload
+- problem because can lead to
+    - data disclosure (to unauthorized parties)
+    - data loss
+    - data manipulation
+    - (under certain circumstances) to full account takeover
 
 ## Broken user authentication
 
