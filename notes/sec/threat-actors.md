@@ -4,7 +4,7 @@ Actor, Motivation, Capability, Sample attacks.
 A: Vandal: script kiddie.
 M: Curiosity, personal fame from bringing down service or exfiltrating data of a high-profile company.
 C: Uses public tools (nmap, Metasploit, CVE PoCs), some experimentation. Attacks are poorly concealed. Low level of targeting.
-S: Small-scale DOS. Plants trojans. Launches prepackaged exploits for access, crypto mining.
+S: Small-scale DoS. Plants trojans. Launches prepackaged exploits for access, crypto mining.
 ```
 
 ```
