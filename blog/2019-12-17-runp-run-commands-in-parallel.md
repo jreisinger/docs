@@ -46,7 +46,7 @@ Cloning into '/home/reisinge/.vim/pack/plugins/start/grep.vim'...
 
 ## How to install it
 
-`runp` is easy to install it. It's a single binary that you download and make it executable:
+`runp` is easy to install. It's a single binary that you download and make executable:
 
 ```
 # choose your system and architecture
@@ -69,7 +69,7 @@ $ for dir in $HOME /etc /tmp; do echo sudo "du -sh $dir"; done | runp -q | sort 
 370G  /home/reisinge
 ```
 
-Here we generate the commands to run in a bash for loop. Then we pipe the commands into `runp`. Finally the `runp`'s output (stdout) is sorted.
+Here we generate the commands to run in a bash for-loop. Then we pipe the commands into `runp`. Finally the `runp`'s output (stdout) is sorted.
 
 We can simplify by using the `-p` flag which adds a prefix string to the final command that will be run:
 
@@ -94,7 +94,7 @@ scanme.nmap.org 23
 scanme.nmap.org 443
 EOF
 
-cat /tmp/host-port.txt | runp -q -p 'netcat -v -w2 -z' 2>&1 | egrep '(succeeded!|open)$'
+cat /tmp/host-port.txt | runp -q -p 'nc -v -w2 -z' 2>&1 | egrep '(succeeded!|open)$'
 ```
 
 You can find the source code and more examples [here](https://github.com/jreisinger/runp).
