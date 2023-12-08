@@ -2,19 +2,18 @@ To fight the imposter syndrome ...
 
 2023
 
+- reviewed Go repojacking (`notes/sec/repojacking.md`, `tools/cmd/gorepojack`)
 - did and tested Datadog-Pagerduty integration to call us when there's an issue
 - unified log attributes in Datadog
 - wrote `sectools/scripts/httpver.sh` to check HTTP versions of our endpoints
 - delivered company-wide presentation about data breach and security
 - obtained "AWS Certified Cloud Practitioner" certification
-- built `sectools/dd-awsinfo`
+- review what AWS accounts are integrated with DD and security monitored (`sectools/dd-awsinfo`)
 - found and reported leaked git secrets
-    - documented and explained to engineer how to prevent it
-    - engineers with my help reviewed commited secrets
-- found and reported public S3 buckets
-    - built `sectools/aws-s3pub`
-- lowered AWS and Datadog costs
-    - buitl `sectools/aws-dbinfo`
+    - documented and explained to engineers how to prevent it
+    - helped engineers to reviewed commited secrets
+- found and reported public S3 buckets (`sectools/aws-s3pub`)
+- lowered AWS and Datadog costs (`sectools/aws-dbinfo`)
 
 2022
 
