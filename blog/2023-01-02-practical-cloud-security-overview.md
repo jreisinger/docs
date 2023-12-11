@@ -26,11 +26,12 @@ Even more formally, CIA triad represents the traditional (since [1977](https://n
 
 OK, so how do we achieve the security goals? First, there are some principles everybody should keep in mind and apply whenever possible:
 
-* simplicity - the worst enemy of security is [complexity](https://www.schneier.com/blog/archives/2022/08/security-and-cheap-complexity.html), it makes attacks easier and defense harder
+* simplicity - the worst enemy of security is [complexity](https://www.schneier.com/blog/archives/2022/08/security-and-cheap-complexity.html) because it makes attacks easier and defense harder
 * minimal attack surface - minimize possible ways a system can be attacked
 * least privilege - deny by default to limit the blast radius of a compromise
 * segmentation - create boundaries between systems to limit the blast radius of a compromise
 * defense in depth - since any security control can fail have multiple overlapping layers of controls
+* secure by design - security shouldn't be an afterthought because then it's much more expensive
 
 # Security areas
 
