@@ -3,6 +3,7 @@ To fight the imposter syndrome ...
 2023
 
 - reviewed Go repojacking (`notes/sec/repojacking.md`, `tools/cmd/gorepojack`)
+- reviewing and improving email security (DKIM, SPF, DMARC)
 - did and tested Datadog-Pagerduty integration to call us when there's an issue
 - unified log attributes in Datadog
 - wrote `sectools/scripts/httpver.sh` to check HTTP versions of our endpoints
