@@ -4,9 +4,9 @@ IT industry has been undergoing seismic shifts regularly. The latest one goes by
 
 # Why we need security
 
-The need for security stems from the fact that people make suboptimal decisions and mistakes - in design, implementation, configuration, operations - creating vulnerabilities in systems. And, some other people - threat actors or groups - try to exploit these vulnerabilities for various reasons.
+The need for security stems from the fact that people make suboptimal decisions and mistakes - in design, implementation, configuration, operations - creating vulnerabilities in systems. And some other people (threat actors or groups) try to exploit these vulnerabilities for various reasons.
 
-In case you don't know or don't care about your vulnerabilities and threats, you can run into [troubles](https://www.hackmageddon.com/). Your data can be stolen or encrypted for ransom. Your infrastructure or applications can be shut down, misused for crypto-mining or for launching attacks against other targets. Your customers or employees can get scammed.
+In case you don't know or don't care about your vulnerabilities and threats, you can run into trouble. Your data can be stolen, altered, deleted or encrypted for ransom. Your infrastructure or applications can be shut down, misused for crypto-mining or for launching attacks against other targets. Your customers or employees can get scammed.
 
 This creates all sorts of problems. Operational problems, when employees have to handle security incidents instead of normal business. Loss of reputation and consequently of employees and customers. The company can get fined or someone (like a CISO) can even go to jail. All this gets reflected also in terms of financial losses. Obviously, you want to avoid this at least to a certain degree.
 
@@ -14,9 +14,9 @@ This creates all sorts of problems. Operational problems, when employees have to
 
 It's impossible to not create any vulnerabilities and you can't make the bad actors disappear. So what can we do then? Well, we can avoid at least some of the vulnerabilities and we can handle or contain at least some of the exploits.
 
-More formally, cybersecurity is a never ending effort to manage risks of computer systems by increasing their resiliency to threats. A risk is the possibility of something bad happening and it's defined by its likelihood and impact. Threat is a path to the risk occurring; it's the combination of a vulnerability and a threat actor.
+More formally, cybersecurity is a never ending effort to manage risks of computer systems by increasing their resiliency to threats. A threat is the possibility of something bad happening; it's the combination of a vulnerability and a threat actor. A risk is the quantified refinement of a threat; it's defined by its likelihood and impact.
 
-Even more formally, CIA triad represents the traditional (since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf)) security goals: "The protection of system data and resources from accidental and deliberate threats to confidentiality, integrity, and availability."
+CIA triad represents the traditional (since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf)) security goals: "The protection of system data and resources from accidental and deliberate threats to confidentiality, integrity, and availability."
 
 * confidentiality: no unauthorized access to data or resources
 * integrity: no unauthorized changes to data or resources
@@ -35,7 +35,7 @@ OK, so how do we achieve the security goals? First, there are some principles ev
 
 # Security areas
 
-Second, you have to care about many things because the weakest link in the chain of interconnected systems can get exploited. Not to get overwhelmed one might create some abstractions in the form of distinct areas to cover.
+Second, you have to care about many things because the weakest link in the chain of interconnected systems can get exploited (security is a systems property). Not to get overwhelmed one might create some abstractions in the form of distinct areas to cover.
 
 ## Governance and risk management
 
@@ -43,7 +43,7 @@ Second, you have to care about many things because the weakest link in the chain
 
 You should get at least a rough understanding of your organization's business and products. Find out your [responsibility](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/shared-responsibility.html) boundaries and what data and compute/storage/network resources you need to protect. This depends on the service model you use or provide (IaaS, PaaS or SaaS). Get some idea [who](https://github.com/jreisinger/docs/blob/master/notes/sec/threat-actors.md) is most likely to cause problems and [how](https://attack.mitre.org).
 
-Risk level is the likelihood of a risk times its impact. You can approach each risk in one of these ways:
+Risk level is the likelihood of a future problem times its impact. You can approach each risk in one of these ways:
 
 * avoid it - don't build the system in the first place or turn it off if benefits are lower than risks
 * transfer it - pay someone else to manage the risk (e.g. SaaS, insurance)
