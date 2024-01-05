@@ -66,6 +66,8 @@ For
 
 # Reasonable theists
 
+Very well known
+
 * Georges Lemaître (1894 - 1966) - Belgian Catholic priest, theoretical physicist, mathematician, astronomer, author of the Bing Bang theory (Catholic University of Louvain)
 * C.S. Lewis (1898 - 1963) - English literature, originally atheist (Oxford)
 * John Polkinghorne (1930 - 2021) - theoretical physicist, theologian, and Anglican priest (Cambridge)
@@ -86,6 +88,11 @@ For
 * [Sy Garte](https://youtu.be/OMBQwGzn_TE) - retired biochemist (USA)
 
 and many [more](https://en.wikipedia.org/wiki/List_of_Christians_in_science_and_technology).
+
+Less known IT people
+
+* https://josephthacker.com/ - hacker
+* Matt Holt - Caddy author
 
 Reasonable atheists
 
