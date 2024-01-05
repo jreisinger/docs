@@ -2,6 +2,9 @@ To fight the imposter syndrome ...
 
 2023
 
+- trying to build cybersecurity program based on NIST CSF 2.0 (`notes/sec/nist-csf.md`)
+- reviewing API security (`notes/sec/api.md`)
+- embedding vulnerability scanning into CI/CD (`.github/workflows/scan-vulns-go.yml`)
 - reviewed Go repojacking (`notes/sec/repojacking.md`, `tools/cmd/gorepojack`)
 - reviewing and improving email security (DKIM, SPF, DMARC)
 - did and tested Datadog-Pagerduty integration to call us when there's an issue
