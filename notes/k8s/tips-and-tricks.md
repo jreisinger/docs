@@ -8,7 +8,10 @@ Container tools
 Shell setup
 
 ```
+source <(kubectl completion bash)
 alias k="kubectl"
+complete -o default -F __start_kubectl k
+
 export do="--dry-run=client -o yaml"
 export now="--force --grace-period=0"
 ```
