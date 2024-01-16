@@ -32,8 +32,8 @@ Run a temporary pod inside a cluster
 
 ```
 # Shell into it.
-k run tmp --image=alpine --rm -it --restart=Never -- sh
-/ # apk update && apk add bash && bash
+k run tmp --image=alpine --rm -it --restart=Never -- /bin/sh
+/ # apk update && apk add bind-tools curl
 ```
 
 ```
