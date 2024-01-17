@@ -62,3 +62,9 @@ for node in $(k get --no-headers nodes | cut -d' ' -f1); do
   k get node $node -o json | jq .spec.podCIDR
 done
 ```
+
+Show workloads violating a Pod Security Standard
+
+```
+k label ns --all pod-security.kubernetes.io/enforce=baseline --overwrite --dry-run=server
+```
