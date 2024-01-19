@@ -1,6 +1,6 @@
 ![image](https://github.com/jreisinger/docs/assets/1047259/18b6f3e2-05d5-4612-8ba7-41b96f4deecc)
 
-While looking for a new project to hone my skills I came across the beelzebub. Wikipedia says Beelzebub was a Philistine God and later a major demon for some Abrahamic religions. In our case it's a honeypot written in Go :-).
+While looking for a new project to hone my skills I came across the beelzebub. Wikipedia says Beelzebub was a Philistine God and later a major demon for some Abrahamic religions. In this case it's a honeypot written in Go :-).
 
 My plan was something like:
 
