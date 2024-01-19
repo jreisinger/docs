@@ -1,4 +1,6 @@
-While looking for a new project to hone my skills I came across the [beelzebub](https://github.com/mariocandela/beelzebub/). Wikipedia says Beelzebub was a Philistine God and later a major demon for some Abrahamic religions. In our case it's a honeypot written in Go :-).
+![image](https://github.com/jreisinger/docs/assets/1047259/3e328a1c-0c1a-4b78-a5c2-d0a17068fa8c)
+
+While looking for a new project to hone my skills I came across the beelzebub. Wikipedia says Beelzebub was a Philistine God and later a major demon for some Abrahamic religions. In our case it's a honeypot written in Go :-).
 
 My plan was something like:
 
@@ -13,14 +15,13 @@ Once I have [set up](https://docs.aws.amazon.com/eks/latest/userguide/setting-up
 
 ```
 eksctl create cluster --name beelzebub-cluster --region eu-central-1
-eksctl utils update-cluster-logging --enable-types=all --region=eu-central-1 --cluster=beelzebub-cluster
 ```
 
 It took about 15 minutes but went smoothly.
 
 # Deploy the honeypot into the cluster
 
-Next I just cloned the repo  and created the Kubernetes resources from within the repo:
+Next, I just cloned the [beelzebub](https://github.com/mariocandela/beelzebub/) repo and created the Kubernetes resources from within the repo:
 
 ```
 helm install beelzebub ./beelzebub-chart
@@ -46,22 +47,22 @@ aws eks create-addon --addon-name amazon-cloudwatch-observability --cluster-name
 
 # Expose the honeypot to the Internet
 
-Next, I created a Kubernetes service of type LoadBalancer:
+Then, I created a Kubernetes service of type LoadBalancer:
 
 ```
 kubernetes expose deployment beelzebub-beelzebub-chart --name beelzebub-public --type LoadBalancer --port 22 --target-port 2222
 ```
 
-I had to wait for a bit so the load balancer is set up. Then opened the CloudWatch Logs Insights, selected the `/aws/containerinsights/beelzebub-cluster/application` log group and entered the following query:
+I had to wait for a bit so the load balancer is set up. I opened the CloudWatch Logs Insights, selected the `/aws/containerinsights/beelzebub-cluster/application` log group and entered the following query:
 
 ```
 filter kubernetes.pod_name="beelzebub-beelzebub-chart-b86c7dff8-59ldz"
-| fields @timestamp, log_processed.event.Msg, log_processed.event.RemoteAddr, log_processed.event.User, log_processed.event.Password, log_processed.event.Command, log_processed.event.CommandOutput
+| fields @timestamp, log_processed.event.Msg, log_processed.event.User, log_processed.event.Password, log_processed.event.Command, log_processed.event.CommandOutput
 | sort @timestamp desc
 | limit 20
 ```
 
-To make sure everything is working I logged into the honeypot and observed the logs (it takes a while until the logs get to the CloudWatch):
+To make sure everything is working, I logged into the honeypot and observed the logs (it takes a while until the logs get to the CloudWatch):
 
 ```
 ssh root@<some-string>.elb.eu-central-1.amazonaws.com
