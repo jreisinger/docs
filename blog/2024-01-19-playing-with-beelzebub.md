@@ -1,4 +1,4 @@
-![image](https://github.com/jreisinger/docs/assets/1047259/3e328a1c-0c1a-4b78-a5c2-d0a17068fa8c)
+![image](https://github.com/jreisinger/docs/assets/1047259/18b6f3e2-05d5-4612-8ba7-41b96f4deecc)
 
 While looking for a new project to hone my skills I came across the beelzebub. Wikipedia says Beelzebub was a Philistine God and later a major demon for some Abrahamic religions. In our case it's a honeypot written in Go :-).
 
@@ -9,7 +9,7 @@ My plan was something like:
 1. Setup logs collection
 1. Expose the honeypot to an insecure network, like the Internet, and wait
 
-# Create a Kubernetes cluster
+## Create a Kubernetes cluster
 
 Once I have [set up](https://docs.aws.amazon.com/eks/latest/userguide/setting-up.html) my access to AWS and installed all the necessary tools, the easiest way to create a Kubernetes cluster seemed to be this:
 
@@ -19,7 +19,7 @@ eksctl create cluster --name beelzebub-cluster --region eu-central-1
 
 It took about 15 minutes but went smoothly.
 
-# Deploy the honeypot into the cluster
+## Deploy the honeypot into the cluster
 
 Next, I just cloned the [beelzebub](https://github.com/mariocandela/beelzebub/) repo and created the Kubernetes resources from within the repo:
 
@@ -27,7 +27,7 @@ Next, I just cloned the [beelzebub](https://github.com/mariocandela/beelzebub/) 
 helm install beelzebub ./beelzebub-chart
 ```
 
-# Setup logs collection
+## Setup logs collection
 
 Now, a Kubernetes cluster provides logs from several components:
 
@@ -45,7 +45,7 @@ aws iam attach-role-policy \
 aws eks create-addon --addon-name amazon-cloudwatch-observability --cluster-name beelzebub-cluster
 ```
 
-# Expose the honeypot to the Internet
+## Expose the honeypot to the Internet
 
 Then, I created a Kubernetes service of type LoadBalancer:
 
@@ -69,7 +69,7 @@ ssh root@<some-string>.elb.eu-central-1.amazonaws.com
 # obviously, the default password is root :-)
 ```
 
-# Clean up
+## Clean up
 
 Once I was done, I removed the cluster (and all of its workloads and related AWS services):
 
