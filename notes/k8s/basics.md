@@ -58,8 +58,6 @@ kubectl delete -f obj.yaml  # no additional prompting!
 kubectl delete <type> <object>
 ```
 
-<img src="https://github.com/jreisinger/notes/raw/master/static/kubernetes.png" style="max-width:100%;height:auto;"> 
-
 Pod
 ---
 
