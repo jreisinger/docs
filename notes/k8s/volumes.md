@@ -1,6 +1,4 @@
-Containers store data in a temporary filesystem which is isolated from any other container and is empty each time a container starts. A Volume persists data beyond a container restart. A PersistentVolume keeps data even beyond a Pod or node/cluster restart. 
-
-Thus K8s Volume abstraction fixes two problems:
+Containers store data in a temporary filesystem which is isolated from any other container and is empty each time a container starts. The K8s Volume abstraction fixes both these problems:
 
 1. Ephemeral nature of files in Containers.
 1. Need to share files between Containers within a Pod.
