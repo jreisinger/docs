@@ -13,12 +13,12 @@ Resolving a Service from the same namespace
 ```
 k create ns namespace
 k run echoserver --image=k8s.gcr.io/echoserver:1.10 --restart=Never --port=8080 --expose -n namespace
-k run busybox --image=busybox --rm -it --restart=Never -n namespace -- wget echoserver:8080
+k run busybox --image=busybox --rm -it --restart=Never -n namespace -- wget -O- echoserver:8080
 ```
 
 Resolving a Service from different namespace
 
 ```
 k create ns other
-k run busybox --image=busybox --rm -it --restart=Never -n other -- wget echoserver.namespace:8080
+k run busybox --image=busybox --rm -it --restart=Never -n other -- wget -O- echoserver.namespace:8080
 ```
