@@ -4,7 +4,7 @@ Kubernetes provides an object called [Secret](https://kubernetes.io/docs/concept
 
 Let's create a Secret named `mypassword` holding a key/value pair `password=s3cret!`:
 
-```
+```sh
 $ kubectl create secret generic mypassword --from-literal password=s3cret!
 ```
 
@@ -16,7 +16,7 @@ Ok, now, how secure is the secret we've created? It turns out that by default, n
 
 Anyone who has access to the Kubernetes API server can get the secret:
 
-```
+```sh
 $ kubectl get secrets mypassword -o yaml
 ...
 data:
@@ -26,7 +26,7 @@ data:
 
 Oh, but we can't read it. Is it encrypted? No, it's just base64 decoded:
 
-```
+```sh
 $ echo czNjcmV0IQ== | base64 -d -
 s3cret!
 ```
@@ -35,7 +35,7 @@ s3cret!
 
 Secrets, like other Kubernetes objects, are persisted in the etcd data store; by default unencrypted. So if we can access the data store, we can see the secrets. On a minikube cluster, we can do it like this:
 
-```
+```sh
 $ minikube ssh
 $ sudo -i
 # cat << "EOF" | bash
@@ -64,7 +64,7 @@ Let's suppose that we can't access the API server or the etcd database because t
 
 Let's create a service account that is allowed to read (list allows for implicit reading) all secrets within the default namespace:
 
-```
+```sh
 $ kubectl create serviceaccount secrets-reader
 $ kubectl create role read-secrets --resource secrets --verb list
 $ kubectl create rolebinding secrets-reader --serviceaccount default:secrets-reader --role read-secrets
@@ -72,7 +72,7 @@ $ kubectl create rolebinding secrets-reader --serviceaccount default:secrets-rea
 
 Here's a pod using the service account we have created (instead of the default service account):
 
-```
+```sh
 $ cat << EOF | k apply -f -
 apiVersion: v1
 kind: Pod
@@ -90,7 +90,7 @@ EOF
 
 Service account authenticates to the Kubernetes API via a JWT token that is mounted inside pod containers. If an attacker gains access to a container (for example by exploiting a vulnerability inside a web application or a web server) she can get all secrets in a namespace (or on the whole cluster if clusterrolebinding was used). Like this:
 
-```
+```sh
 $ cat << 'EOF' | kubectl exec -i nginx -- bash | jq -r '.items[].data.password' | base64 -d
 SAPATH=/var/run/secrets/kubernetes.io/serviceaccount
 TOKEN=$(cat ${SAPATH}/token)
@@ -104,7 +104,7 @@ EOF
 
 There's a tool called [KubiScan](https://github.com/cyberark/KubiScan) that can find risky roles (and other objects) for you:
 
-```
+```sh
 $ git clone git@github.com:cyberark/KubiScan.git
 $ cd KubiScan
 $ ./docker_run.sh ~/.kube/config
