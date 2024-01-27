@@ -39,7 +39,7 @@ Role
 
 * a specific set of permissions
 * `Role` - defines permissions on a namespace level
-* `ClusterRole` - defines permissions accross the whole cluster
+* `ClusterRole` - defines permissions across the whole cluster
 
 
 <img width="638" alt="image" src="https://user-images.githubusercontent.com/1047259/167877282-9a9e4e0c-d68b-4b25-9710-f4a11cd0c8b6.png">
