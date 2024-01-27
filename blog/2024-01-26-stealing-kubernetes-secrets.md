@@ -1,3 +1,5 @@
+![image](https://github.com/jreisinger/docs/assets/1047259/5fe480d5-b257-4fe3-975b-1bdcc9fe5ad2)
+
 Kubernetes provides an object called [Secret](https://kubernetes.io/docs/concepts/configuration/secret) that is meant for storing sensitive data like passwords, tokens or keys. Secrets are decoupled (distinct) from Pods to decrease the risk of exposing sensitive data while creating, viewing and updating Pods. Containers in a Pod can access secrets via [environment](https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/#define-container-environment-variables-using-secret-data) variables or [files](https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/#create-a-pod-that-has-access-to-the-secret-data-through-a-volume) mounted through volumes.
 
 Let's create a Secret named `mypassword` holding a key/value pair `password=s3cret!`:
