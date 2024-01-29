@@ -94,6 +94,7 @@ helm repo update
 helm repo list
 
 # install Release with default values
+helm search repo wordpress
 helm install happy-panda bitnami/wordpress
 
 # install another Release with customized values
