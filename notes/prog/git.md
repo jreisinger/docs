@@ -57,13 +57,13 @@ You've now initialized the working directory. You may notice a new directory cre
 Next, tell git to take a snapshot [in svk: momentka] of the contents of all files under the current directory (note the `.`), with git-add:
 
 ```bash
-$ git add .     # add files in working directory to a temporary storage - index
+$ git add .     # add files in working directory to a temporary storage - staging index
 ```
 
 This snapshot is now stored in a *temporary staging area* which git calls the "staging index" or just "index". You can permanently store the contents of the index in the repository with `git-commit`:
 
 ```bash
-$ git commit    # add files in index to a permanent storage - repository (.git directory)
+$ git commit    # add files in staging index to a permanent storage - repository (.git directory)
 ```
 
 This will prompt you for a commit message. You've now stored the first version of your project in git.
