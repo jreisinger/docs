@@ -10,7 +10,7 @@ I think no one really doubts it's a good thing to be able to program. But why Go
 
 Simplicity. Einstein said "Everything should be made as simple as possible, but not simpler". Go language and programs follow this idea. You want simplicity because there's already enough technological (and organizational) complexity. Simpler systems are easier to understand and thus tend to have fewer bugs and are easier to modify.
 
-Security. Go is a relatively new language (version 1.0 was released in 2012) built with safety and security in mind. This is not true of languages created in the pre-Internet era that was more innocent (Python appeared in 1991, C in 1972). 
+Security. Go is a relatively new language (version 1.0 was released in 2012) built with safety and security in mind. This is not true of languages created in the pre-Internet era that was more innocent (Python appeared in 1991). 
 
 Backward compatibility. Go maintainers [intend](https://go.dev/doc/go1compat) that "programs written to the Go 1 specification will continue to compile and run correctly, unchanged, over the lifetime of that specification. ... The APIs [the standard library] may grow, acquiring new packages and features, but not in a way that breaks existing Go 1 code." It basically means that you don't need to worry that the programs you write will stop working and you will need to investigate what to do to bring them back to life.
 
@@ -125,7 +125,7 @@ if err != nil && err != io.EOF {
 fmt.Printf("client read: %s\n", buf[:n])
 ```
 
-Now let's run the server and client:
+Let's run the server and client:
 
 ```sh
 $ go run tcp/server/echo.go
