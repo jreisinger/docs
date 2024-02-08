@@ -8,7 +8,7 @@ The need for security stems from the fact that people make suboptimal decisions 
 
 In case you don't know or don't care about your vulnerabilities and threats, you can run into trouble. Your data can be stolen, altered, deleted or encrypted for ransom. Your infrastructure or applications can be shut down, misused for crypto-mining or for launching attacks against other targets. Your customers or employees can get scammed.
 
-This creates all sorts of problems. Operational problems, when employees have to handle security incidents instead of normal business. Loss of reputation and consequently of employees and customers. The company can get fined or someone (like a CISO) can even go to jail. All this gets reflected also in terms of financial losses. Obviously, you want to avoid this at least to a certain degree.
+This creates all sorts of issues. Your customers/users can't use a service at all or the service is not working correctly. Operational problems, when employees have to handle security incidents instead of normal business. Loss of reputation and consequently of employees and customers. The company can get fined or someone (like a CISO) can even go to jail. All this gets reflected also in terms of financial losses. Obviously, you want to avoid this at least to a certain degree.
 
 # Security goals
 
@@ -18,7 +18,7 @@ More formally, cybersecurity is a never ending effort to manage risks of compute
 
 CIA triad represents the traditional (since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf)) security goals: "The protection of system data and resources from accidental and deliberate threats to confidentiality, integrity, and availability."
 
-* confidentiality: no unauthorized access to data or resources
+* confidentiality: no unauthorized (read) access to data or resources
 * integrity: no unauthorized changes to data or resources
 * availability: data and resources available when needed
 
@@ -26,7 +26,7 @@ CIA triad represents the traditional (since [1977](https://nvlpubs.nist.gov/nist
 
 OK, so how do we achieve the security goals? First, there are some principles everybody should keep in mind and apply whenever possible:
 
-* simplicity - the worst enemy of security is [complexity](https://www.schneier.com/blog/archives/2022/08/security-and-cheap-complexity.html) because it makes attacks easier and defense harder
+* simplicity - the worst enemy of security is [complexity](https://www.schneier.com/blog/archives/2022/08/security-and-cheap-complexity.html) because it makes defense harder
 * minimal attack surface - minimize possible ways a system can be attacked
 * least privilege - deny by default to limit the blast radius of a compromise
 * segmentation - create boundaries between systems to limit the blast radius of a compromise
@@ -35,7 +35,7 @@ OK, so how do we achieve the security goals? First, there are some principles ev
 
 # Security areas
 
-Second, you have to care about many things because the weakest link in the chain of interconnected systems can get exploited (security is a systems property). Not to get overwhelmed one might create some abstractions in the form of distinct areas to cover.
+Second, you have to care about many things because the weakest link in the chain of interconnected components can get exploited (security is a systems property). Not to get overwhelmed one might create some abstractions in the form of distinct areas to cover.
 
 ## Governance and risk management
 
