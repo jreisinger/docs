@@ -1,3 +1,5 @@
+![image](https://github.com/jreisinger/docs/assets/1047259/fcb31959-1eeb-484d-a5ca-802187e0a595)
+
 I started to read <https://bitfieldconsulting.com/books/crypto>. I'll also try to write the code and take some notes in the form of blog posts, like this one.
 
 A simple way to encipher (or encrypt) some data is by using the shift cipher. We do this by going through the data byte by byte adding a key to each of the bytes. It's possible because in Go bytes are equivalent to 8-bit numbers ranging from 0 to 255 (`byte` data type is an alias for `uint8`).
