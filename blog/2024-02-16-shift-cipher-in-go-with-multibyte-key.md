@@ -1,4 +1,4 @@
-In the previous blog post we developed a simple crypto system. It's algorithm is based on shifting bytes by the number represented by a single byte we call a key. It means Eve has to do at maximum 256 (1 byte is 8 bits and that means 2^8 possibilities) guesses to find out the key. Let's try to improve the situation here by supporting longer keys.
+In the previous blog post we developed a simple crypto system. Its algorithm is based on shifting bytes by the number represented by a single byte we call a key. It means Eve has to do at maximum 256 (1 byte is 8 bits and that means 2^8 possibilities) guesses to find out the key. Let's try to improve the situation here by supporting longer keys.
 
 To encipher a message we go through it byte by byte and we also go byte by byte through the key. Usually the key is much shorter than the message we want to encrypt. So we need to go through the key multiple times. The math trick to do this is called modulo. A mod B is the remainder that's left after dividing A by B as many times as you can. E.g. 5 mod 2 = 1. Modular arithmetic is sometimes called "clock arithmentic" because it wraps around like an analog clock; 12 hours later than 5 o'clock can't be 17 o'clock, it's 5 o'clock again. To put it another way, 17 mod 12 = 5.
 
@@ -30,8 +30,7 @@ The program will produce this output - notice the result is never greater than 2
 9 mod 3 = 0
 ```
 
-OK, let's use modulo operation to encrypt a message:
-
+OK, let's use modulo to help us encrypt a message:
 
 ```
 func Encipher(plaintext []byte, key []byte) []byte {
