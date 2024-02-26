@@ -44,6 +44,4 @@ $ echo hello world | go run ./cmd/encipher -key 10 | go run ./cmd/crack -crib he
 hello world
 ```
 
-See <https://github.com/jreisinger/pocs/tree/main/crypto/shift> for the whole code and more.
-
-Most of the ideas and code come from John Arundel's [book](https://bitfieldconsulting.com/books/crypto) I started to read. I plan to try to write the code from the book and take some notes in the form of blog posts like this one.
+See [shift](https://github.com/jreisinger/pocs/tree/main/crypto/shift) for all the code. Most of the ideas and code come from John Arundel's [book](https://bitfieldconsulting.com/books/crypto) I started to read. I plan to write the code from the book and to take notes in the form of blog posts like this one.
