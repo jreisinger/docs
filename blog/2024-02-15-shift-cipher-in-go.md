@@ -1,4 +1,4 @@
-![image](https://github.com/jreisinger/docs/assets/1047259/fcb31959-1eeb-484d-a5ca-802187e0a595)
+![](https://github.com/jreisinger/docs/assets/1047259/fcb31959-1eeb-484d-a5ca-802187e0a595)
 
 A simple way to encipher (or encrypt) some data is by using the shift cipher. We can do this in Go by going through the data byte by byte adding a key to each of the bytes. In Go bytes are equivalent to 8-bit numbers ranging from 0 to 255 (`byte` data type is actually an alias for `uint8`).
 
@@ -37,9 +37,10 @@ func Crack(ciphertext, crib []byte) (key byte, err error) {
 If we call these functions from within commands (`package main`) it looks like this:
 
 ```
-$ echo hello world | go run ./cmd/encipher -key 10 | go run ./cmd/decipher -key 10                                                                          
-hello world
-
+$ echo HAL | go run ./cmd/encipher
+IBM
+$ echo IBM | go run ./cmd/decipher
+HAL
 $ echo hello world | go run ./cmd/encipher -key 10 | go run ./cmd/crack -crib hell                                                                          
 hello world
 ```
