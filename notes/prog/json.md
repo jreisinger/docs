@@ -12,9 +12,21 @@ program state. To transfer this data outside of the program's own address space
 (e.g. to another application over the network) it needs to be serialized. This
 process is also called marshalling or encoding.
 
-A JSON value MUST be an object `{}`, array `[]`, number, or string, or one of
-the following three literal names: `false`, `null`, `true`. The literal names 
-MUST be lowercase. No other literal names are allowed. [RFC 7159](https://www.rfc-editor.org/rfc/rfc7159.html#section-3)
+A JSON value MUST be an
+
+- object `{}`
+- array `[]`
+- number
+- string
+
+or one of the literal names: 
+
+- `true`
+- `false`
+- `null`
+
+The literal names MUST be lowercase. No other literal names are allowed. [RFC
+7159](https://www.rfc-editor.org/rfc/rfc7159.html#section-3)
 
 ## jq
 
@@ -48,23 +60,15 @@ Basic filters:
 '.foo'   # value at key foo
 ```
 
-You can **join filters** using `|`:
-
-```
-$ jq '.[] | .animal' < animals.json
-"Camel, aka Dromedary"
-"Botta's Pocket Gopher"
-```
-
 Emit raw (**unquoted**) strings with `-r`:
 
 ```
-$ jq -r '.[] | .animal' < animals.json
+$ jq -r '.[].animal' < animals.json
 Camel, aka Dromedary
 Botta's Pocket Gopher
 ```
 
-Get values of **multiple keys**:
+**Join filters** using `|` and get values of **multiple keys**:
 
 ```
 $ jq -r '.[] | "\(.title) => \(.animal)"' < animals.json
