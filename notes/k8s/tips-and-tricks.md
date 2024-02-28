@@ -11,36 +11,33 @@ Shell setup
 source <(kubectl completion bash)
 alias k="kubectl"
 complete -o default -F __start_kubectl k
+```
 
-export do="--dry-run=client -o yaml"
+Delete pod immediately
+
+```
 export now="--force --grace-period=0"
-```
-
-Generate pod manifest
-
-```
-k run nginx --image=nginx --port=80 $do
+k delete pod nginx $now
 ```
 
 Explain manifest fields
 
 ```
-k explain pod.spec.containers.ports
+k explain pod.spec.containers.ports [--recursive]
 ```
 
 Run a temporary pod inside a cluster
 
 ```
-# Shell into it.
-k run tmp --image=alpine --rm -it --restart=Never -- /bin/sh
-/ # apk update && apk add bind-tools curl
+## run a command in it
+k run busybox --image=busybox --rm -it --restart=Never --command -- wget -qO- example.com --timeout 2
+
+## shell into it
+k run alpine --image=alpine --rm -it --restart=Never --command -- /bin/sh
+/ # apk --update add bind-tools curl
 ```
 
-```
-# Run a command in it.
-k run tmp --image=busybox --rm -it --restart=Never -- wget example.com --timeout 2
-k run tmp --image=curlimages/curl --rm -it --restart=Never -- curl example.com --max-time 2
-```
+* `--command --` specifies a command (complete with arguments) to run, instead of the container's default entrypoint
 
 Copy files
 
@@ -48,7 +45,7 @@ Copy files
 k cp <pod>:/path/to/remote/file /path/to/local/file # or vice versa
 ```
 
-Port forwarding
+Forward a port from localhost to cluster
 
 ```
 k port-forward <pod> 8080:8080 # tunnel: localhost -> k8s master -> k8s worker node
