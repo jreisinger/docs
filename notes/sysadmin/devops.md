@@ -1,4 +1,4 @@
-Created: 2016-11-20
+Created: 2016-11-20, reviewed: 2024-03-12
 
 <img src="https://user-images.githubusercontent.com/1047259/152169337-a7181dcb-9c81-41c9-bbe2-68e153132ecd.png" title="DevOps">
 
@@ -8,10 +8,10 @@ features meanwhile change-resistant ops team would provide 24x7 management of
 production environments. This arrangement often creates tremendous internal
 conflict and fails to meet the needs of the business and its clients.
 
-DevOps is a set of techniques to solve the chronic conflict between Development
-an IT Operations. DevOps is an emerging field in operations. The practice of
-DevOps typically appears in web applications and cloud environments, but its
-influence is spreading to all parts of all industries.
+DevOps is an emerging philosophy to solve the chronic conflict between
+development an IT operations. The practice of DevOps typically appears in web
+applications and cloud environments, but its influence is spreading to all
+parts of all industries.
 
 The principles behind DevOps work patterns are the same principles that
 transformed manufacturing. DevOps has been formed by:
@@ -30,7 +30,7 @@ principles that all the DevOps patterns can be derived from.
 
 ## The First Way - systems thinking
 
-To maximaze left-to-right flow of work (from Dev to Ops to the customer) we need
+To maximize left-to-right flow of work (from Dev to Ops to the customer) we need
 
 * emphasize the performance of the entire system, as opposed to the performance of a specific silo of work or department
 * each step is done in a repeatable way
@@ -93,11 +93,10 @@ Lean
 Automation
 
 * the most universally recognized aspect of DevOps
-* if you need to perform a task more than twice, it should be automated
 * don't automate what you don't understand
 * allows brainpower to be used to solve new and more difficult challenges
 * reduces the risk of human error
-* you might need one, some, or all of tools like: Ansible, Salt, Jenkins, Packer, Terraform
+* you might need one, some, or all of tools like: Ansible, Jenkins, Packer, Terraform
 * don't pick a tool and then look for the questions it answers
 * reevaluate your tool set every year or two
 
@@ -110,14 +109,14 @@ Measurement
 Sharing
 
 * incentivize staff to share their work internally (presentations, how-to
-  wiki articles) and externally (Meetups, blogs, conferences).
+  wiki articles) and externally (Meetups, blogs, conferences)
 
 # Sources
 
 * [The Phoenix Project](https://itrevolution.com/book/the-phoenix-project/)
-* ULSAH 5th
+* [ULSAH](https://admin.com) 5th edition
 
-## More info
+# More
 
-* https://www.oreilly.com/ideas/what-is-devops-yet-again
-* http://sysadvent.blogspot.sk/2016/12/day-13-injecting-modern-concepts-into.html
+* <https://www.oreilly.com/ideas/what-is-devops-yet-again>
+* <http://sysadvent.blogspot.sk/2016/12/day-13-injecting-modern-concepts-into.html>
