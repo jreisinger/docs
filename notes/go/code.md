@@ -18,13 +18,11 @@ go mod init github.com/jreisinger/my-project
 vim main.go
 ```
 
-You can use [go-code](https://github.com/jreisinger/dotfiles/blob/master/bin/go-code) to create a Go module skeleton.
-
 ## See also
 
-* https://golang.org/doc/code.html (official tutorial)
-* https://blog.golang.org/using-go-modules
-* https://github.com/golang/go/wiki/Modules
+* <https://golang.org/doc/code.html> (official tutorial)
+* <https://blog.golang.org/using-go-modules>
+* <https://go.dev/wiki/Modules>
 
 # The old way (`GOPATH`, `src`, ...)
 
