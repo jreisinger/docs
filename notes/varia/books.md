@@ -4,6 +4,7 @@ Some of the books that I read (at least partially). Roughly ordered by most rece
 
 Security
 
+* Explore Go: Cryptography [2024]
 * Navigating the Cybersecurity Career Path, 2022 [2023]
 * Security Chaos Engineering, 2023 [2023]
 * Kubernetes Security, 2018
@@ -13,7 +14,7 @@ Security
 Sysadmin/SRE/DevOps
 
 * Cloud Native Devops with Kubernetes, 2022
-* Kuberneter Up & Running, 2022
+* Kubernetes Up & Running, 2022
 * Certified Kubernetes Administrator (CKA) Study Guide, 2022
 * Cloud Native Go, 2021
 * Cloud Native DevOps with Kubernetes, 2019
@@ -49,6 +50,7 @@ Programming
 
 Management :-)
 
+* WoF Gospels
 * Josef Pieper: Štěstí a kontemplace, 1957 [2023]
 * Tom Rudelius: Chasing Proof, Finding Faith, 2023 [2023]
 * Joseph Ratzinger: Uvod do krestanstva, 1968/2000 [2023]
