@@ -1,13 +1,13 @@
 ![image](https://github.com/jreisinger/docs/assets/1047259/18b6f3e2-05d5-4612-8ba7-41b96f4deecc)
 
-While looking for a new project to hone my skills I came across the beelzebub. Wikipedia says Beelzebub was a Philistine God and later a major demon for some Abrahamic religions. In this case it's a honeypot written in Go :-).
+While looking for a new project to hone my skills I came across the beelzebub. Wikipedia says Beelzebub was a Philistine god and later a major demon for some Abrahamic religions. In this case it's a honeypot written in Go :-).
 
 My plan was something like:
 
 1. Create a Kubernetes cluster on AWS using the EKS service
 1. Deploy the honeypot into the cluster
-1. Setup logs collection
-1. Expose the honeypot to an insecure network, like the Internet, and wait
+1. Setup logs collection to see what's going on
+1. Expose the honeypot to a dangerous network, like the Internet, and wait
 
 ## Create a Kubernetes cluster
 
