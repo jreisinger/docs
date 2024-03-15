@@ -1,6 +1,6 @@
-![image](https://github.com/jreisinger/docs/assets/1047259/18b6f3e2-05d5-4612-8ba7-41b96f4deecc)
+![image](https://github.com/jreisinger/docs/assets/1047259/ec351b9c-cc23-4d15-9aa8-bd70bfe92a02)
 
-While looking for a new project to hone my skills I came across the beelzebub. Wikipedia says Beelzebub was a Philistine god and later a major demon for some Abrahamic religions. In this case it's a honeypot written in Go :-).
+While looking for a new project to hone my skills I came across the beelzebub. Wikipedia says Beelzebub, occasionally known as the Lord of the Flies, was a Philistine god and later a major demon for some Abrahamic religions. In this case it's a [honeypot](https://en.wikipedia.org/wiki/Honeypot_(computing)) written in Go :-).
 
 My plan was something like:
 
@@ -65,9 +65,11 @@ filter kubernetes.pod_name="beelzebub-beelzebub-chart-b86c7dff8-59ldz"
 To make sure everything is working, I logged into the honeypot and observed the logs (it takes a while until the logs get to the CloudWatch):
 
 ```
-ssh root@<some-string>.elb.eu-central-1.amazonaws.com
+ssh root@<some-string>.elb.eu-central-1.amazonaws.com ls -la
 # obviously, the default password is root :-)
 ```
+
+![image](https://github.com/jreisinger/docs/assets/1047259/18b6f3e2-05d5-4612-8ba7-41b96f4deecc)
 
 ## Clean up
 
