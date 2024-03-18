@@ -28,20 +28,6 @@ $ tool=wget;echo -e "use $tool to silently download body to a file.\n\n$($tool -
 wget -q -O file URL
 ```
 
-Help me to decide whether I should read a content (rating and quality-score seem most useful): 
-
-```
-$ wget -qO- https://jreisinger.blogspot.com/2022/09/preventing-git-leaks.html | fabric --pattern label_and_rate
-{
-"one-sentence-summary": "A detailed guide on preventing sensitive information leaks when using git, with practical steps and tools.",
-"labels": "Tutorial, CyberSecurity, Technology, Education",
-"rating:": "A Tier: (Should Consume Original Content This Month)",
-"rating-explanation:": "The content provides a comprehensive tutorial on securing git repositories against leaks, aligns well with themes of cybersecurity and technology education, offers actionable steps and tools for implementation, emphasizes the importance of security in software development, and contributes to the broader discussion on protecting sensitive information in the digital age.",
-"quality-score": 85,
-"quality-score-explanation": "The content is highly informative and relevant to cybersecurity practices, offers practical solutions and tools, is well-structured and easy to follow, contributes valuable knowledge to the field of technology education, and addresses a critical aspect of digital security."
-}
-```
-
 Summarize what a program does and explain its parts:
 
 ```
@@ -64,6 +50,38 @@ This Go program is designed to extract and print all the URLs found in the `<a>`
    - Back in the `main` function, if `extractURLs` returns successfully, it iterates over the slice of URLs and prints each one to standard output.
 
 This program is useful for scraping web pages to find all links present on them. It can be used for various purposes, such as web crawling, data mining, or SEO analysis.
+```
+
+Help me to decide whether I should read a given text (rating and quality-score seem most useful): 
+
+```
+$ wget -qO- https://jreisinger.blogspot.com/2022/09/preventing-git-leaks.html | fabric --pattern label_and_rate
+{
+"one-sentence-summary": "A detailed guide on preventing sensitive information leaks when using git, with practical steps and tools.",
+"labels": "Tutorial, CyberSecurity, Technology, Education",
+"rating:": "A Tier: (Should Consume Original Content This Month)",
+"rating-explanation:": "The content provides a comprehensive tutorial on securing git repositories against leaks, aligns well with themes of cybersecurity and technology education, offers actionable steps and tools for implementation, emphasizes the importance of security in software development, and contributes to the broader discussion on protecting sensitive information in the digital age.",
+"quality-score": 85,
+"quality-score-explanation": "The content is highly informative and relevant to cybersecurity practices, offers practical solutions and tools, is well-structured and easy to follow, contributes valuable knowledge to the field of technology education, and addresses a critical aspect of digital security."
+}
+```
+
+Summarize an article:
+
+```
+$ wget -qO- https://www.intercom.com/blog/run-less-software | fabric --pattern create_micro_summary
+ONE SENTENCE SUMMARY:
+Intercom's "Run Less Software" philosophy emphasizes choosing standard technology, outsourcing undifferentiated heavy lifting, and creating enduring competitive advantage.
+
+MAIN POINTS:
+- Standardize technology choices to become experts and build better, faster solutions.
+- Outsource non-core activities to focus on creating value for customers.
+- Spend time on activities that directly contribute to a competitive advantage.
+
+TAKEAWAYS:
+- Simplify technology stack for efficiency and expertise.
+- Focus on core business and customer value.
+- Ensure activities align with long-term competitive advantage.
 ```
 
 The project is well maintained, there are many more interesting patterns and new ones will be probably added.
