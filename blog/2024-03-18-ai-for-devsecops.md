@@ -1,12 +1,12 @@
-I've finally decided to try out a couple of AI related tools to see whether they are useful for me. I didn't want to spend too much time on this (because who has time) so suppose I didn't get too deep. I work in the Dev/Sec/Ops area, meaning I do small-scale programming (as opposed to a full time application development), cybersecurity and IT operations. Since I use terminal a lot I had a look at three non-GUI tools. Here's what I've done and what are my conclusions so far.
+I've finally decided to try out a couple of AI related tools to see whether they are useful for me. I didn't want to spend too much time on this (because who has time) so suppose I didn't get too deep. I work in the Dev/Sec/Ops area, meaning I do small-scale programming (as opposed to full time application development), cybersecurity and IT operations. Since I use terminal a lot I had a look at three non-GUI tools. Here's what I've done and what are my conclusions so far.
 
 ## Ghatgpt-cli
 
-First, I simply wanted a CLI interface to ChatGPT. One of the first Google results was [this project](https://github.com/kardolus/chatgpt-cli). You just need to give it your [API key](https://platform.openai.com/api-keys) either via and environment variable (`export OPENAI_API_KEY=...`) or a configuration file (enter `api_key: ...` to `~/.chatgpt-cli/config.yaml`) and you're ready to go. Now I don't have to open a browser window and log in into ChatGPT:
+First, I simply wanted a CLI interface to ChatGPT. One of the first Google results was [this project](https://github.com/kardolus/chatgpt-cli). You just need to give it your [API key](https://platform.openai.com/api-keys) either via environment variable (`export OPENAI_API_KEY=...`) or configuration file (enter `api_key: ...` to `~/.chatgpt-cli/config.yaml`) and you're ready to go. Now I don't have to open a browser window and log in into ChatGPT:
 
 ```
-$ chatgpt what is the best security scanner for container images
 $ chatgpt write a simple REST API server in python
+$ chatgpt what is the best security scanner for container images
 $ chatgpt how do I create a kubernetes cluster on aws
 ```
 
@@ -68,7 +68,7 @@ The project is well maintained, there are many more interesting patterns and new
  
 ## Beelzebub
 
-I wrote about basic setup of this honeypot in a previous post. This time I wanted to see its AI part in action. The honeypot uses ChatGPT API to simulate a Linux terminal. After cloning [the repo](https://github.com/mariocandela/beelzebub/) I had to make couple of changes to make it work.
+I wrote about basic setup of this honeypot in a previous post. This time I wanted to see its AI part in action. The honeypot uses ChatGPT API to simulate a Linux terminal. After cloning [the repo](https://github.com/mariocandela/beelzebub/) I had to make couple of changes to make it work:
 
 1. I added my ChatGPT API key to `configurations/services/ssh-2222.yaml`.
 2. I changed the unsupported model:
@@ -90,8 +90,8 @@ diff --git a/plugins/openai-gpt.go b/plugins/openai-gpt.go
 
 I built and started the honeypot locally like this:
 ```
-docker-compose build
-docker-compose up 
+$ docker-compose build
+$ docker-compose up
 ```
 Then I logged in and tried a couple of commands:
 
