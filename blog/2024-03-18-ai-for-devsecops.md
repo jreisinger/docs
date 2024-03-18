@@ -67,6 +67,8 @@ This program is useful for scraping web pages to find all links present on them.
 ```
 
 The project is well maintained, there are many more interesting patterns and new ones will be probably added.
+
+PS: I ran this blog post through AI to improve the writing (`cat 2024-03-18-ai-for-devsecops.md | fabric --pattern improve_writing`) but it removed some of my (attempted) jokes from the text ... So you are reading a pure human version :-).
  
 ## Beelzebub
 
