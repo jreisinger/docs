@@ -226,7 +226,7 @@ git push origin --delete experimental_idea
 
 # Tags
 
-You can specific points in a repo's history as being important. Typically, people use this functionality to mark release points (v1.0, v2.0, ...).
+You can highlight specific points in a repo's history as being important. Typically, people use this functionality to mark release points (v1.0, v2.0, ...).
 
 ```
 git fetch --all --tags  # fetch all tags from remote
