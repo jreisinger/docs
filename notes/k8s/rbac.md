@@ -115,6 +115,8 @@ k get rolebindings -A -o wide --sort-by=".metadata.creationTimestamp"
 
 ## User access management
 
+Create new user
+
 ```
 # create key
 openssl genrsa -out jane.key 2048
@@ -142,19 +144,24 @@ k certificate approve jane
 # get cert
 k get csr jane -ojson | jq -r .status.certificate | base64 -d > jane.crt
 
-# use crt and key
+# create user jane in ~/.kube/config with key and cert
 k config set-credentials jane --client-key=jane.key --client-certificate=jane.crt --embed-certs
+
+# create context jane in ~/.kube/config and use it
 k config set-context jane --user=jane --cluster=kind-kind
+k config get-contexts
 k config use-context jane
 ```
 
-```
-# check the permissions assigned to user johndoe
-k auth can-i list pods --as johndoe
+Assign permissions to user
 
-# assign new permissions to user johndoe
+```
+# check the user permissions
+k auth can-i list pods --as jane
+
+# assign new permissions to user
 k create role pod-reader -n default --resource=pods --verb=watch,list,get
-k create rolebinding read-pods -n default --role=pod-reader --user=johndoe
+k create rolebinding read-pods -n default --role=pod-reader --user=jane
 ```
 
 NOTE: In Kubernetes, permissions are additive; users start with no permissions, and you can add permissions using Roles and RoleBindings. You can’t subtract permissions from someone who already has them.
