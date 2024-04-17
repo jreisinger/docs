@@ -186,6 +186,13 @@ Branch is a separate line of development.
 
 To stop Git complaining, always commit or reset your changes before running checkout.
 
+Pull a remote branch
+
+```sh
+git branch -r # list remote branches
+git checkout origin/<branch>
+```
+
 Create and switch to a new branch
 
 ```sh
