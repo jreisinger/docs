@@ -40,7 +40,7 @@ Must adapt to business needs => service oriented APIs that are
 
 Realatively new, built with safety and security in mind (this is not true of languages that are 20+ year old - it made sense in the pre Internet era).
 
-[70%](https://raw.githubusercontent.com/microsoft/MSRC-Security-Research/master/presentations/2019_02_BlueHatIL/2019_02%20-%20BlueHatIL%20-%20Trends%2C%20challenge%2C%20and%20shifts%20in%20software%20vulnerability%20mitigation.pdf) of serious security bugs related to memory safety. Go has automating memory management (GC with low latency). Memory-safe by default. Type-safe polymorphism.
+[70%](https://raw.githubusercontent.com/microsoft/MSRC-Security-Research/master/presentations/2019_02_BlueHatIL/2019_02%20-%20BlueHatIL%20-%20Trends%2C%20challenge%2C%20and%20shifts%20in%20software%20vulnerability%20mitigation.pdf) of serious security bugs related to memory safety. Go has automatic memory management (GC with low latency). Memory-safe by default. Type-safe polymorphism.
 
 Right (latest) encryptions and protocols.
 
