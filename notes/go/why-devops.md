@@ -14,11 +14,10 @@ DevOps teams write
 
 Go has benefits for all of the above situations
 
-- fast build and startup time make you efficient
-- relative ease to understand and learn helps with engineers turnover
-- extensive standard library (http, io, time, regexp, os/exec, encoding/json) allows you to get right into business logic 
-- static type system and explicit error handling make even small scripts more robust
-
-All of the above put you in great position when your "one-time use" script gets larger.
+- fast build and startup times make you efficient
+- relative ease to understand and learn helps with team's and software growth and change
+- extensive standard library allows you to get right into business logic 
+- static types and explicit error handling make even small scripts more robust
 
 Source: https://go.dev/solutions/devops
+
