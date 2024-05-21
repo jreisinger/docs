@@ -1,123 +1,62 @@
-Helm is a templating engine and package manager for the Kubernetes "operating system". It helps you manage application settings and variables. 
+Helm is a templating engine and package manager for the Kubernetes "operating system". The main concepts are:
 
-In Helm's vocabulary, a package is called a *chart*. It [contains](https://github.com/bmuschko/cka-study-guide/tree/master/ch04/templating-tools/helm):
+* Chart: a Helm package
+* Release: a running instance of a Chart
+* Repository: place where Charts are kept (like CPAN)
 
-```
-$ tree
-.
-├── Chart.yaml  # describes the chart (name, description, version, author)
-├── templates   # K8s manifests with templating directives
-│   ├── web-app-pod.yaml
-│   └── web-app-service.yaml
-└── values.yaml # defaults
-```
+Chart looks like
 
-Chart.yaml:
+    $ tree
+    .
+    ├── Chart.yaml  # describes the chart (name, description, version, author)
+    ├── templates   # K8s manifests with templating directives
+    │   ├── deployment.yaml
+    │   └── service.yaml
+    └── values.yaml # defaults
 
-```
-apiVersion: 1.0.0
-name: web-app
-version: 2.5.4
-```
+(You can try out the following commands on https://github.com/cloudnativedevops/demo/tree/main/hello-helm3/k8s/demo)
 
-web-app-pod.yaml:
+Template locally and display on console
 
-```
-apiVersion: v1
-kind: Pod
-metadata:
-  labels:
-    app: web-app
-  name: web-app
-spec:
-  containers:
-  - image: bmuschko/web-app:1.0.1
-    name: web-app
-    env:
-    - name: DB_HOST
-      value: {{ .Values.db_host }}
-    - name: DB_USER
-      value: {{ .Values.db_user }}
-    - name: DB_PASSWORD
-      value: {{ .Values.db_password }}
-    ports:
-    - containerPort: 3000
-```
+    helm template .
 
-web-app-service.yaml:
+Bundle .tgz archive file
 
-```
-apiVersion: v1
-kind: Service
-metadata:
-  labels:
-    app: web-app-service
-  name: web-app-service
-spec:
-  ports:
-  - name: web-app-port
-    port: {{ .Values.service_port }}
-    protocol: TCP
-    targetPort: 3000
-  selector:
-    app: web-app
-  type: NodePort
-```
+    helm package .
 
-values.yaml:
+Add a Repository
 
-```
-db_host: mysql-service
-db_user: root
-db_password: password
-service_port: 3000
-```
+    helm search hub wordpress # or https://artifacthub.io
+    helm repo add bitnami https://charts.bitnami.com/bitnami
+    helm repo update
+    helm repo list
 
-Other two important concepts besides Chart are:
+Install Release with default values
 
-* Repository - place where Charts are collected and shared (like CPAN but for k8s)
-* Release - an instance of a Chart running in a K8s
+    helm search repo wordpress
+    helm install happy-panda bitnami/wordpress
 
-Commands:
+Install another Release with customized values
 
-```sh
-# template locally and display on a console
-helm template .
+    echo '{mariadb.auth.database: user0db, mariadb.auth.username: user0}' > my-values.yaml
+    helm install --generate-name -f my-values.yaml bitnami/wordpress
 
-# bundle the template files into a chart archive file (.tgz)
-helm package .
+Upgrade existing Release
 
-# add a Repository
-helm search hub wordpress # or https://artifacthub.io
-helm repo add bitnami https://charts.bitnami.com/bitnami
-helm repo update
-helm repo list
+    helm upgrade happy-panda -f my-values.yaml bitnami/wordpress
+    helm get values happy-panda
 
-# install Release with default values
-helm search repo wordpress
-helm install happy-panda bitnami/wordpress
+Rollback existing Release
 
-# install another Release with customized values
-echo '{mariadb.auth.database: user0db, mariadb.auth.username: user0}' > values.yaml
-helm install --generate-name -f values.yaml bitnami/wordpress
+    helm rollback happy-panda 1
 
-# upgrade existing Release
-helm upgrade happy-panda -f values.yaml bitnami/wordpress
-helm get values happy-panda
+Get status and list of Releases
 
-# rollback existing Release
-helm rollback happy-panda 1
+    helm status happy-panda
+    helm list --all
 
-# get status and list of Releases
-helm status happy-panda
-helm list --all
+Uninstall Release
 
-# uninstall Release
-helm uninstall happy-panda
-```
+    helm uninstall happy-panda
 
-Sources:
-
-* https://helm.sh/docs/intro/using_helm/
-* Benjamin Muschko: Certified Kubernetes Administrator (CKA) Study Guide (2022)
-* Butcher, Farina, Dolitsky: Learning Helm (2021)
+MORE: Cloud Native DevOps with Kubernetes, ch 12.
