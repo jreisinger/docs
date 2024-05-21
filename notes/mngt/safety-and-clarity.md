@@ -1,4 +1,21 @@
-<img src="/static/safety-vs-clarity.png" style="max-width:100%;height:auto">
+```
+            Psychological Safety                  
+                      ▲                           
+                      │                           
+                      │                           
+                      │  High performing          
+           Party      │  teams                    
+                      │                           
+                      │                           
+      ────────────────┼────────────────► Clarity  
+                      │                           
+                      │                           
+                      │                           
+           Chaos      │   Dictatorship            
+                      │                           
+                      │                           
+                      │                           
+```
 
 Source: [Building engineering teams under pressure at Slack](https://learning.oreilly.com/case-studies/dev-ops/building-engineering-teams-und/9781491991336-video318233/)
 
