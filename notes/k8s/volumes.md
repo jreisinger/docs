@@ -11,6 +11,10 @@ A process in a Container sees a filesystem view composed from their Docker image
 
 There are many [types of volumes](https://kubernetes.io/docs/concepts/storage/volumes/#volume-types). The type determines the medium backing the volume and its runtime behaviour. Some of the volume types are listed here.
 
+*NOTE*: there are two main categories of volumes:
+1. ephemeral - have lifetime of a pod
+2. persistent - survive a pod
+
 `emtpyDir`
 
 * empty directory within a pod
