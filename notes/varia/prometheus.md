@@ -32,7 +32,7 @@ Having all context all the time is impractical - ways to reduce the amount of da
  |             |     | |           |                  |
  |    +--------+     | | Service   |                  |
  |    |Client  |     | | Discovery |                  |  +--------------+
- |    |Librabry<---+ | |           |                  |  | Email, PD,   |
+ |    |Library <---+ | |           |                  |  | Email, PD,   |
  +-------------+   | | +-----------+                  |  | Slack, etc.  |
                    | |       |                        |  +------^-------+
                    | |       |                        |         |
