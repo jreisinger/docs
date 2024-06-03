@@ -147,7 +147,8 @@ if err != nil {
 defer ln.Close()
 ```
 
-Ok, we need some configuration for TLS to work. TLS uses public key cryptography. TLS server needs 
+Ok, we need some configuration for TLS to work. TLS uses public key cryptography. TLS server needs:
+
 - a certificate that will be sent to a client to authenticate the server and encrypt the communication
 - a private key to decrypt and sign data
 
