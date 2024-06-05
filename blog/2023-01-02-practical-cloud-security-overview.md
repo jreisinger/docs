@@ -18,13 +18,15 @@ More formally, cybersecurity is a never ending effort to manage risks of compute
 
 CIA triad represents the traditional (since [1977](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf)) security goals: "The protection of system data and resources from accidental and deliberate threats to confidentiality, integrity, and availability."
 
-* confidentiality: no unauthorized (read) access to data or resources
-* integrity: no unauthorized changes to data or resources
-* availability: data and resources available when needed
+* Confidentiality: no unauthorized (read) access to data or resources
+* Integrity: no unauthorized changes to data or resources
+* Availability: data and resources available when needed
+
+OK, so how do we achieve the security goals?
 
 # Security principles
 
-OK, so how do we achieve the security goals? First, there are some principles everybody should keep in mind and apply whenever possible:
+First, there are some principles everybody should keep in mind and apply whenever possible:
 
 * simplicity - the worst enemy of security is [complexity](https://www.schneier.com/blog/archives/2022/08/security-and-cheap-complexity.html) because it makes defense harder
 * minimal attack surface - minimize possible ways a system can be attacked
