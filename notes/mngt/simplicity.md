@@ -28,7 +28,12 @@ To fight complexity
   * bad changes trade simplicity for its shallow cousin, convenience
 * review and simplify whenever possible (software is a very tractable medium)
 * hide (encapsulate) necessary complexity using modules with simple interfaces
+* strive for modularity with loose coupling to be able to make changes to parts of the system in isolation
 
 Fred Brooks in [No Silver Bullet](https://en.wikipedia.org/wiki/No_Silver_Bullet) distinguishes between accidental complexity and essential complexity. Essential complexity is caused by the problem to be solved, and nothing can remove it; if users want a program to do 30 different things, then those 30 things are essential and the program must do those 30 different things.
 
 Rob Pike says complexity is multiplicative: fixing a problem by making one part of the system more complex slowly but surely adds complexity to other parts.
+
+More
+
+* https://sre.google/sre-book/simplicity/
