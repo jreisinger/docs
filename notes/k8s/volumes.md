@@ -1,7 +1,7 @@
 Containers store data in a temporary filesystem which is isolated from any other container and is empty each time a container starts. The K8s Volume abstraction fixes both these problems:
 
 1. Ephemeral nature of files in Containers.
-1. Need to share files between Containers within a Pod.
+2. Need to share files between Containers within a Pod.
 
 A process in a Container sees a filesystem view composed from their Docker image (mounted at the root of the FS) and Volumes (mounted at specified paths within the image). It can read and write files to this filesystem. A container using the defaut temporary filesystem vs a containers using a Volume:
 
@@ -109,11 +109,13 @@ apiVersion: v1
 metadata:
   name: db-pvc
 spec:
+  storageClassName: "" # must be empty otherwise default StorageClass will be set
+  volumeName: db-pv
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 512m
+      storage: "512Mi"
 ---
 apiVersion: v1
 kind: Pod
