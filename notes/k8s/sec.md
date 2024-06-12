@@ -375,7 +375,7 @@ NodeRestriction
 
 ## Security boundaries
 
-[Security boundary](https://cloud.google.com/blog/products/gcp/exploring-container-security-isolation-at-different-layers-of-the-kubernetes-stack/) - set of controls to provent a process affecting other processes or accessing other users' data.
+[Security boundary](https://cloud.google.com/blog/products/gcp/exploring-container-security-isolation-at-different-layers-of-the-kubernetes-stack/) - set of controls to prevent a process affecting other processes or accessing other users' data.
 
 Cluster
 * network isolation
