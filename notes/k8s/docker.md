@@ -1,7 +1,6 @@
 Created: 2017-07-24
 
-Docker is a container technology a.k.a container runtime. Cointainers standardize software packaging.
-It's a well timed fusion of
+Docker is a container technology a.k.a container runtime. Containers standardize software packaging. It's a well timed fusion of
 
 * kernel features (cgroups, [namespaces](https://gist.github.com/jreisinger/65488e6d7648f3a07a1a346ae3ef549d))
 * filesystem tricks (UnionFS)
@@ -53,17 +52,6 @@ cd docker-node-hello
 docker build -t example/docker-node-hello:latest .
 ```
 
-Run an image (or a container?):
-
-```bash
-docker run -d -p 80:8080 example/docker-node-hello:latest
-```
-
-* `-d, --detach` run container in background (daemon mode) and print container ID
-* `-p 80:8080` tells Docker to map host's port 80 to the container's port 8080 (port binding)
-* `example/docker-node-hello` image to derive the container from
-* `:latest` (default) tag specifying the image version
-
 Remove an image:
 
 ```bash
@@ -85,22 +73,38 @@ system.
 
 Containers are a *Linux only* technology.
 
-Create a container (see also "Run an image" above):
+Create and run a container built in a step above:
+
+```bash
+docker run -d -p 80:8080 example/docker-node-hello:latest
+```
+
+- `run` = `create` + `start`
+* `-d, --detach` run container in background (daemon mode) and print container ID
+* `-p 80:8080` tells Docker to map host's port 80 to the container's port 8080 (port binding)
+* `example/docker-node-hello` image to derive the container from
+* `:latest` (default) tag specifying the image version
+
+Create and run an Ubuntu container:
 
 ```bash
 docker run --rm -it ubuntu /bin/bash
 ```
 
-* `run` = `create` + `start`
 * `--rm` - delete the container (the read/write filesystem layer) when it exits
 * `-i` - interactive session, i.e. keep STDIN open
 * `-t` - allocate a pseudo-TTY
 * `/bin/bash` - executable to run within the container
 
-Get into a running container:
+List containers
 
 ```bash
 docker ps
+```
+
+Get into a running container:
+
+```bash
 docker exec -it <container_id> /bin/bash # new process created in the container
 ```
 
@@ -120,13 +124,13 @@ docker rm <container_id>
 Remove all containers on your Docker host:
 
 ```bash
-docker rm  $(docker ps -a -q)
+docker rm $(docker ps -a -q)
 ```
 
 # Volumes
 
 * the read/write filesystem layer is a copy-on-write snapshot of an image
-* heavy reliance on the read/write filesystem layer isn't the best storage solution (for data intensive apps like DBs)
+* reliance on the read/write filesystem layer isn't a good storage solution for data intensive apps like DBs
 * the read/write filesystem layer gets removed when the container is removed (`docker rm ...`)
 * Docker has the notion of volumes that are maintained separately from the union
     filesystem
