@@ -9,18 +9,25 @@ import (
 )
 
 var (
-	ws  = regexp.MustCompile(`\s+`)
-	num = regexp.MustCompile(`[0-9]+`)
+	ws   = regexp.MustCompile(`\s+`)
+	num  = regexp.MustCompile(`[0-9]+`)
+	perc = regexp.MustCompile(`([0-9]+)(%)`) // capture groups
 )
 
 func main() {
-	s := "The quick brown fox."
+	s := "battery charged to 98%"
 
 	words := ws.Split(s, -1)
 	fmt.Printf("%d\n", len(words)) // 4
 
 	matched := num.MatchString(s)
-	fmt.Printf("%t\n", matched) // false
+	fmt.Printf("%t\n", matched) // true
+
+	match := num.FindString(s)
+	fmt.Printf("%s\n", match) // 98
+
+	matches := perc.FindStringSubmatch(s)
+	fmt.Printf("%v\n", matches) // [98% 98 %]
 }
 ```
 
