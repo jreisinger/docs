@@ -24,39 +24,35 @@ Bundle .tgz archive file
 
     helm package .
 
-Add a Repository
+Install 3rd party chart
 
-    helm search hub wordpress # or https://artifacthub.io
+    # 1. Search chart (e.g. wordpress) on https://artifacthub.io
+    # 2. Add repository containing the chart:
     helm repo add bitnami https://charts.bitnami.com/bitnami
-    helm repo update
-    helm repo list
+    # 3. Install the chart: 
+    helm install my-wordpress bitnami/wordpress --version 23.0.11
 
-Install Release with default values
-
-    helm search repo wordpress
-    helm install happy-panda bitnami/wordpress
-
-Install another Release with customized values
+Install another release with customized values
 
     echo '{mariadb.auth.database: user0db, mariadb.auth.username: user0}' > my-values.yaml
     helm install --generate-name -f my-values.yaml bitnami/wordpress
 
-Upgrade existing Release
+Upgrade existing release
 
-    helm upgrade happy-panda -f my-values.yaml bitnami/wordpress
-    helm get values happy-panda
+    helm upgrade my-wordpress -f my-values.yaml bitnami/wordpress
+    helm get values my-wordpress
 
-Rollback existing Release
+Rollback existing release
 
-    helm rollback happy-panda 1
+    helm rollback my-wordpress 1
 
-Get status and list of Releases
+List releases and get status
 
-    helm status happy-panda
     helm list --all
+    helm status my-wordpress
 
-Uninstall Release
+Uninstall release
 
-    helm uninstall happy-panda
+    helm uninstall my-wordpress
 
 MORE: Cloud Native DevOps with Kubernetes, ch 12.
