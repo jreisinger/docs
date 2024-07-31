@@ -9,11 +9,11 @@ Entity relationship:
 
 <img src="https://raw.githubusercontent.com/jreisinger/blog/master/files/ansible_entities.png" style="max-width:100%;height:auto;">
 
-Playbook
+Playbook (oftern called `site.yml`)
 
 * a configuration management script
 * unordered list of hosts
-* ordered list of tasks (plays)
+* ordered list of tasks (contained within one or more plays)
 
 Module
 

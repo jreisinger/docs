@@ -1,4 +1,4 @@
-# Security principles
+# Design principles
 
 This is from the [security](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/security.html) pillar of the AWS Well-Architected framework.
 
@@ -17,11 +17,11 @@ Enable traceability 🔍
 Apply security at all layers 🏰
 
 * apply a defense in depth approach 
-* apply security controls at multiple layers (e.g., edge of network, VPC, load balancing, every instance and compute service, operating system, application, and code)
+* apply security controls to all layers (e.g., edge of network, VPC, load balancing, every instance and compute service, operating system, application, and code)
 
 Automate security best practices 🤖
 
-* automated software-based security mechanisms allow you to scale more securely, rapidly and cost-effectively
+* use automated software-based security mechanisms
 * create secure architectures
 * define and manage security controls as code in version-controlled templates
 
@@ -37,15 +37,25 @@ Keep people away from data ⛔
 
 Prepare for security events 👮
 
-* have incident management and investigation process adequate to your organization requirements
+* have incident management and investigation process suitable for your org. requirements
 * run incident response simulations
-* use tools with automation to increase speed for detection, investigation, and recovery
+* use tools and automation to increase speed for detection, investigation, and recovery
 
-# Security steps
+# Areas
+
+Security foundations
+IAM
+Detection
+Infrastructure protection
+Data protection
+Incident response
+Application security
+
+# Steps
 
 1. IAM
 2. Use automation
 3. Enable detection
 4. Prepare for an incident
 
-Source: https://youtu.be/u6BCVkXkPnM
+More: https://youtu.be/u6BCVkXkPnM
