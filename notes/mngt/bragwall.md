@@ -1,5 +1,17 @@
 To fight the imposter syndrome ...
 
+2024
+
+- wrote [hostrecon](https://github.com/jreisinger/hostrecon), [smoke](https://github.com/jreisinger/smoke) and [hackbox](https://github.com/jreisinger/hackbox)
+- wrote [mutating-wh](https://github.com/jreisinger/mutating-wh) with e2e tests
+- created new version of [gokatas](https://github.com/gokatas)
+- updated [docs](https://github.com/jreisinger/docs) and did several [pocs](https://github.com/jreisinger/pocs)
+- wrote 7 blog [posts](https://jreisinger.blogspot.com/2024/)
+- read Cloud Native Devops with Kubernetes
+- read Kubernetes Up & Running
+- got new $job and successfully onboarded
+- translated a [book](https://argumentujeme-o-nabozenstve.org)
+
 2023
 
 - wrote github.com/jreisinger/mathpractice
