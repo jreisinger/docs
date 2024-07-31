@@ -1,7 +1,7 @@
 Kubernetes is a distributed operating system. Applications running on it are called cloud native. See [What is Kubernetes?](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) for more.
 
-Config and basic concepts
-=========================
+Config
+======
 
 `kubectl` cluster configuration
 
@@ -21,18 +21,6 @@ kubectl config get-contexts
 kubectl config use-context <context-name>
 ```
 
-Namespace
-
-* virtual cluster
-* group of objects in a cluster
-* similar to a filesystem folder
-* see [Namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/) for more 
-
-```bash
-# all namespaces in a cluster, need admin rights
-kubectl get namespaces
-```
-
 Basic objects
 =============
 
@@ -42,7 +30,7 @@ Basic objects
 * `get` is conceptually similar to `ps`
 
 ```sh
-# view Kubernetes objects/resources
+# view Kubernetes objects
 kubectl get all [-l app=nginx] # all objects [with a label app=nginx]
 kubectl get <type>             # all objects of given type
 kubectl get <type> <object>    # specific object
@@ -58,6 +46,19 @@ kubectl delete -f obj.yaml  # no additional prompting!
 kubectl delete <type> <object>
 ```
 
+Namespace
+---------
+
+* virtual cluster
+* group of objects in a cluster
+* similar to a filesystem folder
+* see [Namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/) for more 
+
+```bash
+# all namespaces in a cluster, need admin rights
+kubectl get namespaces
+```
+
 Pod
 ---
 
@@ -65,7 +66,9 @@ Pod
 * one or more containers working together symbiotically
 * all containers in a Pod always land on the same node
 * once scheduled to a node, Pods don't move
-* each container runs its own cgroup but they *share* hostname, IP address + port space and filesystem
+* each container runs 
+    * runs its *own* cgroup
+    * but they *share* hostname, IP address + port space and filesystem
 * containers can communicate via IPC, loopback interface (`localhost` hostname) and can share files
 * like a logical host
 * if you want to persist data across multiple instances of a Pod, you need to use `PersistentVolumes`
@@ -125,6 +128,12 @@ One way to create a service:
 
 ```bash
 kubectl expose deployment quotes-prod --port=80 --target-port=5000
+```
+
+A service is accessible from within the cluster:
+
+```bash
+kubectl run busybox --image=busybox --rm -it --restart=Never -- wget quotes-prod/api/v1/random -qO-
 ```
 
 Exposing services outside of the cluster
