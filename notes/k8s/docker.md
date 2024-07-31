@@ -19,23 +19,18 @@ Docker revision-controls:
 
 <img src="https://raw.github.com/jreisinger/blog/master/files/docker_architecture.png" style="max-width:100%;height:auto;"> 
 
-# Terminology
+`docker` is a client for `dockerd` that is a Linux daemon:
 
-Docker *server* - the `docker` command run in daemon mode on a Linux host:
-
-```bash
-$ sudo docker -d -H unix:///var/run/docker.sock -H tcp://0.0.0.0:2375
+```
+❯ minikube ssh 'ps aux | grep dockerd'
+root        1099  0.8  1.2 2556304 103500 ?      Ssl  10:08   0:03 /usr/bin/dockerd -H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock --default-ulimit=nofile=1048576:1048576 --tlsverify --tlscacert /etc/docker/ca.pem --tlscert /etc/docker/server.pem --tlskey /etc/docker/server-key.pem --label provider=docker --insecure-registry 10.96.0.0/12
 ```
 
-Docker *container* - a Linux container that has been instantiated from a Docker
-image
+# Images
+
+One or more filesystem layers and metadata that represent all the files required to run a Dockerized application:
 
 <img src="https://raw.github.com/jreisinger/blog/master/files/docker_images.png" style="max-width:100%;height:auto;"> 
-
-Docker *image* - one or more filesystem layers and metadata that represent all
-the files required to run a Dockerized application
-
-# Images
 
 Two ways to launch a container:
 
@@ -65,7 +60,9 @@ Remove all images on your Docker host:
 docker rmi $(docker images -q)
 ```
 
-# Containers
+# Container
+
+Linux container that has been instantiated from a Docker image.
 
 A container is a self-contained execution environment that shares the kernel of
 the host system and which is isolated from other containers in the
@@ -82,7 +79,7 @@ docker run -d -p 80:8080 example/docker-node-hello:latest
 - `run` = `create` + `start`
 * `-d, --detach` run container in background (daemon mode) and print container ID
 * `-p 80:8080` tells Docker to map host's port 80 to the container's port 8080 (port binding)
-* `example/docker-node-hello` image to derive the container from
+* `example/docker-node-hello` image to instatiate the container from
 * `:latest` (default) tag specifying the image version
 
 Create and run an Ubuntu container:

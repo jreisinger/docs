@@ -7,7 +7,7 @@ Container
     - data
 - each container should run just one main process
 - processes inside the container can't see processes outside of it, and vice versa
-- a container "thinks" it's running on its own machine (busybox in this case)
+- a container "thinks" it's running on its own machine (`bb` in this case)
 
 ```
 $ k run bb --image=busybox --rm -it --restart=Never -- /bin/sh
@@ -21,10 +21,10 @@ bb
 ```
 Container image identifier: `[docker.io/library/]busybox[:latest]`
 
-- docker.io - registry hostname
-- library - repository namespace
-- busybox - image repository
-- latest (untagged image) - tag
+- `docker.io` - registry hostname (optional)
+- `library` - repository namespace (optional)
+- `busybox` - image repository
+- `latest` - tag (optional)
 
 Pod
 - represents one or more application containers [and volumes]

@@ -11,14 +11,14 @@ k get cm -n kube-system coredns -o yaml  # configuration of CoreDNS pods
 Resolving a Service from the same namespace
 
 ```
-k create ns namespace
-k run echoserver --image=k8s.gcr.io/echoserver:1.10 --restart=Never --port=8080 --expose -n namespace
-k run busybox --image=busybox --rm -it --restart=Never -n namespace -- wget -O- echoserver:8080
+k create ns there
+k run nginx --image=nginx --expose --port 80 -n there
+k run busybox --image=busybox --rm -it --restart=Never -n there -- wget -O- nginx:80
 ```
 
 Resolving a Service from different namespace
 
 ```
-k create ns other
-k run busybox --image=busybox --rm -it --restart=Never -n other -- wget -O- echoserver.namespace:8080
+k create ns here
+k run busybox --image=busybox --rm -it --restart=Never -n namespace -- wget -O- nginx.there:80
 ```
