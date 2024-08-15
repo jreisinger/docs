@@ -3,7 +3,7 @@ Containers store data in a temporary filesystem which is isolated from any other
 1. Ephemeral nature of files in Containers.
 2. Need to share files between Containers within a Pod.
 
-A process in a Container sees a filesystem view composed from their Docker image (mounted at the root of the FS) and Volumes (mounted at specified paths within the image). It can read and write files to this filesystem. A container using the defaut temporary filesystem vs a containers using a Volume:
+A process in a Container sees a filesystem view composed from their Docker image (mounted at the root of the FS) and Volumes (mounted at specified paths within the image). It can read and write files to this filesystem. A container using the default temporary filesystem vs a containers using a Volume:
 
 ![129347362-812374d7-3225-4e51-a4de-2ad9d8942fce](https://user-images.githubusercontent.com/1047259/176395171-e934df27-6eac-4704-8a0f-f9c45c6d1d2e.png)
 
@@ -12,14 +12,13 @@ A process in a Container sees a filesystem view composed from their Docker image
 There are many [types of volumes](https://kubernetes.io/docs/concepts/storage/volumes/#volume-types). The type determines the medium backing the volume and its runtime behaviour. Some of the volume types are listed here.
 
 *NOTE*: there are two main categories of volumes:
-1. ephemeral - have lifetime of a pod
-2. persistent - survive a pod
+1. ephemeral - data persisted only for the lifespan of a pod
+2. persistent - persist data over pod restart
 
-`emtpyDir`
+`emtpyDir` (ephemeral)
 
 * empty directory within a pod
 * read/write access
-* only persisted for the lifespan of a pod
 * good for cache and data exchange between containers within a pod
 
 ```
@@ -39,13 +38,12 @@ spec:
       name: logs-volume
 ```
 
-`hostPath`
+`hostPath` (persistent)
 
 * file or directory from the host node's filesystem
-* persists data after Pod restart
 * presents many security risks
 
-`configMap`
+`configMap` (persistent)
 
 * a way to inject configuration data into a Pod
 
@@ -72,10 +70,9 @@ spec:
 
 * All contents stored in `log_level` entry of the CM are mounted into `/etc/config/log_level` file. This file path is derived from `mountPath` + `path`.
 
-`nfs`
+`nfs` (persistent)
 
 * an existing NFS share
-* persists data after Pod restart
 
 `persistentVolumeClaim`
 
