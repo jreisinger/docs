@@ -4,6 +4,8 @@ Some of the books that I read (at least partially). Roughly ordered by most rece
 
 Security
 
+* AWS Security, 2022 [2024]
+* Hacking APIs, 2022 [2024]
 * Explore Go: Cryptography [2024]
 * Navigating the Cybersecurity Career Path, 2022 [2023]
 * Security Chaos Engineering, 2023 [2023]
@@ -50,7 +52,10 @@ Programming
 
 Management :-)
 
-* WoF Gospels
+- C. S. Lewis - zivotopis od Alister McGrath,  2013 [2024]
+- Hovory, 1942-52 [2024]
+* Vyznani, 4st
+* WoF Gospels [2024]
 * Josef Pieper: Štěstí a kontemplace, 1957 [2023]
 * Tom Rudelius: Chasing Proof, Finding Faith, 2023 [2023]
 * Joseph Ratzinger: Uvod do krestanstva, 1968/2000 [2023]
