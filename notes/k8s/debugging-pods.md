@@ -5,28 +5,20 @@
 ## Get most important info
 
 ```
-k get pod $POD
+k get pod $POD # READY, STATUS, RESTARTS
 ```
 
 ---
+
 ## Describe details
 
 ```
-k describe pod $POD
+k describe pod $POD # Events
 ```
 
 ---
-## Cluster events
 
-```
-k events -A
-```
-
-- namespaced
-- persisted in etcd
-
----
-## See container logs
+## Container logs
 
 ```
 k logs $POD [-c $CONTAINER] 
@@ -44,14 +36,13 @@ k exec -it $POD -- /bin/sh
 
 ## Debug with ephemeral container
 
-
 * start demo pod
-`k run demo --image=registry.k8s.io/pause:3.1 --restart=Never`
+`k run myapp --image=registry.k8s.io/pause:3.1 --restart=Never`
 * try exec into it
-`k exec -it demo -- sh`
+`k exec -it myapp -- sh`
 * add ephemeral busybox container and attach to it
-`k debug -it demo --image=busybox:1.28 --target=demo`
-  * `--target` parameter targets the process namespace of another container
+`k debug -it myapp --image=busybox:1.28 --target=myapp`
+  * `--target` targets the process namespace of another container
 
 ---
 
