@@ -63,3 +63,9 @@ k debug node/mynode -it --image=ubuntu
 
 - pod name is automatically generated bassed on the node name
 - the root filesystem of the Node will be mounted at `/host`
+
+---
+
+## More
+
+https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/
