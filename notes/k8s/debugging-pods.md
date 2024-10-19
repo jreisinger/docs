@@ -5,16 +5,23 @@
 ## Get most important info
 
 ```
-k get pod $POD # READY, STATUS, RESTARTS
+k get pod $POD
 ```
+
+* READY
+* STATUS
+* RESTARTS
 
 ---
 
 ## Describe details
 
 ```
-k describe pod $POD # Events
+k describe pod $POD
 ```
+
+* you can tail Pod events like this:
+`k events pod $POD -w`
 
 ---
 
@@ -24,11 +31,14 @@ k describe pod $POD # Events
 k logs $POD [-c $CONTAINER] 
 ```
 
+- `--previous` - logs for the previous instance of the container
+
 ---
 
 ## Exec into container
 
 ```
+k exec -it $POD -- date
 k exec -it $POD -- /bin/sh
 ```
 
