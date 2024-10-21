@@ -49,7 +49,7 @@ I1021 07:19:46.292131 1415509 round_trippers.go:553] GET https://127.0.0.1:6443/
 
 - also external resources managed via Kubernetes 
 - complexity hidden from users (developers)
-- security or compliance enforcement acros all resources
+- security or compliance enforcement across all resources
 
 ---
 
@@ -66,8 +66,6 @@ k get crds
 ## Main Crossplane components
 
 * Provider - creates and manages additional CRDs representing external service
-  * gives you CRD representing connected external resource
-  * like Kubernetes controllers runs on its own reconciliation loops
 * ProviderConfig - configuration of the provider (authn)
 * Managed Resource - Kubernetes resource representing external resource
 
