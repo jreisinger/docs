@@ -36,7 +36,7 @@ k logs $POD [-c $CONTAINER]
 
 ---
 
-## Exec into container
+## Exec commands
 
 ```
 k exec -it $POD -- date
@@ -53,14 +53,25 @@ k debug -it myapp --image=busybox:1.28 --target=myapp
 
 ---
 
+## Ephemeral containers
+
+* not meant for apps just for debugging
+* lack guarantees for resources or execution
+* never automatically restarted
+* may not have ports
+* created using a special `ephemeralcontainers` handler in the API rather than by adding them directly to pod.spec
+
+---
+
 ## Debugging via a shell on the node  
 
 ```
-k debug node/<mynode> -it --image=ubuntu
+k debug node/<mynode> -it --image=ubuntu [--profile=sysadmin]
 ```
 
 - pod name is automatically generated bassed on the node name
 - the root filesystem of the Node will be mounted at `/host`
+- the container runs in the host IPC, Network, and PID namespaces
 
 ---
 
