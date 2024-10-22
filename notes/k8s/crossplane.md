@@ -42,6 +42,7 @@ I1021 07:19:46.292131 1415509 round_trippers.go:553] GET https://127.0.0.1:6443/
 
 - framework to transform your Kubernetes into universal control plane
 - you can manage external resources through standard Kubernetes APIs
+- it uses CRDs and custom controllers underneath
 
 ---
 
