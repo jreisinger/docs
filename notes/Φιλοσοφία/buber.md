@@ -1,6 +1,3 @@
-Jewish story told by Martin Buber (taken from Ratzinger's Introduction to
-Christianity):
-
 An adherent of the Enlightenment, a very learned man, who had heard of the
 Rabbi of Berditchev, paid a visit to him in order to argue, as was his custom,
 with him, too, and to shatter his old-fashioned proofs of the truth of his
@@ -19,16 +16,16 @@ at him time after time broke his resistance.
 
 ---
 
-Privrzenec osvietenstva, velmi uceny clovek, ktory pocul o rabinovi z
-Berdiceva, ho navstivil, aby s nim - ako mal vo zvyku - debatoval a rozbil jeho
-staromodne dokazy o pravdivosti viery. Ked vstupil do rabinovej izby, nasiel ho
-prechadzat sa s knihou v ruke, ponoreneho v myslienkach. Rabin novoprichodziemu
-nevenoval pozornost. Zrazu sa zastavil, letmo na neho pozrel a povedal: „Ale
-mozno je to nakoniec pravda.“ Ucenec sa marne snazil pozbierat - kolena sa mu
-triasli, tak strasny bol pohlad na rabina a tak strasne bolo pocut jeho
-jednoduche vyjadrenie. Rabin Levi Yitschak sa teraz otocil k nemu a celkom
+Privrzenec osvietenstva, velmi uceny clovek, ktory sa dopocul o rabbim z
+Berdiceva, ho navstivil aby s nim - ako mal vo zvyku - disputoval a rozbil jeho
+staromodne dokazy o pravdivosti viery. Ked vstupil do cadikovej izby, nasiel ho
+chodit sem a tam s knihou v ruke, ponoreneho v myslienkach. Rabbi novo
+prichodziemu nevenoval pozornost. Zrazu sa zastavil, letmo na neho pozrel a
+povedal: „Ale mozno je to nakoniec pravda.“ Ucenec sa marne snazil pozbierat -
+kolena sa mu triasli, tak strasny bol pohlad na cadika a tak strasne bolo pocut
+jeho jednoduche slova. Ale rabbi Levi Yitschak sa teraz otocil k nemu a celkom
 pokojne prehovoril: „Synu, velki ucenci Tory, s ktorymi si debatoval, marnili
 na teba svoje slova; ked si odchadzal, smial si sa im. Neboli schopni polozit
-Boha a jeho kralovstvo pred teba na stol, a ani ja to nedokazem. Ale premyslaj,
-synu, mozno je to pravda.“ Zastanca osvietenstva mu oponoval vsetkou svojou
-silou, ale to strasne „mozno“ sa mu stale vracalo a lamalo jeho odpor.
+Boha a jeho kralovstvo pred teba na stol a ani ja to nedokazem. Ale synu
+premyslaj, mozno je to pravda.“ Osvietenec mu oponoval vsetkou svojou silou,
+ale to strasne „mozno“, ktore mu zakazdym zaznievalo zlomilo jeho odpor.
