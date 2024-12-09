@@ -16,7 +16,7 @@ cportal   ClusterIP   10.99.61.122   <none>        8080/TCP   79d
 
 * k8s's HTTP-based load balancing and "virtual hosting" system
 * at implementation level Ingress is different from pretty much any other k8s resource object
-* in particular it is split into 1) common resource specification (the Ingress object) and 2) a controller implemetation
+* in particular it is split into 1) common resource specification (the Ingress object) and 2) a controller implementation
 * there is no "standard" Ingress controller built into k8s - you have to pick and install one
 
 ## Nginx Ingress Controller

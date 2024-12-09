@@ -37,7 +37,7 @@ k run alpine --image=alpine --rm -it --restart=Never --command -- /bin/sh
 / # apk --update add bind-tools curl
 ```
 
-* `--command --` specifies a command (complete with arguments) to run, instead of the container's default entrypoint
+* `--command --` specifies a command (complete with arguments) to run, instead of the container's default `CMD`
 
 Copy files
 
