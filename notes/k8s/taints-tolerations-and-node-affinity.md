@@ -29,9 +29,9 @@ Create a deployment and see whether it gets scheduled:
     ----     ------            ----  ----               -------
     Warning  FailedScheduling  29s   default-scheduler  0/1 nodes are available: 1 node(s) had untolerated taint {key1: value1}. preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
 
-Add tolerations for the deployment pods (spec -> template -> spec) so they get scheduled:
+Add tolerations for the deployment pods so they get scheduled:
 
-    ❯ k edit deployments.apps nginx
+    ❯ k edit deployments.apps nginx # spec -> template -> spec
     ...
     tolerations:
     - effect: NoSchedule
@@ -60,7 +60,7 @@ Create a deployment and see that the pods get scheduled on both new nodes:
 Now make sure that the pods get scheduled to only one of the nodes:
 
     ❯ k label nodes minikube-m02 key2=value2
-    ❯ k edit deployments.apps nginx
+    ❯ k edit deployments.apps nginx # spec -> template -> spec
     ...
     affinity:
       nodeAffinity:
