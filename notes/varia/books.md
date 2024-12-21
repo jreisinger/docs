@@ -15,8 +15,8 @@ Security
 
 Sysadmin/SRE/DevOps
 
-* Cloud Native Devops with Kubernetes, 2022
-* Kubernetes Up & Running, 2022
+* Cloud Native Devops with Kubernetes, 2022 [2024]
+* Kubernetes Up & Running, 2022 [2024]
 * Certified Kubernetes Administrator (CKA) Study Guide, 2022
 * Cloud Native Go, 2021
 * Cloud Native DevOps with Kubernetes, 2019
@@ -30,7 +30,7 @@ Sysadmin/SRE/DevOps
 
 Programming
 
-* The Power of Go: Tools, 2024 [2023]
+* The Power of Go: Tools, 2024 [2024]
 * Learning Go (Boring Go :-), 2021
 * The Pragmatic Programmer, 2019
 * [The Go Programming Language](https://www.gopl.io/), 2016
@@ -54,7 +54,7 @@ Management :-)
 
 - C. S. Lewis - zivotopis od Alister McGrath,  2013 [2024]
 - Hovory, 1942-52 [2024]
-* Vyznani, 4st
+* Vyznani, 4st [2024]
 * WoF Gospels [2024]
 * Josef Pieper: Štěstí a kontemplace, 1957 [2023]
 * Tom Rudelius: Chasing Proof, Finding Faith, 2023 [2023]
