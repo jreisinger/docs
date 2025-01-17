@@ -48,7 +48,7 @@ I1021 07:19:46.292131 1415509 round_trippers.go:553] GET https://127.0.0.1:6443/
 
 ## But why
 
-- also external resources managed via Kubernetes 
+- also external resources managed via Kubernetes
 - complexity hidden from users (developers)
 - security or compliance enforcement across all resources
 
@@ -72,7 +72,7 @@ k get crds
 
 ---
 
-## AWS provider
+## AWS Provider
 
 ```
 cat <<EOF | kubectl apply -f -
@@ -86,24 +86,6 @@ EOF
 
 k get providers | grep aws
 k get crds | grep aws
-```
-
----
-
-## Managed resource
-
-```
-cat <<EOF | kubectl create -f -
-apiVersion: s3.aws.upbound.io/v1beta1
-kind: Bucket
-metadata:
-  generateName: crossplane-bucket-
-spec:
-  forProvider:
-    region: us-east-2
-  providerConfigRef:
-    name: default
-EOF
 ```
 
 ---
@@ -128,8 +110,26 @@ EOF
 
 ---
 
+## Managed resource
+
+```
+cat <<EOF | kubectl create -f -
+apiVersion: s3.aws.upbound.io/v1beta1
+kind: Bucket
+metadata:
+  generateName: crossplane-bucket-
+spec:
+  forProvider:
+    region: us-east-2
+  providerConfigRef:
+    name: default
+EOF
+```
+
+---
+
 ## Where do providers come from
 
 * use existing ones: https://marketplace.upbound.io/providers
 * write your own: https://github.com/grantgumina/provider-pizza
-* template: https://github.com/crossplane/provider-template
+	* template: https://github.com/crossplane/provider-template
