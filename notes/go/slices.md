@@ -18,7 +18,7 @@ var a [3]int // a[0] == 0, a[1] == 0, a[2] == 0
 Literal:
 
 ```
-b := [2]string{"literal", "array", "initialization"}
+b := [3]string{"literal", "array", "initialization"}
 // or
 b := [...]string{"literal", "array", "initialization"}
 ```
@@ -51,6 +51,7 @@ b := []string{"literal", "slice", "initialization"}
 You can also make a slice by slicing an existing slice or array. Slicing is done by specifying a half-open range with two indices like `b[1:4]` or `x[0:len(x)]`:
 
 ```
+//           0    1    2    3    4    5
 s := []byte{'g', 'o', 'l', 'a', 'n', 'g'}
 t := s[1:4] // t == []byte{'o', 'l', 'a'}
 // t is sharing the same storage as s
