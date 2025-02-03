@@ -42,13 +42,13 @@ hello\nworld
 hello
 world
 
->>> x = "Do not meddle    in \the affairs of wizards"
+>>> x = "Do not meddle in \the affairs of wizards"
 >>> x.replace("\t", "t")
-'Do not meddle    in the affairs of wizards'
+'Do not meddle in the affairs of wizards'
 
 >>> import re
->>> tabs = re.compile(r"[\t ]+")
->>> tabs.sub(" ", x)
+>>> tabs = re.compile(r"[\t]+")
+>>> tabs.sub("t", x)
 'Do not meddle in he affairs of wizards'
 ```
 
@@ -170,7 +170,7 @@ import os
 import sys
 
 def walk(dirname):
-    """Walk through a directory and print names of files
+    """Walk dirname recursively and print filenames
     """
     for name in os.listdir(dirname):
         path = os.path.join(dirname, name)
@@ -194,67 +194,64 @@ Not really a Python's strength due to GIL (see Golang).
 import threading
 import time
 
-class aThread(threading.Thread):
-    def __init__(self, num, val):
-        threading.Thread.__init__(self)
-        self.threadNum=num
-        self.loopCount=val
+# Define a function for the thread to execute
+def print_numbers(thread_name, delay):
+    for i in range(5):
+        time.sleep(delay)
+        print(f"{thread_name}: {i}")
 
-    def run(self):
-        print("Starting to run thread: ", self.threadNum)
-        myfunc(self.threadNum, self.loopCount)
+# Create two threads
+thread1 = threading.Thread(target=print_numbers, args=("Thread-1", 1))
+thread2 = threading.Thread(target=print_numbers, args=("Thread-2", 2))
 
-def myfunc(num, val):
-    count=0
-    while count < val:
-        print(num, " : ", val*count)
-        count=count+1
-        #time.sleep(1)
+# Start the threads
+thread1.start()
+thread2.start()
 
-t1=aThread(1, 15)
-t2=aThread(2, 20)
-t3=aThread(3, 30)
+# Wait for both threads to complete
+for thread in [thread1, thread2]:
+    thread.join()
 
-t1.start()
-t2.start()
-t3.start()
-
-threads = []
-threads.append(t1)
-threads.append(t2)
-threads.append(t3)
-
-# wait for all threads to complete by entering them
-for t in threads:
-    t.join()
+print("Exiting Main Thread")
 ```
 
-# Classes and instances
+# Classes and methods
 
 ```python
 #!/usr/bin/env python3
 
-class me:
-    def __init__(self, foo):
-        self.myvar = foo
+class Time:
+    """ Represents the time of day.
+        attributes: hours (int), minutes (int), seconds (int)
+    """
 
-    def getval(self):
-        return self.myvar
+    # __init__ method gets invoked when an object is instantiated
+    def __init__(self, hours=0, minutes=0, seconds=0):
+        self.hours = hours
+        self.minutes = minutes
+        self.seconds = seconds
 
-    def setval(self, bar):
-        self.myvar = bar
+    # __str__ method gets invoked when you print an object
+    def __str__(self):
+        return "{:02}:{:02}:{:02}".format(self.hours, self.minutes, self.seconds)
 
-x = me('bla')
-y = x.getval()
-z = me('baz')
-print(y)
-x.setval('ble')
-print(x.getval())
-print(z.getval())
+    def add_seconds(self, seconds_to_add):
+        total_seconds = self.hours * 3600 + self.minutes * 60 + self.seconds + seconds_to_add
+
+        self.minutes, self.seconds = divmod(total_seconds, 60)
+        self.hours, self.minutes = divmod(self.minutes, 60)
+
+time = Time()
+print("initial time\t{}".format(time))
+
+for seconds in [15, 3600, 7245]:
+    time.add_seconds(seconds)
+    print("+ {:>4} seconds\t{}".format(seconds, time))
 ```
 
 # Sources
 
+* Copilot (AI)
 * The Quick Python Book
 * Mastering Python (Safari video)
 * [Think Python](https://greenteapress.com/wp/think-python-2e/)
