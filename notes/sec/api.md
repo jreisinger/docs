@@ -11,7 +11,7 @@ Authorization: <type> <token/credentials>
 Types
 
 - Basic - uses base64-encoded credentials
-- Bearer - uses an API token
+- Bearer - uses an API token (JWT)
 - AWS-HMAC-SHA256 - uses access key and secret key
 
 ## Authentication
@@ -329,7 +329,6 @@ kr brute http://localhost:8888 -w all.txt
 ## Finding (and exploiting) vulnerabilities
 
 ## Reporting vulnerabilities
-
 
 ---
 
