@@ -84,7 +84,7 @@ log.SetPrefix("wait: ") // command name
 log.SetFlags(0)         // no timestamp
 
 if err := WaitForServer(url); err != nil {
-    log.Fatalf("Site is down: %v\n", err)
+    log.Fatalf("site is down: %v\n", err)
 }
 ```
 
@@ -99,7 +99,7 @@ if err := Ping(); err != nil {
 ```
 dir, err := ioutil.TempDir("", "scratch")
 if err != nil {
-    return fmt.Errorf("failed to create temo dir: %v", err)
+    return fmt.Errorf("failed to create temp dir: %v", err)
 }
 
 // ...use temp dir...

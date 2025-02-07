@@ -145,7 +145,7 @@ Userspace and users
 * user - object for supporting permissions and boundaries
 * group - a set of users used mainly for sharing files access
 
-All user processes (except for init) start as a result of `fork()` usually
+**All** user processes - except for init - start as a result of `fork()` usually
    followed by `exec()`, ex. - running `ls` command in shell:
 
     shell ---> fork() ---> shell
