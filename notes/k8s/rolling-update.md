@@ -1,6 +1,6 @@
 Nginx deployment
 
-```
+```yaml
 # nginx-deploy.yaml
 apiVersion: apps/v1
 kind: Deployment

@@ -26,18 +26,14 @@ Explain manifest fields
 k explain pod.spec.containers.ports [--recursive]
 ```
 
-Run a temporary pod inside a cluster
+Run a command inside a cluster
 
-```
-## run a command in it
-k run busybox --image=busybox --rm -it --restart=Never --command -- wget -qO- example.com --timeout 2
+    k run busybox --image=busybox --rm -it --restart=Never --command -- wget -qO- example.com --timeout 2
 
-## shell into it
-k run alpine --image=alpine --rm -it --restart=Never --command -- /bin/sh
-/ # apk --update add bind-tools curl
-```
+Run a shell inside a cluster
 
-* `--command --` specifies a command (complete with arguments) to run, instead of the container's default `CMD`
+    k run alpine --image=alpine --rm -it --restart=Never --command -- /bin/sh
+    / # apk --update add bind-tools curl
 
 Copy files
 
