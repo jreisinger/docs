@@ -4,6 +4,5 @@
 	- hugo
 	- helm
 	- kubectl
-- 
 
 More: https://developer.hashicorp.com/nomad/tutorials/templates/go-template-syntax

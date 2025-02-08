@@ -18,7 +18,7 @@ func main() {
 	now := time.Now()                                    // current local time
 	epoch := time.Date(1970, 1, 1, 0, 0, 0, 0, time.UTC) // specific time
 
-	// You format date and time by example based on this eigth components:
+	// You format date and time by example based on this eight components:
 	// Mon Jan 2 03:04:05PM 2006 UTC-0700
 	// See pkg.go.dev/time#pkg-constants for predefined constants.
 

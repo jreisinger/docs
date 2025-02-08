@@ -31,7 +31,7 @@ X.509 Certificates
 * certs should use Subject Alternative Names (SANs), Common name (CN) was deprecated in 2000
 * binary format (ASN.1): .der
 * text format (Base64 encoded): .pem
-* there is not consistency in file naming, you can see:
+* there is no consistency in file naming, you can see:
   * .key, .crt - extension denotes information type (private key, certificate)
   * .pem - extension denotes file format (PEM)
 

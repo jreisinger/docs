@@ -62,7 +62,7 @@ See the whole program at [https://github.com/jreisinger/docs/blog/gosec/tlsver/1
 
 # Adding concurrency
 
-The code above works fine. But imagine that we want to check the TLS version of a thousand hosts. Connecting to the hosts one after another might take some time. Concurrency means organizing the program in a way that multiple processes can execute independently. Even at the same time if you have multiple processors (which you most certainly do nowadays). Go has an excellent support for doing this.
+The code above works fine. But imagine that we want to check the TLS version of a thousand hosts. Connecting to the hosts one after another might take some time. Concurrency means organizing the program in a way that multiple functions can execute independently. Even at the same time if you have multiple processors (which you most certainly do nowadays). Go has an excellent support for doing this.
 
 Basically we want to run the getTLSVersion function and forget about. Then run the next one and forget about it (like when you background a shell command with `&`). And so on. Obviously we need to feed some input (function parameters) into the function and collect its output (return values). We use `in` and `out` channels for this. The channels are like typed shell pipes (`$ ls | wc -l`). The type in our case is `host` - it holds all the necessary information. When we fire up goroutines we usually don't want to allow for an unlimited number of them because we might exhaust computing resources (like open sockets or file descriptors). So we run only 30 goroutines. We also want to know when the goroutines are done. For this we use the `WaitGroup`, which is kind of a concurrency-safe counter.
 
@@ -140,11 +140,14 @@ See the whole program at [https://github.com/jreisinger/docs/blog/gosec/tlsver/2
 
 # Tips for designing programs
 
+Design top-down, implement bottom-up.
+
 Design iteratively. No one designs a program top to bottom in a linear, systematic fashion.
 
-Try out alternatives. Good design involves a lot of trial and error. When you look at someone's code, it's finished work, not the process they went through to get there.
+Try out alternatives. Good design involves a lot of trial and error.
 
 Keep it simple. Don't design in extra complexity until it is really needed.
 
 Solve one problem at a time, don't be overwhelmed by everything.
 
+When you look at someone's code, it's finished work, not the process they went through to get there.
