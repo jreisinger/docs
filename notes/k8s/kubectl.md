@@ -16,8 +16,6 @@ Run a shell inside a cluster
     k run alpine --image=alpine --rm -it --restart=Never --command -- /bin/sh
     / # apk --update add bind-tools curl
 
-* `--command` specifies a command (complete with arguments) to run, instead of the container's default entrypoint
-
 Copy files
 
     k cp <pod>:/path/to/remote/file /path/to/local/file # or vice versa

@@ -15,7 +15,7 @@ spec:
     image: nginx
   - name: sidecar
     image: curlimages/curl
-    args:
+    command:
     - /bin/sh
     - -c
     - 'while true; do curl --silent --head localhost; sleep 5; done'
@@ -23,7 +23,7 @@ spec:
 
 ```sh
 k apply -f multi.yaml
-k logs multi sidecar -f
+k logs multi -c sidecar -f
 ```
 
 Pod-to-pod communication

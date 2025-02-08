@@ -171,11 +171,11 @@ NOTE: In Kubernetes, permissions are additive; users start with no permissions, 
 You have an app that needs access to pod info. The default `view` role is too much (`kubectl describe clusterrole view`).
 
 ```
-k create ns myapp
-k create serviceaccount myappid -n myapp
-k create role podview --resource=pods --verb=list,get -n myapp
-k create rolebinding podviewer --serviceaccount=myapp:myappid --role podview -n myapp
-k auth can-i --as=system:serviceaccount:myapp:myappid list pods -n myapp
+k create ns myns
+k create serviceaccount mysa -n myns
+k create role podview --resource=pods --verb=list,get -n myns
+k create rolebinding podviewer --serviceaccount=myns:mysa --role podview -n myns
+k auth can-i --as=system:serviceaccount:myns:mysa list pods -n myns
 ```
 
 NOTE: ClusterRoleBinding applies to all namespaces including future namespaces.
