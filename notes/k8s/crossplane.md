@@ -31,9 +31,9 @@ I1021 07:19:46.292131 1415509 round_trippers.go:553] GET https://127.0.0.1:6443/
 
 ---
 
-## Kubernetes API is extensible
+## Kubernetes API is extensible via custom resources
 
-* custom resources -> CRDs
+* custom resource defitions (CRDs)
 * custom controllers
 
 ---
@@ -58,8 +58,8 @@ I1021 07:19:46.292131 1415509 round_trippers.go:553] GET https://127.0.0.1:6443/
 
 ```
 helm install crossplane --namespace crossplane-system --create-namespace crossplane-stable/crossplane
-kubectl get pods -n crossplane-system
-k get crds
+k get pods -n crossplane-system
+k get crds # see new CRDs ending with .crossplane.io
 ```
 
 ---
@@ -72,7 +72,7 @@ k get crds
 
 ---
 
-## AWS Provider
+## Provider (AWS S3)
 
 ```
 cat <<EOF | kubectl apply -f -
@@ -90,7 +90,7 @@ k get crds | grep aws
 
 ---
 
-## ProviderConfig
+## ProviderConfig (AWS credentials)
 
 ```
 cat <<EOF | kubectl apply -f -
@@ -110,7 +110,7 @@ EOF
 
 ---
 
-## Managed resource
+## Managed resource (AWS S3 bucket)
 
 ```
 cat <<EOF | kubectl create -f -

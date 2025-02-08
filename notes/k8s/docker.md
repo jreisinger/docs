@@ -73,10 +73,12 @@ Containers are a *Linux only* technology.
 Create and run a container built in a step above:
 
 ```bash
+#        HOST PORT  CONTAINER PORT
+#                |  |
 docker run -d -p 80:8080 example/docker-node-hello:latest
 ```
 
-- `run` = `create` + `start`
+* `run` = `create` + `start`
 * `-d, --detach` run container in background (daemon mode) and print container ID
 * `-p 80:8080` tells Docker to map host's port 80 to the container's port 8080 (port binding)
 * `example/docker-node-hello` image to instatiate the container from
@@ -181,13 +183,19 @@ NETWORK ID          NAME                DRIVER              SCOPE
 e3f087868688        none                null                local
 ```
 
-1. bridge (virtual switch) is the default --> private namespaced network within the host (which acts as poor man's router); you decide which ports get exposed to the outside world
-2. with host networking no separate network namespace is used (`docker run --net host ...`)
-3. none is for advanced use cases
+**bridge** (virtual switch) is the default 
+- private namespaced network within the host (172.17.42.0/24)
+- host acts as poor man's router (between networks 172.17.42.0/24 and 10.0.2.0/24)
+- you decide which ports get exposed to the outside world using `-p` option (iptables runles in the background)
 
 <img src="https://raw.github.com/jreisinger/blog/master/files/docker_bridge.png" style="max-width:100%;height:auto;"> 
 
-When you use `-p` Docker creates `iptables` rules that route traffic from the host's public interface on the container's interface on the bridge network.
+with **host** networking no separate network namespace is used 
+- to use it `docker run --net host ...`
+
+**none** is for advanced use cases
+
+
 
 # DNS
 

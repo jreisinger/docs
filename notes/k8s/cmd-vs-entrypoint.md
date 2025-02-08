@@ -2,6 +2,7 @@
 ## Docker
 
 `CMD` defines default command complete with arguments; gets replaced
+
 `ENTRYPOINT` defines default command; gets appended
 
 ```
@@ -17,6 +18,7 @@ CMD [ "5" ]
 ## Kubernetes
 
 `command` corresponds to ENTRYPOINT
+
 `args` corresponds to CMD
 
 ```

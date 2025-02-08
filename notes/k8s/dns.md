@@ -20,5 +20,5 @@ Resolving a Service from different namespace
 
 ```
 k create ns here
-k run busybox --image=busybox --rm -it --restart=Never -n namespace -- wget -O- nginx.there:80
+k run busybox --image=busybox --rm -it --restart=Never -n here -- wget -O- nginx.there:80
 ```

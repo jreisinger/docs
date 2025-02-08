@@ -69,8 +69,8 @@ metadata:
   name: tls-secret-name
 type: kubernetes.io/tls
 data:
-  tls.crt: <base64 encoded certificate>
   tls.key: <base64 encoded private key>
+  tls.crt: <base64 encoded certificate>
 ```
 
 Then we can reference the secret in Ingress via `secretName` field:
