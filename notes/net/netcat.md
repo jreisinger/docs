@@ -20,16 +20,18 @@ Test remote HTTP server:
 
 (press Enter two times after the `GET` line)
 
-Check UDP port is open (`telnet` does not work for UDP ports) but keep in mind that you never know for sure what's the state if you don't get anything back (https://serverfault.com/questions/416205/testing-udp-port-connectivity):
+Check UDP port is open (`telnet` does not work for UDP ports):
 
     $ netcat -vu vpn.ist.ac.at 1194
     Connection to vpn.ist.ac.at 1194 port [udp/openvpn] succeeded!
+ 
+* but keep in mind that you never know for sure what's the state if you don't get anything back (https://serverfault.com/questions/416205/testing-udp-port-connectivity)
 
-Be verbose, make sure no data (zero) is sent to the port you connect to and time out after 3 seconds:
+Be `v`erbose, make sure no data (`z`ero) is sent to the port you connect to and time out after (`w`ait) 3 seconds:
 
     nc -vzw3 host.tld 21-25
 
-Change source port / address (ex. to evade a FW):
+Change source port/address (ex. to evade a FW):
 
     nc -p 16000 host.tld 22      # 16000 is the local port
     nc -s 1.2.3.4 host.tld 8181  # 1.2.3.4 is the local source address

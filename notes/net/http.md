@@ -7,7 +7,8 @@ What
 * stateless, connectionless, reliable protocol
 * HTTP versions: 0.9 ('91), 1.0 ('96), **1.1** ('99), 2 ('15)
 * HTTP < 1.1 needed a separate TCP connection for each HTTP request
-* HTTP < 2 are text based, HTTP 2 is binary
+* HTTP < 2 are text based
+* HTTP 2 is binary
 
 What for
 
@@ -37,7 +38,7 @@ print(r.text)
 
 HTTP message format (both request `>` and response `<`)
 
-* line of information (method, resource, protocol, status code)
+* line of information (`>` method, resource, protocol `<` protocol, status code and message)
 * zero or more of `name: value` [headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
 * blank line - server/client calls `recv()` until `CR-LF-CR-LF` to find out the headers' end
 * optional body - its length (framing) is defined by the `Content-Lenght` header

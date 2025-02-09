@@ -46,19 +46,16 @@ Binary to hexadecimal conversion:
 
                      01101110   Binary (representation of) byte
 
-                      +    +
                       |    |
                       v    v
 
       Higher order  0110  1110  Lower order
       nibble                    nibble
-                      +    +
                       |    |
                       v    v
 
                       6    14   Decimal byte
 
-                      +    +
                       |    |
                       v    v
 
