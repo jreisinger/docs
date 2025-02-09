@@ -58,3 +58,5 @@ Source: [A Regular Expression Matcher](https://www.cs.princeton.edu/courses/arch
 ## Go and simplicity (Griesemer, Pike, Thompson, 2009)
 
 No idea went into Go until it had been simplified to its essence and then had clear benefits that justified the complexity being added. -- Russ Cox
+
+Source: https://go.dev/blog/open-source
