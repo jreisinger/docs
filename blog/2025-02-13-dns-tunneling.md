@@ -9,11 +9,11 @@ In these scenarios, attackers break data into small chunks, disguise them as DNS
 
 Here are the steps an attacker needs to take to exfiltrate data:
 
-![image](https://github.com/user-attachments/assets/d10b0ba7-8f75-4156-a7b2-5174b0094240)
+<img src="https://github.com/user-attachments/assets/d10b0ba7-8f75-4156-a7b2-5174b0094240" width="800">
 
 And this is a proof of concept that demonstrates these steps:
 
-![Screen Recording 2025-02-13 at 15 54 42](https://github.com/user-attachments/assets/5b83a9a4-34de-4a86-ade8-cb57e423ef2e)
+<img src="https://github.com/user-attachments/assets/5b83a9a4-34de-4a86-ade8-cb57e423ef2e" width="800">
 
 You can find the code [here](https://github.com/jreisinger/pocs/tree/main/dns/exfil).
 
