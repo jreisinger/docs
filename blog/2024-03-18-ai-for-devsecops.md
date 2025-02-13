@@ -1,6 +1,6 @@
 ![image](https://github.com/jreisinger/docs/assets/1047259/952a4c34-5f48-4cfc-bc13-d67ebe51e522)
 
-I've finally decided to try out a couple of AI related tools to see whether they are useful for me. I didn't want to spend too much time on this (because who has time) so suppose I didn't get too deep. I work in the Dev/Sec/Ops area, meaning I do small-scale programming (as opposed to full time application development), cybersecurity and IT operations. Since I use terminal a lot I had a look at three non-GUI tools. Here's what I've done and what are my conclusions so far.
+I've finally decided to try out a couple of AI related tools to see whether they are useful for me. I didn't want to spend too much time on this (because who has time) so I didn't get too deep. I work in the Dev/Sec/Ops area, meaning I do small-scale programming (as opposed to full time application development), cybersecurity and IT operations. Since I use terminal a lot I had a look at three non-GUI tools. Here's what I've done and what are my conclusions so far.
 
 ## Ghatgpt-cli
 
