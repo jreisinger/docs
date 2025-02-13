@@ -1,5 +1,3 @@
-## DNS tunneling
-
 A technique called DNS tunneling allows data to be transmitted covertly using the Domain Name System (DNS). Attackers can leverage DNS tunneling for:
 
 - *Data exfiltration* – Stealing sensitive information by embedding it in DNS queries.
