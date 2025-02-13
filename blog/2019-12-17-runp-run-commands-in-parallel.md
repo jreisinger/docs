@@ -1,3 +1,5 @@
+<img width="643" alt="image" src="https://github.com/user-attachments/assets/7e302e38-6b4b-4424-b524-f9139aec51da" />
+
 I'm using shell (bash specifically) on daily basis. From time to time a need arises to run multiple commands in parallel. For example my [.bashrc](https://github.com/jreisinger/dotfiles/blob/master/.bashrc) runs commands like these to download or clone vim plugins I use:
 
 ```
