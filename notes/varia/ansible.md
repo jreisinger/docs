@@ -13,17 +13,34 @@ Playbook (oftern called `site.yml`)
 
 * a configuration management script
 * unordered list of hosts
-* ordered list of tasks (contained within one or more plays)
+* ordered list of tasks
+* here's a playbook containing one play with one host and multiple tasks within roles:
+
+```
+- name: Setup my server
+  hosts: server.example.com
+  become: true
+
+  roles:
+    - role: common
+      tags: [ 'common' ]
+    - role: backup-server
+      tags: [ 'backup-server' ]
+    - role: file-server
+      tags: [ 'file-server' ]
+```
 
 Module
 
 * script packaged with Ansible
-* performs some action on a host (`ansible-doc <module>`)
+* used within tasks
+* performs some action on a host
+* example: [ansible.builtin.command](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/command_module.html)
 
 Ansible workflow for each task
 
 1. generate a Python script
-2. copy the script to the servers (hosts)
+2. copy the script to the host(s)
 3. execute the script
 4. wait for the script to complete on all hosts
 
@@ -64,7 +81,7 @@ If you reference a variable *right after* the module name:
   command: "{{ myapp }} -a foo"
 ```
 
-If your argument contains a collon:
+If your argument contains a colon:
 ```
 - name: show a debug msg
   debug: "msg='The debug module will print a message: neat, eh?'"
@@ -132,7 +149,7 @@ Primary mechanism for breaking a playbook into multiple files
 
 If you think you might want to change the value of a variable in a role (via `vars` section of a play or role's arguments), use a default variable (`defaults`). If you don't want it to change, use a regular variable (`vars`).
 
-Roles with variables:
+Playbook with two plays and roles with variables:
 ```
 - name: deploy postgres on vagrant
   hosts: db
