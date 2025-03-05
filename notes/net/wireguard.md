@@ -20,6 +20,7 @@ wg pubkey < privkey > pubkey
 
 # configure interface
 wg set wg0 listen-port 51820 private-key $PRIVKEY peer $PUBKEY allowed-ips 192.168.2.0/24 endpoint $PEER_IPADDR:51820
+# or use: wg setconf wg0 [/etc/wireguard/wg0.conf]
 wg [show[conf]]
 
 # activate interface
