@@ -46,7 +46,7 @@ k exec -it myapp -- /bin/sh
 
 ---
 
-## Add debugging container
+## Add ephemeral debug container
 
 ```
 k debug -it myapp --image=busybox:1.28 --target=myapp
