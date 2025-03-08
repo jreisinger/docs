@@ -1,3 +1,5 @@
+Reviewed: 2025-03-07 (fly.io)
+
 LVM is the implementation of [logical volume management](https://en.wikipedia.org/wiki/Logical_volume_management) in Linux. As I don't use it on a day-to-day basis, I created this ~~blog~~note in case I forgot the basics :-).
 
 ## Terminology
@@ -18,6 +20,14 @@ LVM is the implementation of [logical volume management](https://en.wikipedia.or
 * Logical volume (LV) -- equivalent of standard partitions, where filesystems can be created (ex. `/usrlv`)
 
 ## Working with LVM
+
+To create fake disks you can use loop(back) devices. These are pseudo-devices in Unix-like OS that allow files to be treated like block devices.
+
+```
+fallocate -l 1800M /media/disk0.img
+losetup /dev/loop5 /media/disk0.img
+losetup -a
+```
 
 Creating Volumes
 
