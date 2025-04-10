@@ -137,7 +137,7 @@ spec:
                 - value2
 ```
 
-With this configuration, the pods will only be scheduled on nodes labeled with `key2=value2`.
+With this configuration, the pods will *only* be scheduled on nodes labeled with `key2=value2`. `IgnoredDuringExecution` means that if the node labels change after Kubernetes schedules the Pod, the Pod continues to run.
 
 ### Step 4: Cleanup
 
