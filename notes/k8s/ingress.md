@@ -178,4 +178,4 @@ minikube delete
 
 # Sources
 
-* Kubernetes Up & Running (2019)
+* Kubernetes Up & Running (2nd 2019, 3rd 2022)
