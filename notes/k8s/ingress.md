@@ -110,6 +110,72 @@ kubectl get po -A | grep ingress
 kubectl logs -n <namespace> nginx-ingress-controller-67956bf89d-fv58j
 ```
 
+# Deploy app exposed outside minikube cluster via https
+
+```sh
+alias k='kubectl'
+
+minikube start
+
+# Install ingress controller.
+k apply -f https://projectcontour.io/quickstart/contour.yaml
+k get svc envoy -n projectcontour # EXTERNAL-IP should be <pending>
+
+# Create route to LoadBalancer services.
+minikube tunnel
+k get svc envoy -n projectcontour # EXTERNAL-IP should be 127.0.0.1
+
+# Create deployment and service.
+k create deployment alpaca --image=gcr.io/kuar-demo/kuard-amd64:green --replicas=3 --port=8080
+k expose deployment alpaca
+
+# Add following to /etc/hosts:
+127.0.0.1   alpaca.example.com
+
+# Create TLS key and cert for alpaca.example.com.
+mkcert alpaca.example.com
+
+# Create secret holding TLS key and cert.
+k create secret tls alpaca-tls --cert alpaca.example.com.pem --key alpaca.example.com-key.pem
+
+# Create ingress object to expose service outside cluster.
+cat <<EOF | k apply -f -
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: tls-ingress
+spec:
+  tls:
+  - hosts:
+    - alpaca.example.com
+    secretName: alpaca-tls
+  rules:
+  - host: alpaca.example.com
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: alpaca
+            port:
+              number: 8080
+EOF
+
+# Install the local CA in the system trust store.
+mkcert -install
+
+# Restart Firefox and visit https://alpaca.example.com
+```
+
+```sh
+# Cleanup.
+mkcert -uninstall
+minikube delete
+
+# Remove alpaca.example.com from /etc/hosts
+```
+
 # Sources
 
 * Kubernetes Up & Running (2019)
