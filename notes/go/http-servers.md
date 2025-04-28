@@ -1,12 +1,12 @@
-Reviewed: 2023-06-02
+Last reviewed: 2025-04-28 (taking over APC at TFS)
 
 # Package `net/http`
 
 * standard library package for implementing HTTP servers (and clients)
 
-## `Handler` interface
+## `Handler` interface and `ListenAndServe` function
 
-* foundational element of `net/http`
+* foundational elements of `net/http`
 
 ```
 package http
@@ -18,13 +18,13 @@ type Handler interface {
 func ListenAndServe(address string, h Handler) error
 ```
 
-## `ListenAndServe`
-
-* function that runs forever until it fails (always with a non-nil error)
+* `ListenAndServer` function runs forever until it fails (always with a non-nil error)
 * requires an instance of the `Handler` interface to which all requests should be dispatched
 
+Shop is a simple example e-shop selling shoes and socks.
+
 ```
-// Shop - a super simple e-shop showing price of shoes and socks
+// Shop v1
 package main
 
 import (
@@ -137,7 +137,7 @@ func main() {
 }
 ```
 
-* also for convenience `net/http` provides a global `ServeMux` instance called `DefaultServeMux` and package level functions `http.Handle` and `http.HandleFunc`
+* also for convenience `net/http` provides a global `ServeMux` instance called `DefaultServeMux`
 * to use `DefaultServeMux` pass `nil` to `ListenAndServe`
 
 ```
@@ -177,7 +177,7 @@ both generate line of information with protocol and status code (Go doc calls th
 
 ```
 func err(w http.ResponseWriter, r *http.Request) {
-	http.Error(w, "500 something's wrong with the server", http.StatusInternalServerError)
+	http.Error(w, "500 error, something's wrong with the server", http.StatusInternalServerError)
 }
 ```
 
@@ -188,9 +188,9 @@ generates also response body:
 < Content-Type: text/plain; charset=utf-8
 < X-Content-Type-Options: nosniff
 < Date: Sat, 16 May 2020 15:29:09 GMT
-< Content-Length: 38
+< Content-Length: 45
 < 
-500 something's wrong with the server
+500 error, something's wrong with the server
 ```
 
 # Sources
