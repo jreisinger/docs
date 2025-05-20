@@ -2,6 +2,7 @@
 - interacts with external systems via *providers*: https://registry.terraform.io/
 - provider describes the schema of resources and implements CRUD operations
 - providers can manage almost anything: local files, databases, cloud infrastructure, messaging services, ...
+- you can also build (in Go) your own custom provider
 
 ```sh
 ❯ cat main.tf 
