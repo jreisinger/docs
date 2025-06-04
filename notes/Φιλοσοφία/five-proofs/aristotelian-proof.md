@@ -38,9 +38,9 @@ Change = actualization of potential.
 
 # How does change occur?
 
-Usually a change requires a cause, a changer.
+Change requires a changer.
 
-It's not the coffee that makes itself cold. It's the surrounding air. The air had a potential to be cold.
+It's not the coffee that makes itself cold. It's the surrounding air.
 
 More technically (and precisely): No potential can be actualized unless something already actual actualizes it.
 
