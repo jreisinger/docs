@@ -1,4 +1,4 @@
-Notes from https://newsletter.pragmaticengineer.com/p/two-years-of-using-ai
+Notes from https://newsletter.pragmaticengineer.com/p/two-years-of-using-ai (2025-06)
 
 Chatting with the Codebase
 - I found it very useful to be able to **ask questions** like “where is validation of X implemented”, or “how are we filtering?”.
