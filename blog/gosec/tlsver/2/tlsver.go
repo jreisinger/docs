@@ -27,6 +27,7 @@ func main() {
 	out := make(chan host)
 	var wg sync.WaitGroup
 
+	wg.Add(1)
 	go func() {
 		if len(flag.Args()) > 0 {
 			for _, addr := range flag.Args() {
