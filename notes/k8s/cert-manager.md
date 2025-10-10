@@ -1,12 +1,14 @@
 # What is it
 
-Cert-manager creates and renews TLS certificates for your Kubernetes workloads. It can obtain certificates from a variety of issuers (CAs). With the Certificate resource the private key (`tls.key`) and the certificate (basically a public key signed with private key of a CA; `tls.crt`) are stored in a Kubernetes secret which is mounted by a Pod or used by an Ingress controller.
+Cert-manager creates and renews TLS certificates for your Kubernetes workloads. It can obtain certificates from a variety of issuers (CAs). With the Certificate resource the private key (`tls.key`) and the certificate* (`tls.crt`) are stored in a Kubernetes secret which is mounted by a Pod or used by an Ingress controller.
+
+(*) basically a public key signed with private key of a CA
 
 <img width="756" height="438" alt="image" src="https://github.com/user-attachments/assets/3e82e74a-f240-44a2-bc53-0a48085581c9" />
 
-It's implemented as a set of CRDs and controllers.
-
 # Installation
+
+It's implemented as a set of CRDs and controllers:
 
 ```
 # CRDs
@@ -31,7 +33,6 @@ cert-manager-webhook      1/1     1            1           119s
 
 Issuer (or ClusterIssuer)
 - represents CA able to sign a certitficate in response to certificate (signing) request
-- see https://cert-manager.io/docs/configuration/selfsigned for a practical example
 
 CertificateRequest
 - used to request X.509 certificates from an Issuer
@@ -40,10 +41,70 @@ CertificateRequest
 Certificate
 - human readable definition of a certificate request
 - cert-manager uses this input to generate a private key and CertificateRequest to obtain a signed certificate from an Issuer
-- the signed certificate and private key are then store in the specified Secret
+- the signed certificate and private key are then stored in the specified Secret
 - cert-manager makes sure the certificate is auto-renewed before it expires
 
 # Ingress certificates
 
 - simply add `cert-manager.io/cluster-issuer: nameOfClusterIssuer` annotation to an Ingress metadata
 - see https://cert-manager.io/docs/usage/ingress for details
+
+# Practical example
+
+Self-signed CA (namespaced):
+
+```
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: selfsigned-issuer
+spec:
+  selfSigned: {}
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: selfsigned-ca
+spec:
+  isCA: true
+  commonName: Self-signed CA
+  secretName: ca-secret
+  privateKey:
+    algorithm: ECDSA
+    size: 384
+  subject:
+    organizations:
+      - Monsters Inc.
+  issuerRef:
+    name: selfsigned-issuer
+    kind: Issuer
+```
+
+TLS certificate (will get signed by the above CA):
+
+```
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: test-tls-cert
+spec:
+  commonName: Test TLS cert
+  secretName: test-tls-cert
+  isCA: false
+  duration: 8760h # 1 year
+  renewBefore: 2160h # 90 days
+  privateKey:
+    algorithm: ECDSA
+    size: 256
+    rotationPolicy: Always
+  dnsNames:
+    - example.com
+  subject:
+    organizations:
+      - Monsters Inc.
+  issuerRef:
+    name: selfsigned-issuer
+    kind: Issuer
+```
+
+- see https://cert-manager.io/docs/configuration/selfsigned for more
