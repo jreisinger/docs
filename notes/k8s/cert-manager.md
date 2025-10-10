@@ -57,18 +57,20 @@ Self-signed CA (namespaced):
 apiVersion: cert-manager.io/v1
 kind: Issuer
 metadata:
-  name: selfsigned-issuer
+  name: selfsigned-issuer # <--
 spec:
   selfSigned: {}
 ---
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: selfsigned-ca
+  name: rootca
 spec:
-  isCA: true
   commonName: Self-signed CA
-  secretName: ca-secret
+  secretName: rootca-secret
+  isCA: true
+  duration: 175320h # 20 years
+  renewBefore: 2160h # 90 days
   privateKey:
     algorithm: ECDSA
     size: 384
@@ -76,8 +78,16 @@ spec:
     organizations:
       - Monsters Inc.
   issuerRef:
-    name: selfsigned-issuer
+    name: selfsigned-issuer # <--
     kind: Issuer
+---
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: rootca-issuer # <==
+spec:
+  ca:
+    secretName: rootca-secret
 ```
 
 TLS certificate (will get signed by the above CA):
@@ -103,7 +113,7 @@ spec:
     organizations:
       - Monsters Inc.
   issuerRef:
-    name: selfsigned-issuer
+    name: rootca-issuer # <==
     kind: Issuer
 ```
 
