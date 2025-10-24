@@ -1,10 +1,10 @@
 # Cloud Development Kit
 
 ```plain
-[CDK App]
- `-[Stack] - like a bulding, == CloudFormation stack, deployment boundary
-    `-[Construct] - like a bulding block, e.g. S3 bucket
-    `-[Construct] - like a bulding block, e.g. Lambda function
+[CDK App]           definition of your infrastructure using code
+ `-[Stack]          bulding, == CloudFormation stack, deployment boundary
+    `-[Construct]   bulding block, e.g. S3 bucket
+    `-[Construct]   bulding block, e.g. Lambda function
 ```
 
-*Constructs* represent cloud component abstractions which can be composed together into higher level abstractions via scopes.
+*Constructs* represent cloud component abstractions which can be composed together into higher level abstractions via scopes. They are like Go packages or Perl modules. There's AWS construct Library.
