@@ -1,5 +1,5 @@
 * Angular - TypeScript-based web application framework (Google)
-* TypeScript - programming language, strict syntactical superset of JavaScript (Microsoft)
+* TypeScript - programming language by Microsoft, strict syntactical superset of JavaScript
 * node.js - runtime environment that executes JavaScript outside a web browser
 * npm - package manager for JavaScript; consists of CLI client + online DB of packages (GitHub)
 
