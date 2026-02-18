@@ -1,3 +1,18 @@
+Simple mental model of Prometheus:
+
+> A system that periodically asks all your services: “How are you doing right now?” Then stores the answers and lets you query and alert on them.
+
+```
+Applications → /metrics endpoint
+        ↓
+   Prometheus (scrapes + stores)
+        ↓
+   Alertmanager (optional)
+        ↓
+   Grafana (for visualization)
+
+```
+
 # Monitoring
 
 Prometheus is a metrics-based tool for operational monitoring of computer systems, i.e. it's useful for:
