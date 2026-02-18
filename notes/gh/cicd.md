@@ -1,4 +1,4 @@
-# Primitives
+# Primitives of GitHub Actions (hosted CI/CD tool)
 
 workflow
 - defines when automation runs and what it does
