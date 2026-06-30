@@ -1,0 +1,5 @@
+- synthentic means artificial
+- you discover problems w/o real human traffic
+- automated scripts that simulate user actions
+- for monitoring web application or API
+- mimic common actions like loading homepage or logging in
