@@ -2,37 +2,37 @@
 
 [Source](https://kubernetes.io/docs/concepts/overview/components).
 
-<img src="https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg" style="max-width:100%;height:auto;"> 
+<img width="600" height="335" alt="image" src="https://github.com/user-attachments/assets/ba51fd02-c77e-4eaf-8061-74e747a3bb8b" />
 
 * Node - worker machine (virtual or physical) that runs containerized applications via Pods
 * Control plane - manages Nodes and Pods
 
 ## Control plane components
 
-kube-apiserver
+kube-apiserver (api)
 
 * exposes the API
 * front end for the K8s control plane
 * scales horizontally
 
-cloud-controller-manager
+cloud-controller-manager (ccm, optional)
 
 * embeds cloud specific control logic
 * links K8s cluster with cloud provider's API
 * runs controllers specific to the underlying cloud provider
 * these controllers can have cloud provider dependencies: node controller, route controller, service controller
 
-kube-controller-manager
+kube-controller-manager (cm)
 
 * runs controller processes
 * logically each controller is a separate process but they are all compiled into a single binary and run in a single process
 * node controller, replication controller, endpoints controller, service account & token controllers
 
-etcd
+etcd (persistence store)
 
 * consistent and highly-available key value store for all cluster data
 
-kube-scheduler
+kube-scheduler (sched)
  
 * watches for newly created Pods and selects a node for them to run on
 
@@ -42,7 +42,7 @@ kubelet
 
 * takes a set od PodSpecs and ensures that the containers described in those PodSpecs are running (in a Pod) and healthy
 
-kube-proxy
+kube-proxy (k-proxy)
 
 * implements part of the Service concept by maintaining network rules on nodes (using OS packet filtering layer or forwarding traffic by itself)
 
