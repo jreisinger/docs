@@ -65,3 +65,11 @@ resource "aws_cloudwatch_event_target" "lambda" {
   arn  = aws_lambda_function.my_func.arn
 }
 ```
+
+---
+
+There are three types of EventBridge bus:
+
+1. Default event bus - aws services
+2. Partner event bus - zendesk, datadog, ...
+3. Custom event bus - you app
