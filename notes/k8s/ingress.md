@@ -126,46 +126,46 @@ minikube tunnel
 k get svc envoy -n projectcontour # EXTERNAL-IP should be 127.0.0.1
 
 # Create deployment and service.
-k create deployment alpaca --image=gcr.io/kuar-demo/kuard-amd64:green --replicas=3 --port=8080
-k expose deployment alpaca
+k create deployment nginx --image=nginx --replicas=3 --port=80
+k expose deployment nginx
 
 # Add following to /etc/hosts:
-127.0.0.1   alpaca.example.com
+127.0.0.1   nginx.example.com
 
-# Create TLS key and cert for alpaca.example.com.
-mkcert alpaca.example.com
+# Create TLS key and cert for nginx.example.com.
+mkcert nginx.example.com
 
 # Create secret holding TLS key and cert.
-k create secret tls alpaca-tls --cert alpaca.example.com.pem --key alpaca.example.com-key.pem
+k create secret tls nginx-tls --cert nginx.example.com.pem --key nginx.example.com-key.pem
 
 # Create ingress object to expose service outside cluster.
 cat <<EOF | k apply -f -
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: tls-ingress
+  name: nginx-tls
 spec:
   tls:
   - hosts:
-    - alpaca.example.com
-    secretName: alpaca-tls
+    - nginx.example.com
+    secretName: nginx-tls
   rules:
-  - host: alpaca.example.com
+  - host: nginx.example.com
     http:
       paths:
       - pathType: Prefix
         path: "/"
         backend:
           service:
-            name: alpaca
+            name: nginx
             port:
-              number: 8080
+              number: 80
 EOF
 
 # Install the local CA in the system trust store.
 mkcert -install
 
-# Restart Firefox and visit https://alpaca.example.com
+# Restart Firefox and visit https://nginx.example.com
 ```
 
 ```sh
@@ -173,7 +173,7 @@ mkcert -install
 mkcert -uninstall
 minikube delete
 
-# Remove alpaca.example.com from /etc/hosts
+# Remove nginx.example.com from /etc/hosts
 ```
 
 # Sources
