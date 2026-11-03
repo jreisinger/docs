@@ -39,8 +39,8 @@ You can configure net devices via:
 
 Data modeling technologies
 - YANG
+- XML schema
 - JSON schema
-- XML schema definition
 
 ## JSON schema
 
