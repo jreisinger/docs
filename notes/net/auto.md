@@ -15,27 +15,25 @@ You can configure net devices via:
 - data formats provide basic type system so a program knows whether the given
   bytes represent a string, integer, or boolean
 - but here's the problem - what happens when we send this to a network device:
-
-	{ "hostname": "" }
-
+	```
+ 	{ "hostname": "" }
+ 	```
 - JSON is correct but the device might have problems setting the hostname
 - the device software could do something like
-
+	```
 	req = json.loads(json_str)
 	if req["hostname"] == "":
 		raise Exception("Hostname field must not be emtpy")
-
+	```
 - but if there are many fields and many checks needed, **data modeling** is a
   better approach
 - it's a set of tools and techniques that provide constraints to the structured
   data like JSON
-
 - the canonical example is the *database schema*
 - it describes the organization and structure of data within a DB
 - for example, primary key is a special designation describing a column of
   values that can be used to uniquely identify the row to which those values
   belong
-
 - in general, *schema* is just a way to describe the structure of data
 - data model =~ schema
 
